@@ -121,13 +121,21 @@ class TestRunner:
         if not venv_dir.exists():
             log.info(f"Creating shared test venv at {venv_dir} …")
             venv.create(str(venv_dir), with_pip=True)
-            # Upgrade pip silently
             python = self._venv_python(venv_dir)
+            # Upgrade pip silently
             subprocess.run(
-                [python, "-m", "pip", "install", "--quiet", "--upgrade", "pip",
-                 "pytest", "pytest-timeout", "pytest-mock"],
+                [python, "-m", "pip", "install", "--quiet", "--upgrade", "pip"],
                 capture_output=True,
             )
+            # Pre-install base test packages + pinned numpy<2.0 to avoid
+            # binary incompatibility (numpy 2.x ABI breaks pandas/scipy built against 1.x)
+            subprocess.run(
+                [python, "-m", "pip", "install", "--quiet",
+                 "pytest", "pytest-timeout", "pytest-mock",
+                 "numpy<2.0", "requests"],
+                capture_output=True,
+            )
+            log.info("Shared venv ready with pinned numpy<2.0")
 
         self.__class__._VENV_PYTHON = self._venv_python(venv_dir)
         log.debug(f"Test venv python: {self._VENV_PYTHON}")

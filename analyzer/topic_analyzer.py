@@ -48,12 +48,14 @@ NEWS CORPUS:
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
-def _build_corpus(items: list[dict], max_items: int = 300) -> str:
-    """Format news items into a compact corpus string for the LLM."""
+def _build_corpus(items: list[dict], max_items: int = 80) -> str:
+    """Format news items into a compact corpus string for the LLM.
+    Capped at 80 items (~5000 tokens) to stay under GitHub Models 8k limit.
+    """
     lines = []
     for i, item in enumerate(items[:max_items]):
         title = item.get("title", "").strip()
-        desc  = (item.get("description") or "").strip()[:120]
+        desc  = (item.get("description") or "").strip()[:80]
         src   = item.get("source", "")
         line  = f"{i+1}. [{src}] {title}"
         if desc:
@@ -111,7 +113,7 @@ class TopicAnalyzer:
 
         corpus = _build_corpus(news_items)
         prompt = _TOPIC_PROMPT.format(
-            n_items=min(len(news_items), 300),
+            n_items=min(len(news_items), 80),
             n_topics=n_topics,
             corpus=corpus,
         )
