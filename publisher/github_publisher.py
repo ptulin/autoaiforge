@@ -73,23 +73,31 @@ class GitHubPublisher:
             "\n".join(tool.requirements) + "\n", encoding="utf-8"
         )
         (tool_dir / "README.md").write_text(tool.readme, encoding="utf-8")
+        # GitHub URL in the main autoaiforge repo
+        repo_name = os.getenv("GITHUB_REPOSITORY", f"{self._username}/autoaiforge").split("/")[-1]
+        github_url = (
+            f"https://github.com/{self._username}/{repo_name}"
+            f"/tree/main/generated_tools/{run_date}/{tool.tool_name}"
+        )
+        readme_url = (
+            f"https://raw.githubusercontent.com/{self._username}/{repo_name}"
+            f"/main/generated_tools/{run_date}/{tool.tool_name}/README.md"
+        )
+
         (tool_dir / "metadata.json").write_text(
             json.dumps({
                 "tool_name":    tool.tool_name,
                 "display_name": tool.display_name,
                 "description":  tool.description,
                 "topic":        tool.topic,
+                "date":         run_date,
                 "generated":    config.RUN_TS,
                 "loops_needed": tool.loops_needed,
                 "tests_passed": tool.test_result.passed,
+                "github_url":   github_url,
+                "readme_url":   readme_url,
             }, indent=2),
             encoding="utf-8",
         )
 
-        # GitHub URL in the main autoaiforge repo
-        repo_name = os.getenv("GITHUB_REPOSITORY", f"{self._username}/autoaiforge").split("/")[-1]
-        url = (
-            f"https://github.com/{self._username}/{repo_name}"
-            f"/tree/main/generated_tools/{run_date}/{tool.tool_name}"
-        )
-        return url
+        return github_url

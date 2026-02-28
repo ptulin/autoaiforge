@@ -5,5 +5,8 @@
   "topic": "AI Coding Assistants",
   "generated": "2026-02-28T15:58:53.267004+00:00",
   "loops_needed": 2,
-  "tests_passed": true
+  "tests_passed": true,
+  "date": "2026-02-28",
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/smart_code_review",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-02-28/smart_code_review/README.md"
 }

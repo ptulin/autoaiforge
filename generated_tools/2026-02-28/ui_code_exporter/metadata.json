@@ -5,5 +5,8 @@
   "topic": "AI-Driven UI/UX Design",
   "generated": "2026-02-28T15:58:53.267004+00:00",
   "loops_needed": 2,
-  "tests_passed": true
+  "tests_passed": true,
+  "date": "2026-02-28",
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ui_code_exporter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-02-28/ui_code_exporter/README.md"
 }
