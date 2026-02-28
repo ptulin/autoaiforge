@@ -226,6 +226,7 @@ def run_pipeline() -> dict:
 
     _print_summary(stats)
     _send_webhook(stats)
+    _send_email(stats)
 
     return stats
 
@@ -313,6 +314,110 @@ def _print_summary(stats: dict):
         for url in stats["published_urls"]:
             log.info(f"    🔗 {url}")
     log.info("=" * 60)
+
+
+def _send_email(stats: dict):
+    """
+    Send a daily HTML summary email via Gmail SMTP.
+    Requires GMAIL_APP_PASSWORD secret to be set.
+    """
+    if not config.GMAIL_APP_PASSWORD:
+        log.info("Email skipped — GMAIL_APP_PASSWORD not set")
+        return
+
+    import smtplib
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+
+    tools_rows = ""
+    for url in stats.get("published_urls", []):
+        tool_name = url.split("/")[-1] if "/" in url else url
+        tools_rows += f"""
+        <tr>
+          <td style="padding:8px 12px;">🔧 <strong>{tool_name}</strong></td>
+          <td style="padding:8px 12px;"><a href="{url}" style="color:#0366d6;">{url}</a></td>
+        </tr>"""
+
+    if not tools_rows:
+        tools_rows = '<tr><td colspan="2" style="padding:8px 12px;color:#888;">No tools published today</td></tr>'
+
+    errors_html = ""
+    if stats.get("errors"):
+        errs = "".join(f"<li>{e}</li>" for e in stats["errors"])
+        errors_html = f'<p style="color:#cb2431;"><strong>⚠️ Errors:</strong><ul>{errs}</ul></p>'
+
+    actions_url = "https://github.com/ptulin/autoaiforge/actions"
+    tools_repo  = "https://github.com/ptulin/autoaiforge-tools"
+
+    html = f"""
+    <html><body style="font-family:sans-serif;max-width:680px;margin:auto;padding:20px;color:#24292e;">
+      <h2 style="border-bottom:2px solid #0366d6;padding-bottom:8px;">
+        🤖 AutoAIForge Daily Report — {stats['run_date']}
+      </h2>
+
+      <table style="width:100%;border-collapse:collapse;background:#f6f8fa;border-radius:6px;margin:16px 0;">
+        <tr>
+          <td style="padding:10px 16px;"><strong>📰 News scraped</strong></td>
+          <td style="padding:10px 16px;">{stats['items_scraped']} articles</td>
+        </tr>
+        <tr style="background:#fff;">
+          <td style="padding:10px 16px;"><strong>🔥 Hot topics found</strong></td>
+          <td style="padding:10px 16px;">{stats['topics_found']}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 16px;"><strong>💡 Tool ideas generated</strong></td>
+          <td style="padding:10px 16px;">{stats['ideas_generated']}</td>
+        </tr>
+        <tr style="background:#fff;">
+          <td style="padding:10px 16px;"><strong>🔨 Tools built &amp; tested</strong></td>
+          <td style="padding:10px 16px;">{stats['tools_built']}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px 16px;"><strong>🚀 Tools published</strong></td>
+          <td style="padding:10px 16px;"><strong style="color:#28a745;">{stats['tools_published']}</strong></td>
+        </tr>
+        <tr style="background:#fff;">
+          <td style="padding:10px 16px;"><strong>⏱ Runtime</strong></td>
+          <td style="padding:10px 16px;">{stats.get('elapsed_seconds', '?')}s</td>
+        </tr>
+      </table>
+
+      <h3 style="margin-top:24px;">📦 Published Tools</h3>
+      <table style="width:100%;border-collapse:collapse;border:1px solid #e1e4e8;border-radius:6px;">
+        {tools_rows}
+      </table>
+
+      {errors_html}
+
+      <h3 style="margin-top:24px;">🛠 How to use a tool</h3>
+      <ol style="line-height:1.8;">
+        <li>Go to <a href="{tools_repo}" style="color:#0366d6;">{tools_repo}</a></li>
+        <li>Browse to <code>tools/{stats['run_date']}/</code></li>
+        <li>Pick a tool folder and read its <code>README.md</code></li>
+        <li>Run: <code>pip install -r requirements.txt &amp;&amp; python tool.py</code></li>
+      </ol>
+
+      <p style="margin-top:24px;font-size:13px;color:#586069;border-top:1px solid #e1e4e8;padding-top:12px;">
+        Full logs → <a href="{actions_url}" style="color:#0366d6;">GitHub Actions</a> &nbsp;|&nbsp;
+        All tools → <a href="{tools_repo}" style="color:#0366d6;">autoaiforge-tools repo</a>
+      </p>
+    </body></html>
+    """
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"🤖 AutoAIForge: {stats['tools_published']} tools published — {stats['run_date']}"
+    msg["From"]    = config.EMAIL_FROM
+    msg["To"]      = config.EMAIL_TO
+    msg.attach(MIMEText(html, "html"))
+
+    try:
+        with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+            smtp.starttls()
+            smtp.login(config.EMAIL_FROM, config.GMAIL_APP_PASSWORD)
+            smtp.sendmail(config.EMAIL_FROM, config.EMAIL_TO, msg.as_string())
+        log.info(f"📧 Daily email sent to {config.EMAIL_TO}")
+    except Exception as e:
+        log.warning(f"Email failed (non-fatal): {e}")
 
 
 def _send_webhook(stats: dict):
