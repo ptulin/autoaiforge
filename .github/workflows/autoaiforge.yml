@@ -29,6 +29,7 @@ on:
 permissions:
   contents: write
   actions: read
+  models: read    # Required for GitHub Models API (free LLM inference)
 
 jobs:
   autoaiforge:
@@ -85,9 +86,12 @@ jobs:
           GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
 
           # ── Optional secrets ──────────────────────────────────────────────
-          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
-          HF_TOKEN:         ${{ secrets.HF_TOKEN }}
-          WEBHOOK_URL:      ${{ secrets.WEBHOOK_URL }}
+          TOGETHER_API_KEY:   ${{ secrets.TOGETHER_API_KEY }}
+          HF_TOKEN:           ${{ secrets.HF_TOKEN }}
+          WEBHOOK_URL:        ${{ secrets.WEBHOOK_URL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO:           ptulin@gmail.com
+          EMAIL_FROM:         ptulin@gmail.com
 
           # ── GitHub identity for the tools repo ───────────────────────────
           GITHUB_USERNAME:  ${{ github.repository_owner }}
