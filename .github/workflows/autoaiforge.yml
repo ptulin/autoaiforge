@@ -1,0 +1,147 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# AutoAIForge — GitHub Actions Workflow
+#
+# FREE hosting strategy: GitHub Actions provides unlimited minutes for public
+# repos with cron scheduling, making it the ideal zero-cost scheduler.
+#
+# Schedule: 2:00 AM UTC daily (adjustable via CRON_SCHEDULE below)
+# Can also be triggered manually via "Run workflow" in GitHub Actions UI
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: AutoAIForge Daily Run
+
+on:
+  schedule:
+    # Run at 2:00 AM UTC every day
+    # Adjust timezone offset: for 2 AM EST use "0 7 * * *"
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger from the GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (scrape + analyze only, skip publish)'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Give the workflow write access to push the DB back to the repo
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  autoaiforge:
+    name: Run AutoAIForge Pipeline
+    runs-on: ubuntu-latest
+    timeout-minutes: 60   # Max 1 hour per run
+
+    steps:
+      # ── Checkout ─────────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      # ── Python setup ─────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # ── Dependencies ──────────────────────────────────────────────────────────
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        env:
+          PIP_NO_CACHE_DIR: false
+
+      # ── Pre-cache embedding model ─────────────────────────────────────────────
+      - name: Cache sentence-transformer model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface/hub
+          key: st-model-all-MiniLM-L6-v2
+          restore-keys: st-model-
+
+      - name: Download embedding model (if not cached)
+        run: |
+          python -c "
+          from sentence_transformers import SentenceTransformer
+          print('Downloading/loading all-MiniLM-L6-v2 ...')
+          SentenceTransformer('all-MiniLM-L6-v2')
+          print('Model ready.')
+          "
+
+      # ── Run Pipeline ──────────────────────────────────────────────────────────
+      - name: Run AutoAIForge pipeline
+        env:
+          # ── Required secrets (add these in Settings → Secrets → Actions) ──
+          GROQ_API_KEY:     ${{ secrets.GROQ_API_KEY }}
+          YOUTUBE_API_KEY:  ${{ secrets.YOUTUBE_API_KEY }}
+          GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
+
+          # ── Optional secrets ──────────────────────────────────────────────
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          HF_TOKEN:         ${{ secrets.HF_TOKEN }}
+          WEBHOOK_URL:      ${{ secrets.WEBHOOK_URL }}
+
+          # ── GitHub identity for the tools repo ───────────────────────────
+          GITHUB_USERNAME:  ${{ github.repository_owner }}
+          TOOLS_REPO_NAME:  autoaiforge-tools
+
+          # ── Pipeline config overrides ─────────────────────────────────────
+          PYTHONUNBUFFERED: "1"
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            echo "DRY RUN: setting MAX_TOOLS_PER_RUN=0"
+            export MAX_TOOLS_PER_RUN=0
+          fi
+          python main.py
+
+      # ── Upload logs as artifact ───────────────────────────────────────────────
+      - name: Upload run logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autoaiforge-logs-${{ github.run_id }}
+          path: logs/
+          retention-days: 30
+
+      # ── Push DB back to repo ──────────────────────────────────────────────────
+      # (main.py does this internally via subprocess git commands,
+      #  but we add a safety net here too)
+      - name: Ensure DB committed
+        if: always()
+        run: |
+          git config user.email "autoaiforge@bot.local"
+          git config user.name  "AutoAIForge Bot"
+          git add data/news.db logs/ 2>/dev/null || true
+          git diff --cached --quiet || \
+            git commit -m "🤖 AutoAIForge data [$(date -u +%Y-%m-%d)] [skip ci]"
+          git push || echo "Nothing to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Job summary ───────────────────────────────────────────────────────────
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "## AutoAIForge Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the [autoaiforge-tools](https://github.com/${{ github.repository_owner }}/autoaiforge-tools) repo for today's generated tools." >> $GITHUB_STEP_SUMMARY
+          if [ -f logs/*.log ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "<details><summary>Log tail</summary>" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            tail -50 logs/*.log 2>/dev/null || echo "No logs" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "</details>" >> $GITHUB_STEP_SUMMARY
+          fi
