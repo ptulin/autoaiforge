@@ -139,18 +139,66 @@ class IdeaGenerator:
         topics: list[dict],
         n_ideas_per_topic: int = None,
         max_total: int = None,
+        existing_tool_names: Optional[set] = None,
+        existing_topics: Optional[set] = None,
+        upgrade_topics: Optional[set] = None,
     ) -> list[dict]:
-        """Generate ideas for all topics; cap at max_total."""
-        max_total = max_total or config.MAX_TOOLS_PER_RUN
+        """
+        Generate ideas for all topics; cap at max_total.
+
+        Deduplication / upgrade logic:
+          - existing_topics: topic names that already have at least one tool.
+            These are skipped unless the topic is in upgrade_topics.
+          - existing_tool_names: snake_case tool names already in the collection.
+            Used as a secondary filter — even if a topic is new, we skip an
+            idea whose tool_name already exists (unless it's an upgrade).
+          - upgrade_topics: topic names where existing tools should be refreshed.
+            Tools generated for upgrade topics are tagged with is_upgrade=True.
+        """
+        max_total           = max_total or config.MAX_TOOLS_PER_RUN
+        existing_tool_names = existing_tool_names or set()
+        existing_topics     = existing_topics or set()
+        upgrade_topics      = upgrade_topics or set()
+
         all_ideas: list[dict] = []
 
         for topic in topics:
             if len(all_ideas) >= max_total:
                 break
+
+            topic_name = topic.get("topic", "")
+            is_upgrade = topic_name in upgrade_topics
+            has_tool   = topic_name in existing_topics
+
+            # Skip topics that already have tools unless flagged for upgrade
+            if has_tool and not is_upgrade:
+                log.info(
+                    f"  ⏭  Skipping topic '{topic_name}' — tool already in collection"
+                )
+                continue
+
+            if is_upgrade:
+                log.info(f"  🔄 Upgrading tools for topic: '{topic_name}'")
+
             remaining = max_total - len(all_ideas)
-            n = min(n_ideas_per_topic or config.IDEAS_PER_TOPIC, remaining)
-            ideas = self.generate_for_topic(topic, n_ideas=n)
-            all_ideas.extend(ideas)
+            n         = min(n_ideas_per_topic or config.IDEAS_PER_TOPIC, remaining)
+            ideas     = self.generate_for_topic(topic, n_ideas=n)
+
+            # Secondary filter: skip any idea whose tool_name already exists
+            # (prevents accidental exact-name collisions from the LLM)
+            filtered: list[dict] = []
+            for idea in ideas:
+                tool_name = idea.get("tool_name", "")
+                if tool_name in existing_tool_names and not is_upgrade:
+                    log.info(
+                        f"  ⏭  Skipping idea '{tool_name}' — name already in collection"
+                    )
+                    continue
+                if is_upgrade:
+                    idea["is_upgrade"] = True
+                filtered.append(idea)
+
+            all_ideas.extend(filtered)
 
         log.info(f"Total ideas generated: {len(all_ideas)}")
         return all_ideas

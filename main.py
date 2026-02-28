@@ -164,6 +164,17 @@ def run_pipeline() -> dict:
     # ── 4. Ideation ────────────────────────────────────────────────────────────
     log.info("[STEP 4/6] Idea Generation")
 
+    # Load existing collection to avoid duplicate tools / detect upgrades
+    existing_tools  = _load_existing_tools()
+    existing_topics = {m.get("topic", "") for m in existing_tools.values() if m.get("topic")}
+    log.info(f"  Existing collection: {len(existing_tools)} tools across {len(existing_topics)} topics")
+
+    upgrade_topics = _detect_upgrade_topics(topics, existing_tools)
+    if upgrade_topics:
+        log.info(f"  Topics flagged for upgrade: {', '.join(upgrade_topics)}")
+    else:
+        log.info("  No topics flagged for upgrade (all existing tools are recent)")
+
     ideas: list[dict] = []
     try:
         from ideation.idea_generator import IdeaGenerator
@@ -172,6 +183,9 @@ def run_pipeline() -> dict:
             topics,
             n_ideas_per_topic=config.IDEAS_PER_TOPIC,
             max_total=config.MAX_TOOLS_PER_RUN,
+            existing_tool_names=set(existing_tools.keys()),
+            existing_topics=existing_topics,
+            upgrade_topics=upgrade_topics,
         )
         stats["ideas_generated"] = len(ideas)
         stats["ideas_list"] = [
@@ -273,15 +287,18 @@ def _generate_tools_index():
     Scan all generated_tools/{date}/{tool}/metadata.json files and write
     a consolidated tools_index.json at generated_tools/tools_index.json.
     The website fetches this file from GitHub raw URL every hour.
+
+    Deduplication: if the same tool_name appears in multiple date folders
+    (e.g. after an upgrade run), only the newest version (by 'generated'
+    timestamp) is included in the index.
     """
     tools_dir = Path(config.TOOLS_DIR)
     if not tools_dir.exists():
         log.warning("No generated_tools directory found — skipping index generation")
         return
 
-    all_tools = []
-
-    # Walk date directories (YYYY-MM-DD)
+    # Collect all metadata entries
+    raw_tools: list[dict] = []
     for date_dir in sorted(tools_dir.iterdir()):
         if not date_dir.is_dir() or not date_dir.name.startswith("20"):
             continue
@@ -293,12 +310,26 @@ def _generate_tools_index():
                 continue
             try:
                 meta = json.loads(meta_path.read_text(encoding="utf-8"))
-                all_tools.append(meta)
+                raw_tools.append(meta)
             except Exception as e:
                 log.warning(f"Failed to read metadata for {tool_dir.name}: {e}")
 
+    # Deduplicate: keep only the newest version of each tool_name
+    seen: dict[str, dict] = {}
+    for meta in raw_tools:
+        name = meta.get("tool_name", "")
+        if not name:
+            continue
+        existing = seen.get(name)
+        if not existing or meta.get("generated", "") > existing.get("generated", ""):
+            seen[name] = meta
+
+    duplicates = len(raw_tools) - len(seen)
+    if duplicates:
+        log.info(f"  Deduplicated {duplicates} older tool version(s) from index")
+
     # Sort newest first
-    all_tools.sort(key=lambda t: t.get("generated", ""), reverse=True)
+    all_tools = sorted(seen.values(), key=lambda t: t.get("generated", ""), reverse=True)
 
     index = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
@@ -308,7 +339,96 @@ def _generate_tools_index():
 
     index_path = tools_dir / "tools_index.json"
     index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
-    log.info(f"✅ Generated tools_index.json with {len(all_tools)} tools → {index_path}")
+    log.info(f"✅ Generated tools_index.json with {len(all_tools)} unique tools → {index_path}")
+
+
+def _load_existing_tools() -> dict[str, dict]:
+    """
+    Load all existing tools from generated_tools/ keyed by tool_name.
+    When duplicates exist, keeps only the newest version (by 'generated' ts).
+    Used before ideation to avoid regenerating tools unnecessarily.
+    """
+    tools_dir = Path(config.TOOLS_DIR)
+    if not tools_dir.exists():
+        return {}
+
+    seen: dict[str, dict] = {}
+    for date_dir in sorted(tools_dir.iterdir()):
+        if not date_dir.is_dir() or not date_dir.name.startswith("20"):
+            continue
+        for tool_dir in sorted(date_dir.iterdir()):
+            meta_path = tool_dir / "metadata.json"
+            if not meta_path.exists():
+                continue
+            try:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+                name = meta.get("tool_name", "")
+                if not name:
+                    continue
+                existing = seen.get(name)
+                if not existing or meta.get("generated", "") > existing.get("generated", ""):
+                    seen[name] = meta
+            except Exception:
+                pass
+    return seen
+
+
+def _detect_upgrade_topics(
+    topics: list[dict],
+    existing_tools: dict[str, dict],
+    min_relevance: int = 8,
+    min_age_days: int = 7,
+) -> set[str]:
+    """
+    Return topic names that should trigger tool upgrades.
+
+    A topic qualifies when ALL of these are true:
+      1. It's trending strongly today (relevance >= min_relevance out of 10)
+      2. There is already at least one tool for that topic in the collection
+      3. The newest existing tool for that topic is >= min_age_days old
+
+    This lets AutoAIForge refresh tools when the underlying technology
+    has had major new developments (e.g. a new model release on YouTube).
+    """
+    from datetime import timedelta
+
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=min_age_days)
+
+    # Map topic name → list of existing tool metadata entries
+    topic_to_tools: dict[str, list] = {}
+    for meta in existing_tools.values():
+        t = meta.get("topic", "")
+        if t:
+            topic_to_tools.setdefault(t, []).append(meta)
+
+    upgrade_topics: set[str] = set()
+    for topic in topics:
+        topic_name = topic.get("topic", "")
+        relevance  = topic.get("relevance", 0)
+        if relevance < min_relevance:
+            continue
+
+        tools_for_topic = topic_to_tools.get(topic_name, [])
+        if not tools_for_topic:
+            continue  # No existing tool for this topic — will be freshly generated
+
+        # Check whether the newest tool for this topic is old enough to warrant upgrade
+        newest_gen = max(m.get("generated", "") for m in tools_for_topic)
+        try:
+            gen_dt = datetime.fromisoformat(newest_gen)
+            if gen_dt.tzinfo is None:
+                gen_dt = gen_dt.replace(tzinfo=timezone.utc)
+            if gen_dt < cutoff:
+                upgrade_topics.add(topic_name)
+                log.info(
+                    f"  🔄 Upgrade candidate: '{topic_name}' "
+                    f"(relevance {relevance}/10, last built {newest_gen[:10]})"
+                )
+        except Exception:
+            pass
+
+    return upgrade_topics
 
 
 def _save_db_to_git(db):
