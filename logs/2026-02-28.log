@@ -1,0 +1,508 @@
+2026-02-28 03:28:04 | INFO     | main | ============================================================
+2026-02-28 03:28:04 | INFO     | main | AutoAIForge starting run: 2026-02-28T03:28:04.195118+00:00
+2026-02-28 03:28:04 | INFO     | main | ============================================================
+2026-02-28 03:28:04 | WARNING  | main | CONFIG WARNING: At least one LLM key required: GROQ_API_KEY | TOGETHER_API_KEY | HF_TOKEN
+2026-02-28 03:28:04 | INFO     | main | [STEP 1/6] News Scraping
+2026-02-28 03:28:04 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-02-28 03:28:04 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-02-28 03:28:04 | INFO     | main |   YouTube: 0 items
+2026-02-28 03:28:04 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-02-28 03:28:09 | INFO     | rss_scraper | HackerNews: 197 items
+2026-02-28 03:28:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-02-28 03:28:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-02-28 03:28:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-02-28 03:28:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-02-28 03:28:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-02-28 03:28:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-02-28 03:28:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-02-28 03:28:16 | INFO     | rss_scraper | Reddit: 0 items
+2026-02-28 03:28:22 | INFO     | rss_scraper | ArXiv: 106 items
+2026-02-28 03:28:27 | INFO     | rss_scraper | Dev.to: 200 items
+2026-02-28 03:28:28 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-02-28 03:28:28 | INFO     | rss_scraper | Free sources total: 553 unique items
+2026-02-28 03:28:28 | INFO     | main |   RSS/API sources: 553 items
+2026-02-28 03:28:28 | INFO     | main |   Total scraped: 553 items
+2026-02-28 03:28:28 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-02-28 03:28:28 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-02-28 03:28:28 | INFO     | db_manager | Purged 0 old news items
+2026-02-28 03:28:28 | INFO     | db_manager | Inserted 553/553 news items
+2026-02-28 03:28:28 | INFO     | main |   SQLite: 553 new items (total: 553)
+2026-02-28 03:28:33 | INFO     | vector_store | Loading sentence-transformer model …
+2026-02-28 03:28:33 | INFO     | vector_store | VectorStore ready
+2026-02-28 03:28:41 | INFO     | vector_store | Indexed 553 items into vector store
+2026-02-28 03:28:41 | INFO     | main |   Vector store: 553 items indexed
+2026-02-28 03:28:41 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-02-28 03:28:41 | INFO     | topic_analyzer | Analyzing 553 items for top 10 topics …
+2026-02-28 03:28:41 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:42 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:42 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:43 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:43 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:44 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:44 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-02-28 03:28:44 | INFO     | main |   Found 10 topics:
+2026-02-28 03:28:44 | INFO     | main |      1. [10/10] AI
+2026-02-28 03:28:44 | INFO     | main |      2. [10/10] ai
+2026-02-28 03:28:44 | INFO     | main |      3. [10/10] github trending AI
+2026-02-28 03:28:44 | INFO     | main |      4. [10/10] machinelearning
+2026-02-28 03:28:44 | INFO     | main |      5. [10/10] claudeai
+2026-02-28 03:28:44 | INFO     | main |      6. [10/10] LLM
+2026-02-28 03:28:44 | INFO     | main |      7. [10/10] Claude
+2026-02-28 03:28:44 | INFO     | main |      8. [10/10] open source AI
+2026-02-28 03:28:44 | INFO     | main |      9. [10/10] llm
+2026-02-28 03:28:44 | INFO     | main |     10. [10/10] large+language+model
+2026-02-28 03:28:44 | INFO     | main | [STEP 4/6] Idea Generation
+2026-02-28 03:28:44 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:45 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:45 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:46 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:46 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:47 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:47 | ERROR    | idea_generator | Idea generation failed for topic 'AI': All LLM providers failed. Check API keys.
+2026-02-28 03:28:47 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:48 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:48 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:49 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:49 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:50 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:50 | ERROR    | idea_generator | Idea generation failed for topic 'ai': All LLM providers failed. Check API keys.
+2026-02-28 03:28:50 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:52 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:52 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:53 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:53 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:54 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:54 | ERROR    | idea_generator | Idea generation failed for topic 'github trending AI': All LLM providers failed. Check API keys.
+2026-02-28 03:28:54 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:55 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:55 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:56 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:56 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:57 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:57 | ERROR    | idea_generator | Idea generation failed for topic 'machinelearning': All LLM providers failed. Check API keys.
+2026-02-28 03:28:57 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:58 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:58 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:59 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:59 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:00 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:00 | ERROR    | idea_generator | Idea generation failed for topic 'claudeai': All LLM providers failed. Check API keys.
+2026-02-28 03:29:00 | INFO     | idea_generator | Total ideas generated: 5
+2026-02-28 03:29:00 | INFO     | main |   Generated 5 tool ideas:
+2026-02-28 03:29:00 | INFO     | main |     • ai_helper: A Python utility for working with AI
+2026-02-28 03:29:00 | INFO     | main |     • ai_helper: A Python utility for working with ai
+2026-02-28 03:29:00 | INFO     | main |     • github_trending_ai_helper: A Python utility for working with github trending AI
+2026-02-28 03:29:00 | INFO     | main |     • machinelearning_helper: A Python utility for working with machinelearning
+2026-02-28 03:29:00 | INFO     | main |     • claudeai_helper: A Python utility for working with claudeai
+2026-02-28 03:29:00 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-02-28 03:29:00 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-02-28 03:29:07 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-02-28 03:29:07 | INFO     | tool_builder | Building tool: ai_helper …
+2026-02-28 03:29:07 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:08 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:08 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:09 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:09 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:10 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:10 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:10 | INFO     | tool_builder | Building tool: ai_helper …
+2026-02-28 03:29:10 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:11 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:11 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:12 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:12 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:13 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:13 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:13 | INFO     | tool_builder | Building tool: github_trending_ai_helper …
+2026-02-28 03:29:13 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:14 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:14 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:15 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:15 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:16 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:16 | ERROR    | tool_builder | Initial generation failed for github_trending_ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:16 | INFO     | tool_builder | Building tool: machinelearning_helper …
+2026-02-28 03:29:16 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:17 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:17 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:18 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:18 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:19 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:19 | ERROR    | tool_builder | Initial generation failed for machinelearning_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:19 | INFO     | tool_builder | Building tool: claudeai_helper …
+2026-02-28 03:29:19 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:20 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:20 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:21 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:21 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:22 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:22 | ERROR    | tool_builder | Initial generation failed for claudeai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:22 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-02-28 03:29:22 | INFO     | main |   Built 0/5 tools successfully
+2026-02-28 03:29:22 | WARNING  | main | No tools built successfully
+2026-02-28 03:29:23 | INFO     | main | Database committed and pushed to repo
+2026-02-28 15:21:25 | INFO     | main | ============================================================
+2026-02-28 15:21:25 | INFO     | main | AutoAIForge starting run: 2026-02-28T15:21:25.578207+00:00
+2026-02-28 15:21:25 | INFO     | main | ============================================================
+2026-02-28 15:21:25 | INFO     | main | [STEP 1/6] News Scraping
+2026-02-28 15:21:25 | INFO     | youtube_scraper | YouTube client ready
+2026-02-28 15:21:26 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-02-28 15:21:26 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-02-28 15:21:27 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-02-28 15:21:27 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-02-28 15:21:27 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-02-28 15:21:28 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 47 results (quota used: 600)
+2026-02-28 15:21:28 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-02-28 15:21:28 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-02-28 15:21:28 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-02-28 15:21:29 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-02-28 15:21:29 | INFO     | youtube_scraper | YouTube 'open source LLM': 32 results (quota used: 1100)
+2026-02-28 15:21:30 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-02-28 15:21:30 | INFO     | youtube_scraper | YouTube 'vector database AI': 23 results (quota used: 1300)
+2026-02-28 15:21:30 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-02-28 15:21:30 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-02-28 15:21:31 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-02-28 15:21:31 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-02-28 15:21:31 | INFO     | youtube_scraper | YouTube 'local LLM': 25 results (quota used: 1800)
+2026-02-28 15:21:32 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-02-28 15:21:32 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-02-28 15:21:32 | INFO     | youtube_scraper | YouTube total: 779 items, quota used: 2000
+2026-02-28 15:21:32 | INFO     | main |   YouTube: 733 items
+2026-02-28 15:21:32 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-02-28 15:21:37 | INFO     | rss_scraper | HackerNews: 181 items
+2026-02-28 15:21:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-02-28 15:21:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-02-28 15:21:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-02-28 15:21:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-02-28 15:21:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-02-28 15:21:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-02-28 15:21:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-02-28 15:21:44 | INFO     | rss_scraper | Reddit: 0 items
+2026-02-28 15:21:50 | INFO     | rss_scraper | ArXiv: 106 items
+2026-02-28 15:21:54 | INFO     | rss_scraper | Dev.to: 196 items
+2026-02-28 15:21:55 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-02-28 15:21:55 | INFO     | rss_scraper | Free sources total: 533 unique items
+2026-02-28 15:21:55 | INFO     | main |   RSS/API sources: 533 items
+2026-02-28 15:21:55 | INFO     | main |   Total scraped: 1266 items
+2026-02-28 15:21:55 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-02-28 15:21:55 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-02-28 15:21:55 | INFO     | db_manager | Purged 0 old news items
+2026-02-28 15:21:55 | INFO     | db_manager | Inserted 913/1266 news items
+2026-02-28 15:21:55 | INFO     | main |   SQLite: 913 new items (total: 1466)
+2026-02-28 15:22:00 | INFO     | vector_store | Loading sentence-transformer model …
+2026-02-28 15:22:00 | INFO     | vector_store | VectorStore ready
+2026-02-28 15:22:23 | INFO     | vector_store | Indexed 1466 items into vector store
+2026-02-28 15:22:23 | INFO     | main |   Vector store: 1466 items indexed
+2026-02-28 15:22:23 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-02-28 15:22:23 | INFO     | topic_analyzer | Analyzing 1466 items for top 10 topics …
+2026-02-28 15:22:23 | ERROR    | llm_client | github_models HTTP error: 413 Client Error: Payload Too Large for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"tokens_limit_reached","message":"Request body too large for gpt-4o model. Max size: 8000 tokens.","details":"Request body too large for gpt-4o model. Max size: 8000 tokens."}}
+2026-02-28 15:22:24 | ERROR    | llm_client | github_models HTTP error: 413 Client Error: Payload Too Large for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"tokens_limit_reached","message":"Request body too large for gpt-4o model. Max size: 8000 tokens.","details":"Request body too large for gpt-4o model. Max size: 8000 tokens."}}
+2026-02-28 15:22:24 | ERROR    | llm_client | groq HTTP error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-02-28 15:22:25 | ERROR    | llm_client | groq HTTP error: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-02-28 15:22:25 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 15:22:26 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 15:22:26 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-02-28 15:22:26 | INFO     | main |   Found 10 topics:
+2026-02-28 15:22:26 | INFO     | main |      1. [10/10] AI
+2026-02-28 15:22:26 | INFO     | main |      2. [10/10] ai
+2026-02-28 15:22:26 | INFO     | main |      3. [10/10] github trending AI
+2026-02-28 15:22:26 | INFO     | main |      4. [10/10] machinelearning
+2026-02-28 15:22:26 | INFO     | main |      5. [10/10] LLM
+2026-02-28 15:22:26 | INFO     | main |      6. [10/10] Claude
+2026-02-28 15:22:26 | INFO     | main |      7. [10/10] llm
+2026-02-28 15:22:26 | INFO     | main |      8. [10/10] AI news
+2026-02-28 15:22:26 | INFO     | main |      9. [10/10] Claude AI updates
+2026-02-28 15:22:26 | INFO     | main |     10. [10/10] open source AI tools
+2026-02-28 15:22:26 | INFO     | main | [STEP 4/6] Idea Generation
+2026-02-28 15:22:33 | DEBUG    | llm_client | LLM response from github_models (3305 chars)
+2026-02-28 15:22:33 | INFO     | idea_generator | Generated 3 ideas for topic: AI
+2026-02-28 15:22:37 | DEBUG    | llm_client | LLM response from github_models (2284 chars)
+2026-02-28 15:22:37 | INFO     | idea_generator | Generated 2 ideas for topic: ai
+2026-02-28 15:22:37 | INFO     | idea_generator | Total ideas generated: 5
+2026-02-28 15:22:37 | INFO     | main |   Generated 5 tool ideas:
+2026-02-28 15:22:37 | INFO     | main |     • ai_prompt_optimizer: A CLI tool that helps developers optimize prompts for large language models (LLM
+2026-02-28 15:22:37 | INFO     | main |     • dataset_sanitizer: A Python script for preprocessing and sanitizing text datasets used for training
+2026-02-28 15:22:37 | INFO     | main |     • ai_model_profiling_tool: A utility to profile AI model behavior by benchmarking inference time, memory us
+2026-02-28 15:22:37 | INFO     | main |     • ai_prompt_optimizer: This tool helps AI developers fine-tune and optimize prompts for generative AI m
+2026-02-28 15:22:37 | INFO     | main |     • dataset_bias_detector: This tool scans AI training datasets for potential biases using statistical anal
+2026-02-28 15:22:37 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-02-28 15:22:37 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-02-28 15:22:43 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-02-28 15:22:43 | INFO     | tool_builder | Building tool: ai_prompt_optimizer …
+2026-02-28 15:22:54 | DEBUG    | llm_client | LLM response from github_models (7081 chars)
+2026-02-28 15:22:54 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pandas==1.5.3']
+2026-02-28 15:23:04 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_prompt_optimizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:04 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:23:13 | DEBUG    | llm_client | LLM response from github_models (6780 chars)
+2026-02-28 15:23:13 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'pytest']
+2026-02-28 15:23:13 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_prompt_optimizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:13 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:23:24 | DEBUG    | llm_client | LLM response from github_models (8613 chars)
+2026-02-28 15:23:24 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'pytest']
+2026-02-28 15:23:25 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_prompt_optimizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:25 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:23:35 | DEBUG    | llm_client | LLM response from github_models (8303 chars)
+2026-02-28 15:23:35 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport os\nimport pandas as pd\nimport openai\nimport importlib.util\nfrom typing import List, Callable\n\ndef load_prompts(file_path: str) -> List[str]:\n    \"\"\"Load prompts from a JSON or TXT file.\"\"\"\n    if not os.path.exists(file_path):\n        
+Expecting property name enclosed in double quotes: line 6 column 1 (char 8290)
+2026-02-28 15:23:35 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'pytest']
+2026-02-28 15:23:36 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_prompt_optimizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:36 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:23:46 | DEBUG    | llm_client | LLM response from github_models (8204 chars)
+2026-02-28 15:23:46 | DEBUG    | test_runner | Installing: ['openai', 'pandas']
+2026-02-28 15:23:47 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_prompt_optimizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:47 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_prompt_optimizer.py _________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:23:47 | ERROR    | tool_builder | ❌ ai_prompt_optimizer failed after 5 loops
+2026-02-28 15:23:47 | INFO     | tool_builder | Building tool: dataset_sanitizer …
+2026-02-28 15:23:56 | DEBUG    | llm_client | LLM response from github_models (5978 chars)
+2026-02-28 15:23:56 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'nltk==3.8.1']
+2026-02-28 15:23:59 | WARNING  | test_runner | Tests FAILED for dataset_sanitizer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_sanitizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:23:59 | WARNING  | tool_builder | ⚠️  dataset_sanitizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:24:06 | DEBUG    | llm_client | LLM response from github_models (7138 chars)
+2026-02-28 15:24:06 | DEBUG    | test_runner | Installing: ['pandas', 'nltk']
+2026-02-28 15:24:07 | WARNING  | test_runner | Tests FAILED for dataset_sanitizer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_sanitizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:24:07 | WARNING  | tool_builder | ⚠️  dataset_sanitizer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:24:15 | DEBUG    | llm_client | LLM response from github_models (6574 chars)
+2026-02-28 15:24:15 | DEBUG    | test_runner | Installing: ['pandas', 'nltk']
+2026-02-28 15:24:15 | WARNING  | test_runner | Tests FAILED for dataset_sanitizer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_sanitizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:24:15 | WARNING  | tool_builder | ⚠️  dataset_sanitizer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:24:22 | DEBUG    | llm_client | LLM response from github_models (6896 chars)
+2026-02-28 15:24:22 | DEBUG    | test_runner | Installing: ['pandas', 'nltk']
+2026-02-28 15:24:23 | WARNING  | test_runner | Tests FAILED for dataset_sanitizer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_sanitizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:24:23 | WARNING  | tool_builder | ⚠️  dataset_sanitizer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:24:30 | DEBUG    | llm_client | LLM response from github_models (6567 chars)
+2026-02-28 15:24:30 | DEBUG    | test_runner | Installing: ['pandas', 'nltk']
+2026-02-28 15:24:31 | WARNING  | test_runner | Tests FAILED for dataset_sanitizer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_sanitizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-02-28 15:24:31 | WARNING  | tool_builder | ⚠️  dataset_sanitizer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_dataset_sanitizer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-02-28 15:24:31 | ERROR    | tool_builder | ❌ dataset_sanitizer failed after 5 loops
+2026-02-28 15:24:31 | INFO     | tool_builder | Building tool: ai_model_profiling_tool …
+2026-02-28 15:24:40 | DEBUG    | llm_client | LLM response from github_models (6061 chars)
+2026-02-28 15:24:40 | DEBUG    | test_runner | Installing: ['psutil==5.9.5', 'transformers==4.33.3', 'torch==2.0.1']
+2026-02-28 15:25:44 | WARNING  | test_runner | Tests FAILED for ai_model_profiling_tool:
+test_ai_model_profiling_tool.py::test_load_test_data FAILED              [ 66%]
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   AttributeError: '_patch' object has no attribute 'return_value'
+E   AttributeError: 'list' object has no attribute 'to'
+    raise RuntimeError(f"Error during profiling: {e}")
+E   RuntimeError: Error during profiling: 'list' object has no attribute 'to'
+FAILED test_ai_model_profiling_tool.py::test_load_test_data - AttributeError: '_patch' object has no attribute 'return_value'
+FAILED test_ai_model_profiling_tool.py::test_profile_model - RuntimeError: Error during profiling: 'list' object has no attribute 'to'
+2026-02-28 15:25:44 | WARNING  | tool_builder | ⚠️  ai_model_profiling_tool tests failed (loop 1/5) — test_ai_model_profiling_tool.py::test_load_test_data FAILED              [ 66%]
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   AttributeError: '_patch' object has 
+2026-02-28 15:25:52 | DEBUG    | llm_client | LLM response from github_models (6221 chars)
+2026-02-28 15:25:52 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'psutil']
+2026-02-28 15:25:55 | WARNING  | test_runner | Tests FAILED for ai_model_profiling_tool:
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_ai_model_profiling_tool.py::test_profile_model - NameError: name 'torch' is not defined
+2026-02-28 15:25:55 | WARNING  | tool_builder | ⚠️  ai_model_profiling_tool tests failed (loop 2/5) — test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_ai_model_profiling_tool.py::test_profile_model - NameError: name 
+2026-02-28 15:26:03 | DEBUG    | llm_client | LLM response from github_models (6639 chars)
+2026-02-28 15:26:03 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport timeit\nimport psutil\nimport torch\nfrom transformers import AutoModelForSequenceClassification, AutoTokenizer\n\ndef load_model_and_tokenizer(model_name, device):\n    \"\"\"Load the model and tokenizer.\"\"\"\n    try:\n        tokenizer = AutoTok
+Expecting ',' delimiter: line 3 column 868 (char 3884)
+2026-02-28 15:26:03 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'psutil']
+2026-02-28 15:26:05 | WARNING  | test_runner | Tests FAILED for ai_model_profiling_tool:
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_ai_model_profiling_tool.py::test_profile_model - NameError: name 'torch' is not defined
+2026-02-28 15:26:05 | WARNING  | tool_builder | ⚠️  ai_model_profiling_tool tests failed (loop 3/5) — test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_ai_model_profiling_tool.py::test_profile_model - NameError: name 
+2026-02-28 15:26:13 | DEBUG    | llm_client | LLM response from github_models (6515 chars)
+2026-02-28 15:26:13 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'psutil']
+2026-02-28 15:26:16 | WARNING  | test_runner | Tests FAILED for ai_model_profiling_tool:
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+    assert results[0]["response_outputs"] == [[0.1, 0.9]]
+E   assert [[0.100000001...999761581421]] == [[0.1, 0.9]]
+FAILED test_ai_model_profiling_tool.py::test_profile_model - assert [[0.100000001...999761581421]] == [[0.1, 0.9]]
+2026-02-28 15:26:16 | WARNING  | tool_builder | ⚠️  ai_model_profiling_tool tests failed (loop 4/5) — test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+    assert results[0]["response_outputs"] == [[0.1, 0.9]]
+E   assert [[0.100000001...999761581421]] == [[0.1, 0.9]]
+FAIL
+2026-02-28 15:26:24 | DEBUG    | llm_client | LLM response from github_models (6540 chars)
+2026-02-28 15:26:24 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'psutil']
+2026-02-28 15:26:27 | WARNING  | test_runner | Tests FAILED for ai_model_profiling_tool:
+test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+    assert pytest.approx(results[0]["response_outputs"]) == [[0.1, 0.9]]
+E   TypeError: pytest.approx() does not support nested data structures: [0.10000000149011612, 0.8999999761581421] at index 0
+FAILED test_ai_model_profiling_tool.py::test_profile_model - TypeError: pytest.approx() does not support nested data structures: [0.10000000149011612, 0.8999999761581421] at index 0
+2026-02-28 15:26:27 | WARNING  | tool_builder | ⚠️  ai_model_profiling_tool tests failed (loop 5/5) — test_ai_model_profiling_tool.py::test_profile_model FAILED               [100%]
+    assert pytest.approx(results[0]["response_outputs"]) == [[0.1, 0.9]]
+E   TypeError: pytest.approx() does not support
+2026-02-28 15:26:27 | ERROR    | tool_builder | ❌ ai_model_profiling_tool failed after 5 loops
+2026-02-28 15:26:27 | INFO     | tool_builder | Building tool: ai_prompt_optimizer …
+2026-02-28 15:26:41 | DEBUG    | llm_client | LLM response from github_models (7146 chars)
+2026-02-28 15:26:41 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'nltk==3.8.1', 'textstat==0.7.3']
+2026-02-28 15:26:43 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+test_ai_prompt_optimizer.py::test_evaluate_prompt_success FAILED         [ 33%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error while evaluating the prompt: {e}")
+E   RuntimeError: Error while evaluating the prompt: 
+FAILED test_ai_prompt_optimizer.py::test_evaluate_prompt_success - RuntimeError: Error while evaluating the prompt: 
+2026-02-28 15:26:43 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 1/5) — test_ai_prompt_optimizer.py::test_evaluate_prompt_success FAILED         [ 33%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error while evaluating the prompt: 
+2026-02-28 15:27:38 | ERROR    | llm_client | github_models HTTP error: 503 Server Error: Service Unavailable for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"temporary_upstream_failure","message":"Temporary upstream failure occurred: Failed to reach github auth endpoint","details":"Temporary upstream failure occurred: Failed to reach github auth endpoint"}}
+2026-02-28 15:27:48 | DEBUG    | llm_client | LLM response from github_models (7087 chars)
+2026-02-28 15:27:48 | DEBUG    | test_runner | Installing: ['openai', 'nltk', 'textstat']
+2026-02-28 15:27:49 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+test_ai_prompt_optimizer.py::test_evaluate_prompt_success FAILED         [ 33%]
+    assert result["metrics"]["sentence_count"] == 2
+E   assert 1 == 2
+FAILED test_ai_prompt_optimizer.py::test_evaluate_prompt_success - assert 1 == 2
+2026-02-28 15:27:49 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 2/5) — test_ai_prompt_optimizer.py::test_evaluate_prompt_success FAILED         [ 33%]
+    assert result["metrics"]["sentence_count"] == 2
+E   assert 1 == 2
+FAILED test_ai_prompt_optimizer.py::test_evaluate_
+2026-02-28 15:27:49 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-02-28 15:28:58 | DEBUG    | llm_client | LLM response from github_models (7001 chars)
+2026-02-28 15:28:58 | DEBUG    | test_runner | Installing: ['openai', 'nltk', 'textstat']
+2026-02-28 15:28:59 | INFO     | test_runner | Tests PASSED for ai_prompt_optimizer
+2026-02-28 15:28:59 | INFO     | tool_builder | ✅ ai_prompt_optimizer passed tests on loop 3
+2026-02-28 15:28:59 | INFO     | tool_builder | Building tool: dataset_bias_detector …
+2026-02-28 15:29:14 | DEBUG    | llm_client | LLM response from github_models (7458 chars)
+2026-02-28 15:29:14 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'matplotlib==3.7.2', 'scipy==1.11.3']
+2026-02-28 15:29:27 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+test_dataset_bias_detector.py::test_load_dataset_csv FAILED              [ 14%]
+test_dataset_bias_detector.py::test_load_dataset_json FAILED             [ 28%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] FAILED [ 85%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.csv
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.json
+________ test_load_dataset_exceptions[unsupported_file.txt-ValueError] _________
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: unsupported_file.txt
+FAILED test_dataset_bias_detector.py::test_load_dataset_csv - FileNotFoundError: File not found: test.csv
+FAILED test_dataset_bias_detector.py::test_load_dataset_json - FileNotFoundError: File not found: test.json
+FAILED test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] - FileNotFoundError: File not found: unsupported_file.txt
+2026-02-28 15:29:27 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 1/5) — test_dataset_bias_detector.py::test_load_dataset_csv FAILED              [ 14%]
+test_dataset_bias_detector.py::test_load_dataset_json FAILED             [ 28%]
+test_dataset_bias_detector.py::test_load
+2026-02-28 15:29:36 | DEBUG    | llm_client | LLM response from github_models (6607 chars)
+2026-02-28 15:29:36 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scipy']
+2026-02-28 15:29:38 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] FAILED [ 85%]
+________ test_load_dataset_exceptions[unsupported_file.txt-ValueError] _________
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: unsupported_file.txt
+FAILED test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] - FileNotFoundError: File not found: unsupported_file.txt
+2026-02-28 15:29:38 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 2/5) — test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueErro
+2026-02-28 15:29:46 | DEBUG    | llm_client | LLM response from github_models (7029 chars)
+2026-02-28 15:29:46 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scipy']
+2026-02-28 15:29:48 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] FAILED [ 85%]
+________ test_load_dataset_exceptions[unsupported_file.txt-ValueError] _________
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: unsupported_file.txt
+FAILED test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] - FileNotFoundError: File not found: unsupported_file.txt
+2026-02-28 15:29:48 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 3/5) — test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueErro
+2026-02-28 15:29:55 | DEBUG    | llm_client | LLM response from github_models (6742 chars)
+2026-02-28 15:29:55 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scipy']
+2026-02-28 15:29:57 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] FAILED [ 85%]
+________ test_load_dataset_exceptions[unsupported_file.txt-ValueError] _________
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: unsupported_file.txt
+FAILED test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueError] - FileNotFoundError: File not found: unsupported_file.txt
+2026-02-28 15:29:57 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 4/5) — test_dataset_bias_detector.py::test_load_dataset_exceptions[missing_file.csv-FileNotFoundError] PASSED [ 71%]
+test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt-ValueErro
+2026-02-28 15:30:03 | DEBUG    | llm_client | LLM response from github_models (6684 chars)
+2026-02-28 15:30:03 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scipy']
+2026-02-28 15:30:05 | INFO     | test_runner | Tests PASSED for dataset_bias_detector
+2026-02-28 15:30:05 | INFO     | tool_builder | ✅ dataset_bias_detector passed tests on loop 5
+2026-02-28 15:30:05 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-02-28 15:30:05 | INFO     | main |   Built 2/5 tools successfully
+2026-02-28 15:30:05 | INFO     | main |     ✅ ai_prompt_optimizer (loops: 3)
+2026-02-28 15:30:05 | INFO     | main |     ✅ dataset_bias_detector (loops: 5)
+2026-02-28 15:30:05 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-02-28 15:30:05 | ERROR    | github_publisher | GitHub init failed: Resource not accessible by integration: 403 {"message": "Resource not accessible by integration", "documentation_url": "https://docs.github.com/rest/users/users#get-the-authenticated-user", "status": "403"}
+2026-02-28 15:30:05 | INFO     | main |   Published 0 tools:
+2026-02-28 15:30:06 | INFO     | main | Database committed and pushed to repo
+2026-02-28 15:30:06 | INFO     | main | 
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:06 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:06 | INFO     | main |   Date:            2026-02-28
+2026-02-28 15:30:06 | INFO     | main |   Items scraped:   1266
+2026-02-28 15:30:06 | INFO     | main |   Items stored:    913
+2026-02-28 15:30:06 | INFO     | main |   Topics found:    10
+2026-02-28 15:30:06 | INFO     | main |   Ideas generated: 5
+2026-02-28 15:30:06 | INFO     | main |   Tools built:     2
+2026-02-28 15:30:06 | INFO     | main |   Tools published: 0
+2026-02-28 15:30:06 | INFO     | main |   Elapsed:         520.4s
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:07 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
