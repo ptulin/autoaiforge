@@ -1,0 +1,9 @@
+{
+  "tool_name": "smart_code_review",
+  "display_name": "Smart Code Review Bot",
+  "description": "A Python library that integrates AI coding assistants to perform automated code reviews. It analyzes code files, identifies potential bugs, inefficiencies, and style issues, and provides actionable feedback. This is especially useful for teams without dedicated senior reviewers.",
+  "topic": "AI Coding Assistants",
+  "generated": "2026-02-28T15:58:53.267004+00:00",
+  "loops_needed": 2,
+  "tests_passed": true
+}

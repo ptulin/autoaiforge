@@ -1,0 +1,9 @@
+{
+  "tool_name": "ui_code_exporter",
+  "display_name": "UI Code Exporter",
+  "description": "This tool leverages OpenAI Codex to generate production-ready front-end code (HTML/CSS/JS) directly from exported UI/UX design files (e.g., JSON or SVG from Figma). It simplifies the process of turning designs into functional code with AI-driven suggestions for best practices.",
+  "topic": "AI-Driven UI/UX Design",
+  "generated": "2026-02-28T15:58:53.267004+00:00",
+  "loops_needed": 2,
+  "tests_passed": true
+}

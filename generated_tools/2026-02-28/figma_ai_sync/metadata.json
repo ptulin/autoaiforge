@@ -1,0 +1,9 @@
+{
+  "tool_name": "figma_ai_sync",
+  "display_name": "Figma AI Sync Tool",
+  "description": "This tool integrates with the Figma API and AI models like OpenAI Codex to allow seamless export, transformation, and re-import of design elements. It enables developers to automate updates to design systems, optimize designs using AI, and sync changes back to Figma.",
+  "topic": "AI-Driven UI/UX Design",
+  "generated": "2026-02-28T15:58:53.267004+00:00",
+  "loops_needed": 1,
+  "tests_passed": true
+}

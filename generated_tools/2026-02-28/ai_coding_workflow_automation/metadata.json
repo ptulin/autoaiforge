@@ -1,0 +1,9 @@
+{
+  "tool_name": "ai_coding_workflow_automation",
+  "display_name": "AI Coding Workflow Automation",
+  "description": "An automation tool that connects AI coding assistants like Claude Code to custom workflows. It allows developers to set up triggers (e.g., Git commits, file changes) that automatically send code snippets to the AI for suggestions or improvements, streamlining repetitive coding tasks.",
+  "topic": "AI Coding Assistants",
+  "generated": "2026-02-28T15:58:53.267004+00:00",
+  "loops_needed": 3,
+  "tests_passed": true
+}

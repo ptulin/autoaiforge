@@ -506,3 +506,192 @@ test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt
 2026-02-28 15:30:06 | INFO     | main |   Elapsed:         520.4s
 2026-02-28 15:30:06 | INFO     | main | ============================================================
 2026-02-28 15:30:07 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
+2026-02-28 15:58:53 | INFO     | main | ============================================================
+2026-02-28 15:58:53 | INFO     | main | AutoAIForge starting run: 2026-02-28T15:58:53.267004+00:00
+2026-02-28 15:58:53 | INFO     | main | ============================================================
+2026-02-28 15:58:53 | INFO     | main | [STEP 1/6] News Scraping
+2026-02-28 15:58:53 | INFO     | youtube_scraper | YouTube client ready
+2026-02-28 15:58:53 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-02-28 15:58:54 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-02-28 15:58:54 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-02-28 15:58:54 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-02-28 15:58:55 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-02-28 15:58:55 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 46 results (quota used: 600)
+2026-02-28 15:58:55 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-02-28 15:58:56 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-02-28 15:58:56 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-02-28 15:58:56 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-02-28 15:58:56 | INFO     | youtube_scraper | YouTube 'open source LLM': 32 results (quota used: 1100)
+2026-02-28 15:58:57 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-02-28 15:58:57 | INFO     | youtube_scraper | YouTube 'vector database AI': 23 results (quota used: 1300)
+2026-02-28 15:58:58 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-02-28 15:58:58 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-02-28 15:58:58 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-02-28 15:58:58 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-02-28 15:58:59 | INFO     | youtube_scraper | YouTube 'local LLM': 38 results (quota used: 1800)
+2026-02-28 15:58:59 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-02-28 15:58:59 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-02-28 15:58:59 | INFO     | youtube_scraper | YouTube total: 841 items, quota used: 2000
+2026-02-28 15:58:59 | INFO     | main |   YouTube: 792 items
+2026-02-28 15:58:59 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-02-28 15:59:04 | INFO     | rss_scraper | HackerNews: 184 items
+2026-02-28 15:59:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-02-28 15:59:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-02-28 15:59:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-02-28 15:59:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-02-28 15:59:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-02-28 15:59:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-02-28 15:59:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-02-28 15:59:12 | INFO     | rss_scraper | Reddit: 0 items
+2026-02-28 15:59:17 | INFO     | rss_scraper | ArXiv: 106 items
+2026-02-28 15:59:21 | INFO     | rss_scraper | Dev.to: 195 items
+2026-02-28 15:59:22 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-02-28 15:59:22 | INFO     | rss_scraper | Free sources total: 535 unique items
+2026-02-28 15:59:22 | INFO     | main |   RSS/API sources: 535 items
+2026-02-28 15:59:22 | INFO     | main |   Total scraped: 1327 items
+2026-02-28 15:59:22 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-02-28 15:59:22 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-02-28 15:59:22 | INFO     | db_manager | Purged 0 old news items
+2026-02-28 15:59:22 | INFO     | db_manager | Inserted 144/1327 news items
+2026-02-28 15:59:22 | INFO     | main |   SQLite: 144 new items (total: 1610)
+2026-02-28 15:59:27 | INFO     | vector_store | Loading sentence-transformer model …
+2026-02-28 15:59:28 | INFO     | vector_store | VectorStore ready
+2026-02-28 15:59:46 | INFO     | vector_store | Indexed 1610 items into vector store
+2026-02-28 15:59:46 | INFO     | main |   Vector store: 1610 items indexed
+2026-02-28 15:59:46 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-02-28 15:59:46 | INFO     | topic_analyzer | Analyzing 1610 items for top 10 topics …
+2026-02-28 15:59:55 | DEBUG    | llm_client | LLM response from github_models (4571 chars)
+2026-02-28 15:59:55 | INFO     | topic_analyzer | Identified 10 topics
+2026-02-28 15:59:55 | INFO     | main |   Found 10 topics:
+2026-02-28 15:59:55 | INFO     | main |      1. [10/10] AI Coding Assistants
+2026-02-28 15:59:55 | INFO     | main |      2. [9/10] AI-Driven UI/UX Design
+2026-02-28 15:59:55 | INFO     | main |      3. [9/10] AI Hallucination Mitigation
+2026-02-28 15:59:55 | INFO     | main |      4. [9/10] Open-Source AI Coding Models
+2026-02-28 15:59:55 | INFO     | main |      5. [8/10] AI Automation Frameworks
+2026-02-28 15:59:55 | INFO     | main |      6. [8/10] AI-Powered Email Automation
+2026-02-28 15:59:55 | INFO     | main |      7. [8/10] AI Agents for Multi-Platform Control
+2026-02-28 15:59:55 | INFO     | main |      8. [8/10] AI-Powered Video Generation
+2026-02-28 15:59:55 | INFO     | main |      9. [8/10] AI in Real-Time Code Debugging
+2026-02-28 15:59:55 | INFO     | main |     10. [7/10] Programmable Photonic AI Hardware
+2026-02-28 15:59:55 | INFO     | main | [STEP 4/6] Idea Generation
+2026-02-28 16:00:01 | DEBUG    | llm_client | LLM response from github_models (3478 chars)
+2026-02-28 16:00:01 | INFO     | idea_generator | Generated 3 ideas for topic: AI Coding Assistants
+2026-02-28 16:00:05 | DEBUG    | llm_client | LLM response from github_models (2498 chars)
+2026-02-28 16:00:05 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Driven UI/UX Design
+2026-02-28 16:00:05 | INFO     | idea_generator | Total ideas generated: 5
+2026-02-28 16:00:05 | INFO     | main |   Generated 5 tool ideas:
+2026-02-28 16:00:05 | INFO     | main |     • ai_code_suggestion_cli: A CLI tool that integrates with AI coding assistants like Claude Code to provide
+2026-02-28 16:00:05 | INFO     | main |     • smart_code_review: A Python library that integrates AI coding assistants to perform automated code 
+2026-02-28 16:00:05 | INFO     | main |     • ai_coding_workflow_automation: An automation tool that connects AI coding assistants like Claude Code to custom
+2026-02-28 16:00:05 | INFO     | main |     • figma_ai_sync: This tool integrates with the Figma API and AI models like OpenAI Codex to allow
+2026-02-28 16:00:05 | INFO     | main |     • ui_code_exporter: This tool leverages OpenAI Codex to generate production-ready front-end code (HT
+2026-02-28 16:00:05 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-02-28 16:00:05 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-02-28 16:00:15 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-02-28 16:00:15 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-02-28 16:00:15 | INFO     | tool_builder | Building tool: ai_code_suggestion_cli …
+2026-02-28 16:00:25 | DEBUG    | llm_client | LLM response from github_models (6115 chars)
+2026-02-28 16:00:25 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'requests==2.31.0', 'pytest==7.4.2']
+2026-02-28 16:00:28 | WARNING  | test_runner | Tests FAILED for ai_code_suggestion_cli:
+test_ai_code_suggestion_cli.py::test_get_code_suggestion_api_error FAILED [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_ai_code_suggestion_cli.py::test_get_code_suggestion_api_error - NameError: name 'requests' is not defined
+2026-02-28 16:00:28 | WARNING  | tool_builder | ⚠️  ai_code_suggestion_cli tests failed (loop 1/5) — test_ai_code_suggestion_cli.py::test_get_code_suggestion_api_error FAILED [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED
+2026-02-28 16:00:35 | DEBUG    | llm_client | LLM response from github_models (5637 chars)
+2026-02-28 16:00:35 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-02-28 16:00:35 | INFO     | test_runner | Tests PASSED for ai_code_suggestion_cli
+2026-02-28 16:00:35 | INFO     | tool_builder | ✅ ai_code_suggestion_cli passed tests on loop 2
+2026-02-28 16:00:35 | INFO     | tool_builder | Building tool: smart_code_review …
+2026-02-28 16:00:45 | DEBUG    | llm_client | LLM response from github_models (6033 chars)
+2026-02-28 16:00:45 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pygments==2.15.1']
+2026-02-28 16:00:47 | WARNING  | test_runner | Tests FAILED for smart_code_review:
+test_smart_code_review.py::test_review_code_valid_file FAILED            [ 33%]
+test_smart_code_review.py::test_review_code_syntax_error FAILED          [ 66%]
+test_smart_code_review.py::test_review_directory FAILED                  [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: /mock/test.py
+FAILED test_smart_code_review.py::test_review_code_valid_file - FileNotFoundError: File not found: test.py
+FAILED test_smart_code_review.py::test_review_code_syntax_error - FileNotFoundError: File not found: test.py
+FAILED test_smart_code_review.py::test_review_directory - FileNotFoundError: File not found: /mock/test.py
+2026-02-28 16:00:47 | WARNING  | tool_builder | ⚠️  smart_code_review tests failed (loop 1/5) — test_smart_code_review.py::test_review_code_valid_file FAILED            [ 33%]
+test_smart_code_review.py::test_review_code_syntax_error FAILED          [ 66%]
+test_smart_code_review.py::test_review_d
+2026-02-28 16:00:55 | DEBUG    | llm_client | LLM response from github_models (6122 chars)
+2026-02-28 16:00:55 | DEBUG    | test_runner | Installing: ['openai', 'pygments']
+2026-02-28 16:00:56 | INFO     | test_runner | Tests PASSED for smart_code_review
+2026-02-28 16:00:56 | INFO     | tool_builder | ✅ smart_code_review passed tests on loop 2
+2026-02-28 16:00:56 | INFO     | tool_builder | Building tool: ai_coding_workflow_automation …
+2026-02-28 16:01:09 | DEBUG    | llm_client | LLM response from github_models (7123 chars)
+2026-02-28 16:01:09 | DEBUG    | test_runner | Installing: ['watchdog==3.0.0', 'requests==2.31.0', 'pyyaml==6.0']
+2026-02-28 16:01:10 | WARNING  | test_runner | Tests FAILED for ai_coding_workflow_automation:
+test_ai_coding_workflow_automation.py::test_load_config_valid FAILED     [ 33%]
+    raise ConfigError(f"Configuration file not found: {self.config_path}")
+E   ai_coding_workflow_automation.ConfigError: Configuration file not found: config.yml
+FAILED test_ai_coding_workflow_automation.py::test_load_config_valid - ai_coding_workflow_automation.ConfigError: Configuration file not found: config.yml
+2026-02-28 16:01:10 | WARNING  | tool_builder | ⚠️  ai_coding_workflow_automation tests failed (loop 1/5) — test_ai_coding_workflow_automation.py::test_load_config_valid FAILED     [ 33%]
+    raise ConfigError(f"Configuration file not found: {self.config_path}")
+E   ai_coding_workflow_automation.ConfigError
+2026-02-28 16:01:19 | DEBUG    | llm_client | LLM response from github_models (7027 chars)
+2026-02-28 16:01:19 | DEBUG    | test_runner | Installing: ['PyYAML', 'watchdog', 'requests']
+2026-02-28 16:01:20 | WARNING  | test_runner | Tests FAILED for ai_coding_workflow_automation:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_ai_coding_workflow_automation.py ____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    from ai_coding_workflow_automation import AIWorkflowAutomation, ConfigError, AIWorkflowHandler
+E   SyntaxError: unterminated string literal (detected at line 53)
+ERROR test_ai_coding_workflow_automation.py
+2026-02-28 16:01:20 | WARNING  | tool_builder | ⚠️  ai_coding_workflow_automation tests failed (loop 2/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_ai_coding_workflow_automation.py ____________
+../_venv/lib/python3.11/site-packages/
+2026-02-28 16:01:26 | DEBUG    | llm_client | LLM response from github_models (6862 chars)
+2026-02-28 16:01:26 | DEBUG    | test_runner | Installing: ['pyyaml', 'watchdog', 'pytest']
+2026-02-28 16:01:27 | INFO     | test_runner | Tests PASSED for ai_coding_workflow_automation
+2026-02-28 16:01:27 | INFO     | tool_builder | ✅ ai_coding_workflow_automation passed tests on loop 3
+2026-02-28 16:01:27 | INFO     | tool_builder | Building tool: figma_ai_sync …
+2026-02-28 16:01:36 | DEBUG    | llm_client | LLM response from github_models (5660 chars)
+2026-02-28 16:01:36 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'openai==0.27.8', 'python-dotenv==1.0.0']
+2026-02-28 16:01:37 | INFO     | test_runner | Tests PASSED for figma_ai_sync
+2026-02-28 16:01:37 | INFO     | tool_builder | ✅ figma_ai_sync passed tests on loop 1
+2026-02-28 16:01:37 | INFO     | tool_builder | Building tool: ui_code_exporter …
+2026-02-28 16:01:45 | DEBUG    | llm_client | LLM response from github_models (5629 chars)
+2026-02-28 16:01:45 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'svgwrite==1.4.1', 'pytest==7.4.0']
+2026-02-28 16:01:46 | WARNING  | test_runner | Tests FAILED for ui_code_exporter:
+test_ui_code_exporter.py::test_generate_code_with_ai FAILED              [ 75%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_ui_code_exporter.py::test_generate_code_with_ai - AttributeError: 'dict' object has no attribute 'choices'
+2026-02-28 16:01:46 | WARNING  | tool_builder | ⚠️  ui_code_exporter tests failed (loop 1/5) — test_ui_code_exporter.py::test_generate_code_with_ai FAILED              [ 75%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_ui_code_exporter.py::test_generate_code_with_ai
+2026-02-28 16:01:54 | DEBUG    | llm_client | LLM response from github_models (5728 chars)
+2026-02-28 16:01:54 | DEBUG    | test_runner | Installing: ['openai', 'svgwrite']
+2026-02-28 16:01:55 | INFO     | test_runner | Tests PASSED for ui_code_exporter
+2026-02-28 16:01:55 | INFO     | tool_builder | ✅ ui_code_exporter passed tests on loop 2
+2026-02-28 16:01:55 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-02-28 16:01:55 | INFO     | main |   Built 5/5 tools successfully
+2026-02-28 16:01:55 | INFO     | main |     ✅ ai_code_suggestion_cli (loops: 2)
+2026-02-28 16:01:55 | INFO     | main |     ✅ smart_code_review (loops: 2)
+2026-02-28 16:01:55 | INFO     | main |     ✅ ai_coding_workflow_automation (loops: 3)
+2026-02-28 16:01:55 | INFO     | main |     ✅ figma_ai_sync (loops: 1)
+2026-02-28 16:01:55 | INFO     | main |     ✅ ui_code_exporter (loops: 2)
+2026-02-28 16:01:55 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-02-28 16:01:55 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved ai_code_suggestion_cli → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ai_code_suggestion_cli
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved smart_code_review → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/smart_code_review
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved ai_coding_workflow_automation → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ai_coding_workflow_automation
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved figma_ai_sync → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/figma_ai_sync
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved ui_code_exporter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ui_code_exporter
+2026-02-28 16:01:55 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-02-28 16:01:55 | INFO     | main |   Published 5 tools:
+2026-02-28 16:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ai_code_suggestion_cli
+2026-02-28 16:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/smart_code_review
+2026-02-28 16:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ai_coding_workflow_automation
+2026-02-28 16:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/figma_ai_sync
+2026-02-28 16:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-02-28/ui_code_exporter

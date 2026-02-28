@@ -1,0 +1,9 @@
+{
+  "tool_name": "ai_code_suggestion_cli",
+  "display_name": "AI Code Suggestion CLI",
+  "description": "A CLI tool that integrates with AI coding assistants like Claude Code to provide real-time code suggestions for a given function description or partial code snippet. This is useful for developers who want quick suggestions without switching to an IDE.",
+  "topic": "AI Coding Assistants",
+  "generated": "2026-02-28T15:58:53.267004+00:00",
+  "loops_needed": 2,
+  "tests_passed": true
+}
