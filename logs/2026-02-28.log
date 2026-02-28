@@ -491,3 +491,18 @@ test_dataset_bias_detector.py::test_load_dataset_exceptions[unsupported_file.txt
 2026-02-28 15:30:05 | INFO     | main | [STEP 6/6] Publishing to GitHub
 2026-02-28 15:30:05 | ERROR    | github_publisher | GitHub init failed: Resource not accessible by integration: 403 {"message": "Resource not accessible by integration", "documentation_url": "https://docs.github.com/rest/users/users#get-the-authenticated-user", "status": "403"}
 2026-02-28 15:30:05 | INFO     | main |   Published 0 tools:
+2026-02-28 15:30:06 | INFO     | main | Database committed and pushed to repo
+2026-02-28 15:30:06 | INFO     | main | 
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:06 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:06 | INFO     | main |   Date:            2026-02-28
+2026-02-28 15:30:06 | INFO     | main |   Items scraped:   1266
+2026-02-28 15:30:06 | INFO     | main |   Items stored:    913
+2026-02-28 15:30:06 | INFO     | main |   Topics found:    10
+2026-02-28 15:30:06 | INFO     | main |   Ideas generated: 5
+2026-02-28 15:30:06 | INFO     | main |   Tools built:     2
+2026-02-28 15:30:06 | INFO     | main |   Tools published: 0
+2026-02-28 15:30:06 | INFO     | main |   Elapsed:         520.4s
+2026-02-28 15:30:06 | INFO     | main | ============================================================
+2026-02-28 15:30:07 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
