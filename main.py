@@ -251,6 +251,9 @@ def run_pipeline() -> dict:
     elapsed = time.time() - start_time
     stats["elapsed_seconds"] = round(elapsed, 1)
 
+    # ── Generate tools_index.json for the website ─────────────────────────────
+    _generate_tools_index()
+
     if db:
         try:
             db.log_run(config.RUN_DATE, stats)
@@ -263,6 +266,49 @@ def run_pipeline() -> dict:
     _send_email(stats)
 
     return stats
+
+
+def _generate_tools_index():
+    """
+    Scan all generated_tools/{date}/{tool}/metadata.json files and write
+    a consolidated tools_index.json at generated_tools/tools_index.json.
+    The website fetches this file from GitHub raw URL every hour.
+    """
+    tools_dir = Path(config.TOOLS_DIR)
+    if not tools_dir.exists():
+        log.warning("No generated_tools directory found — skipping index generation")
+        return
+
+    all_tools = []
+
+    # Walk date directories (YYYY-MM-DD)
+    for date_dir in sorted(tools_dir.iterdir()):
+        if not date_dir.is_dir() or not date_dir.name.startswith("20"):
+            continue
+        for tool_dir in sorted(date_dir.iterdir()):
+            if not tool_dir.is_dir():
+                continue
+            meta_path = tool_dir / "metadata.json"
+            if not meta_path.exists():
+                continue
+            try:
+                meta = json.loads(meta_path.read_text(encoding="utf-8"))
+                all_tools.append(meta)
+            except Exception as e:
+                log.warning(f"Failed to read metadata for {tool_dir.name}: {e}")
+
+    # Sort newest first
+    all_tools.sort(key=lambda t: t.get("generated", ""), reverse=True)
+
+    index = {
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "total_tools": len(all_tools),
+        "tools": all_tools,
+    }
+
+    index_path = tools_dir / "tools_index.json"
+    index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
+    log.info(f"✅ Generated tools_index.json with {len(all_tools)} tools → {index_path}")
 
 
 def _save_db_to_git(db):
