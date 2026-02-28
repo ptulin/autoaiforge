@@ -1,0 +1,142 @@
+2026-02-28 03:28:04 | INFO     | main | ============================================================
+2026-02-28 03:28:04 | INFO     | main | AutoAIForge starting run: 2026-02-28T03:28:04.195118+00:00
+2026-02-28 03:28:04 | INFO     | main | ============================================================
+2026-02-28 03:28:04 | WARNING  | main | CONFIG WARNING: At least one LLM key required: GROQ_API_KEY | TOGETHER_API_KEY | HF_TOKEN
+2026-02-28 03:28:04 | INFO     | main | [STEP 1/6] News Scraping
+2026-02-28 03:28:04 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-02-28 03:28:04 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-02-28 03:28:04 | INFO     | main |   YouTube: 0 items
+2026-02-28 03:28:04 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-02-28 03:28:09 | INFO     | rss_scraper | HackerNews: 197 items
+2026-02-28 03:28:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-02-28 03:28:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-02-28 03:28:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-02-28 03:28:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-02-28 03:28:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-02-28 03:28:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-02-28 03:28:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-02-28 03:28:16 | INFO     | rss_scraper | Reddit: 0 items
+2026-02-28 03:28:22 | INFO     | rss_scraper | ArXiv: 106 items
+2026-02-28 03:28:27 | INFO     | rss_scraper | Dev.to: 200 items
+2026-02-28 03:28:28 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-02-28 03:28:28 | INFO     | rss_scraper | Free sources total: 553 unique items
+2026-02-28 03:28:28 | INFO     | main |   RSS/API sources: 553 items
+2026-02-28 03:28:28 | INFO     | main |   Total scraped: 553 items
+2026-02-28 03:28:28 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-02-28 03:28:28 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-02-28 03:28:28 | INFO     | db_manager | Purged 0 old news items
+2026-02-28 03:28:28 | INFO     | db_manager | Inserted 553/553 news items
+2026-02-28 03:28:28 | INFO     | main |   SQLite: 553 new items (total: 553)
+2026-02-28 03:28:33 | INFO     | vector_store | Loading sentence-transformer model …
+2026-02-28 03:28:33 | INFO     | vector_store | VectorStore ready
+2026-02-28 03:28:41 | INFO     | vector_store | Indexed 553 items into vector store
+2026-02-28 03:28:41 | INFO     | main |   Vector store: 553 items indexed
+2026-02-28 03:28:41 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-02-28 03:28:41 | INFO     | topic_analyzer | Analyzing 553 items for top 10 topics …
+2026-02-28 03:28:41 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:42 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:42 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:43 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:43 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:44 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:44 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-02-28 03:28:44 | INFO     | main |   Found 10 topics:
+2026-02-28 03:28:44 | INFO     | main |      1. [10/10] AI
+2026-02-28 03:28:44 | INFO     | main |      2. [10/10] ai
+2026-02-28 03:28:44 | INFO     | main |      3. [10/10] github trending AI
+2026-02-28 03:28:44 | INFO     | main |      4. [10/10] machinelearning
+2026-02-28 03:28:44 | INFO     | main |      5. [10/10] claudeai
+2026-02-28 03:28:44 | INFO     | main |      6. [10/10] LLM
+2026-02-28 03:28:44 | INFO     | main |      7. [10/10] Claude
+2026-02-28 03:28:44 | INFO     | main |      8. [10/10] open source AI
+2026-02-28 03:28:44 | INFO     | main |      9. [10/10] llm
+2026-02-28 03:28:44 | INFO     | main |     10. [10/10] large+language+model
+2026-02-28 03:28:44 | INFO     | main | [STEP 4/6] Idea Generation
+2026-02-28 03:28:44 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:45 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:45 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:46 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:46 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:47 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:47 | ERROR    | idea_generator | Idea generation failed for topic 'AI': All LLM providers failed. Check API keys.
+2026-02-28 03:28:47 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:48 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:48 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:49 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:49 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:50 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:50 | ERROR    | idea_generator | Idea generation failed for topic 'ai': All LLM providers failed. Check API keys.
+2026-02-28 03:28:50 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:52 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:52 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:53 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:53 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:54 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:54 | ERROR    | idea_generator | Idea generation failed for topic 'github trending AI': All LLM providers failed. Check API keys.
+2026-02-28 03:28:54 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:55 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:55 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:56 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:56 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:57 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:28:57 | ERROR    | idea_generator | Idea generation failed for topic 'machinelearning': All LLM providers failed. Check API keys.
+2026-02-28 03:28:57 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:58 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:28:58 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:59 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:28:59 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:00 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:00 | ERROR    | idea_generator | Idea generation failed for topic 'claudeai': All LLM providers failed. Check API keys.
+2026-02-28 03:29:00 | INFO     | idea_generator | Total ideas generated: 5
+2026-02-28 03:29:00 | INFO     | main |   Generated 5 tool ideas:
+2026-02-28 03:29:00 | INFO     | main |     • ai_helper: A Python utility for working with AI
+2026-02-28 03:29:00 | INFO     | main |     • ai_helper: A Python utility for working with ai
+2026-02-28 03:29:00 | INFO     | main |     • github_trending_ai_helper: A Python utility for working with github trending AI
+2026-02-28 03:29:00 | INFO     | main |     • machinelearning_helper: A Python utility for working with machinelearning
+2026-02-28 03:29:00 | INFO     | main |     • claudeai_helper: A Python utility for working with claudeai
+2026-02-28 03:29:00 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-02-28 03:29:00 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-02-28 03:29:07 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-02-28 03:29:07 | INFO     | tool_builder | Building tool: ai_helper …
+2026-02-28 03:29:07 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:08 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:08 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:09 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:09 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:10 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:10 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:10 | INFO     | tool_builder | Building tool: ai_helper …
+2026-02-28 03:29:10 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:11 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:11 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:12 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:12 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:13 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:13 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:13 | INFO     | tool_builder | Building tool: github_trending_ai_helper …
+2026-02-28 03:29:13 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:14 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:14 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:15 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:15 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:16 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:16 | ERROR    | tool_builder | Initial generation failed for github_trending_ai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:16 | INFO     | tool_builder | Building tool: machinelearning_helper …
+2026-02-28 03:29:16 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:17 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:17 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:18 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:18 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:19 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:19 | ERROR    | tool_builder | Initial generation failed for machinelearning_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:19 | INFO     | tool_builder | Building tool: claudeai_helper …
+2026-02-28 03:29:19 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:20 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"The `models` permission is required to access this endpoint","details":"The `models` permission is required to access this endpoint"}}
+2026-02-28 03:29:20 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:21 | DEBUG    | llm_client | Provider groq has no API key — skipping
+2026-02-28 03:29:21 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:22 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-02-28 03:29:22 | ERROR    | tool_builder | Initial generation failed for claudeai_helper: All LLM providers failed. Check API keys.
+2026-02-28 03:29:22 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-02-28 03:29:22 | INFO     | main |   Built 0/5 tools successfully
+2026-02-28 03:29:22 | WARNING  | main | No tools built successfully
