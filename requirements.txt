@@ -1,0 +1,29 @@
+# AutoAIForge — Python dependencies
+# All packages are free/open-source
+
+# ── LLM / API calls ──────────────────────────────────────────────────────────
+openai>=1.30.0           # Used for Groq (OpenAI-compatible endpoint)
+requests>=2.31.0
+
+# ── YouTube Data API ─────────────────────────────────────────────────────────
+google-api-python-client>=2.120.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.0
+
+# ── Embeddings & Vector DB ───────────────────────────────────────────────────
+sentence-transformers>=2.7.0
+chromadb>=0.5.0
+
+# ── GitHub publishing ────────────────────────────────────────────────────────
+PyGithub>=2.3.0
+
+# ── RSS/API scraping ─────────────────────────────────────────────────────────
+feedparser>=6.0.11
+
+# ── Testing framework ────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-timeout>=2.3.0
+pytest-mock>=3.14.0
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dateutil>=2.9.0

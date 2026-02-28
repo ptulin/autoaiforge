@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# AutoAIForge runtime
+data/chroma_db/          # ChromaDB rebuilt each run — not committed
+data/sandbox/            # Tool sandbox — ephemeral
+generated_tools/         # Local copies of generated tools
+logs/*.log               # Committed via git from Actions, but not needed locally
+
+# Keep SQLite DB (state persistence between runs)
+!data/news.db
+!data/.gitkeep
+
+# macOS
+.DS_Store
