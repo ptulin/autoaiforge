@@ -1,0 +1,12 @@
+{
+  "tool_name": "claude_task_scheduler",
+  "display_name": "Claude Task Scheduler",
+  "description": "This CLI tool enables developers to schedule and manage tasks within Claude AI's ecosystem. It leverages the new task scheduling and unified memory features to create recurring or one-off AI-driven tasks, monitor their status, and retrieve results. This is useful for automating repetitive workflows like data analysis, report generation, or email summarization using Claude.",
+  "topic": "Claude AI Workflow Automation",
+  "date": "2026-03-01",
+  "generated": "2026-03-01T04:19:41.334246+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/claude_task_scheduler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-01/claude_task_scheduler/README.md"
+}
