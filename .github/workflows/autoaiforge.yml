@@ -106,6 +106,17 @@ jobs:
           fi
           python main.py
 
+      # ── Send Email Digest ─────────────────────────────────────────────────────
+      - name: Send email digest to subscribers
+        if: success()
+        continue-on-error: true
+        run: python publisher/email_sender.py
+        env:
+          SUPABASE_URL:               ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY:  ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY:             ${{ secrets.RESEND_API_KEY }}
+          NEXT_PUBLIC_SITE_URL:       https://aitools.disruptiveexperience.com
+
       # ── Post to X (Twitter) ───────────────────────────────────────────────────
       - name: Post to X (Twitter)
         if: success()
