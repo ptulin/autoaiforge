@@ -1,0 +1,349 @@
+2026-03-01 04:19:41 | INFO     | main | ============================================================
+2026-03-01 04:19:41 | INFO     | main | AutoAIForge starting run: 2026-03-01T04:19:41.334246+00:00
+2026-03-01 04:19:41 | INFO     | main | ============================================================
+2026-03-01 04:19:41 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-01 04:19:41 | INFO     | youtube_scraper | YouTube client ready
+2026-03-01 04:19:42 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-01 04:19:42 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-01 04:19:42 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-01 04:19:43 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-01 04:19:43 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-01 04:19:43 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-01 04:19:44 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-01 04:19:44 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-01 04:19:44 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-01 04:19:45 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-01 04:19:45 | INFO     | youtube_scraper | YouTube 'open source LLM': 33 results (quota used: 1100)
+2026-03-01 04:19:46 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-01 04:19:46 | INFO     | youtube_scraper | YouTube 'vector database AI': 26 results (quota used: 1300)
+2026-03-01 04:19:46 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-01 04:19:46 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-01 04:19:47 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-01 04:19:47 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-03-01 04:19:47 | INFO     | youtube_scraper | YouTube 'local LLM': 44 results (quota used: 1800)
+2026-03-01 04:19:48 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-01 04:19:48 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-01 04:19:48 | INFO     | youtube_scraper | YouTube total: 855 items, quota used: 2000
+2026-03-01 04:19:48 | INFO     | main |   YouTube: 810 items
+2026-03-01 04:19:48 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-01 04:19:53 | INFO     | rss_scraper | HackerNews: 171 items
+2026-03-01 04:19:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-01 04:19:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-01 04:19:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-01 04:19:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-01 04:19:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-01 04:19:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-01 04:20:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-01 04:20:01 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-01 04:20:07 | INFO     | rss_scraper | ArXiv: 106 items
+2026-03-01 04:20:11 | INFO     | rss_scraper | Dev.to: 198 items
+2026-03-01 04:20:12 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-01 04:20:12 | INFO     | rss_scraper | Free sources total: 525 unique items
+2026-03-01 04:20:12 | INFO     | main |   RSS/API sources: 525 items
+2026-03-01 04:20:12 | INFO     | main |   Total scraped: 1335 items
+2026-03-01 04:20:12 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-01 04:20:12 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-01 04:20:12 | INFO     | db_manager | Purged 0 old news items
+2026-03-01 04:20:12 | INFO     | db_manager | Inserted 683/1335 news items
+2026-03-01 04:20:12 | INFO     | main |   SQLite: 683 new items (total: 2293)
+2026-03-01 04:20:17 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-01 04:20:17 | INFO     | vector_store | VectorStore ready
+2026-03-01 04:20:48 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-01 04:20:48 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-01 04:20:48 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-01 04:20:48 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-01 04:20:54 | DEBUG    | llm_client | LLM response from github_models (4182 chars)
+2026-03-01 04:20:54 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-01 04:20:54 | INFO     | main |   Found 10 topics:
+2026-03-01 04:20:54 | INFO     | main |      1. [10/10] AI in Military Applications
+2026-03-01 04:20:54 | INFO     | main |      2. [9/10] Claude AI Workflow Automation
+2026-03-01 04:20:54 | INFO     | main |      3. [9/10] AI Integration with Office Tools
+2026-03-01 04:20:54 | INFO     | main |      4. [9/10] AI Context Window Optimization
+2026-03-01 04:20:54 | INFO     | main |      5. [9/10] AI in Strategic Simulations
+2026-03-01 04:20:54 | INFO     | main |      6. [8/10] AI-Powered Code Generation
+2026-03-01 04:20:54 | INFO     | main |      7. [8/10] AI in Cybersecurity
+2026-03-01 04:20:54 | INFO     | main |      8. [8/10] AI-Powered Ad Generation
+2026-03-01 04:20:54 | INFO     | main |      9. [8/10] AI in Music and Creative Arts
+2026-03-01 04:20:54 | INFO     | main |     10. [7/10] AI for Design Systems
+2026-03-01 04:20:54 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-01 04:20:54 | INFO     | main |   Existing collection: 5 tools across 2 topics
+2026-03-01 04:20:54 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-01 04:21:00 | DEBUG    | llm_client | LLM response from github_models (3285 chars)
+2026-03-01 04:21:00 | INFO     | idea_generator | Generated 3 ideas for topic: AI in Military Applications
+2026-03-01 04:21:05 | DEBUG    | llm_client | LLM response from github_models (2898 chars)
+2026-03-01 04:21:05 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI Workflow Automation
+2026-03-01 04:21:05 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-01 04:21:05 | INFO     | main |   Generated 5 tool ideas:
+2026-03-01 04:21:05 | INFO     | main |     • ethical_ai_simulator: A CLI tool that simulates AI decision-making in military scenarios by defining r
+2026-03-01 04:21:05 | INFO     | main |     • ai_battlefield_visualizer: A Python library that allows developers to visualize AI decision-making in milit
+2026-03-01 04:21:05 | INFO     | main |     • decision_audit_tool: An automation utility that audits decision logs from AI models used in military 
+2026-03-01 04:21:05 | INFO     | main |     • claude_task_scheduler: This CLI tool enables developers to schedule and manage tasks within Claude AI's
+2026-03-01 04:21:05 | INFO     | main |     • claude_workflow_automation: This Python library provides a framework to integrate and automate multi-step wo
+2026-03-01 04:21:05 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-01 04:21:05 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-01 04:21:15 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-01 04:21:15 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-01 04:21:15 | INFO     | tool_builder | Building tool: ethical_ai_simulator …
+2026-03-01 04:21:28 | DEBUG    | llm_client | LLM response from github_models (7337 chars)
+2026-03-01 04:21:28 | DEBUG    | test_runner | Installing: ['numpy==1.25.2']
+2026-03-01 04:21:31 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+    mocked_file().write.assert_called_once_with(json.dumps(results, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+E   assert (']',) == ('[\n    {\n ...]\n    }\n]',)
+FAILED test_ethical_ai_simulator.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 26 times.
+assert (']',) == ('[\n    {\n ...]\n    }\n]',)
+2026-03-01 04:21:31 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 1/5) — test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-01 04:21:40 | DEBUG    | llm_client | LLM response from github_models (7165 chars)
+2026-03-01 04:21:40 | DEBUG    | test_runner | Installing: ['numpy']
+2026-03-01 04:21:41 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+    mocked_file().write.assert_called_once_with(json.dumps(results, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ethical_ai_simulator.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 26 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-03-01 04:21:41 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 2/5) — test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-01 04:21:49 | DEBUG    | llm_client | LLM response from github_models (7060 chars)
+2026-03-01 04:21:49 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport numpy as np\n\ndef load_json_file(file_path):\n    \"\"\"Load JSON data from a file.\"\"\"\n    try:\n        with open(file_path, 'r') as file:\n            return json.load(file)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"Fi
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7047)
+2026-03-01 04:21:49 | DEBUG    | test_runner | Installing: ['numpy']
+2026-03-01 04:21:50 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+    mocked_file().write.assert_called_once_with(json.dumps(results, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ethical_ai_simulator.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 26 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-03-01 04:21:50 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 3/5) — test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-01 04:21:58 | DEBUG    | llm_client | LLM response from github_models (7320 chars)
+2026-03-01 04:21:58 | DEBUG    | test_runner | Installing: ['numpy']
+2026-03-01 04:21:58 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+    mocked_file().write.assert_called_once_with(json.dumps(results, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+E   assert (']',) == ('[\n    {\n ...]\n    }\n]',)
+FAILED test_ethical_ai_simulator.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 26 times.
+assert (']',) == ('[\n    {\n ...]\n    }\n]',)
+2026-03-01 04:21:58 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 4/5) — test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-01 04:22:06 | DEBUG    | llm_client | LLM response from github_models (7347 chars)
+2026-03-01 04:22:06 | DEBUG    | test_runner | Installing: ['numpy']
+2026-03-01 04:22:07 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+    mocked_file().write.assert_called_once_with(json.dumps(results, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 26 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ethical_ai_simulator.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 26 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-03-01 04:22:07 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 5/5) — test_ethical_ai_simulator.py::test_generate_report FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-01 04:22:07 | ERROR    | tool_builder | ❌ ethical_ai_simulator failed after 5 loops
+2026-03-01 04:22:07 | INFO     | tool_builder | Building tool: ai_battlefield_visualizer …
+2026-03-01 04:22:18 | DEBUG    | llm_client | LLM response from github_models (8144 chars)
+2026-03-01 04:22:18 | ERROR    | tool_builder | Initial generation failed for ai_battlefield_visualizer: LLM returned non-JSON: {
+  "code": "import matplotlib.pyplot as plt\nimport numpy as np\nfrom PIL import Image, ImageDraw\n\ndef visualize_battlefield(grid_size, ai_actions, environment_details, output_file=\"battlefield.png\"):\n    \"\"\"\n    Visualize a 2D grid-based battlefield with AI actions and environment details
+Expecting property name enclosed in double quotes: line 10 column 1 (char 8131)
+2026-03-01 04:22:18 | INFO     | tool_builder | Building tool: decision_audit_tool …
+2026-03-01 04:22:29 | DEBUG    | llm_client | LLM response from github_models (7176 chars)
+2026-03-01 04:22:29 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'pyyaml==6.0']
+2026-03-01 04:22:34 | WARNING  | test_runner | Tests FAILED for decision_audit_tool:
+test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file not found: {log_path}")
+E   FileNotFoundError: Log file not found: log.csv
+    assert len(flagged_decisions) == 1
+E   assert 0 == 1
+Error evaluating condition 'row['action'] == 'attack' and row['target'] == 'civilian'' on row {'decision_id': 1, 'action': 'attack', 'target': 'civilian'}: name 'row' is not defined
+Error evaluating condition 'row['action'] == 'attack' and row['target'] == 'civilian'' on row {'decision_id': 2, 'action': 'defend', 'target': 'base'}: name 'row' is not defined
+FAILED test_decision_audit_tool.py::test_load_log_csv - FileNotFoundError: Log file not found: log.csv
+FAILED test_decision_audit_tool.py::test_audit_decisions - assert 0 == 1
+2026-03-01 04:22:34 | WARNING  | tool_builder | ⚠️  decision_audit_tool tests failed (loop 1/5) — test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file n
+2026-03-01 04:22:42 | DEBUG    | llm_client | LLM response from github_models (6787 chars)
+2026-03-01 04:22:42 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml']
+2026-03-01 04:22:43 | WARNING  | test_runner | Tests FAILED for decision_audit_tool:
+test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file not found: {log_path}")
+E   FileNotFoundError: Log file not found: log.csv
+    assert len(flagged_decisions) == 1
+E   assert 0 == 1
+Error evaluating condition 'row['action'] == 'attack' and row['target'] == 'civilian'' on row {'decision_id': 1, 'action': 'attack', 'target': 'civilian'}: name 'row' is not defined
+Error evaluating condition 'row['action'] == 'attack' and row['target'] == 'civilian'' on row {'decision_id': 2, 'action': 'defend', 'target': 'base'}: name 'row' is not defined
+FAILED test_decision_audit_tool.py::test_load_log_csv - FileNotFoundError: Log file not found: log.csv
+FAILED test_decision_audit_tool.py::test_audit_decisions - assert 0 == 1
+2026-03-01 04:22:43 | WARNING  | tool_builder | ⚠️  decision_audit_tool tests failed (loop 2/5) — test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file n
+2026-03-01 04:22:50 | DEBUG    | llm_client | LLM response from github_models (6514 chars)
+2026-03-01 04:22:50 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml']
+2026-03-01 04:22:51 | WARNING  | test_runner | Tests FAILED for decision_audit_tool:
+test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file not found: {log_path}")
+E   FileNotFoundError: Log file not found: log.csv
+    assert len(flagged_decisions) == 1
+E   assert 0 == 1
+Error evaluating condition 'row_dict['action'] == 'attack' and row_dict['target'] == 'civilian'' on row {'decision_id': 1, 'action': 'attack', 'target': 'civilian'}: 'NoneType' object is not subscriptable
+Error evaluating condition 'row_dict['action'] == 'attack' and row_dict['target'] == 'civilian'' on row {'decision_id': 2, 'action': 'defend', 'target': 'base'}: 'NoneType' object is not subscriptable
+FAILED test_decision_audit_tool.py::test_load_log_csv - FileNotFoundError: Log file not found: log.csv
+FAILED test_decision_audit_tool.py::test_audit_decisions - assert 0 == 1
+2026-03-01 04:22:51 | WARNING  | tool_builder | ⚠️  decision_audit_tool tests failed (loop 3/5) — test_decision_audit_tool.py::test_load_log_csv FAILED                    [ 66%]
+test_decision_audit_tool.py::test_audit_decisions FAILED                 [100%]
+    raise FileNotFoundError(f"Log file n
+2026-03-01 04:22:58 | DEBUG    | llm_client | LLM response from github_models (6786 chars)
+2026-03-01 04:22:58 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml']
+2026-03-01 04:22:59 | INFO     | test_runner | Tests PASSED for decision_audit_tool
+2026-03-01 04:22:59 | INFO     | tool_builder | ✅ decision_audit_tool passed tests on loop 4
+2026-03-01 04:22:59 | INFO     | tool_builder | Building tool: claude_task_scheduler …
+2026-03-01 04:23:08 | DEBUG    | llm_client | LLM response from github_models (7256 chars)
+2026-03-01 04:23:08 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'httpx==0.24.1']
+2026-03-01 04:23:10 | WARNING  | test_runner | Tests FAILED for claude_task_scheduler:
+test_claude_task_scheduler.py::test_create_task_success FAILED           [ 20%]
+test_claude_task_scheduler.py::test_create_task_api_error FAILED         [ 40%]
+    raise RuntimeError(
+E   RuntimeError: Cannot call `raise_for_status` as the request instance has not been set on this response.
+    raise RuntimeError(
+E   RuntimeError: Cannot call `raise_for_status` as the request instance has not been set on this response.
+    with pytest.raises(RuntimeError, match="API returned an error"):
+E   AssertionError: Regex pattern did not match.
+FAILED test_claude_task_scheduler.py::test_create_task_success - RuntimeError: Cannot call `raise_for_status` as the request instance has not been set on this response.
+FAILED test_claude_task_scheduler.py::test_create_task_api_error - AssertionError: Regex pattern did not match.
+2026-03-01 04:23:10 | WARNING  | tool_builder | ⚠️  claude_task_scheduler tests failed (loop 1/5) — test_claude_task_scheduler.py::test_create_task_success FAILED           [ 20%]
+test_claude_task_scheduler.py::test_create_task_api_error FAILED         [ 40%]
+    raise RuntimeError(
+E   RuntimeError
+2026-03-01 04:23:18 | DEBUG    | llm_client | LLM response from github_models (7260 chars)
+2026-03-01 04:23:18 | DEBUG    | test_runner | Installing: ['httpx', 'pyyaml', 'pytest']
+2026-03-01 04:23:18 | INFO     | test_runner | Tests PASSED for claude_task_scheduler
+2026-03-01 04:23:18 | INFO     | tool_builder | ✅ claude_task_scheduler passed tests on loop 2
+2026-03-01 04:23:18 | INFO     | tool_builder | Building tool: claude_workflow_automation …
+2026-03-01 04:23:27 | DEBUG    | llm_client | LLM response from github_models (5670 chars)
+2026-03-01 04:23:27 | DEBUG    | test_runner | Installing: ['httpx==0.24.1', 'pydantic==1.10.9', 'tenacity==8.2.3', 'pytest==7.4.2']
+2026-03-01 04:23:29 | WARNING  | test_runner | Tests FAILED for claude_workflow_automation:
+test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+test_claude_workflow_automation.py::test_workflow_with_invalid_step FAILED [100%]
+    assert results == ["Processed document", "Processed: Processed document"]
+E   AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+    with pytest.raises(WorkflowError, match="Error in step 'step1'"):
+E   Failed: DID NOT RAISE <class 'claude_workflow_automation.WorkflowError'>
+FAILED test_claude_workflow_automation.py::test_workflow_execution - AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+FAILED test_claude_workflow_automation.py::test_workflow_with_api_error - NameError: name 'httpx' is not defined
+FAILED test_claude_workflow_automation.py::test_workflow_with_invalid_step - Failed: DID NOT RAISE <class 'claude_workflow_automation.WorkflowError'>
+2026-03-01 04:23:29 | WARNING  | tool_builder | ⚠️  claude_workflow_automation tests failed (loop 1/5) — test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+test_claude_workflow_automation.py::test
+2026-03-01 04:23:36 | DEBUG    | llm_client | LLM response from github_models (5872 chars)
+2026-03-01 04:23:36 | DEBUG    | test_runner | Installing: ['httpx', 'pydantic', 'tenacity', 'pytest']
+2026-03-01 04:23:36 | WARNING  | test_runner | Tests FAILED for claude_workflow_automation:
+test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+test_claude_workflow_automation.py::test_workflow_with_invalid_step FAILED [100%]
+    assert results == ["Processed document", "Processed: Processed document"]
+E   AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+    with pytest.raises(WorkflowError, match="Error in step 'step1'"):
+E   Failed: DID NOT RAISE <class 'claude_workflow_automation.WorkflowError'>
+FAILED test_claude_workflow_automation.py::test_workflow_execution - AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+FAILED test_claude_workflow_automation.py::test_workflow_with_api_error - NameError: name 'httpx' is not defined
+FAILED test_claude_workflow_automation.py::test_workflow_with_invalid_step - Failed: DID NOT RAISE <class 'claude_workflow_automation.WorkflowError'>
+2026-03-01 04:23:36 | WARNING  | tool_builder | ⚠️  claude_workflow_automation tests failed (loop 2/5) — test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+test_claude_workflow_automation.py::test
+2026-03-01 04:23:43 | DEBUG    | llm_client | LLM response from github_models (6178 chars)
+2026-03-01 04:23:43 | DEBUG    | test_runner | Installing: ['httpx', 'pydantic', 'tenacity', 'pytest']
+2026-03-01 04:23:44 | WARNING  | test_runner | Tests FAILED for claude_workflow_automation:
+test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed document", "Processed: Processed document"]
+E   AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+FAILED test_claude_workflow_automation.py::test_workflow_execution - AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+FAILED test_claude_workflow_automation.py::test_workflow_with_api_error - NameError: name 'httpx' is not defined
+2026-03-01 04:23:44 | WARNING  | tool_builder | ⚠️  claude_workflow_automation tests failed (loop 3/5) — test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed docume
+2026-03-01 04:23:50 | DEBUG    | llm_client | LLM response from github_models (6231 chars)
+2026-03-01 04:23:50 | DEBUG    | test_runner | Installing: ['httpx', 'pydantic', 'tenacity', 'pytest']
+2026-03-01 04:23:55 | WARNING  | test_runner | Tests FAILED for claude_workflow_automation:
+test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed document", "Processed: Processed document"]
+E   AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+E   httpx.RequestError: Network error
+    raise WorkflowError(f"Network error: {e}")
+E   claude_workflow_automation.WorkflowError: Network error: Network error
+E   tenacity.RetryError: RetryError[<Future at 0x7fe9f894b310 state=finished raised WorkflowError>]
+    raise WorkflowError(f"Error in step '{step.__name__}': {e}")
+E   claude_workflow_automation.WorkflowError: Error in step 'step1': RetryError[<Future at 0x7fe9f894b310 state=finished raised WorkflowError>]
+    with pytest.raises(WorkflowError, match="Network error"):
+E   AssertionError: Regex pattern did not match.
+E    Input: "Error in step 'step1': RetryError[<Future at 0x7fe9f894b310 state=finished raised WorkflowError>]"
+FAILED test_claude_workflow_automation.py::test_workflow_execution - AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+FAILED test_claude_workflow_automation.py::test_workflow_with_api_error - AssertionError: Regex pattern did not match.
+ Input: "Error in step 'step1': RetryError[<Future at 0x7fe9f894b310 state=finished raised WorkflowError>]"
+2026-03-01 04:23:55 | WARNING  | tool_builder | ⚠️  claude_workflow_automation tests failed (loop 4/5) — test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed docume
+2026-03-01 04:23:55 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-01 04:25:01 | DEBUG    | llm_client | LLM response from github_models (5962 chars)
+2026-03-01 04:25:01 | DEBUG    | test_runner | Installing: ['httpx', 'pydantic', 'tenacity', 'pytest']
+2026-03-01 04:25:06 | WARNING  | test_runner | Tests FAILED for claude_workflow_automation:
+test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed document", "Processed: Processed document"]
+E   AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+E   httpx.RequestError: Network error
+    raise WorkflowError(f"Network error: {e}")
+E   claude_workflow_automation.WorkflowError: Network error: Network error
+E   tenacity.RetryError: RetryError[<Future at 0x7f4c1043fd10 state=finished raised WorkflowError>]
+FAILED test_claude_workflow_automation.py::test_workflow_execution - AssertionError: assert ['Processed d...sed document'] == ['Processed d...sed document']
+FAILED test_claude_workflow_automation.py::test_workflow_with_api_error - tenacity.RetryError: RetryError[<Future at 0x7f4c1043fd10 state=finished raised WorkflowError>]
+2026-03-01 04:25:06 | WARNING  | tool_builder | ⚠️  claude_workflow_automation tests failed (loop 5/5) — test_claude_workflow_automation.py::test_workflow_execution FAILED       [ 33%]
+test_claude_workflow_automation.py::test_workflow_with_api_error FAILED  [ 66%]
+    assert results == ["Processed docume
+2026-03-01 04:25:06 | ERROR    | tool_builder | ❌ claude_workflow_automation failed after 5 loops
+2026-03-01 04:25:06 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-01 04:25:06 | INFO     | main |   Built 2/5 tools successfully
+2026-03-01 04:25:06 | INFO     | main |     ✅ decision_audit_tool (loops: 4)
+2026-03-01 04:25:06 | INFO     | main |     ✅ claude_task_scheduler (loops: 2)
+2026-03-01 04:25:06 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-01 04:25:06 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-01 04:25:06 | INFO     | github_publisher | Saved decision_audit_tool → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/decision_audit_tool
+2026-03-01 04:25:06 | INFO     | github_publisher | Saved claude_task_scheduler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/claude_task_scheduler
+2026-03-01 04:25:06 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-01 04:25:06 | INFO     | main |   Published 2 tools:
+2026-03-01 04:25:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/decision_audit_tool
+2026-03-01 04:25:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/claude_task_scheduler
+2026-03-01 04:25:06 | INFO     | main | ✅ Generated tools_index.json with 7 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

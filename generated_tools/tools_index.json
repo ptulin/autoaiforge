@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-02-28T20:52:03.455887+00:00",
-  "total_tools": 5,
+  "last_updated": "2026-03-01T04:25:06.285959+00:00",
+  "total_tools": 7,
   "tools": [
+    {
+      "tool_name": "claude_task_scheduler",
+      "display_name": "Claude Task Scheduler",
+      "description": "This CLI tool enables developers to schedule and manage tasks within Claude AI's ecosystem. It leverages the new task scheduling and unified memory features to create recurring or one-off AI-driven tasks, monitor their status, and retrieve results. This is useful for automating repetitive workflows like data analysis, report generation, or email summarization using Claude.",
+      "topic": "Claude AI Workflow Automation",
+      "date": "2026-03-01",
+      "generated": "2026-03-01T04:19:41.334246+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/claude_task_scheduler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-01/claude_task_scheduler/README.md"
+    },
+    {
+      "tool_name": "decision_audit_tool",
+      "display_name": "AI Decision Audit Tool",
+      "description": "An automation utility that audits decision logs from AI models used in military simulations. It parses logs, identifies potential ethical violations, and flags decisions that may require human review.",
+      "topic": "AI in Military Applications",
+      "date": "2026-03-01",
+      "generated": "2026-03-01T04:19:41.334246+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-01/decision_audit_tool",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-01/decision_audit_tool/README.md"
+    },
     {
       "tool_name": "ai_code_suggestion_cli",
       "display_name": "AI Code Suggestion CLI",
