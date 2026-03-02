@@ -1,0 +1,12 @@
+{
+  "tool_name": "claude_email_sorter",
+  "display_name": "Claude Email Sorter",
+  "description": "This CLI tool integrates with Claude AI to sort and categorize emails from an inbox based on user-defined rules. It uses Claude\u2019s natural language processing capabilities to analyze email content and classify them under categories like 'Urgent', 'Follow-up', or custom tags. It's useful for automating email management and improving productivity.",
+  "topic": "Claude AI for Enterprise Productivity",
+  "date": "2026-03-02",
+  "generated": "2026-03-02T04:10:48.954141+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-02/claude_email_sorter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-02/claude_email_sorter/README.md"
+}

@@ -1,0 +1,321 @@
+2026-03-02 04:10:48 | INFO     | main | ============================================================
+2026-03-02 04:10:48 | INFO     | main | AutoAIForge starting run: 2026-03-02T04:10:48.954141+00:00
+2026-03-02 04:10:48 | INFO     | main | ============================================================
+2026-03-02 04:10:48 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-02 04:10:49 | INFO     | youtube_scraper | YouTube client ready
+2026-03-02 04:10:49 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-02 04:10:50 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-02 04:10:50 | INFO     | youtube_scraper | YouTube 'open source AI tools': 48 results (quota used: 300)
+2026-03-02 04:10:50 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-02 04:10:51 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-02 04:10:51 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 45 results (quota used: 600)
+2026-03-02 04:10:51 | INFO     | youtube_scraper | YouTube 'machine learning tools': 25 results (quota used: 700)
+2026-03-02 04:10:51 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-03-02 04:10:52 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-02 04:10:52 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-02 04:10:53 | INFO     | youtube_scraper | YouTube 'open source LLM': 22 results (quota used: 1100)
+2026-03-02 04:10:53 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-02 04:10:53 | INFO     | youtube_scraper | YouTube 'vector database AI': 19 results (quota used: 1300)
+2026-03-02 04:10:54 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-02 04:10:54 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-02 04:10:54 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-02 04:10:54 | INFO     | youtube_scraper | YouTube 'Groq inference': 4 results (quota used: 1700)
+2026-03-02 04:10:55 | INFO     | youtube_scraper | YouTube 'local LLM': 41 results (quota used: 1800)
+2026-03-02 04:10:55 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-02 04:10:55 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-02 04:10:55 | INFO     | youtube_scraper | YouTube total: 729 items, quota used: 2000
+2026-03-02 04:10:55 | INFO     | main |   YouTube: 684 items
+2026-03-02 04:10:55 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-02 04:11:00 | INFO     | rss_scraper | HackerNews: 178 items
+2026-03-02 04:11:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-02 04:11:02 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-02 04:11:03 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-02 04:11:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-02 04:11:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-02 04:11:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-02 04:11:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-02 04:11:08 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-02 04:11:15 | INFO     | rss_scraper | ArXiv: 103 items
+2026-03-02 04:11:19 | INFO     | rss_scraper | Dev.to: 201 items
+2026-03-02 04:11:19 | WARNING  | rss_scraper | GitHub trending failed: 403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Aartificial-intelligence+pushed%3A%3E2024-01-01+stars%3A%3E50&sort=updated&order=desc&per_page=50
+2026-03-02 04:11:19 | INFO     | rss_scraper | GitHub Trending: 0 items
+2026-03-02 04:11:19 | INFO     | rss_scraper | Free sources total: 482 unique items
+2026-03-02 04:11:19 | INFO     | main |   RSS/API sources: 482 items
+2026-03-02 04:11:19 | INFO     | main |   Total scraped: 1166 items
+2026-03-02 04:11:19 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-02 04:11:19 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-02 04:11:19 | INFO     | db_manager | Purged 0 old news items
+2026-03-02 04:11:19 | INFO     | db_manager | Inserted 912/1166 news items
+2026-03-02 04:11:19 | INFO     | main |   SQLite: 912 new items (total: 3205)
+2026-03-02 04:11:24 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-02 04:11:25 | INFO     | vector_store | VectorStore ready
+2026-03-02 04:11:54 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-02 04:11:54 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-02 04:11:54 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-02 04:11:54 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-02 04:12:00 | DEBUG    | llm_client | LLM response from github_models (3942 chars)
+2026-03-02 04:12:00 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-02 04:12:00 | INFO     | main |   Found 10 topics:
+2026-03-02 04:12:00 | INFO     | main |      1. [10/10] AI in Military Operations
+2026-03-02 04:12:00 | INFO     | main |      2. [9/10] Claude AI for Enterprise Productivity
+2026-03-02 04:12:00 | INFO     | main |      3. [9/10] AI Model Recursion and Self-Improvement
+2026-03-02 04:12:00 | INFO     | main |      4. [8/10] AI-Powered Modular PCs
+2026-03-02 04:12:00 | INFO     | main |      5. [8/10] Generative AI in Music Creation
+2026-03-02 04:12:00 | INFO     | main |      6. [8/10] AI Model Comparisons and Rankings
+2026-03-02 04:12:00 | INFO     | main |      7. [8/10] AI in Ethical Surveillance
+2026-03-02 04:12:00 | INFO     | main |      8. [7/10] AI in Agriculture Automation
+2026-03-02 04:12:00 | INFO     | main |      9. [7/10] AI in Job Market Transformation
+2026-03-02 04:12:00 | INFO     | main |     10. [6/10] AI in Retail Management
+2026-03-02 04:12:00 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-02 04:12:00 | INFO     | main |   Existing collection: 7 tools across 4 topics
+2026-03-02 04:12:00 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-02 04:12:07 | DEBUG    | llm_client | LLM response from github_models (3603 chars)
+2026-03-02 04:12:07 | INFO     | idea_generator | Generated 3 ideas for topic: AI in Military Operations
+2026-03-02 04:12:14 | DEBUG    | llm_client | LLM response from github_models (2571 chars)
+2026-03-02 04:12:14 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI for Enterprise Productivity
+2026-03-02 04:12:14 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-02 04:12:14 | INFO     | main |   Generated 5 tool ideas:
+2026-03-02 04:12:14 | INFO     | main |     • ethical_ai_simulator: This CLI tool simulates a series of ethical decision-making scenarios for defens
+2026-03-02 04:12:14 | INFO     | main |     • military_ai_bias_checker: A Python library to analyze potential biases in decision-making algorithms used 
+2026-03-02 04:12:14 | INFO     | main |     • ai_scenario_generator: This automation tool generates diverse and complex military scenarios for testin
+2026-03-02 04:12:14 | INFO     | main |     • claude_email_sorter: This CLI tool integrates with Claude AI to sort and categorize emails from an in
+2026-03-02 04:12:14 | INFO     | main |     • claude_doc_autoassembler: A Python CLI tool that helps generate and assemble business documents using Clau
+2026-03-02 04:12:14 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-02 04:12:14 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-02 04:12:23 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-02 04:12:23 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-02 04:12:23 | INFO     | tool_builder | Building tool: ethical_ai_simulator …
+2026-03-02 04:12:33 | DEBUG    | llm_client | LLM response from github_models (6772 chars)
+2026-03-02 04:12:33 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'numpy==1.25.0', 'jsonschema==4.19.0']
+2026-03-02 04:12:39 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'scenario.json'
+Error: Invalid value for '--scenario': Path 'scenario.json' does not exist.
+E   FileNotFoundError: [Errno 2] No such file or directory: 'scenario.json'
+Error: Invalid value for '--scenario': Path 'scenario.json' does not exist.
+FAILED test_ethical_ai_simulator.py::test_main_valid_input - SystemExit: 2
+FAILED test_ethical_ai_simulator.py::test_main_invalid_json - SystemExit: 2
+2026-03-02 04:12:39 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 1/5) — test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   FileNotFoundError: [Errno 2] No such
+2026-03-02 04:12:45 | DEBUG    | llm_client | LLM response from github_models (6683 chars)
+2026-03-02 04:12:45 | DEBUG    | test_runner | Installing: ['numpy', 'jsonschema']
+2026-03-02 04:12:46 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_valid_input - NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_invalid_json - NameError: name 'argparse' is not defined
+2026-03-02 04:12:46 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 2/5) — test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not de
+2026-03-02 04:12:52 | DEBUG    | llm_client | LLM response from github_models (6684 chars)
+2026-03-02 04:12:52 | DEBUG    | test_runner | Installing: ['numpy', 'jsonschema']
+2026-03-02 04:12:53 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_valid_input - NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_invalid_json - NameError: name 'argparse' is not defined
+2026-03-02 04:12:53 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 3/5) — test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not de
+2026-03-02 04:12:59 | DEBUG    | llm_client | LLM response from github_models (6556 chars)
+2026-03-02 04:12:59 | DEBUG    | test_runner | Installing: ['numpy', 'jsonschema']
+2026-03-02 04:12:59 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_valid_input - NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_invalid_json - NameError: name 'argparse' is not defined
+2026-03-02 04:12:59 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 4/5) — test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not de
+2026-03-02 04:13:06 | DEBUG    | llm_client | LLM response from github_models (7231 chars)
+2026-03-02 04:13:06 | DEBUG    | test_runner | Installing: ['numpy', 'jsonschema']
+2026-03-02 04:13:07 | WARNING  | test_runner | Tests FAILED for ethical_ai_simulator:
+test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_valid_input - NameError: name 'argparse' is not defined
+FAILED test_ethical_ai_simulator.py::test_main_invalid_json - NameError: name 'argparse' is not defined
+2026-03-02 04:13:07 | WARNING  | tool_builder | ⚠️  ethical_ai_simulator tests failed (loop 5/5) — test_ethical_ai_simulator.py::test_main_valid_input FAILED               [ 66%]
+test_ethical_ai_simulator.py::test_main_invalid_json FAILED              [100%]
+E   NameError: name 'argparse' is not de
+2026-03-02 04:13:07 | ERROR    | tool_builder | ❌ ethical_ai_simulator failed after 5 loops
+2026-03-02 04:13:07 | INFO     | tool_builder | Building tool: military_ai_bias_checker …
+2026-03-02 04:13:19 | DEBUG    | llm_client | LLM response from github_models (8032 chars)
+2026-03-02 04:13:19 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'scikit-learn==1.3.0', 'matplotlib==3.8.0']
+2026-03-02 04:13:40 | WARNING  | test_runner | Tests FAILED for military_ai_bias_checker:
+test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+test_military_ai_bias_checker.py::test_check_bias_csv FAILED             [ 66%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+E   FileNotFoundError: [Errno 2] No such file or directory: 'bias_reports/group_accuracy.png'
+  /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <MagicMock name='open()' id='140399073187344'>
+  TypeError: expected bytes, str found
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+FAILED test_military_ai_bias_checker.py::test_check_bias_csv - FileNotFoundError: [Errno 2] No such file or directory: 'bias_reports/group_accuracy.png'
+2026-03-02 04:13:40 | WARNING  | tool_builder | ⚠️  military_ai_bias_checker tests failed (loop 1/5) — test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+test_military_ai_bias_checker.py::test_check_bias_csv FAILED             [ 66%]
+E   RuntimeError: In FT2Font: Can not lo
+2026-03-02 04:13:49 | DEBUG    | llm_client | LLM response from github_models (8834 chars)
+2026-03-02 04:13:49 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'matplotlib']
+2026-03-02 04:13:52 | WARNING  | test_runner | Tests FAILED for military_ai_bias_checker:
+test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+    raise RuntimeError(f"Error generating visualizations: {e}")
+E   RuntimeError: Error generating visualizations: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+  /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <MagicMock name='open()' id='140607766616272'>
+  TypeError: expected bytes, str found
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - RuntimeError: Error generating visualizations: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+2026-03-02 04:13:52 | WARNING  | tool_builder | ⚠️  military_ai_bias_checker tests failed (loop 2/5) — test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+    raise RuntimeError(f"Err
+2026-03-02 04:14:00 | DEBUG    | llm_client | LLM response from github_models (8690 chars)
+2026-03-02 04:14:00 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'matplotlib']
+2026-03-02 04:14:03 | WARNING  | test_runner | Tests FAILED for military_ai_bias_checker:
+test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+    raise RuntimeError(f"Error generating visualizations: {e}")
+E   RuntimeError: Error generating visualizations: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+  /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <MagicMock name='open()' id='139886894088528'>
+  TypeError: expected bytes, str found
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - RuntimeError: Error generating visualizations: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+2026-03-02 04:14:03 | WARNING  | tool_builder | ⚠️  military_ai_bias_checker tests failed (loop 3/5) — test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+    raise RuntimeError(f"Err
+2026-03-02 04:14:11 | DEBUG    | llm_client | LLM response from github_models (8795 chars)
+2026-03-02 04:14:11 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'matplotlib']
+2026-03-02 04:14:14 | WARNING  | test_runner | Tests FAILED for military_ai_bias_checker:
+test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - NameError: name 'json' is not defined
+2026-03-02 04:14:14 | WARNING  | tool_builder | ⚠️  military_ai_bias_checker tests failed (loop 4/5) — test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - NameError: nam
+2026-03-02 04:14:26 | DEBUG    | llm_client | LLM response from github_models (8889 chars)
+2026-03-02 04:14:26 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'matplotlib']
+2026-03-02 04:14:29 | WARNING  | test_runner | Tests FAILED for military_ai_bias_checker:
+test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+E   TypeError: the JSON object must be str, bytes or bytearray, not MagicMock
+FAILED test_military_ai_bias_checker.py::test_check_bias_json - TypeError: the JSON object must be str, bytes or bytearray, not MagicMock
+2026-03-02 04:14:29 | WARNING  | tool_builder | ⚠️  military_ai_bias_checker tests failed (loop 5/5) — test_military_ai_bias_checker.py::test_check_bias_json FAILED            [ 33%]
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+E   TypeError: the JSON object must be str, byt
+2026-03-02 04:14:29 | ERROR    | tool_builder | ❌ military_ai_bias_checker failed after 5 loops
+2026-03-02 04:14:29 | INFO     | tool_builder | Building tool: ai_scenario_generator …
+2026-03-02 04:14:38 | DEBUG    | llm_client | LLM response from github_models (5701 chars)
+2026-03-02 04:14:38 | DEBUG    | test_runner | Installing: ['faker==18.9.0', 'PyYAML==6.0']
+2026-03-02 04:14:40 | WARNING  | test_runner | Tests FAILED for ai_scenario_generator:
+test_ai_scenario_generator.py::test_generate_scenario_json FAILED        [ 33%]
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+E   TypeError: Object of type Decimal is not JSON serializable
+E   AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+    with pytest.raises(RuntimeError):
+E   Failed: DID NOT RAISE <class 'RuntimeError'>
+FAILED test_ai_scenario_generator.py::test_generate_scenario_json - TypeError: Object of type Decimal is not JSON serializable
+FAILED test_ai_scenario_generator.py::test_generate_scenario_yaml - AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_invalid_format - Failed: DID NOT RAISE <class 'RuntimeError'>
+2026-03-02 04:14:40 | WARNING  | tool_builder | ⚠️  ai_scenario_generator tests failed (loop 1/5) — test_ai_scenario_generator.py::test_generate_scenario_json FAILED        [ 33%]
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_gene
+2026-03-02 04:14:46 | DEBUG    | llm_client | LLM response from github_models (5295 chars)
+2026-03-02 04:14:46 | DEBUG    | test_runner | Installing: ['faker', 'pyyaml']
+2026-03-02 04:14:47 | WARNING  | test_runner | Tests FAILED for ai_scenario_generator:
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+    with patch("ai_scenario_generator.yaml.dump", side_effect=ImportError):
+E   AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_yaml - AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_invalid_format - AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+2026-03-02 04:14:47 | WARNING  | tool_builder | ⚠️  ai_scenario_generator tests failed (loop 2/5) — test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenar
+2026-03-02 04:14:53 | DEBUG    | llm_client | LLM response from github_models (5625 chars)
+2026-03-02 04:14:53 | DEBUG    | test_runner | Installing: ['faker', 'pyyaml']
+2026-03-02 04:14:54 | WARNING  | test_runner | Tests FAILED for ai_scenario_generator:
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+    assert scenario == "mocked_yaml_output"
+E   assert "actors:\n- i...2T03:27:24'\n" == 'mocked_yaml_output'
+    with pytest.raises(RuntimeError, match="YAML output requires PyYAML to be installed."):
+E   Failed: DID NOT RAISE <class 'RuntimeError'>
+FAILED test_ai_scenario_generator.py::test_generate_scenario_yaml - assert "actors:\n- i...2T03:27:24'\n" == 'mocked_yaml_output'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_invalid_format - Failed: DID NOT RAISE <class 'RuntimeError'>
+2026-03-02 04:14:54 | WARNING  | tool_builder | ⚠️  ai_scenario_generator tests failed (loop 3/5) — test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+    assert scenario == "mocked_yaml_o
+2026-03-02 04:14:59 | DEBUG    | llm_client | LLM response from github_models (5131 chars)
+2026-03-02 04:14:59 | DEBUG    | test_runner | Installing: ['faker', 'pyyaml']
+2026-03-02 04:15:00 | WARNING  | test_runner | Tests FAILED for ai_scenario_generator:
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+    with pytest.raises(RuntimeError, match="YAML output requires PyYAML to be installed."):
+E   Failed: DID NOT RAISE <class 'RuntimeError'>
+FAILED test_ai_scenario_generator.py::test_generate_scenario_yaml - AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_invalid_format - Failed: DID NOT RAISE <class 'RuntimeError'>
+2026-03-02 04:15:00 | WARNING  | tool_builder | ⚠️  ai_scenario_generator tests failed (loop 4/5) — test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenar
+2026-03-02 04:15:06 | DEBUG    | llm_client | LLM response from github_models (4946 chars)
+2026-03-02 04:15:06 | DEBUG    | test_runner | Installing: ['faker', 'pyyaml']
+2026-03-02 04:15:07 | WARNING  | test_runner | Tests FAILED for ai_scenario_generator:
+test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+    with pytest.raises(RuntimeError, match="YAML output requires PyYAML to be installed."):
+E   Failed: DID NOT RAISE <class 'RuntimeError'>
+FAILED test_ai_scenario_generator.py::test_generate_scenario_yaml - AttributeError: module 'ai_scenario_generator' has no attribute 'yaml'
+FAILED test_ai_scenario_generator.py::test_generate_scenario_invalid_format - Failed: DID NOT RAISE <class 'RuntimeError'>
+2026-03-02 04:15:07 | WARNING  | tool_builder | ⚠️  ai_scenario_generator tests failed (loop 5/5) — test_ai_scenario_generator.py::test_generate_scenario_yaml FAILED        [ 66%]
+test_ai_scenario_generator.py::test_generate_scenario_invalid_format FAILED [100%]
+E   AttributeError: module 'ai_scenar
+2026-03-02 04:15:07 | ERROR    | tool_builder | ❌ ai_scenario_generator failed after 5 loops
+2026-03-02 04:15:07 | INFO     | tool_builder | Building tool: claude_email_sorter …
+2026-03-02 04:15:19 | DEBUG    | llm_client | LLM response from github_models (7776 chars)
+2026-03-02 04:15:19 | DEBUG    | test_runner | Installing: ['python-dotenv==1.0.0', 'requests==2.31.0']
+2026-03-02 04:15:20 | INFO     | test_runner | Tests PASSED for claude_email_sorter
+2026-03-02 04:15:20 | INFO     | tool_builder | ✅ claude_email_sorter passed tests on loop 1
+2026-03-02 04:15:20 | INFO     | tool_builder | Building tool: claude_doc_autoassembler …
+2026-03-02 04:15:30 | DEBUG    | llm_client | LLM response from github_models (6433 chars)
+2026-03-02 04:15:30 | DEBUG    | test_runner | Installing: ['jinja2==3.1.2', 'requests==2.31.0', 'python-docx==0.8.11', 'fpdf==1.7.2']
+2026-03-02 04:15:35 | WARNING  | test_runner | Tests FAILED for claude_doc_autoassembler:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_doc_autoassembler.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_doc_autoassembler/test_claude_doc_autoassembler.py'.
+E   ModuleNotFoundError: No module named 'python_docx'
+ERROR test_claude_doc_autoassembler.py
+2026-03-02 04:15:35 | WARNING  | tool_builder | ⚠️  claude_doc_autoassembler tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_doc_autoassembler.py _______________
+ImportError while importing test modul
+2026-03-02 04:15:35 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-02 04:16:45 | DEBUG    | llm_client | LLM response from github_models (7105 chars)
+2026-03-02 04:16:45 | DEBUG    | test_runner | Installing: ['jinja2', 'python-docx', 'fpdf', 'requests']
+2026-03-02 04:16:46 | INFO     | test_runner | Tests PASSED for claude_doc_autoassembler
+2026-03-02 04:16:46 | INFO     | tool_builder | ✅ claude_doc_autoassembler passed tests on loop 2
+2026-03-02 04:16:46 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-02 04:16:46 | INFO     | main |   Built 2/5 tools successfully
+2026-03-02 04:16:46 | INFO     | main |     ✅ claude_email_sorter (loops: 1)
+2026-03-02 04:16:46 | INFO     | main |     ✅ claude_doc_autoassembler (loops: 2)
+2026-03-02 04:16:46 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-02 04:16:46 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-02 04:16:46 | INFO     | github_publisher | Saved claude_email_sorter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-02/claude_email_sorter
+2026-03-02 04:16:46 | INFO     | github_publisher | Saved claude_doc_autoassembler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-02/claude_doc_autoassembler
+2026-03-02 04:16:46 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-02 04:16:46 | INFO     | main |   Published 2 tools:
+2026-03-02 04:16:46 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-02/claude_email_sorter
+2026-03-02 04:16:46 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-02/claude_doc_autoassembler
+2026-03-02 04:16:46 | INFO     | main | ✅ Generated tools_index.json with 9 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
