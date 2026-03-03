@@ -1,0 +1,12 @@
+{
+  "tool_name": "media_manipulation_detector",
+  "display_name": "Media Manipulation Detector",
+  "description": "This Python library analyzes images and videos to detect possible signs of manipulation or deepfake content using computer vision techniques. The tool uses freely available pre-trained models to identify artifacts, inconsistencies, and AI-generated anomalies in visual media.",
+  "topic": "AI-Generated Fake News Detection",
+  "date": "2026-03-03",
+  "generated": "2026-03-03T04:11:27.527651+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-03/media_manipulation_detector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-03/media_manipulation_detector/README.md"
+}

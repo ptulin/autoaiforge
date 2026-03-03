@@ -1,0 +1,12 @@
+{
+  "tool_name": "ai_code_reviewer",
+  "display_name": "AI Code Reviewer",
+  "description": "A CLI tool that performs an AI-driven code review on Python files. It uses Claude Opus to analyze your code's structure, style, and logic, providing suggestions for improvements, potential bugs, and best practices. This is especially useful for solo developers or small teams to maintain code quality without needing immediate peer reviews.",
+  "topic": "AI-Powered Code Review Tools",
+  "date": "2026-03-03",
+  "generated": "2026-03-03T04:11:27.527651+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-03/ai_code_reviewer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-03/ai_code_reviewer/README.md"
+}
