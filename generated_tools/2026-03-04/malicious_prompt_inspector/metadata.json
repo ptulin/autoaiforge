@@ -1,0 +1,12 @@
+{
+  "tool_name": "malicious_prompt_inspector",
+  "display_name": "Malicious Prompt Inspector",
+  "description": "A library designed for developers to scan and classify prompts sent to AI systems (like Claude or GPT) for potential malicious intent, such as attempts to generate phishing emails, write malware, or bypass ethical filters. It helps prevent AI misuse in real-time.",
+  "topic": "AI for Cybersecurity Threats",
+  "date": "2026-03-04",
+  "generated": "2026-03-04T04:06:08.290049+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-04/malicious_prompt_inspector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-04/malicious_prompt_inspector/README.md"
+}
