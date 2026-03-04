@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-03-03T04:16:34.078107+00:00",
-  "total_tools": 12,
+  "last_updated": "2026-03-04T04:11:28.687662+00:00",
+  "total_tools": 16,
   "tools": [
+    {
+      "tool_name": "ai_debugger_cli",
+      "display_name": "AI Debugger CLI",
+      "description": "A command-line tool that leverages Claude AI to analyze Python stack traces and error messages, providing detailed explanations of errors and suggested fixes. This is useful for developers looking to quickly understand and resolve issues without context switching to online searches or documentation.",
+      "topic": "AI-Powered Debugging Tools",
+      "date": "2026-03-04",
+      "generated": "2026-03-04T04:06:08.290049+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-04/ai_debugger_cli",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-04/ai_debugger_cli/README.md"
+    },
+    {
+      "tool_name": "code_trace_explainer",
+      "display_name": "Code Trace Explainer",
+      "description": "A Python utility that takes code execution traces and dynamically generates a detailed explanation of the trace. It uses Claude AI to describe the code flow, clarify variable states, and highlight potential logic issues, making it ideal for debugging complex or unfamiliar codebases.",
+      "topic": "AI-Powered Debugging Tools",
+      "date": "2026-03-04",
+      "generated": "2026-03-04T04:06:08.290049+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-04/code_trace_explainer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-04/code_trace_explainer/README.md"
+    },
+    {
+      "tool_name": "ide_ai_debug_helper",
+      "display_name": "IDE AI Debug Helper",
+      "description": "A lightweight Python library that developers can integrate into their VS Code or PyCharm IDE to automatically analyze exceptions or runtime errors. Whenever an error occurs, it uses Claude AI to generate insights and fix suggestions, displaying them in the IDE's output window.",
+      "topic": "AI-Powered Debugging Tools",
+      "date": "2026-03-04",
+      "generated": "2026-03-04T04:06:08.290049+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-04/ide_ai_debug_helper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-04/ide_ai_debug_helper/README.md"
+    },
+    {
+      "tool_name": "malicious_prompt_inspector",
+      "display_name": "Malicious Prompt Inspector",
+      "description": "A library designed for developers to scan and classify prompts sent to AI systems (like Claude or GPT) for potential malicious intent, such as attempts to generate phishing emails, write malware, or bypass ethical filters. It helps prevent AI misuse in real-time.",
+      "topic": "AI for Cybersecurity Threats",
+      "date": "2026-03-04",
+      "generated": "2026-03-04T04:06:08.290049+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-04/malicious_prompt_inspector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-04/malicious_prompt_inspector/README.md"
+    },
     {
       "tool_name": "ai_code_reviewer",
       "display_name": "AI Code Reviewer",
