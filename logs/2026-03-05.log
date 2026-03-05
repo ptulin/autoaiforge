@@ -1,0 +1,262 @@
+2026-03-05 04:09:27 | INFO     | main | ============================================================
+2026-03-05 04:09:27 | INFO     | main | AutoAIForge starting run: 2026-03-05T04:09:27.731346+00:00
+2026-03-05 04:09:27 | INFO     | main | ============================================================
+2026-03-05 04:09:27 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-05 04:09:28 | INFO     | youtube_scraper | YouTube client ready
+2026-03-05 04:09:28 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-05 04:09:28 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-05 04:09:29 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-05 04:09:29 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-05 04:09:29 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-05 04:09:30 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 39 results (quota used: 600)
+2026-03-05 04:09:30 | INFO     | youtube_scraper | YouTube 'machine learning tools': 25 results (quota used: 700)
+2026-03-05 04:09:30 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-05 04:09:31 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-05 04:09:31 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-05 04:09:31 | INFO     | youtube_scraper | YouTube 'open source LLM': 25 results (quota used: 1100)
+2026-03-05 04:09:32 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-05 04:09:32 | INFO     | youtube_scraper | YouTube 'vector database AI': 22 results (quota used: 1300)
+2026-03-05 04:09:32 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-05 04:09:33 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-05 04:09:33 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-05 04:09:33 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-03-05 04:09:33 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-03-05 04:09:34 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-05 04:09:34 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-05 04:09:34 | INFO     | youtube_scraper | YouTube total: 789 items, quota used: 2000
+2026-03-05 04:09:34 | INFO     | main |   YouTube: 748 items
+2026-03-05 04:09:34 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-05 04:09:39 | INFO     | rss_scraper | HackerNews: 187 items
+2026-03-05 04:09:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-05 04:09:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-05 04:09:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-05 04:09:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-05 04:09:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-05 04:09:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-05 04:09:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-05 04:09:47 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-05 04:09:53 | INFO     | rss_scraper | ArXiv: 104 items
+2026-03-05 04:10:00 | INFO     | rss_scraper | Dev.to: 198 items
+2026-03-05 04:10:01 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-05 04:10:01 | INFO     | rss_scraper | Free sources total: 539 unique items
+2026-03-05 04:10:01 | INFO     | main |   RSS/API sources: 539 items
+2026-03-05 04:10:01 | INFO     | main |   Total scraped: 1287 items
+2026-03-05 04:10:01 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-05 04:10:01 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-05 04:10:01 | INFO     | db_manager | Purged 0 old news items
+2026-03-05 04:10:01 | INFO     | db_manager | Inserted 965/1287 news items
+2026-03-05 04:10:01 | INFO     | main |   SQLite: 965 new items (total: 6197)
+2026-03-05 04:10:06 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-05 04:10:07 | INFO     | vector_store | VectorStore ready
+2026-03-05 04:10:34 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-05 04:10:34 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-05 04:10:34 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-05 04:10:34 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-05 04:10:40 | DEBUG    | llm_client | LLM response from github_models (3692 chars)
+2026-03-05 04:10:40 | ERROR    | topic_analyzer | LLM topic analysis failed: LLM returned non-JSON: [
+  {
+    "topic": "AI Memory Migration Tools",
+    "description": Tools for migrating user data and memory between AI platforms like ChatGPT, Claude, and Gemini.",
+    "keywords": ["AI memory", "data migration", "platform switch"],
+    "relevance": 9,
+    "tool_angle": "Develop Python libraries for
+Expecting value: line 4 column 20 (char 67) — using keyword fallback
+2026-03-05 04:10:40 | INFO     | main |   Found 10 topics:
+2026-03-05 04:10:40 | INFO     | main |      1. [10/10] AI news
+2026-03-05 04:10:40 | INFO     | main |      2. [10/10] AI
+2026-03-05 04:10:40 | INFO     | main |      3. [10/10] Claude AI updates
+2026-03-05 04:10:40 | INFO     | main |      4. [10/10] ai
+2026-03-05 04:10:40 | INFO     | main |      5. [10/10] Claude Code
+2026-03-05 04:10:40 | INFO     | main |      6. [10/10] AI automation
+2026-03-05 04:10:40 | INFO     | main |      7. [10/10] generative AI
+2026-03-05 04:10:40 | INFO     | main |      8. [10/10] AI productivity tools
+2026-03-05 04:10:40 | INFO     | main |      9. [10/10] AI agent framework
+2026-03-05 04:10:40 | INFO     | main |     10. [10/10] LLM
+2026-03-05 04:10:40 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-05 04:10:40 | INFO     | main |   Existing collection: 16 tools across 9 topics
+2026-03-05 04:10:40 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-05 04:10:40 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-05 04:11:47 | DEBUG    | llm_client | LLM response from github_models (3257 chars)
+2026-03-05 04:11:47 | INFO     | idea_generator | Generated 3 ideas for topic: AI news
+2026-03-05 04:11:52 | DEBUG    | llm_client | LLM response from github_models (2497 chars)
+2026-03-05 04:11:52 | INFO     | idea_generator | Generated 2 ideas for topic: AI
+2026-03-05 04:11:52 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-05 04:11:52 | INFO     | main |   Generated 5 tool ideas:
+2026-03-05 04:11:52 | INFO     | main |     • ai_news_aggregator: This tool collects, aggregates, and categorizes the latest AI-related news from 
+2026-03-05 04:11:52 | INFO     | main |     • ai_trend_analyzer: A CLI tool that analyzes recent AI news articles to extract trending topics, com
+2026-03-05 04:11:52 | INFO     | main |     • ai_news_notifier: A notification tool that monitors specific AI-related keywords or topics in news
+2026-03-05 04:11:52 | INFO     | main |     • prompt_optimization_helper: This CLI tool helps AI developers optimize and refine prompts for large language
+2026-03-05 04:11:52 | INFO     | main |     • ai_training_data_inspector: This Python tool analyzes datasets used for AI training to identify potential is
+2026-03-05 04:11:52 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-05 04:11:52 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-05 04:12:01 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-05 04:12:01 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-05 04:12:01 | INFO     | tool_builder | Building tool: ai_news_aggregator …
+2026-03-05 04:12:09 | DEBUG    | llm_client | LLM response from github_models (5809 chars)
+2026-03-05 04:12:09 | DEBUG    | test_runner | Installing: ['feedparser==6.0.10', 'requests==2.31.0', 'beautifulsoup4==4.12.2']
+2026-03-05 04:12:12 | WARNING  | test_runner | Tests FAILED for ai_news_aggregator:
+test_ai_news_aggregator.py::test_fetch_rss_feed FAILED                   [ 33%]
+    assert len(entries) == 1
+E   assert 0 == 1
+Error fetching RSS feed from http://example.com/rss: 'dict' object has no attribute 'bozo'
+FAILED test_ai_news_aggregator.py::test_fetch_rss_feed - assert 0 == 1
+2026-03-05 04:12:12 | WARNING  | tool_builder | ⚠️  ai_news_aggregator tests failed (loop 1/5) — test_ai_news_aggregator.py::test_fetch_rss_feed FAILED                   [ 33%]
+    assert len(entries) == 1
+E   assert 0 == 1
+Error fetching RSS feed from http://example.com/rss: 'dict' object has no
+2026-03-05 04:12:25 | DEBUG    | llm_client | LLM response from github_models (6036 chars)
+2026-03-05 04:12:25 | DEBUG    | test_runner | Installing: ['feedparser', 'beautifulsoup4', 'requests']
+2026-03-05 04:12:26 | WARNING  | test_runner | Tests FAILED for ai_news_aggregator:
+test_ai_news_aggregator.py::test_fetch_rss_feed FAILED                   [ 33%]
+    assert len(entries) == 1
+E   assert 0 == 1
+Error fetching RSS feed from http://example.com/rss: 'dict' object has no attribute 'entries'
+FAILED test_ai_news_aggregator.py::test_fetch_rss_feed - assert 0 == 1
+2026-03-05 04:12:26 | WARNING  | tool_builder | ⚠️  ai_news_aggregator tests failed (loop 2/5) — test_ai_news_aggregator.py::test_fetch_rss_feed FAILED                   [ 33%]
+    assert len(entries) == 1
+E   assert 0 == 1
+Error fetching RSS feed from http://example.com/rss: 'dict' object has no
+2026-03-05 04:12:33 | DEBUG    | llm_client | LLM response from github_models (5910 chars)
+2026-03-05 04:12:33 | DEBUG    | test_runner | Installing: ['feedparser']
+2026-03-05 04:12:34 | INFO     | test_runner | Tests PASSED for ai_news_aggregator
+2026-03-05 04:12:34 | INFO     | tool_builder | ✅ ai_news_aggregator passed tests on loop 3
+2026-03-05 04:12:34 | INFO     | tool_builder | Building tool: ai_trend_analyzer …
+2026-03-05 04:12:48 | DEBUG    | llm_client | LLM response from github_models (6953 chars)
+2026-03-05 04:12:48 | DEBUG    | test_runner | Installing: ['nltk==3.8.1', 'spacy==3.6.0', 'wordcloud==1.9.2', 'matplotlib==3.8.0']
+2026-03-05 04:13:01 | WARNING  | test_runner | Tests FAILED for ai_trend_analyzer:
+test_ai_trend_analyzer.py::test_load_input_file FAILED                   [ 25%]
+    raise FileNotFoundError(f"Input file {input_path} not found.")
+E   FileNotFoundError: Input file mock_file.json not found.
+FAILED test_ai_trend_analyzer.py::test_load_input_file - FileNotFoundError: Input file mock_file.json not found.
+2026-03-05 04:13:01 | WARNING  | tool_builder | ⚠️  ai_trend_analyzer tests failed (loop 1/5) — test_ai_trend_analyzer.py::test_load_input_file FAILED                   [ 25%]
+    raise FileNotFoundError(f"Input file {input_path} not found.")
+E   FileNotFoundError: Input file mock_file.json not 
+2026-03-05 04:13:10 | DEBUG    | llm_client | LLM response from github_models (6390 chars)
+2026-03-05 04:13:10 | DEBUG    | test_runner | Installing: ['wordcloud', 'matplotlib', 'spacy', 'nltk']
+2026-03-05 04:13:12 | INFO     | test_runner | Tests PASSED for ai_trend_analyzer
+2026-03-05 04:13:12 | INFO     | tool_builder | ✅ ai_trend_analyzer passed tests on loop 2
+2026-03-05 04:13:12 | INFO     | tool_builder | Building tool: ai_news_notifier …
+2026-03-05 04:13:24 | DEBUG    | llm_client | LLM response from github_models (7584 chars)
+2026-03-05 04:13:24 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'schedule==1.2.0', 'plyer==2.1.0']
+2026-03-05 04:13:25 | WARNING  | test_runner | Tests FAILED for ai_news_notifier:
+test_ai_news_notifier.py::test_send_email_notification FAILED            [ 66%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+    mock_smtp.return_value.starttls.assert_called_once()
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+FAILED test_ai_news_notifier.py::test_send_email_notification - AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+2026-03-05 04:13:25 | WARNING  | tool_builder | ⚠️  ai_news_notifier tests failed (loop 1/5) — test_ai_news_notifier.py::test_send_email_notification FAILED            [ 66%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-05 04:13:34 | DEBUG    | llm_client | LLM response from github_models (7606 chars)
+2026-03-05 04:13:34 | DEBUG    | test_runner | Installing: ['plyer', 'schedule', 'requests']
+2026-03-05 04:13:35 | WARNING  | test_runner | Tests FAILED for ai_news_notifier:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_news_notifier.py ___________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:357: in _rewrite_test
+E   SyntaxError: unterminated string literal (detected at line 46)
+ERROR test_ai_news_notifier.py
+2026-03-05 04:13:35 | WARNING  | tool_builder | ⚠️  ai_news_notifier tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_news_notifier.py ___________________
+../_venv/lib/python3.11/site-packages/
+2026-03-05 04:13:43 | DEBUG    | llm_client | LLM response from github_models (7606 chars)
+2026-03-05 04:13:43 | DEBUG    | test_runner | Installing: ['plyer', 'requests', 'schedule']
+2026-03-05 04:13:43 | WARNING  | test_runner | Tests FAILED for ai_news_notifier:
+test_ai_news_notifier.py::test_send_email_notification FAILED            [ 66%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+    mock_smtp_instance.starttls.assert_called_once()
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+FAILED test_ai_news_notifier.py::test_send_email_notification - AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+2026-03-05 04:13:43 | WARNING  | tool_builder | ⚠️  ai_news_notifier tests failed (loop 3/5) — test_ai_news_notifier.py::test_send_email_notification FAILED            [ 66%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-05 04:13:52 | DEBUG    | llm_client | LLM response from github_models (7966 chars)
+2026-03-05 04:13:52 | DEBUG    | test_runner | Installing: ['plyer', 'requests', 'schedule']
+2026-03-05 04:13:52 | INFO     | test_runner | Tests PASSED for ai_news_notifier
+2026-03-05 04:13:52 | INFO     | tool_builder | ✅ ai_news_notifier passed tests on loop 4
+2026-03-05 04:13:52 | INFO     | tool_builder | Building tool: prompt_optimization_helper …
+2026-03-05 04:14:02 | DEBUG    | llm_client | LLM response from github_models (6205 chars)
+2026-03-05 04:14:02 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pandas==2.1.1']
+2026-03-05 04:14:09 | INFO     | test_runner | Tests PASSED for prompt_optimization_helper
+2026-03-05 04:14:09 | INFO     | tool_builder | ✅ prompt_optimization_helper passed tests on loop 1
+2026-03-05 04:14:09 | INFO     | tool_builder | Building tool: ai_training_data_inspector …
+2026-03-05 04:14:24 | DEBUG    | llm_client | LLM response from github_models (6656 chars)
+2026-03-05 04:14:24 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.23.5', 'matplotlib==3.7.2', 'jinja2==3.1.2']
+2026-03-05 04:14:35 | WARNING  | test_runner | Tests FAILED for ai_training_data_inspector:
+test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+  /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <MagicMock name='open()' id='140698632227984'>
+  TypeError: expected bytes, str found
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+FAILED test_ai_training_data_inspector.py::test_analyze_dataset - RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+2026-03-05 04:14:35 | WARNING  | tool_builder | ⚠️  ai_training_data_inspector tests failed (loop 1/5) — test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+E   RuntimeError: In FT2Font: Can not load face (invalid stream operation; error code 0x55)
+  /home/runner/work/autoaifo
+2026-03-05 04:14:45 | DEBUG    | llm_client | LLM response from github_models (6804 chars)
+2026-03-05 04:14:45 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'jinja2']
+2026-03-05 04:14:47 | WARNING  | test_runner | Tests FAILED for ai_training_data_inspector:
+test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_analyze_dataset - AssertionError: assert False
+2026-03-05 04:14:47 | WARNING  | tool_builder | ⚠️  ai_training_data_inspector tests failed (loop 2/5) — test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_
+2026-03-05 04:14:54 | DEBUG    | llm_client | LLM response from github_models (6989 chars)
+2026-03-05 04:14:54 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'jinja2']
+2026-03-05 04:14:56 | WARNING  | test_runner | Tests FAILED for ai_training_data_inspector:
+test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_analyze_dataset - AssertionError: assert False
+2026-03-05 04:14:56 | WARNING  | tool_builder | ⚠️  ai_training_data_inspector tests failed (loop 3/5) — test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_
+2026-03-05 04:15:04 | DEBUG    | llm_client | LLM response from github_models (7270 chars)
+2026-03-05 04:15:04 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'jinja2']
+2026-03-05 04:15:06 | WARNING  | test_runner | Tests FAILED for ai_training_data_inspector:
+test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_analyze_dataset - AssertionError: assert False
+2026-03-05 04:15:06 | WARNING  | tool_builder | ⚠️  ai_training_data_inspector tests failed (loop 4/5) — test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_
+2026-03-05 04:15:15 | DEBUG    | llm_client | LLM response from github_models (7791 chars)
+2026-03-05 04:15:15 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'jinja2']
+2026-03-05 04:15:17 | WARNING  | test_runner | Tests FAILED for ai_training_data_inspector:
+test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_analyze_dataset - AssertionError: assert False
+2026-03-05 04:15:17 | WARNING  | tool_builder | ⚠️  ai_training_data_inspector tests failed (loop 5/5) — test_ai_training_data_inspector.py::test_analyze_dataset FAILED          [ 33%]
+    assert os.path.exists(output_file)
+E   AssertionError: assert False
+FAILED test_ai_training_data_inspector.py::test_
+2026-03-05 04:15:17 | ERROR    | tool_builder | ❌ ai_training_data_inspector failed after 5 loops
+2026-03-05 04:15:17 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-03-05 04:15:17 | INFO     | main |   Built 4/5 tools successfully
+2026-03-05 04:15:17 | INFO     | main |     ✅ ai_news_aggregator (loops: 3)
+2026-03-05 04:15:17 | INFO     | main |     ✅ ai_trend_analyzer (loops: 2)
+2026-03-05 04:15:17 | INFO     | main |     ✅ ai_news_notifier (loops: 4)
+2026-03-05 04:15:17 | INFO     | main |     ✅ prompt_optimization_helper (loops: 1)
+2026-03-05 04:15:17 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-05 04:15:17 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-05 04:15:17 | INFO     | github_publisher | Saved ai_news_aggregator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_aggregator
+2026-03-05 04:15:17 | INFO     | github_publisher | Saved ai_trend_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_trend_analyzer
+2026-03-05 04:15:17 | INFO     | github_publisher | Saved ai_news_notifier → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_notifier
+2026-03-05 04:15:17 | INFO     | github_publisher | Saved prompt_optimization_helper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/prompt_optimization_helper
+2026-03-05 04:15:17 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-03-05 04:15:17 | INFO     | main |   Published 4 tools:
+2026-03-05 04:15:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_aggregator
+2026-03-05 04:15:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_trend_analyzer
+2026-03-05 04:15:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_notifier
+2026-03-05 04:15:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/prompt_optimization_helper
+2026-03-05 04:15:17 | INFO     | main | ✅ Generated tools_index.json with 20 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
