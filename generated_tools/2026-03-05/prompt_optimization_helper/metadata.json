@@ -1,0 +1,12 @@
+{
+  "tool_name": "prompt_optimization_helper",
+  "display_name": "Prompt Optimization Helper",
+  "description": "This CLI tool helps AI developers optimize and refine prompts for large language models (LLMs). It allows users to test variations of prompts, automatically benchmarking outputs based on defined quality metrics. This is useful for fine-tuning prompt phrasing for better AI responses in chatbot systems, content generation, or other LLM use cases.",
+  "topic": "AI",
+  "date": "2026-03-05",
+  "generated": "2026-03-05T04:09:27.731346+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/prompt_optimization_helper",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-05/prompt_optimization_helper/README.md"
+}

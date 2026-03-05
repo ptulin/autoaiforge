@@ -1,0 +1,12 @@
+{
+  "tool_name": "ai_news_notifier",
+  "display_name": "AI News Notifier",
+  "description": "A notification tool that monitors specific AI-related keywords or topics in news sources and alerts developers in real time via email or desktop notifications. This ensures they never miss important updates.",
+  "topic": "AI news",
+  "date": "2026-03-05",
+  "generated": "2026-03-05T04:09:27.731346+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_notifier",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-05/ai_news_notifier/README.md"
+}
