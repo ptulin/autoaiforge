@@ -1,0 +1,345 @@
+2026-03-06 04:06:33 | INFO     | main | ============================================================
+2026-03-06 04:06:33 | INFO     | main | AutoAIForge starting run: 2026-03-06T04:06:33.386339+00:00
+2026-03-06 04:06:33 | INFO     | main | ============================================================
+2026-03-06 04:06:33 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-06 04:06:33 | INFO     | youtube_scraper | YouTube client ready
+2026-03-06 04:06:34 | INFO     | youtube_scraper | YouTube 'AI news': 25 results (quota used: 100)
+2026-03-06 04:06:34 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-06 04:06:34 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-06 04:06:35 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-06 04:06:35 | INFO     | youtube_scraper | YouTube 'Claude Code': 15 results (quota used: 500)
+2026-03-06 04:06:35 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 45 results (quota used: 600)
+2026-03-06 04:06:36 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-06 04:06:36 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-03-06 04:06:36 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-06 04:06:37 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-06 04:06:37 | INFO     | youtube_scraper | YouTube 'open source LLM': 37 results (quota used: 1100)
+2026-03-06 04:06:37 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-06 04:06:38 | INFO     | youtube_scraper | YouTube 'vector database AI': 25 results (quota used: 1300)
+2026-03-06 04:06:38 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-06 04:06:38 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-06 04:06:39 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-06 04:06:39 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-03-06 04:06:39 | INFO     | youtube_scraper | YouTube 'local LLM': 36 results (quota used: 1800)
+2026-03-06 04:06:39 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-06 04:06:40 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-06 04:06:40 | INFO     | youtube_scraper | YouTube total: 760 items, quota used: 2000
+2026-03-06 04:06:40 | INFO     | main |   YouTube: 718 items
+2026-03-06 04:06:40 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-06 04:06:46 | INFO     | rss_scraper | HackerNews: 191 items
+2026-03-06 04:06:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-06 04:06:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-06 04:06:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-06 04:06:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-06 04:06:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-06 04:06:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-06 04:06:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-06 04:06:54 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-06 04:07:00 | INFO     | rss_scraper | ArXiv: 108 items
+2026-03-06 04:07:04 | INFO     | rss_scraper | Dev.to: 203 items
+2026-03-06 04:07:05 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-06 04:07:05 | INFO     | rss_scraper | Free sources total: 552 unique items
+2026-03-06 04:07:05 | INFO     | main |   RSS/API sources: 552 items
+2026-03-06 04:07:05 | INFO     | main |   Total scraped: 1270 items
+2026-03-06 04:07:05 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-06 04:07:05 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-06 04:07:05 | INFO     | db_manager | Purged 0 old news items
+2026-03-06 04:07:05 | INFO     | db_manager | Inserted 984/1270 news items
+2026-03-06 04:07:05 | INFO     | main |   SQLite: 984 new items (total: 7181)
+2026-03-06 04:07:10 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-06 04:07:11 | INFO     | vector_store | VectorStore ready
+2026-03-06 04:07:35 | INFO     | vector_store | Indexed 1949 items into vector store
+2026-03-06 04:07:35 | INFO     | main |   Vector store: 1949 items indexed
+2026-03-06 04:07:35 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-06 04:07:35 | INFO     | topic_analyzer | Analyzing 1949 items for top 10 topics …
+2026-03-06 04:07:44 | DEBUG    | llm_client | LLM response from github_models (3911 chars)
+2026-03-06 04:07:44 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-06 04:07:44 | INFO     | main |   Found 10 topics:
+2026-03-06 04:07:44 | INFO     | main |      1. [9/10] Claude AI Workflow Automation
+2026-03-06 04:07:44 | INFO     | main |      2. [9/10] AI Agent Development Tools
+2026-03-06 04:07:44 | INFO     | main |      3. [8/10] AI Memory Transfer Techniques
+2026-03-06 04:07:44 | INFO     | main |      4. [8/10] AI-Powered Trading Bots
+2026-03-06 04:07:44 | INFO     | main |      5. [8/10] AI in Cybersecurity
+2026-03-06 04:07:44 | INFO     | main |      6. [8/10] Alibaba Qwen 3.5 AI Model
+2026-03-06 04:07:44 | INFO     | main |      7. [8/10] AI Model Comparison Frameworks
+2026-03-06 04:07:44 | INFO     | main |      8. [7/10] Open-Source AI Model Hosting
+2026-03-06 04:07:44 | INFO     | main |      9. [7/10] AI Video Editing Tools
+2026-03-06 04:07:44 | INFO     | main |     10. [7/10] OSINT and AI Tool Vetting
+2026-03-06 04:07:44 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-06 04:07:44 | INFO     | main |   Existing collection: 20 tools across 11 topics
+2026-03-06 04:07:44 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-06 04:07:44 | INFO     | idea_generator |   ⏭  Skipping topic 'Claude AI Workflow Automation' — tool already in collection
+2026-03-06 04:07:52 | DEBUG    | llm_client | LLM response from github_models (3769 chars)
+2026-03-06 04:07:52 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agent Development Tools
+2026-03-06 04:07:56 | DEBUG    | llm_client | LLM response from github_models (2475 chars)
+2026-03-06 04:07:56 | INFO     | idea_generator | Generated 2 ideas for topic: AI Memory Transfer Techniques
+2026-03-06 04:07:56 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-06 04:07:56 | INFO     | main |   Generated 5 tool ideas:
+2026-03-06 04:07:56 | INFO     | main |     • agent_workflow_builder: A CLI tool to help developers easily define and structure modular AI agent workf
+2026-03-06 04:07:56 | INFO     | main |     • claude_integration_helper: A lightweight Python library that provides utility functions to quickly connect 
+2026-03-06 04:07:56 | INFO     | main |     • agent_memory_manager: A library that helps developers implement contextual memory in AI agents by mana
+2026-03-06 04:07:56 | INFO     | main |     • ai_memory_exporter: This tool enables developers to extract and export memory data from AI systems l
+2026-03-06 04:07:56 | INFO     | main |     • memory_mapper_tool: This utility maps exported AI memory data from one model (e.g., ChatGPT) to the 
+2026-03-06 04:07:56 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-06 04:07:56 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-06 04:08:05 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-06 04:08:05 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-06 04:08:05 | INFO     | tool_builder | Building tool: agent_workflow_builder …
+2026-03-06 04:08:15 | DEBUG    | llm_client | LLM response from github_models (6126 chars)
+2026-03-06 04:08:15 | DEBUG    | test_runner | Installing: ['PyYAML==6.0', 'Click==8.1.3']
+2026-03-06 04:08:16 | WARNING  | test_runner | Tests FAILED for agent_workflow_builder:
+test_agent_workflow_builder.py::test_load_yaml_config_valid FAILED       [ 33%]
+test_agent_workflow_builder.py::test_load_yaml_config_invalid FAILED     [ 66%]
+test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [100%]
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+E   FileNotFoundError: Configuration file not found: mock_config.yaml
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+E   FileNotFoundError: Configuration file not found: mock_config.yaml
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(f"Error generating workflow script: {e}")
+E   ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+FAILED test_agent_workflow_builder.py::test_load_yaml_config_valid - FileNotFoundError: Configuration file not found: mock_config.yaml
+FAILED test_agent_workflow_builder.py::test_load_yaml_config_invalid - FileNotFoundError: Configuration file not found: mock_config.yaml
+FAILED test_agent_workflow_builder.py::test_generate_workflow_script - ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+2026-03-06 04:08:16 | WARNING  | tool_builder | ⚠️  agent_workflow_builder tests failed (loop 1/5) — test_agent_workflow_builder.py::test_load_yaml_config_valid FAILED       [ 33%]
+test_agent_workflow_builder.py::test_load_yaml_config_invalid FAILED     [ 66%]
+test_agent_workflow_builder.py::test_gen
+2026-03-06 04:08:25 | DEBUG    | llm_client | LLM response from github_models (6114 chars)
+2026-03-06 04:08:25 | DEBUG    | test_runner | Installing: ['pyyaml', 'click']
+2026-03-06 04:08:25 | WARNING  | test_runner | Tests FAILED for agent_workflow_builder:
+test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [100%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(f"Error generating workflow script: {e}")
+E   ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+FAILED test_agent_workflow_builder.py::test_generate_workflow_script - ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+2026-03-06 04:08:25 | WARNING  | tool_builder | ⚠️  agent_workflow_builder tests failed (loop 2/5) — test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [100%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(
+2026-03-06 04:08:33 | DEBUG    | llm_client | LLM response from github_models (6306 chars)
+2026-03-06 04:08:33 | DEBUG    | test_runner | Installing: ['pyyaml', 'click']
+2026-03-06 04:08:34 | WARNING  | test_runner | Tests FAILED for agent_workflow_builder:
+test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [100%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(f"Error generating workflow script: {e}")
+E   ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+FAILED test_agent_workflow_builder.py::test_generate_workflow_script - ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+2026-03-06 04:08:34 | WARNING  | tool_builder | ⚠️  agent_workflow_builder tests failed (loop 3/5) — test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [100%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(
+2026-03-06 04:08:44 | DEBUG    | llm_client | LLM response from github_models (7054 chars)
+2026-03-06 04:08:44 | DEBUG    | test_runner | Installing: ['pyyaml', 'click']
+2026-03-06 04:08:45 | WARNING  | test_runner | Tests FAILED for agent_workflow_builder:
+test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [ 60%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(f"Error generating workflow script: {e}")
+E   ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+FAILED test_agent_workflow_builder.py::test_generate_workflow_script - ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+2026-03-06 04:08:45 | WARNING  | tool_builder | ⚠️  agent_workflow_builder tests failed (loop 4/5) — test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [ 60%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(
+2026-03-06 04:08:55 | DEBUG    | llm_client | LLM response from github_models (7666 chars)
+2026-03-06 04:08:55 | DEBUG    | test_runner | Installing: ['pyyaml', 'click']
+2026-03-06 04:08:55 | WARNING  | test_runner | Tests FAILED for agent_workflow_builder:
+test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [ 60%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(f"Error generating workflow script: {e}")
+E   ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+FAILED test_agent_workflow_builder.py::test_generate_workflow_script - ValueError: Error generating workflow script: cannot access local variable 'task' where it is not associated with a value
+2026-03-06 04:08:55 | WARNING  | tool_builder | ⚠️  agent_workflow_builder tests failed (loop 5/5) — test_agent_workflow_builder.py::test_generate_workflow_script FAILED     [ 60%]
+E   UnboundLocalError: cannot access local variable 'task' where it is not associated with a value
+    raise ValueError(
+2026-03-06 04:08:55 | ERROR    | tool_builder | ❌ agent_workflow_builder failed after 5 loops
+2026-03-06 04:08:55 | INFO     | tool_builder | Building tool: claude_integration_helper …
+2026-03-06 04:09:08 | DEBUG    | llm_client | LLM response from github_models (7285 chars)
+2026-03-06 04:09:08 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'python-dotenv==1.0.0']
+2026-03-06 04:09:09 | WARNING  | test_runner | Tests FAILED for claude_integration_helper:
+test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+E   Exception: API error
+FAILED test_claude_integration_helper.py::test_send_query_api_error - Exception: API error
+2026-03-06 04:09:09 | WARNING  | tool_builder | ⚠️  claude_integration_helper tests failed (loop 1/5) — test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+E   Exception: API error
+FAILED test_claude_integration_helper.py::test_send_query_api_error - Exception: API error
+2026-03-06 04:09:17 | DEBUG    | llm_client | LLM response from github_models (6694 chars)
+2026-03-06 04:09:17 | DEBUG    | test_runner | Installing: ['requests', 'python-dotenv']
+2026-03-06 04:09:18 | WARNING  | test_runner | Tests FAILED for claude_integration_helper:
+test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_integration_helper.py::test_send_query_api_error - NameError: name 'requests' is not defined
+2026-03-06 04:09:18 | WARNING  | tool_builder | ⚠️  claude_integration_helper tests failed (loop 2/5) — test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-06 04:09:24 | DEBUG    | llm_client | LLM response from github_models (6629 chars)
+2026-03-06 04:09:24 | DEBUG    | test_runner | Installing: ['requests', 'pytest', 'python-dotenv']
+2026-03-06 04:09:25 | WARNING  | test_runner | Tests FAILED for claude_integration_helper:
+test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_integration_helper.py::test_send_query_api_error - NameError: name 'requests' is not defined
+2026-03-06 04:09:25 | WARNING  | tool_builder | ⚠️  claude_integration_helper tests failed (loop 3/5) — test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-06 04:09:31 | DEBUG    | llm_client | LLM response from github_models (6745 chars)
+2026-03-06 04:09:31 | DEBUG    | test_runner | Installing: ['requests', 'python-dotenv']
+2026-03-06 04:09:32 | WARNING  | test_runner | Tests FAILED for claude_integration_helper:
+test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_integration_helper.py::test_send_query_api_error - NameError: name 'requests' is not defined
+2026-03-06 04:09:32 | WARNING  | tool_builder | ⚠️  claude_integration_helper tests failed (loop 4/5) — test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-06 04:09:39 | DEBUG    | llm_client | LLM response from github_models (6833 chars)
+2026-03-06 04:09:39 | DEBUG    | test_runner | Installing: ['requests', 'pytest', 'python-dotenv']
+2026-03-06 04:09:39 | WARNING  | test_runner | Tests FAILED for claude_integration_helper:
+test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_integration_helper.py::test_send_query_api_error - NameError: name 'requests' is not defined
+2026-03-06 04:09:39 | WARNING  | tool_builder | ⚠️  claude_integration_helper tests failed (loop 5/5) — test_claude_integration_helper.py::test_send_query_api_error FAILED      [ 50%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-06 04:09:39 | ERROR    | tool_builder | ❌ claude_integration_helper failed after 5 loops
+2026-03-06 04:09:39 | INFO     | tool_builder | Building tool: agent_memory_manager …
+2026-03-06 04:09:50 | DEBUG    | llm_client | LLM response from github_models (5901 chars)
+2026-03-06 04:09:50 | DEBUG    | test_runner | Installing: ['numpy==1.24.3', 'faiss-cpu==1.7.4']
+2026-03-06 04:09:54 | WARNING  | test_runner | Tests FAILED for agent_memory_manager:
+test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+E   ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2,) + inhomogeneous part.
+FAILED test_agent_memory_manager.py::test_retrieve_context_with_memory - ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2,) + inhomogeneous part.
+2026-03-06 04:09:54 | WARNING  | tool_builder | ⚠️  agent_memory_manager tests failed (loop 1/5) — test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+E   ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensi
+2026-03-06 04:10:02 | DEBUG    | llm_client | LLM response from github_models (6038 chars)
+2026-03-06 04:10:02 | DEBUG    | test_runner | Installing: ['numpy', 'faiss-cpu']
+2026-03-06 04:10:03 | WARNING  | test_runner | Tests FAILED for agent_memory_manager:
+test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+FAILED test_agent_memory_manager.py::test_retrieve_context_with_memory - AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+2026-03-06 04:10:03 | WARNING  | tool_builder | ⚠️  agent_memory_manager tests failed (loop 2/5) — test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!'
+2026-03-06 04:10:12 | DEBUG    | llm_client | LLM response from github_models (6172 chars)
+2026-03-06 04:10:12 | DEBUG    | test_runner | Installing: ['numpy', 'faiss-cpu']
+2026-03-06 04:10:13 | WARNING  | test_runner | Tests FAILED for agent_memory_manager:
+test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+FAILED test_agent_memory_manager.py::test_retrieve_context_with_memory - AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+2026-03-06 04:10:13 | WARNING  | tool_builder | ⚠️  agent_memory_manager tests failed (loop 3/5) — test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!'
+2026-03-06 04:10:22 | DEBUG    | llm_client | LLM response from github_models (6224 chars)
+2026-03-06 04:10:22 | DEBUG    | test_runner | Installing: ['numpy', 'faiss-cpu']
+2026-03-06 04:10:23 | WARNING  | test_runner | Tests FAILED for agent_memory_manager:
+test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+FAILED test_agent_memory_manager.py::test_retrieve_context_with_memory - AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+2026-03-06 04:10:23 | WARNING  | tool_builder | ⚠️  agent_memory_manager tests failed (loop 4/5) — test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!'
+2026-03-06 04:10:30 | DEBUG    | llm_client | LLM response from github_models (6138 chars)
+2026-03-06 04:10:30 | DEBUG    | test_runner | Installing: ['numpy', 'faiss-cpu']
+2026-03-06 04:10:31 | WARNING  | test_runner | Tests FAILED for agent_memory_manager:
+test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+FAILED test_agent_memory_manager.py::test_retrieve_context_with_memory - AssertionError: assert ('User: Hi', 'Bot: Hello!') == ('User: How a...: I am fine.')
+2026-03-06 04:10:31 | WARNING  | tool_builder | ⚠️  agent_memory_manager tests failed (loop 5/5) — test_agent_memory_manager.py::test_retrieve_context_with_memory FAILED   [ 75%]
+    assert context[0] == ('User: How are you?', 'Bot: I am fine.')
+E   AssertionError: assert ('User: Hi', 'Bot: Hello!'
+2026-03-06 04:10:31 | ERROR    | tool_builder | ❌ agent_memory_manager failed after 5 loops
+2026-03-06 04:10:31 | INFO     | tool_builder | Building tool: ai_memory_exporter …
+2026-03-06 04:10:45 | DEBUG    | llm_client | LLM response from github_models (6109 chars)
+2026-03-06 04:10:45 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pyyaml==6.0']
+2026-03-06 04:10:45 | INFO     | test_runner | Tests PASSED for ai_memory_exporter
+2026-03-06 04:10:45 | INFO     | tool_builder | ✅ ai_memory_exporter passed tests on loop 1
+2026-03-06 04:10:45 | INFO     | tool_builder | Building tool: memory_mapper_tool …
+2026-03-06 04:10:54 | DEBUG    | llm_client | LLM response from github_models (5778 chars)
+2026-03-06 04:10:54 | DEBUG    | test_runner | Installing: ['jsonschema==4.19.0', 'pandas==1.5.3']
+2026-03-06 04:11:00 | WARNING  | test_runner | Tests FAILED for memory_mapper_tool:
+test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_mapper_tool.py::test_save_json_file - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-03-06 04:11:00 | WARNING  | tool_builder | ⚠️  memory_mapper_tool tests failed (loop 1/5) — test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-06 04:11:06 | DEBUG    | llm_client | LLM response from github_models (5563 chars)
+2026-03-06 04:11:06 | DEBUG    | test_runner | Installing: ['jsonschema', 'pandas']
+2026-03-06 04:11:08 | WARNING  | test_runner | Tests FAILED for memory_mapper_tool:
+test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+    mocked_file().write.assert_called_with(json.dumps(data, indent=4) + "\n")
+E   AssertionError: expected call not found.
+E   assert ('}',) == ('{\n    "key...value"\n}\n',)
+FAILED test_memory_mapper_tool.py::test_save_json_file - AssertionError: expected call not found.
+assert ('}',) == ('{\n    "key...value"\n}\n',)
+2026-03-06 04:11:08 | WARNING  | tool_builder | ⚠️  memory_mapper_tool tests failed (loop 2/5) — test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionEr
+2026-03-06 04:11:08 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-06 04:12:15 | DEBUG    | llm_client | LLM response from github_models (5287 chars)
+2026-03-06 04:12:15 | DEBUG    | test_runner | Installing: ['jsonschema', 'pandas']
+2026-03-06 04:12:16 | WARNING  | test_runner | Tests FAILED for memory_mapper_tool:
+test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_mapper_tool.py::test_save_json_file - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-03-06 04:12:16 | WARNING  | tool_builder | ⚠️  memory_mapper_tool tests failed (loop 3/5) — test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-06 04:12:22 | DEBUG    | llm_client | LLM response from github_models (5379 chars)
+2026-03-06 04:12:22 | DEBUG    | test_runner | Installing: ['jsonschema', 'pandas']
+2026-03-06 04:12:23 | WARNING  | test_runner | Tests FAILED for memory_mapper_tool:
+test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(data, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key...value"\n}\n',)
+FAILED test_memory_mapper_tool.py::test_save_json_file - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key...value"\n}\n',)
+2026-03-06 04:12:23 | WARNING  | tool_builder | ⚠️  memory_mapper_tool tests failed (loop 4/5) — test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-06 04:12:29 | DEBUG    | llm_client | LLM response from github_models (5783 chars)
+2026-03-06 04:12:29 | DEBUG    | test_runner | Installing: ['jsonschema', 'pandas']
+2026-03-06 04:12:30 | WARNING  | test_runner | Tests FAILED for memory_mapper_tool:
+test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('{\n    "key": "value"\n}') call not found
+    mocked_file().write.assert_any_call(json.dumps(data, indent=4))
+E   AssertionError: write('{\n    "key": "value"\n}') call not found
+E   assert ('\n',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_mapper_tool.py::test_save_json_file - AssertionError: write('{\n    "key": "value"\n}') call not found
+assert ('\n',) == ('{\n    "key": "value"\n}',)
+2026-03-06 04:12:30 | WARNING  | tool_builder | ⚠️  memory_mapper_tool tests failed (loop 5/5) — test_memory_mapper_tool.py::test_save_json_file FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-03-06 04:12:30 | ERROR    | tool_builder | ❌ memory_mapper_tool failed after 5 loops
+2026-03-06 04:12:30 | INFO     | tool_builder | Built 1/5 tools successfully
+2026-03-06 04:12:30 | INFO     | main |   Built 1/5 tools successfully
+2026-03-06 04:12:30 | INFO     | main |     ✅ ai_memory_exporter (loops: 1)
+2026-03-06 04:12:30 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-06 04:12:30 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-06 04:12:30 | INFO     | github_publisher | Saved ai_memory_exporter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-06/ai_memory_exporter
+2026-03-06 04:12:30 | INFO     | github_publisher | Saved 1/1 tools to generated_tools/
+2026-03-06 04:12:30 | INFO     | main |   Published 1 tools:
+2026-03-06 04:12:30 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-06/ai_memory_exporter
+2026-03-06 04:12:30 | INFO     | main | ✅ Generated tools_index.json with 21 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
