@@ -7,12 +7,12 @@ Strategy (revised):
   - Instead, we write tool files locally under generated_tools/{date}/{name}/
   - _save_db_to_git() in main.py then commits the whole generated_tools/ folder.
   - URLs point to the files in the main autoaiforge repo (always accessible).
-  - If a PAT with cross-repo access is ever added, a separate tools-repo
-    publisher can be layered in later.
+  - If a PAT with cross-repo access is ever added, a separate tools-repo publisher
+    can be layered in later.
 """
-
 import json
 import os
+import zipfile
 from pathlib import Path
 from typing import Optional
 
@@ -25,7 +25,7 @@ log = get_logger("github_publisher")
 
 class GitHubPublisher:
     def __init__(self):
-        self._ready    = True
+        self._ready = True
         self._username = (
             os.getenv("GITHUB_REPOSITORY_OWNER")
             or config.GITHUB_USERNAME
@@ -33,8 +33,7 @@ class GitHubPublisher:
         )
         log.info(f"Publisher ready — will commit tools to repo as: {self._username}")
 
-    # ── Public API ─────────────────────────────────────────────────────────────
-
+    # ── Public API ───────────────────────────────────────────────────────────
     def publish_tools(self, tools: list["BuiltTool"]) -> list[str]:
         """
         Write all tools to generated_tools/{date}/{name}/ on disk.
@@ -45,8 +44,7 @@ class GitHubPublisher:
             return []
 
         run_date = config.RUN_DATE
-        urls     = []
-
+        urls = []
         for tool in tools:
             try:
                 url = self._save_tool(tool, run_date)
@@ -59,21 +57,33 @@ class GitHubPublisher:
         log.info(f"Saved {len(urls)}/{len(tools)} tools to generated_tools/")
         return urls
 
-    # ── Internal ───────────────────────────────────────────────────────────────
-
+    # ── Internal ─────────────────────────────────────────────────────────────
     def _save_tool(self, tool: "BuiltTool", run_date: str) -> Optional[str]:
-        """Write a tool's files to the generated_tools directory."""
+        """Write a tool's files to the generated_tools directory and create a zip."""
         tool_dir = config.TOOLS_DIR / run_date / tool.tool_name
         tool_dir.mkdir(parents=True, exist_ok=True)
 
-        # Write all files
+        # Write all source files
         (tool_dir / f"{tool.tool_name}.py").write_text(tool.code, encoding="utf-8")
         (tool_dir / f"test_{tool.tool_name}.py").write_text(tool.test_code, encoding="utf-8")
         (tool_dir / "requirements.txt").write_text(
             "\n".join(tool.requirements) + "\n", encoding="utf-8"
         )
         (tool_dir / "README.md").write_text(tool.readme, encoding="utf-8")
-        # GitHub URL in the main autoaiforge repo
+
+        # Create a zip of the tool directory (excluding any existing zip)
+        zip_path = tool_dir / f"{tool.tool_name}.zip"
+        try:
+            with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+                for file_path in sorted(tool_dir.iterdir()):
+                    if file_path.suffix == ".zip":
+                        continue  # Don't zip the zip itself
+                    zf.write(file_path, file_path.name)
+            log.info(f"  Created zip: {zip_path.name} ({zip_path.stat().st_size} bytes)")
+        except Exception as e:
+            log.warning(f"  Zip creation failed for {tool.tool_name}: {e}")
+
+        # GitHub URLs
         repo_name = os.getenv("GITHUB_REPOSITORY", f"{self._username}/autoaiforge").split("/")[-1]
         github_url = (
             f"https://github.com/{self._username}/{repo_name}"
@@ -83,19 +93,24 @@ class GitHubPublisher:
             f"https://raw.githubusercontent.com/{self._username}/{repo_name}"
             f"/main/generated_tools/{run_date}/{tool.tool_name}/README.md"
         )
+        zip_url = (
+            f"https://raw.githubusercontent.com/{self._username}/{repo_name}"
+            f"/main/generated_tools/{run_date}/{tool.tool_name}/{tool.tool_name}.zip"
+        )
 
         (tool_dir / "metadata.json").write_text(
             json.dumps({
-                "tool_name":    tool.tool_name,
-                "display_name": tool.display_name,
-                "description":  tool.description,
-                "topic":        tool.topic,
-                "date":         run_date,
-                "generated":    config.RUN_TS,
-                "loops_needed": tool.loops_needed,
-                "tests_passed": tool.test_result.passed,
-                "github_url":   github_url,
-                "readme_url":   readme_url,
+                "tool_name":     tool.tool_name,
+                "display_name":  tool.display_name,
+                "description":   tool.description,
+                "topic":         tool.topic,
+                "date":          run_date,
+                "generated":     config.RUN_TS,
+                "loops_needed":  tool.loops_needed,
+                "tests_passed":  tool.test_result.passed,
+                "github_url":    github_url,
+                "readme_url":    readme_url,
+                "zip_url":       zip_url,
             }, indent=2),
             encoding="utf-8",
         )
