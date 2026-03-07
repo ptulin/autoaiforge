@@ -1,0 +1,13 @@
+{
+  "tool_name": "multimodal_data_merger",
+  "display_name": "Multimodal Data Merger",
+  "description": "This tool preprocesses and merges multimodal data (text, images, audio) into a unified format for AI model training. It allows users to align and normalize their datasets, ensuring consistency across different modalities while supporting common preprocessing operations like tokenization, resizing, and spectrogram generation.",
+  "topic": "AI Multimodal Models",
+  "date": "2026-03-07",
+  "generated": "2026-03-07T03:57:02.052726+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-07/multimodal_data_merger",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/multimodal_data_merger/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/multimodal_data_merger/multimodal_data_merger.zip"
+}
