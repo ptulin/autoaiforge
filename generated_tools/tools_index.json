@@ -1,18 +1,45 @@
 {
-  "last_updated": "2026-03-06T04:12:30.264183+00:00",
-  "total_tools": 21,
+  "last_updated": "2026-03-07T04:04:48.948237+00:00",
+  "total_tools": 23,
   "tools": [
+    {
+      "tool_name": "agentic_ai_debugger",
+      "display_name": "Agentic AI Debugger",
+      "description": "A CLI tool that integrates with IDEs to autonomously debug Python code. It uses agentic AI to analyze stack traces, error messages, and code context to suggest and apply fixes. This tool streamlines debugging by providing intelligent recommendations and fixes in real time.",
+      "topic": "Agentic AI for Coding",
+      "date": "2026-03-07",
+      "generated": "2026-03-07T03:57:02.052726+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-07/agentic_ai_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/agentic_ai_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/agentic_ai_debugger/agentic_ai_debugger.zip"
+    },
+    {
+      "tool_name": "multimodal_data_merger",
+      "display_name": "Multimodal Data Merger",
+      "description": "This tool preprocesses and merges multimodal data (text, images, audio) into a unified format for AI model training. It allows users to align and normalize their datasets, ensuring consistency across different modalities while supporting common preprocessing operations like tokenization, resizing, and spectrogram generation.",
+      "topic": "AI Multimodal Models",
+      "date": "2026-03-07",
+      "generated": "2026-03-07T03:57:02.052726+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-07/multimodal_data_merger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/multimodal_data_merger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-07/multimodal_data_merger/multimodal_data_merger.zip"
+    },
     {
       "tool_name": "ai_memory_exporter",
       "display_name": "AI Memory Exporter",
-      "description": "This tool enables developers to extract and export memory data from AI systems like ChatGPT and Claude for seamless transfer between models. It supports multiple formats (JSON, YAML, etc.) and ensures compatibility with different APIs, making it easier to migrate or share AI context between systems.",
-      "topic": "AI Memory Transfer Techniques",
+      "description": "Exports AI memory/context data from various AI systems to structured formats",
+      "topic": "AI Tools",
       "date": "2026-03-06",
-      "generated": "2026-03-06T04:06:33.386339+00:00",
+      "generated": "2026-03-06T00:00:00Z",
       "loops_needed": 1,
       "tests_passed": true,
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-06/ai_memory_exporter",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-06/ai_memory_exporter/README.md"
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-06/ai_memory_exporter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-06/ai_memory_exporter/ai_memory_exporter.zip"
     },
     {
       "tool_name": "ai_news_aggregator",
