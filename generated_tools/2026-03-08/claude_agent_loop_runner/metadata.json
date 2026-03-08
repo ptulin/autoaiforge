@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_agent_loop_runner",
+  "display_name": "Claude Agent Loop Runner",
+  "description": "This CLI tool simplifies the creation and execution of agent loops using the Claude AI SDK. Users can define task workflows as JSON or YAML files, which the tool translates into Claude-compatible agent loops. Developers can use this tool to quickly prototype complex multi-step AI workflows without manually coding the logic.",
+  "topic": "Claude Code Updates and SDK",
+  "date": "2026-03-08",
+  "generated": "2026-03-08T04:08:22.939837+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/claude_agent_loop_runner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-08/claude_agent_loop_runner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-08/claude_agent_loop_runner/claude_agent_loop_runner.zip"
+}
