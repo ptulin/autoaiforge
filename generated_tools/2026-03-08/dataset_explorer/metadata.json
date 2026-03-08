@@ -1,0 +1,13 @@
+{
+  "tool_name": "dataset_explorer",
+  "display_name": "Dataset Explorer for GPT-5.4",
+  "description": "A data processing tool that uses GPT-5.4 to ingest and analyze massive datasets (e.g., CSVs) with natural language queries. It provides insights, summaries, and statistics directly from datasets that previously exceeded token limits.",
+  "topic": "GPT-5.4 Launch and Features",
+  "date": "2026-03-08",
+  "generated": "2026-03-08T04:08:22.939837+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/dataset_explorer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-08/dataset_explorer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-08/dataset_explorer/dataset_explorer.zip"
+}

@@ -1,0 +1,255 @@
+2026-03-08 04:08:22 | INFO     | main | ============================================================
+2026-03-08 04:08:22 | INFO     | main | AutoAIForge starting run: 2026-03-08T04:08:22.939837+00:00
+2026-03-08 04:08:22 | INFO     | main | ============================================================
+2026-03-08 04:08:22 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-08 04:08:23 | INFO     | youtube_scraper | YouTube client ready
+2026-03-08 04:08:23 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-08 04:08:24 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-08 04:08:24 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-08 04:08:24 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-08 04:08:24 | INFO     | youtube_scraper | YouTube 'Claude Code': 25 results (quota used: 500)
+2026-03-08 04:08:25 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-08 04:08:25 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-08 04:08:25 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-08 04:08:26 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 25 results (quota used: 900)
+2026-03-08 04:08:26 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-08 04:08:26 | INFO     | youtube_scraper | YouTube 'open source LLM': 28 results (quota used: 1100)
+2026-03-08 04:08:27 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-08 04:08:27 | INFO     | youtube_scraper | YouTube 'vector database AI': 19 results (quota used: 1300)
+2026-03-08 04:08:27 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-08 04:08:28 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-08 04:08:28 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-08 04:08:28 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-03-08 04:08:28 | INFO     | youtube_scraper | YouTube 'local LLM': 25 results (quota used: 1800)
+2026-03-08 04:08:29 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-08 04:08:29 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-08 04:08:29 | INFO     | youtube_scraper | YouTube total: 748 items, quota used: 2000
+2026-03-08 04:08:29 | INFO     | main |   YouTube: 712 items
+2026-03-08 04:08:29 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-08 04:08:34 | INFO     | rss_scraper | HackerNews: 177 items
+2026-03-08 04:08:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-08 04:08:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-08 04:08:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-08 04:08:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-08 04:08:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-08 04:08:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-08 04:08:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-08 04:08:42 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-08 04:08:48 | INFO     | rss_scraper | ArXiv: 108 items
+2026-03-08 04:08:56 | INFO     | rss_scraper | Dev.to: 210 items
+2026-03-08 04:08:57 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-08 04:08:57 | INFO     | rss_scraper | Free sources total: 545 unique items
+2026-03-08 04:08:57 | INFO     | main |   RSS/API sources: 545 items
+2026-03-08 04:08:57 | INFO     | main |   Total scraped: 1257 items
+2026-03-08 04:08:57 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-08 04:08:57 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-08 04:08:57 | INFO     | db_manager | Purged 0 old news items
+2026-03-08 04:08:57 | INFO     | db_manager | Inserted 861/1257 news items
+2026-03-08 04:08:57 | INFO     | main |   SQLite: 861 new items (total: 8942)
+2026-03-08 04:09:02 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-08 04:09:03 | INFO     | vector_store | VectorStore ready
+2026-03-08 04:09:28 | INFO     | vector_store | Indexed 1761 items into vector store
+2026-03-08 04:09:28 | INFO     | main |   Vector store: 1761 items indexed
+2026-03-08 04:09:28 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-08 04:09:28 | INFO     | topic_analyzer | Analyzing 1761 items for top 10 topics …
+2026-03-08 04:09:37 | DEBUG    | llm_client | LLM response from github_models (4178 chars)
+2026-03-08 04:09:37 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-08 04:09:37 | INFO     | main |   Found 10 topics:
+2026-03-08 04:09:37 | INFO     | main |      1. [10/10] GPT-5.4 Launch and Features
+2026-03-08 04:09:37 | INFO     | main |      2. [9/10] Claude Code Updates and SDK
+2026-03-08 04:09:37 | INFO     | main |      3. [9/10] AI in Cybersecurity
+2026-03-08 04:09:37 | INFO     | main |      4. [9/10] AI-Driven Bug Detection
+2026-03-08 04:09:37 | INFO     | main |      5. [8/10] AI in Political Campaigns
+2026-03-08 04:09:37 | INFO     | main |      6. [8/10] AI in Military and Government
+2026-03-08 04:09:37 | INFO     | main |      7. [8/10] AI for No-Code Development
+2026-03-08 04:09:37 | INFO     | main |      8. [7/10] AI-Powered Presentation Tools
+2026-03-08 04:09:37 | INFO     | main |      9. [7/10] AI Model Cost Optimization
+2026-03-08 04:09:37 | INFO     | main |     10. [7/10] AI for Modal Deployment
+2026-03-08 04:09:37 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-08 04:09:37 | INFO     | main |   Existing collection: 23 tools across 14 topics
+2026-03-08 04:09:37 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-08 04:09:44 | DEBUG    | llm_client | LLM response from github_models (3393 chars)
+2026-03-08 04:09:44 | INFO     | idea_generator | Generated 3 ideas for topic: GPT-5.4 Launch and Features
+2026-03-08 04:09:48 | DEBUG    | llm_client | LLM response from github_models (2460 chars)
+2026-03-08 04:09:48 | INFO     | idea_generator | Generated 2 ideas for topic: Claude Code Updates and SDK
+2026-03-08 04:09:48 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-08 04:09:48 | INFO     | main |   Generated 5 tool ideas:
+2026-03-08 04:09:48 | INFO     | main |     • context_fusion: A CLI tool that allows developers to concatenate, preprocess, and summarize larg
+2026-03-08 04:09:48 | INFO     | main |     • code_assistant_gpt54: A library that assists developers in writing, debugging, and documenting large-s
+2026-03-08 04:09:48 | INFO     | main |     • dataset_explorer: A data processing tool that uses GPT-5.4 to ingest and analyze massive datasets 
+2026-03-08 04:09:48 | INFO     | main |     • claude_agent_loop_runner: This CLI tool simplifies the creation and execution of agent loops using the Cla
+2026-03-08 04:09:48 | INFO     | main |     • skill_registry_builder: This library helps developers build and manage skill-based command systems for C
+2026-03-08 04:09:48 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-08 04:09:49 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-08 04:09:59 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-08 04:09:59 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-08 04:09:59 | INFO     | tool_builder | Building tool: context_fusion …
+2026-03-08 04:10:10 | DEBUG    | llm_client | LLM response from github_models (6259 chars)
+2026-03-08 04:10:10 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'tqdm==4.66.1']
+2026-03-08 04:10:13 | WARNING  | test_runner | Tests FAILED for context_fusion:
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_chunk_text - AssertionError: assert 9 == 2
+2026-03-08 04:10:13 | WARNING  | tool_builder | ⚠️  context_fusion tests failed (loop 1/5) — test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_chunk_text - Assertion
+2026-03-08 04:10:24 | DEBUG    | llm_client | LLM response from github_models (6177 chars)
+2026-03-08 04:10:24 | DEBUG    | test_runner | Installing: ['openai', 'tqdm']
+2026-03-08 04:10:26 | WARNING  | test_runner | Tests FAILED for context_fusion:
+test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+E   TypeError: test_read_files.<locals>.mock_file_open() missing 1 required positional argument: 'file'
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_read_files - TypeError: test_read_files.<locals>.mock_file_open() missing 1 required positional argument: 'file'
+FAILED test_context_fusion.py::test_chunk_text - AssertionError: assert 9 == 2
+2026-03-08 04:10:26 | WARNING  | tool_builder | ⚠️  context_fusion tests failed (loop 2/5) — test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+E   TypeError: test_read_files.<locals>.
+2026-03-08 04:10:35 | DEBUG    | llm_client | LLM response from github_models (6792 chars)
+2026-03-08 04:10:35 | DEBUG    | test_runner | Installing: ['openai', 'tqdm']
+2026-03-08 04:10:36 | WARNING  | test_runner | Tests FAILED for context_fusion:
+test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nThis is file 2.\n"
+E   AssertionError: assert '' == 'This is file... is file 2.\n'
+Error reading file1.txt: name 'os' is not defined
+Error reading file2.txt: name 'os' is not defined
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_read_files - AssertionError: assert '' == 'This is file... is file 2.\n'
+FAILED test_context_fusion.py::test_chunk_text - AssertionError: assert 9 == 2
+2026-03-08 04:10:36 | WARNING  | tool_builder | ⚠️  context_fusion tests failed (loop 3/5) — test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nT
+2026-03-08 04:10:45 | DEBUG    | llm_client | LLM response from github_models (6620 chars)
+2026-03-08 04:10:45 | DEBUG    | test_runner | Installing: ['openai', 'tqdm']
+2026-03-08 04:10:46 | WARNING  | test_runner | Tests FAILED for context_fusion:
+test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nThis is file 2.\n"
+E   AssertionError: assert '' == 'This is file... is file 2.\n'
+Error reading file1.txt: name 'os' is not defined
+Error reading file2.txt: name 'os' is not defined
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_read_files - AssertionError: assert '' == 'This is file... is file 2.\n'
+FAILED test_context_fusion.py::test_chunk_text - AssertionError: assert 9 == 2
+2026-03-08 04:10:46 | WARNING  | tool_builder | ⚠️  context_fusion tests failed (loop 4/5) — test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nT
+2026-03-08 04:10:55 | DEBUG    | llm_client | LLM response from github_models (6745 chars)
+2026-03-08 04:10:55 | DEBUG    | test_runner | Installing: ['openai', 'tqdm']
+2026-03-08 04:10:56 | WARNING  | test_runner | Tests FAILED for context_fusion:
+test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nThis is file 2.\n"
+E   AssertionError: assert '' == 'This is file... is file 2.\n'
+Error reading file1.txt: name 'os' is not defined
+Error reading file2.txt: name 'os' is not defined
+    assert len(chunks) == 2
+E   AssertionError: assert 9 == 2
+FAILED test_context_fusion.py::test_read_files - AssertionError: assert '' == 'This is file... is file 2.\n'
+FAILED test_context_fusion.py::test_chunk_text - AssertionError: assert 9 == 2
+2026-03-08 04:10:56 | WARNING  | tool_builder | ⚠️  context_fusion tests failed (loop 5/5) — test_context_fusion.py::test_read_files FAILED                           [ 33%]
+test_context_fusion.py::test_chunk_text FAILED                           [ 66%]
+    assert result == "This is file 1.\nT
+2026-03-08 04:10:56 | ERROR    | tool_builder | ❌ context_fusion failed after 5 loops
+2026-03-08 04:10:56 | INFO     | tool_builder | Building tool: code_assistant_gpt54 …
+2026-03-08 04:11:03 | DEBUG    | llm_client | LLM response from github_models (4447 chars)
+2026-03-08 04:11:03 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pygments==2.16.1']
+2026-03-08 04:11:05 | INFO     | test_runner | Tests PASSED for code_assistant_gpt54
+2026-03-08 04:11:05 | INFO     | tool_builder | ✅ code_assistant_gpt54 passed tests on loop 1
+2026-03-08 04:11:05 | INFO     | tool_builder | Building tool: dataset_explorer …
+2026-03-08 04:11:18 | DEBUG    | llm_client | LLM response from github_models (6300 chars)
+2026-03-08 04:11:18 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pandas==1.5.3', 'matplotlib==3.7.1']
+2026-03-08 04:11:29 | INFO     | test_runner | Tests PASSED for dataset_explorer
+2026-03-08 04:11:29 | INFO     | tool_builder | ✅ dataset_explorer passed tests on loop 1
+2026-03-08 04:11:29 | INFO     | tool_builder | Building tool: claude_agent_loop_runner …
+2026-03-08 04:11:38 | DEBUG    | llm_client | LLM response from github_models (6086 chars)
+2026-03-08 04:11:38 | DEBUG    | test_runner | Installing: ['anthropic==0.2.0', 'pyyaml==6.0', 'rich==13.5.2']
+2026-03-08 04:11:38 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement anthropic==0.2.0 (from versions: 0.2.2, 0.2.3, 0.2.4, 0.2.5, 0.2.6, 0.2.7, 0.2.8, 0.2.9, 0.2.10, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.3.4, 0.3.5, 0.3.6, 0.3.7, 0.3.8, 0.3.9, 0.3.10, 0.3.11, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4
+2026-03-08 04:11:38 | WARNING  | test_runner | Tests FAILED for claude_agent_loop_runner:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_agent_loop_runner.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_agent_loop_runner/test_claude_agent_loop_runner.py'.
+E   ModuleNotFoundError: No module named 'yaml'
+ERROR test_claude_agent_loop_runner.py
+2026-03-08 04:11:38 | WARNING  | tool_builder | ⚠️  claude_agent_loop_runner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_agent_loop_runner.py _______________
+ImportError while importing test modul
+2026-03-08 04:11:46 | DEBUG    | llm_client | LLM response from github_models (5616 chars)
+2026-03-08 04:11:46 | DEBUG    | test_runner | Installing: ['anthropic', 'PyYAML', 'rich']
+2026-03-08 04:11:52 | WARNING  | test_runner | Tests FAILED for claude_agent_loop_runner:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_agent_loop_runner.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_agent_loop_runner/test_claude_agent_loop_runner.py'.
+E   ImportError: cannot import name 'Completion' from 'anthropic' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/anthropic/__init__.py)
+ERROR test_claude_agent_loop_runner.py
+2026-03-08 04:11:52 | WARNING  | tool_builder | ⚠️  claude_agent_loop_runner tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_agent_loop_runner.py _______________
+ImportError while importing test modul
+2026-03-08 04:12:00 | DEBUG    | llm_client | LLM response from github_models (6603 chars)
+2026-03-08 04:12:00 | DEBUG    | test_runner | Installing: ['anthropic', 'rich', 'pyyaml']
+2026-03-08 04:12:02 | WARNING  | test_runner | Tests FAILED for claude_agent_loop_runner:
+test_claude_agent_loop_runner.py::test_load_workflow_yaml FAILED         [ 33%]
+    raise ScannerError(None, None,
+E   yaml.scanner.ScannerError: mapping values are not allowed here
+ERROR    ClaudeAgentLoopRunner:claude_agent_loop_runner.py:25 Failed to load workflow: mapping values are not allowed here
+FAILED test_claude_agent_loop_runner.py::test_load_workflow_yaml - yaml.scanner.ScannerError: mapping values are not allowed here
+2026-03-08 04:12:02 | WARNING  | tool_builder | ⚠️  claude_agent_loop_runner tests failed (loop 3/5) — test_claude_agent_loop_runner.py::test_load_workflow_yaml FAILED         [ 33%]
+    raise ScannerError(None, None,
+E   yaml.scanner.ScannerError: mapping values are not allowed here
+ERROR    ClaudeAge
+2026-03-08 04:12:11 | DEBUG    | llm_client | LLM response from github_models (6566 chars)
+2026-03-08 04:12:11 | DEBUG    | test_runner | Installing: ['anthropic', 'pyyaml', 'rich']
+2026-03-08 04:12:12 | INFO     | test_runner | Tests PASSED for claude_agent_loop_runner
+2026-03-08 04:12:12 | INFO     | tool_builder | ✅ claude_agent_loop_runner passed tests on loop 4
+2026-03-08 04:12:12 | INFO     | tool_builder | Building tool: skill_registry_builder …
+2026-03-08 04:12:22 | DEBUG    | llm_client | LLM response from github_models (6792 chars)
+2026-03-08 04:12:22 | DEBUG    | test_runner | Installing: ['typer==0.9.0', 'pydantic==1.10.9']
+2026-03-08 04:12:24 | WARNING  | test_runner | Tests FAILED for skill_registry_builder:
+test_skill_registry_builder.py::test_register_skill FAILED               [ 33%]
+test_skill_registry_builder.py::test_validate_skill FAILED               [ 66%]
+test_skill_registry_builder.py::test_execute_skill FAILED                [100%]
+    assert "greet" in registry.skills
+E   AssertionError: assert 'greet' in {}
+    raise ValueError(f"Skill with name '{metadata.name}' is already registered.")
+E   ValueError: Skill with name 'greet' is already registered.
+    raise ValueError(f"Skill with name '{metadata.name}' is already registered.")
+E   ValueError: Skill with name 'greet' is already registered.
+FAILED test_skill_registry_builder.py::test_register_skill - AssertionError: assert 'greet' in {}
+FAILED test_skill_registry_builder.py::test_validate_skill - ValueError: Skill with name 'greet' is already registered.
+FAILED test_skill_registry_builder.py::test_execute_skill - ValueError: Skill with name 'greet' is already registered.
+2026-03-08 04:12:24 | WARNING  | tool_builder | ⚠️  skill_registry_builder tests failed (loop 1/5) — test_skill_registry_builder.py::test_register_skill FAILED               [ 33%]
+test_skill_registry_builder.py::test_validate_skill FAILED               [ 66%]
+test_skill_registry_builder.py::test_exe
+2026-03-08 04:12:31 | DEBUG    | llm_client | LLM response from github_models (6461 chars)
+2026-03-08 04:12:31 | DEBUG    | test_runner | Installing: ['pydantic', 'typer']
+2026-03-08 04:12:31 | INFO     | test_runner | Tests PASSED for skill_registry_builder
+2026-03-08 04:12:31 | INFO     | tool_builder | ✅ skill_registry_builder passed tests on loop 2
+2026-03-08 04:12:31 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-03-08 04:12:31 | INFO     | main |   Built 4/5 tools successfully
+2026-03-08 04:12:31 | INFO     | main |     ✅ code_assistant_gpt54 (loops: 1)
+2026-03-08 04:12:31 | INFO     | main |     ✅ dataset_explorer (loops: 1)
+2026-03-08 04:12:31 | INFO     | main |     ✅ claude_agent_loop_runner (loops: 4)
+2026-03-08 04:12:31 | INFO     | main |     ✅ skill_registry_builder (loops: 2)
+2026-03-08 04:12:31 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-08 04:12:31 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-08 04:12:31 | INFO     | github_publisher |   Created zip: code_assistant_gpt54.zip (2286 bytes)
+2026-03-08 04:12:31 | INFO     | github_publisher | Saved code_assistant_gpt54 → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/code_assistant_gpt54
+2026-03-08 04:12:31 | INFO     | github_publisher |   Created zip: dataset_explorer.zip (2817 bytes)
+2026-03-08 04:12:31 | INFO     | github_publisher | Saved dataset_explorer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/dataset_explorer
+2026-03-08 04:12:31 | INFO     | github_publisher |   Created zip: claude_agent_loop_runner.zip (2784 bytes)
+2026-03-08 04:12:31 | INFO     | github_publisher | Saved claude_agent_loop_runner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/claude_agent_loop_runner
+2026-03-08 04:12:31 | INFO     | github_publisher |   Created zip: skill_registry_builder.zip (2436 bytes)
+2026-03-08 04:12:31 | INFO     | github_publisher | Saved skill_registry_builder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/skill_registry_builder
+2026-03-08 04:12:31 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-03-08 04:12:31 | INFO     | main |   Published 4 tools:
+2026-03-08 04:12:31 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/code_assistant_gpt54
+2026-03-08 04:12:31 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/dataset_explorer
+2026-03-08 04:12:31 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/claude_agent_loop_runner
+2026-03-08 04:12:31 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-08/skill_registry_builder
+2026-03-08 04:12:32 | INFO     | main | ✅ Generated tools_index.json with 27 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
