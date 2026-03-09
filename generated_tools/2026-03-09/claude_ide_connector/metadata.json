@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_ide_connector",
+  "display_name": "Claude IDE Connector",
+  "description": "A library that developers can integrate into their Python IDEs to access Claude AI's coding capabilities directly. The library provides features like inline code suggestions, error analysis, and real-time optimizations, helping developers write better code faster.",
+  "topic": "Claude AI for Coding",
+  "date": "2026-03-09",
+  "generated": "2026-03-09T04:13:44.708627+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_ide_connector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_ide_connector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_ide_connector/claude_ide_connector.zip"
+}
