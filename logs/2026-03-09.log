@@ -1,0 +1,345 @@
+2026-03-09 04:13:44 | INFO     | main | ============================================================
+2026-03-09 04:13:44 | INFO     | main | AutoAIForge starting run: 2026-03-09T04:13:44.708627+00:00
+2026-03-09 04:13:44 | INFO     | main | ============================================================
+2026-03-09 04:13:44 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-09 04:13:45 | INFO     | youtube_scraper | YouTube client ready
+2026-03-09 04:13:45 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-09 04:13:45 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-09 04:13:46 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-09 04:13:46 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-09 04:13:46 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-09 04:13:47 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-09 04:13:47 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-09 04:13:48 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-03-09 04:13:48 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-09 04:13:48 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-09 04:13:49 | INFO     | youtube_scraper | YouTube 'open source LLM': 32 results (quota used: 1100)
+2026-03-09 04:13:49 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-09 04:13:49 | INFO     | youtube_scraper | YouTube 'vector database AI': 12 results (quota used: 1300)
+2026-03-09 04:13:50 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-09 04:13:50 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-09 04:13:50 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-09 04:13:50 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-03-09 04:13:51 | INFO     | youtube_scraper | YouTube 'local LLM': 36 results (quota used: 1800)
+2026-03-09 04:13:51 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-09 04:13:51 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-09 04:13:51 | INFO     | youtube_scraper | YouTube total: 806 items, quota used: 2000
+2026-03-09 04:13:51 | INFO     | main |   YouTube: 766 items
+2026-03-09 04:13:51 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-09 04:13:56 | INFO     | rss_scraper | HackerNews: 173 items
+2026-03-09 04:13:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-09 04:13:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-09 04:13:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-09 04:14:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-09 04:14:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-09 04:14:02 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-09 04:14:03 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-09 04:14:04 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-09 04:14:13 | INFO     | rss_scraper | ArXiv: 99 items
+2026-03-09 04:14:17 | INFO     | rss_scraper | Dev.to: 192 items
+2026-03-09 04:14:18 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-09 04:14:18 | INFO     | rss_scraper | Free sources total: 514 unique items
+2026-03-09 04:14:18 | INFO     | main |   RSS/API sources: 514 items
+2026-03-09 04:14:18 | INFO     | main |   Total scraped: 1280 items
+2026-03-09 04:14:18 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-09 04:14:18 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-09 04:14:18 | INFO     | db_manager | Purged 0 old news items
+2026-03-09 04:14:18 | INFO     | db_manager | Inserted 1001/1280 news items
+2026-03-09 04:14:18 | INFO     | main |   SQLite: 1001 new items (total: 9943)
+2026-03-09 04:14:24 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-09 04:14:24 | INFO     | vector_store | VectorStore ready
+2026-03-09 04:14:50 | INFO     | vector_store | Indexed 1862 items into vector store
+2026-03-09 04:14:50 | INFO     | main |   Vector store: 1862 items indexed
+2026-03-09 04:14:50 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-09 04:14:50 | INFO     | topic_analyzer | Analyzing 1862 items for top 10 topics …
+2026-03-09 04:14:57 | DEBUG    | llm_client | LLM response from github_models (4005 chars)
+2026-03-09 04:14:57 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-09 04:14:57 | INFO     | main |   Found 10 topics:
+2026-03-09 04:14:57 | INFO     | main |      1. [9/10] AI-Powered Trading Bots
+2026-03-09 04:14:57 | INFO     | main |      2. [9/10] Claude AI for Coding
+2026-03-09 04:14:57 | INFO     | main |      3. [9/10] AI for Large-Scale Context Models
+2026-03-09 04:14:57 | INFO     | main |      4. [8/10] AI in Military Applications
+2026-03-09 04:14:57 | INFO     | main |      5. [8/10] AI for Video Content Creation
+2026-03-09 04:14:57 | INFO     | main |      6. [8/10] AI Workflow Automation
+2026-03-09 04:14:57 | INFO     | main |      7. [8/10] AI in Research and Data Management
+2026-03-09 04:14:57 | INFO     | main |      8. [8/10] AI Security and Ethical Concerns
+2026-03-09 04:14:57 | INFO     | main |      9. [7/10] AI in Smart Glasses
+2026-03-09 04:14:57 | INFO     | main |     10. [7/10] AI-Powered Education Tools
+2026-03-09 04:14:57 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-09 04:14:57 | INFO     | main |   Existing collection: 27 tools across 16 topics
+2026-03-09 04:14:57 | INFO     | main |   🔄 Upgrade candidate: 'AI in Military Applications' (relevance 8/10, last built 2026-03-01)
+2026-03-09 04:14:57 | INFO     | main |   Topics flagged for upgrade: AI in Military Applications
+2026-03-09 04:15:03 | DEBUG    | llm_client | LLM response from github_models (3171 chars)
+2026-03-09 04:15:03 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Trading Bots
+2026-03-09 04:15:08 | DEBUG    | llm_client | LLM response from github_models (2461 chars)
+2026-03-09 04:15:08 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI for Coding
+2026-03-09 04:15:08 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-09 04:15:08 | INFO     | main |   Generated 5 tool ideas:
+2026-03-09 04:15:08 | INFO     | main |     • crypto_bot_simulator: A CLI tool for simulating AI-based trading strategies on historical cryptocurren
+2026-03-09 04:15:08 | INFO     | main |     • dynamic_signal_extractor: A Python library for extracting meaningful trading signals from cryptocurrency p
+2026-03-09 04:15:08 | INFO     | main |     • live_trading_monitor: An automation tool that monitors live cryptocurrency markets and evaluates real-
+2026-03-09 04:15:08 | INFO     | main |     • claude_code_assistant: A CLI tool that integrates with Claude AI to provide intelligent code suggestion
+2026-03-09 04:15:08 | INFO     | main |     • claude_ide_connector: A library that developers can integrate into their Python IDEs to access Claude 
+2026-03-09 04:15:08 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-09 04:15:08 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-09 04:15:18 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-09 04:15:18 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-09 04:15:18 | INFO     | tool_builder | Building tool: crypto_bot_simulator …
+2026-03-09 04:15:30 | DEBUG    | llm_client | LLM response from github_models (6389 chars)
+2026-03-09 04:15:30 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.23.5', 'matplotlib==3.6.2']
+2026-03-09 04:15:44 | WARNING  | test_runner | Tests FAILED for crypto_bot_simulator:
+test_crypto_bot_simulator.py::test_load_data_valid FAILED                [ 33%]
+test_crypto_bot_simulator.py::test_load_data_invalid FAILED              [ 66%]
+E   TypeError: bad argument type for built-in operation
+    raise ValueError(f"Error loading data: {e}")
+E   ValueError: Error loading data: bad argument type for built-in operation
+E   TypeError: bad argument type for built-in operation
+    raise ValueError(f"Error loading data: {e}")
+E   ValueError: Error loading data: bad argument type for built-in operation
+    with pytest.raises(ValueError, match="CSV must contain 'timestamp' and 'price' columns."):
+E   AssertionError: Regex pattern did not match.
+E     Actual message: 'Error loading data: bad argument type for built-in operation'
+FAILED test_crypto_bot_simulator.py::test_load_data_valid - ValueError: Error loading data: bad argument type for built-in operation
+FAILED test_crypto_bot_simulator.py::test_load_data_invalid - AssertionError: Regex pattern did not match.
+  Actual message: 'Error loading data: bad argument type for built-in operation'
+2026-03-09 04:15:44 | WARNING  | tool_builder | ⚠️  crypto_bot_simulator tests failed (loop 1/5) — test_crypto_bot_simulator.py::test_load_data_valid FAILED                [ 33%]
+test_crypto_bot_simulator.py::test_load_data_invalid FAILED              [ 66%]
+E   TypeError: bad argument type for bui
+2026-03-09 04:15:52 | DEBUG    | llm_client | LLM response from github_models (6147 chars)
+2026-03-09 04:15:52 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-09 04:15:54 | WARNING  | test_runner | Tests FAILED for crypto_bot_simulator:
+test_crypto_bot_simulator.py::test_load_data_invalid FAILED              [ 50%]
+    raise ValueError(
+E   ValueError: Missing column provided to 'parse_dates': 'timestamp'
+    raise ValueError(f"Error loading data: {e}")
+E   ValueError: Error loading data: Missing column provided to 'parse_dates': 'timestamp'
+    with pytest.raises(ValueError, match="CSV must contain 'timestamp' and 'price' columns."):
+E   AssertionError: Regex pattern did not match.
+E     Actual message: "Error loading data: Missing column provided to 'parse_dates': 'timestamp'"
+FAILED test_crypto_bot_simulator.py::test_load_data_invalid - AssertionError: Regex pattern did not match.
+  Actual message: "Error loading data: Missing column provided to 'parse_dates': 'timestamp'"
+2026-03-09 04:15:54 | WARNING  | tool_builder | ⚠️  crypto_bot_simulator tests failed (loop 2/5) — test_crypto_bot_simulator.py::test_load_data_invalid FAILED              [ 50%]
+    raise ValueError(
+E   ValueError: Missing column provided to 'parse_dates': 'timestamp'
+    raise ValueError(f"Error
+2026-03-09 04:16:01 | DEBUG    | llm_client | LLM response from github_models (6346 chars)
+2026-03-09 04:16:01 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-09 04:16:02 | INFO     | test_runner | Tests PASSED for crypto_bot_simulator
+2026-03-09 04:16:02 | INFO     | tool_builder | ✅ crypto_bot_simulator passed tests on loop 3
+2026-03-09 04:16:02 | INFO     | tool_builder | Building tool: dynamic_signal_extractor …
+2026-03-09 04:16:09 | DEBUG    | llm_client | LLM response from github_models (4801 chars)
+2026-03-09 04:16:09 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.21.6', 'scikit-learn==1.0.2']
+2026-03-09 04:16:09 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following yanked versions: 2.4.0
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=
+2026-03-09 04:16:10 | WARNING  | test_runner | Tests FAILED for dynamic_signal_extractor:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dynamic_signal_extractor/test_dynamic_signal_extractor.py'.
+E   ModuleNotFoundError: No module named 'sklearn'
+ERROR test_dynamic_signal_extractor.py
+2026-03-09 04:16:10 | WARNING  | tool_builder | ⚠️  dynamic_signal_extractor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+ImportError while importing test modul
+2026-03-09 04:16:17 | DEBUG    | llm_client | LLM response from github_models (5505 chars)
+2026-03-09 04:16:17 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-03-09 04:16:26 | WARNING  | test_runner | Tests FAILED for dynamic_signal_extractor:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dynamic_signal_extractor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:16:26 | WARNING  | tool_builder | ⚠️  dynamic_signal_extractor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:16:33 | DEBUG    | llm_client | LLM response from github_models (5137 chars)
+2026-03-09 04:16:33 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-03-09 04:16:33 | WARNING  | test_runner | Tests FAILED for dynamic_signal_extractor:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dynamic_signal_extractor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:16:33 | WARNING  | tool_builder | ⚠️  dynamic_signal_extractor tests failed (loop 3/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:16:40 | DEBUG    | llm_client | LLM response from github_models (5490 chars)
+2026-03-09 04:16:40 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-03-09 04:16:41 | WARNING  | test_runner | Tests FAILED for dynamic_signal_extractor:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dynamic_signal_extractor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:16:41 | WARNING  | tool_builder | ⚠️  dynamic_signal_extractor tests failed (loop 4/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:16:47 | DEBUG    | llm_client | LLM response from github_models (5126 chars)
+2026-03-09 04:16:47 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-03-09 04:16:48 | WARNING  | test_runner | Tests FAILED for dynamic_signal_extractor:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dynamic_signal_extractor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:16:48 | WARNING  | tool_builder | ⚠️  dynamic_signal_extractor tests failed (loop 5/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_dynamic_signal_extractor.py _______________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:16:48 | ERROR    | tool_builder | ❌ dynamic_signal_extractor failed after 5 loops
+2026-03-09 04:16:48 | INFO     | tool_builder | Building tool: live_trading_monitor …
+2026-03-09 04:17:00 | DEBUG    | llm_client | LLM response from github_models (9182 chars)
+2026-03-09 04:17:00 | DEBUG    | test_runner | Installing: ['ccxt==4.0.93', 'dash==2.11.0', 'pandas==2.1.1']
+2026-03-09 04:17:16 | WARNING  | test_runner | Tests FAILED for live_trading_monitor:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_live_trading_monitor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:17:16 | WARNING  | tool_builder | ⚠️  live_trading_monitor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:17:26 | DEBUG    | llm_client | LLM response from github_models (9093 chars)
+2026-03-09 04:17:26 | DEBUG    | test_runner | Installing: ['ccxt', 'pandas', 'dash']
+2026-03-09 04:17:28 | WARNING  | test_runner | Tests FAILED for live_trading_monitor:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_live_trading_monitor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:17:28 | WARNING  | tool_builder | ⚠️  live_trading_monitor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:17:28 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-09 04:18:40 | DEBUG    | llm_client | LLM response from github_models (9894 chars)
+2026-03-09 04:18:40 | DEBUG    | test_runner | Installing: ['ccxt', 'pandas', 'dash']
+2026-03-09 04:18:42 | WARNING  | test_runner | Tests FAILED for live_trading_monitor:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_live_trading_monitor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:18:42 | WARNING  | tool_builder | ⚠️  live_trading_monitor tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:18:53 | DEBUG    | llm_client | LLM response from github_models (10481 chars)
+2026-03-09 04:18:53 | DEBUG    | test_runner | Installing: ['ccxt', 'pandas', 'dash']
+2026-03-09 04:18:55 | WARNING  | test_runner | Tests FAILED for live_trading_monitor:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_live_trading_monitor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:18:55 | WARNING  | tool_builder | ⚠️  live_trading_monitor tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:19:06 | DEBUG    | llm_client | LLM response from github_models (9410 chars)
+2026-03-09 04:19:06 | DEBUG    | test_runner | Installing: ['ccxt', 'pandas', 'dash']
+2026-03-09 04:19:08 | WARNING  | test_runner | Tests FAILED for live_trading_monitor:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_live_trading_monitor.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-03-09 04:19:08 | WARNING  | tool_builder | ⚠️  live_trading_monitor tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_live_trading_monitor.py _________________
+E   ValueError: numpy.dtype size chang
+2026-03-09 04:19:08 | ERROR    | tool_builder | ❌ live_trading_monitor failed after 5 loops
+2026-03-09 04:19:08 | INFO     | tool_builder | Building tool: claude_code_assistant …
+2026-03-09 04:19:19 | DEBUG    | llm_client | LLM response from github_models (6082 chars)
+2026-03-09 04:19:19 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pyyaml==6.0']
+2026-03-09 04:19:20 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_with_file - NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_missing_file - NameError: name 'argparse' is not defined
+2026-03-09 04:19:20 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 1/5) — test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not de
+2026-03-09 04:19:29 | DEBUG    | llm_client | LLM response from github_models (6985 chars)
+2026-03-09 04:19:29 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-09 04:19:30 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_with_file - NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_missing_file - NameError: name 'argparse' is not defined
+2026-03-09 04:19:30 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 2/5) — test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not de
+2026-03-09 04:19:39 | DEBUG    | llm_client | LLM response from github_models (6359 chars)
+2026-03-09 04:19:39 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-09 04:19:40 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_with_file - NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_missing_file - NameError: name 'argparse' is not defined
+2026-03-09 04:19:40 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 3/5) — test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not de
+2026-03-09 04:19:47 | DEBUG    | llm_client | LLM response from github_models (6582 chars)
+2026-03-09 04:19:47 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-09 04:19:48 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_with_file - NameError: name 'argparse' is not defined
+FAILED test_claude_code_assistant.py::test_main_missing_file - NameError: name 'argparse' is not defined
+2026-03-09 04:19:48 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 4/5) — test_claude_code_assistant.py::test_main_with_file FAILED                [ 66%]
+test_claude_code_assistant.py::test_main_missing_file FAILED             [100%]
+E   NameError: name 'argparse' is not de
+2026-03-09 04:19:57 | DEBUG    | llm_client | LLM response from github_models (7676 chars)
+2026-03-09 04:19:57 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-09 04:19:59 | INFO     | test_runner | Tests PASSED for claude_code_assistant
+2026-03-09 04:19:59 | INFO     | tool_builder | ✅ claude_code_assistant passed tests on loop 5
+2026-03-09 04:19:59 | INFO     | tool_builder | Building tool: claude_ide_connector …
+2026-03-09 04:20:10 | DEBUG    | llm_client | LLM response from github_models (7792 chars)
+2026-03-09 04:20:10 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'jedi==0.19.0', 'rich==13.5.2']
+2026-03-09 04:20:13 | WARNING  | test_runner | Tests FAILED for claude_ide_connector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_ide_connector.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:357: in _rewrite_test
+E   SyntaxError: unterminated string literal (detected at line 28)
+ERROR test_claude_ide_connector.py
+2026-03-09 04:20:13 | WARNING  | tool_builder | ⚠️  claude_ide_connector tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_ide_connector.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-03-09 04:20:22 | DEBUG    | llm_client | LLM response from github_models (8094 chars)
+2026-03-09 04:20:22 | DEBUG    | test_runner | Installing: ['requests', 'jedi', 'rich']
+2026-03-09 04:20:23 | WARNING  | test_runner | Tests FAILED for claude_ide_connector:
+test_claude_ide_connector.py::test_api_error_handling FAILED             [100%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_ide_connector.py::test_api_error_handling - NameError: name 'requests' is not defined
+2026-03-09 04:20:23 | WARNING  | tool_builder | ⚠️  claude_ide_connector tests failed (loop 2/5) — test_claude_ide_connector.py::test_api_error_handling FAILED             [100%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-09 04:20:34 | DEBUG    | llm_client | LLM response from github_models (7819 chars)
+2026-03-09 04:20:34 | DEBUG    | test_runner | Installing: ['requests', 'jedi', 'rich']
+2026-03-09 04:20:36 | WARNING  | test_runner | Tests FAILED for claude_ide_connector:
+test_claude_ide_connector.py::test_api_error_handling FAILED             [100%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_ide_connector.py::test_api_error_handling - NameError: name 'requests' is not defined
+2026-03-09 04:20:36 | WARNING  | tool_builder | ⚠️  claude_ide_connector tests failed (loop 3/5) — test_claude_ide_connector.py::test_api_error_handling FAILED             [100%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-03-09 04:20:45 | DEBUG    | llm_client | LLM response from github_models (7992 chars)
+2026-03-09 04:20:45 | DEBUG    | test_runner | Installing: ['requests', 'jedi', 'rich']
+2026-03-09 04:20:46 | INFO     | test_runner | Tests PASSED for claude_ide_connector
+2026-03-09 04:20:46 | INFO     | tool_builder | ✅ claude_ide_connector passed tests on loop 4
+2026-03-09 04:20:46 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-09 04:20:46 | INFO     | main |   Built 3/5 tools successfully
+2026-03-09 04:20:46 | INFO     | main |     ✅ crypto_bot_simulator (loops: 3)
+2026-03-09 04:20:46 | INFO     | main |     ✅ claude_code_assistant (loops: 5)
+2026-03-09 04:20:46 | INFO     | main |     ✅ claude_ide_connector (loops: 4)
+2026-03-09 04:20:46 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-09 04:20:46 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-09 04:20:46 | INFO     | github_publisher |   Created zip: crypto_bot_simulator.zip (2748 bytes)
+2026-03-09 04:20:46 | INFO     | github_publisher | Saved crypto_bot_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/crypto_bot_simulator
+2026-03-09 04:20:46 | INFO     | github_publisher |   Created zip: claude_code_assistant.zip (2991 bytes)
+2026-03-09 04:20:46 | INFO     | github_publisher | Saved claude_code_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_code_assistant
+2026-03-09 04:20:46 | INFO     | github_publisher |   Created zip: claude_ide_connector.zip (2921 bytes)
+2026-03-09 04:20:46 | INFO     | github_publisher | Saved claude_ide_connector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_ide_connector
+2026-03-09 04:20:46 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-09 04:20:46 | INFO     | main |   Published 3 tools:
+2026-03-09 04:20:46 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/crypto_bot_simulator
+2026-03-09 04:20:46 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_code_assistant
+2026-03-09 04:20:46 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_ide_connector
+2026-03-09 04:20:46 | INFO     | main | ✅ Generated tools_index.json with 30 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

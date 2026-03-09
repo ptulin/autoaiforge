@@ -1,0 +1,13 @@
+{
+  "tool_name": "crypto_bot_simulator",
+  "display_name": "Crypto Bot Simulator",
+  "description": "A CLI tool for simulating AI-based trading strategies on historical cryptocurrency data. This tool allows developers to test and evaluate performance metrics for their trading algorithms without risking real money.",
+  "topic": "AI-Powered Trading Bots",
+  "date": "2026-03-09",
+  "generated": "2026-03-09T04:13:44.708627+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/crypto_bot_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/crypto_bot_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/crypto_bot_simulator/crypto_bot_simulator.zip"
+}

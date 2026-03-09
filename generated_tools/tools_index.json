@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-08T04:12:32.000113+00:00",
-  "total_tools": 27,
+  "last_updated": "2026-03-09T04:20:46.703689+00:00",
+  "total_tools": 30,
   "tools": [
+    {
+      "tool_name": "claude_code_assistant",
+      "display_name": "Claude Code Assistant",
+      "description": "A CLI tool that integrates with Claude AI to provide intelligent code suggestions, fixes, and optimizations directly from the terminal. Developers can input a code snippet, query, or error message, and get immediate feedback, making it ideal for debugging and improving code quality.",
+      "topic": "Claude AI for Coding",
+      "date": "2026-03-09",
+      "generated": "2026-03-09T04:13:44.708627+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_code_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_code_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_code_assistant/claude_code_assistant.zip"
+    },
+    {
+      "tool_name": "claude_ide_connector",
+      "display_name": "Claude IDE Connector",
+      "description": "A library that developers can integrate into their Python IDEs to access Claude AI's coding capabilities directly. The library provides features like inline code suggestions, error analysis, and real-time optimizations, helping developers write better code faster.",
+      "topic": "Claude AI for Coding",
+      "date": "2026-03-09",
+      "generated": "2026-03-09T04:13:44.708627+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/claude_ide_connector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_ide_connector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/claude_ide_connector/claude_ide_connector.zip"
+    },
+    {
+      "tool_name": "crypto_bot_simulator",
+      "display_name": "Crypto Bot Simulator",
+      "description": "A CLI tool for simulating AI-based trading strategies on historical cryptocurrency data. This tool allows developers to test and evaluate performance metrics for their trading algorithms without risking real money.",
+      "topic": "AI-Powered Trading Bots",
+      "date": "2026-03-09",
+      "generated": "2026-03-09T04:13:44.708627+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-09/crypto_bot_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/crypto_bot_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-09/crypto_bot_simulator/crypto_bot_simulator.zip"
+    },
     {
       "tool_name": "claude_agent_loop_runner",
       "display_name": "Claude Agent Loop Runner",
