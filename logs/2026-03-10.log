@@ -1,0 +1,400 @@
+2026-03-10 04:05:42 | INFO     | main | ============================================================
+2026-03-10 04:05:42 | INFO     | main | AutoAIForge starting run: 2026-03-10T04:05:42.551743+00:00
+2026-03-10 04:05:42 | INFO     | main | ============================================================
+2026-03-10 04:05:42 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-10 04:05:42 | INFO     | youtube_scraper | YouTube client ready
+2026-03-10 04:05:43 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-10 04:05:43 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-10 04:05:44 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-10 04:05:44 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-10 04:05:44 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-10 04:05:44 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 46 results (quota used: 600)
+2026-03-10 04:05:45 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-10 04:05:45 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-10 04:05:46 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-10 04:05:46 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-10 04:05:46 | INFO     | youtube_scraper | YouTube 'open source LLM': 28 results (quota used: 1100)
+2026-03-10 04:05:47 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-10 04:05:47 | INFO     | youtube_scraper | YouTube 'vector database AI': 20 results (quota used: 1300)
+2026-03-10 04:05:47 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-10 04:05:48 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-10 04:05:48 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-10 04:05:48 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-03-10 04:05:48 | INFO     | youtube_scraper | YouTube 'local LLM': 41 results (quota used: 1800)
+2026-03-10 04:05:49 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-10 04:05:49 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-10 04:05:49 | INFO     | youtube_scraper | YouTube total: 810 items, quota used: 2000
+2026-03-10 04:05:49 | INFO     | main |   YouTube: 758 items
+2026-03-10 04:05:49 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-10 04:05:54 | INFO     | rss_scraper | HackerNews: 181 items
+2026-03-10 04:05:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-10 04:05:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-10 04:05:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-10 04:05:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-10 04:05:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-10 04:05:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-10 04:06:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-10 04:06:01 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-10 04:06:07 | INFO     | rss_scraper | ArXiv: 102 items
+2026-03-10 04:06:11 | INFO     | rss_scraper | Dev.to: 205 items
+2026-03-10 04:06:13 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-10 04:06:13 | INFO     | rss_scraper | Free sources total: 538 unique items
+2026-03-10 04:06:13 | INFO     | main |   RSS/API sources: 538 items
+2026-03-10 04:06:13 | INFO     | main |   Total scraped: 1296 items
+2026-03-10 04:06:13 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-10 04:06:13 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-10 04:06:13 | INFO     | db_manager | Purged 0 old news items
+2026-03-10 04:06:13 | INFO     | db_manager | Inserted 1054/1296 news items
+2026-03-10 04:06:13 | INFO     | main |   SQLite: 1054 new items (total: 10997)
+2026-03-10 04:06:18 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-10 04:06:18 | INFO     | vector_store | VectorStore ready
+2026-03-10 04:06:45 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-10 04:06:45 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-10 04:06:45 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-10 04:06:45 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-10 04:06:53 | DEBUG    | llm_client | LLM response from github_models (3894 chars)
+2026-03-10 04:06:53 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-10 04:06:53 | INFO     | main |   Found 10 topics:
+2026-03-10 04:06:53 | INFO     | main |      1. [9/10] OpenAI GPT-5.4 Computer Control
+2026-03-10 04:06:53 | INFO     | main |      2. [9/10] Nvidia Open-Source AI Agents
+2026-03-10 04:06:53 | INFO     | main |      3. [9/10] AI-Powered Code Review
+2026-03-10 04:06:53 | INFO     | main |      4. [8/10] Claude AI Financial Data Integration
+2026-03-10 04:06:53 | INFO     | main |      5. [8/10] AI Vulnerability Detection
+2026-03-10 04:06:53 | INFO     | main |      6. [8/10] AI-Assisted Workflow Automation
+2026-03-10 04:06:53 | INFO     | main |      7. [8/10] Free Claude AI Courses
+2026-03-10 04:06:53 | INFO     | main |      8. [7/10] AI-Powered News Anchors
+2026-03-10 04:06:53 | INFO     | main |      9. [7/10] Anthropic Pentagon Lawsuit
+2026-03-10 04:06:53 | INFO     | main |     10. [7/10] Low-Cost AI Model Alternatives
+2026-03-10 04:06:53 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-10 04:06:53 | INFO     | main |   Existing collection: 30 tools across 18 topics
+2026-03-10 04:06:53 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-10 04:07:00 | DEBUG    | llm_client | LLM response from github_models (3748 chars)
+2026-03-10 04:07:00 | INFO     | idea_generator | Generated 3 ideas for topic: OpenAI GPT-5.4 Computer Control
+2026-03-10 04:07:06 | DEBUG    | llm_client | LLM response from github_models (2714 chars)
+2026-03-10 04:07:06 | INFO     | idea_generator | Generated 2 ideas for topic: Nvidia Open-Source AI Agents
+2026-03-10 04:07:06 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-10 04:07:06 | INFO     | main |   Generated 5 tool ideas:
+2026-03-10 04:07:06 | INFO     | main |     • gpt_action_scheduler: A CLI tool that allows developers to schedule system tasks (e.g., file managemen
+2026-03-10 04:07:06 | INFO     | main |     • gpt_desktop_controller: A Python CLI tool that offers natural language control of basic desktop function
+2026-03-10 04:07:06 | INFO     | main |     • gpt_secure_scripter: A Python library and CLI tool that enables developers to generate bash or PowerS
+2026-03-10 04:07:06 | INFO     | main |     • nvidia_agent_task_customizer: This CLI tool allows developers to create, modify, and optimize task configurati
+2026-03-10 04:07:06 | INFO     | main |     • agent_interaction_logger: This library intercepts and logs interactions between Nvidia's open-source AI ag
+2026-03-10 04:07:06 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-10 04:07:06 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-10 04:07:15 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-10 04:07:15 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-10 04:07:15 | INFO     | tool_builder | Building tool: gpt_action_scheduler …
+2026-03-10 04:07:24 | DEBUG    | llm_client | LLM response from github_models (4826 chars)
+2026-03-10 04:07:24 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'crontab==0.23.0', 'pyyaml==6.0']
+2026-03-10 04:07:28 | WARNING  | test_runner | Tests FAILED for gpt_action_scheduler:
+test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_command) is True
+E   AssertionError: assert False is True
+ERROR    root:gpt_action_scheduler.py:32 Invalid cron command: CronTab.__init__() got an unexpected keyword argument 'tab'
+    raise AttributeError(
+E   AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+FAILED test_gpt_action_scheduler.py::test_validate_cron_command_valid - AssertionError: assert False is True
+FAILED test_gpt_action_scheduler.py::test_schedule_task - AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+2026-03-10 04:07:28 | WARNING  | tool_builder | ⚠️  gpt_action_scheduler tests failed (loop 1/5) — test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_c
+2026-03-10 04:07:35 | DEBUG    | llm_client | LLM response from github_models (4708 chars)
+2026-03-10 04:07:35 | DEBUG    | test_runner | Installing: ['openai', 'python-crontab']
+2026-03-10 04:07:37 | WARNING  | test_runner | Tests FAILED for gpt_action_scheduler:
+test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_command) is True
+E   AssertionError: assert False is True
+ERROR    root:gpt_action_scheduler.py:31 Invalid cron command: CronTab.__init__() missing 1 required positional argument: 'crontab'
+    raise AttributeError(
+E   AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+FAILED test_gpt_action_scheduler.py::test_validate_cron_command_valid - AssertionError: assert False is True
+FAILED test_gpt_action_scheduler.py::test_schedule_task - AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+2026-03-10 04:07:37 | WARNING  | tool_builder | ⚠️  gpt_action_scheduler tests failed (loop 2/5) — test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_c
+2026-03-10 04:07:43 | DEBUG    | llm_client | LLM response from github_models (5367 chars)
+2026-03-10 04:07:43 | DEBUG    | test_runner | Installing: ['openai', 'python-crontab']
+2026-03-10 04:07:44 | WARNING  | test_runner | Tests FAILED for gpt_action_scheduler:
+test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_command) is True
+E   AssertionError: assert False is True
+ERROR    root:gpt_action_scheduler.py:31 Invalid cron command: CronTab.__init__() got an unexpected keyword argument 'tab'
+    raise AttributeError(
+E   AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write_to_user'
+FAILED test_gpt_action_scheduler.py::test_validate_cron_command_valid - AssertionError: assert False is True
+FAILED test_gpt_action_scheduler.py::test_schedule_task - AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write_to_user'
+2026-03-10 04:07:44 | WARNING  | tool_builder | ⚠️  gpt_action_scheduler tests failed (loop 3/5) — test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_c
+2026-03-10 04:07:50 | DEBUG    | llm_client | LLM response from github_models (4721 chars)
+2026-03-10 04:07:50 | DEBUG    | test_runner | Installing: ['openai', 'python-crontab']
+2026-03-10 04:07:52 | WARNING  | test_runner | Tests FAILED for gpt_action_scheduler:
+test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_command) is True
+E   AssertionError: assert False is True
+ERROR    root:gpt_action_scheduler.py:31 Invalid cron command: CronTab.__init__() missing 1 required positional argument: 'crontab'
+    raise AttributeError(
+E   AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+FAILED test_gpt_action_scheduler.py::test_validate_cron_command_valid - AssertionError: assert False is True
+FAILED test_gpt_action_scheduler.py::test_schedule_task - AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+2026-03-10 04:07:52 | WARNING  | tool_builder | ⚠️  gpt_action_scheduler tests failed (loop 4/5) — test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_c
+2026-03-10 04:07:58 | DEBUG    | llm_client | LLM response from github_models (4953 chars)
+2026-03-10 04:07:58 | DEBUG    | test_runner | Installing: ['openai', 'python-crontab']
+2026-03-10 04:07:59 | WARNING  | test_runner | Tests FAILED for gpt_action_scheduler:
+test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_command) is True
+E   AssertionError: assert False is True
+ERROR    root:gpt_action_scheduler.py:31 Invalid cron command: CronTab.__init__() got an unexpected keyword argument 'tab'
+    raise AttributeError(
+E   AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+FAILED test_gpt_action_scheduler.py::test_validate_cron_command_valid - AssertionError: assert False is True
+FAILED test_gpt_action_scheduler.py::test_schedule_task - AttributeError: <class 'crontab._crontab.CronTab'> does not have the attribute 'write'
+2026-03-10 04:07:59 | WARNING  | tool_builder | ⚠️  gpt_action_scheduler tests failed (loop 5/5) — test_gpt_action_scheduler.py::test_validate_cron_command_valid FAILED    [ 50%]
+test_gpt_action_scheduler.py::test_schedule_task FAILED                  [100%]
+    assert validate_cron_command(valid_c
+2026-03-10 04:07:59 | ERROR    | tool_builder | ❌ gpt_action_scheduler failed after 5 loops
+2026-03-10 04:07:59 | INFO     | tool_builder | Building tool: gpt_desktop_controller …
+2026-03-10 04:08:07 | DEBUG    | llm_client | LLM response from github_models (4522 chars)
+2026-03-10 04:08:07 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pyautogui==0.9.54', 'pyperclip==1.8.2', 'click==8.1.3']
+2026-03-10 04:08:21 | WARNING  | test_runner | Tests FAILED for gpt_desktop_controller:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt_desktop_controller.py - KeyError: 'DISPLAY'
+2026-03-10 04:08:21 | WARNING  | tool_builder | ⚠️  gpt_desktop_controller tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt
+2026-03-10 04:08:25 | DEBUG    | llm_client | LLM response from github_models (4154 chars)
+2026-03-10 04:08:25 | DEBUG    | test_runner | Installing: ['pyautogui', 'pyperclip', 'openai']
+2026-03-10 04:08:26 | WARNING  | test_runner | Tests FAILED for gpt_desktop_controller:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt_desktop_controller.py - KeyError: 'DISPLAY'
+2026-03-10 04:08:26 | WARNING  | tool_builder | ⚠️  gpt_desktop_controller tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt
+2026-03-10 04:08:31 | DEBUG    | llm_client | LLM response from github_models (4274 chars)
+2026-03-10 04:08:31 | DEBUG    | test_runner | Installing: ['pyautogui', 'pyperclip', 'openai']
+2026-03-10 04:08:32 | WARNING  | test_runner | Tests FAILED for gpt_desktop_controller:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt_desktop_controller.py - KeyError: 'DISPLAY'
+2026-03-10 04:08:32 | WARNING  | tool_builder | ⚠️  gpt_desktop_controller tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt
+2026-03-10 04:08:37 | DEBUG    | llm_client | LLM response from github_models (4164 chars)
+2026-03-10 04:08:37 | DEBUG    | test_runner | Installing: ['pyautogui', 'pyperclip', 'openai']
+2026-03-10 04:08:38 | WARNING  | test_runner | Tests FAILED for gpt_desktop_controller:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt_desktop_controller.py - KeyError: 'DISPLAY'
+2026-03-10 04:08:38 | WARNING  | tool_builder | ⚠️  gpt_desktop_controller tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt
+2026-03-10 04:08:43 | DEBUG    | llm_client | LLM response from github_models (4304 chars)
+2026-03-10 04:08:43 | DEBUG    | test_runner | Installing: ['pyautogui', 'pyperclip', 'openai']
+2026-03-10 04:08:44 | WARNING  | test_runner | Tests FAILED for gpt_desktop_controller:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt_desktop_controller.py - KeyError: 'DISPLAY'
+2026-03-10 04:08:44 | WARNING  | tool_builder | ⚠️  gpt_desktop_controller tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gpt_desktop_controller.py ________________
+E   KeyError: 'DISPLAY'
+ERROR test_gpt
+2026-03-10 04:08:44 | ERROR    | tool_builder | ❌ gpt_desktop_controller failed after 5 loops
+2026-03-10 04:08:44 | INFO     | tool_builder | Building tool: gpt_secure_scripter …
+2026-03-10 04:08:53 | DEBUG    | llm_client | LLM response from github_models (5463 chars)
+2026-03-10 04:08:53 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'sh==1.14.2']
+2026-03-10 04:08:54 | WARNING  | test_runner | Tests FAILED for gpt_secure_scripter:
+test_gpt_secure_scripter.py::test_execute_script FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:900: in assert_not_called
+    raise AssertionError(msg)
+E   AssertionError: Expected 'bash' to not have been called. Called 1 times.
+    mock_bash.assert_not_called()
+E   AssertionError: Expected 'bash' to not have been called. Called 1 times.
+E   assert ('-c', "echo 'Hello, World!'") == ()
+FAILED test_gpt_secure_scripter.py::test_execute_script - AssertionError: Expected 'bash' to not have been called. Called 1 times.
+assert ('-c', "echo 'Hello, World!'") == ()
+2026-03-10 04:08:54 | WARNING  | tool_builder | ⚠️  gpt_secure_scripter tests failed (loop 1/5) — test_gpt_secure_scripter.py::test_execute_script FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:900: in assert_not_called
+    raise AssertionErr
+2026-03-10 04:09:00 | DEBUG    | llm_client | LLM response from github_models (5483 chars)
+2026-03-10 04:09:00 | DEBUG    | test_runner | Installing: ['openai', 'click', 'sh']
+2026-03-10 04:09:01 | INFO     | test_runner | Tests PASSED for gpt_secure_scripter
+2026-03-10 04:09:01 | INFO     | tool_builder | ✅ gpt_secure_scripter passed tests on loop 2
+2026-03-10 04:09:01 | INFO     | tool_builder | Building tool: nvidia_agent_task_customizer …
+2026-03-10 04:09:12 | DEBUG    | llm_client | LLM response from github_models (8394 chars)
+2026-03-10 04:09:12 | DEBUG    | test_runner | Installing: ['typer==0.9.0', 'pyyaml==6.0', 'jsonschema==4.19.0']
+2026-03-10 04:09:13 | WARNING  | test_runner | Tests FAILED for nvidia_agent_task_customizer:
+test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_write_config_yaml FAILED      [ 50%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py::test_customize_config_remove_task FAILED [ 87%]
+test_nvidia_agent_task_customizer.py::test_customize_config_timeout FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+    mocked_file().write.assert_called_once_with(json.dumps(mock_data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+E   assert ('}',) == ('{\n    "tas...out": 60\n}',)
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(yaml.safe_dump(mock_data))
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert ('\n',) == ('tasks:\n  t...meout: 60\n',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_json - AssertionError: Expected 'write' to be called once. Called 17 times.
+assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_yaml - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert ('\n',) == ('tasks:\n  t...meout: 60\n',)
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_add_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_remove_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_timeout - click.exceptions.Exit
+2026-03-10 04:09:13 | WARNING  | tool_builder | ⚠️  nvidia_agent_task_customizer tests failed (loop 1/5) — test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_write_config_yaml FAILED      [ 50%]
+test_nvidia_agent_task_customizer.py::te
+2026-03-10 04:09:26 | DEBUG    | llm_client | LLM response from github_models (8598 chars)
+2026-03-10 04:09:26 | DEBUG    | test_runner | Installing: ['typer', 'pyyaml', 'jsonschema']
+2026-03-10 04:09:26 | WARNING  | test_runner | Tests FAILED for nvidia_agent_task_customizer:
+test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_write_config_yaml FAILED      [ 50%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py::test_customize_config_remove_task FAILED [ 87%]
+test_nvidia_agent_task_customizer.py::test_customize_config_timeout FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+    mocked_file().write.assert_called_once_with(json.dumps(mock_data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+E   assert ('}',) == ('{\n    "tas...out": 60\n}',)
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 14 times.
+    mocked_file().write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 14 times.
+E   assert ('\n',) == ()
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_json - AssertionError: Expected 'write' to be called once. Called 17 times.
+assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_yaml - AssertionError: Expected 'write' to have been called once. Called 14 times.
+assert ('\n',) == ()
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_add_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_remove_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_timeout - click.exceptions.Exit
+2026-03-10 04:09:26 | WARNING  | tool_builder | ⚠️  nvidia_agent_task_customizer tests failed (loop 2/5) — test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_write_config_yaml FAILED      [ 50%]
+test_nvidia_agent_task_customizer.py::te
+2026-03-10 04:09:36 | DEBUG    | llm_client | LLM response from github_models (8739 chars)
+2026-03-10 04:09:36 | DEBUG    | test_runner | Installing: ['typer', 'pyyaml', 'jsonschema']
+2026-03-10 04:09:36 | WARNING  | test_runner | Tests FAILED for nvidia_agent_task_customizer:
+test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py::test_customize_config_remove_task FAILED [ 87%]
+test_nvidia_agent_task_customizer.py::test_customize_config_timeout FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+    mocked_file().write.assert_called_once_with(json.dumps(mock_data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+E   assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_json - AssertionError: Expected 'write' to be called once. Called 17 times.
+assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_add_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_remove_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_timeout - click.exceptions.Exit
+2026-03-10 04:09:36 | WARNING  | tool_builder | ⚠️  nvidia_agent_task_customizer tests failed (loop 3/5) — test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py:
+2026-03-10 04:09:49 | DEBUG    | llm_client | LLM response from github_models (8900 chars)
+2026-03-10 04:09:49 | DEBUG    | test_runner | Installing: ['typer', 'pyyaml', 'jsonschema']
+2026-03-10 04:09:49 | WARNING  | test_runner | Tests FAILED for nvidia_agent_task_customizer:
+test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py::test_customize_config_remove_task FAILED [ 87%]
+test_nvidia_agent_task_customizer.py::test_customize_config_timeout FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+    mocked_file().write.assert_called_once_with(json.dumps(mock_data, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+E   assert ('}',) == ('{\n    "tas...t": 60\n}\n',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_json - AssertionError: Expected 'write' to be called once. Called 17 times.
+assert ('}',) == ('{\n    "tas...t": 60\n}\n',)
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_add_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_remove_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_timeout - click.exceptions.Exit
+2026-03-10 04:09:49 | WARNING  | tool_builder | ⚠️  nvidia_agent_task_customizer tests failed (loop 4/5) — test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py:
+2026-03-10 04:10:00 | DEBUG    | llm_client | LLM response from github_models (8508 chars)
+2026-03-10 04:10:00 | DEBUG    | test_runner | Installing: ['typer', 'pyyaml', 'jsonschema']
+2026-03-10 04:10:01 | WARNING  | test_runner | Tests FAILED for nvidia_agent_task_customizer:
+test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py::test_customize_config_remove_task FAILED [ 87%]
+test_nvidia_agent_task_customizer.py::test_customize_config_timeout FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+    mocked_file().write.assert_called_once_with(json.dumps(mock_data, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 17 times.
+E   assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_write_config_json - AssertionError: Expected 'write' to be called once. Called 17 times.
+assert ('}',) == ('{\n    "tas...out": 60\n}',)
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_add_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_remove_task - click.exceptions.Exit
+FAILED test_nvidia_agent_task_customizer.py::test_customize_config_timeout - click.exceptions.Exit
+2026-03-10 04:10:01 | WARNING  | tool_builder | ⚠️  nvidia_agent_task_customizer tests failed (loop 5/5) — test_nvidia_agent_task_customizer.py::test_write_config_json FAILED      [ 37%]
+test_nvidia_agent_task_customizer.py::test_customize_config_add_task FAILED [ 75%]
+test_nvidia_agent_task_customizer.py:
+2026-03-10 04:10:01 | ERROR    | tool_builder | ❌ nvidia_agent_task_customizer failed after 5 loops
+2026-03-10 04:10:01 | INFO     | tool_builder | Building tool: agent_interaction_logger …
+2026-03-10 04:10:13 | DEBUG    | llm_client | LLM response from github_models (7238 chars)
+2026-03-10 04:10:13 | DEBUG    | test_runner | Installing: ['loguru==0.7.0', 'pandas==2.1.1']
+2026-03-10 04:10:18 | WARNING  | test_runner | Tests FAILED for agent_interaction_logger:
+test_agent_interaction_logger.py::test_save_logs_json FAILED             [ 50%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 39 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 39 times.
+E   assert (']',) == ()
+FAILED test_agent_interaction_logger.py::test_save_logs_json - AssertionError: Expected 'write' to have been called once. Called 39 times.
+assert (']',) == ()
+2026-03-10 04:10:18 | WARNING  | tool_builder | ⚠️  agent_interaction_logger tests failed (loop 1/5) — test_agent_interaction_logger.py::test_save_logs_json FAILED             [ 50%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-10 04:10:18 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-10 04:11:27 | DEBUG    | llm_client | LLM response from github_models (7015 chars)
+2026-03-10 04:11:27 | DEBUG    | test_runner | Installing: ['loguru', 'pandas']
+2026-03-10 04:11:28 | INFO     | test_runner | Tests PASSED for agent_interaction_logger
+2026-03-10 04:11:28 | INFO     | tool_builder | ✅ agent_interaction_logger passed tests on loop 2
+2026-03-10 04:11:28 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-10 04:11:28 | INFO     | main |   Built 2/5 tools successfully
+2026-03-10 04:11:28 | INFO     | main |     ✅ gpt_secure_scripter (loops: 2)
+2026-03-10 04:11:28 | INFO     | main |     ✅ agent_interaction_logger (loops: 2)
+2026-03-10 04:11:28 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-10 04:11:28 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-10 04:11:28 | INFO     | github_publisher |   Created zip: gpt_secure_scripter.zip (2447 bytes)
+2026-03-10 04:11:28 | INFO     | github_publisher | Saved gpt_secure_scripter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-10/gpt_secure_scripter
+2026-03-10 04:11:28 | INFO     | github_publisher |   Created zip: agent_interaction_logger.zip (2744 bytes)
+2026-03-10 04:11:28 | INFO     | github_publisher | Saved agent_interaction_logger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-10/agent_interaction_logger
+2026-03-10 04:11:28 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-10 04:11:28 | INFO     | main |   Published 2 tools:
+2026-03-10 04:11:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-10/gpt_secure_scripter
+2026-03-10 04:11:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-10/agent_interaction_logger
+2026-03-10 04:11:28 | INFO     | main | ✅ Generated tools_index.json with 32 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
