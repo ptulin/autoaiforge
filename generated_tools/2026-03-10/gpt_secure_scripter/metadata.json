@@ -1,0 +1,13 @@
+{
+  "tool_name": "gpt_secure_scripter",
+  "display_name": "GPT Secure Scripter",
+  "description": "A Python library and CLI tool that enables developers to generate bash or PowerShell scripts securely using GPT-5.4. It includes safety checks to prevent dangerous operations (e.g., unintended deletions) and validates commands before execution, making it ideal for developers who need quick script generation without risking system integrity.",
+  "topic": "OpenAI GPT-5.4 Computer Control",
+  "date": "2026-03-10",
+  "generated": "2026-03-10T04:05:42.551743+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-10/gpt_secure_scripter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-10/gpt_secure_scripter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-10/gpt_secure_scripter/gpt_secure_scripter.zip"
+}
