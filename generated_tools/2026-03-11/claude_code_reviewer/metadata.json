@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_code_reviewer",
+  "display_name": "Claude Code Reviewer",
+  "description": "A CLI tool for leveraging Claude AI's enhanced coding capabilities to perform automated code reviews. It allows developers to submit code files or directories, receive feedback, and iterate faster on their projects with the help of Claude.",
+  "topic": "Claude AI Updates and Features",
+  "date": "2026-03-11",
+  "generated": "2026-03-11T04:06:43.907579+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_code_reviewer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_code_reviewer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_code_reviewer/claude_code_reviewer.zip"
+}

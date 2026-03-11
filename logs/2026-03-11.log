@@ -1,0 +1,204 @@
+2026-03-11 04:06:43 | INFO     | main | ============================================================
+2026-03-11 04:06:43 | INFO     | main | AutoAIForge starting run: 2026-03-11T04:06:43.907579+00:00
+2026-03-11 04:06:43 | INFO     | main | ============================================================
+2026-03-11 04:06:43 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-11 04:06:44 | INFO     | youtube_scraper | YouTube client ready
+2026-03-11 04:06:44 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-11 04:06:45 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-11 04:06:45 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-11 04:06:45 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-11 04:06:45 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-11 04:06:46 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-11 04:06:46 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-11 04:06:46 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-11 04:06:47 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-11 04:06:47 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-11 04:06:47 | INFO     | youtube_scraper | YouTube 'open source LLM': 25 results (quota used: 1100)
+2026-03-11 04:06:48 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-11 04:06:48 | INFO     | youtube_scraper | YouTube 'vector database AI': 31 results (quota used: 1300)
+2026-03-11 04:06:48 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-11 04:06:48 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-11 04:06:49 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-11 04:06:49 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-03-11 04:06:49 | INFO     | youtube_scraper | YouTube 'local LLM': 44 results (quota used: 1800)
+2026-03-11 04:06:50 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-11 04:06:50 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-11 04:06:50 | INFO     | youtube_scraper | YouTube total: 852 items, quota used: 2000
+2026-03-11 04:06:50 | INFO     | main |   YouTube: 799 items
+2026-03-11 04:06:50 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-11 04:06:55 | INFO     | rss_scraper | HackerNews: 189 items
+2026-03-11 04:06:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-11 04:06:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-11 04:06:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-11 04:06:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-11 04:06:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-11 04:07:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-11 04:07:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-11 04:07:02 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-11 04:07:08 | INFO     | rss_scraper | ArXiv: 108 items
+2026-03-11 04:07:12 | INFO     | rss_scraper | Dev.to: 203 items
+2026-03-11 04:07:13 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-11 04:07:13 | INFO     | rss_scraper | Free sources total: 550 unique items
+2026-03-11 04:07:13 | INFO     | main |   RSS/API sources: 550 items
+2026-03-11 04:07:13 | INFO     | main |   Total scraped: 1349 items
+2026-03-11 04:07:13 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-11 04:07:13 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-11 04:07:13 | INFO     | db_manager | Purged 0 old news items
+2026-03-11 04:07:13 | INFO     | db_manager | Inserted 1103/1349 news items
+2026-03-11 04:07:13 | INFO     | main |   SQLite: 1103 new items (total: 12100)
+2026-03-11 04:07:18 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-11 04:07:18 | INFO     | vector_store | VectorStore ready
+2026-03-11 04:07:44 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-11 04:07:44 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-11 04:07:44 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-11 04:07:44 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-11 04:07:54 | DEBUG    | llm_client | LLM response from github_models (4254 chars)
+2026-03-11 04:07:54 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-11 04:07:54 | INFO     | main |   Found 10 topics:
+2026-03-11 04:07:54 | INFO     | main |      1. [9/10] Claude AI Updates and Features
+2026-03-11 04:07:54 | INFO     | main |      2. [9/10] AI for Healthcare Diagnostics
+2026-03-11 04:07:54 | INFO     | main |      3. [8/10] AI-Powered Code Review Tools
+2026-03-11 04:07:54 | INFO     | main |      4. [8/10] Real-Time Learning in AI Models
+2026-03-11 04:07:54 | INFO     | main |      5. [8/10] AI in Military Applications
+2026-03-11 04:07:54 | INFO     | main |      6. [8/10] Algorithmic Bias in AI Systems
+2026-03-11 04:07:54 | INFO     | main |      7. [8/10] AI for Personalized Health Assistants
+2026-03-11 04:07:54 | INFO     | main |      8. [8/10] AI in Education and Training
+2026-03-11 04:07:54 | INFO     | main |      9. [7/10] AI in Agriculture
+2026-03-11 04:07:54 | INFO     | main |     10. [7/10] AI in Cryptocurrency
+2026-03-11 04:07:54 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-11 04:07:54 | INFO     | main |   Existing collection: 32 tools across 20 topics
+2026-03-11 04:07:54 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Code Review Tools' (relevance 8/10, last built 2026-03-03)
+2026-03-11 04:07:54 | INFO     | main |   🔄 Upgrade candidate: 'AI in Military Applications' (relevance 8/10, last built 2026-03-01)
+2026-03-11 04:07:54 | INFO     | main |   Topics flagged for upgrade: AI in Military Applications, AI-Powered Code Review Tools
+2026-03-11 04:08:01 | DEBUG    | llm_client | LLM response from github_models (3371 chars)
+2026-03-11 04:08:01 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Updates and Features
+2026-03-11 04:08:01 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_task_scheduler' — name already in collection
+2026-03-11 04:08:06 | DEBUG    | llm_client | LLM response from github_models (3400 chars)
+2026-03-11 04:08:06 | INFO     | idea_generator | Generated 3 ideas for topic: AI for Healthcare Diagnostics
+2026-03-11 04:08:06 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-11 04:08:06 | INFO     | main |   Generated 5 tool ideas:
+2026-03-11 04:08:06 | INFO     | main |     • claude_memory_manager: A tool to interact with Claude AI's memory feature by storing, retrieving, and m
+2026-03-11 04:08:06 | INFO     | main |     • claude_code_reviewer: A CLI tool for leveraging Claude AI's enhanced coding capabilities to perform au
+2026-03-11 04:08:06 | INFO     | main |     • radiology_image_preprocessor: This tool preprocesses medical imaging data (e.g., X-rays, MRIs) for use in AI m
+2026-03-11 04:08:06 | INFO     | main |     • ai_diagnostic_report_generator: This library generates structured diagnostic reports using outputs from AI model
+2026-03-11 04:08:06 | INFO     | main |     • medical_dataset_synthesizer: Generates synthetic medical datasets for testing AI diagnostic models. It create
+2026-03-11 04:08:06 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-11 04:08:06 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-11 04:08:15 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-11 04:08:15 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-11 04:08:15 | INFO     | tool_builder | Building tool: claude_memory_manager …
+2026-03-11 04:08:26 | DEBUG    | llm_client | LLM response from github_models (7368 chars)
+2026-03-11 04:08:26 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pyyaml==6.0']
+2026-03-11 04:08:27 | WARNING  | test_runner | Tests FAILED for claude_memory_manager:
+test_claude_memory_manager.py::test_load_data_json FAILED                [ 57%]
+test_claude_memory_manager.py::test_load_data_yaml FAILED                [ 71%]
+test_claude_memory_manager.py::test_load_data_invalid_format FAILED      [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.json
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.yaml
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.txt
+FAILED test_claude_memory_manager.py::test_load_data_json - FileNotFoundError: File not found: test.json
+FAILED test_claude_memory_manager.py::test_load_data_yaml - FileNotFoundError: File not found: test.yaml
+FAILED test_claude_memory_manager.py::test_load_data_invalid_format - FileNotFoundError: File not found: test.txt
+2026-03-11 04:08:27 | WARNING  | tool_builder | ⚠️  claude_memory_manager tests failed (loop 1/5) — test_claude_memory_manager.py::test_load_data_json FAILED                [ 57%]
+test_claude_memory_manager.py::test_load_data_yaml FAILED                [ 71%]
+test_claude_memory_manager.py::test_load
+2026-03-11 04:08:38 | DEBUG    | llm_client | LLM response from github_models (8451 chars)
+2026-03-11 04:08:38 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-11 04:08:38 | WARNING  | test_runner | Tests FAILED for claude_memory_manager:
+test_claude_memory_manager.py::test_load_data_json FAILED                [ 57%]
+test_claude_memory_manager.py::test_load_data_yaml FAILED                [ 71%]
+test_claude_memory_manager.py::test_load_data_invalid_format FAILED      [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.json
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test.yaml
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'
+FAILED test_claude_memory_manager.py::test_load_data_json - FileNotFoundError: File not found: test.json
+FAILED test_claude_memory_manager.py::test_load_data_yaml - FileNotFoundError: File not found: test.yaml
+FAILED test_claude_memory_manager.py::test_load_data_invalid_format - FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'
+2026-03-11 04:08:38 | WARNING  | tool_builder | ⚠️  claude_memory_manager tests failed (loop 2/5) — test_claude_memory_manager.py::test_load_data_json FAILED                [ 57%]
+test_claude_memory_manager.py::test_load_data_yaml FAILED                [ 71%]
+test_claude_memory_manager.py::test_load
+2026-03-11 04:08:47 | DEBUG    | llm_client | LLM response from github_models (8293 chars)
+2026-03-11 04:08:47 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-11 04:08:48 | WARNING  | test_runner | Tests FAILED for claude_memory_manager:
+test_claude_memory_manager.py::test_load_data_invalid_format FAILED      [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'
+FAILED test_claude_memory_manager.py::test_load_data_invalid_format - FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'
+2026-03-11 04:08:48 | WARNING  | tool_builder | ⚠️  claude_memory_manager tests failed (loop 3/5) — test_claude_memory_manager.py::test_load_data_invalid_format FAILED      [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test.txt'
+FAILED test_claude_memory_manager.py::test_load_d
+2026-03-11 04:08:58 | DEBUG    | llm_client | LLM response from github_models (8367 chars)
+2026-03-11 04:08:58 | DEBUG    | test_runner | Installing: ['requests', 'pyyaml']
+2026-03-11 04:08:58 | INFO     | test_runner | Tests PASSED for claude_memory_manager
+2026-03-11 04:08:58 | INFO     | tool_builder | ✅ claude_memory_manager passed tests on loop 4
+2026-03-11 04:08:58 | INFO     | tool_builder | Building tool: claude_code_reviewer …
+2026-03-11 04:09:08 | DEBUG    | llm_client | LLM response from github_models (5555 chars)
+2026-03-11 04:09:08 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.2']
+2026-03-11 04:09:09 | WARNING  | test_runner | Tests FAILED for claude_code_reviewer:
+test_claude_code_reviewer.py::test_analyze_code_network_error FAILED     [ 75%]
+    mock_post.side_effect = requests.exceptions.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_code_reviewer.py::test_analyze_code_network_error - NameError: name 'requests' is not defined
+2026-03-11 04:09:09 | WARNING  | tool_builder | ⚠️  claude_code_reviewer tests failed (loop 1/5) — test_claude_code_reviewer.py::test_analyze_code_network_error FAILED     [ 75%]
+    mock_post.side_effect = requests.exceptions.RequestException("Network error")
+E   NameError: name 'requests' is not 
+2026-03-11 04:09:17 | DEBUG    | llm_client | LLM response from github_models (5618 chars)
+2026-03-11 04:09:17 | DEBUG    | test_runner | Installing: ['requests']
+2026-03-11 04:09:17 | WARNING  | test_runner | Tests FAILED for claude_code_reviewer:
+test_claude_code_reviewer.py::test_analyze_code_network_error FAILED     [ 75%]
+    assert "Network error" in result["error"]
+E   AssertionError: assert 'Network error' in 'File not found: test_file.py'
+FAILED test_claude_code_reviewer.py::test_analyze_code_network_error - AssertionError: assert 'Network error' in 'File not found: test_file.py'
+2026-03-11 04:09:17 | WARNING  | tool_builder | ⚠️  claude_code_reviewer tests failed (loop 2/5) — test_claude_code_reviewer.py::test_analyze_code_network_error FAILED     [ 75%]
+    assert "Network error" in result["error"]
+E   AssertionError: assert 'Network error' in 'File not found: test_file.p
+2026-03-11 04:09:25 | DEBUG    | llm_client | LLM response from github_models (5877 chars)
+2026-03-11 04:09:25 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-03-11 04:09:26 | INFO     | test_runner | Tests PASSED for claude_code_reviewer
+2026-03-11 04:09:26 | INFO     | tool_builder | ✅ claude_code_reviewer passed tests on loop 3
+2026-03-11 04:09:26 | INFO     | tool_builder | Building tool: radiology_image_preprocessor …
+2026-03-11 04:09:34 | DEBUG    | llm_client | LLM response from github_models (4804 chars)
+2026-03-11 04:09:34 | DEBUG    | test_runner | Installing: ['opencv-python==4.8.0.74', 'numpy==1.24.4', 'scipy==1.11.2']
+2026-03-11 04:09:41 | INFO     | test_runner | Tests PASSED for radiology_image_preprocessor
+2026-03-11 04:09:41 | INFO     | tool_builder | ✅ radiology_image_preprocessor passed tests on loop 1
+2026-03-11 04:09:41 | INFO     | tool_builder | Building tool: ai_diagnostic_report_generator …
+2026-03-11 04:09:52 | DEBUG    | llm_client | LLM response from github_models (6046 chars)
+2026-03-11 04:09:52 | DEBUG    | test_runner | Installing: ['reportlab==3.6.12', 'jinja2==3.1.2']
+2026-03-11 04:09:54 | INFO     | test_runner | Tests PASSED for ai_diagnostic_report_generator
+2026-03-11 04:09:54 | INFO     | tool_builder | ✅ ai_diagnostic_report_generator passed tests on loop 1
+2026-03-11 04:09:54 | INFO     | tool_builder | Building tool: medical_dataset_synthesizer …
+2026-03-11 04:10:03 | DEBUG    | llm_client | LLM response from github_models (5861 chars)
+2026-03-11 04:10:03 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'matplotlib==3.7.2', 'pillow==10.0.1']
+2026-03-11 04:10:10 | INFO     | test_runner | Tests PASSED for medical_dataset_synthesizer
+2026-03-11 04:10:10 | INFO     | tool_builder | ✅ medical_dataset_synthesizer passed tests on loop 1
+2026-03-11 04:10:10 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-03-11 04:10:10 | INFO     | main |   Built 5/5 tools successfully
+2026-03-11 04:10:10 | INFO     | main |     ✅ claude_memory_manager (loops: 4)
+2026-03-11 04:10:10 | INFO     | main |     ✅ claude_code_reviewer (loops: 3)
+2026-03-11 04:10:10 | INFO     | main |     ✅ radiology_image_preprocessor (loops: 1)
+2026-03-11 04:10:10 | INFO     | main |     ✅ ai_diagnostic_report_generator (loops: 1)
+2026-03-11 04:10:10 | INFO     | main |     ✅ medical_dataset_synthesizer (loops: 1)
+2026-03-11 04:10:10 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-11 04:10:10 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-11 04:10:10 | INFO     | github_publisher |   Created zip: claude_memory_manager.zip (2911 bytes)
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved claude_memory_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_memory_manager
+2026-03-11 04:10:10 | INFO     | github_publisher |   Created zip: claude_code_reviewer.zip (2566 bytes)
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved claude_code_reviewer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_code_reviewer
+2026-03-11 04:10:10 | INFO     | github_publisher |   Created zip: radiology_image_preprocessor.zip (2348 bytes)
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved radiology_image_preprocessor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/radiology_image_preprocessor
+2026-03-11 04:10:10 | INFO     | github_publisher |   Created zip: ai_diagnostic_report_generator.zip (2589 bytes)
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved ai_diagnostic_report_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/ai_diagnostic_report_generator
+2026-03-11 04:10:10 | INFO     | github_publisher |   Created zip: medical_dataset_synthesizer.zip (2612 bytes)
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved medical_dataset_synthesizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/medical_dataset_synthesizer
+2026-03-11 04:10:10 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-03-11 04:10:10 | INFO     | main |   Published 5 tools:
+2026-03-11 04:10:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_memory_manager
+2026-03-11 04:10:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_code_reviewer
+2026-03-11 04:10:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/radiology_image_preprocessor
+2026-03-11 04:10:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/ai_diagnostic_report_generator
+2026-03-11 04:10:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/medical_dataset_synthesizer
+2026-03-11 04:10:10 | INFO     | main | ✅ Generated tools_index.json with 37 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

@@ -1,0 +1,13 @@
+{
+  "tool_name": "medical_dataset_synthesizer",
+  "display_name": "Medical Dataset Synthesizer",
+  "description": "Generates synthetic medical datasets for testing AI diagnostic models. It creates realistic image data for diseases like breast cancer based on statistical distributions and noise injection. This tool is valuable for developers needing diverse, non-sensitive training or testing data.",
+  "topic": "AI for Healthcare Diagnostics",
+  "date": "2026-03-11",
+  "generated": "2026-03-11T04:06:43.907579+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/medical_dataset_synthesizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/medical_dataset_synthesizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/medical_dataset_synthesizer/medical_dataset_synthesizer.zip"
+}

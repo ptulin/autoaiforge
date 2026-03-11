@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_diagnostic_report_generator",
+  "display_name": "AI Diagnostic Report Generator",
+  "description": "This library generates structured diagnostic reports using outputs from AI models. It takes prediction results (e.g., tumor probability scores) and produces readable, standardized JSON or PDF reports for integrating into healthcare systems. It enables developers to bridge the gap between raw AI outputs and actionable medical insights.",
+  "topic": "AI for Healthcare Diagnostics",
+  "date": "2026-03-11",
+  "generated": "2026-03-11T04:06:43.907579+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/ai_diagnostic_report_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/ai_diagnostic_report_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/ai_diagnostic_report_generator/ai_diagnostic_report_generator.zip"
+}
