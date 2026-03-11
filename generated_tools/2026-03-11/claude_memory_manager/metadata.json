@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_memory_manager",
+  "display_name": "Claude Memory Manager",
+  "description": "A tool to interact with Claude AI's memory feature by storing, retrieving, and managing contextual information for better AI responses. Developers can use this to maintain long-term context across conversations or tasks, making it easier to handle complex workflows.",
+  "topic": "Claude AI Updates and Features",
+  "date": "2026-03-11",
+  "generated": "2026-03-11T04:06:43.907579+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_memory_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_memory_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_memory_manager/claude_memory_manager.zip"
+}
