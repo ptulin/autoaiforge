@@ -1,0 +1,271 @@
+2026-03-12 04:11:10 | INFO     | main | ============================================================
+2026-03-12 04:11:10 | INFO     | main | AutoAIForge starting run: 2026-03-12T04:11:10.050976+00:00
+2026-03-12 04:11:10 | INFO     | main | ============================================================
+2026-03-12 04:11:10 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-12 04:11:10 | INFO     | youtube_scraper | YouTube client ready
+2026-03-12 04:11:10 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-12 04:11:11 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-12 04:11:11 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-12 04:11:11 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-12 04:11:12 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-12 04:11:12 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 42 results (quota used: 600)
+2026-03-12 04:11:12 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-12 04:11:13 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-03-12 04:11:13 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-12 04:11:13 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 34 results (quota used: 1000)
+2026-03-12 04:11:13 | INFO     | youtube_scraper | YouTube 'open source LLM': 46 results (quota used: 1100)
+2026-03-12 04:11:14 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-12 04:11:14 | INFO     | youtube_scraper | YouTube 'vector database AI': 30 results (quota used: 1300)
+2026-03-12 04:11:14 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-12 04:11:14 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-12 04:11:15 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-12 04:11:15 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-03-12 04:11:15 | INFO     | youtube_scraper | YouTube 'local LLM': 43 results (quota used: 1800)
+2026-03-12 04:11:16 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-12 04:11:16 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-12 04:11:16 | INFO     | youtube_scraper | YouTube total: 822 items, quota used: 2000
+2026-03-12 04:11:16 | INFO     | main |   YouTube: 775 items
+2026-03-12 04:11:16 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-12 04:11:21 | INFO     | rss_scraper | HackerNews: 178 items
+2026-03-12 04:11:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-12 04:11:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-12 04:11:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-12 04:11:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-12 04:11:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-12 04:11:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-12 04:11:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-12 04:11:29 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-12 04:11:35 | INFO     | rss_scraper | ArXiv: 105 items
+2026-03-12 04:11:39 | INFO     | rss_scraper | Dev.to: 199 items
+2026-03-12 04:11:40 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-12 04:11:40 | INFO     | rss_scraper | Free sources total: 532 unique items
+2026-03-12 04:11:40 | INFO     | main |   RSS/API sources: 532 items
+2026-03-12 04:11:40 | INFO     | main |   Total scraped: 1307 items
+2026-03-12 04:11:40 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-12 04:11:40 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-12 04:11:40 | INFO     | db_manager | Purged 0 old news items
+2026-03-12 04:11:41 | INFO     | db_manager | Inserted 1023/1307 news items
+2026-03-12 04:11:41 | INFO     | main |   SQLite: 1023 new items (total: 13123)
+2026-03-12 04:11:45 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-12 04:11:47 | INFO     | vector_store | VectorStore ready
+2026-03-12 04:12:14 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-12 04:12:14 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-12 04:12:14 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-12 04:12:14 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-12 04:12:21 | DEBUG    | llm_client | LLM response from github_models (4386 chars)
+2026-03-12 04:12:21 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-12 04:12:21 | INFO     | main |   Found 10 topics:
+2026-03-12 04:12:21 | INFO     | main |      1. [9/10] Claude AI for Code Debugging
+2026-03-12 04:12:21 | INFO     | main |      2. [9/10] AI-Enhanced Code Generation
+2026-03-12 04:12:21 | INFO     | main |      3. [8/10] Interactive Visuals with ChatGPT
+2026-03-12 04:12:21 | INFO     | main |      4. [8/10] AI-Powered Office File Synchronization
+2026-03-12 04:12:21 | INFO     | main |      5. [8/10] Claude AI Programming Environment
+2026-03-12 04:12:21 | INFO     | main |      6. [8/10] Digital Redlining and Bias in AI
+2026-03-12 04:12:21 | INFO     | main |      7. [8/10] AI-Driven Fraud Detection
+2026-03-12 04:12:21 | INFO     | main |      8. [7/10] Agentic AI Infrastructure
+2026-03-12 04:12:21 | INFO     | main |      9. [7/10] AI in Military and Defense
+2026-03-12 04:12:21 | INFO     | main |     10. [7/10] AI in Higher Education
+2026-03-12 04:12:21 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-12 04:12:21 | INFO     | main |   Existing collection: 37 tools across 22 topics
+2026-03-12 04:12:21 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-12 04:12:26 | DEBUG    | llm_client | LLM response from github_models (3315 chars)
+2026-03-12 04:12:26 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI for Code Debugging
+2026-03-12 04:12:31 | DEBUG    | llm_client | LLM response from github_models (2730 chars)
+2026-03-12 04:12:31 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Enhanced Code Generation
+2026-03-12 04:12:31 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-12 04:12:31 | INFO     | main |   Generated 5 tool ideas:
+2026-03-12 04:12:31 | INFO     | main |     • claude_debug_cli: A command-line tool that integrates Claude AI's debugging capabilities to analyz
+2026-03-12 04:12:31 | INFO     | main |     • claude_error_tracker: A Python library that integrates with Claude AI to monitor and track runtime err
+2026-03-12 04:12:31 | INFO     | main |     • claude_fix_generator: An automation tool that uses Claude AI to scan a project directory for Python fi
+2026-03-12 04:12:31 | INFO     | main |     • voice_code_assistant: A CLI tool that enables developers to generate code snippets using voice command
+2026-03-12 04:12:31 | INFO     | main |     • contextual_code_completer: A Python library that provides context-aware code generation by analyzing a proj
+2026-03-12 04:12:31 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-12 04:12:31 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-12 04:12:40 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-12 04:12:40 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-12 04:12:40 | INFO     | tool_builder | Building tool: claude_debug_cli …
+2026-03-12 04:12:49 | DEBUG    | llm_client | LLM response from github_models (5055 chars)
+2026-03-12 04:12:49 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'rich==13.5.2', 'pytest==7.4.2']
+2026-03-12 04:12:52 | WARNING  | test_runner | Tests FAILED for claude_debug_cli:
+test_claude_debug_cli.py::test_analyze_code_empty_file FAILED            [ 66%]
+test_claude_debug_cli.py::test_analyze_code_openai_error FAILED          [100%]
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'empty_file.py' does not exist.
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'script.py' does not exist.
+FAILED test_claude_debug_cli.py::test_analyze_code_empty_file - FileNotFoundError: The file 'empty_file.py' does not exist.
+FAILED test_claude_debug_cli.py::test_analyze_code_openai_error - FileNotFoundError: The file 'script.py' does not exist.
+2026-03-12 04:12:52 | WARNING  | tool_builder | ⚠️  claude_debug_cli tests failed (loop 1/5) — test_claude_debug_cli.py::test_analyze_code_empty_file FAILED            [ 66%]
+test_claude_debug_cli.py::test_analyze_code_openai_error FAILED          [100%]
+    raise FileNotFoundError(f"The file '
+2026-03-12 04:13:00 | DEBUG    | llm_client | LLM response from github_models (5240 chars)
+2026-03-12 04:13:00 | DEBUG    | test_runner | Installing: ['openai', 'rich']
+2026-03-12 04:13:01 | WARNING  | test_runner | Tests FAILED for claude_debug_cli:
+test_claude_debug_cli.py::test_analyze_code_openai_error FAILED          [100%]
+E   Exception: API error
+FAILED test_claude_debug_cli.py::test_analyze_code_openai_error - Exception: API error
+2026-03-12 04:13:01 | WARNING  | tool_builder | ⚠️  claude_debug_cli tests failed (loop 2/5) — test_claude_debug_cli.py::test_analyze_code_openai_error FAILED          [100%]
+E   Exception: API error
+FAILED test_claude_debug_cli.py::test_analyze_code_openai_error - Exception: API error
+2026-03-12 04:13:07 | DEBUG    | llm_client | LLM response from github_models (5255 chars)
+2026-03-12 04:13:07 | DEBUG    | test_runner | Installing: ['openai', 'rich']
+2026-03-12 04:13:08 | INFO     | test_runner | Tests PASSED for claude_debug_cli
+2026-03-12 04:13:08 | INFO     | tool_builder | ✅ claude_debug_cli passed tests on loop 3
+2026-03-12 04:13:08 | INFO     | tool_builder | Building tool: claude_error_tracker …
+2026-03-12 04:13:22 | DEBUG    | llm_client | LLM response from github_models (7051 chars)
+2026-03-12 04:13:22 | DEBUG    | test_runner | Installing: ['openai==0.27.8']
+2026-03-12 04:13:22 | WARNING  | test_runner | Tests FAILED for claude_error_tracker:
+test_claude_error_tracker.py::test_handle_exception FAILED               [100%]
+    mock_logger_error.assert_called_with("Unhandled exception captured:\n%s", pytest.any(str))
+    raise AttributeError(f"module {__name__} has no attribute {name}")
+E   AttributeError: module pytest has no attribute any
+FAILED test_claude_error_tracker.py::test_handle_exception - AttributeError: module pytest has no attribute any
+2026-03-12 04:13:22 | WARNING  | tool_builder | ⚠️  claude_error_tracker tests failed (loop 1/5) — test_claude_error_tracker.py::test_handle_exception FAILED               [100%]
+    mock_logger_error.assert_called_with("Unhandled exception captured:\n%s", pytest.any(str))
+    raise AttributeError(
+2026-03-12 04:13:30 | DEBUG    | llm_client | LLM response from github_models (6167 chars)
+2026-03-12 04:13:30 | DEBUG    | test_runner | Installing: ['openai']
+2026-03-12 04:13:31 | WARNING  | test_runner | Tests FAILED for claude_error_tracker:
+test_claude_error_tracker.py::test_handle_exception FAILED               [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+E     Actual: error('Unhandled exception captured:\n%s', 'Traceback (most recent call last):\n  File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_error_tracker/test_claude_error_tracker.py", line 37, in test_handle_exception\n    raise ValueError("Test exception")\nValueError: Test exception\n')
+    mock_logger_error.assert_called_with("Unhandled exception captured:\n%s", str)
+E   AssertionError: expected call not found.
+E     Actual: error('Unhandled exception captured:\n%s', 'Traceback (most recent call last):\n  File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_error_tracker/test_claude_error_tracker.py", line 37, in test_handle_exception\n    raise ValueError("Test exception")\nValueError: Test exception\n')
+E   assert ('Unhandled e... exception\n') == ('Unhandled e...<class 'str'>)
+E     At index 1 diff: 'Traceback (most recent call last):\n  File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_error_tracker/test_claude_error_tracker.py", line 37, in test_handle_exception\n    raise ValueError("Test exception")\nValueError: Test exception\n' != <class 'str'>
+E     +  '    raise ValueError("Test exception")\n'
+E     +  'ValueError: Test exception\n',
+FAILED test_claude_error_tracker.py::test_handle_exception - AssertionError: expected call not found.
+  Actual: error('Unhandled exception captured:\n%s', 'Traceback (most recent call last):\n  File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_error_tracker/test_claude_error_tracker.py", line 37, in test_handle_exception\n    raise ValueError("Test exception")\nValueError: Test exception\n')
+assert ('Unhandled e... exception\n') == ('Unhandled e...<class 'str'>)
+  At index 1 diff: 'Traceback (most recent call last):\n  File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_error_tracker/test_claude_error_tracker.py", line 37, in test_handle_exception\n    raise ValueError("Test exception")\nValueError: Test exception\n' != <class 'str'>
+  +  '    raise ValueError("Test exception")\n'
+  +  'ValueError: Test exception\n',
+2026-03-12 04:13:31 | WARNING  | tool_builder | ⚠️  claude_error_tracker tests failed (loop 2/5) — test_claude_error_tracker.py::test_handle_exception FAILED               [100%]
+/opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionEr
+2026-03-12 04:13:37 | DEBUG    | llm_client | LLM response from github_models (6565 chars)
+2026-03-12 04:13:37 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-03-12 04:13:38 | INFO     | test_runner | Tests PASSED for claude_error_tracker
+2026-03-12 04:13:38 | INFO     | tool_builder | ✅ claude_error_tracker passed tests on loop 3
+2026-03-12 04:13:38 | INFO     | tool_builder | Building tool: claude_fix_generator …
+2026-03-12 04:13:49 | DEBUG    | llm_client | LLM response from github_models (7324 chars)
+2026-03-12 04:13:49 | DEBUG    | test_runner | Installing: ['openai==0.27.8']
+2026-03-12 04:13:50 | WARNING  | test_runner | Tests FAILED for claude_fix_generator:
+test_claude_fix_generator.py::test_analyze_file FAILED                   [ 66%]
+    assert result == "Mock analysis result"
+E   assert "Error analyz...ry: 'test.py'" == 'Mock analysis result'
+E     + Error analyzing test.py: [Errno 2] No such file or directory: 'test.py'
+FAILED test_claude_fix_generator.py::test_analyze_file - assert "Error analyz...ry: 'test.py'" == 'Mock analysis result'
+  + Error analyzing test.py: [Errno 2] No such file or directory: 'test.py'
+2026-03-12 04:13:50 | WARNING  | tool_builder | ⚠️  claude_fix_generator tests failed (loop 1/5) — test_claude_fix_generator.py::test_analyze_file FAILED                   [ 66%]
+    assert result == "Mock analysis result"
+E   assert "Error analyz...ry: 'test.py'" == 'Mock analysis result'
+E     + 
+2026-03-12 04:13:59 | DEBUG    | llm_client | LLM response from github_models (7954 chars)
+2026-03-12 04:13:59 | DEBUG    | test_runner | Installing: ['openai']
+2026-03-12 04:13:59 | INFO     | test_runner | Tests PASSED for claude_fix_generator
+2026-03-12 04:13:59 | INFO     | tool_builder | ✅ claude_fix_generator passed tests on loop 2
+2026-03-12 04:13:59 | INFO     | tool_builder | Building tool: voice_code_assistant …
+2026-03-12 04:14:06 | DEBUG    | llm_client | LLM response from github_models (5256 chars)
+2026-03-12 04:14:06 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'SpeechRecognition==3.8.1', 'pyttsx3==2.90']
+2026-03-12 04:14:08 | WARNING  | test_runner | Tests FAILED for voice_code_assistant:
+test_voice_code_assistant.py::test_transcribe_voice_to_text FAILED       [ 33%]
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+E   ModuleNotFoundError: No module named 'pyaudio'
+    raise AttributeError("Could not find PyAudio; check installation")
+E   AttributeError: Could not find PyAudio; check installation
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+FAILED test_voice_code_assistant.py::test_transcribe_voice_to_text - AttributeError: Could not find PyAudio; check installation
+FAILED test_voice_code_assistant.py::test_generate_code - AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+2026-03-12 04:14:08 | WARNING  | tool_builder | ⚠️  voice_code_assistant tests failed (loop 1/5) — test_voice_code_assistant.py::test_transcribe_voice_to_text FAILED       [ 33%]
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+E   ModuleNotFoundError: No module named
+2026-03-12 04:14:14 | DEBUG    | llm_client | LLM response from github_models (5029 chars)
+2026-03-12 04:14:14 | DEBUG    | test_runner | Installing: ['speechrecognition', 'pyttsx3', 'openai']
+2026-03-12 04:14:15 | WARNING  | test_runner | Tests FAILED for voice_code_assistant:
+test_voice_code_assistant.py::test_transcribe_voice_to_text FAILED       [ 33%]
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+E   NameError: name 'patch' is not defined
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+FAILED test_voice_code_assistant.py::test_transcribe_voice_to_text - NameError: name 'patch' is not defined
+FAILED test_voice_code_assistant.py::test_generate_code - AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+2026-03-12 04:14:15 | WARNING  | tool_builder | ⚠️  voice_code_assistant tests failed (loop 2/5) — test_voice_code_assistant.py::test_transcribe_voice_to_text FAILED       [ 33%]
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+E   NameError: name 'patch' is not defin
+2026-03-12 04:14:21 | DEBUG    | llm_client | LLM response from github_models (5384 chars)
+2026-03-12 04:14:21 | DEBUG    | test_runner | Installing: ['pyttsx3', 'speechrecognition', 'openai']
+2026-03-12 04:14:22 | WARNING  | test_runner | Tests FAILED for voice_code_assistant:
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+FAILED test_voice_code_assistant.py::test_generate_code - AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+2026-03-12 04:14:22 | WARNING  | tool_builder | ⚠️  voice_code_assistant tests failed (loop 3/5) — test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENA
+2026-03-12 04:14:28 | DEBUG    | llm_client | LLM response from github_models (5202 chars)
+2026-03-12 04:14:28 | DEBUG    | test_runner | Installing: ['pyttsx3', 'speechrecognition', 'openai']
+2026-03-12 04:14:29 | WARNING  | test_runner | Tests FAILED for voice_code_assistant:
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+FAILED test_voice_code_assistant.py::test_generate_code - AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENAI_API_KEY environment variable is not set.'
+2026-03-12 04:14:29 | WARNING  | tool_builder | ⚠️  voice_code_assistant tests failed (loop 4/5) — test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in 'Error generating code: OPENA
+2026-03-12 04:14:35 | DEBUG    | llm_client | LLM response from github_models (5556 chars)
+2026-03-12 04:14:35 | DEBUG    | test_runner | Installing: ['pyttsx3', 'speechrecognition', 'openai']
+2026-03-12 04:14:36 | WARNING  | test_runner | Tests FAILED for voice_code_assistant:
+test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in '# Mock response for python code\ndef mock_function():\n    pass'
+FAILED test_voice_code_assistant.py::test_generate_code - AssertionError: assert 'def factorial(n):' in '# Mock response for python code\ndef mock_function():\n    pass'
+2026-03-12 04:14:36 | WARNING  | tool_builder | ⚠️  voice_code_assistant tests failed (loop 5/5) — test_voice_code_assistant.py::test_generate_code FAILED                  [ 66%]
+    assert "def factorial(n):" in result
+E   AssertionError: assert 'def factorial(n):' in '# Mock response for python c
+2026-03-12 04:14:36 | ERROR    | tool_builder | ❌ voice_code_assistant failed after 5 loops
+2026-03-12 04:14:36 | INFO     | tool_builder | Building tool: contextual_code_completer …
+2026-03-12 04:14:46 | DEBUG    | llm_client | LLM response from github_models (6116 chars)
+2026-03-12 04:14:46 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'pytest==7.4.2']
+2026-03-12 04:14:47 | WARNING  | test_runner | Tests FAILED for contextual_code_completer:
+test_contextual_code_completer.py::test_generate_code FAILED             [ 75%]
+E   AttributeError: 'dict' object has no attribute 'text'
+    raise RuntimeError(f"Error generating code: {e}")
+E   RuntimeError: Error generating code: 'dict' object has no attribute 'text'
+FAILED test_contextual_code_completer.py::test_generate_code - RuntimeError: Error generating code: 'dict' object has no attribute 'text'
+2026-03-12 04:14:47 | WARNING  | tool_builder | ⚠️  contextual_code_completer tests failed (loop 1/5) — test_contextual_code_completer.py::test_generate_code FAILED             [ 75%]
+E   AttributeError: 'dict' object has no attribute 'text'
+    raise RuntimeError(f"Error generating code: {e}")
+E   Runt
+2026-03-12 04:14:53 | DEBUG    | llm_client | LLM response from github_models (5100 chars)
+2026-03-12 04:14:53 | DEBUG    | test_runner | Installing: ['openai']
+2026-03-12 04:14:54 | INFO     | test_runner | Tests PASSED for contextual_code_completer
+2026-03-12 04:14:54 | INFO     | tool_builder | ✅ contextual_code_completer passed tests on loop 2
+2026-03-12 04:14:54 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-03-12 04:14:54 | INFO     | main |   Built 4/5 tools successfully
+2026-03-12 04:14:54 | INFO     | main |     ✅ claude_debug_cli (loops: 3)
+2026-03-12 04:14:54 | INFO     | main |     ✅ claude_error_tracker (loops: 3)
+2026-03-12 04:14:54 | INFO     | main |     ✅ claude_fix_generator (loops: 2)
+2026-03-12 04:14:54 | INFO     | main |     ✅ contextual_code_completer (loops: 2)
+2026-03-12 04:14:54 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-12 04:14:54 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-12 04:14:54 | INFO     | github_publisher |   Created zip: claude_debug_cli.zip (2480 bytes)
+2026-03-12 04:14:54 | INFO     | github_publisher | Saved claude_debug_cli → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_debug_cli
+2026-03-12 04:14:54 | INFO     | github_publisher |   Created zip: claude_error_tracker.zip (2802 bytes)
+2026-03-12 04:14:54 | INFO     | github_publisher | Saved claude_error_tracker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_error_tracker
+2026-03-12 04:14:54 | INFO     | github_publisher |   Created zip: claude_fix_generator.zip (3077 bytes)
+2026-03-12 04:14:54 | INFO     | github_publisher | Saved claude_fix_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_fix_generator
+2026-03-12 04:14:54 | INFO     | github_publisher |   Created zip: contextual_code_completer.zip (2376 bytes)
+2026-03-12 04:14:54 | INFO     | github_publisher | Saved contextual_code_completer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/contextual_code_completer
+2026-03-12 04:14:54 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-03-12 04:14:54 | INFO     | main |   Published 4 tools:
+2026-03-12 04:14:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_debug_cli
+2026-03-12 04:14:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_error_tracker
+2026-03-12 04:14:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_fix_generator
+2026-03-12 04:14:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/contextual_code_completer
+2026-03-12 04:14:54 | INFO     | main | ✅ Generated tools_index.json with 41 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

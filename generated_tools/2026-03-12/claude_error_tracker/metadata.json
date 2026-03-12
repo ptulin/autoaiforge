@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_error_tracker",
+  "display_name": "Claude Error Tracker",
+  "description": "A Python library that integrates with Claude AI to monitor and track runtime errors in Python applications. It captures errors, sends them to Claude for analysis, and logs detailed correction suggestions for developers.",
+  "topic": "Claude AI for Code Debugging",
+  "date": "2026-03-12",
+  "generated": "2026-03-12T04:11:10.050976+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_error_tracker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_error_tracker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_error_tracker/claude_error_tracker.zip"
+}
