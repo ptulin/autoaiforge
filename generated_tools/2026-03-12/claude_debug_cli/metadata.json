@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_debug_cli",
+  "display_name": "Claude Debug CLI",
+  "description": "A command-line tool that integrates Claude AI's debugging capabilities to analyze and fix issues in Python scripts. It enables developers to quickly debug their code by providing explanations for errors, suggested fixes, and automated corrections.",
+  "topic": "Claude AI for Code Debugging",
+  "date": "2026-03-12",
+  "generated": "2026-03-12T04:11:10.050976+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_debug_cli",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_debug_cli/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_debug_cli/claude_debug_cli.zip"
+}

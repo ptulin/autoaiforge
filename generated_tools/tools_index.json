@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-03-11T04:10:10.419991+00:00",
-  "total_tools": 37,
+  "last_updated": "2026-03-12T04:14:54.738122+00:00",
+  "total_tools": 41,
   "tools": [
+    {
+      "tool_name": "claude_debug_cli",
+      "display_name": "Claude Debug CLI",
+      "description": "A command-line tool that integrates Claude AI's debugging capabilities to analyze and fix issues in Python scripts. It enables developers to quickly debug their code by providing explanations for errors, suggested fixes, and automated corrections.",
+      "topic": "Claude AI for Code Debugging",
+      "date": "2026-03-12",
+      "generated": "2026-03-12T04:11:10.050976+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_debug_cli",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_debug_cli/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_debug_cli/claude_debug_cli.zip"
+    },
+    {
+      "tool_name": "claude_error_tracker",
+      "display_name": "Claude Error Tracker",
+      "description": "A Python library that integrates with Claude AI to monitor and track runtime errors in Python applications. It captures errors, sends them to Claude for analysis, and logs detailed correction suggestions for developers.",
+      "topic": "Claude AI for Code Debugging",
+      "date": "2026-03-12",
+      "generated": "2026-03-12T04:11:10.050976+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_error_tracker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_error_tracker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_error_tracker/claude_error_tracker.zip"
+    },
+    {
+      "tool_name": "claude_fix_generator",
+      "display_name": "Claude Fix Generator",
+      "description": "An automation tool that uses Claude AI to scan a project directory for Python files, identify common coding issues, and auto-generate suggested fixes. It outputs a summary report and optionally applies fixes to a copy of the codebase.",
+      "topic": "Claude AI for Code Debugging",
+      "date": "2026-03-12",
+      "generated": "2026-03-12T04:11:10.050976+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/claude_fix_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_fix_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/claude_fix_generator/claude_fix_generator.zip"
+    },
+    {
+      "tool_name": "contextual_code_completer",
+      "display_name": "Contextual Code Completer",
+      "description": "A Python library that provides context-aware code generation by analyzing a project's existing codebase. It integrates with Claude AI to offer intelligent completion, refactoring suggestions, and boilerplate generation based on the existing context of the files. This tool is particularly useful for large projects where maintaining consistent style and functionality across the codebase is challenging.",
+      "topic": "AI-Enhanced Code Generation",
+      "date": "2026-03-12",
+      "generated": "2026-03-12T04:11:10.050976+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-12/contextual_code_completer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/contextual_code_completer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-12/contextual_code_completer/contextual_code_completer.zip"
+    },
     {
       "tool_name": "ai_diagnostic_report_generator",
       "display_name": "AI Diagnostic Report Generator",
