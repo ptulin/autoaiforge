@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_refactor_assistant",
+  "display_name": "AI Refactor Assistant",
+  "description": "AI Refactor Assistant helps developers refactor and optimize Python scripts for readability, performance, and best practices. It uses Claude AI to understand the code context and generate improved versions of existing functions or modules.",
+  "topic": "AI for Code Generation and Debugging",
+  "date": "2026-03-13",
+  "generated": "2026-03-13T04:09:03.267984+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-13/ai_refactor_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-13/ai_refactor_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-13/ai_refactor_assistant/ai_refactor_assistant.zip"
+}
