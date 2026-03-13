@@ -1,0 +1,13 @@
+{
+  "tool_name": "interactive_chart_injector",
+  "display_name": "Interactive Chart Injector",
+  "description": "This Python library allows AI developers to integrate dynamically generated interactive charts from AI tools like Claude into Jupyter notebooks. It parses AI-generated chart data and converts it into interactive visualizations using Plotly, making it easy to debug, share, and explore AI-driven insights.",
+  "topic": "Interactive AI Data Visualization",
+  "date": "2026-03-13",
+  "generated": "2026-03-13T04:09:03.267984+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-13/interactive_chart_injector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-13/interactive_chart_injector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-13/interactive_chart_injector/interactive_chart_injector.zip"
+}
