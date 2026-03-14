@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-13T04:14:31.392612+00:00",
-  "total_tools": 45,
+  "last_updated": "2026-03-14T04:14:58.210178+00:00",
+  "total_tools": 48,
   "tools": [
+    {
+      "tool_name": "dataset_silo_connector",
+      "display_name": "Dataset Silo Connector",
+      "description": "A Python library that streamlines the integration of encrypted AI silos into AI training pipelines. It allows developers to load encrypted datasets directly into memory, decrypt them on-the-fly, and ensure the data remains secure during processing.",
+      "topic": "AI Privacy Silos",
+      "date": "2026-03-14",
+      "generated": "2026-03-14T04:07:59.989339+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/dataset_silo_connector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/dataset_silo_connector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/dataset_silo_connector/dataset_silo_connector.zip"
+    },
+    {
+      "tool_name": "secure_silo_manager",
+      "display_name": "Secure Silo Manager",
+      "description": "A CLI tool for creating and managing encrypted data silos for AI workflows. It allows users to securely store, encrypt, and retrieve datasets with tightly controlled access permissions. This ensures privacy and compliance in AI development workflows.",
+      "topic": "AI Privacy Silos",
+      "date": "2026-03-14",
+      "generated": "2026-03-14T04:07:59.989339+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/secure_silo_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/secure_silo_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/secure_silo_manager/secure_silo_manager.zip"
+    },
+    {
+      "tool_name": "silo_audit_tool",
+      "display_name": "Silo Audit Tool",
+      "description": "A Python utility to audit and monitor encrypted data silos in AI workflows. It logs and reports access events, failed access attempts, and encryption integrity checks, ensuring transparency and compliance in data usage.",
+      "topic": "AI Privacy Silos",
+      "date": "2026-03-14",
+      "generated": "2026-03-14T04:07:59.989339+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/silo_audit_tool",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/silo_audit_tool/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/silo_audit_tool/silo_audit_tool.zip"
+    },
     {
       "tool_name": "ai_chart_converter",
       "display_name": "AI Chart Converter",
