@@ -1,0 +1,297 @@
+2026-03-14 04:07:59 | INFO     | main | ============================================================
+2026-03-14 04:07:59 | INFO     | main | AutoAIForge starting run: 2026-03-14T04:07:59.989339+00:00
+2026-03-14 04:07:59 | INFO     | main | ============================================================
+2026-03-14 04:07:59 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-14 04:08:00 | INFO     | youtube_scraper | YouTube client ready
+2026-03-14 04:08:00 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-14 04:08:01 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-14 04:08:01 | INFO     | youtube_scraper | YouTube 'open source AI tools': 25 results (quota used: 300)
+2026-03-14 04:08:01 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-14 04:08:01 | INFO     | youtube_scraper | YouTube 'Claude Code': 22 results (quota used: 500)
+2026-03-14 04:08:02 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 25 results (quota used: 600)
+2026-03-14 04:08:02 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-14 04:08:03 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-14 04:08:03 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-14 04:08:03 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-14 04:08:04 | INFO     | youtube_scraper | YouTube 'open source LLM': 42 results (quota used: 1100)
+2026-03-14 04:08:04 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-14 04:08:04 | INFO     | youtube_scraper | YouTube 'vector database AI': 21 results (quota used: 1300)
+2026-03-14 04:08:04 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-14 04:08:05 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-14 04:08:05 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-14 04:08:05 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-03-14 04:08:06 | INFO     | youtube_scraper | YouTube 'local LLM': 41 results (quota used: 1800)
+2026-03-14 04:08:06 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-14 04:08:06 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-14 04:08:06 | INFO     | youtube_scraper | YouTube total: 754 items, quota used: 2000
+2026-03-14 04:08:06 | INFO     | main |   YouTube: 711 items
+2026-03-14 04:08:06 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-14 04:08:12 | INFO     | rss_scraper | HackerNews: 193 items
+2026-03-14 04:08:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-14 04:08:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-14 04:08:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-14 04:08:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-14 04:08:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-14 04:08:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-14 04:08:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-14 04:08:19 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-14 04:08:20 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-14 04:08:51 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-03-14 04:09:22 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-03-14 04:09:53 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-03-14 04:09:54 | INFO     | rss_scraper | ArXiv: 0 items
+2026-03-14 04:09:58 | INFO     | rss_scraper | Dev.to: 197 items
+2026-03-14 04:09:59 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-14 04:09:59 | INFO     | rss_scraper | Free sources total: 440 unique items
+2026-03-14 04:09:59 | INFO     | main |   RSS/API sources: 440 items
+2026-03-14 04:09:59 | INFO     | main |   Total scraped: 1151 items
+2026-03-14 04:09:59 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-14 04:09:59 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-14 04:09:59 | INFO     | db_manager | Purged 0 old news items
+2026-03-14 04:09:59 | INFO     | db_manager | Inserted 889/1151 news items
+2026-03-14 04:09:59 | INFO     | main |   SQLite: 889 new items (total: 15043)
+2026-03-14 04:10:04 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-14 04:10:06 | INFO     | vector_store | VectorStore ready
+2026-03-14 04:10:34 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-14 04:10:34 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-14 04:10:34 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-14 04:10:34 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-14 04:10:42 | DEBUG    | llm_client | LLM response from github_models (4026 chars)
+2026-03-14 04:10:42 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-14 04:10:42 | INFO     | main |   Found 10 topics:
+2026-03-14 04:10:42 | INFO     | main |      1. [9/10] AI Privacy Silos
+2026-03-14 04:10:42 | INFO     | main |      2. [9/10] AI Context Expansion
+2026-03-14 04:10:42 | INFO     | main |      3. [9/10] AI Safety Regulations
+2026-03-14 04:10:42 | INFO     | main |      4. [8/10] Interactive AI Charts
+2026-03-14 04:10:42 | INFO     | main |      5. [8/10] AI Agents with Cryptocurrency
+2026-03-14 04:10:42 | INFO     | main |      6. [8/10] AI-Enhanced WordPress Integration
+2026-03-14 04:10:42 | INFO     | main |      7. [7/10] AI-Powered Film Creation
+2026-03-14 04:10:42 | INFO     | main |      8. [7/10] AI for Legal Professionals
+2026-03-14 04:10:42 | INFO     | main |      9. [6/10] AI in Emotional Toys
+2026-03-14 04:10:42 | INFO     | main |     10. [6/10] AI-Powered News Graphics
+2026-03-14 04:10:42 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-14 04:10:42 | INFO     | main |   Existing collection: 45 tools across 26 topics
+2026-03-14 04:10:42 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-14 04:10:49 | DEBUG    | llm_client | LLM response from github_models (3531 chars)
+2026-03-14 04:10:49 | INFO     | idea_generator | Generated 3 ideas for topic: AI Privacy Silos
+2026-03-14 04:10:55 | DEBUG    | llm_client | LLM response from github_models (2639 chars)
+2026-03-14 04:10:55 | INFO     | idea_generator | Generated 2 ideas for topic: AI Context Expansion
+2026-03-14 04:10:55 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-14 04:10:55 | INFO     | main |   Generated 5 tool ideas:
+2026-03-14 04:10:55 | INFO     | main |     • secure_silo_manager: A CLI tool for creating and managing encrypted data silos for AI workflows. It a
+2026-03-14 04:10:55 | INFO     | main |     • silo_audit_tool: A Python utility to audit and monitor encrypted data silos in AI workflows. It l
+2026-03-14 04:10:55 | INFO     | main |     • dataset_silo_connector: A Python library that streamlines the integration of encrypted AI silos into AI 
+2026-03-14 04:10:55 | INFO     | main |     • chunk_streamer: Chunk Streamer is a Python CLI tool that efficiently streams large datasets or t
+2026-03-14 04:10:55 | INFO     | main |     • contextual_dataset_manager: Contextual Dataset Manager is a Python library designed for developers working w
+2026-03-14 04:10:55 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-14 04:10:55 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-14 04:11:05 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-14 04:11:05 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-14 04:11:05 | INFO     | tool_builder | Building tool: secure_silo_manager …
+2026-03-14 04:11:15 | DEBUG    | llm_client | LLM response from github_models (8248 chars)
+2026-03-14 04:11:15 | DEBUG    | test_runner | Installing: ['cryptography==41.0.3']
+2026-03-14 04:11:17 | WARNING  | test_runner | Tests FAILED for secure_silo_manager:
+test_secure_silo_manager.py::test_add_to_silo FAILED                     [ 66%]
+test_secure_silo_manager.py::test_retrieve_from_silo FAILED              [100%]
+    raise FileNotFoundError("File not found.")
+E   FileNotFoundError: File not found.
+    raise FileNotFoundError("File not found.")
+E   FileNotFoundError: File not found.
+FAILED test_secure_silo_manager.py::test_add_to_silo - FileNotFoundError: File not found.
+FAILED test_secure_silo_manager.py::test_retrieve_from_silo - FileNotFoundError: File not found.
+2026-03-14 04:11:17 | WARNING  | tool_builder | ⚠️  secure_silo_manager tests failed (loop 1/5) — test_secure_silo_manager.py::test_add_to_silo FAILED                     [ 66%]
+test_secure_silo_manager.py::test_retrieve_from_silo FAILED              [100%]
+    raise FileNotFoundError("File not fo
+2026-03-14 04:11:17 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-14 04:12:28 | DEBUG    | llm_client | LLM response from github_models (8817 chars)
+2026-03-14 04:12:28 | DEBUG    | test_runner | Installing: ['cryptography']
+2026-03-14 04:12:28 | INFO     | test_runner | Tests PASSED for secure_silo_manager
+2026-03-14 04:12:28 | INFO     | tool_builder | ✅ secure_silo_manager passed tests on loop 2
+2026-03-14 04:12:28 | INFO     | tool_builder | Building tool: silo_audit_tool …
+2026-03-14 04:12:38 | DEBUG    | llm_client | LLM response from github_models (5795 chars)
+2026-03-14 04:12:38 | DEBUG    | test_runner | Installing: ['cryptography==41.0.3']
+2026-03-14 04:12:39 | WARNING  | test_runner | Tests FAILED for silo_audit_tool:
+test_silo_audit_tool.py::test_perform_integrity_check_success FAILED     [ 20%]
+    assert checksum == "eb733a00c0c9d336e65691a37ab54293dc2c3a9d4a60c3e8f0d5c3c5c7f3b6b2"
+E   AssertionError: assert False == 'eb733a00c0c9d336e65691a37ab54293dc2c3a9d4a60c3e8f0d5c3c5c7f3b6b2'
+ERROR    root:silo_audit_tool.py:20 File not found: test_file.enc
+FAILED test_silo_audit_tool.py::test_perform_integrity_check_success - AssertionError: assert False == 'eb733a00c0c9d336e65691a37ab54293dc2c3a9d4a60c3e8f0d5c3c5c7f3b6b2'
+2026-03-14 04:12:39 | WARNING  | tool_builder | ⚠️  silo_audit_tool tests failed (loop 1/5) — test_silo_audit_tool.py::test_perform_integrity_check_success FAILED     [ 20%]
+    assert checksum == "eb733a00c0c9d336e65691a37ab54293dc2c3a9d4a60c3e8f0d5c3c5c7f3b6b2"
+E   AssertionError: assert Fal
+2026-03-14 04:12:46 | DEBUG    | llm_client | LLM response from github_models (5936 chars)
+2026-03-14 04:12:46 | DEBUG    | test_runner | Installing: ['cryptography']
+2026-03-14 04:12:47 | INFO     | test_runner | Tests PASSED for silo_audit_tool
+2026-03-14 04:12:47 | INFO     | tool_builder | ✅ silo_audit_tool passed tests on loop 2
+2026-03-14 04:12:47 | INFO     | tool_builder | Building tool: dataset_silo_connector …
+2026-03-14 04:12:57 | DEBUG    | llm_client | LLM response from github_models (5740 chars)
+2026-03-14 04:12:57 | DEBUG    | test_runner | Installing: ['cryptography==41.0.0', 'pandas==2.1.1']
+2026-03-14 04:13:04 | WARNING  | test_runner | Tests FAILED for dataset_silo_connector:
+test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_load_silo_chunked FAILED            [100%]
+    raise FileNotFoundError(f"Encrypted file not found: {encrypted_file_path}")
+E   FileNotFoundError: Encrypted file not found: dummy.enc
+    raise FileNotFoundError(f"Encrypted file not found: {encrypted_file_path}")
+E   FileNotFoundError: Encrypted file not found: dummy.enc
+FAILED test_dataset_silo_connector.py::test_load_silo_entire_file - FileNotFoundError: Encrypted file not found: dummy.enc
+FAILED test_dataset_silo_connector.py::test_load_silo_chunked - FileNotFoundError: Encrypted file not found: dummy.enc
+2026-03-14 04:13:04 | WARNING  | tool_builder | ⚠️  dataset_silo_connector tests failed (loop 1/5) — test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_load_silo_chunked FAILED            [100%]
+    raise FileNotFoundError(f"Encrypted 
+2026-03-14 04:13:12 | DEBUG    | llm_client | LLM response from github_models (5983 chars)
+2026-03-14 04:13:12 | DEBUG    | test_runner | Installing: ['pandas', 'cryptography']
+2026-03-14 04:13:13 | WARNING  | test_runner | Tests FAILED for dataset_silo_connector:
+test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_load_silo_chunked FAILED            [100%]
+    raise ValueError(
+E   ValueError: The length of the provided data is not a multiple of the block length.
+    raise ValueError(
+E   ValueError: The length of the provided data is not a multiple of the block length.
+FAILED test_dataset_silo_connector.py::test_load_silo_entire_file - ValueError: The length of the provided data is not a multiple of the block length.
+FAILED test_dataset_silo_connector.py::test_load_silo_chunked - ValueError: The length of the provided data is not a multiple of the block length.
+2026-03-14 04:13:13 | WARNING  | tool_builder | ⚠️  dataset_silo_connector tests failed (loop 2/5) — test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_load_silo_chunked FAILED            [100%]
+    raise ValueError(
+E   ValueError: Th
+2026-03-14 04:13:23 | DEBUG    | llm_client | LLM response from github_models (7560 chars)
+2026-03-14 04:13:23 | DEBUG    | test_runner | Installing: ['cryptography', 'pandas']
+2026-03-14 04:13:24 | WARNING  | test_runner | Tests FAILED for dataset_silo_connector:
+test_dataset_silo_connector.py::test_decrypt_data FAILED                 [ 33%]
+test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_load_silo_chunked FAILED            [100%]
+E   NameError: name 'Cipher' is not defined
+E   NameError: name 'Cipher' is not defined
+E   NameError: name 'Cipher' is not defined
+FAILED test_dataset_silo_connector.py::test_decrypt_data - NameError: name 'Cipher' is not defined
+FAILED test_dataset_silo_connector.py::test_load_silo_entire_file - NameError: name 'Cipher' is not defined
+FAILED test_dataset_silo_connector.py::test_load_silo_chunked - NameError: name 'Cipher' is not defined
+2026-03-14 04:13:24 | WARNING  | tool_builder | ⚠️  dataset_silo_connector tests failed (loop 3/5) — test_dataset_silo_connector.py::test_decrypt_data FAILED                 [ 33%]
+test_dataset_silo_connector.py::test_load_silo_entire_file FAILED        [ 66%]
+test_dataset_silo_connector.py::test_loa
+2026-03-14 04:13:33 | DEBUG    | llm_client | LLM response from github_models (7529 chars)
+2026-03-14 04:13:33 | DEBUG    | test_runner | Installing: ['pandas', 'cryptography']
+2026-03-14 04:13:34 | INFO     | test_runner | Tests PASSED for dataset_silo_connector
+2026-03-14 04:13:34 | INFO     | tool_builder | ✅ dataset_silo_connector passed tests on loop 4
+2026-03-14 04:13:34 | INFO     | tool_builder | Building tool: chunk_streamer …
+2026-03-14 04:13:41 | DEBUG    | llm_client | LLM response from github_models (4543 chars)
+2026-03-14 04:13:41 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'tiktoken==0.4.0']
+2026-03-14 04:13:43 | WARNING  | test_runner | Tests FAILED for chunk_streamer:
+test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+Error: pytest: reading from stdin while output is captured!  Consider using `-s`.
+FAILED test_chunk_streamer.py::test_main_with_mocked_input - SystemExit: 1
+2026-03-14 04:13:43 | WARNING  | tool_builder | ⚠️  chunk_streamer tests failed (loop 1/5) — test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+Error: pytest: reading from stdi
+2026-03-14 04:13:50 | DEBUG    | llm_client | LLM response from github_models (4725 chars)
+2026-03-14 04:13:50 | DEBUG    | test_runner | Installing: ['tiktoken', 'pytest']
+2026-03-14 04:13:51 | WARNING  | test_runner | Tests FAILED for chunk_streamer:
+test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'read'
+Error: Mock object has no attribute 'read'
+FAILED test_chunk_streamer.py::test_main_with_mocked_input - SystemExit: 1
+2026-03-14 04:13:51 | WARNING  | tool_builder | ⚠️  chunk_streamer tests failed (loop 2/5) — test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'rea
+2026-03-14 04:13:57 | DEBUG    | llm_client | LLM response from github_models (5266 chars)
+2026-03-14 04:13:57 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-03-14 04:13:58 | WARNING  | test_runner | Tests FAILED for chunk_streamer:
+test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'read'
+Error: Mock object has no attribute 'read'
+FAILED test_chunk_streamer.py::test_main_with_mocked_input - SystemExit: 1
+2026-03-14 04:13:58 | WARNING  | tool_builder | ⚠️  chunk_streamer tests failed (loop 3/5) — test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'rea
+2026-03-14 04:14:05 | DEBUG    | llm_client | LLM response from github_models (5761 chars)
+2026-03-14 04:14:05 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-03-14 04:14:06 | WARNING  | test_runner | Tests FAILED for chunk_streamer:
+test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'read'
+Error: Mock object has no attribute 'read'
+FAILED test_chunk_streamer.py::test_main_with_mocked_input - SystemExit: 1
+2026-03-14 04:14:06 | WARNING  | tool_builder | ⚠️  chunk_streamer tests failed (loop 4/5) — test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'rea
+2026-03-14 04:14:12 | DEBUG    | llm_client | LLM response from github_models (5369 chars)
+2026-03-14 04:14:12 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-03-14 04:14:12 | WARNING  | test_runner | Tests FAILED for chunk_streamer:
+test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'read'
+Error: Mock object has no attribute 'read'
+FAILED test_chunk_streamer.py::test_main_with_mocked_input - SystemExit: 1
+2026-03-14 04:14:12 | WARNING  | tool_builder | ⚠️  chunk_streamer tests failed (loop 5/5) — test_chunk_streamer.py::test_main_with_mocked_input FAILED               [100%]
+    raise AttributeError("Mock object has no attribute %r" % name)
+E   AttributeError: Mock object has no attribute 'rea
+2026-03-14 04:14:12 | ERROR    | tool_builder | ❌ chunk_streamer failed after 5 loops
+2026-03-14 04:14:12 | INFO     | tool_builder | Building tool: contextual_dataset_manager …
+2026-03-14 04:14:24 | DEBUG    | llm_client | LLM response from github_models (6096 chars)
+2026-03-14 04:14:24 | DEBUG    | test_runner | Installing: ['tiktoken==0.4.0', 'pandas==1.5.3']
+2026-03-14 04:14:29 | WARNING  | test_runner | Tests FAILED for contextual_dataset_manager:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_contextual_dataset_manager.py ______________
+E   NameError: name 'pd' is not defined
+ERROR test_contextual_dataset_manager.py - NameError: name 'pd' is not defined
+2026-03-14 04:14:29 | WARNING  | tool_builder | ⚠️  contextual_dataset_manager tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_contextual_dataset_manager.py ______________
+E   NameError: name 'pd' is not define
+2026-03-14 04:14:35 | DEBUG    | llm_client | LLM response from github_models (5744 chars)
+2026-03-14 04:14:35 | DEBUG    | test_runner | Installing: ['pandas', 'tiktoken']
+2026-03-14 04:14:36 | WARNING  | test_runner | Tests FAILED for contextual_dataset_manager:
+test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt - ValueError: too many values to unpack (expected 2)
+2026-03-14 04:14:36 | WARNING  | tool_builder | ⚠️  contextual_dataset_manager tests failed (loop 2/5) — test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt
+2026-03-14 04:14:42 | DEBUG    | llm_client | LLM response from github_models (5953 chars)
+2026-03-14 04:14:42 | DEBUG    | test_runner | Installing: ['pandas', 'tiktoken']
+2026-03-14 04:14:44 | WARNING  | test_runner | Tests FAILED for contextual_dataset_manager:
+test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt - ValueError: too many values to unpack (expected 2)
+2026-03-14 04:14:44 | WARNING  | tool_builder | ⚠️  contextual_dataset_manager tests failed (loop 3/5) — test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt
+2026-03-14 04:14:49 | DEBUG    | llm_client | LLM response from github_models (5812 chars)
+2026-03-14 04:14:49 | DEBUG    | test_runner | Installing: ['tiktoken', 'pandas']
+2026-03-14 04:14:51 | WARNING  | test_runner | Tests FAILED for contextual_dataset_manager:
+test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt - ValueError: too many values to unpack (expected 2)
+2026-03-14 04:14:51 | WARNING  | tool_builder | ⚠️  contextual_dataset_manager tests failed (loop 4/5) — test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt
+2026-03-14 04:14:56 | DEBUG    | llm_client | LLM response from github_models (5775 chars)
+2026-03-14 04:14:56 | DEBUG    | test_runner | Installing: ['tiktoken', 'pandas']
+2026-03-14 04:14:58 | WARNING  | test_runner | Tests FAILED for contextual_dataset_manager:
+test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt - ValueError: too many values to unpack (expected 2)
+2026-03-14 04:14:58 | WARNING  | tool_builder | ⚠️  contextual_dataset_manager tests failed (loop 5/5) — test_contextual_dataset_manager.py::test_chunk_dataset_txt FAILED        [ 33%]
+E   ValueError: too many values to unpack (expected 2)
+FAILED test_contextual_dataset_manager.py::test_chunk_dataset_txt
+2026-03-14 04:14:58 | ERROR    | tool_builder | ❌ contextual_dataset_manager failed after 5 loops
+2026-03-14 04:14:58 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-14 04:14:58 | INFO     | main |   Built 3/5 tools successfully
+2026-03-14 04:14:58 | INFO     | main |     ✅ secure_silo_manager (loops: 2)
+2026-03-14 04:14:58 | INFO     | main |     ✅ silo_audit_tool (loops: 2)
+2026-03-14 04:14:58 | INFO     | main |     ✅ dataset_silo_connector (loops: 4)
+2026-03-14 04:14:58 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-14 04:14:58 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-14 04:14:58 | INFO     | github_publisher |   Created zip: secure_silo_manager.zip (2897 bytes)
+2026-03-14 04:14:58 | INFO     | github_publisher | Saved secure_silo_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/secure_silo_manager
+2026-03-14 04:14:58 | INFO     | github_publisher |   Created zip: silo_audit_tool.zip (2741 bytes)
+2026-03-14 04:14:58 | INFO     | github_publisher | Saved silo_audit_tool → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/silo_audit_tool
+2026-03-14 04:14:58 | INFO     | github_publisher |   Created zip: dataset_silo_connector.zip (2905 bytes)
+2026-03-14 04:14:58 | INFO     | github_publisher | Saved dataset_silo_connector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/dataset_silo_connector
+2026-03-14 04:14:58 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-14 04:14:58 | INFO     | main |   Published 3 tools:
+2026-03-14 04:14:58 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/secure_silo_manager
+2026-03-14 04:14:58 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/silo_audit_tool
+2026-03-14 04:14:58 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/dataset_silo_connector
+2026-03-14 04:14:58 | INFO     | main | ✅ Generated tools_index.json with 48 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

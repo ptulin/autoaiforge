@@ -1,0 +1,13 @@
+{
+  "tool_name": "secure_silo_manager",
+  "display_name": "Secure Silo Manager",
+  "description": "A CLI tool for creating and managing encrypted data silos for AI workflows. It allows users to securely store, encrypt, and retrieve datasets with tightly controlled access permissions. This ensures privacy and compliance in AI development workflows.",
+  "topic": "AI Privacy Silos",
+  "date": "2026-03-14",
+  "generated": "2026-03-14T04:07:59.989339+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/secure_silo_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/secure_silo_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/secure_silo_manager/secure_silo_manager.zip"
+}

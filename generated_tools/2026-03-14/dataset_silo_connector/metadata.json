@@ -1,0 +1,13 @@
+{
+  "tool_name": "dataset_silo_connector",
+  "display_name": "Dataset Silo Connector",
+  "description": "A Python library that streamlines the integration of encrypted AI silos into AI training pipelines. It allows developers to load encrypted datasets directly into memory, decrypt them on-the-fly, and ensure the data remains secure during processing.",
+  "topic": "AI Privacy Silos",
+  "date": "2026-03-14",
+  "generated": "2026-03-14T04:07:59.989339+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-14/dataset_silo_connector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/dataset_silo_connector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-14/dataset_silo_connector/dataset_silo_connector.zip"
+}
