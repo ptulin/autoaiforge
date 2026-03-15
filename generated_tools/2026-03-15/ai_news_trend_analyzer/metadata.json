@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_news_trend_analyzer",
+  "display_name": "AI News Trend Analyzer",
+  "description": "A CLI tool that analyzes the frequency and sentiment of AI-related topics in the news over time. It can help AI developers track which topics are gaining attention and understand the overall sentiment of discussions in the industry.",
+  "topic": "AI news",
+  "date": "2026-03-15",
+  "generated": "2026-03-15T04:30:34.573087+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_trend_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_trend_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_trend_analyzer/ai_news_trend_analyzer.zip"
+}

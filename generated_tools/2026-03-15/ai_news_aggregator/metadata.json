@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_news_aggregator",
+  "display_name": "AI News Aggregator",
+  "description": "This tool scrapes and aggregates trending AI-related news from multiple freely available RSS feeds or news APIs, organizes them by topic, and presents a summarized report. This is useful for AI developers to stay updated on the latest developments in AI without manually browsing multiple sources.",
+  "topic": "AI news",
+  "date": "2026-03-15",
+  "generated": "2026-03-15T04:30:34.573087+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_aggregator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_aggregator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_aggregator/ai_news_aggregator.zip"
+}

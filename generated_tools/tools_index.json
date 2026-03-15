@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-03-14T04:14:58.210178+00:00",
-  "total_tools": 48,
+  "last_updated": "2026-03-15T04:36:28.886968+00:00",
+  "total_tools": 51,
   "tools": [
+    {
+      "tool_name": "ai_news_aggregator",
+      "display_name": "AI News Aggregator",
+      "description": "This tool scrapes and aggregates trending AI-related news from multiple freely available RSS feeds or news APIs, organizes them by topic, and presents a summarized report. This is useful for AI developers to stay updated on the latest developments in AI without manually browsing multiple sources.",
+      "topic": "AI news",
+      "date": "2026-03-15",
+      "generated": "2026-03-15T04:30:34.573087+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_aggregator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_aggregator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_aggregator/ai_news_aggregator.zip"
+    },
+    {
+      "tool_name": "ai_model_profiler",
+      "display_name": "AI Model Profiler",
+      "description": "AI Model Profiler is a CLI tool that analyzes pretrained AI models (e.g., PyTorch or TensorFlow models) to extract key insights such as layer distribution, parameter counts, and memory usage. This tool helps AI developers understand model architecture at a glance and optimize resource usage when deploying or training models.",
+      "topic": "AI",
+      "date": "2026-03-15",
+      "generated": "2026-03-15T04:30:34.573087+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_model_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_model_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_model_profiler/ai_model_profiler.zip"
+    },
+    {
+      "tool_name": "ai_news_trend_analyzer",
+      "display_name": "AI News Trend Analyzer",
+      "description": "A CLI tool that analyzes the frequency and sentiment of AI-related topics in the news over time. It can help AI developers track which topics are gaining attention and understand the overall sentiment of discussions in the industry.",
+      "topic": "AI news",
+      "date": "2026-03-15",
+      "generated": "2026-03-15T04:30:34.573087+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_trend_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_trend_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/ai_news_trend_analyzer/ai_news_trend_analyzer.zip"
+    },
+    {
+      "tool_name": "synthetic_data_generator",
+      "display_name": "Synthetic Data Generator for AI",
+      "description": "Synthetic Data Generator is a Python library for creating high-quality synthetic datasets for AI tasks, such as image classification or text processing. It uses preconfigured templates of data generation (e.g., random images with labels or simulated text) and integrates augmentation options, helping developers test models when real-world data is scarce or inaccessible.",
+      "topic": "AI",
+      "date": "2026-03-15",
+      "generated": "2026-03-15T04:30:34.573087+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/synthetic_data_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/synthetic_data_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/synthetic_data_generator/synthetic_data_generator.zip"
+    },
     {
       "tool_name": "dataset_silo_connector",
       "display_name": "Dataset Silo Connector",
@@ -365,18 +417,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-06/ai_memory_exporter",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-06/ai_memory_exporter/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-06/ai_memory_exporter/ai_memory_exporter.zip"
-    },
-    {
-      "tool_name": "ai_news_aggregator",
-      "display_name": "AI News Aggregator",
-      "description": "This tool collects, aggregates, and categorizes the latest AI-related news from multiple online sources using RSS feeds or APIs. It allows developers to stay informed about the latest trends, breakthroughs, and discussions in AI.",
-      "topic": "AI news",
-      "date": "2026-03-05",
-      "generated": "2026-03-05T04:09:27.731346+00:00",
-      "loops_needed": 3,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-05/ai_news_aggregator",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-05/ai_news_aggregator/README.md"
     },
     {
       "tool_name": "ai_news_notifier",
