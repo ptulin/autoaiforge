@@ -1,0 +1,13 @@
+{
+  "tool_name": "synthetic_data_generator",
+  "display_name": "Synthetic Data Generator for AI",
+  "description": "Synthetic Data Generator is a Python library for creating high-quality synthetic datasets for AI tasks, such as image classification or text processing. It uses preconfigured templates of data generation (e.g., random images with labels or simulated text) and integrates augmentation options, helping developers test models when real-world data is scarce or inaccessible.",
+  "topic": "AI",
+  "date": "2026-03-15",
+  "generated": "2026-03-15T04:30:34.573087+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/synthetic_data_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/synthetic_data_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-15/synthetic_data_generator/synthetic_data_generator.zip"
+}

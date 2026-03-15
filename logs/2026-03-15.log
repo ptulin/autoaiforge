@@ -1,0 +1,196 @@
+2026-03-15 04:30:34 | INFO     | main | ============================================================
+2026-03-15 04:30:34 | INFO     | main | AutoAIForge starting run: 2026-03-15T04:30:34.573087+00:00
+2026-03-15 04:30:34 | INFO     | main | ============================================================
+2026-03-15 04:30:34 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-15 04:30:34 | INFO     | youtube_scraper | YouTube client ready
+2026-03-15 04:30:35 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-15 04:30:35 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 25 results (quota used: 200)
+2026-03-15 04:30:35 | INFO     | youtube_scraper | YouTube 'open source AI tools': 25 results (quota used: 300)
+2026-03-15 04:30:36 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-15 04:30:36 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-15 04:30:36 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-15 04:30:37 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-15 04:30:37 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-15 04:30:37 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-15 04:30:38 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-15 04:30:38 | INFO     | youtube_scraper | YouTube 'open source LLM': 41 results (quota used: 1100)
+2026-03-15 04:30:38 | INFO     | youtube_scraper | YouTube 'AI agent framework': 25 results (quota used: 1200)
+2026-03-15 04:30:38 | INFO     | youtube_scraper | YouTube 'vector database AI': 20 results (quota used: 1300)
+2026-03-15 04:30:39 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-15 04:30:39 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-15 04:30:39 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-15 04:30:40 | INFO     | youtube_scraper | YouTube 'Groq inference': 5 results (quota used: 1700)
+2026-03-15 04:30:40 | INFO     | youtube_scraper | YouTube 'local LLM': 27 results (quota used: 1800)
+2026-03-15 04:30:40 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-15 04:30:40 | INFO     | youtube_scraper | YouTube 'generative AI': 23 results (quota used: 2000)
+2026-03-15 04:30:40 | INFO     | youtube_scraper | YouTube total: 716 items, quota used: 2000
+2026-03-15 04:30:40 | INFO     | main |   YouTube: 691 items
+2026-03-15 04:30:40 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-15 04:30:46 | INFO     | rss_scraper | HackerNews: 181 items
+2026-03-15 04:30:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-15 04:30:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-15 04:30:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-15 04:30:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-15 04:30:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-15 04:30:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-15 04:30:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-15 04:30:53 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-15 04:30:59 | INFO     | rss_scraper | ArXiv: 102 items
+2026-03-15 04:31:03 | INFO     | rss_scraper | Dev.to: 197 items
+2026-03-15 04:31:05 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-15 04:31:05 | INFO     | rss_scraper | Free sources total: 530 unique items
+2026-03-15 04:31:05 | INFO     | main |   RSS/API sources: 530 items
+2026-03-15 04:31:05 | INFO     | main |   Total scraped: 1221 items
+2026-03-15 04:31:05 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-15 04:31:05 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-15 04:31:05 | INFO     | db_manager | Purged 0 old news items
+2026-03-15 04:31:05 | INFO     | db_manager | Inserted 877/1221 news items
+2026-03-15 04:31:05 | INFO     | main |   SQLite: 877 new items (total: 15920)
+2026-03-15 04:31:10 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-15 04:31:11 | INFO     | vector_store | VectorStore ready
+2026-03-15 04:31:35 | INFO     | vector_store | Indexed 1766 items into vector store
+2026-03-15 04:31:35 | INFO     | main |   Vector store: 1766 items indexed
+2026-03-15 04:31:35 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-15 04:31:35 | INFO     | topic_analyzer | Analyzing 1766 items for top 10 topics …
+2026-03-15 04:31:40 | DEBUG    | llm_client | LLM response from github_models (3909 chars)
+2026-03-15 04:31:40 | ERROR    | topic_analyzer | LLM topic analysis failed: LLM returned non-JSON: [
+  {
+    "topic": "Claude AI Integration",
+    "description": Claude AI is being integrated into workflows and tools, offering advanced document analysis and AI agent development capabilities.",
+    "keywords": ["Claude AI", "integration", "workflow"],
+    "relevance": 9,
+    "tool_angle": "Develop
+Expecting value: line 4 column 20 (char 63) — using keyword fallback
+2026-03-15 04:31:40 | INFO     | main |   Found 10 topics:
+2026-03-15 04:31:40 | INFO     | main |      1. [10/10] AI news
+2026-03-15 04:31:40 | INFO     | main |      2. [10/10] AI
+2026-03-15 04:31:40 | INFO     | main |      3. [10/10] AI automation
+2026-03-15 04:31:40 | INFO     | main |      4. [10/10] ai
+2026-03-15 04:31:40 | INFO     | main |      5. [10/10] multimodal AI
+2026-03-15 04:31:40 | INFO     | main |      6. [10/10] AI productivity tools
+2026-03-15 04:31:40 | INFO     | main |      7. [10/10] LLM
+2026-03-15 04:31:40 | INFO     | main |      8. [10/10] Anthropic Claude
+2026-03-15 04:31:40 | INFO     | main |      9. [10/10] machine learning tools
+2026-03-15 04:31:40 | INFO     | main |     10. [10/10] Claude AI updates
+2026-03-15 04:31:40 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-15 04:31:40 | INFO     | main |   Existing collection: 48 tools across 27 topics
+2026-03-15 04:31:40 | INFO     | main |   🔄 Upgrade candidate: 'AI news' (relevance 10/10, last built 2026-03-05)
+2026-03-15 04:31:40 | INFO     | main |   🔄 Upgrade candidate: 'AI' (relevance 10/10, last built 2026-03-05)
+2026-03-15 04:31:40 | INFO     | main |   Topics flagged for upgrade: AI, AI news
+2026-03-15 04:31:40 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI news'
+2026-03-15 04:31:45 | DEBUG    | llm_client | LLM response from github_models (3229 chars)
+2026-03-15 04:31:45 | INFO     | idea_generator | Generated 3 ideas for topic: AI news
+2026-03-15 04:31:45 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI'
+2026-03-15 04:31:50 | DEBUG    | llm_client | LLM response from github_models (2905 chars)
+2026-03-15 04:31:50 | INFO     | idea_generator | Generated 2 ideas for topic: AI
+2026-03-15 04:31:50 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-15 04:31:50 | INFO     | main |   Generated 5 tool ideas:
+2026-03-15 04:31:50 | INFO     | main |     • ai_news_aggregator: This tool scrapes and aggregates trending AI-related news from multiple freely a
+2026-03-15 04:31:50 | INFO     | main |     • ai_news_trend_analyzer: A CLI tool that analyzes the frequency and sentiment of AI-related topics in the
+2026-03-15 04:31:50 | INFO     | main |     • ai_news_alerts: A script that monitors AI news sources for specific keywords and sends real-time
+2026-03-15 04:31:50 | INFO     | main |     • ai_model_profiler: AI Model Profiler is a CLI tool that analyzes pretrained AI models (e.g., PyTorc
+2026-03-15 04:31:50 | INFO     | main |     • synthetic_data_generator: Synthetic Data Generator is a Python library for creating high-quality synthetic
+2026-03-15 04:31:50 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-15 04:31:50 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-15 04:32:00 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-15 04:32:00 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-15 04:32:00 | INFO     | tool_builder | Building tool: ai_news_aggregator …
+2026-03-15 04:32:10 | DEBUG    | llm_client | LLM response from github_models (6137 chars)
+2026-03-15 04:32:10 | DEBUG    | test_runner | Installing: ['feedparser==6.0.10', 'beautifulsoup4==4.12.2', 'nltk==3.8.1']
+2026-03-15 04:32:16 | WARNING  | test_runner | Tests FAILED for ai_news_aggregator:
+test_ai_news_aggregator.py::test_extract_articles FAILED                 [ 66%]
+E   AttributeError: 'dict' object has no attribute 'title'
+FAILED test_ai_news_aggregator.py::test_extract_articles - AttributeError: 'dict' object has no attribute 'title'
+2026-03-15 04:32:16 | WARNING  | tool_builder | ⚠️  ai_news_aggregator tests failed (loop 1/5) — test_ai_news_aggregator.py::test_extract_articles FAILED                 [ 66%]
+E   AttributeError: 'dict' object has no attribute 'title'
+FAILED test_ai_news_aggregator.py::test_extract_articles - At
+2026-03-15 04:32:16 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-15 04:33:23 | DEBUG    | llm_client | LLM response from github_models (6882 chars)
+2026-03-15 04:33:23 | DEBUG    | test_runner | Installing: ['feedparser', 'beautifulsoup4', 'nltk']
+2026-03-15 04:33:24 | INFO     | test_runner | Tests PASSED for ai_news_aggregator
+2026-03-15 04:33:24 | INFO     | tool_builder | ✅ ai_news_aggregator passed tests on loop 2
+2026-03-15 04:33:24 | INFO     | tool_builder | Building tool: ai_news_trend_analyzer …
+2026-03-15 04:33:34 | DEBUG    | llm_client | LLM response from github_models (6850 chars)
+2026-03-15 04:33:34 | DEBUG    | test_runner | Installing: ['matplotlib==3.7.1', 'pandas==1.5.3', 'textblob==0.17.1']
+2026-03-15 04:33:46 | INFO     | test_runner | Tests PASSED for ai_news_trend_analyzer
+2026-03-15 04:33:46 | INFO     | tool_builder | ✅ ai_news_trend_analyzer passed tests on loop 1
+2026-03-15 04:33:46 | INFO     | tool_builder | Building tool: ai_news_alerts …
+2026-03-15 04:33:56 | DEBUG    | llm_client | LLM response from github_models (8225 chars)
+2026-03-15 04:33:56 | ERROR    | tool_builder | Initial generation failed for ai_news_alerts: LLM returned non-JSON: {
+  "code": "import argparse\nimport feedparser\nimport smtplib\nfrom email.mime.text import MIMEText\nfrom slack_sdk import WebClient\nfrom slack_sdk.errors import SlackApiError\nimport time\n\ndef fetch_feed(feed_url):\n    try:\n        return feedparser.parse(feed_url)\n    except Exception as e
+Expecting property name enclosed in double quotes: line 9 column 1 (char 8212)
+2026-03-15 04:33:56 | INFO     | tool_builder | Building tool: ai_model_profiler …
+2026-03-15 04:34:04 | DEBUG    | llm_client | LLM response from github_models (6345 chars)
+2026-03-15 04:34:04 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'tensorflow==2.13.0', 'matplotlib==3.7.2']
+2026-03-15 04:35:51 | WARNING  | test_runner | Tests FAILED for ai_model_profiler:
+test_ai_model_profiler.py::test_analyze_tensorflow_model FAILED          [ 66%]
+    assert result["layer_distribution"] == {"Dense": 1}
+E   AssertionError: assert {'MagicMock': 1} == {'Dense': 1}
+FAILED test_ai_model_profiler.py::test_analyze_tensorflow_model - AssertionError: assert {'MagicMock': 1} == {'Dense': 1}
+2026-03-15 04:35:51 | WARNING  | tool_builder | ⚠️  ai_model_profiler tests failed (loop 1/5) — test_ai_model_profiler.py::test_analyze_tensorflow_model FAILED          [ 66%]
+    assert result["layer_distribution"] == {"Dense": 1}
+E   AssertionError: assert {'MagicMock': 1} == {'Dense': 1}
+FAIL
+2026-03-15 04:35:59 | DEBUG    | llm_client | LLM response from github_models (6737 chars)
+2026-03-15 04:35:59 | DEBUG    | test_runner | Installing: ['torch', 'tensorflow', 'matplotlib']
+2026-03-15 04:36:04 | INFO     | test_runner | Tests PASSED for ai_model_profiler
+2026-03-15 04:36:04 | INFO     | tool_builder | ✅ ai_model_profiler passed tests on loop 2
+2026-03-15 04:36:04 | INFO     | tool_builder | Building tool: synthetic_data_generator …
+2026-03-15 04:36:14 | DEBUG    | llm_client | LLM response from github_models (7790 chars)
+2026-03-15 04:36:14 | DEBUG    | test_runner | Installing: ['numpy==1.24.4', 'Pillow==10.0.0', 'nltk==3.8.1']
+2026-03-15 04:36:20 | WARNING  | test_runner | Tests FAILED for synthetic_data_generator:
+test_synthetic_data_generator.py::test_generate_image_data FAILED        [ 20%]
+test_synthetic_data_generator.py::test_generate_image_data_with_augmentation FAILED [ 40%]
+test_synthetic_data_generator.py::test_generate_text_data FAILED         [ 60%]
+test_synthetic_data_generator.py::test_generate_text_data_with_augmentation FAILED [ 80%]
+test_synthetic_data_generator.py::test_generate_image_data_output_dir FAILED [100%]
+    raise AttributeError(
+E   AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+    raise AttributeError(
+E   AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise AttributeError(
+E   AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+FAILED test_synthetic_data_generator.py::test_generate_image_data - AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+FAILED test_synthetic_data_generator.py::test_generate_image_data_with_augmentation - AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+FAILED test_synthetic_data_generator.py::test_generate_text_data - LookupError: 
+FAILED test_synthetic_data_generator.py::test_generate_text_data_with_augmentation - LookupError: 
+FAILED test_synthetic_data_generator.py::test_generate_image_data_output_dir - AttributeError: <module 'PIL.Image' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/PIL/Image.py'> does not have the attribute 'save'
+2026-03-15 04:36:20 | WARNING  | tool_builder | ⚠️  synthetic_data_generator tests failed (loop 1/5) — test_synthetic_data_generator.py::test_generate_image_data FAILED        [ 20%]
+test_synthetic_data_generator.py::test_generate_image_data_with_augmentation FAILED [ 40%]
+test_synthetic_data_generator
+2026-03-15 04:36:28 | DEBUG    | llm_client | LLM response from github_models (8002 chars)
+2026-03-15 04:36:28 | DEBUG    | test_runner | Installing: ['numpy', 'Pillow']
+2026-03-15 04:36:28 | INFO     | test_runner | Tests PASSED for synthetic_data_generator
+2026-03-15 04:36:28 | INFO     | tool_builder | ✅ synthetic_data_generator passed tests on loop 2
+2026-03-15 04:36:28 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-03-15 04:36:28 | INFO     | main |   Built 4/5 tools successfully
+2026-03-15 04:36:28 | INFO     | main |     ✅ ai_news_aggregator (loops: 2)
+2026-03-15 04:36:28 | INFO     | main |     ✅ ai_news_trend_analyzer (loops: 1)
+2026-03-15 04:36:28 | INFO     | main |     ✅ ai_model_profiler (loops: 2)
+2026-03-15 04:36:28 | INFO     | main |     ✅ synthetic_data_generator (loops: 2)
+2026-03-15 04:36:28 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-15 04:36:28 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-15 04:36:28 | INFO     | github_publisher |   Created zip: ai_news_aggregator.zip (2822 bytes)
+2026-03-15 04:36:28 | INFO     | github_publisher | Saved ai_news_aggregator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_aggregator
+2026-03-15 04:36:28 | INFO     | github_publisher |   Created zip: ai_news_trend_analyzer.zip (3037 bytes)
+2026-03-15 04:36:28 | INFO     | github_publisher | Saved ai_news_trend_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_trend_analyzer
+2026-03-15 04:36:28 | INFO     | github_publisher |   Created zip: ai_model_profiler.zip (2749 bytes)
+2026-03-15 04:36:28 | INFO     | github_publisher | Saved ai_model_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_model_profiler
+2026-03-15 04:36:28 | INFO     | github_publisher |   Created zip: synthetic_data_generator.zip (2879 bytes)
+2026-03-15 04:36:28 | INFO     | github_publisher | Saved synthetic_data_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/synthetic_data_generator
+2026-03-15 04:36:28 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-03-15 04:36:28 | INFO     | main |   Published 4 tools:
+2026-03-15 04:36:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_aggregator
+2026-03-15 04:36:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_news_trend_analyzer
+2026-03-15 04:36:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/ai_model_profiler
+2026-03-15 04:36:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-15/synthetic_data_generator
+2026-03-15 04:36:28 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-15 04:36:28 | INFO     | main | ✅ Generated tools_index.json with 51 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
