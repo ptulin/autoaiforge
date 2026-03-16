@@ -1,0 +1,13 @@
+{
+  "tool_name": "contextual_memory_simulator",
+  "display_name": "Contextual Memory Simulator",
+  "description": "This library allows developers to simulate context-sensitive memory systems, helping them test how well an AI agent integrates new information with existing memory. It models scenarios like memory interference, forgetting, and reinforcement.",
+  "topic": "AI Agents with Enhanced Memory",
+  "date": "2026-03-16",
+  "generated": "2026-03-16T04:37:44.677778+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-16/contextual_memory_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/contextual_memory_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/contextual_memory_simulator/contextual_memory_simulator.zip"
+}
