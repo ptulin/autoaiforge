@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-15T04:36:28.886968+00:00",
-  "total_tools": 51,
+  "last_updated": "2026-03-16T04:41:37.316607+00:00",
+  "total_tools": 54,
   "tools": [
+    {
+      "tool_name": "ai_debug_assist",
+      "display_name": "AI Debug Assist",
+      "description": "A CLI tool that integrates with AI coding agents like Gemini CLI to analyze error logs, tracebacks, or bugs in your code, and provide intelligent debugging suggestions directly in the terminal. The tool automates troubleshooting by combining AI reasoning with contextual awareness of your project.",
+      "topic": "AI-Powered Coding Agents",
+      "date": "2026-03-16",
+      "generated": "2026-03-16T04:37:44.677778+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-16/ai_debug_assist",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/ai_debug_assist/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/ai_debug_assist/ai_debug_assist.zip"
+    },
+    {
+      "tool_name": "contextual_memory_simulator",
+      "display_name": "Contextual Memory Simulator",
+      "description": "This library allows developers to simulate context-sensitive memory systems, helping them test how well an AI agent integrates new information with existing memory. It models scenarios like memory interference, forgetting, and reinforcement.",
+      "topic": "AI Agents with Enhanced Memory",
+      "date": "2026-03-16",
+      "generated": "2026-03-16T04:37:44.677778+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-16/contextual_memory_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/contextual_memory_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/contextual_memory_simulator/contextual_memory_simulator.zip"
+    },
+    {
+      "tool_name": "memory_persistence_tester",
+      "display_name": "Memory Persistence Tester",
+      "description": "This tool simulates and evaluates memory persistence in AI agents by emulating various memory storage and retrieval strategies. Developers can use it to benchmark how well an AI model retains and utilizes contextual information over time across sessions.",
+      "topic": "AI Agents with Enhanced Memory",
+      "date": "2026-03-16",
+      "generated": "2026-03-16T04:37:44.677778+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-16/memory_persistence_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/memory_persistence_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/memory_persistence_tester/memory_persistence_tester.zip"
+    },
     {
       "tool_name": "ai_news_aggregator",
       "display_name": "AI News Aggregator",

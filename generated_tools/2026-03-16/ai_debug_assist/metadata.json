@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_debug_assist",
+  "display_name": "AI Debug Assist",
+  "description": "A CLI tool that integrates with AI coding agents like Gemini CLI to analyze error logs, tracebacks, or bugs in your code, and provide intelligent debugging suggestions directly in the terminal. The tool automates troubleshooting by combining AI reasoning with contextual awareness of your project.",
+  "topic": "AI-Powered Coding Agents",
+  "date": "2026-03-16",
+  "generated": "2026-03-16T04:37:44.677778+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-16/ai_debug_assist",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/ai_debug_assist/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-16/ai_debug_assist/ai_debug_assist.zip"
+}
