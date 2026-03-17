@@ -1,0 +1,291 @@
+2026-03-17 04:15:21 | INFO     | main | ============================================================
+2026-03-17 04:15:21 | INFO     | main | AutoAIForge starting run: 2026-03-17T04:15:21.869465+00:00
+2026-03-17 04:15:21 | INFO     | main | ============================================================
+2026-03-17 04:15:21 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-17 04:15:22 | INFO     | youtube_scraper | YouTube client ready
+2026-03-17 04:15:22 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-17 04:15:22 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-17 04:15:23 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-17 04:15:23 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-17 04:15:23 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-17 04:15:24 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-17 04:15:24 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-17 04:15:24 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-17 04:15:25 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-17 04:15:25 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-17 04:15:25 | INFO     | youtube_scraper | YouTube 'open source LLM': 40 results (quota used: 1100)
+2026-03-17 04:15:26 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-17 04:15:26 | INFO     | youtube_scraper | YouTube 'vector database AI': 30 results (quota used: 1300)
+2026-03-17 04:15:26 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-17 04:15:26 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-17 04:15:27 | INFO     | youtube_scraper | YouTube 'AI safety news': 7 results (quota used: 1600)
+2026-03-17 04:15:27 | INFO     | youtube_scraper | YouTube 'Groq inference': 6 results (quota used: 1700)
+2026-03-17 04:15:27 | INFO     | youtube_scraper | YouTube 'local LLM': 40 results (quota used: 1800)
+2026-03-17 04:15:27 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 25 results (quota used: 1900)
+2026-03-17 04:15:28 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-17 04:15:28 | INFO     | youtube_scraper | YouTube total: 799 items, quota used: 2000
+2026-03-17 04:15:28 | INFO     | main |   YouTube: 753 items
+2026-03-17 04:15:28 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-17 04:15:33 | INFO     | rss_scraper | HackerNews: 181 items
+2026-03-17 04:15:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-17 04:15:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-17 04:15:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-17 04:15:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-17 04:15:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-17 04:15:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-17 04:15:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-17 04:15:41 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-17 04:15:51 | INFO     | rss_scraper | ArXiv: 108 items
+2026-03-17 04:15:55 | INFO     | rss_scraper | Dev.to: 208 items
+2026-03-17 04:15:57 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-17 04:15:57 | INFO     | rss_scraper | Free sources total: 547 unique items
+2026-03-17 04:15:57 | INFO     | main |   RSS/API sources: 547 items
+2026-03-17 04:15:57 | INFO     | main |   Total scraped: 1300 items
+2026-03-17 04:15:57 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-17 04:15:57 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-17 04:15:57 | INFO     | db_manager | Purged 0 old news items
+2026-03-17 04:15:57 | INFO     | db_manager | Inserted 1071/1300 news items
+2026-03-17 04:15:57 | INFO     | main |   SQLite: 1071 new items (total: 17987)
+2026-03-17 04:16:01 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-17 04:16:03 | INFO     | vector_store | VectorStore ready
+2026-03-17 04:16:21 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-17 04:16:21 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-17 04:16:21 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-17 04:16:21 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-17 04:16:31 | DEBUG    | llm_client | LLM response from github_models (3898 chars)
+2026-03-17 04:16:31 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-17 04:16:31 | INFO     | main |   Found 10 topics:
+2026-03-17 04:16:31 | INFO     | main |      1. [9/10] Multi-Agent AI Systems
+2026-03-17 04:16:31 | INFO     | main |      2. [9/10] Large Context AI Models
+2026-03-17 04:16:31 | INFO     | main |      3. [8/10] AI Code Review Automation
+2026-03-17 04:16:31 | INFO     | main |      4. [8/10] AI APIs for Workspace Integration
+2026-03-17 04:16:31 | INFO     | main |      5. [8/10] Open Source AI Platforms
+2026-03-17 04:16:31 | INFO     | main |      6. [8/10] AI Lawsuits and Ethics
+2026-03-17 04:16:31 | INFO     | main |      7. [8/10] AI in Medicine and Healthcare
+2026-03-17 04:16:31 | INFO     | main |      8. [7/10] AI-Powered Memory Optimization
+2026-03-17 04:16:31 | INFO     | main |      9. [7/10] AI Certifications and Training
+2026-03-17 04:16:31 | INFO     | main |     10. [7/10] AI-Enhanced Marketing Tools
+2026-03-17 04:16:31 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-17 04:16:31 | INFO     | main |   Existing collection: 54 tools across 29 topics
+2026-03-17 04:16:31 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-17 04:16:39 | DEBUG    | llm_client | LLM response from github_models (3553 chars)
+2026-03-17 04:16:39 | INFO     | idea_generator | Generated 3 ideas for topic: Multi-Agent AI Systems
+2026-03-17 04:16:44 | DEBUG    | llm_client | LLM response from github_models (2434 chars)
+2026-03-17 04:16:44 | INFO     | idea_generator | Generated 2 ideas for topic: Large Context AI Models
+2026-03-17 04:16:44 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-17 04:16:44 | INFO     | main |   Generated 5 tool ideas:
+2026-03-17 04:16:44 | INFO     | main |     • multi_agent_simulator: A CLI tool for simulating multi-agent AI systems in configurable environments to
+2026-03-17 04:16:44 | INFO     | main |     • agent_task_manager: A library to manage and orchestrate autonomous agents performing collaborative t
+2026-03-17 04:16:44 | INFO     | main |     • agent_communication_visualizer: A CLI tool for visualizing communication flows between agents in multi-agent sys
+2026-03-17 04:16:44 | INFO     | main |     • context_chunk_optimizer: This tool preprocesses large text datasets into optimized chunks suitable for AI
+2026-03-17 04:16:44 | INFO     | main |     • large_context_summarizer: Designed for summarizing massive texts, this tool uses AI models to recursively 
+2026-03-17 04:16:44 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-17 04:16:45 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-17 04:16:53 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-17 04:16:53 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-17 04:16:53 | INFO     | tool_builder | Building tool: multi_agent_simulator …
+2026-03-17 04:17:03 | DEBUG    | llm_client | LLM response from github_models (5498 chars)
+2026-03-17 04:17:03 | DEBUG    | test_runner | Installing: ['networkx==3.0', 'matplotlib==3.7.2']
+2026-03-17 04:17:09 | WARNING  | test_runner | Tests FAILED for multi_agent_simulator:
+test_multi_agent_simulator.py::test_simulate_agents_no_tasks FAILED      [ 66%]
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+E   ValueError: empty range for randrange() (1, 1, 0)
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_simulate_agents_no_tasks - ValueError: empty range for randrange() (1, 1, 0)
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameError: name 'argparse' is not defined
+2026-03-17 04:17:09 | WARNING  | tool_builder | ⚠️  multi_agent_simulator tests failed (loop 1/5) — test_multi_agent_simulator.py::test_simulate_agents_no_tasks FAILED      [ 66%]
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+    raise ValueError("empty range for ra
+2026-03-17 04:17:18 | DEBUG    | llm_client | LLM response from github_models (5849 chars)
+2026-03-17 04:17:18 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-03-17 04:17:19 | WARNING  | test_runner | Tests FAILED for multi_agent_simulator:
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameError: name 'argparse' is not defined
+2026-03-17 04:17:19 | WARNING  | tool_builder | ⚠️  multi_agent_simulator tests failed (loop 2/5) — test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameErr
+2026-03-17 04:17:28 | DEBUG    | llm_client | LLM response from github_models (5809 chars)
+2026-03-17 04:17:28 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-03-17 04:17:29 | WARNING  | test_runner | Tests FAILED for multi_agent_simulator:
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameError: name 'argparse' is not defined
+2026-03-17 04:17:29 | WARNING  | tool_builder | ⚠️  multi_agent_simulator tests failed (loop 3/5) — test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameErr
+2026-03-17 04:17:37 | DEBUG    | llm_client | LLM response from github_models (5745 chars)
+2026-03-17 04:17:37 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-03-17 04:17:38 | WARNING  | test_runner | Tests FAILED for multi_agent_simulator:
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameError: name 'argparse' is not defined
+2026-03-17 04:17:38 | WARNING  | tool_builder | ⚠️  multi_agent_simulator tests failed (loop 4/5) — test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameErr
+2026-03-17 04:17:46 | DEBUG    | llm_client | LLM response from github_models (5756 chars)
+2026-03-17 04:17:46 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-03-17 04:17:47 | WARNING  | test_runner | Tests FAILED for multi_agent_simulator:
+test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameError: name 'argparse' is not defined
+2026-03-17 04:17:47 | WARNING  | tool_builder | ⚠️  multi_agent_simulator tests failed (loop 5/5) — test_multi_agent_simulator.py::test_main_with_mocked_file FAILED         [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_multi_agent_simulator.py::test_main_with_mocked_file - NameErr
+2026-03-17 04:17:47 | ERROR    | tool_builder | ❌ multi_agent_simulator failed after 5 loops
+2026-03-17 04:17:47 | INFO     | tool_builder | Building tool: agent_task_manager …
+2026-03-17 04:17:55 | DEBUG    | llm_client | LLM response from github_models (4176 chars)
+2026-03-17 04:17:55 | DEBUG    | test_runner | Installing: ['pydantic==1.10.2', 'celery==5.3.0']
+2026-03-17 04:17:58 | WARNING  | test_runner | Tests FAILED for agent_task_manager:
+test_agent_task_manager.py::test_execute_tasks FAILED                    [100%]
+    assert mock_execute.call_count == 2
+E   AssertionError: assert 1 == 2
+FAILED test_agent_task_manager.py::test_execute_tasks - AssertionError: assert 1 == 2
+2026-03-17 04:17:58 | WARNING  | tool_builder | ⚠️  agent_task_manager tests failed (loop 1/5) — test_agent_task_manager.py::test_execute_tasks FAILED                    [100%]
+    assert mock_execute.call_count == 2
+E   AssertionError: assert 1 == 2
+FAILED test_agent_task_manager.py::test_execut
+2026-03-17 04:18:05 | DEBUG    | llm_client | LLM response from github_models (4843 chars)
+2026-03-17 04:18:05 | DEBUG    | test_runner | Installing: ['pydantic', 'celery', 'redis']
+2026-03-17 04:18:06 | INFO     | test_runner | Tests PASSED for agent_task_manager
+2026-03-17 04:18:06 | INFO     | tool_builder | ✅ agent_task_manager passed tests on loop 2
+2026-03-17 04:18:06 | INFO     | tool_builder | Building tool: agent_communication_visualizer …
+2026-03-17 04:18:19 | DEBUG    | llm_client | LLM response from github_models (5067 chars)
+2026-03-17 04:18:19 | DEBUG    | test_runner | Installing: ['networkx==3.1', 'matplotlib==3.7.2']
+2026-03-17 04:18:21 | WARNING  | test_runner | Tests FAILED for agent_communication_visualizer:
+test_agent_communication_visualizer.py::test_parse_logs_invalid_format FAILED [ 75%]
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_agent_communication_visualizer.py::test_parse_logs_invalid_format - Failed: DID NOT RAISE <class 'ValueError'>
+2026-03-17 04:18:21 | WARNING  | tool_builder | ⚠️  agent_communication_visualizer tests failed (loop 1/5) — test_agent_communication_visualizer.py::test_parse_logs_invalid_format FAILED [ 75%]
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_agent_communication_
+2026-03-17 04:18:31 | DEBUG    | llm_client | LLM response from github_models (5348 chars)
+2026-03-17 04:18:31 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-03-17 04:18:32 | INFO     | test_runner | Tests PASSED for agent_communication_visualizer
+2026-03-17 04:18:32 | INFO     | tool_builder | ✅ agent_communication_visualizer passed tests on loop 2
+2026-03-17 04:18:32 | INFO     | tool_builder | Building tool: context_chunk_optimizer …
+2026-03-17 04:18:44 | DEBUG    | llm_client | LLM response from github_models (5836 chars)
+2026-03-17 04:18:44 | DEBUG    | test_runner | Installing: ['nltk==3.8.1', 'tiktoken==0.4.0']
+2026-03-17 04:18:46 | WARNING  | test_runner | Tests FAILED for context_chunk_optimizer:
+test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_process_file_json FAILED           [100%]
+    raise ValueError(f"Unknown encoding {encoding_name}")
+E   ValueError: Unknown encoding gpt-3.5-turbo
+    raise FileNotFoundError(f"Input file not found: {input_path}")
+E   FileNotFoundError: Input file not found: test.txt
+    raise FileNotFoundError(f"Input file not found: {input_path}")
+E   FileNotFoundError: Input file not found: test.json
+FAILED test_context_chunk_optimizer.py::test_tokenize_text - ValueError: Unknown encoding gpt-3.5-turbo
+FAILED test_context_chunk_optimizer.py::test_process_file_txt - FileNotFoundError: Input file not found: test.txt
+FAILED test_context_chunk_optimizer.py::test_process_file_json - FileNotFoundError: Input file not found: test.json
+2026-03-17 04:18:46 | WARNING  | tool_builder | ⚠️  context_chunk_optimizer tests failed (loop 1/5) — test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_pr
+2026-03-17 04:18:58 | DEBUG    | llm_client | LLM response from github_models (6783 chars)
+2026-03-17 04:18:58 | DEBUG    | test_runner | Installing: ['nltk']
+2026-03-17 04:18:59 | WARNING  | test_runner | Tests FAILED for context_chunk_optimizer:
+test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_process_file_json FAILED           [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise FileNotFoundError(f"Input file not found: {input_path}")
+E   FileNotFoundError: Input file not found: test.txt
+    raise FileNotFoundError(f"Input file not found: {input_path}")
+E   FileNotFoundError: Input file not found: test.json
+FAILED test_context_chunk_optimizer.py::test_tokenize_text - LookupError: 
+FAILED test_context_chunk_optimizer.py::test_process_file_txt - FileNotFoundError: Input file not found: test.txt
+FAILED test_context_chunk_optimizer.py::test_process_file_json - FileNotFoundError: Input file not found: test.json
+2026-03-17 04:18:59 | WARNING  | tool_builder | ⚠️  context_chunk_optimizer tests failed (loop 2/5) — test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_pr
+2026-03-17 04:19:09 | DEBUG    | llm_client | LLM response from github_models (6782 chars)
+2026-03-17 04:19:09 | DEBUG    | test_runner | Installing: ['nltk']
+2026-03-17 04:19:10 | WARNING  | test_runner | Tests FAILED for context_chunk_optimizer:
+test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_process_file_json FAILED           [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   TypeError: a bytes-like object is required, not 'str'
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_tokenize_text - LookupError: 
+FAILED test_context_chunk_optimizer.py::test_process_file_txt - TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_process_file_json - TypeError: a bytes-like object is required, not 'str'
+2026-03-17 04:19:10 | WARNING  | tool_builder | ⚠️  context_chunk_optimizer tests failed (loop 3/5) — test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_pr
+2026-03-17 04:19:21 | DEBUG    | llm_client | LLM response from github_models (6895 chars)
+2026-03-17 04:19:21 | DEBUG    | test_runner | Installing: ['nltk']
+2026-03-17 04:19:22 | WARNING  | test_runner | Tests FAILED for context_chunk_optimizer:
+test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_process_file_json FAILED           [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   TypeError: a bytes-like object is required, not 'str'
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_tokenize_text - LookupError: 
+FAILED test_context_chunk_optimizer.py::test_process_file_txt - TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_process_file_json - TypeError: a bytes-like object is required, not 'str'
+2026-03-17 04:19:22 | WARNING  | tool_builder | ⚠️  context_chunk_optimizer tests failed (loop 4/5) — test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_pr
+2026-03-17 04:19:33 | DEBUG    | llm_client | LLM response from github_models (6804 chars)
+2026-03-17 04:19:33 | DEBUG    | test_runner | Installing: ['nltk']
+2026-03-17 04:19:34 | WARNING  | test_runner | Tests FAILED for context_chunk_optimizer:
+test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_process_file_json FAILED           [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   TypeError: a bytes-like object is required, not 'str'
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_tokenize_text - LookupError: 
+FAILED test_context_chunk_optimizer.py::test_process_file_txt - TypeError: a bytes-like object is required, not 'str'
+FAILED test_context_chunk_optimizer.py::test_process_file_json - TypeError: a bytes-like object is required, not 'str'
+2026-03-17 04:19:34 | WARNING  | tool_builder | ⚠️  context_chunk_optimizer tests failed (loop 5/5) — test_context_chunk_optimizer.py::test_tokenize_text FAILED               [ 33%]
+test_context_chunk_optimizer.py::test_process_file_txt FAILED            [ 66%]
+test_context_chunk_optimizer.py::test_pr
+2026-03-17 04:19:34 | ERROR    | tool_builder | ❌ context_chunk_optimizer failed after 5 loops
+2026-03-17 04:19:34 | INFO     | tool_builder | Building tool: large_context_summarizer …
+2026-03-17 04:19:52 | DEBUG    | llm_client | LLM response from github_models (6847 chars)
+2026-03-17 04:19:52 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'tiktoken==0.4.0']
+2026-03-17 04:19:55 | WARNING  | test_runner | Tests FAILED for large_context_summarizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_large_context_summarizer.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:357: in _rewrite_test
+E   SyntaxError: invalid syntax. Perhaps you forgot a comma?
+ERROR test_large_context_summarizer.py
+2026-03-17 04:19:55 | WARNING  | tool_builder | ⚠️  large_context_summarizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_large_context_summarizer.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-03-17 04:20:05 | DEBUG    | llm_client | LLM response from github_models (6541 chars)
+2026-03-17 04:20:05 | DEBUG    | test_runner | Installing: ['openai', 'tiktoken']
+2026-03-17 04:20:07 | INFO     | test_runner | Tests PASSED for large_context_summarizer
+2026-03-17 04:20:07 | INFO     | tool_builder | ✅ large_context_summarizer passed tests on loop 2
+2026-03-17 04:20:07 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-17 04:20:07 | INFO     | main |   Built 3/5 tools successfully
+2026-03-17 04:20:07 | INFO     | main |     ✅ agent_task_manager (loops: 2)
+2026-03-17 04:20:07 | INFO     | main |     ✅ agent_communication_visualizer (loops: 2)
+2026-03-17 04:20:07 | INFO     | main |     ✅ large_context_summarizer (loops: 2)
+2026-03-17 04:20:07 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-17 04:20:07 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-17 04:20:07 | INFO     | github_publisher |   Created zip: agent_task_manager.zip (2236 bytes)
+2026-03-17 04:20:07 | INFO     | github_publisher | Saved agent_task_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_task_manager
+2026-03-17 04:20:07 | INFO     | github_publisher |   Created zip: agent_communication_visualizer.zip (2510 bytes)
+2026-03-17 04:20:07 | INFO     | github_publisher | Saved agent_communication_visualizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_communication_visualizer
+2026-03-17 04:20:07 | INFO     | github_publisher |   Created zip: large_context_summarizer.zip (2894 bytes)
+2026-03-17 04:20:07 | INFO     | github_publisher | Saved large_context_summarizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/large_context_summarizer
+2026-03-17 04:20:07 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-17 04:20:07 | INFO     | main |   Published 3 tools:
+2026-03-17 04:20:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_task_manager
+2026-03-17 04:20:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_communication_visualizer
+2026-03-17 04:20:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/large_context_summarizer
+2026-03-17 04:20:07 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-17 04:20:07 | INFO     | main | ✅ Generated tools_index.json with 57 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
