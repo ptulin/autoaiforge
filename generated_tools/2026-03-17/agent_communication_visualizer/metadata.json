@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_communication_visualizer",
+  "display_name": "Agent Communication Visualizer",
+  "description": "A CLI tool for visualizing communication flows between agents in multi-agent systems. It reads log files or live streams of agent interactions, analyzes message flows, and generates communication graphs to identify collaboration bottlenecks and inefficiencies.",
+  "topic": "Multi-Agent AI Systems",
+  "date": "2026-03-17",
+  "generated": "2026-03-17T04:15:21.869465+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_communication_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_communication_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_communication_visualizer/agent_communication_visualizer.zip"
+}

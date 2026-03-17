@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_task_manager",
+  "display_name": "Agent Task Manager",
+  "description": "A library to manage and orchestrate autonomous agents performing collaborative tasks. It provides APIs to define agents, assign tasks, and monitor execution with support for dependency resolution and prioritization. Useful for developers working on distributed AI systems and task planning workflows.",
+  "topic": "Multi-Agent AI Systems",
+  "date": "2026-03-17",
+  "generated": "2026-03-17T04:15:21.869465+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_task_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_task_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_task_manager/agent_task_manager.zip"
+}

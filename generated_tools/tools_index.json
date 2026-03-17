@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-16T04:41:37.316607+00:00",
-  "total_tools": 54,
+  "last_updated": "2026-03-17T04:20:07.768026+00:00",
+  "total_tools": 57,
   "tools": [
+    {
+      "tool_name": "agent_communication_visualizer",
+      "display_name": "Agent Communication Visualizer",
+      "description": "A CLI tool for visualizing communication flows between agents in multi-agent systems. It reads log files or live streams of agent interactions, analyzes message flows, and generates communication graphs to identify collaboration bottlenecks and inefficiencies.",
+      "topic": "Multi-Agent AI Systems",
+      "date": "2026-03-17",
+      "generated": "2026-03-17T04:15:21.869465+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_communication_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_communication_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_communication_visualizer/agent_communication_visualizer.zip"
+    },
+    {
+      "tool_name": "agent_task_manager",
+      "display_name": "Agent Task Manager",
+      "description": "A library to manage and orchestrate autonomous agents performing collaborative tasks. It provides APIs to define agents, assign tasks, and monitor execution with support for dependency resolution and prioritization. Useful for developers working on distributed AI systems and task planning workflows.",
+      "topic": "Multi-Agent AI Systems",
+      "date": "2026-03-17",
+      "generated": "2026-03-17T04:15:21.869465+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/agent_task_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_task_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/agent_task_manager/agent_task_manager.zip"
+    },
+    {
+      "tool_name": "large_context_summarizer",
+      "display_name": "Large Context Summarizer",
+      "description": "Designed for summarizing massive texts, this tool uses AI models to recursively generate summaries within expanded token limits. By breaking down and summarizing large datasets step-by-step, it produces concise, readable outputs suitable for insights extraction and AI-ready inputs.",
+      "topic": "Large Context AI Models",
+      "date": "2026-03-17",
+      "generated": "2026-03-17T04:15:21.869465+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-17/large_context_summarizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/large_context_summarizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-17/large_context_summarizer/large_context_summarizer.zip"
+    },
     {
       "tool_name": "ai_debug_assist",
       "display_name": "AI Debug Assist",
