@@ -1,0 +1,301 @@
+2026-03-18 04:22:52 | INFO     | main | ============================================================
+2026-03-18 04:22:52 | INFO     | main | AutoAIForge starting run: 2026-03-18T04:22:52.847550+00:00
+2026-03-18 04:22:52 | INFO     | main | ============================================================
+2026-03-18 04:22:52 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-18 04:22:53 | INFO     | youtube_scraper | YouTube client ready
+2026-03-18 04:22:53 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-18 04:22:53 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-18 04:22:54 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-18 04:22:54 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-18 04:22:54 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-18 04:22:55 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-18 04:22:55 | INFO     | youtube_scraper | YouTube 'machine learning tools': 23 results (quota used: 700)
+2026-03-18 04:22:55 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-18 04:22:56 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-18 04:22:56 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-18 04:22:56 | INFO     | youtube_scraper | YouTube 'open source LLM': 30 results (quota used: 1100)
+2026-03-18 04:22:56 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-18 04:22:57 | INFO     | youtube_scraper | YouTube 'vector database AI': 28 results (quota used: 1300)
+2026-03-18 04:22:57 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-18 04:22:57 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-18 04:22:58 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-18 04:22:58 | INFO     | youtube_scraper | YouTube 'Groq inference': 16 results (quota used: 1700)
+2026-03-18 04:22:58 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-03-18 04:22:58 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-18 04:22:59 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-18 04:22:59 | INFO     | youtube_scraper | YouTube total: 848 items, quota used: 2000
+2026-03-18 04:22:59 | INFO     | main |   YouTube: 812 items
+2026-03-18 04:22:59 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-18 04:23:04 | INFO     | rss_scraper | HackerNews: 186 items
+2026-03-18 04:23:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-18 04:23:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-18 04:23:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-18 04:23:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-18 04:23:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-18 04:23:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-18 04:23:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-18 04:23:11 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-18 04:23:17 | INFO     | rss_scraper | ArXiv: 100 items
+2026-03-18 04:23:21 | INFO     | rss_scraper | Dev.to: 200 items
+2026-03-18 04:23:22 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-18 04:23:22 | INFO     | rss_scraper | Free sources total: 536 unique items
+2026-03-18 04:23:22 | INFO     | main |   RSS/API sources: 536 items
+2026-03-18 04:23:22 | INFO     | main |   Total scraped: 1348 items
+2026-03-18 04:23:22 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-18 04:23:22 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-18 04:23:22 | INFO     | db_manager | Purged 0 old news items
+2026-03-18 04:23:22 | INFO     | db_manager | Inserted 1099/1348 news items
+2026-03-18 04:23:22 | INFO     | main |   SQLite: 1099 new items (total: 19086)
+2026-03-18 04:23:27 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-18 04:23:28 | INFO     | vector_store | VectorStore ready
+2026-03-18 04:23:55 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-18 04:23:55 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-18 04:23:55 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-18 04:23:55 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-18 04:24:01 | DEBUG    | llm_client | LLM response from github_models (3957 chars)
+2026-03-18 04:24:01 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-18 04:24:01 | INFO     | main |   Found 10 topics:
+2026-03-18 04:24:01 | INFO     | main |      1. [10/10] Autonomous AI Agents
+2026-03-18 04:24:01 | INFO     | main |      2. [9/10] Embodied AI for Robotics
+2026-03-18 04:24:01 | INFO     | main |      3. [8/10] Generative AI for 3D Modeling
+2026-03-18 04:24:01 | INFO     | main |      4. [8/10] AI in Financial Modeling
+2026-03-18 04:24:01 | INFO     | main |      5. [8/10] AI-Powered Disinformation Detection
+2026-03-18 04:24:01 | INFO     | main |      6. [7/10] AI in Collaborative Tools
+2026-03-18 04:24:01 | INFO     | main |      7. [7/10] AI in Workforce Automation
+2026-03-18 04:24:01 | INFO     | main |      8. [7/10] AI in Medical Safety
+2026-03-18 04:24:01 | INFO     | main |      9. [6/10] AI for Legal Applications
+2026-03-18 04:24:01 | INFO     | main |     10. [6/10] AI for Mock Interviews
+2026-03-18 04:24:01 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-18 04:24:01 | INFO     | main |   Existing collection: 57 tools across 31 topics
+2026-03-18 04:24:01 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-18 04:24:10 | DEBUG    | llm_client | LLM response from github_models (3254 chars)
+2026-03-18 04:24:10 | INFO     | idea_generator | Generated 3 ideas for topic: Autonomous AI Agents
+2026-03-18 04:24:15 | DEBUG    | llm_client | LLM response from github_models (2554 chars)
+2026-03-18 04:24:15 | INFO     | idea_generator | Generated 2 ideas for topic: Embodied AI for Robotics
+2026-03-18 04:24:15 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-18 04:24:15 | INFO     | main |   Generated 5 tool ideas:
+2026-03-18 04:24:15 | INFO     | main |     • autonomous_task_orchestrator: This tool provides a framework for chaining multiple autonomous AI agents to wor
+2026-03-18 04:24:15 | INFO     | main |     • agent_simulation_sandbox: This CLI tool provides a sandbox environment to test autonomous AI agents in sim
+2026-03-18 04:24:15 | INFO     | main |     • autonomous_agent_debugger: This tool acts as a debugging utility for autonomous AI agents, allowing develop
+2026-03-18 04:24:15 | INFO     | main |     • embodied_ai_simulator: A tool for simulating embodied AI environments with basic physics and 3D space f
+2026-03-18 04:24:15 | INFO     | main |     • robotic_control_tester: A Python CLI tool for evaluating and benchmarking robotic control algorithms usi
+2026-03-18 04:24:15 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-18 04:24:15 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-18 04:24:24 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-18 04:24:24 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-18 04:24:24 | INFO     | tool_builder | Building tool: autonomous_task_orchestrator …
+2026-03-18 04:24:33 | DEBUG    | llm_client | LLM response from github_models (6233 chars)
+2026-03-18 04:24:33 | DEBUG    | test_runner | Installing: ['langchain==0.0.200', 'pyyaml==6.0', 'rich==13.5.2']
+2026-03-18 04:25:48 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-18 04:25:48 | WARNING  | tool_builder | ⚠️  autonomous_task_orchestrator tests failed (loop 1/5) — Tests timed out after 60s
+2026-03-18 04:25:57 | DEBUG    | llm_client | LLM response from github_models (6757 chars)
+2026-03-18 04:25:57 | DEBUG    | test_runner | Installing: ['langchain', 'pyyaml', 'rich']
+2026-03-18 04:27:08 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-18 04:27:08 | WARNING  | tool_builder | ⚠️  autonomous_task_orchestrator tests failed (loop 2/5) — Tests timed out after 60s
+2026-03-18 04:27:18 | DEBUG    | llm_client | LLM response from github_models (6918 chars)
+2026-03-18 04:27:18 | DEBUG    | test_runner | Installing: ['langchain', 'pyyaml', 'rich']
+2026-03-18 04:28:29 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-18 04:28:29 | WARNING  | tool_builder | ⚠️  autonomous_task_orchestrator tests failed (loop 3/5) — Tests timed out after 60s
+2026-03-18 04:28:38 | DEBUG    | llm_client | LLM response from github_models (6786 chars)
+2026-03-18 04:28:38 | DEBUG    | test_runner | Installing: ['pyyaml', 'rich', 'langchain']
+2026-03-18 04:29:49 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-18 04:29:49 | WARNING  | tool_builder | ⚠️  autonomous_task_orchestrator tests failed (loop 4/5) — Tests timed out after 60s
+2026-03-18 04:29:58 | DEBUG    | llm_client | LLM response from github_models (7412 chars)
+2026-03-18 04:29:58 | DEBUG    | test_runner | Installing: ['pyyaml', 'rich', 'langchain']
+2026-03-18 04:31:08 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-18 04:31:08 | WARNING  | tool_builder | ⚠️  autonomous_task_orchestrator tests failed (loop 5/5) — Tests timed out after 60s
+2026-03-18 04:31:08 | ERROR    | tool_builder | ❌ autonomous_task_orchestrator failed after 5 loops
+2026-03-18 04:31:08 | INFO     | tool_builder | Building tool: agent_simulation_sandbox …
+2026-03-18 04:31:20 | DEBUG    | llm_client | LLM response from github_models (6209 chars)
+2026-03-18 04:31:20 | DEBUG    | test_runner | Installing: ['gym==0.26.2', 'click==8.1.3', 'matplotlib==3.7.1']
+2026-03-18 04:31:27 | WARNING  | test_runner | Tests FAILED for agent_simulation_sandbox:
+test_agent_simulation_sandbox.py::test_load_scenario FAILED              [ 66%]
+E   NameError: name 'mock_open' is not defined
+FAILED test_agent_simulation_sandbox.py::test_load_scenario - NameError: name 'mock_open' is not defined
+2026-03-18 04:31:27 | WARNING  | tool_builder | ⚠️  agent_simulation_sandbox tests failed (loop 1/5) — test_agent_simulation_sandbox.py::test_load_scenario FAILED              [ 66%]
+E   NameError: name 'mock_open' is not defined
+FAILED test_agent_simulation_sandbox.py::test_load_scenario - NameError: 
+2026-03-18 04:31:34 | DEBUG    | llm_client | LLM response from github_models (6062 chars)
+2026-03-18 04:31:34 | DEBUG    | test_runner | Installing: ['gym', 'click', 'matplotlib']
+2026-03-18 04:31:35 | INFO     | test_runner | Tests PASSED for agent_simulation_sandbox
+2026-03-18 04:31:35 | INFO     | tool_builder | ✅ agent_simulation_sandbox passed tests on loop 2
+2026-03-18 04:31:35 | INFO     | tool_builder | Building tool: autonomous_agent_debugger …
+2026-03-18 04:31:46 | DEBUG    | llm_client | LLM response from github_models (6229 chars)
+2026-03-18 04:31:46 | DEBUG    | test_runner | Installing: ['rich==13.5.2', 'prompt_toolkit==3.0.39', 'openai==0.27.8', 'pytest==7.4.2']
+2026-03-18 04:31:48 | WARNING  | test_runner | Tests FAILED for autonomous_agent_debugger:
+test_autonomous_agent_debugger.py::test_load_agent_valid FAILED          [ 25%]
+test_autonomous_agent_debugger.py::test_load_agent_missing_function FAILED [ 75%]
+    raise FileNotFoundError(f"Agent script not found: {agent_path}")
+E   FileNotFoundError: Agent script not found: dummy_path.py
+    raise FileNotFoundError(f"Agent script not found: {agent_path}")
+E   FileNotFoundError: Agent script not found: dummy_path.py
+FAILED test_autonomous_agent_debugger.py::test_load_agent_valid - FileNotFoundError: Agent script not found: dummy_path.py
+FAILED test_autonomous_agent_debugger.py::test_load_agent_missing_function - FileNotFoundError: Agent script not found: dummy_path.py
+2026-03-18 04:31:48 | WARNING  | tool_builder | ⚠️  autonomous_agent_debugger tests failed (loop 1/5) — test_autonomous_agent_debugger.py::test_load_agent_valid FAILED          [ 25%]
+test_autonomous_agent_debugger.py::test_load_agent_missing_function FAILED [ 75%]
+    raise FileNotFoundError(f"Agent sc
+2026-03-18 04:31:57 | DEBUG    | llm_client | LLM response from github_models (6010 chars)
+2026-03-18 04:31:57 | DEBUG    | test_runner | Installing: ['rich', 'prompt_toolkit']
+2026-03-18 04:31:58 | WARNING  | test_runner | Tests FAILED for autonomous_agent_debugger:
+test_autonomous_agent_debugger.py::test_load_agent_missing_function FAILED [ 75%]
+    with pytest.raises(AttributeError):
+E   Failed: DID NOT RAISE <class 'AttributeError'>
+FAILED test_autonomous_agent_debugger.py::test_load_agent_missing_function - Failed: DID NOT RAISE <class 'AttributeError'>
+2026-03-18 04:31:58 | WARNING  | tool_builder | ⚠️  autonomous_agent_debugger tests failed (loop 2/5) — test_autonomous_agent_debugger.py::test_load_agent_missing_function FAILED [ 75%]
+    with pytest.raises(AttributeError):
+E   Failed: DID NOT RAISE <class 'AttributeError'>
+FAILED test_autonomous_agen
+2026-03-18 04:32:06 | DEBUG    | llm_client | LLM response from github_models (6604 chars)
+2026-03-18 04:32:06 | DEBUG    | test_runner | Installing: ['rich', 'prompt_toolkit']
+2026-03-18 04:32:06 | INFO     | test_runner | Tests PASSED for autonomous_agent_debugger
+2026-03-18 04:32:06 | INFO     | tool_builder | ✅ autonomous_agent_debugger passed tests on loop 3
+2026-03-18 04:32:06 | INFO     | tool_builder | Building tool: embodied_ai_simulator …
+2026-03-18 04:32:13 | DEBUG    | llm_client | LLM response from github_models (4902 chars)
+2026-03-18 04:32:13 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pygame==2.1.0', 'gym==0.26.2']
+2026-03-18 04:32:15 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [47 lines of output]
+      
+      
+      WARNING, No "Setup" File Exists, Running "buildconfig/config.py"
+      Using UNIX configuration...
+      
+      
+      Hunting de
+2026-03-18 04:32:15 | WARNING  | test_runner | Tests FAILED for embodied_ai_simulator:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_embodied_ai_simulator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/embodied_ai_simulator/test_embodied_ai_simulator.py'.
+E   ModuleNotFoundError: No module named 'pygame'
+ERROR test_embodied_ai_simulator.py
+2026-03-18 04:32:15 | WARNING  | tool_builder | ⚠️  embodied_ai_simulator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_embodied_ai_simulator.py ________________
+ImportError while importing test modul
+2026-03-18 04:32:23 | DEBUG    | llm_client | LLM response from github_models (5448 chars)
+2026-03-18 04:32:23 | DEBUG    | test_runner | Installing: ['pygame', 'numpy', 'gym']
+2026-03-18 04:32:25 | WARNING  | test_runner | Tests FAILED for embodied_ai_simulator:
+test_embodied_ai_simulator.py::test_run_simulation FAILED                [ 66%]
+test_embodied_ai_simulator.py::test_save_logs FAILED                     [100%]
+E   NameError: name 'pygame' is not defined
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Move forward\n') call not found
+    handle.write.assert_any_call("Move forward\n")
+E   AssertionError: write('Move forward\n') call not found
+FAILED test_embodied_ai_simulator.py::test_run_simulation - NameError: name 'pygame' is not defined
+FAILED test_embodied_ai_simulator.py::test_save_logs - AssertionError: write('Move forward\n') call not found
+2026-03-18 04:32:25 | WARNING  | tool_builder | ⚠️  embodied_ai_simulator tests failed (loop 2/5) — test_embodied_ai_simulator.py::test_run_simulation FAILED                [ 66%]
+test_embodied_ai_simulator.py::test_save_logs FAILED                     [100%]
+E   NameError: name 'pygame' is not defi
+2026-03-18 04:32:31 | DEBUG    | llm_client | LLM response from github_models (5352 chars)
+2026-03-18 04:32:31 | DEBUG    | test_runner | Installing: ['pygame', 'numpy', 'gym']
+2026-03-18 04:32:32 | WARNING  | test_runner | Tests FAILED for embodied_ai_simulator:
+test_embodied_ai_simulator.py::test_run_simulation FAILED                [ 66%]
+E   NameError: name 'pygame' is not defined
+FAILED test_embodied_ai_simulator.py::test_run_simulation - NameError: name 'pygame' is not defined
+2026-03-18 04:32:32 | WARNING  | tool_builder | ⚠️  embodied_ai_simulator tests failed (loop 3/5) — test_embodied_ai_simulator.py::test_run_simulation FAILED                [ 66%]
+E   NameError: name 'pygame' is not defined
+FAILED test_embodied_ai_simulator.py::test_run_simulation - NameError: name 
+2026-03-18 04:32:39 | DEBUG    | llm_client | LLM response from github_models (5491 chars)
+2026-03-18 04:32:39 | DEBUG    | test_runner | Installing: ['pygame', 'numpy', 'gym']
+2026-03-18 04:32:40 | INFO     | test_runner | Tests PASSED for embodied_ai_simulator
+2026-03-18 04:32:40 | INFO     | tool_builder | ✅ embodied_ai_simulator passed tests on loop 4
+2026-03-18 04:32:40 | INFO     | tool_builder | Building tool: robotic_control_tester …
+2026-03-18 04:32:50 | DEBUG    | llm_client | LLM response from github_models (5566 chars)
+2026-03-18 04:32:50 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'matplotlib==3.7.2', 'scipy==1.11.3']
+2026-03-18 04:32:58 | WARNING  | test_runner | Tests FAILED for robotic_control_tester:
+test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E   assert False is True
+    assert metrics["success"] is False
+E   assert False is False
+FAILED test_robotic_control_tester.py::test_simulate_navigation_success - assert False is True
+FAILED test_robotic_control_tester.py::test_simulate_navigation_failure - assert False is False
+2026-03-18 04:32:58 | WARNING  | tool_builder | ⚠️  robotic_control_tester tests failed (loop 1/5) — test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E 
+2026-03-18 04:33:06 | DEBUG    | llm_client | LLM response from github_models (5474 chars)
+2026-03-18 04:33:06 | DEBUG    | test_runner | Installing: ['numpy', 'matplotlib', 'scipy']
+2026-03-18 04:33:07 | WARNING  | test_runner | Tests FAILED for robotic_control_tester:
+test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E   assert False is True
+    assert metrics["success"] is False
+E   assert False is False
+FAILED test_robotic_control_tester.py::test_simulate_navigation_success - assert False is True
+FAILED test_robotic_control_tester.py::test_simulate_navigation_failure - assert False is False
+2026-03-18 04:33:07 | WARNING  | tool_builder | ⚠️  robotic_control_tester tests failed (loop 2/5) — test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E 
+2026-03-18 04:33:13 | DEBUG    | llm_client | LLM response from github_models (5558 chars)
+2026-03-18 04:33:13 | DEBUG    | test_runner | Installing: ['numpy', 'matplotlib', 'scipy']
+2026-03-18 04:33:14 | WARNING  | test_runner | Tests FAILED for robotic_control_tester:
+test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E   assert False is True
+    assert metrics["success"] is False
+E   assert False is False
+FAILED test_robotic_control_tester.py::test_simulate_navigation_success - assert False is True
+FAILED test_robotic_control_tester.py::test_simulate_navigation_failure - assert False is False
+2026-03-18 04:33:14 | WARNING  | tool_builder | ⚠️  robotic_control_tester tests failed (loop 3/5) — test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E 
+2026-03-18 04:33:20 | DEBUG    | llm_client | LLM response from github_models (5435 chars)
+2026-03-18 04:33:20 | DEBUG    | test_runner | Installing: ['numpy', 'matplotlib', 'scipy']
+2026-03-18 04:33:21 | WARNING  | test_runner | Tests FAILED for robotic_control_tester:
+test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E   assert False is True
+    assert metrics["success"] is False
+E   assert False is False
+FAILED test_robotic_control_tester.py::test_simulate_navigation_success - assert False is True
+FAILED test_robotic_control_tester.py::test_simulate_navigation_failure - assert False is False
+2026-03-18 04:33:21 | WARNING  | tool_builder | ⚠️  robotic_control_tester tests failed (loop 4/5) — test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E 
+2026-03-18 04:33:27 | DEBUG    | llm_client | LLM response from github_models (5213 chars)
+2026-03-18 04:33:27 | DEBUG    | test_runner | Installing: ['numpy', 'matplotlib', 'scipy']
+2026-03-18 04:33:28 | WARNING  | test_runner | Tests FAILED for robotic_control_tester:
+test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E   assert False is True
+    assert metrics["success"] is False
+E   assert False is False
+FAILED test_robotic_control_tester.py::test_simulate_navigation_success - assert False is True
+FAILED test_robotic_control_tester.py::test_simulate_navigation_failure - assert False is False
+2026-03-18 04:33:28 | WARNING  | tool_builder | ⚠️  robotic_control_tester tests failed (loop 5/5) — test_robotic_control_tester.py::test_simulate_navigation_success FAILED  [ 33%]
+test_robotic_control_tester.py::test_simulate_navigation_failure FAILED  [ 66%]
+    assert metrics["success"] is True
+E 
+2026-03-18 04:33:28 | ERROR    | tool_builder | ❌ robotic_control_tester failed after 5 loops
+2026-03-18 04:33:28 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-18 04:33:28 | INFO     | main |   Built 3/5 tools successfully
+2026-03-18 04:33:28 | INFO     | main |     ✅ agent_simulation_sandbox (loops: 2)
+2026-03-18 04:33:28 | INFO     | main |     ✅ autonomous_agent_debugger (loops: 3)
+2026-03-18 04:33:28 | INFO     | main |     ✅ embodied_ai_simulator (loops: 4)
+2026-03-18 04:33:28 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-18 04:33:28 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-18 04:33:28 | INFO     | github_publisher |   Created zip: agent_simulation_sandbox.zip (2706 bytes)
+2026-03-18 04:33:28 | INFO     | github_publisher | Saved agent_simulation_sandbox → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/agent_simulation_sandbox
+2026-03-18 04:33:28 | INFO     | github_publisher |   Created zip: autonomous_agent_debugger.zip (2808 bytes)
+2026-03-18 04:33:28 | INFO     | github_publisher | Saved autonomous_agent_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/autonomous_agent_debugger
+2026-03-18 04:33:28 | INFO     | github_publisher |   Created zip: embodied_ai_simulator.zip (2529 bytes)
+2026-03-18 04:33:28 | INFO     | github_publisher | Saved embodied_ai_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/embodied_ai_simulator
+2026-03-18 04:33:28 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-18 04:33:28 | INFO     | main |   Published 3 tools:
+2026-03-18 04:33:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/agent_simulation_sandbox
+2026-03-18 04:33:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/autonomous_agent_debugger
+2026-03-18 04:33:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/embodied_ai_simulator
+2026-03-18 04:33:28 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-18 04:33:28 | INFO     | main | ✅ Generated tools_index.json with 60 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

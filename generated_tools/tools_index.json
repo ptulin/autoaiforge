@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-17T04:20:07.768026+00:00",
-  "total_tools": 57,
+  "last_updated": "2026-03-18T04:33:28.904400+00:00",
+  "total_tools": 60,
   "tools": [
+    {
+      "tool_name": "agent_simulation_sandbox",
+      "display_name": "Agent Simulation Sandbox",
+      "description": "This CLI tool provides a sandbox environment to test autonomous AI agents in simulated task scenarios. Developers can create and execute mock environments to evaluate the agent's decision-making processes and task execution before real-world deployment.",
+      "topic": "Autonomous AI Agents",
+      "date": "2026-03-18",
+      "generated": "2026-03-18T04:22:52.847550+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/agent_simulation_sandbox",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/agent_simulation_sandbox/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/agent_simulation_sandbox/agent_simulation_sandbox.zip"
+    },
+    {
+      "tool_name": "autonomous_agent_debugger",
+      "display_name": "Autonomous Agent Debugger",
+      "description": "This tool acts as a debugging utility for autonomous AI agents, allowing developers to trace decision paths, inspect intermediate data states, and identify bottlenecks in the agent's execution. It provides interactive debugging features tailored to AI workflows.",
+      "topic": "Autonomous AI Agents",
+      "date": "2026-03-18",
+      "generated": "2026-03-18T04:22:52.847550+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/autonomous_agent_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/autonomous_agent_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/autonomous_agent_debugger/autonomous_agent_debugger.zip"
+    },
+    {
+      "tool_name": "embodied_ai_simulator",
+      "display_name": "Embodied AI Simulator",
+      "description": "A tool for simulating embodied AI environments with basic physics and 3D space for testing robotic control algorithms. It allows developers to create virtual scenarios where AI agents can interact with objects, navigate spaces, and perform tasks, providing a low-cost testing platform for embodied intelligence research.",
+      "topic": "Embodied AI for Robotics",
+      "date": "2026-03-18",
+      "generated": "2026-03-18T04:22:52.847550+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/embodied_ai_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/embodied_ai_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/embodied_ai_simulator/embodied_ai_simulator.zip"
+    },
     {
       "tool_name": "agent_communication_visualizer",
       "display_name": "Agent Communication Visualizer",

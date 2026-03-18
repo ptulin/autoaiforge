@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_simulation_sandbox",
+  "display_name": "Agent Simulation Sandbox",
+  "description": "This CLI tool provides a sandbox environment to test autonomous AI agents in simulated task scenarios. Developers can create and execute mock environments to evaluate the agent's decision-making processes and task execution before real-world deployment.",
+  "topic": "Autonomous AI Agents",
+  "date": "2026-03-18",
+  "generated": "2026-03-18T04:22:52.847550+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-18/agent_simulation_sandbox",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/agent_simulation_sandbox/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-18/agent_simulation_sandbox/agent_simulation_sandbox.zip"
+}
