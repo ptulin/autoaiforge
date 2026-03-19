@@ -1,0 +1,271 @@
+2026-03-19 04:20:54 | INFO     | main | ============================================================
+2026-03-19 04:20:54 | INFO     | main | AutoAIForge starting run: 2026-03-19T04:20:54.995485+00:00
+2026-03-19 04:20:54 | INFO     | main | ============================================================
+2026-03-19 04:20:54 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-19 04:20:55 | INFO     | youtube_scraper | YouTube client ready
+2026-03-19 04:20:55 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-19 04:20:56 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-19 04:20:56 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-19 04:20:56 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-19 04:20:56 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-19 04:20:57 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-19 04:20:57 | INFO     | youtube_scraper | YouTube 'machine learning tools': 20 results (quota used: 700)
+2026-03-19 04:20:57 | INFO     | youtube_scraper | YouTube 'AI automation': 25 results (quota used: 800)
+2026-03-19 04:20:57 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-19 04:20:58 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-19 04:20:58 | INFO     | youtube_scraper | YouTube 'open source LLM': 44 results (quota used: 1100)
+2026-03-19 04:20:58 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-19 04:20:59 | INFO     | youtube_scraper | YouTube 'vector database AI': 29 results (quota used: 1300)
+2026-03-19 04:20:59 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-19 04:20:59 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-19 04:21:00 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-19 04:21:00 | INFO     | youtube_scraper | YouTube 'Groq inference': 6 results (quota used: 1700)
+2026-03-19 04:21:00 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-03-19 04:21:00 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-19 04:21:01 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-19 04:21:01 | INFO     | youtube_scraper | YouTube total: 824 items, quota used: 2000
+2026-03-19 04:21:01 | INFO     | main |   YouTube: 784 items
+2026-03-19 04:21:01 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-19 04:21:06 | INFO     | rss_scraper | HackerNews: 203 items
+2026-03-19 04:21:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-19 04:21:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-19 04:21:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-19 04:21:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-19 04:21:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-19 04:21:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-19 04:21:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-19 04:21:14 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-19 04:21:20 | INFO     | rss_scraper | ArXiv: 104 items
+2026-03-19 04:21:24 | INFO     | rss_scraper | Dev.to: 204 items
+2026-03-19 04:21:25 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-19 04:21:25 | INFO     | rss_scraper | Free sources total: 561 unique items
+2026-03-19 04:21:25 | INFO     | main |   RSS/API sources: 561 items
+2026-03-19 04:21:25 | INFO     | main |   Total scraped: 1345 items
+2026-03-19 04:21:25 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-19 04:21:25 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-19 04:21:25 | INFO     | db_manager | Purged 0 old news items
+2026-03-19 04:21:26 | INFO     | db_manager | Inserted 1061/1345 news items
+2026-03-19 04:21:26 | INFO     | main |   SQLite: 1061 new items (total: 20147)
+2026-03-19 04:21:30 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-19 04:21:31 | INFO     | vector_store | VectorStore ready
+2026-03-19 04:21:49 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-19 04:21:49 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-19 04:21:49 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-19 04:21:49 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-19 04:21:56 | DEBUG    | llm_client | LLM response from github_models (4061 chars)
+2026-03-19 04:21:56 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-19 04:21:56 | INFO     | main |   Found 10 topics:
+2026-03-19 04:21:56 | INFO     | main |      1. [10/10] Competition among AI language models
+2026-03-19 04:21:56 | INFO     | main |      2. [9/10] AI-powered rendering advancements
+2026-03-19 04:21:56 | INFO     | main |      3. [9/10] Emergence of massive LLMs
+2026-03-19 04:21:56 | INFO     | main |      4. [8/10] AI in education and tutoring
+2026-03-19 04:21:56 | INFO     | main |      5. [8/10] AI ethics and algorithmic harm
+2026-03-19 04:21:56 | INFO     | main |      6. [8/10] Deepfake detection improvements
+2026-03-19 04:21:56 | INFO     | main |      7. [8/10] AI-powered automation in workplaces
+2026-03-19 04:21:56 | INFO     | main |      8. [7/10] AI chip manufacturing innovations
+2026-03-19 04:21:56 | INFO     | main |      9. [7/10] AI in materials discovery
+2026-03-19 04:21:56 | INFO     | main |     10. [7/10] AI in national education systems
+2026-03-19 04:21:56 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-19 04:21:56 | INFO     | main |   Existing collection: 60 tools across 33 topics
+2026-03-19 04:21:56 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-19 04:21:56 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-19 04:23:04 | DEBUG    | llm_client | LLM response from github_models (3432 chars)
+2026-03-19 04:23:04 | INFO     | idea_generator | Generated 3 ideas for topic: Competition among AI language models
+2026-03-19 04:23:08 | DEBUG    | llm_client | LLM response from github_models (2537 chars)
+2026-03-19 04:23:08 | INFO     | idea_generator | Generated 2 ideas for topic: AI-powered rendering advancements
+2026-03-19 04:23:08 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-19 04:23:08 | INFO     | main |   Generated 5 tool ideas:
+2026-03-19 04:23:08 | INFO     | main |     • ai_model_benchmark: This tool benchmarks multiple AI language models (e.g., ChatGPT, Claude, Gemini)
+2026-03-19 04:23:08 | INFO     | main |     • api_cost_calculator: This tool estimates the cost of using AI language models based on input text len
+2026-03-19 04:23:08 | INFO     | main |     • model_feature_comparator: This tool compares the feature sets of different AI language models, such as tok
+2026-03-19 04:23:08 | INFO     | main |     • ai_rendering_profile_analyzer: This CLI tool analyzes rendering profiles from game engines or visualization too
+2026-03-19 04:23:08 | INFO     | main |     • dlss_integration_checker: This Python library helps developers verify the readiness of their game or visua
+2026-03-19 04:23:08 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-19 04:23:08 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-19 04:23:16 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-19 04:23:16 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-19 04:23:16 | INFO     | tool_builder | Building tool: ai_model_benchmark …
+2026-03-19 04:23:27 | DEBUG    | llm_client | LLM response from github_models (7466 chars)
+2026-03-19 04:23:27 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'anthropic==0.3.0', 'transformers==4.34.0', 'scikit-learn==1.3.1', 'numpy==1.24.4']
+2026-03-19 04:23:45 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_benchmark.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_model_benchmark/test_ai_model_benchmark.py'.
+E   ImportError: cannot import name 'OpenAI' from 'openai' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/openai/__init__.py)
+ERROR test_ai_model_benchmark.py
+2026-03-19 04:23:45 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_benchmark.py __________________
+ImportError while importing test modul
+2026-03-19 04:23:56 | DEBUG    | llm_client | LLM response from github_models (7896 chars)
+2026-03-19 04:23:56 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'numpy']
+2026-03-19 04:23:58 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+test_ai_model_benchmark.py::test_save_results FAILED                     [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 40 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 40 times.
+E   assert (']',) == ()
+FAILED test_ai_model_benchmark.py::test_save_results - AssertionError: Expected 'write' to have been called once. Called 40 times.
+assert (']',) == ()
+2026-03-19 04:23:58 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 2/5) — test_ai_model_benchmark.py::test_save_results FAILED                     [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-19 04:24:09 | DEBUG    | llm_client | LLM response from github_models (8637 chars)
+2026-03-19 04:24:09 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'numpy']
+2026-03-19 04:24:11 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+test_ai_model_benchmark.py::test_save_results_csv FAILED                 [100%]
+    handle.write.assert_called_once_with(json.dumps(results, indent=4))
+E   NameError: name 'json' is not defined
+E   NameError: name 'csv' is not defined
+FAILED test_ai_model_benchmark.py::test_save_results_json - NameError: name 'json' is not defined
+FAILED test_ai_model_benchmark.py::test_save_results_csv - NameError: name 'csv' is not defined
+2026-03-19 04:24:11 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 3/5) — test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+test_ai_model_benchmark.py::test_save_results_csv FAILED                 [100%]
+    handle.write.assert_called_once_with
+2026-03-19 04:24:23 | DEBUG    | llm_client | LLM response from github_models (8866 chars)
+2026-03-19 04:24:23 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'numpy']
+2026-03-19 04:24:25 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 40 times.
+    handle.write.assert_called_once_with(json.dumps(results, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 40 times.
+E   assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+FAILED test_ai_model_benchmark.py::test_save_results_json - AssertionError: Expected 'write' to be called once. Called 40 times.
+assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+2026-03-19 04:24:25 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 4/5) — test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-19 04:24:35 | DEBUG    | llm_client | LLM response from github_models (8057 chars)
+2026-03-19 04:24:35 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'numpy']
+2026-03-19 04:24:36 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 40 times.
+    handle.write.assert_called_once_with(json.dumps(results, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 40 times.
+E   assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+FAILED test_ai_model_benchmark.py::test_save_results_json - AssertionError: Expected 'write' to be called once. Called 40 times.
+assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+2026-03-19 04:24:36 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 5/5) — test_ai_model_benchmark.py::test_save_results_json FAILED                [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-19 04:24:36 | ERROR    | tool_builder | ❌ ai_model_benchmark failed after 5 loops
+2026-03-19 04:24:36 | INFO     | tool_builder | Building tool: api_cost_calculator …
+2026-03-19 04:24:48 | DEBUG    | llm_client | LLM response from github_models (6285 chars)
+2026-03-19 04:24:48 | DEBUG    | test_runner | Installing: ['transformers==4.34.0', 'tiktoken==0.4.0', 'pandas==2.1.1', 'pytest==7.4.2']
+2026-03-19 04:24:55 | INFO     | test_runner | Tests PASSED for api_cost_calculator
+2026-03-19 04:24:55 | INFO     | tool_builder | ✅ api_cost_calculator passed tests on loop 1
+2026-03-19 04:24:55 | INFO     | tool_builder | Building tool: model_feature_comparator …
+2026-03-19 04:25:05 | DEBUG    | llm_client | LLM response from github_models (6592 chars)
+2026-03-19 04:25:05 | DEBUG    | test_runner | Installing: ['tabulate==0.9.0', 'pytest==7.4.2']
+2026-03-19 04:25:06 | WARNING  | test_runner | Tests FAILED for model_feature_comparator:
+test_model_feature_comparator.py::test_load_model_data_valid FAILED      [ 20%]
+test_model_feature_comparator.py::test_load_model_data_invalid_json FAILED [ 40%]
+test_model_feature_comparator.py::test_generate_report_markdown FAILED   [ 80%]
+test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'mock_file.json' does not exist.
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'mock_file.json' does not exist.
+    assert "| name   |   token_limit |" in report
+E   AssertionError: assert '| name   |   token_limit |' in '| name    |   token_limit |\n|---------|---------------|\n| Model A |          1000 |\n| Model B |          2000 |'
+    assert "name,token_limit" in report
+E   AssertionError: assert 'name,token_limit' in 'name       token_limit\n-------  -------------\nModel A           1000\nModel B           2000'
+FAILED test_model_feature_comparator.py::test_load_model_data_valid - FileNotFoundError: The file 'mock_file.json' does not exist.
+FAILED test_model_feature_comparator.py::test_load_model_data_invalid_json - FileNotFoundError: The file 'mock_file.json' does not exist.
+FAILED test_model_feature_comparator.py::test_generate_report_markdown - AssertionError: assert '| name   |   token_limit |' in '| name    |   token_limit |\n|---------|---------------|\n| Model A |          1000 |\n| Model B |          2000 |'
+FAILED test_model_feature_comparator.py::test_generate_report_csv - AssertionError: assert 'name,token_limit' in 'name       token_limit\n-------  -------------\nModel A           1000\nModel B           2000'
+2026-03-19 04:25:06 | WARNING  | tool_builder | ⚠️  model_feature_comparator tests failed (loop 1/5) — test_model_feature_comparator.py::test_load_model_data_valid FAILED      [ 20%]
+test_model_feature_comparator.py::test_load_model_data_invalid_json FAILED [ 40%]
+test_model_feature_comparator.py::test
+2026-03-19 04:25:16 | DEBUG    | llm_client | LLM response from github_models (6471 chars)
+2026-03-19 04:25:16 | DEBUG    | test_runner | Installing: ['tabulate']
+2026-03-19 04:25:16 | WARNING  | test_runner | Tests FAILED for model_feature_comparator:
+test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+FAILED test_model_feature_comparator.py::test_generate_report_csv - AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+2026-03-19 04:25:16 | WARNING  | tool_builder | ⚠️  model_feature_comparator tests failed (loop 2/5) — test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nMode
+2026-03-19 04:25:26 | DEBUG    | llm_client | LLM response from github_models (6402 chars)
+2026-03-19 04:25:26 | DEBUG    | test_runner | Installing: ['tabulate']
+2026-03-19 04:25:27 | WARNING  | test_runner | Tests FAILED for model_feature_comparator:
+test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t 1000\nModel B\t 2000'
+FAILED test_model_feature_comparator.py::test_generate_report_csv - AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t 1000\nModel B\t 2000'
+2026-03-19 04:25:27 | WARNING  | tool_builder | ⚠️  model_feature_comparator tests failed (loop 3/5) — test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nMode
+2026-03-19 04:25:40 | DEBUG    | llm_client | LLM response from github_models (6250 chars)
+2026-03-19 04:25:40 | DEBUG    | test_runner | Installing: ['tabulate', 'pytest']
+2026-03-19 04:25:40 | WARNING  | test_runner | Tests FAILED for model_feature_comparator:
+test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+FAILED test_model_feature_comparator.py::test_generate_report_csv - AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+2026-03-19 04:25:40 | WARNING  | tool_builder | ⚠️  model_feature_comparator tests failed (loop 4/5) — test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nMode
+2026-03-19 04:25:48 | DEBUG    | llm_client | LLM response from github_models (6645 chars)
+2026-03-19 04:25:48 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport os\nfrom tabulate import tabulate\n\ndef load_model_data(file_path):\n    \"\"\"Load model data from a JSON file.\"\"\"\n    if not os.path.exists(file_path):\n        raise FileNotFoundError(f\"The file '{file_path}' does not exist.\")\n    with ope
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6632)
+2026-03-19 04:25:48 | DEBUG    | test_runner | Installing: ['tabulate', 'pytest']
+2026-03-19 04:25:49 | WARNING  | test_runner | Tests FAILED for model_feature_comparator:
+test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+FAILED test_model_feature_comparator.py::test_generate_report_csv - AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nModel A\t         1000\nModel B\t         2000'
+2026-03-19 04:25:49 | WARNING  | tool_builder | ⚠️  model_feature_comparator tests failed (loop 5/5) — test_model_feature_comparator.py::test_generate_report_csv FAILED        [100%]
+    assert "name\ttoken_limit" in report
+E   AssertionError: assert 'name\ttoken_limit' in 'name   \t  token_limit\nMode
+2026-03-19 04:25:49 | ERROR    | tool_builder | ❌ model_feature_comparator failed after 5 loops
+2026-03-19 04:25:49 | INFO     | tool_builder | Building tool: ai_rendering_profile_analyzer …
+2026-03-19 04:26:00 | DEBUG    | llm_client | LLM response from github_models (7234 chars)
+2026-03-19 04:26:00 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pandas==1.5.3', 'matplotlib==3.7.2']
+2026-03-19 04:26:10 | WARNING  | test_runner | Tests FAILED for ai_rendering_profile_analyzer:
+test_ai_rendering_profile_analyzer.py::test_analyze_rendering_logs_csv FAILED [ 33%]
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+E   TypeError: Object of type int64 is not JSON serializable
+    raise RuntimeError(f"Error during analysis: {e}")
+E   RuntimeError: Error during analysis: Object of type int64 is not JSON serializable
+FAILED test_ai_rendering_profile_analyzer.py::test_analyze_rendering_logs_csv - RuntimeError: Error during analysis: Object of type int64 is not JSON serializable
+2026-03-19 04:26:10 | WARNING  | tool_builder | ⚠️  ai_rendering_profile_analyzer tests failed (loop 1/5) — test_ai_rendering_profile_analyzer.py::test_analyze_rendering_logs_csv FAILED [ 33%]
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+E   TypeError: Object of type int64 is not JSON seria
+2026-03-19 04:26:18 | DEBUG    | llm_client | LLM response from github_models (6751 chars)
+2026-03-19 04:26:18 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-19 04:26:19 | INFO     | test_runner | Tests PASSED for ai_rendering_profile_analyzer
+2026-03-19 04:26:19 | INFO     | tool_builder | ✅ ai_rendering_profile_analyzer passed tests on loop 2
+2026-03-19 04:26:19 | INFO     | tool_builder | Building tool: dlss_integration_checker …
+2026-03-19 04:26:31 | DEBUG    | llm_client | LLM response from github_models (7539 chars)
+2026-03-19 04:26:31 | DEBUG    | test_runner | Installing: ['pyopengl==3.1.6', 'pyyaml==6.0']
+2026-03-19 04:26:33 | INFO     | test_runner | Tests PASSED for dlss_integration_checker
+2026-03-19 04:26:33 | INFO     | tool_builder | ✅ dlss_integration_checker passed tests on loop 1
+2026-03-19 04:26:33 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-19 04:26:33 | INFO     | main |   Built 3/5 tools successfully
+2026-03-19 04:26:33 | INFO     | main |     ✅ api_cost_calculator (loops: 1)
+2026-03-19 04:26:33 | INFO     | main |     ✅ ai_rendering_profile_analyzer (loops: 2)
+2026-03-19 04:26:33 | INFO     | main |     ✅ dlss_integration_checker (loops: 1)
+2026-03-19 04:26:33 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-19 04:26:33 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-19 04:26:33 | INFO     | github_publisher |   Created zip: api_cost_calculator.zip (2919 bytes)
+2026-03-19 04:26:33 | INFO     | github_publisher | Saved api_cost_calculator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/api_cost_calculator
+2026-03-19 04:26:33 | INFO     | github_publisher |   Created zip: ai_rendering_profile_analyzer.zip (2857 bytes)
+2026-03-19 04:26:33 | INFO     | github_publisher | Saved ai_rendering_profile_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/ai_rendering_profile_analyzer
+2026-03-19 04:26:33 | INFO     | github_publisher |   Created zip: dlss_integration_checker.zip (3069 bytes)
+2026-03-19 04:26:33 | INFO     | github_publisher | Saved dlss_integration_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/dlss_integration_checker
+2026-03-19 04:26:33 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-19 04:26:33 | INFO     | main |   Published 3 tools:
+2026-03-19 04:26:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/api_cost_calculator
+2026-03-19 04:26:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/ai_rendering_profile_analyzer
+2026-03-19 04:26:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/dlss_integration_checker
+2026-03-19 04:26:33 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-19 04:26:33 | INFO     | main | ✅ Generated tools_index.json with 63 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

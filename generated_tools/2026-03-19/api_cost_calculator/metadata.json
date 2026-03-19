@@ -1,0 +1,13 @@
+{
+  "tool_name": "api_cost_calculator",
+  "display_name": "API Cost Calculator",
+  "description": "This tool estimates the cost of using AI language models based on input text length, tokenization, and current pricing. Developers can use it to calculate expenses for specific workloads, enabling budget-conscious development and deployment.",
+  "topic": "Competition among AI language models",
+  "date": "2026-03-19",
+  "generated": "2026-03-19T04:20:54.995485+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-19/api_cost_calculator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-19/api_cost_calculator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-19/api_cost_calculator/api_cost_calculator.zip"
+}
