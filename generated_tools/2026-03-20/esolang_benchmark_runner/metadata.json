@@ -1,0 +1,13 @@
+{
+  "tool_name": "esolang_benchmark_runner",
+  "display_name": "Esoteric Benchmark Runner",
+  "description": "A CLI tool to execute EsoLang-Bench tasks on large language models, measure their code generation accuracy for esoteric languages, and generate detailed performance reports. This tool automates the benchmarking process for AI researchers and developers working with LLMs.",
+  "topic": "LLM Esoteric Code Benchmarks",
+  "date": "2026-03-20",
+  "generated": "2026-03-20T04:11:35.712105+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_benchmark_runner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/esolang_benchmark_runner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/esolang_benchmark_runner/esolang_benchmark_runner.zip"
+}
