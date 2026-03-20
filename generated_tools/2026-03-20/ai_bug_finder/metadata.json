@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_bug_finder",
+  "display_name": "AI Bug Finder",
+  "description": "AI Bug Finder is a CLI tool that uses a pre-trained AI model like OpenAI's GPT or Anthropic's Claude to analyze Python codebases, identify potential bugs, and provide explanations. It scans files or folders, detects common programming errors, and suggests fixes, making it a valuable tool for developers looking to enhance code quality.",
+  "topic": "AI-Enhanced Bug Detection",
+  "date": "2026-03-20",
+  "generated": "2026-03-20T04:11:35.712105+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/ai_bug_finder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/ai_bug_finder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/ai_bug_finder/ai_bug_finder.zip"
+}

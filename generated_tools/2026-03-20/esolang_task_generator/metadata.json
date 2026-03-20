@@ -1,0 +1,13 @@
+{
+  "tool_name": "esolang_task_generator",
+  "display_name": "Esoteric Task Generator",
+  "description": "A Python library to generate tasks in esoteric programming languages for benchmarking LLMs. It includes customizable templates, random code generators, and validation utilities. This tool helps researchers create diverse and challenging benchmarks for evaluating language models.",
+  "topic": "LLM Esoteric Code Benchmarks",
+  "date": "2026-03-20",
+  "generated": "2026-03-20T04:11:35.712105+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_task_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/esolang_task_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-20/esolang_task_generator/esolang_task_generator.zip"
+}

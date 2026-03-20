@@ -1,0 +1,207 @@
+2026-03-20 04:11:35 | INFO     | main | ============================================================
+2026-03-20 04:11:35 | INFO     | main | AutoAIForge starting run: 2026-03-20T04:11:35.712105+00:00
+2026-03-20 04:11:35 | INFO     | main | ============================================================
+2026-03-20 04:11:35 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-20 04:11:35 | INFO     | youtube_scraper | YouTube client ready
+2026-03-20 04:11:36 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-20 04:11:36 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-20 04:11:36 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-20 04:11:37 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-20 04:11:37 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-20 04:11:37 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 25 results (quota used: 600)
+2026-03-20 04:11:38 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-20 04:11:38 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-20 04:11:38 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 22 results (quota used: 900)
+2026-03-20 04:11:39 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-20 04:11:39 | INFO     | youtube_scraper | YouTube 'open source LLM': 44 results (quota used: 1100)
+2026-03-20 04:11:39 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-20 04:11:39 | INFO     | youtube_scraper | YouTube 'vector database AI': 31 results (quota used: 1300)
+2026-03-20 04:11:40 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-20 04:11:40 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-20 04:11:40 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-20 04:11:40 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-03-20 04:11:41 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-03-20 04:11:41 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-20 04:11:41 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-20 04:11:41 | INFO     | youtube_scraper | YouTube total: 825 items, quota used: 2000
+2026-03-20 04:11:41 | INFO     | main |   YouTube: 781 items
+2026-03-20 04:11:41 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-20 04:11:47 | INFO     | rss_scraper | HackerNews: 178 items
+2026-03-20 04:11:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-20 04:11:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-20 04:11:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-20 04:11:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-20 04:11:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-20 04:11:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-20 04:11:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-20 04:11:54 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-20 04:12:00 | INFO     | rss_scraper | ArXiv: 106 items
+2026-03-20 04:12:06 | INFO     | rss_scraper | Dev.to: 190 items
+2026-03-20 04:12:07 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-20 04:12:07 | INFO     | rss_scraper | Free sources total: 524 unique items
+2026-03-20 04:12:07 | INFO     | main |   RSS/API sources: 524 items
+2026-03-20 04:12:07 | INFO     | main |   Total scraped: 1305 items
+2026-03-20 04:12:07 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-20 04:12:07 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-20 04:12:07 | INFO     | db_manager | Purged 0 old news items
+2026-03-20 04:12:07 | INFO     | db_manager | Inserted 1034/1305 news items
+2026-03-20 04:12:07 | INFO     | main |   SQLite: 1034 new items (total: 21181)
+2026-03-20 04:12:11 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-20 04:12:12 | INFO     | vector_store | VectorStore ready
+2026-03-20 04:12:44 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-20 04:12:44 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-20 04:12:44 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-20 04:12:44 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-20 04:12:55 | DEBUG    | llm_client | LLM response from github_models (4419 chars)
+2026-03-20 04:12:55 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-20 04:12:55 | INFO     | main |   Found 10 topics:
+2026-03-20 04:12:55 | INFO     | main |      1. [9/10] LLM Esoteric Code Benchmarks
+2026-03-20 04:12:55 | INFO     | main |      2. [9/10] AI-Enhanced Bug Detection
+2026-03-20 04:12:55 | INFO     | main |      3. [8/10] AI Agents for Financial Decisions
+2026-03-20 04:12:55 | INFO     | main |      4. [8/10] AI-Powered Code Self-Improvement
+2026-03-20 04:12:55 | INFO     | main |      5. [8/10] AI in Full-Stack Development
+2026-03-20 04:12:55 | INFO     | main |      6. [8/10] AI Agents with Messaging Integration
+2026-03-20 04:12:55 | INFO     | main |      7. [7/10] AI-Driven SEO Optimization
+2026-03-20 04:12:55 | INFO     | main |      8. [7/10] AI for Data Cleaning
+2026-03-20 04:12:55 | INFO     | main |      9. [7/10] AI for Advanced Visualizations
+2026-03-20 04:12:55 | INFO     | main |     10. [6/10] AI-Powered Presentation Tools
+2026-03-20 04:12:55 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-20 04:12:55 | INFO     | main |   Existing collection: 63 tools across 35 topics
+2026-03-20 04:12:55 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-20 04:13:02 | DEBUG    | llm_client | LLM response from github_models (3545 chars)
+2026-03-20 04:13:02 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Esoteric Code Benchmarks
+2026-03-20 04:13:07 | DEBUG    | llm_client | LLM response from github_models (2437 chars)
+2026-03-20 04:13:07 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Enhanced Bug Detection
+2026-03-20 04:13:07 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-20 04:13:07 | INFO     | main |   Generated 5 tool ideas:
+2026-03-20 04:13:07 | INFO     | main |     • esolang_benchmark_runner: A CLI tool to execute EsoLang-Bench tasks on large language models, measure thei
+2026-03-20 04:13:07 | INFO     | main |     • esolang_task_generator: A Python library to generate tasks in esoteric programming languages for benchma
+2026-03-20 04:13:07 | INFO     | main |     • llm_code_eval: An automation tool to evaluate code generated by LLMs for esoteric programming t
+2026-03-20 04:13:07 | INFO     | main |     • ai_bug_finder: AI Bug Finder is a CLI tool that uses a pre-trained AI model like OpenAI's GPT o
+2026-03-20 04:13:07 | INFO     | main |     • vulnerability_scanner_ai: This Python-based library scans Python projects for potential security vulnerabi
+2026-03-20 04:13:07 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-20 04:13:07 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-20 04:13:17 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-20 04:13:17 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-20 04:13:17 | INFO     | tool_builder | Building tool: esolang_benchmark_runner …
+2026-03-20 04:13:30 | DEBUG    | llm_client | LLM response from github_models (7389 chars)
+2026-03-20 04:13:30 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'pandas==1.5.3', 'pytest==7.4.2']
+2026-03-20 04:13:38 | WARNING  | test_runner | Tests FAILED for esolang_benchmark_runner:
+test_esolang_benchmark_runner.py::test_main_invalid_output_extension FAILED [100%]
+    assert result.exit_code != 0
+E   assert 0 != 0
+FAILED test_esolang_benchmark_runner.py::test_main_invalid_output_extension - assert 0 != 0
+2026-03-20 04:13:38 | WARNING  | tool_builder | ⚠️  esolang_benchmark_runner tests failed (loop 1/5) — test_esolang_benchmark_runner.py::test_main_invalid_output_extension FAILED [100%]
+    assert result.exit_code != 0
+E   assert 0 != 0
+FAILED test_esolang_benchmark_runner.py::test_main_invalid_output_
+2026-03-20 04:13:48 | DEBUG    | llm_client | LLM response from github_models (7574 chars)
+2026-03-20 04:13:48 | DEBUG    | test_runner | Installing: ['click', 'pandas', 'openai']
+2026-03-20 04:13:49 | WARNING  | test_runner | Tests FAILED for esolang_benchmark_runner:
+test_esolang_benchmark_runner.py::test_main_invalid_output_extension FAILED [100%]
+    assert result.exit_code != 0
+E   assert 0 != 0
+FAILED test_esolang_benchmark_runner.py::test_main_invalid_output_extension - assert 0 != 0
+2026-03-20 04:13:49 | WARNING  | tool_builder | ⚠️  esolang_benchmark_runner tests failed (loop 2/5) — test_esolang_benchmark_runner.py::test_main_invalid_output_extension FAILED [100%]
+    assert result.exit_code != 0
+E   assert 0 != 0
+FAILED test_esolang_benchmark_runner.py::test_main_invalid_output_
+2026-03-20 04:13:58 | DEBUG    | llm_client | LLM response from github_models (7831 chars)
+2026-03-20 04:13:58 | DEBUG    | test_runner | Installing: ['click', 'pandas', 'openai']
+2026-03-20 04:14:00 | INFO     | test_runner | Tests PASSED for esolang_benchmark_runner
+2026-03-20 04:14:00 | INFO     | tool_builder | ✅ esolang_benchmark_runner passed tests on loop 3
+2026-03-20 04:14:00 | INFO     | tool_builder | Building tool: esolang_task_generator …
+2026-03-20 04:14:10 | DEBUG    | llm_client | LLM response from github_models (4965 chars)
+2026-03-20 04:14:10 | DEBUG    | test_runner | Installing: ['pyparsing==3.1.1', 'pytest==7.4.2']
+2026-03-20 04:14:11 | INFO     | test_runner | Tests PASSED for esolang_task_generator
+2026-03-20 04:14:11 | INFO     | tool_builder | ✅ esolang_task_generator passed tests on loop 1
+2026-03-20 04:14:11 | INFO     | tool_builder | Building tool: llm_code_eval …
+2026-03-20 04:14:19 | DEBUG    | llm_client | LLM response from github_models (6514 chars)
+2026-03-20 04:14:19 | DEBUG    | test_runner | Installing: ['pytest==7.4.0']
+2026-03-20 04:14:20 | WARNING  | test_runner | Tests FAILED for llm_code_eval:
+test_llm_code_eval.py::test_run_code_with_interpreter_success FAILED     [ 33%]
+test_llm_code_eval.py::test_run_code_with_interpreter_execution_error FAILED [100%]
+    assert result["success"] is True
+E   assert False is True
+    assert result["output"] == ""
+E   KeyError: 'output'
+FAILED test_llm_code_eval.py::test_run_code_with_interpreter_success - assert False is True
+FAILED test_llm_code_eval.py::test_run_code_with_interpreter_execution_error - KeyError: 'output'
+2026-03-20 04:14:20 | WARNING  | tool_builder | ⚠️  llm_code_eval tests failed (loop 1/5) — test_llm_code_eval.py::test_run_code_with_interpreter_success FAILED     [ 33%]
+test_llm_code_eval.py::test_run_code_with_interpreter_execution_error FAILED [100%]
+    assert result["success"] is True
+2026-03-20 04:14:29 | DEBUG    | llm_client | LLM response from github_models (7695 chars)
+2026-03-20 04:14:29 | DEBUG    | test_runner | Installing: ['pytest']
+2026-03-20 04:14:30 | WARNING  | test_runner | Tests FAILED for llm_code_eval:
+test_llm_code_eval.py::test_run_code_with_interpreter_timeout FAILED     [100%]
+    assert result["expected_output"] == "expected output"
+E   AssertionError: assert '' == 'expected output'
+FAILED test_llm_code_eval.py::test_run_code_with_interpreter_timeout - AssertionError: assert '' == 'expected output'
+2026-03-20 04:14:30 | WARNING  | tool_builder | ⚠️  llm_code_eval tests failed (loop 2/5) — test_llm_code_eval.py::test_run_code_with_interpreter_timeout FAILED     [100%]
+    assert result["expected_output"] == "expected output"
+E   AssertionError: assert '' == 'expected output'
+FAILED test
+2026-03-20 04:14:38 | DEBUG    | llm_client | LLM response from github_models (7421 chars)
+2026-03-20 04:14:39 | INFO     | test_runner | Tests PASSED for llm_code_eval
+2026-03-20 04:14:39 | INFO     | tool_builder | ✅ llm_code_eval passed tests on loop 3
+2026-03-20 04:14:39 | INFO     | tool_builder | Building tool: ai_bug_finder …
+2026-03-20 04:14:39 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-20 04:15:51 | DEBUG    | llm_client | LLM response from github_models (7225 chars)
+2026-03-20 04:15:51 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'click==8.1.3', 'rich==13.5.2', 'pytest==7.4.2']
+2026-03-20 04:15:53 | INFO     | test_runner | Tests PASSED for ai_bug_finder
+2026-03-20 04:15:53 | INFO     | tool_builder | ✅ ai_bug_finder passed tests on loop 1
+2026-03-20 04:15:53 | INFO     | tool_builder | Building tool: vulnerability_scanner_ai …
+2026-03-20 04:16:04 | DEBUG    | llm_client | LLM response from github_models (5958 chars)
+2026-03-20 04:16:04 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'pyyaml==6.0', 'bandit==1.7.4']
+2026-03-20 04:16:11 | WARNING  | test_runner | Tests FAILED for vulnerability_scanner_ai:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_vulnerability_scanner_ai.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/vulnerability_scanner_ai/test_vulnerability_scanner_ai.py'.
+E   ModuleNotFoundError: No module named 'pbr'
+ERROR test_vulnerability_scanner_ai.py
+2026-03-20 04:16:11 | WARNING  | tool_builder | ⚠️  vulnerability_scanner_ai tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_vulnerability_scanner_ai.py _______________
+ImportError while importing test modul
+2026-03-20 04:16:18 | DEBUG    | llm_client | LLM response from github_models (6197 chars)
+2026-03-20 04:16:18 | DEBUG    | test_runner | Installing: ['bandit', 'pyyaml']
+2026-03-20 04:16:19 | WARNING  | test_runner | Tests FAILED for vulnerability_scanner_ai:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_vulnerability_scanner_ai.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/vulnerability_scanner_ai/test_vulnerability_scanner_ai.py'.
+E   ModuleNotFoundError: No module named 'pbr'
+ERROR test_vulnerability_scanner_ai.py
+2026-03-20 04:16:19 | WARNING  | tool_builder | ⚠️  vulnerability_scanner_ai tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_vulnerability_scanner_ai.py _______________
+ImportError while importing test modul
+2026-03-20 04:16:26 | DEBUG    | llm_client | LLM response from github_models (7110 chars)
+2026-03-20 04:16:26 | DEBUG    | test_runner | Installing: ['PyYAML']
+2026-03-20 04:16:26 | INFO     | test_runner | Tests PASSED for vulnerability_scanner_ai
+2026-03-20 04:16:26 | INFO     | tool_builder | ✅ vulnerability_scanner_ai passed tests on loop 3
+2026-03-20 04:16:26 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-03-20 04:16:26 | INFO     | main |   Built 5/5 tools successfully
+2026-03-20 04:16:26 | INFO     | main |     ✅ esolang_benchmark_runner (loops: 3)
+2026-03-20 04:16:26 | INFO     | main |     ✅ esolang_task_generator (loops: 1)
+2026-03-20 04:16:26 | INFO     | main |     ✅ llm_code_eval (loops: 3)
+2026-03-20 04:16:26 | INFO     | main |     ✅ ai_bug_finder (loops: 1)
+2026-03-20 04:16:26 | INFO     | main |     ✅ vulnerability_scanner_ai (loops: 3)
+2026-03-20 04:16:26 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-20 04:16:26 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-20 04:16:26 | INFO     | github_publisher |   Created zip: esolang_benchmark_runner.zip (3332 bytes)
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved esolang_benchmark_runner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_benchmark_runner
+2026-03-20 04:16:26 | INFO     | github_publisher |   Created zip: esolang_task_generator.zip (2355 bytes)
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved esolang_task_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_task_generator
+2026-03-20 04:16:26 | INFO     | github_publisher |   Created zip: llm_code_eval.zip (2538 bytes)
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved llm_code_eval → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/llm_code_eval
+2026-03-20 04:16:26 | INFO     | github_publisher |   Created zip: ai_bug_finder.zip (2824 bytes)
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved ai_bug_finder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/ai_bug_finder
+2026-03-20 04:16:26 | INFO     | github_publisher |   Created zip: vulnerability_scanner_ai.zip (2667 bytes)
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved vulnerability_scanner_ai → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/vulnerability_scanner_ai
+2026-03-20 04:16:26 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-03-20 04:16:26 | INFO     | main |   Published 5 tools:
+2026-03-20 04:16:26 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_benchmark_runner
+2026-03-20 04:16:26 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/esolang_task_generator
+2026-03-20 04:16:26 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/llm_code_eval
+2026-03-20 04:16:26 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/ai_bug_finder
+2026-03-20 04:16:26 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-20/vulnerability_scanner_ai
+2026-03-20 04:16:26 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-20 04:16:26 | INFO     | main | ✅ Generated tools_index.json with 68 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
