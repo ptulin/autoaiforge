@@ -1,0 +1,13 @@
+{
+  "tool_name": "daily_scrum_ai",
+  "display_name": "Daily Scrum AI Assistant",
+  "description": "A CLI tool that summarizes recent project activity by analyzing task updates and generates a suggested agenda for daily Scrum meetings. The tool can also identify blockers and help prepare individual developer summaries based on task progress.",
+  "topic": "AI-Powered Project Management",
+  "date": "2026-03-21",
+  "generated": "2026-03-21T04:03:20.895174+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-21/daily_scrum_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-21/daily_scrum_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-21/daily_scrum_ai/daily_scrum_ai.zip"
+}
