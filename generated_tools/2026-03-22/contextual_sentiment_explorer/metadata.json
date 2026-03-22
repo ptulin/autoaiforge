@@ -1,0 +1,13 @@
+{
+  "tool_name": "contextual_sentiment_explorer",
+  "display_name": "Contextual Sentiment Explorer",
+  "description": "This tool analyzes the sentiment of a given text while providing contextual insights about the most influential phrases or sentences. It uses advanced AI models to ensure a deeper understanding of sentiment nuances, making it ideal for NLP researchers or developers working on emotionally sensitive applications.",
+  "topic": "AI in Natural Language Processing",
+  "date": "2026-03-22",
+  "generated": "2026-03-22T04:16:58.320202+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/contextual_sentiment_explorer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-22/contextual_sentiment_explorer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-22/contextual_sentiment_explorer/contextual_sentiment_explorer.zip"
+}

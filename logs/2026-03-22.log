@@ -1,0 +1,401 @@
+2026-03-22 04:16:58 | INFO     | main | ============================================================
+2026-03-22 04:16:58 | INFO     | main | AutoAIForge starting run: 2026-03-22T04:16:58.320202+00:00
+2026-03-22 04:16:58 | INFO     | main | ============================================================
+2026-03-22 04:16:58 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-22 04:16:58 | INFO     | youtube_scraper | YouTube client ready
+2026-03-22 04:16:59 | INFO     | youtube_scraper | YouTube 'AI news': 25 results (quota used: 100)
+2026-03-22 04:16:59 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-22 04:16:59 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-22 04:16:59 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-22 04:17:00 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-22 04:17:00 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 37 results (quota used: 600)
+2026-03-22 04:17:00 | INFO     | youtube_scraper | YouTube 'machine learning tools': 25 results (quota used: 700)
+2026-03-22 04:17:01 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-22 04:17:01 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-22 04:17:01 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-22 04:17:02 | INFO     | youtube_scraper | YouTube 'open source LLM': 24 results (quota used: 1100)
+2026-03-22 04:17:02 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-22 04:17:02 | INFO     | youtube_scraper | YouTube 'vector database AI': 12 results (quota used: 1300)
+2026-03-22 04:17:03 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-22 04:17:03 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-22 04:17:03 | INFO     | youtube_scraper | YouTube 'AI safety news': 25 results (quota used: 1600)
+2026-03-22 04:17:03 | INFO     | youtube_scraper | YouTube 'Groq inference': 6 results (quota used: 1700)
+2026-03-22 04:17:04 | INFO     | youtube_scraper | YouTube 'local LLM': 34 results (quota used: 1800)
+2026-03-22 04:17:04 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-22 04:17:04 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-22 04:17:04 | INFO     | youtube_scraper | YouTube total: 713 items, quota used: 2000
+2026-03-22 04:17:04 | INFO     | main |   YouTube: 687 items
+2026-03-22 04:17:04 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-22 04:17:09 | INFO     | rss_scraper | HackerNews: 159 items
+2026-03-22 04:17:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-22 04:17:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-22 04:17:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-22 04:17:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-22 04:17:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-22 04:17:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-22 04:17:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-22 04:17:17 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-22 04:17:23 | INFO     | rss_scraper | ArXiv: 106 items
+2026-03-22 04:17:28 | INFO     | rss_scraper | Dev.to: 189 items
+2026-03-22 04:17:29 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-22 04:17:29 | INFO     | rss_scraper | Free sources total: 504 unique items
+2026-03-22 04:17:29 | INFO     | main |   RSS/API sources: 504 items
+2026-03-22 04:17:29 | INFO     | main |   Total scraped: 1191 items
+2026-03-22 04:17:29 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-22 04:17:29 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-22 04:17:29 | INFO     | db_manager | Purged 0 old news items
+2026-03-22 04:17:29 | INFO     | db_manager | Inserted 830/1191 news items
+2026-03-22 04:17:29 | INFO     | main |   SQLite: 830 new items (total: 22880)
+2026-03-22 04:17:34 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-22 04:17:35 | INFO     | vector_store | VectorStore ready
+2026-03-22 04:17:58 | INFO     | vector_store | Indexed 1699 items into vector store
+2026-03-22 04:17:58 | INFO     | main |   Vector store: 1699 items indexed
+2026-03-22 04:17:58 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-22 04:17:58 | INFO     | topic_analyzer | Analyzing 1699 items for top 10 topics …
+2026-03-22 04:18:06 | DEBUG    | llm_client | LLM response from github_models (4183 chars)
+2026-03-22 04:18:06 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-22 04:18:06 | INFO     | main |   Found 10 topics:
+2026-03-22 04:18:06 | INFO     | main |      1. [9/10] AI Agents for Workflow Automation
+2026-03-22 04:18:06 | INFO     | main |      2. [9/10] AI in Natural Language Processing
+2026-03-22 04:18:06 | INFO     | main |      3. [8/10] AI-Powered Code Assistants
+2026-03-22 04:18:06 | INFO     | main |      4. [8/10] AI for Data Analysis and Visualization
+2026-03-22 04:18:06 | INFO     | main |      5. [8/10] AI in Creative Content Generation
+2026-03-22 04:18:06 | INFO     | main |      6. [8/10] AI for Website and UI Design
+2026-03-22 04:18:06 | INFO     | main |      7. [8/10] AI-Driven Decision Support Systems
+2026-03-22 04:18:06 | INFO     | main |      8. [7/10] AI for Multilingual Support
+2026-03-22 04:18:06 | INFO     | main |      9. [7/10] AI for Contract and Document Analysis
+2026-03-22 04:18:06 | INFO     | main |     10. [7/10] AI-Enhanced Database Management
+2026-03-22 04:18:06 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-22 04:18:06 | INFO     | main |   Existing collection: 70 tools across 39 topics
+2026-03-22 04:18:06 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-22 04:18:12 | DEBUG    | llm_client | LLM response from github_models (3305 chars)
+2026-03-22 04:18:12 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agents for Workflow Automation
+2026-03-22 04:18:16 | DEBUG    | llm_client | LLM response from github_models (2327 chars)
+2026-03-22 04:18:16 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Natural Language Processing
+2026-03-22 04:18:16 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-22 04:18:16 | INFO     | main |   Generated 5 tool ideas:
+2026-03-22 04:18:16 | INFO     | main |     • workflow_agent_builder: A library for easily creating AI-powered workflow automation agents using YAML-b
+2026-03-22 04:18:16 | INFO     | main |     • web_auto_agent: An AI-powered CLI tool for automating browser tasks such as form filling, data s
+2026-03-22 04:18:16 | INFO     | main |     • ai_trading_bot_framework: A Python library for creating and managing AI-driven trading bots for stock and 
+2026-03-22 04:18:16 | INFO     | main |     • contextual_sentiment_explorer: This tool analyzes the sentiment of a given text while providing contextual insi
+2026-03-22 04:18:16 | INFO     | main |     • lie_bias_detector: This tool leverages AI to detect potential deceitful or biased language in text.
+2026-03-22 04:18:16 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-22 04:18:16 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-22 04:18:25 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-22 04:18:25 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-22 04:18:25 | INFO     | tool_builder | Building tool: workflow_agent_builder …
+2026-03-22 04:18:35 | DEBUG    | llm_client | LLM response from github_models (5509 chars)
+2026-03-22 04:18:35 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pyyaml==6.0', 'openai==0.27.8']
+2026-03-22 04:18:38 | INFO     | test_runner | Tests PASSED for workflow_agent_builder
+2026-03-22 04:18:38 | INFO     | tool_builder | ✅ workflow_agent_builder passed tests on loop 1
+2026-03-22 04:18:38 | INFO     | tool_builder | Building tool: web_auto_agent …
+2026-03-22 04:18:48 | DEBUG    | llm_client | LLM response from github_models (7140 chars)
+2026-03-22 04:18:48 | DEBUG    | test_runner | Installing: ['playwright==1.37.1', 'openai==0.27.8']
+2026-03-22 04:18:48 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement playwright==1.37.1 (from versions: 1.9.0, 1.9.1, 1.9.2, 1.10.0, 1.11.0, 1.11.1, 1.11.2, 1.12.0, 1.12.1, 1.13.0, 1.13.1, 1.14.0, 1.14.1, 1.15.0, 1.15.1, 1.15.2, 1.15.3, 1.16.0, 1.16.1, 1.17.0, 1.17.1, 1.17.2, 1.18.0, 1.18.1, 1.18.2, 1.19.
+2026-03-22 04:18:49 | WARNING  | test_runner | Tests FAILED for web_auto_agent:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_web_auto_agent.py ____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/web_auto_agent/test_web_auto_agent.py'.
+E   ModuleNotFoundError: No module named 'playwright'
+ERROR test_web_auto_agent.py
+2026-03-22 04:18:49 | WARNING  | tool_builder | ⚠️  web_auto_agent tests failed (loop 1/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_web_auto_agent.py ____________________
+ImportError while importing test modul
+2026-03-22 04:19:00 | DEBUG    | llm_client | LLM response from github_models (7253 chars)
+2026-03-22 04:19:00 | DEBUG    | test_runner | Installing: ['playwright', 'openai', 'pytest']
+2026-03-22 04:19:02 | WARNING  | test_runner | Tests FAILED for web_auto_agent:
+test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+test_web_auto_agent.py::test_execute_task_with_empty_description FAILED  [ 66%]
+test_web_auto_agent.py::test_execute_task_with_invalid_openai_key FAILED [100%]
+E   NameError: name 'asyncio' is not defined
+E   NameError: name 'asyncio' is not defined
+E   NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task - NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task_with_empty_description - NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task_with_invalid_openai_key - NameError: name 'asyncio' is not defined
+2026-03-22 04:19:02 | WARNING  | tool_builder | ⚠️  web_auto_agent tests failed (loop 2/5) — test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+test_web_auto_agent.py::test_execute_task_with_empty_description FAILED  [ 66%]
+test_web_auto_agent.py::test_execute_tas
+2026-03-22 04:19:10 | DEBUG    | llm_client | LLM response from github_models (7430 chars)
+2026-03-22 04:19:10 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import json\nimport argparse\nimport asyncio\nfrom playwright.async_api import async_playwright\nimport openai\n\nclass WebAutoAgent:\n    def __init__(self, openai_api_key):\n        self.openai_api_key = openai_api_key\n        openai.api_key = self.openai_api_key\n\n    async def exe
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7417)
+2026-03-22 04:19:10 | DEBUG    | test_runner | Installing: ['playwright', 'openai', 'pytest']
+2026-03-22 04:19:11 | WARNING  | test_runner | Tests FAILED for web_auto_agent:
+test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+test_web_auto_agent.py::test_execute_task_with_empty_description FAILED  [ 66%]
+test_web_auto_agent.py::test_execute_task_with_invalid_openai_key FAILED [100%]
+E   NameError: name 'asyncio' is not defined
+E   NameError: name 'asyncio' is not defined
+E   NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task - NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task_with_empty_description - NameError: name 'asyncio' is not defined
+FAILED test_web_auto_agent.py::test_execute_task_with_invalid_openai_key - NameError: name 'asyncio' is not defined
+2026-03-22 04:19:11 | WARNING  | tool_builder | ⚠️  web_auto_agent tests failed (loop 3/5) — test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+test_web_auto_agent.py::test_execute_task_with_empty_description FAILED  [ 66%]
+test_web_auto_agent.py::test_execute_tas
+2026-03-22 04:19:19 | DEBUG    | llm_client | LLM response from github_models (7295 chars)
+2026-03-22 04:19:19 | DEBUG    | test_runner | Installing: ['playwright', 'openai', 'pytest']
+2026-03-22 04:19:21 | WARNING  | test_runner | Tests FAILED for web_auto_agent:
+test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+    assert result == "<html>Mocked Content</html>"
+E   AssertionError: assert None == '<html>Mocked Content</html>'
+Error executing task: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-linux64/chrome-headless-shell
+FAILED test_web_auto_agent.py::test_execute_task - AssertionError: assert None == '<html>Mocked Content</html>'
+2026-03-22 04:19:21 | WARNING  | tool_builder | ⚠️  web_auto_agent tests failed (loop 4/5) — test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+    assert result == "<html>Mocked Content</html>"
+E   AssertionError: assert None == '<html>Mocked Content</html>'
+Erro
+2026-03-22 04:19:21 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-22 04:20:29 | DEBUG    | llm_client | LLM response from github_models (7306 chars)
+2026-03-22 04:20:29 | DEBUG    | test_runner | Installing: ['playwright', 'openai', 'pytest']
+2026-03-22 04:20:30 | WARNING  | test_runner | Tests FAILED for web_auto_agent:
+test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+    assert result == "<html>Mocked Content</html>"
+E   AssertionError: assert None == '<html>Mocked Content</html>'
+Error executing task: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-linux64/chrome-headless-shell
+FAILED test_web_auto_agent.py::test_execute_task - AssertionError: assert None == '<html>Mocked Content</html>'
+2026-03-22 04:20:30 | WARNING  | tool_builder | ⚠️  web_auto_agent tests failed (loop 5/5) — test_web_auto_agent.py::test_execute_task FAILED                         [ 33%]
+    assert result == "<html>Mocked Content</html>"
+E   AssertionError: assert None == '<html>Mocked Content</html>'
+Erro
+2026-03-22 04:20:30 | ERROR    | tool_builder | ❌ web_auto_agent failed after 5 loops
+2026-03-22 04:20:30 | INFO     | tool_builder | Building tool: ai_trading_bot_framework …
+2026-03-22 04:20:44 | DEBUG    | llm_client | LLM response from github_models (6009 chars)
+2026-03-22 04:20:44 | DEBUG    | test_runner | Installing: ['ccxt==4.0.93', 'pandas==1.5.3', 'openai==0.27.8', 'pytest==7.4.2']
+2026-03-22 04:20:53 | WARNING  | test_runner | Tests FAILED for ai_trading_bot_framework:
+test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_fetch_market_data FAILED          [ 50%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy file '{strategy_file}' not found.")
+E   FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+    raise AttributeError(
+E   AttributeError: <module 'ccxt.binance' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/ccxt/binance.py'> does not have the attribute 'fetch_ohlcv'
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(json.dumps(signals, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_trading_bot_framework.py::test_load_strategy - FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+FAILED test_ai_trading_bot_framework.py::test_fetch_market_data - AttributeError: <module 'ccxt.binance' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/ccxt/binance.py'> does not have the attribute 'fetch_ohlcv'
+FAILED test_ai_trading_bot_framework.py::test_save_signals - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-03-22 04:20:53 | WARNING  | tool_builder | ⚠️  ai_trading_bot_framework tests failed (loop 1/5) — test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_fetch_market_data FAILED          [ 50%]
+test_ai_trading_bot_framework.py::test_s
+2026-03-22 04:21:00 | DEBUG    | llm_client | LLM response from github_models (6043 chars)
+2026-03-22 04:21:00 | DEBUG    | test_runner | Installing: ['pandas', 'openai', 'ccxt']
+2026-03-22 04:21:01 | WARNING  | test_runner | Tests FAILED for ai_trading_bot_framework:
+test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy file '{strategy_file}' not found.")
+E   FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(json.dumps(signals, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_trading_bot_framework.py::test_load_strategy - FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+FAILED test_ai_trading_bot_framework.py::test_save_signals - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-03-22 04:21:01 | WARNING  | tool_builder | ⚠️  ai_trading_bot_framework tests failed (loop 2/5) — test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy f
+2026-03-22 04:21:09 | DEBUG    | llm_client | LLM response from github_models (6386 chars)
+2026-03-22 04:21:09 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport os\nimport pandas as pd\nimport openai\nimport ccxt\nfrom datetime import datetime\n\ndef load_strategy(strategy_file):\n    \"\"\"Load the trading strategy from a Python script.\"\"\"\n    if not os.path.exists(strategy_file):\n        raise FileNot
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6373)
+2026-03-22 04:21:09 | DEBUG    | test_runner | Installing: ['pandas', 'openai', 'ccxt']
+2026-03-22 04:21:11 | WARNING  | test_runner | Tests FAILED for ai_trading_bot_framework:
+test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy file '{strategy_file}' not found.")
+E   FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(json.dumps(signals, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_trading_bot_framework.py::test_load_strategy - FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+FAILED test_ai_trading_bot_framework.py::test_save_signals - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-03-22 04:21:11 | WARNING  | tool_builder | ⚠️  ai_trading_bot_framework tests failed (loop 3/5) — test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy f
+2026-03-22 04:21:19 | DEBUG    | llm_client | LLM response from github_models (6396 chars)
+2026-03-22 04:21:19 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport os\nimport pandas as pd\nimport openai\nimport ccxt\nfrom datetime import datetime\n\ndef load_strategy(strategy_file):\n    \"\"\"Load the trading strategy from a Python script.\"\"\"\n    if not os.path.exists(strategy_file):\n        raise FileNot
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6383)
+2026-03-22 04:21:19 | DEBUG    | test_runner | Installing: ['pandas', 'openai', 'ccxt']
+2026-03-22 04:21:20 | WARNING  | test_runner | Tests FAILED for ai_trading_bot_framework:
+test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy file '{strategy_file}' not found.")
+E   FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(json.dumps(signals, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_trading_bot_framework.py::test_load_strategy - FileNotFoundError: Strategy file 'mock_strategy.py' not found.
+FAILED test_ai_trading_bot_framework.py::test_save_signals - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-03-22 04:21:20 | WARNING  | tool_builder | ⚠️  ai_trading_bot_framework tests failed (loop 4/5) — test_ai_trading_bot_framework.py::test_load_strategy FAILED              [ 25%]
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+    raise FileNotFoundError(f"Strategy f
+2026-03-22 04:21:28 | DEBUG    | llm_client | LLM response from github_models (6410 chars)
+2026-03-22 04:21:28 | DEBUG    | test_runner | Installing: ['pandas', 'openai', 'ccxt']
+2026-03-22 04:21:30 | WARNING  | test_runner | Tests FAILED for ai_trading_bot_framework:
+test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+    mocked_file().write.assert_called_once_with(json.dumps(signals, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 14 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ai_trading_bot_framework.py::test_save_signals - AssertionError: Expected 'write' to be called once. Called 14 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-03-22 04:21:30 | WARNING  | tool_builder | ⚠️  ai_trading_bot_framework tests failed (loop 5/5) — test_ai_trading_bot_framework.py::test_save_signals FAILED               [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-22 04:21:30 | ERROR    | tool_builder | ❌ ai_trading_bot_framework failed after 5 loops
+2026-03-22 04:21:30 | INFO     | tool_builder | Building tool: contextual_sentiment_explorer …
+2026-03-22 04:21:39 | DEBUG    | llm_client | LLM response from github_models (5686 chars)
+2026-03-22 04:21:39 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'nltk==3.8.1', 'rich==13.5.2']
+2026-03-22 04:21:48 | WARNING  | test_runner | Tests FAILED for contextual_sentiment_explorer:
+test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment - LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences - LookupError: 
+2026-03-22 04:21:48 | WARNING  | tool_builder | ⚠️  contextual_sentiment_explorer tests failed (loop 1/5) — test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(res
+2026-03-22 04:21:59 | DEBUG    | llm_client | LLM response from github_models (6058 chars)
+2026-03-22 04:21:59 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich']
+2026-03-22 04:22:01 | WARNING  | test_runner | Tests FAILED for contextual_sentiment_explorer:
+test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment - LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences - LookupError: 
+2026-03-22 04:22:01 | WARNING  | tool_builder | ⚠️  contextual_sentiment_explorer tests failed (loop 2/5) — test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(res
+2026-03-22 04:22:08 | DEBUG    | llm_client | LLM response from github_models (6332 chars)
+2026-03-22 04:22:08 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport sys\nfrom transformers import pipeline\nfrom nltk.tokenize import sent_tokenize\nfrom rich.console import Console\nfrom rich.table import Table\nimport nltk\n\ndef analyze_sentiment(text):\n    \"\"\"Analyze sentiment of the given text and highlight key phrases.\
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6319)
+2026-03-22 04:22:08 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich']
+2026-03-22 04:22:10 | WARNING  | test_runner | Tests FAILED for contextual_sentiment_explorer:
+test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment - LookupError: 
+FAILED test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences - LookupError: 
+2026-03-22 04:22:10 | WARNING  | tool_builder | ⚠️  contextual_sentiment_explorer tests failed (loop 3/5) — test_contextual_sentiment_explorer.py::test_analyze_sentiment FAILED     [ 33%]
+test_contextual_sentiment_explorer.py::test_analyze_sentiment_multiple_sentences FAILED [ 66%]
+    raise LookupError(res
+2026-03-22 04:22:17 | DEBUG    | llm_client | LLM response from github_models (6283 chars)
+2026-03-22 04:22:17 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich']
+2026-03-22 04:22:19 | INFO     | test_runner | Tests PASSED for contextual_sentiment_explorer
+2026-03-22 04:22:19 | INFO     | tool_builder | ✅ contextual_sentiment_explorer passed tests on loop 4
+2026-03-22 04:22:19 | INFO     | tool_builder | Building tool: lie_bias_detector …
+2026-03-22 04:22:28 | DEBUG    | llm_client | LLM response from github_models (6163 chars)
+2026-03-22 04:22:28 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'spacy==3.6.0', 'pandas==1.5.3']
+2026-03-22 04:22:38 | WARNING  | test_runner | Tests FAILED for lie_bias_detector:
+test_lie_bias_detector.py::test_analyze_text FAILED                      [ 20%]
+    raise IOError(Errors.E050.format(name=name))
+E   OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+FAILED test_lie_bias_detector.py::test_analyze_text - OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2026-03-22 04:22:38 | WARNING  | tool_builder | ⚠️  lie_bias_detector tests failed (loop 1/5) — test_lie_bias_detector.py::test_analyze_text FAILED                      [ 20%]
+    raise IOError(Errors.E050.format(name=name))
+E   OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem 
+2026-03-22 04:22:48 | DEBUG    | llm_client | LLM response from github_models (6526 chars)
+2026-03-22 04:22:48 | DEBUG    | test_runner | Installing: ['spacy', 'transformers', 'pandas', 'pytest']
+2026-03-22 04:22:50 | WARNING  | test_runner | Tests FAILED for lie_bias_detector:
+test_lie_bias_detector.py::test_analyze_text FAILED                      [ 16%]
+    raise IOError(Errors.E050.format(name=name))
+E   OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+    raise RuntimeError("The spaCy model 'en_core_web_sm' is not installed. Please install it using 'python -m spacy download en_core_web_sm'.")
+E   RuntimeError: The spaCy model 'en_core_web_sm' is not installed. Please install it using 'python -m spacy download en_core_web_sm'.
+FAILED test_lie_bias_detector.py::test_analyze_text - RuntimeError: The spaCy model 'en_core_web_sm' is not installed. Please install it using 'python -m spacy download en_core_web_sm'.
+2026-03-22 04:22:50 | WARNING  | tool_builder | ⚠️  lie_bias_detector tests failed (loop 2/5) — test_lie_bias_detector.py::test_analyze_text FAILED                      [ 16%]
+    raise IOError(Errors.E050.format(name=name))
+E   OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem 
+2026-03-22 04:23:00 | DEBUG    | llm_client | LLM response from github_models (7358 chars)
+2026-03-22 04:23:00 | DEBUG    | test_runner | Installing: ['spacy', 'transformers', 'pandas', 'pytest']
+2026-03-22 04:23:02 | WARNING  | test_runner | Tests FAILED for lie_bias_detector:
+test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_lie_bias_detector.py::test_analyze_text - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_lie_bias_detector.py::test_analyze_text_no_sentences - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+2026-03-22 04:23:02 | WARNING  | tool_builder | ⚠️  lie_bias_detector tests failed (loop 3/5) — test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+    raise RuntimeError(
+E   RuntimeError
+2026-03-22 04:23:11 | DEBUG    | llm_client | LLM response from github_models (7693 chars)
+2026-03-22 04:23:11 | DEBUG    | test_runner | Installing: ['spacy', 'transformers', 'pandas']
+2026-03-22 04:23:14 | WARNING  | test_runner | Tests FAILED for lie_bias_detector:
+test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError("Failed to load sentiment analysis model: " + str(e))
+E   RuntimeError: Failed to load sentiment analysis model: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError("Failed to load sentiment analysis model: " + str(e))
+E   RuntimeError: Failed to load sentiment analysis model: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_lie_bias_detector.py::test_analyze_text - RuntimeError: Failed to load sentiment analysis model: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_lie_bias_detector.py::test_analyze_text_no_sentences - RuntimeError: Failed to load sentiment analysis model: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+2026-03-22 04:23:14 | WARNING  | tool_builder | ⚠️  lie_bias_detector tests failed (loop 4/5) — test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+    raise RuntimeError(
+E   RuntimeError
+2026-03-22 04:23:23 | DEBUG    | llm_client | LLM response from github_models (7324 chars)
+2026-03-22 04:23:23 | DEBUG    | test_runner | Installing: ['spacy', 'pandas']
+2026-03-22 04:23:25 | WARNING  | test_runner | Tests FAILED for lie_bias_detector:
+test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+E   ValueError: [E030] Sentence boundaries unset. You can add the 'sentencizer' component to the pipeline with: `nlp.add_pipe('sentencizer')`. Alternatively, add the dependency parser or sentence recognizer, or set sentence boundaries by setting `doc[i].is_sent_start`.
+E   ValueError: [E030] Sentence boundaries unset. You can add the 'sentencizer' component to the pipeline with: `nlp.add_pipe('sentencizer')`. Alternatively, add the dependency parser or sentence recognizer, or set sentence boundaries by setting `doc[i].is_sent_start`.
+FAILED test_lie_bias_detector.py::test_analyze_text - ValueError: [E030] Sentence boundaries unset. You can add the 'sentencizer' component to the pipeline with: `nlp.add_pipe('sentencizer')`. Alternatively, add the dependency parser or sentence recognizer, or set sentence boundaries by setting `doc[i].is_sent_start`.
+FAILED test_lie_bias_detector.py::test_analyze_text_no_sentences - ValueError: [E030] Sentence boundaries unset. You can add the 'sentencizer' component to the pipeline with: `nlp.add_pipe('sentencizer')`. Alternatively, add the dependency parser or sentence recognizer, or set sentence boundaries by setting `doc[i].is_sent_start`.
+2026-03-22 04:23:25 | WARNING  | tool_builder | ⚠️  lie_bias_detector tests failed (loop 5/5) — test_lie_bias_detector.py::test_analyze_text FAILED                      [ 14%]
+test_lie_bias_detector.py::test_analyze_text_no_sentences FAILED         [100%]
+E   ValueError: [E030] Sentence boundari
+2026-03-22 04:23:25 | ERROR    | tool_builder | ❌ lie_bias_detector failed after 5 loops
+2026-03-22 04:23:25 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-22 04:23:25 | INFO     | main |   Built 2/5 tools successfully
+2026-03-22 04:23:25 | INFO     | main |     ✅ workflow_agent_builder (loops: 1)
+2026-03-22 04:23:25 | INFO     | main |     ✅ contextual_sentiment_explorer (loops: 4)
+2026-03-22 04:23:25 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-22 04:23:25 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-22 04:23:25 | INFO     | github_publisher |   Created zip: workflow_agent_builder.zip (2552 bytes)
+2026-03-22 04:23:25 | INFO     | github_publisher | Saved workflow_agent_builder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/workflow_agent_builder
+2026-03-22 04:23:25 | INFO     | github_publisher |   Created zip: contextual_sentiment_explorer.zip (2731 bytes)
+2026-03-22 04:23:25 | INFO     | github_publisher | Saved contextual_sentiment_explorer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/contextual_sentiment_explorer
+2026-03-22 04:23:25 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-22 04:23:25 | INFO     | main |   Published 2 tools:
+2026-03-22 04:23:25 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/workflow_agent_builder
+2026-03-22 04:23:25 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/contextual_sentiment_explorer
+2026-03-22 04:23:25 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-22 04:23:25 | INFO     | main | ✅ Generated tools_index.json with 72 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
