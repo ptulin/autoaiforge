@@ -1,0 +1,13 @@
+{
+  "tool_name": "workflow_agent_builder",
+  "display_name": "Workflow Agent Builder",
+  "description": "A library for easily creating AI-powered workflow automation agents using YAML-based task definitions. This tool allows developers to define workflows with natural language prompts and actions, which are interpreted and executed by AI agents.",
+  "topic": "AI Agents for Workflow Automation",
+  "date": "2026-03-22",
+  "generated": "2026-03-22T04:16:58.320202+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-22/workflow_agent_builder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-22/workflow_agent_builder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-22/workflow_agent_builder/workflow_agent_builder.zip"
+}
