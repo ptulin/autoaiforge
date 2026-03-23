@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_backtesting_toolkit",
+  "display_name": "AI Backtesting Toolkit",
+  "description": "A library for backtesting AI-driven trading strategies using historical market data. It provides evaluation metrics and visualizations to help developers optimize their algorithms before deploying them in live scenarios.",
+  "topic": "AI-Powered Trading Bots",
+  "date": "2026-03-23",
+  "generated": "2026-03-23T04:26:17.964452+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/ai_backtesting_toolkit",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/ai_backtesting_toolkit/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/ai_backtesting_toolkit/ai_backtesting_toolkit.zip"
+}

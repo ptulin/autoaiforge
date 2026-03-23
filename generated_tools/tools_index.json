@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-22T04:23:25.293633+00:00",
-  "total_tools": 72,
+  "last_updated": "2026-03-23T04:32:49.155597+00:00",
+  "total_tools": 75,
   "tools": [
+    {
+      "tool_name": "ai_backtesting_toolkit",
+      "display_name": "AI Backtesting Toolkit",
+      "description": "A library for backtesting AI-driven trading strategies using historical market data. It provides evaluation metrics and visualizations to help developers optimize their algorithms before deploying them in live scenarios.",
+      "topic": "AI-Powered Trading Bots",
+      "date": "2026-03-23",
+      "generated": "2026-03-23T04:26:17.964452+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/ai_backtesting_toolkit",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/ai_backtesting_toolkit/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/ai_backtesting_toolkit/ai_backtesting_toolkit.zip"
+    },
+    {
+      "tool_name": "market_data_feed",
+      "display_name": "Real-Time Market Data Feed",
+      "description": "A lightweight Python CLI tool to stream and save real-time market data (price, volume, etc.) for selected cryptocurrencies or stocks. This tool is ideal for training AI models or for live trading systems that require up-to-date market data.",
+      "topic": "AI-Powered Trading Bots",
+      "date": "2026-03-23",
+      "generated": "2026-03-23T04:26:17.964452+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/market_data_feed",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/market_data_feed/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/market_data_feed/market_data_feed.zip"
+    },
+    {
+      "tool_name": "news_sentiment_trader",
+      "display_name": "News Sentiment Trader",
+      "description": "This tool analyzes news headlines and articles for sentiment related to specific stocks or cryptocurrencies and generates buy/sell/hold recommendations based on the sentiment trends. It integrates with popular trading platforms to automate trades based on the generated signals.",
+      "topic": "AI-Powered Trading Bots",
+      "date": "2026-03-23",
+      "generated": "2026-03-23T04:26:17.964452+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/news_sentiment_trader",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/news_sentiment_trader/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-23/news_sentiment_trader/news_sentiment_trader.zip"
+    },
     {
       "tool_name": "contextual_sentiment_explorer",
       "display_name": "Contextual Sentiment Explorer",
