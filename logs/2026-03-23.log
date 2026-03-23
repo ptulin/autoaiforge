@@ -1,0 +1,390 @@
+2026-03-23 04:26:17 | INFO     | main | ============================================================
+2026-03-23 04:26:17 | INFO     | main | AutoAIForge starting run: 2026-03-23T04:26:17.964452+00:00
+2026-03-23 04:26:17 | INFO     | main | ============================================================
+2026-03-23 04:26:17 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-23 04:26:18 | INFO     | youtube_scraper | YouTube client ready
+2026-03-23 04:26:18 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-23 04:26:19 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-23 04:26:19 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-23 04:26:19 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-23 04:26:19 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-23 04:26:20 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 48 results (quota used: 600)
+2026-03-23 04:26:20 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-23 04:26:20 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-23 04:26:21 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-23 04:26:21 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-23 04:26:21 | INFO     | youtube_scraper | YouTube 'open source LLM': 40 results (quota used: 1100)
+2026-03-23 04:26:21 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-23 04:26:22 | INFO     | youtube_scraper | YouTube 'vector database AI': 27 results (quota used: 1300)
+2026-03-23 04:26:22 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-23 04:26:22 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-23 04:26:22 | INFO     | youtube_scraper | YouTube 'AI safety news': 45 results (quota used: 1600)
+2026-03-23 04:26:23 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-03-23 04:26:23 | INFO     | youtube_scraper | YouTube 'local LLM': 39 results (quota used: 1800)
+2026-03-23 04:26:23 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-23 04:26:24 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-23 04:26:24 | INFO     | youtube_scraper | YouTube total: 825 items, quota used: 2000
+2026-03-23 04:26:24 | INFO     | main |   YouTube: 791 items
+2026-03-23 04:26:24 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-23 04:26:28 | INFO     | rss_scraper | HackerNews: 152 items
+2026-03-23 04:26:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-23 04:26:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-23 04:26:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-23 04:26:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-23 04:26:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-23 04:26:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-23 04:26:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-23 04:26:36 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-23 04:26:41 | INFO     | rss_scraper | ArXiv: 103 items
+2026-03-23 04:26:45 | INFO     | rss_scraper | Dev.to: 198 items
+2026-03-23 04:26:46 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-23 04:26:46 | INFO     | rss_scraper | Free sources total: 503 unique items
+2026-03-23 04:26:46 | INFO     | main |   RSS/API sources: 503 items
+2026-03-23 04:26:46 | INFO     | main |   Total scraped: 1294 items
+2026-03-23 04:26:46 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-23 04:26:46 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-23 04:26:47 | INFO     | db_manager | Purged 0 old news items
+2026-03-23 04:26:47 | INFO     | db_manager | Inserted 1000/1294 news items
+2026-03-23 04:26:47 | INFO     | main |   SQLite: 1000 new items (total: 23880)
+2026-03-23 04:26:51 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-23 04:26:52 | INFO     | vector_store | VectorStore ready
+2026-03-23 04:27:18 | INFO     | vector_store | Indexed 1830 items into vector store
+2026-03-23 04:27:18 | INFO     | main |   Vector store: 1830 items indexed
+2026-03-23 04:27:18 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-23 04:27:18 | INFO     | topic_analyzer | Analyzing 1830 items for top 10 topics …
+2026-03-23 04:27:25 | DEBUG    | llm_client | LLM response from github_models (3850 chars)
+2026-03-23 04:27:25 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-23 04:27:25 | INFO     | main |   Found 10 topics:
+2026-03-23 04:27:25 | INFO     | main |      1. [9/10] AI-Powered Trading Bots
+2026-03-23 04:27:25 | INFO     | main |      2. [9/10] AI in Cybersecurity
+2026-03-23 04:27:25 | INFO     | main |      3. [8/10] AI in Misinformation Detection
+2026-03-23 04:27:25 | INFO     | main |      4. [8/10] AI-Driven Video Editing
+2026-03-23 04:27:25 | INFO     | main |      5. [8/10] AI for DevOps Automation
+2026-03-23 04:27:25 | INFO     | main |      6. [8/10] AI in Creative Content Generation
+2026-03-23 04:27:25 | INFO     | main |      7. [8/10] AI-Powered Data Analysis
+2026-03-23 04:27:25 | INFO     | main |      8. [7/10] AI for Automated Tax Preparation
+2026-03-23 04:27:25 | INFO     | main |      9. [7/10] AI-Enhanced Data Cleaning
+2026-03-23 04:27:25 | INFO     | main |     10. [7/10] AI for Social Media Engagement
+2026-03-23 04:27:25 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-23 04:27:25 | INFO     | main |   Existing collection: 72 tools across 41 topics
+2026-03-23 04:27:25 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Trading Bots' (relevance 9/10, last built 2026-03-09)
+2026-03-23 04:27:25 | INFO     | main |   Topics flagged for upgrade: AI-Powered Trading Bots
+2026-03-23 04:27:25 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI-Powered Trading Bots'
+2026-03-23 04:27:30 | DEBUG    | llm_client | LLM response from github_models (3365 chars)
+2026-03-23 04:27:30 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Trading Bots
+2026-03-23 04:27:34 | DEBUG    | llm_client | LLM response from github_models (2563 chars)
+2026-03-23 04:27:34 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Cybersecurity
+2026-03-23 04:27:34 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-23 04:27:34 | INFO     | main |   Generated 5 tool ideas:
+2026-03-23 04:27:34 | INFO     | main |     • news_sentiment_trader: This tool analyzes news headlines and articles for sentiment related to specific
+2026-03-23 04:27:34 | INFO     | main |     • ai_backtesting_toolkit: A library for backtesting AI-driven trading strategies using historical market d
+2026-03-23 04:27:34 | INFO     | main |     • market_data_feed: A lightweight Python CLI tool to stream and save real-time market data (price, v
+2026-03-23 04:27:34 | INFO     | main |     • ai_threat_analysis: This tool integrates AI-based threat detection models into existing cybersecurit
+2026-03-23 04:27:34 | INFO     | main |     • adaptive_firewall_optimizer: This tool uses AI to analyze firewall logs and dynamically suggest optimized rul
+2026-03-23 04:27:34 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-23 04:27:34 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-23 04:27:43 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-23 04:27:43 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-23 04:27:43 | INFO     | tool_builder | Building tool: news_sentiment_trader …
+2026-03-23 04:27:52 | DEBUG    | llm_client | LLM response from github_models (8000 chars)
+2026-03-23 04:27:52 | DEBUG    | test_runner | Installing: ['newspaper3k==0.2.8', 'nltk==3.8.1', 'ccxt==4.0.90']
+2026-03-23 04:28:07 | WARNING  | test_runner | Tests FAILED for news_sentiment_trader:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_news_sentiment_trader.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/news_sentiment_trader/test_news_sentiment_trader.py'.
+    raise ImportError(
+E   ImportError: lxml.html.clean module is now a separate project lxml_html_clean.
+ERROR test_news_sentiment_trader.py
+2026-03-23 04:28:07 | WARNING  | tool_builder | ⚠️  news_sentiment_trader tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_news_sentiment_trader.py ________________
+ImportError while importing test modul
+2026-03-23 04:28:17 | DEBUG    | llm_client | LLM response from github_models (8053 chars)
+2026-03-23 04:28:17 | DEBUG    | test_runner | Installing: ['nltk', 'ccxt']
+2026-03-23 04:28:19 | WARNING  | test_runner | Tests FAILED for news_sentiment_trader:
+test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_fetch_news FAILED                    [ 66%]
+test_news_sentiment_trader.py::test_analyze_sentiment FAILED             [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+ERROR    root:news_sentiment_trader.py:23 Configuration file not found.
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+ERROR    root:news_sentiment_trader.py:23 Configuration file not found.
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+ERROR    root:news_sentiment_trader.py:23 Configuration file not found.
+FAILED test_news_sentiment_trader.py::test_run - FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+FAILED test_news_sentiment_trader.py::test_fetch_news - FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+FAILED test_news_sentiment_trader.py::test_analyze_sentiment - FileNotFoundError: [Errno 2] No such file or directory: 'test_config.json'
+2026-03-23 04:28:19 | WARNING  | tool_builder | ⚠️  news_sentiment_trader tests failed (loop 2/5) — test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_fetch_news FAILED                    [ 66%]
+test_news_sentiment_trader.py::test_anal
+2026-03-23 04:28:27 | DEBUG    | llm_client | LLM response from github_models (8037 chars)
+2026-03-23 04:28:27 | DEBUG    | test_runner | Installing: ['nltk', 'ccxt']
+2026-03-23 04:28:29 | WARNING  | test_runner | Tests FAILED for news_sentiment_trader:
+test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_fetch_news FAILED                    [ 66%]
+test_news_sentiment_trader.py::test_analyze_sentiment FAILED             [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_news_sentiment_trader.py::test_run - LookupError: 
+FAILED test_news_sentiment_trader.py::test_fetch_news - LookupError: 
+FAILED test_news_sentiment_trader.py::test_analyze_sentiment - LookupError: 
+2026-03-23 04:28:29 | WARNING  | tool_builder | ⚠️  news_sentiment_trader tests failed (loop 3/5) — test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_fetch_news FAILED                    [ 66%]
+test_news_sentiment_trader.py::test_anal
+2026-03-23 04:28:38 | DEBUG    | llm_client | LLM response from github_models (8316 chars)
+2026-03-23 04:28:38 | DEBUG    | test_runner | Installing: ['nltk', 'ccxt']
+2026-03-23 04:28:40 | WARNING  | test_runner | Tests FAILED for news_sentiment_trader:
+test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_analyze_sentiment FAILED             [ 66%]
+test_news_sentiment_trader.py::test_fetch_news FAILED                    [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_news_sentiment_trader.py::test_run - LookupError: 
+FAILED test_news_sentiment_trader.py::test_analyze_sentiment - LookupError: 
+FAILED test_news_sentiment_trader.py::test_fetch_news - LookupError: 
+2026-03-23 04:28:40 | WARNING  | tool_builder | ⚠️  news_sentiment_trader tests failed (loop 4/5) — test_news_sentiment_trader.py::test_run FAILED                           [ 33%]
+test_news_sentiment_trader.py::test_analyze_sentiment FAILED             [ 66%]
+test_news_sentiment_trader.py::test_fetc
+2026-03-23 04:28:49 | DEBUG    | llm_client | LLM response from github_models (8507 chars)
+2026-03-23 04:28:49 | DEBUG    | test_runner | Installing: ['nltk', 'ccxt']
+2026-03-23 04:28:50 | INFO     | test_runner | Tests PASSED for news_sentiment_trader
+2026-03-23 04:28:50 | INFO     | tool_builder | ✅ news_sentiment_trader passed tests on loop 5
+2026-03-23 04:28:50 | INFO     | tool_builder | Building tool: ai_backtesting_toolkit …
+2026-03-23 04:28:59 | DEBUG    | llm_client | LLM response from github_models (7327 chars)
+2026-03-23 04:28:59 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'matplotlib==3.6.2', 'numpy==1.23.5']
+2026-03-23 04:29:10 | WARNING  | test_runner | Tests FAILED for ai_backtesting_toolkit:
+test_ai_backtesting_toolkit.py::test_backtest_empty_csv FAILED           [ 66%]
+test_ai_backtesting_toolkit.py::test_backtest_missing_columns FAILED     [100%]
+    raise ValueError("The input CSV file is empty.")
+E   ValueError: The input CSV file is empty.
+    raise RuntimeError(f"An error occurred during backtesting: {e}")
+E   RuntimeError: An error occurred during backtesting: The input CSV file is empty.
+    raise ValueError(f"CSV file must contain columns: {required_columns}")
+E   ValueError: CSV file must contain columns: {'price', 'date'}
+    raise RuntimeError(f"An error occurred during backtesting: {e}")
+E   RuntimeError: An error occurred during backtesting: CSV file must contain columns: {'price', 'date'}
+FAILED test_ai_backtesting_toolkit.py::test_backtest_empty_csv - RuntimeError: An error occurred during backtesting: The input CSV file is empty.
+FAILED test_ai_backtesting_toolkit.py::test_backtest_missing_columns - RuntimeError: An error occurred during backtesting: CSV file must contain columns: {'price', 'date'}
+2026-03-23 04:29:10 | WARNING  | tool_builder | ⚠️  ai_backtesting_toolkit tests failed (loop 1/5) — test_ai_backtesting_toolkit.py::test_backtest_empty_csv FAILED           [ 66%]
+test_ai_backtesting_toolkit.py::test_backtest_missing_columns FAILED     [100%]
+    raise ValueError("The input CSV file
+2026-03-23 04:29:19 | DEBUG    | llm_client | LLM response from github_models (7854 chars)
+2026-03-23 04:29:19 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'pytest']
+2026-03-23 04:29:21 | WARNING  | test_runner | Tests FAILED for ai_backtesting_toolkit:
+test_ai_backtesting_toolkit.py::test_backtest_missing_columns FAILED     [100%]
+    raise ValueError(f"CSV file must contain columns: {required_columns}")
+E   ValueError: CSV file must contain columns: {'price', 'date'}
+    with pytest.raises(ValueError, match="CSV file must contain columns: {'date', 'price'}"):
+E   AssertionError: Regex pattern did not match.
+FAILED test_ai_backtesting_toolkit.py::test_backtest_missing_columns - AssertionError: Regex pattern did not match.
+2026-03-23 04:29:21 | WARNING  | tool_builder | ⚠️  ai_backtesting_toolkit tests failed (loop 2/5) — test_ai_backtesting_toolkit.py::test_backtest_missing_columns FAILED     [100%]
+    raise ValueError(f"CSV file must contain columns: {required_columns}")
+E   ValueError: CSV file must contain columns
+2026-03-23 04:29:28 | DEBUG    | llm_client | LLM response from github_models (7620 chars)
+2026-03-23 04:29:28 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'pytest']
+2026-03-23 04:29:30 | INFO     | test_runner | Tests PASSED for ai_backtesting_toolkit
+2026-03-23 04:29:30 | INFO     | tool_builder | ✅ ai_backtesting_toolkit passed tests on loop 3
+2026-03-23 04:29:30 | INFO     | tool_builder | Building tool: market_data_feed …
+2026-03-23 04:29:43 | DEBUG    | llm_client | LLM response from github_models (6275 chars)
+2026-03-23 04:29:43 | DEBUG    | test_runner | Installing: ['ccxt==4.0.85', 'pandas==1.5.3', 'websockets==11.0.3', 'pytest==7.4.2']
+2026-03-23 04:29:47 | WARNING  | test_runner | Tests FAILED for market_data_feed:
+test_market_data_feed.py::test_save_data_csv FAILED                      [ 33%]
+E   NameError: name 'pd' is not defined
+FAILED test_market_data_feed.py::test_save_data_csv - NameError: name 'pd' is not defined
+2026-03-23 04:29:47 | WARNING  | tool_builder | ⚠️  market_data_feed tests failed (loop 1/5) — test_market_data_feed.py::test_save_data_csv FAILED                      [ 33%]
+E   NameError: name 'pd' is not defined
+FAILED test_market_data_feed.py::test_save_data_csv - NameError: name 'pd' is no
+2026-03-23 04:29:59 | DEBUG    | llm_client | LLM response from github_models (6293 chars)
+2026-03-23 04:29:59 | DEBUG    | test_runner | Installing: ['ccxt', 'pandas', 'websockets']
+2026-03-23 04:30:00 | INFO     | test_runner | Tests PASSED for market_data_feed
+2026-03-23 04:30:00 | INFO     | tool_builder | ✅ market_data_feed passed tests on loop 2
+2026-03-23 04:30:00 | INFO     | tool_builder | Building tool: ai_threat_analysis …
+2026-03-23 04:30:10 | DEBUG    | llm_client | LLM response from github_models (6352 chars)
+2026-03-23 04:30:10 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.2', 'pandas==1.5.3', 'numpy==1.24.2', 'pytest==7.4.2']
+2026-03-23 04:30:19 | WARNING  | test_runner | Tests FAILED for ai_threat_analysis:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_threat_analysis.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_threat_analysis/test_ai_threat_analysis.py'.
+E   ImportError: cannot import name 'joblib' from 'sklearn.externals' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/externals/__init__.py)
+ERROR test_ai_threat_analysis.py
+2026-03-23 04:30:19 | WARNING  | tool_builder | ⚠️  ai_threat_analysis tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_threat_analysis.py __________________
+ImportError while importing test modul
+2026-03-23 04:30:27 | DEBUG    | llm_client | LLM response from github_models (5968 chars)
+2026-03-23 04:30:27 | DEBUG    | test_runner | Installing: ['scikit-learn', 'pandas', 'numpy', 'joblib']
+2026-03-23 04:30:28 | WARNING  | test_runner | Tests FAILED for ai_threat_analysis:
+test_ai_threat_analysis.py::test_analyze FAILED                          [ 33%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 66%]
+test_ai_threat_analysis.py::test_analyze_invalid_file FAILED             [100%]
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_empty_input - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_invalid_file - FileNotFoundError: Model file not found: mock_model.pkl
+2026-03-23 04:30:28 | WARNING  | tool_builder | ⚠️  ai_threat_analysis tests failed (loop 2/5) — test_ai_threat_analysis.py::test_analyze FAILED                          [ 33%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 66%]
+test_ai_threat_analysis.py::test_analyze
+2026-03-23 04:30:37 | DEBUG    | llm_client | LLM response from github_models (6528 chars)
+2026-03-23 04:30:37 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'scikit-learn']
+2026-03-23 04:30:38 | WARNING  | test_runner | Tests FAILED for ai_threat_analysis:
+test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze_invalid_file FAILED             [ 75%]
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_empty_input - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_invalid_file - FileNotFoundError: Model file not found: mock_model.pkl
+2026-03-23 04:30:38 | WARNING  | tool_builder | ⚠️  ai_threat_analysis tests failed (loop 3/5) — test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze
+2026-03-23 04:30:47 | DEBUG    | llm_client | LLM response from github_models (6580 chars)
+2026-03-23 04:30:47 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'scikit-learn']
+2026-03-23 04:30:49 | WARNING  | test_runner | Tests FAILED for ai_threat_analysis:
+test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze_invalid_file FAILED             [ 75%]
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_empty_input - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_invalid_file - FileNotFoundError: Model file not found: mock_model.pkl
+2026-03-23 04:30:49 | WARNING  | tool_builder | ⚠️  ai_threat_analysis tests failed (loop 4/5) — test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze
+2026-03-23 04:30:57 | DEBUG    | llm_client | LLM response from github_models (6475 chars)
+2026-03-23 04:30:57 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'scikit-learn']
+2026-03-23 04:30:58 | WARNING  | test_runner | Tests FAILED for ai_threat_analysis:
+test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze_invalid_file FAILED             [ 75%]
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+    raise FileNotFoundError(f"Model file not found: {model_path}")
+E   FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_empty_input - FileNotFoundError: Model file not found: mock_model.pkl
+FAILED test_ai_threat_analysis.py::test_analyze_invalid_file - FileNotFoundError: Model file not found: mock_model.pkl
+2026-03-23 04:30:58 | WARNING  | tool_builder | ⚠️  ai_threat_analysis tests failed (loop 5/5) — test_ai_threat_analysis.py::test_analyze FAILED                          [ 25%]
+test_ai_threat_analysis.py::test_analyze_empty_input FAILED              [ 50%]
+test_ai_threat_analysis.py::test_analyze
+2026-03-23 04:30:58 | ERROR    | tool_builder | ❌ ai_threat_analysis failed after 5 loops
+2026-03-23 04:30:58 | INFO     | tool_builder | Building tool: adaptive_firewall_optimizer …
+2026-03-23 04:31:07 | DEBUG    | llm_client | LLM response from github_models (6826 chars)
+2026-03-23 04:31:07 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'scipy==1.10.1']
+2026-03-23 04:31:14 | WARNING  | test_runner | Tests FAILED for adaptive_firewall_optimizer:
+test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mocked_file().write.assert_called_once_with(json.dumps(rules, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+FAILED test_adaptive_firewall_optimizer.py::test_save_rules - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+2026-03-23 04:31:14 | WARNING  | tool_builder | ⚠️  adaptive_firewall_optimizer tests failed (loop 1/5) — test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-23 04:31:21 | DEBUG    | llm_client | LLM response from github_models (6597 chars)
+2026-03-23 04:31:21 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-03-23 04:31:22 | WARNING  | test_runner | Tests FAILED for adaptive_firewall_optimizer:
+test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mocked_file().write.assert_called_once_with(json.dumps(rules, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+FAILED test_adaptive_firewall_optimizer.py::test_save_rules - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+2026-03-23 04:31:22 | WARNING  | tool_builder | ⚠️  adaptive_firewall_optimizer tests failed (loop 2/5) — test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-23 04:31:30 | DEBUG    | llm_client | LLM response from github_models (7273 chars)
+2026-03-23 04:31:30 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-03-23 04:31:31 | WARNING  | test_runner | Tests FAILED for adaptive_firewall_optimizer:
+test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mock_file().write.assert_called_once_with(json.dumps(rules, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+FAILED test_adaptive_firewall_optimizer.py::test_save_rules - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+2026-03-23 04:31:31 | WARNING  | tool_builder | ⚠️  adaptive_firewall_optimizer tests failed (loop 3/5) — test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-23 04:31:39 | DEBUG    | llm_client | LLM response from github_models (7910 chars)
+2026-03-23 04:31:39 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-03-23 04:31:40 | WARNING  | test_runner | Tests FAILED for adaptive_firewall_optimizer:
+test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mock_file().write.assert_called_once_with(json.dumps(rules, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "blo...n    ]\n}\n',)
+FAILED test_adaptive_firewall_optimizer.py::test_save_rules - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "blo...n    ]\n}\n',)
+2026-03-23 04:31:40 | WARNING  | tool_builder | ⚠️  adaptive_firewall_optimizer tests failed (loop 4/5) — test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-23 04:31:40 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-23 04:32:48 | DEBUG    | llm_client | LLM response from github_models (7244 chars)
+2026-03-23 04:32:48 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-03-23 04:32:49 | WARNING  | test_runner | Tests FAILED for adaptive_firewall_optimizer:
+test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mock_file().write.assert_called_once_with(json.dumps(rules, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+FAILED test_adaptive_firewall_optimizer.py::test_save_rules - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "blo..."\n    ]\n}',)
+2026-03-23 04:32:49 | WARNING  | tool_builder | ⚠️  adaptive_firewall_optimizer tests failed (loop 5/5) — test_adaptive_firewall_optimizer.py::test_save_rules FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-23 04:32:49 | ERROR    | tool_builder | ❌ adaptive_firewall_optimizer failed after 5 loops
+2026-03-23 04:32:49 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-23 04:32:49 | INFO     | main |   Built 3/5 tools successfully
+2026-03-23 04:32:49 | INFO     | main |     ✅ news_sentiment_trader (loops: 5)
+2026-03-23 04:32:49 | INFO     | main |     ✅ ai_backtesting_toolkit (loops: 3)
+2026-03-23 04:32:49 | INFO     | main |     ✅ market_data_feed (loops: 2)
+2026-03-23 04:32:49 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-23 04:32:49 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-23 04:32:49 | INFO     | github_publisher |   Created zip: news_sentiment_trader.zip (3263 bytes)
+2026-03-23 04:32:49 | INFO     | github_publisher | Saved news_sentiment_trader → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/news_sentiment_trader
+2026-03-23 04:32:49 | INFO     | github_publisher |   Created zip: ai_backtesting_toolkit.zip (3117 bytes)
+2026-03-23 04:32:49 | INFO     | github_publisher | Saved ai_backtesting_toolkit → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/ai_backtesting_toolkit
+2026-03-23 04:32:49 | INFO     | github_publisher |   Created zip: market_data_feed.zip (2837 bytes)
+2026-03-23 04:32:49 | INFO     | github_publisher | Saved market_data_feed → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/market_data_feed
+2026-03-23 04:32:49 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-23 04:32:49 | INFO     | main |   Published 3 tools:
+2026-03-23 04:32:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/news_sentiment_trader
+2026-03-23 04:32:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/ai_backtesting_toolkit
+2026-03-23 04:32:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-23/market_data_feed
+2026-03-23 04:32:49 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-23 04:32:49 | INFO     | main | ✅ Generated tools_index.json with 75 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
