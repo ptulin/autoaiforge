@@ -1,0 +1,13 @@
+{
+  "tool_name": "gpt_efficiency_benchmark",
+  "display_name": "GPT Efficiency Benchmark",
+  "description": "This CLI tool benchmarks the processing speed, memory usage, and token throughput of GPT-5 against previous GPT models. It automates testing using predefined prompts and datasets to generate detailed comparison metrics, helping developers understand efficiency gains in real-world scenarios.",
+  "topic": "GPT-5 Efficiency Gains",
+  "date": "2026-03-24",
+  "generated": "2026-03-24T04:15:00.867685+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-24/gpt_efficiency_benchmark",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_efficiency_benchmark/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_efficiency_benchmark/gpt_efficiency_benchmark.zip"
+}

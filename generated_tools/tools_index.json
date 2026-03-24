@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-23T04:32:49.155597+00:00",
-  "total_tools": 75,
+  "last_updated": "2026-03-24T04:20:07.359134+00:00",
+  "total_tools": 78,
   "tools": [
+    {
+      "tool_name": "gpt_cost_analyzer",
+      "display_name": "GPT Cost Analyzer",
+      "description": "This script compares the cost efficiency of GPT-5 against prior models by calculating tokens-per-dollar based on OpenAI's pricing and efficiency data. Developers can use it to estimate the financial impact of migrating workloads to GPT-5, making it ideal for cost-conscious teams.",
+      "topic": "GPT-5 Efficiency Gains",
+      "date": "2026-03-24",
+      "generated": "2026-03-24T04:15:00.867685+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-24/gpt_cost_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_cost_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_cost_analyzer/gpt_cost_analyzer.zip"
+    },
+    {
+      "tool_name": "gpt_efficiency_benchmark",
+      "display_name": "GPT Efficiency Benchmark",
+      "description": "This CLI tool benchmarks the processing speed, memory usage, and token throughput of GPT-5 against previous GPT models. It automates testing using predefined prompts and datasets to generate detailed comparison metrics, helping developers understand efficiency gains in real-world scenarios.",
+      "topic": "GPT-5 Efficiency Gains",
+      "date": "2026-03-24",
+      "generated": "2026-03-24T04:15:00.867685+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-24/gpt_efficiency_benchmark",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_efficiency_benchmark/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_efficiency_benchmark/gpt_efficiency_benchmark.zip"
+    },
+    {
+      "tool_name": "gpt_power_profiler",
+      "display_name": "GPT Power Profiler",
+      "description": "This tool profiles the power consumption of GPT-5 and earlier models during API calls by measuring CPU/GPU usage over time. It provides actionable insights for optimizing energy efficiency, especially important for large-scale deployments in energy-conscious environments.",
+      "topic": "GPT-5 Efficiency Gains",
+      "date": "2026-03-24",
+      "generated": "2026-03-24T04:15:00.867685+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-24/gpt_power_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_power_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-24/gpt_power_profiler/gpt_power_profiler.zip"
+    },
     {
       "tool_name": "ai_backtesting_toolkit",
       "display_name": "AI Backtesting Toolkit",
