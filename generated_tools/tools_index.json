@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-03-24T04:20:07.359134+00:00",
-  "total_tools": 78,
+  "last_updated": "2026-03-25T04:23:28.408403+00:00",
+  "total_tools": 80,
   "tools": [
+    {
+      "tool_name": "ai_desktop_health_monitor",
+      "display_name": "AI Desktop Health Monitor",
+      "description": "This automation tool continuously monitors your desktop environment for performance bottlenecks, such as high CPU usage or frozen applications, and uses Claude AI to autonomously address these issues by closing unresponsive apps or optimizing system resources.",
+      "topic": "AI Desktop Automation",
+      "date": "2026-03-25",
+      "generated": "2026-03-25T04:16:33.534632+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-25/ai_desktop_health_monitor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/ai_desktop_health_monitor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/ai_desktop_health_monitor/ai_desktop_health_monitor.zip"
+    },
+    {
+      "tool_name": "workflow_trigger_cli",
+      "display_name": "Workflow Trigger CLI",
+      "description": "This CLI tool enables developers to trigger and monitor automated workflows in Claude AI using predefined connectors. It provides an interface to initiate workflows, pass inputs, and retrieve results, all while supporting asynchronous execution and retry mechanisms for robust automation.",
+      "topic": "AI Connectors for Workflow Automation",
+      "date": "2026-03-25",
+      "generated": "2026-03-25T04:16:33.534632+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-25/workflow_trigger_cli",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/workflow_trigger_cli/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/workflow_trigger_cli/workflow_trigger_cli.zip"
+    },
     {
       "tool_name": "gpt_cost_analyzer",
       "display_name": "GPT Cost Analyzer",
