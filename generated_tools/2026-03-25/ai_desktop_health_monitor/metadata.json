@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_desktop_health_monitor",
+  "display_name": "AI Desktop Health Monitor",
+  "description": "This automation tool continuously monitors your desktop environment for performance bottlenecks, such as high CPU usage or frozen applications, and uses Claude AI to autonomously address these issues by closing unresponsive apps or optimizing system resources.",
+  "topic": "AI Desktop Automation",
+  "date": "2026-03-25",
+  "generated": "2026-03-25T04:16:33.534632+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-25/ai_desktop_health_monitor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/ai_desktop_health_monitor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-25/ai_desktop_health_monitor/ai_desktop_health_monitor.zip"
+}
