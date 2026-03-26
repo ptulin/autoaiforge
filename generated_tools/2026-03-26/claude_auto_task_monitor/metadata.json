@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_auto_task_monitor",
+  "display_name": "Claude Auto Task Monitor",
+  "description": "A Python library and CLI tool that tracks and visualizes the execution of Claude AI's Auto-Mode tasks in real time. It provides insights into task progress, success rates, and performance metrics via a local web dashboard. This is ideal for developers who want better visibility into AI-driven task automation.",
+  "topic": "Claude AI Auto-Mode",
+  "date": "2026-03-26",
+  "generated": "2026-03-26T04:31:06.274002+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/claude_auto_task_monitor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/claude_auto_task_monitor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/claude_auto_task_monitor/claude_auto_task_monitor.zip"
+}

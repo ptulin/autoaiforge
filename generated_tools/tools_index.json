@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-03-25T04:23:28.408403+00:00",
-  "total_tools": 80,
+  "last_updated": "2026-03-26T04:42:39.278351+00:00",
+  "total_tools": 82,
   "tools": [
+    {
+      "tool_name": "ai_autocomplete_diff_checker",
+      "display_name": "AI Autocomplete Diff Checker",
+      "description": "This tool helps developers review and validate AI-suggested code changes in Claude-powered IDEs by generating 'diff' files. It compares AI-suggested code snippets with the original file and highlights exact changes, enabling developers to easily evaluate and accept/reject suggestions.",
+      "topic": "AI-Controlled IDEs and CLIs",
+      "date": "2026-03-26",
+      "generated": "2026-03-26T04:31:06.274002+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/ai_autocomplete_diff_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/ai_autocomplete_diff_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/ai_autocomplete_diff_checker/ai_autocomplete_diff_checker.zip"
+    },
+    {
+      "tool_name": "claude_auto_task_monitor",
+      "display_name": "Claude Auto Task Monitor",
+      "description": "A Python library and CLI tool that tracks and visualizes the execution of Claude AI's Auto-Mode tasks in real time. It provides insights into task progress, success rates, and performance metrics via a local web dashboard. This is ideal for developers who want better visibility into AI-driven task automation.",
+      "topic": "Claude AI Auto-Mode",
+      "date": "2026-03-26",
+      "generated": "2026-03-26T04:31:06.274002+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/claude_auto_task_monitor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/claude_auto_task_monitor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-26/claude_auto_task_monitor/claude_auto_task_monitor.zip"
+    },
     {
       "tool_name": "ai_desktop_health_monitor",
       "display_name": "AI Desktop Health Monitor",
