@@ -1,0 +1,396 @@
+2026-03-26 04:31:06 | INFO     | main | ============================================================
+2026-03-26 04:31:06 | INFO     | main | AutoAIForge starting run: 2026-03-26T04:31:06.274002+00:00
+2026-03-26 04:31:06 | INFO     | main | ============================================================
+2026-03-26 04:31:06 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-26 04:31:06 | INFO     | youtube_scraper | YouTube client ready
+2026-03-26 04:31:06 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-26 04:31:07 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-26 04:31:07 | INFO     | youtube_scraper | YouTube 'open source AI tools': 26 results (quota used: 300)
+2026-03-26 04:31:07 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-26 04:31:08 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-26 04:31:08 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 46 results (quota used: 600)
+2026-03-26 04:31:08 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-26 04:31:09 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-26 04:31:09 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-26 04:31:09 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-26 04:31:10 | INFO     | youtube_scraper | YouTube 'open source LLM': 46 results (quota used: 1100)
+2026-03-26 04:31:10 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-26 04:31:10 | INFO     | youtube_scraper | YouTube 'vector database AI': 37 results (quota used: 1300)
+2026-03-26 04:31:11 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-26 04:31:11 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-26 04:31:11 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-26 04:31:11 | INFO     | youtube_scraper | YouTube 'Groq inference': 8 results (quota used: 1700)
+2026-03-26 04:31:12 | INFO     | youtube_scraper | YouTube 'local LLM': 45 results (quota used: 1800)
+2026-03-26 04:31:12 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-26 04:31:12 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-26 04:31:12 | INFO     | youtube_scraper | YouTube total: 859 items, quota used: 2000
+2026-03-26 04:31:12 | INFO     | main |   YouTube: 817 items
+2026-03-26 04:31:12 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-26 04:31:17 | INFO     | rss_scraper | HackerNews: 178 items
+2026-03-26 04:31:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-26 04:31:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-26 04:31:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-26 04:31:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-26 04:31:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-26 04:31:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-26 04:31:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-26 04:31:25 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-26 04:31:30 | INFO     | rss_scraper | ArXiv: 101 items
+2026-03-26 04:31:35 | INFO     | rss_scraper | Dev.to: 201 items
+2026-03-26 04:31:37 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-26 04:31:37 | INFO     | rss_scraper | Free sources total: 530 unique items
+2026-03-26 04:31:37 | INFO     | main |   RSS/API sources: 530 items
+2026-03-26 04:31:37 | INFO     | main |   Total scraped: 1347 items
+2026-03-26 04:31:37 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-26 04:31:37 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-26 04:31:37 | INFO     | db_manager | Purged 0 old news items
+2026-03-26 04:31:37 | INFO     | db_manager | Inserted 1085/1347 news items
+2026-03-26 04:31:37 | INFO     | main |   SQLite: 1085 new items (total: 27041)
+2026-03-26 04:31:41 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-26 04:31:42 | INFO     | vector_store | VectorStore ready
+2026-03-26 04:32:09 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-26 04:32:09 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-26 04:32:09 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-26 04:32:09 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-26 04:32:17 | DEBUG    | llm_client | LLM response from github_models (3637 chars)
+2026-03-26 04:32:17 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-26 04:32:17 | INFO     | main |   Found 10 topics:
+2026-03-26 04:32:17 | INFO     | main |      1. [9/10] Claude AI Auto-Mode
+2026-03-26 04:32:17 | INFO     | main |      2. [9/10] AI-Controlled IDEs and CLIs
+2026-03-26 04:32:17 | INFO     | main |      3. [8/10] AI-Driven Yield Farming
+2026-03-26 04:32:17 | INFO     | main |      4. [8/10] TurboQuant AI Model Acceleration
+2026-03-26 04:32:17 | INFO     | main |      5. [8/10] AI in Clinical Documentation
+2026-03-26 04:32:17 | INFO     | main |      6. [8/10] AI-Powered Newsrooms
+2026-03-26 04:32:17 | INFO     | main |      7. [8/10] AI Legislation and Ethics
+2026-03-26 04:32:17 | INFO     | main |      8. [7/10] AI Watermarking for Deepfakes
+2026-03-26 04:32:17 | INFO     | main |      9. [7/10] AI Memory Migration Tools
+2026-03-26 04:32:17 | INFO     | main |     10. [7/10] MidJourney v8 Alpha Release
+2026-03-26 04:32:17 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-26 04:32:17 | INFO     | main |   Existing collection: 80 tools across 44 topics
+2026-03-26 04:32:17 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-26 04:32:23 | DEBUG    | llm_client | LLM response from github_models (3548 chars)
+2026-03-26 04:32:23 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Auto-Mode
+2026-03-26 04:32:23 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-26 04:33:28 | DEBUG    | llm_client | LLM response from github_models (2367 chars)
+2026-03-26 04:33:28 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Controlled IDEs and CLIs
+2026-03-26 04:33:28 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-26 04:33:28 | INFO     | main |   Generated 5 tool ideas:
+2026-03-26 04:33:28 | INFO     | main |     • claude_auto_workflow: A Python CLI tool that allows developers to define and manage custom workflows f
+2026-03-26 04:33:28 | INFO     | main |     • claude_auto_task_monitor: A Python library and CLI tool that tracks and visualizes the execution of Claude
+2026-03-26 04:33:28 | INFO     | main |     • claude_auto_task_simulator: A Python utility that allows developers to simulate Claude AI's Auto-Mode behavi
+2026-03-26 04:33:28 | INFO     | main |     • claude_cli_session_manager: This tool streamlines interaction with Claude AI's CLI by enabling session manag
+2026-03-26 04:33:28 | INFO     | main |     • ai_autocomplete_diff_checker: This tool helps developers review and validate AI-suggested code changes in Clau
+2026-03-26 04:33:28 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-26 04:33:28 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-26 04:33:37 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-26 04:33:37 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-26 04:33:37 | INFO     | tool_builder | Building tool: claude_auto_workflow …
+2026-03-26 04:33:47 | DEBUG    | llm_client | LLM response from github_models (5938 chars)
+2026-03-26 04:33:47 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pyyaml==6.0', 'click==8.1.3']
+2026-03-26 04:34:57 | WARNING  | test_runner | Tests FAILED for claude_auto_workflow:
+test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+FAILED test_claude_auto_workflow.py::test_load_workflow_valid - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-26 04:34:57 | WARNING  | tool_builder | ⚠️  claude_auto_workflow tests failed (loop 1/5) — test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+FAILED test_claude_auto_workflow.py::test_load_workflow_valid - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-26 04:35:26 | DEBUG    | llm_client | LLM response from github_models (6132 chars)
+2026-03-26 04:35:26 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-03-26 04:36:33 | WARNING  | test_runner | Tests FAILED for claude_auto_workflow:
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/main.py", line 318, in wrap_session
+INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+INTERNALERROR>                          ^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/main.py", line 372, in _main
+INTERNALERROR>     config.hook.pytest_runtestloop(session=session)
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512, in __call__
+INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 167, in _multicall
+INTERNALERROR>     raise exception
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/logging.py", line 801, in pytest_runtestloop
+INTERNALERROR>     return (yield)  # Run all the tests.
+INTERNALERROR>             ^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/terminal.py", line 707, in pytest_runtestloop
+INTERNALERROR>     result = yield
+INTERNALERROR>              ^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 121, in _multicall
+INTERNALERROR>     res = hook_impl.function(*args)
+INTERNALERROR>           ^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/main.py", line 396, in pytest_runtestloop
+INTERNALERROR>     item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_hooks.py", line 512, in __call__
+INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_manager.py", line 120, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+INTERNALERROR>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 167, in _multicall
+INTERNALERROR>     raise exception
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/warnings.py", line 89, in pytest_runtest_protocol
+2026-03-26 04:36:33 | WARNING  | tool_builder | ⚠️  claude_auto_workflow tests failed (loop 2/5) — INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/main.py", line 318, in wrap_s
+2026-03-26 04:36:42 | DEBUG    | llm_client | LLM response from github_models (5867 chars)
+2026-03-26 04:36:42 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-03-26 04:37:49 | WARNING  | test_runner | Tests FAILED for claude_auto_workflow:
+test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+    with pytest.raises(yaml.YAMLError):
+E   NameError: name 'yaml' is not defined
+FAILED test_claude_auto_workflow.py::test_load_workflow_valid - Failed: Timeout (>60.0s) from pytest-timeout.
+FAILED test_claude_auto_workflow.py::test_load_workflow_invalid_yaml - NameError: name 'yaml' is not defined
+2026-03-26 04:37:49 | WARNING  | tool_builder | ⚠️  claude_auto_workflow tests failed (loop 3/5) — test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+    with pytest.raises(yaml.YAMLError):
+
+2026-03-26 04:37:56 | DEBUG    | llm_client | LLM response from github_models (5794 chars)
+2026-03-26 04:37:56 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-03-26 04:39:05 | WARNING  | test_runner | Tests FAILED for claude_auto_workflow:
+test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+E   RecursionError: maximum recursion depth exceeded
+FAILED test_claude_auto_workflow.py::test_load_workflow_valid - Failed: Timeout (>60.0s) from pytest-timeout.
+FAILED test_claude_auto_workflow.py::test_load_workflow_invalid_yaml - RecursionError: maximum recursion depth exceeded
+2026-03-26 04:39:05 | WARNING  | tool_builder | ⚠️  claude_auto_workflow tests failed (loop 4/5) — test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+E   RecursionError: maximum recursion de
+2026-03-26 04:39:12 | DEBUG    | llm_client | LLM response from github_models (5705 chars)
+2026-03-26 04:39:12 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-03-26 04:40:20 | WARNING  | test_runner | Tests FAILED for claude_auto_workflow:
+test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+E   RecursionError: maximum recursion depth exceeded
+FAILED test_claude_auto_workflow.py::test_load_workflow_valid - Failed: Timeout (>60.0s) from pytest-timeout.
+FAILED test_claude_auto_workflow.py::test_load_workflow_invalid_yaml - RecursionError: maximum recursion depth exceeded
+2026-03-26 04:40:20 | WARNING  | tool_builder | ⚠️  claude_auto_workflow tests failed (loop 5/5) — test_claude_auto_workflow.py::test_load_workflow_valid FAILED            [ 33%]
+test_claude_auto_workflow.py::test_load_workflow_invalid_yaml FAILED     [ 66%]
+E   RecursionError: maximum recursion de
+2026-03-26 04:40:20 | ERROR    | tool_builder | ❌ claude_auto_workflow failed after 5 loops
+2026-03-26 04:40:20 | INFO     | tool_builder | Building tool: claude_auto_task_monitor …
+2026-03-26 04:40:28 | DEBUG    | llm_client | LLM response from github_models (4525 chars)
+2026-03-26 04:40:28 | DEBUG    | test_runner | Installing: ['flask==2.3.2', 'rich==13.4.1']
+2026-03-26 04:40:49 | INFO     | test_runner | Tests PASSED for claude_auto_task_monitor
+2026-03-26 04:40:49 | INFO     | tool_builder | ✅ claude_auto_task_monitor passed tests on loop 1
+2026-03-26 04:40:49 | INFO     | tool_builder | Building tool: claude_auto_task_simulator …
+2026-03-26 04:40:58 | DEBUG    | llm_client | LLM response from github_models (5026 chars)
+2026-03-26 04:40:58 | DEBUG    | test_runner | Installing: ['faker==18.9.0', 'click==8.1.3', 'pytest==7.4.2']
+2026-03-26 04:41:01 | WARNING  | test_runner | Tests FAILED for claude_auto_task_simulator:
+test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 66%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_claude_auto_task_simulator.py::test_main_with_valid_config - assert 2 == 0
+FAILED test_claude_auto_task_simulator.py::test_main_with_missing_config - assert 2 == 0
+2026-03-26 04:41:01 | WARNING  | tool_builder | ⚠️  claude_auto_task_simulator tests failed (loop 1/5) — test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 66%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [100%]
+    assert result.exit_code == 0
+E   ass
+2026-03-26 04:41:08 | DEBUG    | llm_client | LLM response from github_models (5204 chars)
+2026-03-26 04:41:08 | DEBUG    | test_runner | Installing: ['faker']
+2026-03-26 04:41:09 | WARNING  | test_runner | Tests FAILED for claude_auto_task_simulator:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_claude_auto_task_simulator.py ______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   NameError: name 'argparse' is not defined
+ERROR test_claude_auto_task_simulator.py - NameError: name 'argparse' is not defined
+2026-03-26 04:41:09 | WARNING  | tool_builder | ⚠️  claude_auto_task_simulator tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_claude_auto_task_simulator.py ______________
+../_venv/lib/python3.11/site-packages/
+2026-03-26 04:41:19 | DEBUG    | llm_client | LLM response from github_models (5864 chars)
+2026-03-26 04:41:19 | DEBUG    | test_runner | Installing: ['faker']
+2026-03-26 04:41:20 | WARNING  | test_runner | Tests FAILED for claude_auto_task_simulator:
+test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test_main_with_output_file FAILED    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(0)
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(1)
+E   AssertionError: expected call not found.
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: File not found
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+    mock_output_file.assert_called_with("output.json", "w")
+E   AssertionError: expected call not found.
+E   assert ('mock_config.json', 'r') == ('output.json', 'w')
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: Expecting value: line 1 column 1 (char 0)
+FAILED test_claude_auto_task_simulator.py::test_main_with_valid_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_missing_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_output_file - AssertionError: expected call not found.
+assert ('mock_config.json', 'r') == ('output.json', 'w')
+2026-03-26 04:41:20 | WARNING  | tool_builder | ⚠️  claude_auto_task_simulator tests failed (loop 3/5) — test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test
+2026-03-26 04:41:28 | DEBUG    | llm_client | LLM response from github_models (6284 chars)
+2026-03-26 04:41:28 | DEBUG    | test_runner | Installing: ['faker']
+2026-03-26 04:41:29 | WARNING  | test_runner | Tests FAILED for claude_auto_task_simulator:
+test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test_main_with_output_file FAILED    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(0)
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(1)
+E   AssertionError: expected call not found.
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: File not found
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: open('output.json', 'w') call not found
+    mock_output_file.assert_any_call("output.json", "w")
+E   AssertionError: open('output.json', 'w') call not found
+E   assert ('mock_config.json', 'r') == ('output.json', 'w')
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: Expecting value: line 1 column 1 (char 0)
+FAILED test_claude_auto_task_simulator.py::test_main_with_valid_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_missing_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_output_file - AssertionError: open('output.json', 'w') call not found
+assert ('mock_config.json', 'r') == ('output.json', 'w')
+2026-03-26 04:41:29 | WARNING  | tool_builder | ⚠️  claude_auto_task_simulator tests failed (loop 4/5) — test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test
+2026-03-26 04:41:36 | DEBUG    | llm_client | LLM response from github_models (6199 chars)
+2026-03-26 04:41:36 | DEBUG    | test_runner | Installing: ['faker']
+2026-03-26 04:41:37 | WARNING  | test_runner | Tests FAILED for claude_auto_task_simulator:
+test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test_main_with_output_file FAILED    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(0)
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_exit.assert_called_with(1)
+E   AssertionError: expected call not found.
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: File not found
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: open('output.json', 'w') call not found
+    mock_output_file.assert_any_call("output.json", "w")
+E   AssertionError: open('output.json', 'w') call not found
+E   assert ('mock_config.json', 'r') == ('output.json', 'w')
+ERROR    claude_auto_task_simulator:claude_auto_task_simulator.py:47 Failed to load configuration file: Expecting value: line 1 column 1 (char 0)
+FAILED test_claude_auto_task_simulator.py::test_main_with_valid_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_missing_config - AssertionError: expected call not found.
+FAILED test_claude_auto_task_simulator.py::test_main_with_output_file - AssertionError: open('output.json', 'w') call not found
+assert ('mock_config.json', 'r') == ('output.json', 'w')
+2026-03-26 04:41:37 | WARNING  | tool_builder | ⚠️  claude_auto_task_simulator tests failed (loop 5/5) — test_claude_auto_task_simulator.py::test_main_with_valid_config FAILED   [ 50%]
+test_claude_auto_task_simulator.py::test_main_with_missing_config FAILED [ 75%]
+test_claude_auto_task_simulator.py::test
+2026-03-26 04:41:37 | ERROR    | tool_builder | ❌ claude_auto_task_simulator failed after 5 loops
+2026-03-26 04:41:37 | INFO     | tool_builder | Building tool: claude_cli_session_manager …
+2026-03-26 04:41:47 | DEBUG    | llm_client | LLM response from github_models (6789 chars)
+2026-03-26 04:41:47 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pytest==7.4.2']
+2026-03-26 04:41:47 | WARNING  | test_runner | Tests FAILED for claude_cli_session_manager:
+test_claude_cli_session_manager.py::test_save_session FAILED             [ 33%]
+test_claude_cli_session_manager.py::test_load_session FAILED             [ 66%]
+test_claude_cli_session_manager.py::test_list_sessions FAILED            [100%]
+E   NameError: name 'Path' is not defined
+E   NameError: name 'Path' is not defined
+E   NameError: name 'Path' is not defined
+FAILED test_claude_cli_session_manager.py::test_save_session - NameError: name 'Path' is not defined
+FAILED test_claude_cli_session_manager.py::test_load_session - NameError: name 'Path' is not defined
+FAILED test_claude_cli_session_manager.py::test_list_sessions - NameError: name 'Path' is not defined
+2026-03-26 04:41:47 | WARNING  | tool_builder | ⚠️  claude_cli_session_manager tests failed (loop 1/5) — test_claude_cli_session_manager.py::test_save_session FAILED             [ 33%]
+test_claude_cli_session_manager.py::test_load_session FAILED             [ 66%]
+test_claude_cli_session_manager.py::test
+2026-03-26 04:41:55 | DEBUG    | llm_client | LLM response from github_models (6378 chars)
+2026-03-26 04:41:55 | WARNING  | test_runner | Tests FAILED for claude_cli_session_manager:
+test_claude_cli_session_manager.py::test_save_session FAILED             [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 5 times.
+    mocked_file().write.assert_called_once_with(json.dumps({"key": "value"}))
+E   AssertionError: Expected 'write' to be called once. Called 5 times.
+E   assert ('}',) == ('{"key": "value"}',)
+FAILED test_claude_cli_session_manager.py::test_save_session - AssertionError: Expected 'write' to be called once. Called 5 times.
+assert ('}',) == ('{"key": "value"}',)
+2026-03-26 04:41:55 | WARNING  | tool_builder | ⚠️  claude_cli_session_manager tests failed (loop 2/5) — test_claude_cli_session_manager.py::test_save_session FAILED             [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-26 04:42:03 | DEBUG    | llm_client | LLM response from github_models (6872 chars)
+2026-03-26 04:42:03 | DEBUG    | test_runner | Installing: ['pytest']
+2026-03-26 04:42:04 | WARNING  | test_runner | Tests FAILED for claude_cli_session_manager:
+test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps({"key": "value"}, ensure_ascii=False, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_claude_cli_session_manager.py::test_save_session - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-03-26 04:42:04 | WARNING  | tool_builder | ⚠️  claude_cli_session_manager tests failed (loop 3/5) — test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-26 04:42:14 | DEBUG    | llm_client | LLM response from github_models (7121 chars)
+2026-03-26 04:42:14 | WARNING  | test_runner | Tests FAILED for claude_cli_session_manager:
+test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps({"key": "value"}, ensure_ascii=False, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_claude_cli_session_manager.py::test_save_session - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-03-26 04:42:14 | WARNING  | tool_builder | ⚠️  claude_cli_session_manager tests failed (loop 4/5) — test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-26 04:42:25 | DEBUG    | llm_client | LLM response from github_models (7306 chars)
+2026-03-26 04:42:25 | WARNING  | test_runner | Tests FAILED for claude_cli_session_manager:
+test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps({"key": "value"}, ensure_ascii=False, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_claude_cli_session_manager.py::test_save_session - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-03-26 04:42:25 | WARNING  | tool_builder | ⚠️  claude_cli_session_manager tests failed (loop 5/5) — test_claude_cli_session_manager.py::test_save_session FAILED             [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-03-26 04:42:25 | ERROR    | tool_builder | ❌ claude_cli_session_manager failed after 5 loops
+2026-03-26 04:42:25 | INFO     | tool_builder | Building tool: ai_autocomplete_diff_checker …
+2026-03-26 04:42:38 | DEBUG    | llm_client | LLM response from github_models (5497 chars)
+2026-03-26 04:42:38 | DEBUG    | test_runner | Installing: ['pytest==7.4.2']
+2026-03-26 04:42:39 | INFO     | test_runner | Tests PASSED for ai_autocomplete_diff_checker
+2026-03-26 04:42:39 | INFO     | tool_builder | ✅ ai_autocomplete_diff_checker passed tests on loop 1
+2026-03-26 04:42:39 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-26 04:42:39 | INFO     | main |   Built 2/5 tools successfully
+2026-03-26 04:42:39 | INFO     | main |     ✅ claude_auto_task_monitor (loops: 1)
+2026-03-26 04:42:39 | INFO     | main |     ✅ ai_autocomplete_diff_checker (loops: 1)
+2026-03-26 04:42:39 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-26 04:42:39 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-26 04:42:39 | INFO     | github_publisher |   Created zip: claude_auto_task_monitor.zip (2302 bytes)
+2026-03-26 04:42:39 | INFO     | github_publisher | Saved claude_auto_task_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/claude_auto_task_monitor
+2026-03-26 04:42:39 | INFO     | github_publisher |   Created zip: ai_autocomplete_diff_checker.zip (2316 bytes)
+2026-03-26 04:42:39 | INFO     | github_publisher | Saved ai_autocomplete_diff_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/ai_autocomplete_diff_checker
+2026-03-26 04:42:39 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-26 04:42:39 | INFO     | main |   Published 2 tools:
+2026-03-26 04:42:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/claude_auto_task_monitor
+2026-03-26 04:42:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-26/ai_autocomplete_diff_checker
+2026-03-26 04:42:39 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-26 04:42:39 | INFO     | main | ✅ Generated tools_index.json with 82 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
