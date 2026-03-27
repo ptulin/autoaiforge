@@ -1,0 +1,13 @@
+{
+  "tool_name": "crop_yield_predictor",
+  "display_name": "Crop Yield Predictor",
+  "description": "This tool uses machine learning models to predict crop yields based on input features like soil quality, climate data, and historical yield data. It helps AI developers build and test prediction models for agricultural datasets, promoting smart farming solutions.",
+  "topic": "AI in Agriculture",
+  "date": "2026-03-27",
+  "generated": "2026-03-27T04:32:02.980671+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-27/crop_yield_predictor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-27/crop_yield_predictor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-27/crop_yield_predictor/crop_yield_predictor.zip"
+}
