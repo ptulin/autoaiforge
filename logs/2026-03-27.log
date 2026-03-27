@@ -1,0 +1,354 @@
+2026-03-27 04:32:02 | INFO     | main | ============================================================
+2026-03-27 04:32:02 | INFO     | main | AutoAIForge starting run: 2026-03-27T04:32:02.980671+00:00
+2026-03-27 04:32:02 | INFO     | main | ============================================================
+2026-03-27 04:32:02 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-27 04:32:03 | INFO     | youtube_scraper | YouTube client ready
+2026-03-27 04:32:03 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-27 04:32:04 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-27 04:32:04 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-27 04:32:04 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-03-27 04:32:05 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-27 04:32:05 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-27 04:32:06 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-27 04:32:06 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-27 04:32:06 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-27 04:32:07 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-27 04:32:07 | INFO     | youtube_scraper | YouTube 'open source LLM': 27 results (quota used: 1100)
+2026-03-27 04:32:07 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-27 04:32:08 | INFO     | youtube_scraper | YouTube 'vector database AI': 35 results (quota used: 1300)
+2026-03-27 04:32:08 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-27 04:32:08 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-27 04:32:09 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-27 04:32:09 | INFO     | youtube_scraper | YouTube 'Groq inference': 8 results (quota used: 1700)
+2026-03-27 04:32:09 | INFO     | youtube_scraper | YouTube 'local LLM': 49 results (quota used: 1800)
+2026-03-27 04:32:10 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-27 04:32:10 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-27 04:32:10 | INFO     | youtube_scraper | YouTube total: 870 items, quota used: 2000
+2026-03-27 04:32:10 | INFO     | main |   YouTube: 827 items
+2026-03-27 04:32:10 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-27 04:32:15 | INFO     | rss_scraper | HackerNews: 171 items
+2026-03-27 04:32:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-27 04:32:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-27 04:32:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-27 04:32:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-27 04:32:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-27 04:32:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-27 04:32:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-27 04:32:22 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-27 04:32:52 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-03-27 04:33:17 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-27 04:33:48 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-03-27 04:33:49 | INFO     | rss_scraper | ArXiv: 30 items
+2026-03-27 04:33:53 | INFO     | rss_scraper | Dev.to: 201 items
+2026-03-27 04:33:54 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-27 04:33:54 | INFO     | rss_scraper | Free sources total: 452 unique items
+2026-03-27 04:33:54 | INFO     | main |   RSS/API sources: 452 items
+2026-03-27 04:33:54 | INFO     | main |   Total scraped: 1279 items
+2026-03-27 04:33:54 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-27 04:33:54 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-27 04:33:54 | INFO     | db_manager | Purged 0 old news items
+2026-03-27 04:33:54 | INFO     | db_manager | Inserted 997/1279 news items
+2026-03-27 04:33:54 | INFO     | main |   SQLite: 997 new items (total: 28038)
+2026-03-27 04:33:59 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-27 04:34:00 | INFO     | vector_store | VectorStore ready
+2026-03-27 04:34:27 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-27 04:34:27 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-27 04:34:27 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-27 04:34:27 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-27 04:34:33 | DEBUG    | llm_client | LLM response from github_models (4131 chars)
+2026-03-27 04:34:33 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-27 04:34:33 | INFO     | main |   Found 10 topics:
+2026-03-27 04:34:33 | INFO     | main |      1. [10/10] Claude AI Automation
+2026-03-27 04:34:33 | INFO     | main |      2. [9/10] AI in Agriculture
+2026-03-27 04:34:33 | INFO     | main |      3. [9/10] AI Context Optimization
+2026-03-27 04:34:33 | INFO     | main |      4. [9/10] AI for Productivity
+2026-03-27 04:34:33 | INFO     | main |      5. [8/10] AI for Social Misinformation
+2026-03-27 04:34:33 | INFO     | main |      6. [8/10] AI in Real Estate
+2026-03-27 04:34:33 | INFO     | main |      7. [8/10] AI for HR Workflows
+2026-03-27 04:34:33 | INFO     | main |      8. [8/10] AI in Education
+2026-03-27 04:34:33 | INFO     | main |      9. [7/10] AI Video Generation Shutdown
+2026-03-27 04:34:33 | INFO     | main |     10. [7/10] AI Music Creation
+2026-03-27 04:34:33 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-27 04:34:33 | INFO     | main |   Existing collection: 82 tools across 46 topics
+2026-03-27 04:34:33 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-27 04:34:39 | DEBUG    | llm_client | LLM response from github_models (3458 chars)
+2026-03-27 04:34:39 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Automation
+2026-03-27 04:34:43 | DEBUG    | llm_client | LLM response from github_models (2442 chars)
+2026-03-27 04:34:43 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Agriculture
+2026-03-27 04:34:43 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-27 04:34:43 | INFO     | main |   Generated 5 tool ideas:
+2026-03-27 04:34:43 | INFO     | main |     • claude_meeting_sync: A CLI tool that integrates Claude AI with Google Calendar to summarize upcoming 
+2026-03-27 04:34:43 | INFO     | main |     • claude_crm_assistant: This tool connects Claude AI with Salesforce or HubSpot CRM to help manage custo
+2026-03-27 04:34:43 | INFO     | main |     • task_automation_orchestrator: A Python library and CLI utility for creating customized task automation workflo
+2026-03-27 04:34:43 | INFO     | main |     • crop_yield_predictor: This tool uses machine learning models to predict crop yields based on input fea
+2026-03-27 04:34:43 | INFO     | main |     • field_health_visualizer: This tool analyzes satellite or drone imagery to assess field health by detectin
+2026-03-27 04:34:43 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-27 04:34:43 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-27 04:34:52 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-27 04:34:52 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-27 04:34:52 | INFO     | tool_builder | Building tool: claude_meeting_sync …
+2026-03-27 04:35:06 | DEBUG    | llm_client | LLM response from github_models (8965 chars)
+2026-03-27 04:35:06 | DEBUG    | test_runner | Installing: ['google-api-python-client==2.102.0', 'anthropic==0.3.0', 'click==8.1.3', 'pytest==7.4.2']
+2026-03-27 04:35:13 | WARNING  | test_runner | Tests FAILED for claude_meeting_sync:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_meeting_sync/test_claude_meeting_sync.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_meeting_sync.py
+2026-03-27 04:35:13 | WARNING  | tool_builder | ⚠️  claude_meeting_sync tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test modul
+2026-03-27 04:35:21 | DEBUG    | llm_client | LLM response from github_models (8752 chars)
+2026-03-27 04:35:21 | DEBUG    | test_runner | Installing: ['google-api-python-client', 'anthropic', 'pytest']
+2026-03-27 04:35:22 | WARNING  | test_runner | Tests FAILED for claude_meeting_sync:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_meeting_sync/test_claude_meeting_sync.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_meeting_sync.py
+2026-03-27 04:35:22 | WARNING  | tool_builder | ⚠️  claude_meeting_sync tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test modul
+2026-03-27 04:35:30 | DEBUG    | llm_client | LLM response from github_models (8877 chars)
+2026-03-27 04:35:30 | DEBUG    | test_runner | Installing: ['google-api-python-client', 'anthropic', 'pytest', 'unittest.mock']
+2026-03-27 04:35:30 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement unittest.mock (from versions: none)
+ERROR: No matching distribution found for unittest.mock
+
+2026-03-27 04:35:31 | WARNING  | test_runner | Tests FAILED for claude_meeting_sync:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_meeting_sync/test_claude_meeting_sync.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_meeting_sync.py
+2026-03-27 04:35:31 | WARNING  | tool_builder | ⚠️  claude_meeting_sync tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test modul
+2026-03-27 04:35:31 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-27 04:36:38 | DEBUG    | llm_client | LLM response from github_models (8506 chars)
+2026-03-27 04:36:38 | DEBUG    | test_runner | Installing: ['google-api-python-client', 'anthropic', 'pytest']
+2026-03-27 04:36:39 | WARNING  | test_runner | Tests FAILED for claude_meeting_sync:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_meeting_sync/test_claude_meeting_sync.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_meeting_sync.py
+2026-03-27 04:36:39 | WARNING  | tool_builder | ⚠️  claude_meeting_sync tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test modul
+2026-03-27 04:36:48 | DEBUG    | llm_client | LLM response from github_models (8959 chars)
+2026-03-27 04:36:48 | DEBUG    | test_runner | Installing: ['google-api-python-client', 'anthropic', 'pytest']
+2026-03-27 04:36:49 | WARNING  | test_runner | Tests FAILED for claude_meeting_sync:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_meeting_sync/test_claude_meeting_sync.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_meeting_sync.py
+2026-03-27 04:36:49 | WARNING  | tool_builder | ⚠️  claude_meeting_sync tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_claude_meeting_sync.py _________________
+ImportError while importing test modul
+2026-03-27 04:36:49 | ERROR    | tool_builder | ❌ claude_meeting_sync failed after 5 loops
+2026-03-27 04:36:49 | INFO     | tool_builder | Building tool: claude_crm_assistant …
+2026-03-27 04:36:59 | DEBUG    | llm_client | LLM response from github_models (6544 chars)
+2026-03-27 04:36:59 | DEBUG    | test_runner | Installing: ['simple-salesforce==1.11.1', 'anthropic==0.3.0', 'click==8.1.3']
+2026-03-27 04:37:01 | WARNING  | test_runner | Tests FAILED for claude_crm_assistant:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_crm_assistant/test_claude_crm_assistant.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_crm_assistant.py
+2026-03-27 04:37:01 | WARNING  | tool_builder | ⚠️  claude_crm_assistant tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test modul
+2026-03-27 04:37:15 | DEBUG    | llm_client | LLM response from github_models (9560 chars)
+2026-03-27 04:37:15 | DEBUG    | test_runner | Installing: ['simple-salesforce', 'anthropic']
+2026-03-27 04:37:16 | WARNING  | test_runner | Tests FAILED for claude_crm_assistant:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_crm_assistant/test_claude_crm_assistant.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_crm_assistant.py
+2026-03-27 04:37:16 | WARNING  | tool_builder | ⚠️  claude_crm_assistant tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test modul
+2026-03-27 04:37:25 | DEBUG    | llm_client | LLM response from github_models (9416 chars)
+2026-03-27 04:37:25 | DEBUG    | test_runner | Installing: ['simple-salesforce', 'anthropic', 'pytest']
+2026-03-27 04:37:26 | WARNING  | test_runner | Tests FAILED for claude_crm_assistant:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_crm_assistant/test_claude_crm_assistant.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_crm_assistant.py
+2026-03-27 04:37:26 | WARNING  | tool_builder | ⚠️  claude_crm_assistant tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test modul
+2026-03-27 04:37:33 | DEBUG    | llm_client | LLM response from github_models (9333 chars)
+2026-03-27 04:37:33 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "fixed Python source code",
+  "test_code": "fixed pytest test file",
+  "requirements": ["simple-salesforce", "anthropic", "pytest"],
+  "readme": "markdown README"
+}
+import json
+import argparse
+import sys
+from simple_salesforce import Salesforce
+from anthropic import Anthropic
+
+
+def conne
+Extra data: line 7 column 1 (char 177)
+2026-03-27 04:37:33 | DEBUG    | test_runner | Installing: ['simple-salesforce', 'anthropic', 'pytest']
+2026-03-27 04:37:34 | WARNING  | test_runner | Tests FAILED for claude_crm_assistant:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_crm_assistant/test_claude_crm_assistant.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_crm_assistant.py
+2026-03-27 04:37:34 | WARNING  | tool_builder | ⚠️  claude_crm_assistant tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test modul
+2026-03-27 04:37:42 | DEBUG    | llm_client | LLM response from github_models (8878 chars)
+2026-03-27 04:37:42 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "fixed Python source code",
+  "test_code": "fixed pytest test file",
+  "requirements": ["simple-salesforce", "anthropic", "pytest"],
+  "readme": "markdown README"
+}
+import json
+import argparse
+import sys
+from simple_salesforce import Salesforce
+from anthropic import Anthropic
+
+def connec
+Extra data: line 7 column 1 (char 177)
+2026-03-27 04:37:42 | DEBUG    | test_runner | Installing: ['simple-salesforce', 'anthropic', 'pytest']
+2026-03-27 04:37:43 | WARNING  | test_runner | Tests FAILED for claude_crm_assistant:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_crm_assistant/test_claude_crm_assistant.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_crm_assistant.py
+2026-03-27 04:37:43 | WARNING  | tool_builder | ⚠️  claude_crm_assistant tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_crm_assistant.py _________________
+ImportError while importing test modul
+2026-03-27 04:37:43 | ERROR    | tool_builder | ❌ claude_crm_assistant failed after 5 loops
+2026-03-27 04:37:43 | INFO     | tool_builder | Building tool: task_automation_orchestrator …
+2026-03-27 04:38:00 | DEBUG    | llm_client | LLM response from github_models (8743 chars)
+2026-03-27 04:38:00 | ERROR    | tool_builder | Initial generation failed for task_automation_orchestrator: LLM returned non-JSON: {
+  "code": "import argparse\nimport yaml\nimport requests\nfrom anthropic import Anthropic, HUMAN_PROMPT, AI_PROMPT\n\ndef load_workflow(file_path):\n    \"\"\"Load the YAML workflow file.\"\"\"\n    try:\n        with open(file_path, 'r') as f:\n            return yaml.safe_load(f)\n    except Fil
+Expecting property name enclosed in double quotes: line 10 column 1 (char 8730)
+2026-03-27 04:38:00 | INFO     | tool_builder | Building tool: crop_yield_predictor …
+2026-03-27 04:38:12 | DEBUG    | llm_client | LLM response from github_models (6950 chars)
+2026-03-27 04:38:12 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.0', 'pandas==1.5.3', 'numpy==1.24.2', 'joblib==1.2.0']
+2026-03-27 04:38:26 | WARNING  | test_runner | Tests FAILED for crop_yield_predictor:
+test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_preprocess_data - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_predict_and_save - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+2026-03-27 04:38:26 | WARNING  | tool_builder | ⚠️  crop_yield_predictor tests failed (loop 1/5) — test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compa
+2026-03-27 04:38:35 | DEBUG    | llm_client | LLM response from github_models (7790 chars)
+2026-03-27 04:38:35 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "import argparse\nimport pandas as pd\nimport numpy as np\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.neural_network import MLPRegressor\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import mean_squared_error\nfrom sklearn.preprocessing
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7777)
+2026-03-27 04:38:35 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.0', 'pandas==1.5.3', 'numpy==1.24.2', 'joblib==1.2.0']
+2026-03-27 04:38:37 | WARNING  | test_runner | Tests FAILED for crop_yield_predictor:
+test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_preprocess_data - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_predict_and_save - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+2026-03-27 04:38:37 | WARNING  | tool_builder | ⚠️  crop_yield_predictor tests failed (loop 2/5) — test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compa
+2026-03-27 04:38:46 | DEBUG    | llm_client | LLM response from github_models (7735 chars)
+2026-03-27 04:38:46 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport pandas as pd\nimport numpy as np\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.neural_network import MLPRegressor\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import mean_squared_error\nfrom sklearn.preprocessing
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7722)
+2026-03-27 04:38:46 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.0', 'pandas==1.5.3', 'numpy==1.24.2', 'joblib==1.2.0']
+2026-03-27 04:38:48 | WARNING  | test_runner | Tests FAILED for crop_yield_predictor:
+test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_preprocess_data - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_crop_yield_predictor.py::test_predict_and_save - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+2026-03-27 04:38:48 | WARNING  | tool_builder | ⚠️  crop_yield_predictor tests failed (loop 3/5) — test_crop_yield_predictor.py::test_preprocess_data FAILED                [ 33%]
+test_crop_yield_predictor.py::test_predict_and_save FAILED               [100%]
+E   AttributeError: module 'pandas.compa
+2026-03-27 04:38:59 | DEBUG    | llm_client | LLM response from github_models (8996 chars)
+2026-03-27 04:38:59 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'joblib', 'pytest']
+2026-03-27 04:39:01 | INFO     | test_runner | Tests PASSED for crop_yield_predictor
+2026-03-27 04:39:01 | INFO     | tool_builder | ✅ crop_yield_predictor passed tests on loop 4
+2026-03-27 04:39:01 | INFO     | tool_builder | Building tool: field_health_visualizer …
+2026-03-27 04:39:17 | DEBUG    | llm_client | LLM response from github_models (7554 chars)
+2026-03-27 04:39:17 | DEBUG    | test_runner | Installing: ['opencv-python==4.5.5.64', 'numpy==1.21.6', 'matplotlib==3.5.3', 'scikit-image==0.19.3']
+2026-03-27 04:39:17 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following yanked versions: 2.4.0
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=
+2026-03-27 04:39:18 | WARNING  | test_runner | Tests FAILED for field_health_visualizer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_field_health_visualizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/field_health_visualizer/test_field_health_visualizer.py'.
+E   ModuleNotFoundError: No module named 'cv2'
+ERROR test_field_health_visualizer.py
+2026-03-27 04:39:18 | WARNING  | tool_builder | ⚠️  field_health_visualizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_field_health_visualizer.py _______________
+ImportError while importing test modul
+2026-03-27 04:39:27 | DEBUG    | llm_client | LLM response from github_models (7291 chars)
+2026-03-27 04:39:27 | DEBUG    | test_runner | Installing: ['opencv-python', 'numpy', 'matplotlib', 'scikit-image']
+2026-03-27 04:39:39 | WARNING  | test_runner | Tests FAILED for field_health_visualizer:
+test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'input.png' not found.
+FAILED test_field_health_visualizer.py::test_analyze_field - FileNotFoundError: Input image file 'input.png' not found.
+2026-03-27 04:39:39 | WARNING  | tool_builder | ⚠️  field_health_visualizer tests failed (loop 2/5) — test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'inpu
+2026-03-27 04:39:47 | DEBUG    | llm_client | LLM response from github_models (7059 chars)
+2026-03-27 04:39:47 | DEBUG    | test_runner | Installing: ['opencv-python-headless', 'numpy', 'matplotlib', 'scikit-image']
+2026-03-27 04:39:50 | WARNING  | test_runner | Tests FAILED for field_health_visualizer:
+test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'input.png' not found.
+FAILED test_field_health_visualizer.py::test_analyze_field - FileNotFoundError: Input image file 'input.png' not found.
+2026-03-27 04:39:50 | WARNING  | tool_builder | ⚠️  field_health_visualizer tests failed (loop 3/5) — test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'inpu
+2026-03-27 04:39:59 | DEBUG    | llm_client | LLM response from github_models (7569 chars)
+2026-03-27 04:39:59 | DEBUG    | test_runner | Installing: ['opencv-python', 'numpy', 'matplotlib', 'scikit-image']
+2026-03-27 04:40:01 | WARNING  | test_runner | Tests FAILED for field_health_visualizer:
+test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'input.png' not found.
+FAILED test_field_health_visualizer.py::test_analyze_field - FileNotFoundError: Input image file 'input.png' not found.
+2026-03-27 04:40:01 | WARNING  | tool_builder | ⚠️  field_health_visualizer tests failed (loop 4/5) — test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'inpu
+2026-03-27 04:40:14 | DEBUG    | llm_client | LLM response from github_models (7811 chars)
+2026-03-27 04:40:14 | DEBUG    | test_runner | Installing: ['opencv-python', 'numpy', 'matplotlib', 'scikit-image']
+2026-03-27 04:40:16 | WARNING  | test_runner | Tests FAILED for field_health_visualizer:
+test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'input.png' not found.
+FAILED test_field_health_visualizer.py::test_analyze_field - FileNotFoundError: Input image file 'input.png' not found.
+2026-03-27 04:40:16 | WARNING  | tool_builder | ⚠️  field_health_visualizer tests failed (loop 5/5) — test_field_health_visualizer.py::test_analyze_field FAILED               [100%]
+    raise FileNotFoundError(f"Input image file '{image_path}' not found.")
+E   FileNotFoundError: Input image file 'inpu
+2026-03-27 04:40:16 | ERROR    | tool_builder | ❌ field_health_visualizer failed after 5 loops
+2026-03-27 04:40:16 | INFO     | tool_builder | Built 1/5 tools successfully
+2026-03-27 04:40:16 | INFO     | main |   Built 1/5 tools successfully
+2026-03-27 04:40:16 | INFO     | main |     ✅ crop_yield_predictor (loops: 4)
+2026-03-27 04:40:16 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-27 04:40:16 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-27 04:40:16 | INFO     | github_publisher |   Created zip: crop_yield_predictor.zip (3415 bytes)
+2026-03-27 04:40:16 | INFO     | github_publisher | Saved crop_yield_predictor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-27/crop_yield_predictor
+2026-03-27 04:40:16 | INFO     | github_publisher | Saved 1/1 tools to generated_tools/
+2026-03-27 04:40:16 | INFO     | main |   Published 1 tools:
+2026-03-27 04:40:16 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-27/crop_yield_predictor
+2026-03-27 04:40:16 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-27 04:40:16 | INFO     | main | ✅ Generated tools_index.json with 83 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
