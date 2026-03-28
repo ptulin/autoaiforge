@@ -1,0 +1,13 @@
+{
+  "tool_name": "open_model_deployer",
+  "display_name": "Open Model Deployer",
+  "description": "A CLI and module-based utility for easily deploying open-source AI models like LLaMA, Falcon, or StableLM to local servers or cloud environments. This tool streamlines setting up REST APIs around these models, with auto-configuration options for popular model hubs like Hugging Face.",
+  "topic": "Open Source AI Alternatives",
+  "date": "2026-03-28",
+  "generated": "2026-03-28T04:15:56.220612+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/open_model_deployer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-28/open_model_deployer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-28/open_model_deployer/open_model_deployer.zip"
+}

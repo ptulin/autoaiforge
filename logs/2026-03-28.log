@@ -1,0 +1,247 @@
+2026-03-28 04:15:56 | INFO     | main | ============================================================
+2026-03-28 04:15:56 | INFO     | main | AutoAIForge starting run: 2026-03-28T04:15:56.220612+00:00
+2026-03-28 04:15:56 | INFO     | main | ============================================================
+2026-03-28 04:15:56 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-28 04:15:56 | INFO     | youtube_scraper | YouTube client ready
+2026-03-28 04:15:56 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-28 04:15:57 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-28 04:15:57 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-28 04:15:57 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-28 04:15:58 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-28 04:15:58 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-28 04:15:58 | INFO     | youtube_scraper | YouTube 'machine learning tools': 20 results (quota used: 700)
+2026-03-28 04:15:59 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-28 04:15:59 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-28 04:16:00 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-28 04:16:00 | INFO     | youtube_scraper | YouTube 'open source LLM': 49 results (quota used: 1100)
+2026-03-28 04:16:00 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-28 04:16:01 | INFO     | youtube_scraper | YouTube 'vector database AI': 40 results (quota used: 1300)
+2026-03-28 04:16:01 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 43 results (quota used: 1400)
+2026-03-28 04:16:01 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-28 04:16:02 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-03-28 04:16:02 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-03-28 04:16:02 | INFO     | youtube_scraper | YouTube 'local LLM': 33 results (quota used: 1800)
+2026-03-28 04:16:02 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-28 04:16:03 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-28 04:16:03 | INFO     | youtube_scraper | YouTube total: 812 items, quota used: 2000
+2026-03-28 04:16:03 | INFO     | main |   YouTube: 777 items
+2026-03-28 04:16:03 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-28 04:16:07 | INFO     | rss_scraper | HackerNews: 166 items
+2026-03-28 04:16:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-28 04:16:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-28 04:16:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-28 04:16:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-28 04:16:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-28 04:16:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-28 04:16:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-28 04:16:15 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-28 04:16:20 | INFO     | rss_scraper | ArXiv: 102 items
+2026-03-28 04:16:24 | INFO     | rss_scraper | Dev.to: 203 items
+2026-03-28 04:16:26 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-28 04:16:26 | INFO     | rss_scraper | Free sources total: 521 unique items
+2026-03-28 04:16:26 | INFO     | main |   RSS/API sources: 521 items
+2026-03-28 04:16:26 | INFO     | main |   Total scraped: 1298 items
+2026-03-28 04:16:26 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-28 04:16:26 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-28 04:16:26 | INFO     | db_manager | Purged 0 old news items
+2026-03-28 04:16:26 | INFO     | db_manager | Inserted 1013/1298 news items
+2026-03-28 04:16:26 | INFO     | main |   SQLite: 1013 new items (total: 29051)
+2026-03-28 04:16:30 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-28 04:16:31 | INFO     | vector_store | VectorStore ready
+2026-03-28 04:16:56 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-28 04:16:56 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-28 04:16:56 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-28 04:16:56 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-28 04:16:57 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-28 04:18:04 | DEBUG    | llm_client | LLM response from github_models (4108 chars)
+2026-03-28 04:18:04 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-28 04:18:04 | INFO     | main |   Found 10 topics:
+2026-03-28 04:18:04 | INFO     | main |      1. [10/10] Claude AI Code Updates
+2026-03-28 04:18:04 | INFO     | main |      2. [9/10] Open Source AI Alternatives
+2026-03-28 04:18:04 | INFO     | main |      3. [9/10] AI in Robotics
+2026-03-28 04:18:04 | INFO     | main |      4. [8/10] AI-Powered Business Automation
+2026-03-28 04:18:04 | INFO     | main |      5. [8/10] AI Safety Bug Bounties
+2026-03-28 04:18:04 | INFO     | main |      6. [8/10] AI and Energy Efficiency
+2026-03-28 04:18:04 | INFO     | main |      7. [7/10] AI-Powered Real-Time Editing
+2026-03-28 04:18:04 | INFO     | main |      8. [7/10] AI in SaaS Disruption
+2026-03-28 04:18:04 | INFO     | main |      9. [7/10] AI-Powered Browser Automation
+2026-03-28 04:18:04 | INFO     | main |     10. [6/10] AI for Technical Documentation
+2026-03-28 04:18:04 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-28 04:18:04 | INFO     | main |   Existing collection: 83 tools across 47 topics
+2026-03-28 04:18:04 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-28 04:18:10 | DEBUG    | llm_client | LLM response from github_models (3341 chars)
+2026-03-28 04:18:10 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Code Updates
+2026-03-28 04:18:15 | DEBUG    | llm_client | LLM response from github_models (2519 chars)
+2026-03-28 04:18:15 | INFO     | idea_generator | Generated 2 ideas for topic: Open Source AI Alternatives
+2026-03-28 04:18:15 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-28 04:18:15 | INFO     | main |   Generated 5 tool ideas:
+2026-03-28 04:18:15 | INFO     | main |     • claude_code_sync: A CLI tool that enables developers to sync local code files with Claude AI's rea
+2026-03-28 04:18:15 | INFO     | main |     • claude_test_optimizer: A library that integrates with Claude AI to optimize test cases for Python code.
+2026-03-28 04:18:15 | INFO     | main |     • claude_code_review: A CLI tool that performs automated code reviews by leveraging Claude AI's coding
+2026-03-28 04:18:15 | INFO     | main |     • open_model_deployer: A CLI and module-based utility for easily deploying open-source AI models like L
+2026-03-28 04:18:15 | INFO     | main |     • ai_model_comparator: A Python tool for benchmarking and comparing the performance of open-source AI m
+2026-03-28 04:18:15 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-28 04:18:15 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-28 04:18:24 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-28 04:18:24 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-28 04:18:24 | INFO     | tool_builder | Building tool: claude_code_sync …
+2026-03-28 04:18:31 | DEBUG    | llm_client | LLM response from github_models (5890 chars)
+2026-03-28 04:18:31 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'watchdog==3.0.0', 'pytest==7.4.0']
+2026-03-28 04:18:33 | WARNING  | test_runner | Tests FAILED for claude_code_sync:
+test_claude_code_sync.py::test_sync_file_with_claude_success FAILED      [ 33%]
+test_claude_code_sync.py::test_sync_file_with_claude_no_changes FAILED   [ 66%]
+test_claude_code_sync.py::test_sync_file_with_claude_network_error FAILED [100%]
+E   NameError: name 'mock_open' is not defined
+E   NameError: name 'mock_open' is not defined
+E   NameError: name 'mock_open' is not defined
+FAILED test_claude_code_sync.py::test_sync_file_with_claude_success - NameError: name 'mock_open' is not defined
+FAILED test_claude_code_sync.py::test_sync_file_with_claude_no_changes - NameError: name 'mock_open' is not defined
+FAILED test_claude_code_sync.py::test_sync_file_with_claude_network_error - NameError: name 'mock_open' is not defined
+2026-03-28 04:18:33 | WARNING  | tool_builder | ⚠️  claude_code_sync tests failed (loop 1/5) — test_claude_code_sync.py::test_sync_file_with_claude_success FAILED      [ 33%]
+test_claude_code_sync.py::test_sync_file_with_claude_no_changes FAILED   [ 66%]
+test_claude_code_sync.py::test_sync_file
+2026-03-28 04:18:39 | DEBUG    | llm_client | LLM response from github_models (6104 chars)
+2026-03-28 04:18:39 | DEBUG    | test_runner | Installing: ['watchdog', 'requests', 'pytest']
+2026-03-28 04:18:40 | WARNING  | test_runner | Tests FAILED for claude_code_sync:
+test_claude_code_sync.py::test_sync_file_with_claude_network_error FAILED [100%]
+    with patch("requests.post", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_claude_code_sync.py::test_sync_file_with_claude_network_error - NameError: name 'requests' is not defined
+2026-03-28 04:18:40 | WARNING  | tool_builder | ⚠️  claude_code_sync tests failed (loop 2/5) — test_claude_code_sync.py::test_sync_file_with_claude_network_error FAILED [100%]
+    with patch("requests.post", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name
+2026-03-28 04:18:47 | DEBUG    | llm_client | LLM response from github_models (6035 chars)
+2026-03-28 04:18:47 | DEBUG    | test_runner | Installing: ['watchdog', 'requests', 'pytest']
+2026-03-28 04:18:47 | INFO     | test_runner | Tests PASSED for claude_code_sync
+2026-03-28 04:18:47 | INFO     | tool_builder | ✅ claude_code_sync passed tests on loop 3
+2026-03-28 04:18:47 | INFO     | tool_builder | Building tool: claude_test_optimizer …
+2026-03-28 04:18:55 | DEBUG    | llm_client | LLM response from github_models (5556 chars)
+2026-03-28 04:18:55 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.0']
+2026-03-28 04:18:56 | WARNING  | test_runner | Tests FAILED for claude_test_optimizer:
+test_claude_test_optimizer.py::test_fetch_optimized_tests_failure FAILED [ 40%]
+test_claude_test_optimizer.py::test_read_file FAILED                     [ 60%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: fake_path.py
+FAILED test_claude_test_optimizer.py::test_fetch_optimized_tests_failure - NameError: name 'requests' is not defined
+FAILED test_claude_test_optimizer.py::test_read_file - FileNotFoundError: File not found: fake_path.py
+2026-03-28 04:18:56 | WARNING  | tool_builder | ⚠️  claude_test_optimizer tests failed (loop 1/5) — test_claude_test_optimizer.py::test_fetch_optimized_tests_failure FAILED [ 40%]
+test_claude_test_optimizer.py::test_read_file FAILED                     [ 60%]
+    mock_post.side_effect = requests.exc
+2026-03-28 04:19:04 | DEBUG    | llm_client | LLM response from github_models (6055 chars)
+2026-03-28 04:19:04 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-03-28 04:19:05 | INFO     | test_runner | Tests PASSED for claude_test_optimizer
+2026-03-28 04:19:05 | INFO     | tool_builder | ✅ claude_test_optimizer passed tests on loop 2
+2026-03-28 04:19:05 | INFO     | tool_builder | Building tool: claude_code_review …
+2026-03-28 04:19:13 | DEBUG    | llm_client | LLM response from github_models (5845 chars)
+2026-03-28 04:19:13 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'rich==13.5.2']
+2026-03-28 04:19:14 | WARNING  | test_runner | Tests FAILED for claude_code_review:
+test_claude_code_review.py::test_perform_code_review_success FAILED      [ 20%]
+test_claude_code_review.py::test_perform_code_review_network_error FAILED [ 60%]
+    assert feedback == mock_response
+E   AssertionError: assert {'error': 'Fi...d file path.'} == {'issues': [{... simplify.'}]}
+    assert feedback == {"error": "Network error: Network error"}
+E   AssertionError: assert {'error': 'Fi...d file path.'} == {'error': 'Ne...etwork error'}
+FAILED test_claude_code_review.py::test_perform_code_review_success - AssertionError: assert {'error': 'Fi...d file path.'} == {'issues': [{... simplify.'}]}
+FAILED test_claude_code_review.py::test_perform_code_review_network_error - AssertionError: assert {'error': 'Fi...d file path.'} == {'error': 'Ne...etwork error'}
+2026-03-28 04:19:14 | WARNING  | tool_builder | ⚠️  claude_code_review tests failed (loop 1/5) — test_claude_code_review.py::test_perform_code_review_success FAILED      [ 20%]
+test_claude_code_review.py::test_perform_code_review_network_error FAILED [ 60%]
+    assert feedback == mock_response
+E 
+2026-03-28 04:19:21 | DEBUG    | llm_client | LLM response from github_models (6274 chars)
+2026-03-28 04:19:21 | DEBUG    | test_runner | Installing: ['requests', 'rich']
+2026-03-28 04:19:22 | WARNING  | test_runner | Tests FAILED for claude_code_review:
+test_claude_code_review.py::test_perform_code_review_network_error FAILED [ 60%]
+    with patch("requests.post", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_claude_code_review.py::test_perform_code_review_network_error - NameError: name 'requests' is not defined
+2026-03-28 04:19:22 | WARNING  | tool_builder | ⚠️  claude_code_review tests failed (loop 2/5) — test_claude_code_review.py::test_perform_code_review_network_error FAILED [ 60%]
+    with patch("requests.post", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name
+2026-03-28 04:19:29 | DEBUG    | llm_client | LLM response from github_models (6281 chars)
+2026-03-28 04:19:29 | DEBUG    | test_runner | Installing: ['requests', 'rich']
+2026-03-28 04:19:30 | INFO     | test_runner | Tests PASSED for claude_code_review
+2026-03-28 04:19:30 | INFO     | tool_builder | ✅ claude_code_review passed tests on loop 3
+2026-03-28 04:19:30 | INFO     | tool_builder | Building tool: open_model_deployer …
+2026-03-28 04:19:37 | DEBUG    | llm_client | LLM response from github_models (4732 chars)
+2026-03-28 04:19:37 | DEBUG    | test_runner | Installing: ['huggingface_hub==0.16.4', 'fastapi==0.95.2', 'uvicorn==0.22.0', 'pytest==7.4.2']
+2026-03-28 04:19:40 | WARNING  | test_runner | Tests FAILED for open_model_deployer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_open_model_deployer.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/open_model_deployer/test_open_model_deployer.py'.
+E   ImportError: cannot import name 'from_pretrained_pytorch' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_open_model_deployer.py
+2026-03-28 04:19:40 | WARNING  | tool_builder | ⚠️  open_model_deployer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_open_model_deployer.py _________________
+ImportError while importing test modul
+2026-03-28 04:19:46 | DEBUG    | llm_client | LLM response from github_models (4505 chars)
+2026-03-28 04:19:46 | DEBUG    | test_runner | Installing: ['fastapi', 'uvicorn']
+2026-03-28 04:19:47 | INFO     | test_runner | Tests PASSED for open_model_deployer
+2026-03-28 04:19:47 | INFO     | tool_builder | ✅ open_model_deployer passed tests on loop 2
+2026-03-28 04:19:47 | INFO     | tool_builder | Building tool: ai_model_comparator …
+2026-03-28 04:19:56 | DEBUG    | llm_client | LLM response from github_models (5978 chars)
+2026-03-28 04:19:56 | DEBUG    | test_runner | Installing: ['transformers==4.33.3', 'datasets==2.14.5', 'numpy==1.26.0', 'pandas==2.1.1', 'pytest==7.4.2']
+2026-03-28 04:20:13 | WARNING  | test_runner | Tests FAILED for ai_model_comparator:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_ai_model_comparator.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-03-28 04:20:13 | WARNING  | tool_builder | ⚠️  ai_model_comparator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-03-28 04:20:20 | DEBUG    | llm_client | LLM response from github_models (5735 chars)
+2026-03-28 04:20:20 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'numpy', 'pandas']
+2026-03-28 04:20:22 | WARNING  | test_runner | Tests FAILED for ai_model_comparator:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_ai_model_comparator.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-03-28 04:20:22 | WARNING  | tool_builder | ⚠️  ai_model_comparator tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-03-28 04:20:29 | DEBUG    | llm_client | LLM response from github_models (5802 chars)
+2026-03-28 04:20:29 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'numpy', 'pandas']
+2026-03-28 04:20:31 | WARNING  | test_runner | Tests FAILED for ai_model_comparator:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_ai_model_comparator.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-03-28 04:20:31 | WARNING  | tool_builder | ⚠️  ai_model_comparator tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_model_comparator.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-03-28 04:20:38 | DEBUG    | llm_client | LLM response from github_models (5899 chars)
+2026-03-28 04:20:38 | DEBUG    | test_runner | Installing: ['transformers', 'numpy', 'pandas']
+2026-03-28 04:20:39 | INFO     | test_runner | Tests PASSED for ai_model_comparator
+2026-03-28 04:20:39 | INFO     | tool_builder | ✅ ai_model_comparator passed tests on loop 4
+2026-03-28 04:20:39 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-03-28 04:20:39 | INFO     | main |   Built 5/5 tools successfully
+2026-03-28 04:20:39 | INFO     | main |     ✅ claude_code_sync (loops: 3)
+2026-03-28 04:20:39 | INFO     | main |     ✅ claude_test_optimizer (loops: 2)
+2026-03-28 04:20:39 | INFO     | main |     ✅ claude_code_review (loops: 3)
+2026-03-28 04:20:39 | INFO     | main |     ✅ open_model_deployer (loops: 2)
+2026-03-28 04:20:39 | INFO     | main |     ✅ ai_model_comparator (loops: 4)
+2026-03-28 04:20:39 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-28 04:20:39 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-28 04:20:39 | INFO     | github_publisher |   Created zip: claude_code_sync.zip (2488 bytes)
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved claude_code_sync → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_code_sync
+2026-03-28 04:20:39 | INFO     | github_publisher |   Created zip: claude_test_optimizer.zip (2626 bytes)
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved claude_test_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_test_optimizer
+2026-03-28 04:20:39 | INFO     | github_publisher |   Created zip: claude_code_review.zip (2719 bytes)
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved claude_code_review → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_code_review
+2026-03-28 04:20:39 | INFO     | github_publisher |   Created zip: open_model_deployer.zip (2153 bytes)
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved open_model_deployer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/open_model_deployer
+2026-03-28 04:20:39 | INFO     | github_publisher |   Created zip: ai_model_comparator.zip (2628 bytes)
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved ai_model_comparator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/ai_model_comparator
+2026-03-28 04:20:39 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-03-28 04:20:39 | INFO     | main |   Published 5 tools:
+2026-03-28 04:20:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_code_sync
+2026-03-28 04:20:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_test_optimizer
+2026-03-28 04:20:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_code_review
+2026-03-28 04:20:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/open_model_deployer
+2026-03-28 04:20:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/ai_model_comparator
+2026-03-28 04:20:39 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-28 04:20:39 | INFO     | main | ✅ Generated tools_index.json with 88 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
