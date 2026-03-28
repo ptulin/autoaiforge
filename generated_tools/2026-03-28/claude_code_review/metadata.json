@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_code_review",
+  "display_name": "Claude Code Review Assistant",
+  "description": "A CLI tool that performs automated code reviews by leveraging Claude AI's coding capabilities. It provides detailed feedback on potential bugs, style issues, and optimizations, helping developers improve their code quality.",
+  "topic": "Claude AI Code Updates",
+  "date": "2026-03-28",
+  "generated": "2026-03-28T04:15:56.220612+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-28/claude_code_review",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-28/claude_code_review/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-28/claude_code_review/claude_code_review.zip"
+}
