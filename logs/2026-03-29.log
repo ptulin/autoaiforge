@@ -1,0 +1,337 @@
+2026-03-29 04:35:53 | INFO     | main | ============================================================
+2026-03-29 04:35:53 | INFO     | main | AutoAIForge starting run: 2026-03-29T04:35:53.416725+00:00
+2026-03-29 04:35:53 | INFO     | main | ============================================================
+2026-03-29 04:35:53 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-29 04:35:53 | INFO     | youtube_scraper | YouTube client ready
+2026-03-29 04:35:54 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-29 04:35:54 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-29 04:35:54 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-29 04:35:55 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-29 04:35:55 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-29 04:35:55 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 45 results (quota used: 600)
+2026-03-29 04:35:56 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-29 04:35:56 | INFO     | youtube_scraper | YouTube 'AI automation': 10 results (quota used: 800)
+2026-03-29 04:35:56 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-29 04:35:56 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-29 04:35:57 | INFO     | youtube_scraper | YouTube 'open source LLM': 40 results (quota used: 1100)
+2026-03-29 04:35:57 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-03-29 04:35:57 | INFO     | youtube_scraper | YouTube 'vector database AI': 34 results (quota used: 1300)
+2026-03-29 04:35:58 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-29 04:35:58 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-29 04:35:58 | INFO     | youtube_scraper | YouTube 'AI safety news': 22 results (quota used: 1600)
+2026-03-29 04:35:59 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-03-29 04:35:59 | INFO     | youtube_scraper | YouTube 'local LLM': 45 results (quota used: 1800)
+2026-03-29 04:35:59 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-29 04:35:59 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-29 04:35:59 | INFO     | youtube_scraper | YouTube total: 796 items, quota used: 2000
+2026-03-29 04:35:59 | INFO     | main |   YouTube: 762 items
+2026-03-29 04:35:59 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-29 04:36:04 | INFO     | rss_scraper | HackerNews: 158 items
+2026-03-29 04:36:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-29 04:36:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-29 04:36:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-29 04:36:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-29 04:36:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-29 04:36:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-29 04:36:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-29 04:36:12 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-29 04:36:12 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-29 04:36:29 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-29 04:36:30 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-29 04:36:31 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-29 04:36:32 | INFO     | rss_scraper | ArXiv: 0 items
+2026-03-29 04:36:36 | INFO     | rss_scraper | Dev.to: 196 items
+2026-03-29 04:36:37 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-29 04:36:37 | INFO     | rss_scraper | Free sources total: 404 unique items
+2026-03-29 04:36:37 | INFO     | main |   RSS/API sources: 404 items
+2026-03-29 04:36:37 | INFO     | main |   Total scraped: 1166 items
+2026-03-29 04:36:37 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-29 04:36:37 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-29 04:36:37 | INFO     | db_manager | Purged 0 old news items
+2026-03-29 04:36:37 | INFO     | db_manager | Inserted 877/1166 news items
+2026-03-29 04:36:37 | INFO     | main |   SQLite: 877 new items (total: 29928)
+2026-03-29 04:36:42 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-29 04:36:43 | INFO     | vector_store | VectorStore ready
+2026-03-29 04:37:10 | INFO     | vector_store | Indexed 1890 items into vector store
+2026-03-29 04:37:10 | INFO     | main |   Vector store: 1890 items indexed
+2026-03-29 04:37:10 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-29 04:37:10 | INFO     | topic_analyzer | Analyzing 1890 items for top 10 topics …
+2026-03-29 04:37:17 | DEBUG    | llm_client | LLM response from github_models (3733 chars)
+2026-03-29 04:37:17 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-29 04:37:17 | INFO     | main |   Found 10 topics:
+2026-03-29 04:37:17 | INFO     | main |      1. [10/10] Claude AI Enhancements
+2026-03-29 04:37:17 | INFO     | main |      2. [10/10] AI Ethics and Safety
+2026-03-29 04:37:17 | INFO     | main |      3. [9/10] Agentic AI Revolution
+2026-03-29 04:37:17 | INFO     | main |      4. [9/10] AI Model Leaks
+2026-03-29 04:37:17 | INFO     | main |      5. [8/10] AI-Powered Cybersecurity
+2026-03-29 04:37:17 | INFO     | main |      6. [8/10] AI in Content Automation
+2026-03-29 04:37:17 | INFO     | main |      7. [8/10] AI in Real-Time Voice Processing
+2026-03-29 04:37:17 | INFO     | main |      8. [8/10] AI in Gaming
+2026-03-29 04:37:17 | INFO     | main |      9. [7/10] AI in Browser Extensions
+2026-03-29 04:37:17 | INFO     | main |     10. [7/10] AI for Educational Platforms
+2026-03-29 04:37:17 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-29 04:37:17 | INFO     | main |   Existing collection: 88 tools across 49 topics
+2026-03-29 04:37:17 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-29 04:37:23 | DEBUG    | llm_client | LLM response from github_models (3373 chars)
+2026-03-29 04:37:23 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Enhancements
+2026-03-29 04:37:28 | DEBUG    | llm_client | LLM response from github_models (2495 chars)
+2026-03-29 04:37:28 | INFO     | idea_generator | Generated 2 ideas for topic: AI Ethics and Safety
+2026-03-29 04:37:28 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-29 04:37:28 | INFO     | main |   Generated 5 tool ideas:
+2026-03-29 04:37:28 | INFO     | main |     • claude_slack_workflow_bot: A CLI tool to automate the creation of Slack workflows integrated with Claude AI
+2026-03-29 04:37:28 | INFO     | main |     • claude_memory_importer: A utility to batch-upload custom datasets or memory snippets into Claude AI for 
+2026-03-29 04:37:28 | INFO     | main |     • claude_canva_captioner: A Python script that integrates Claude AI with the Canva API to automatically ge
+2026-03-29 04:37:28 | INFO     | main |     • bias_audit_tool: This tool helps AI developers assess potential bias in their machine learning mo
+2026-03-29 04:37:28 | INFO     | main |     • ai_risk_assessor: AI Risk Assessor evaluates machine learning models for potential safety risks, i
+2026-03-29 04:37:28 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-29 04:37:28 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-29 04:37:37 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-29 04:37:37 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-29 04:37:37 | INFO     | tool_builder | Building tool: claude_slack_workflow_bot …
+2026-03-29 04:37:47 | DEBUG    | llm_client | LLM response from github_models (6451 chars)
+2026-03-29 04:37:47 | DEBUG    | test_runner | Installing: ['slack_sdk==3.21.3', 'anthropic==0.2.7']
+2026-03-29 04:37:52 | WARNING  | test_runner | Tests FAILED for claude_slack_workflow_bot:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_slack_workflow_bot.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_slack_workflow_bot/test_claude_slack_workflow_bot.py'.
+E   ImportError: cannot import name 'Anthropic' from 'anthropic' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/anthropic/__init__.py)
+ERROR test_claude_slack_workflow_bot.py
+2026-03-29 04:37:52 | WARNING  | tool_builder | ⚠️  claude_slack_workflow_bot tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_claude_slack_workflow_bot.py ______________
+ImportError while importing test modul
+2026-03-29 04:38:01 | DEBUG    | llm_client | LLM response from github_models (6507 chars)
+2026-03-29 04:38:01 | DEBUG    | test_runner | Installing: ['slack_sdk', 'pytest']
+2026-03-29 04:38:02 | INFO     | test_runner | Tests PASSED for claude_slack_workflow_bot
+2026-03-29 04:38:02 | INFO     | tool_builder | ✅ claude_slack_workflow_bot passed tests on loop 2
+2026-03-29 04:38:02 | INFO     | tool_builder | Building tool: claude_memory_importer …
+2026-03-29 04:38:02 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-29 04:39:12 | DEBUG    | llm_client | LLM response from github_models (6801 chars)
+2026-03-29 04:39:12 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'anthropic==0.3.0']
+2026-03-29 04:39:19 | WARNING  | test_runner | Tests FAILED for claude_memory_importer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_memory_importer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_memory_importer/test_claude_memory_importer.py'.
+    from anthropic import Anthropic, AnthropicError
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_memory_importer.py
+2026-03-29 04:39:19 | WARNING  | tool_builder | ⚠️  claude_memory_importer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_memory_importer.py ________________
+ImportError while importing test modul
+2026-03-29 04:39:27 | DEBUG    | llm_client | LLM response from github_models (6778 chars)
+2026-03-29 04:39:27 | DEBUG    | test_runner | Installing: ['pandas']
+2026-03-29 04:39:28 | WARNING  | test_runner | Tests FAILED for claude_memory_importer:
+test_claude_memory_importer.py::test_upload_memory_snippets FAILED       [100%]
+E   NameError: name 'os' is not defined
+FAILED test_claude_memory_importer.py::test_upload_memory_snippets - NameError: name 'os' is not defined
+2026-03-29 04:39:28 | WARNING  | tool_builder | ⚠️  claude_memory_importer tests failed (loop 2/5) — test_claude_memory_importer.py::test_upload_memory_snippets FAILED       [100%]
+E   NameError: name 'os' is not defined
+FAILED test_claude_memory_importer.py::test_upload_memory_snippets - NameError: 
+2026-03-29 04:39:35 | DEBUG    | llm_client | LLM response from github_models (6859 chars)
+2026-03-29 04:39:35 | DEBUG    | test_runner | Installing: ['pandas']
+2026-03-29 04:39:36 | INFO     | test_runner | Tests PASSED for claude_memory_importer
+2026-03-29 04:39:36 | INFO     | tool_builder | ✅ claude_memory_importer passed tests on loop 3
+2026-03-29 04:39:36 | INFO     | tool_builder | Building tool: claude_canva_captioner …
+2026-03-29 04:39:46 | DEBUG    | llm_client | LLM response from github_models (6084 chars)
+2026-03-29 04:39:46 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'anthropic==0.3.0']
+2026-03-29 04:39:47 | WARNING  | test_runner | Tests FAILED for claude_canva_captioner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_canva_captioner/test_claude_canva_captioner.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_canva_captioner.py
+2026-03-29 04:39:47 | WARNING  | tool_builder | ⚠️  claude_canva_captioner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test modul
+2026-03-29 04:39:53 | DEBUG    | llm_client | LLM response from github_models (5774 chars)
+2026-03-29 04:39:53 | DEBUG    | test_runner | Installing: ['requests', 'anthropic', 'pytest']
+2026-03-29 04:39:54 | WARNING  | test_runner | Tests FAILED for claude_canva_captioner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_canva_captioner/test_claude_canva_captioner.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_canva_captioner.py
+2026-03-29 04:39:54 | WARNING  | tool_builder | ⚠️  claude_canva_captioner tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test modul
+2026-03-29 04:39:59 | DEBUG    | llm_client | LLM response from github_models (5663 chars)
+2026-03-29 04:39:59 | DEBUG    | test_runner | Installing: ['anthropic', 'pytest', 'requests']
+2026-03-29 04:40:00 | WARNING  | test_runner | Tests FAILED for claude_canva_captioner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_canva_captioner/test_claude_canva_captioner.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_canva_captioner.py
+2026-03-29 04:40:00 | WARNING  | tool_builder | ⚠️  claude_canva_captioner tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test modul
+2026-03-29 04:40:06 | DEBUG    | llm_client | LLM response from github_models (5262 chars)
+2026-03-29 04:40:06 | DEBUG    | test_runner | Installing: ['requests', 'anthropic']
+2026-03-29 04:40:07 | WARNING  | test_runner | Tests FAILED for claude_canva_captioner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_canva_captioner/test_claude_canva_captioner.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_canva_captioner.py
+2026-03-29 04:40:07 | WARNING  | tool_builder | ⚠️  claude_canva_captioner tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test modul
+2026-03-29 04:40:12 | DEBUG    | llm_client | LLM response from github_models (5762 chars)
+2026-03-29 04:40:12 | DEBUG    | test_runner | Installing: ['requests', 'anthropic']
+2026-03-29 04:40:13 | WARNING  | test_runner | Tests FAILED for claude_canva_captioner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_canva_captioner/test_claude_canva_captioner.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_canva_captioner.py
+2026-03-29 04:40:13 | WARNING  | tool_builder | ⚠️  claude_canva_captioner tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_canva_captioner.py ________________
+ImportError while importing test modul
+2026-03-29 04:40:13 | ERROR    | tool_builder | ❌ claude_canva_captioner failed after 5 loops
+2026-03-29 04:40:13 | INFO     | tool_builder | Building tool: bias_audit_tool …
+2026-03-29 04:40:22 | DEBUG    | llm_client | LLM response from github_models (7483 chars)
+2026-03-29 04:40:22 | DEBUG    | test_runner | Installing: ['numpy==1.21.2', 'pandas==1.3.3', 'matplotlib==3.4.3']
+2026-03-29 04:40:23 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following yanked versions: 2.4.0
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=
+2026-03-29 04:40:24 | WARNING  | test_runner | Tests FAILED for bias_audit_tool:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_bias_audit_tool.py ___________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/bias_audit_tool/test_bias_audit_tool.py'.
+E   ModuleNotFoundError: No module named 'matplotlib'
+ERROR test_bias_audit_tool.py
+2026-03-29 04:40:24 | WARNING  | tool_builder | ⚠️  bias_audit_tool tests failed (loop 1/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_bias_audit_tool.py ___________________
+ImportError while importing test modul
+2026-03-29 04:40:33 | DEBUG    | llm_client | LLM response from github_models (7489 chars)
+2026-03-29 04:40:33 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-29 04:40:39 | WARNING  | test_runner | Tests FAILED for bias_audit_tool:
+test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+test_bias_audit_tool.py::test_generate_report FAILED                     [100%]
+    raise FileNotFoundError(f"Data file not found: {data_file}")
+E   FileNotFoundError: Data file not found: data.csv
+    assert os.path.exists(report_file)
+E   NameError: name 'os' is not defined
+FAILED test_bias_audit_tool.py::test_load_data - FileNotFoundError: Data file not found: data.csv
+FAILED test_bias_audit_tool.py::test_generate_report - NameError: name 'os' is not defined
+2026-03-29 04:40:39 | WARNING  | tool_builder | ⚠️  bias_audit_tool tests failed (loop 2/5) — test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+test_bias_audit_tool.py::test_generate_report FAILED                     [100%]
+    raise FileNotFoundError(f"Data file 
+2026-03-29 04:40:48 | DEBUG    | llm_client | LLM response from github_models (7637 chars)
+2026-03-29 04:40:48 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-29 04:40:49 | WARNING  | test_runner | Tests FAILED for bias_audit_tool:
+test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED test_bias_audit_tool.py::test_load_data - AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+2026-03-29 04:40:49 | WARNING  | tool_builder | ⚠️  bias_audit_tool tests failed (loop 3/5) — test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED 
+2026-03-29 04:40:59 | DEBUG    | llm_client | LLM response from github_models (8311 chars)
+2026-03-29 04:40:59 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-29 04:41:00 | WARNING  | test_runner | Tests FAILED for bias_audit_tool:
+test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED test_bias_audit_tool.py::test_load_data - AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+2026-03-29 04:41:00 | WARNING  | tool_builder | ⚠️  bias_audit_tool tests failed (loop 4/5) — test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED 
+2026-03-29 04:41:09 | DEBUG    | llm_client | LLM response from github_models (8178 chars)
+2026-03-29 04:41:09 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib']
+2026-03-29 04:41:11 | WARNING  | test_runner | Tests FAILED for bias_audit_tool:
+test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED test_bias_audit_tool.py::test_load_data - AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+2026-03-29 04:41:11 | WARNING  | tool_builder | ⚠️  bias_audit_tool tests failed (loop 5/5) — test_bias_audit_tool.py::test_load_data FAILED                           [ 33%]
+    assert predictions == {"0": 1, "1": 0}
+E   AssertionError: assert {'gender': ['M', 'F']} == {'0': 1, '1': 0}
+FAILED 
+2026-03-29 04:41:11 | ERROR    | tool_builder | ❌ bias_audit_tool failed after 5 loops
+2026-03-29 04:41:11 | INFO     | tool_builder | Building tool: ai_risk_assessor …
+2026-03-29 04:41:22 | DEBUG    | llm_client | LLM response from github_models (9225 chars)
+2026-03-29 04:41:22 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.0', 'adversarial-robustness-toolbox==1.12.2', 'pytest==7.4.0']
+2026-03-29 04:41:23 | WARNING  | test_runner | pip install warning: ERROR: Cannot install adversarial-robustness-toolbox==1.12.2 and scikit-learn==1.3.0 because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+2026-03-29 04:41:24 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_risk_assessor/test_ai_risk_assessor.py'.
+E   ModuleNotFoundError: No module named 'sklearn'
+ERROR test_ai_risk_assessor.py
+2026-03-29 04:41:24 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+ImportError while importing test modul
+2026-03-29 04:41:31 | DEBUG    | llm_client | LLM response from github_models (8322 chars)
+2026-03-29 04:41:31 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'art']
+2026-03-29 04:41:40 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_risk_assessor/test_ai_risk_assessor.py'.
+E   ModuleNotFoundError: No module named 'art.attacks'
+ERROR test_ai_risk_assessor.py
+2026-03-29 04:41:40 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+ImportError while importing test modul
+2026-03-29 04:41:48 | DEBUG    | llm_client | LLM response from github_models (7879 chars)
+2026-03-29 04:41:48 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-03-29 04:41:51 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 0 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 0 times.
+FAILED test_ai_risk_assessor.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 0 times.
+2026-03-29 04:41:51 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 3/5) — test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-29 04:42:02 | DEBUG    | llm_client | LLM response from github_models (8204 chars)
+2026-03-29 04:42:02 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-03-29 04:42:04 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 23 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 23 times.
+E   assert ('}',) == ()
+FAILED test_ai_risk_assessor.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 23 times.
+assert ('}',) == ()
+2026-03-29 04:42:04 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 4/5) — test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-29 04:42:12 | DEBUG    | llm_client | LLM response from github_models (8760 chars)
+2026-03-29 04:42:12 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-03-29 04:42:14 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 23 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 23 times.
+E   assert ('}',) == ()
+FAILED test_ai_risk_assessor.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 23 times.
+assert ('}',) == ()
+2026-03-29 04:42:14 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 5/5) — test_ai_risk_assessor.py::test_generate_report FAILED                    [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-03-29 04:42:14 | ERROR    | tool_builder | ❌ ai_risk_assessor failed after 5 loops
+2026-03-29 04:42:14 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-29 04:42:14 | INFO     | main |   Built 2/5 tools successfully
+2026-03-29 04:42:14 | INFO     | main |     ✅ claude_slack_workflow_bot (loops: 2)
+2026-03-29 04:42:14 | INFO     | main |     ✅ claude_memory_importer (loops: 3)
+2026-03-29 04:42:14 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-29 04:42:14 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-29 04:42:14 | INFO     | github_publisher |   Created zip: claude_slack_workflow_bot.zip (2695 bytes)
+2026-03-29 04:42:14 | INFO     | github_publisher | Saved claude_slack_workflow_bot → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-29/claude_slack_workflow_bot
+2026-03-29 04:42:14 | INFO     | github_publisher |   Created zip: claude_memory_importer.zip (2912 bytes)
+2026-03-29 04:42:14 | INFO     | github_publisher | Saved claude_memory_importer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-29/claude_memory_importer
+2026-03-29 04:42:14 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-29 04:42:14 | INFO     | main |   Published 2 tools:
+2026-03-29 04:42:14 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-29/claude_slack_workflow_bot
+2026-03-29 04:42:14 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-29/claude_memory_importer
+2026-03-29 04:42:14 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-29 04:42:14 | INFO     | main | ✅ Generated tools_index.json with 90 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
