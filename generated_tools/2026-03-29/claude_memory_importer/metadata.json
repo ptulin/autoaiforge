@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_memory_importer",
+  "display_name": "Claude Memory Importer",
+  "description": "A utility to batch-upload custom datasets or memory snippets into Claude AI for personalized interactions. This tool helps developers pre-load domain-specific knowledge or project context to tailor Claude's responses to their exact needs.",
+  "topic": "Claude AI Enhancements",
+  "date": "2026-03-29",
+  "generated": "2026-03-29T04:35:53.416725+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-29/claude_memory_importer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-29/claude_memory_importer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-29/claude_memory_importer/claude_memory_importer.zip"
+}
