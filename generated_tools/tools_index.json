@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-03-29T04:42:14.273158+00:00",
-  "total_tools": 90,
+  "last_updated": "2026-03-30T04:51:20.308682+00:00",
+  "total_tools": 92,
   "tools": [
+    {
+      "tool_name": "ai_stacktrace_explainer",
+      "display_name": "AI Stacktrace Explainer",
+      "description": "A Python automation tool that takes stack traces from error logs and uses AI to generate detailed explanations for the cause of the error, along with suggestions for resolution. Ideal for developers debugging unfamiliar codebases.",
+      "topic": "AI Code Debugging Tools",
+      "date": "2026-03-30",
+      "generated": "2026-03-30T04:43:07.647609+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/ai_stacktrace_explainer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/ai_stacktrace_explainer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/ai_stacktrace_explainer/ai_stacktrace_explainer.zip"
+    },
+    {
+      "tool_name": "error_pattern_analyzer",
+      "display_name": "Error Pattern Analyzer",
+      "description": "A Python library that uses AI models like Claude to analyze historical debugging logs or error traces to identify recurring error patterns and root causes. It helps developers understand systemic issues in their codebases.",
+      "topic": "AI Code Debugging Tools",
+      "date": "2026-03-30",
+      "generated": "2026-03-30T04:43:07.647609+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/error_pattern_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/error_pattern_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/error_pattern_analyzer/error_pattern_analyzer.zip"
+    },
     {
       "tool_name": "claude_memory_importer",
       "display_name": "Claude Memory Importer",

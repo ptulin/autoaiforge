@@ -1,0 +1,13 @@
+{
+  "tool_name": "error_pattern_analyzer",
+  "display_name": "Error Pattern Analyzer",
+  "description": "A Python library that uses AI models like Claude to analyze historical debugging logs or error traces to identify recurring error patterns and root causes. It helps developers understand systemic issues in their codebases.",
+  "topic": "AI Code Debugging Tools",
+  "date": "2026-03-30",
+  "generated": "2026-03-30T04:43:07.647609+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/error_pattern_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/error_pattern_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-30/error_pattern_analyzer/error_pattern_analyzer.zip"
+}
