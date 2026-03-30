@@ -1,0 +1,201 @@
+2026-03-30 04:43:07 | INFO     | main | ============================================================
+2026-03-30 04:43:07 | INFO     | main | AutoAIForge starting run: 2026-03-30T04:43:07.647609+00:00
+2026-03-30 04:43:07 | INFO     | main | ============================================================
+2026-03-30 04:43:07 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-30 04:43:07 | INFO     | youtube_scraper | YouTube client ready
+2026-03-30 04:43:08 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-30 04:43:08 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-30 04:43:09 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-30 04:43:09 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-30 04:43:09 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-30 04:43:10 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-30 04:43:10 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-30 04:43:11 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-03-30 04:43:11 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 25 results (quota used: 900)
+2026-03-30 04:43:11 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-03-30 04:43:11 | INFO     | youtube_scraper | YouTube 'open source LLM': 18 results (quota used: 1100)
+2026-03-30 04:43:12 | INFO     | youtube_scraper | YouTube 'AI agent framework': 38 results (quota used: 1200)
+2026-03-30 04:43:12 | INFO     | youtube_scraper | YouTube 'vector database AI': 25 results (quota used: 1300)
+2026-03-30 04:43:12 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-03-30 04:43:13 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-03-30 04:43:13 | INFO     | youtube_scraper | YouTube 'AI safety news': 46 results (quota used: 1600)
+2026-03-30 04:43:13 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-03-30 04:43:14 | INFO     | youtube_scraper | YouTube 'local LLM': 49 results (quota used: 1800)
+2026-03-30 04:43:14 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-03-30 04:43:14 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-30 04:43:14 | INFO     | youtube_scraper | YouTube total: 801 items, quota used: 2000
+2026-03-30 04:43:14 | INFO     | main |   YouTube: 761 items
+2026-03-30 04:43:14 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-30 04:43:19 | INFO     | rss_scraper | HackerNews: 157 items
+2026-03-30 04:43:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-30 04:43:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-30 04:43:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-30 04:43:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-30 04:43:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-30 04:43:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-30 04:43:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-30 04:43:26 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-30 04:43:27 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-30 04:43:38 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-30 04:43:39 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-30 04:43:41 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-03-30 04:43:42 | INFO     | rss_scraper | ArXiv: 0 items
+2026-03-30 04:43:46 | INFO     | rss_scraper | Dev.to: 203 items
+2026-03-30 04:43:47 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-30 04:43:47 | INFO     | rss_scraper | Free sources total: 410 unique items
+2026-03-30 04:43:47 | INFO     | main |   RSS/API sources: 410 items
+2026-03-30 04:43:47 | INFO     | main |   Total scraped: 1171 items
+2026-03-30 04:43:47 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-30 04:43:47 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-30 04:43:47 | INFO     | db_manager | Purged 553 old news items
+2026-03-30 04:43:47 | INFO     | db_manager | Inserted 899/1171 news items
+2026-03-30 04:43:47 | INFO     | main |   SQLite: 899 new items (total: 30274)
+2026-03-30 04:43:52 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-30 04:43:53 | INFO     | vector_store | VectorStore ready
+2026-03-30 04:44:23 | INFO     | vector_store | Indexed 1776 items into vector store
+2026-03-30 04:44:23 | INFO     | main |   Vector store: 1776 items indexed
+2026-03-30 04:44:23 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-30 04:44:23 | INFO     | topic_analyzer | Analyzing 1776 items for top 10 topics …
+2026-03-30 04:44:30 | DEBUG    | llm_client | LLM response from github_models (3907 chars)
+2026-03-30 04:44:30 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-30 04:44:30 | INFO     | main |   Found 10 topics:
+2026-03-30 04:44:30 | INFO     | main |      1. [9/10] AI Code Debugging Tools
+2026-03-30 04:44:30 | INFO     | main |      2. [9/10] Custom AI Project Frameworks
+2026-03-30 04:44:30 | INFO     | main |      3. [9/10] AI in Predictive Analytics
+2026-03-30 04:44:30 | INFO     | main |      4. [8/10] AI-Generated Content Moderation
+2026-03-30 04:44:30 | INFO     | main |      5. [8/10] Voice Mode for AI Assistants
+2026-03-30 04:44:30 | INFO     | main |      6. [8/10] AI-Powered Content Summarization
+2026-03-30 04:44:30 | INFO     | main |      7. [8/10] AI Integration with Spreadsheets
+2026-03-30 04:44:30 | INFO     | main |      8. [8/10] AI for Code Optimization
+2026-03-30 04:44:30 | INFO     | main |      9. [7/10] Token Usage Analytics
+2026-03-30 04:44:30 | INFO     | main |     10. [7/10] AI-Driven Variable Naming
+2026-03-30 04:44:30 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-30 04:44:30 | INFO     | main |   Existing collection: 90 tools across 50 topics
+2026-03-30 04:44:30 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-30 04:44:34 | DEBUG    | llm_client | LLM response from github_models (3069 chars)
+2026-03-30 04:44:34 | INFO     | idea_generator | Generated 3 ideas for topic: AI Code Debugging Tools
+2026-03-30 04:44:34 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_debugger_cli' — name already in collection
+2026-03-30 04:44:41 | DEBUG    | llm_client | LLM response from github_models (3462 chars)
+2026-03-30 04:44:41 | INFO     | idea_generator | Generated 3 ideas for topic: Custom AI Project Frameworks
+2026-03-30 04:44:41 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-30 04:44:41 | INFO     | main |   Generated 5 tool ideas:
+2026-03-30 04:44:41 | INFO     | main |     • error_pattern_analyzer: A Python library that uses AI models like Claude to analyze historical debugging
+2026-03-30 04:44:41 | INFO     | main |     • ai_stacktrace_explainer: A Python automation tool that takes stack traces from error logs and uses AI to 
+2026-03-30 04:44:41 | INFO     | main |     • workflow_composer: This tool allows developers to design, compose, and execute custom AI workflows 
+2026-03-30 04:44:41 | INFO     | main |     • ai_project_scaffold: This tool generates a boilerplate project structure for custom AI integrations, 
+2026-03-30 04:44:41 | INFO     | main |     • ai_workflow_debugger: This tool aids developers in debugging and optimizing custom AI workflows by sim
+2026-03-30 04:44:41 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-30 04:44:41 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-30 04:44:50 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-30 04:44:50 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-30 04:44:50 | INFO     | tool_builder | Building tool: error_pattern_analyzer …
+2026-03-30 04:44:57 | DEBUG    | llm_client | LLM response from github_models (4898 chars)
+2026-03-30 04:44:57 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pandas==1.5.3', 'pytest==7.4.0']
+2026-03-30 04:45:05 | WARNING  | test_runner | Tests FAILED for error_pattern_analyzer:
+test_error_pattern_analyzer.py::test_analyze_logs_valid_json FAILED      [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_error_pattern_analyzer.py::test_analyze_logs_valid_json - NameError: name 'json' is not defined
+2026-03-30 04:45:05 | WARNING  | tool_builder | ⚠️  error_pattern_analyzer tests failed (loop 1/5) — test_error_pattern_analyzer.py::test_analyze_logs_valid_json FAILED      [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_error_pattern_analyzer.py::test_analyze_logs_valid_json - NameErro
+2026-03-30 04:45:11 | DEBUG    | llm_client | LLM response from github_models (4633 chars)
+2026-03-30 04:45:11 | DEBUG    | test_runner | Installing: ['openai', 'pandas']
+2026-03-30 04:45:12 | WARNING  | test_runner | Tests FAILED for error_pattern_analyzer:
+test_error_pattern_analyzer.py::test_analyze_logs_valid_json FAILED      [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_error_pattern_analyzer.py::test_analyze_logs_valid_json - NameError: name 'json' is not defined
+2026-03-30 04:45:12 | WARNING  | tool_builder | ⚠️  error_pattern_analyzer tests failed (loop 2/5) — test_error_pattern_analyzer.py::test_analyze_logs_valid_json FAILED      [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_error_pattern_analyzer.py::test_analyze_logs_valid_json - NameErro
+2026-03-30 04:45:18 | DEBUG    | llm_client | LLM response from github_models (4777 chars)
+2026-03-30 04:45:18 | DEBUG    | test_runner | Installing: ['openai', 'pandas']
+2026-03-30 04:45:19 | INFO     | test_runner | Tests PASSED for error_pattern_analyzer
+2026-03-30 04:45:19 | INFO     | tool_builder | ✅ error_pattern_analyzer passed tests on loop 3
+2026-03-30 04:45:19 | INFO     | tool_builder | Building tool: ai_stacktrace_explainer …
+2026-03-30 04:45:29 | DEBUG    | llm_client | LLM response from github_models (6539 chars)
+2026-03-30 04:45:29 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pygments==2.16.1', 'pytest==7.4.2']
+2026-03-30 04:45:32 | WARNING  | test_runner | Tests FAILED for ai_stacktrace_explainer:
+test_ai_stacktrace_explainer.py::test_read_stack_trace_success FAILED    [ 66%]
+test_ai_stacktrace_explainer.py::test_explain_stack_trace FAILED         [100%]
+    raise FileNotFoundError(f"The file '{tracefile}' does not exist.")
+E   FileNotFoundError: The file 'mock_file.txt' does not exist.
+    assert explanation == "This is a mock explanation of the stack trace."
+E   AssertionError: assert 'Error while ...s not defined' == 'This is a mo... stack trace.'
+E     + Error while communicating with OpenAI API: name 'openai' is not defined
+FAILED test_ai_stacktrace_explainer.py::test_read_stack_trace_success - FileNotFoundError: The file 'mock_file.txt' does not exist.
+FAILED test_ai_stacktrace_explainer.py::test_explain_stack_trace - AssertionError: assert 'Error while ...s not defined' == 'This is a mo... stack trace.'
+  + Error while communicating with OpenAI API: name 'openai' is not defined
+2026-03-30 04:45:32 | WARNING  | tool_builder | ⚠️  ai_stacktrace_explainer tests failed (loop 1/5) — test_ai_stacktrace_explainer.py::test_read_stack_trace_success FAILED    [ 66%]
+test_ai_stacktrace_explainer.py::test_explain_stack_trace FAILED         [100%]
+    raise FileNotFoundError(f"The file '
+2026-03-30 04:45:32 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-03-30 04:46:40 | DEBUG    | llm_client | LLM response from github_models (6423 chars)
+2026-03-30 04:46:40 | DEBUG    | test_runner | Installing: ['openai', 'pygments']
+2026-03-30 04:46:41 | INFO     | test_runner | Tests PASSED for ai_stacktrace_explainer
+2026-03-30 04:46:41 | INFO     | tool_builder | ✅ ai_stacktrace_explainer passed tests on loop 2
+2026-03-30 04:46:41 | INFO     | tool_builder | Building tool: workflow_composer …
+2026-03-30 04:46:49 | DEBUG    | llm_client | LLM response from github_models (6473 chars)
+2026-03-30 04:46:49 | DEBUG    | test_runner | Installing: ['PyYAML==6.0', 'requests==2.31.0', 'click==8.1.3']
+2026-03-30 04:47:58 | WARNING  | test_runner | Tests FAILED for workflow_composer:
+test_workflow_composer.py::test_load_workflow_config FAILED              [ 33%]
+FAILED test_workflow_composer.py::test_load_workflow_config - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-30 04:47:58 | WARNING  | tool_builder | ⚠️  workflow_composer tests failed (loop 1/5) — test_workflow_composer.py::test_load_workflow_config FAILED              [ 33%]
+FAILED test_workflow_composer.py::test_load_workflow_config - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-30 04:48:04 | DEBUG    | llm_client | LLM response from github_models (6931 chars)
+2026-03-30 04:48:04 | DEBUG    | test_runner | Installing: ['PyYAML', 'requests', 'click', 'pytest']
+2026-03-30 04:49:15 | ERROR    | test_runner | Tests timed out after 60s
+2026-03-30 04:49:15 | WARNING  | tool_builder | ⚠️  workflow_composer tests failed (loop 2/5) — Tests timed out after 60s
+2026-03-30 04:49:22 | DEBUG    | llm_client | LLM response from github_models (7107 chars)
+2026-03-30 04:49:22 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests']
+2026-03-30 04:50:31 | WARNING  | test_runner | Tests FAILED for workflow_composer:
+test_workflow_composer.py::test_load_workflow_config FAILED              [ 25%]
+FAILED test_workflow_composer.py::test_load_workflow_config - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-30 04:50:31 | WARNING  | tool_builder | ⚠️  workflow_composer tests failed (loop 3/5) — test_workflow_composer.py::test_load_workflow_config FAILED              [ 25%]
+FAILED test_workflow_composer.py::test_load_workflow_config - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-03-30 04:50:37 | DEBUG    | llm_client | LLM response from github_models (7092 chars)
+2026-03-30 04:50:37 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests', 'pytest']
+2026-03-30 04:50:38 | WARNING  | test_runner | Tests FAILED for workflow_composer:
+test_workflow_composer.py::test_execute_workflow_with_retry FAILED       [100%]
+    mock_response.raise_for_status.side_effect = [requests.exceptions.RequestException("API error"), None]
+E   NameError: name 'requests' is not defined
+FAILED test_workflow_composer.py::test_execute_workflow_with_retry - NameError: name 'requests' is not defined
+2026-03-30 04:50:38 | WARNING  | tool_builder | ⚠️  workflow_composer tests failed (loop 4/5) — test_workflow_composer.py::test_execute_workflow_with_retry FAILED       [100%]
+    mock_response.raise_for_status.side_effect = [requests.exceptions.RequestException("API error"), None]
+E   NameError
+2026-03-30 04:50:45 | DEBUG    | llm_client | LLM response from github_models (7487 chars)
+2026-03-30 04:50:45 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests', 'pytest']
+2026-03-30 04:50:45 | WARNING  | test_runner | Tests FAILED for workflow_composer:
+test_workflow_composer.py::test_execute_workflow_with_retry FAILED       [100%]
+    mock_response.raise_for_status.side_effect = [requests.exceptions.RequestException("API error"), None]
+E   NameError: name 'requests' is not defined
+FAILED test_workflow_composer.py::test_execute_workflow_with_retry - NameError: name 'requests' is not defined
+2026-03-30 04:50:45 | WARNING  | tool_builder | ⚠️  workflow_composer tests failed (loop 5/5) — test_workflow_composer.py::test_execute_workflow_with_retry FAILED       [100%]
+    mock_response.raise_for_status.side_effect = [requests.exceptions.RequestException("API error"), None]
+E   NameError
+2026-03-30 04:50:45 | ERROR    | tool_builder | ❌ workflow_composer failed after 5 loops
+2026-03-30 04:50:45 | INFO     | tool_builder | Building tool: ai_project_scaffold …
+2026-03-30 04:51:06 | DEBUG    | llm_client | LLM response from github_models (12046 chars)
+2026-03-30 04:51:06 | ERROR    | tool_builder | Initial generation failed for ai_project_scaffold: LLM returned non-JSON: {
+  "code": "import os\nimport click\nfrom jinja2 import Template\n\nTEMPLATE_FILES = {\n    \"main.py\": \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"
+Unterminated string starting at: line 2 column 11 (char 12)
+2026-03-30 04:51:06 | INFO     | tool_builder | Building tool: ai_workflow_debugger …
+2026-03-30 04:51:20 | DEBUG    | llm_client | LLM response from github_models (8150 chars)
+2026-03-30 04:51:20 | ERROR    | tool_builder | Initial generation failed for ai_workflow_debugger: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport time\nfrom rich.console import Console\nfrom rich.table import Table\nfrom rich.traceback import install\n\ninstall()\n\nconsole = Console()\n\ndef load_workflow(file_path):\n    \"\"\"Load the workflow configuration from a JSON or YAML file.\"\"\"\n
+Expecting property name enclosed in double quotes: line 9 column 1 (char 8137)
+2026-03-30 04:51:20 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-03-30 04:51:20 | INFO     | main |   Built 2/5 tools successfully
+2026-03-30 04:51:20 | INFO     | main |     ✅ error_pattern_analyzer (loops: 3)
+2026-03-30 04:51:20 | INFO     | main |     ✅ ai_stacktrace_explainer (loops: 2)
+2026-03-30 04:51:20 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-30 04:51:20 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-30 04:51:20 | INFO     | github_publisher |   Created zip: error_pattern_analyzer.zip (2451 bytes)
+2026-03-30 04:51:20 | INFO     | github_publisher | Saved error_pattern_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/error_pattern_analyzer
+2026-03-30 04:51:20 | INFO     | github_publisher |   Created zip: ai_stacktrace_explainer.zip (2840 bytes)
+2026-03-30 04:51:20 | INFO     | github_publisher | Saved ai_stacktrace_explainer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/ai_stacktrace_explainer
+2026-03-30 04:51:20 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-03-30 04:51:20 | INFO     | main |   Published 2 tools:
+2026-03-30 04:51:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/error_pattern_analyzer
+2026-03-30 04:51:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-30/ai_stacktrace_explainer
+2026-03-30 04:51:20 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-30 04:51:20 | INFO     | main | ✅ Generated tools_index.json with 92 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
