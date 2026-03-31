@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-30T04:51:20.308682+00:00",
-  "total_tools": 92,
+  "last_updated": "2026-03-31T04:38:55.438521+00:00",
+  "total_tools": 95,
   "tools": [
+    {
+      "tool_name": "ai_code_optimizer",
+      "display_name": "AI Code Optimizer",
+      "description": "A CLI tool that uses GPT and Claude to analyze Python scripts and suggest optimizations for performance, readability, or maintainability. Developers working with AI pipelines or large codebases can use this to automate code reviews.",
+      "topic": "AI-Powered Code Tools",
+      "date": "2026-03-31",
+      "generated": "2026-03-31T04:34:06.852767+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/ai_code_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/ai_code_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/ai_code_optimizer/ai_code_optimizer.zip"
+    },
+    {
+      "tool_name": "gpt_claude_debugger",
+      "display_name": "GPT-Claude Debug Assistant",
+      "description": "This tool integrates GPT and Claude models to act as an AI debugging assistant. It analyzes Python error stacks and suggests fixes, including code snippets, explanations, and possible solutions. Useful for developers debugging complex AI workflows or unfamiliar libraries.",
+      "topic": "AI-Powered Code Tools",
+      "date": "2026-03-31",
+      "generated": "2026-03-31T04:34:06.852767+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/gpt_claude_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/gpt_claude_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/gpt_claude_debugger/gpt_claude_debugger.zip"
+    },
+    {
+      "tool_name": "image_misinformation_checker",
+      "display_name": "Image Misinformation Checker",
+      "description": "This Python library helps developers determine if an image has been AI-generated or manipulated. It uses image recognition models to detect GAN-generated artifacts and verifies image metadata for authenticity.",
+      "topic": "AI Misinformation Detection",
+      "date": "2026-03-31",
+      "generated": "2026-03-31T04:34:06.852767+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/image_misinformation_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/image_misinformation_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/image_misinformation_checker/image_misinformation_checker.zip"
+    },
     {
       "tool_name": "ai_stacktrace_explainer",
       "display_name": "AI Stacktrace Explainer",

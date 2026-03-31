@@ -1,0 +1,13 @@
+{
+  "tool_name": "image_misinformation_checker",
+  "display_name": "Image Misinformation Checker",
+  "description": "This Python library helps developers determine if an image has been AI-generated or manipulated. It uses image recognition models to detect GAN-generated artifacts and verifies image metadata for authenticity.",
+  "topic": "AI Misinformation Detection",
+  "date": "2026-03-31",
+  "generated": "2026-03-31T04:34:06.852767+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/image_misinformation_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/image_misinformation_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/image_misinformation_checker/image_misinformation_checker.zip"
+}

@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_optimizer",
+  "display_name": "AI Code Optimizer",
+  "description": "A CLI tool that uses GPT and Claude to analyze Python scripts and suggest optimizations for performance, readability, or maintainability. Developers working with AI pipelines or large codebases can use this to automate code reviews.",
+  "topic": "AI-Powered Code Tools",
+  "date": "2026-03-31",
+  "generated": "2026-03-31T04:34:06.852767+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/ai_code_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/ai_code_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-31/ai_code_optimizer/ai_code_optimizer.zip"
+}

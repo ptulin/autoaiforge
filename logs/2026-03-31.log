@@ -1,0 +1,308 @@
+2026-03-31 04:34:06 | INFO     | main | ============================================================
+2026-03-31 04:34:06 | INFO     | main | AutoAIForge starting run: 2026-03-31T04:34:06.852767+00:00
+2026-03-31 04:34:06 | INFO     | main | ============================================================
+2026-03-31 04:34:06 | INFO     | main | [STEP 1/6] News Scraping
+2026-03-31 04:34:07 | INFO     | youtube_scraper | YouTube client ready
+2026-03-31 04:34:07 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-03-31 04:34:07 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-03-31 04:34:08 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-03-31 04:34:08 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-03-31 04:34:08 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-03-31 04:34:09 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-03-31 04:34:09 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-03-31 04:34:09 | INFO     | youtube_scraper | YouTube 'AI automation': 9 results (quota used: 800)
+2026-03-31 04:34:10 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-03-31 04:34:10 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 25 results (quota used: 1000)
+2026-03-31 04:34:10 | INFO     | youtube_scraper | YouTube 'open source LLM': 25 results (quota used: 1100)
+2026-03-31 04:34:11 | INFO     | youtube_scraper | YouTube 'AI agent framework': 25 results (quota used: 1200)
+2026-03-31 04:34:11 | INFO     | youtube_scraper | YouTube 'vector database AI': 30 results (quota used: 1300)
+2026-03-31 04:34:11 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 25 results (quota used: 1400)
+2026-03-31 04:34:11 | INFO     | youtube_scraper | YouTube 'multimodal AI': 33 results (quota used: 1500)
+2026-03-31 04:34:12 | INFO     | youtube_scraper | YouTube 'AI safety news': 43 results (quota used: 1600)
+2026-03-31 04:34:12 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-03-31 04:34:12 | INFO     | youtube_scraper | YouTube 'local LLM': 44 results (quota used: 1800)
+2026-03-31 04:34:13 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 25 results (quota used: 1900)
+2026-03-31 04:34:13 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-03-31 04:34:13 | INFO     | youtube_scraper | YouTube total: 685 items, quota used: 2000
+2026-03-31 04:34:13 | INFO     | main |   YouTube: 654 items
+2026-03-31 04:34:13 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-03-31 04:34:18 | INFO     | rss_scraper | HackerNews: 168 items
+2026-03-31 04:34:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-03-31 04:34:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-03-31 04:34:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-03-31 04:34:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-03-31 04:34:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-03-31 04:34:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-03-31 04:34:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-03-31 04:34:25 | INFO     | rss_scraper | Reddit: 0 items
+2026-03-31 04:34:31 | INFO     | rss_scraper | ArXiv: 103 items
+2026-03-31 04:34:35 | INFO     | rss_scraper | Dev.to: 203 items
+2026-03-31 04:34:36 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-03-31 04:34:36 | INFO     | rss_scraper | Free sources total: 524 unique items
+2026-03-31 04:34:36 | INFO     | main |   RSS/API sources: 524 items
+2026-03-31 04:34:36 | INFO     | main |   Total scraped: 1178 items
+2026-03-31 04:34:36 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-03-31 04:34:37 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-03-31 04:34:37 | INFO     | db_manager | Purged 1740 old news items
+2026-03-31 04:34:37 | INFO     | db_manager | Inserted 950/1178 news items
+2026-03-31 04:34:37 | INFO     | main |   SQLite: 950 new items (total: 29484)
+2026-03-31 04:34:42 | INFO     | vector_store | Loading sentence-transformer model …
+2026-03-31 04:34:43 | INFO     | vector_store | VectorStore ready
+2026-03-31 04:35:13 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-03-31 04:35:13 | INFO     | main |   Vector store: 2000 items indexed
+2026-03-31 04:35:13 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-03-31 04:35:13 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-03-31 04:35:19 | DEBUG    | llm_client | LLM response from github_models (3697 chars)
+2026-03-31 04:35:19 | INFO     | topic_analyzer | Identified 10 topics
+2026-03-31 04:35:19 | INFO     | main |   Found 10 topics:
+2026-03-31 04:35:19 | INFO     | main |      1. [9/10] AI Misinformation Detection
+2026-03-31 04:35:19 | INFO     | main |      2. [9/10] AI-Powered Code Tools
+2026-03-31 04:35:19 | INFO     | main |      3. [9/10] AI-Powered Fake Video Detection
+2026-03-31 04:35:19 | INFO     | main |      4. [8/10] Claude AI App Integration
+2026-03-31 04:35:19 | INFO     | main |      5. [8/10] Multimodal AI Models
+2026-03-31 04:35:19 | INFO     | main |      6. [8/10] AI in Excel Automation
+2026-03-31 04:35:19 | INFO     | main |      7. [8/10] AI Data Center Expansion
+2026-03-31 04:35:19 | INFO     | main |      8. [8/10] AI OS Development
+2026-03-31 04:35:19 | INFO     | main |      9. [7/10] AI-Powered Lead Generation
+2026-03-31 04:35:19 | INFO     | main |     10. [7/10] Agentic AI Marketing
+2026-03-31 04:35:19 | INFO     | main | [STEP 4/6] Idea Generation
+2026-03-31 04:35:19 | INFO     | main |   Existing collection: 92 tools across 51 topics
+2026-03-31 04:35:19 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-03-31 04:35:25 | DEBUG    | llm_client | LLM response from github_models (3348 chars)
+2026-03-31 04:35:25 | INFO     | idea_generator | Generated 3 ideas for topic: AI Misinformation Detection
+2026-03-31 04:35:30 | DEBUG    | llm_client | LLM response from github_models (2213 chars)
+2026-03-31 04:35:30 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Code Tools
+2026-03-31 04:35:30 | INFO     | idea_generator | Total ideas generated: 5
+2026-03-31 04:35:30 | INFO     | main |   Generated 5 tool ideas:
+2026-03-31 04:35:30 | INFO     | main |     • ai_fake_news_detector: This CLI tool analyzes news articles and determines the likelihood of them being
+2026-03-31 04:35:30 | INFO     | main |     • image_misinformation_checker: This Python library helps developers determine if an image has been AI-generated
+2026-03-31 04:35:30 | INFO     | main |     • event_misinformation_tracker: This CLI tool monitors social media posts related to a major event, flags potent
+2026-03-31 04:35:30 | INFO     | main |     • gpt_claude_debugger: This tool integrates GPT and Claude models to act as an AI debugging assistant. 
+2026-03-31 04:35:30 | INFO     | main |     • ai_code_optimizer: A CLI tool that uses GPT and Claude to analyze Python scripts and suggest optimi
+2026-03-31 04:35:30 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-03-31 04:35:30 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-03-31 04:35:40 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-03-31 04:35:40 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-03-31 04:35:40 | INFO     | tool_builder | Building tool: ai_fake_news_detector …
+2026-03-31 04:35:51 | DEBUG    | llm_client | LLM response from github_models (6519 chars)
+2026-03-31 04:35:51 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'nltk==3.8.1', 'openai==0.27.8', 'requests==2.31.0']
+2026-03-31 04:36:03 | WARNING  | test_runner | Tests FAILED for ai_fake_news_detector:
+test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_empty_input FAILED                   [ 66%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_fake_news_detector.py::test_analyze_article - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_empty_input - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_url_input - LookupError: 
+2026-03-31 04:36:03 | WARNING  | tool_builder | ⚠️  ai_fake_news_detector tests failed (loop 1/5) — test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_empty_input FAILED                   [ 66%]
+test_ai_fake_news_detector.py::test_url_
+2026-03-31 04:36:10 | DEBUG    | llm_client | LLM response from github_models (6073 chars)
+2026-03-31 04:36:10 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'openai', 'pytest']
+2026-03-31 04:36:12 | WARNING  | test_runner | Tests FAILED for ai_fake_news_detector:
+test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_fake_news_detector.py::test_analyze_article - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_url_input - LookupError: 
+2026-03-31 04:36:12 | WARNING  | tool_builder | ⚠️  ai_fake_news_detector tests failed (loop 2/5) — test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found
+2026-03-31 04:36:22 | DEBUG    | llm_client | LLM response from github_models (6094 chars)
+2026-03-31 04:36:22 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'openai', 'pytest']
+2026-03-31 04:36:24 | WARNING  | test_runner | Tests FAILED for ai_fake_news_detector:
+test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_fake_news_detector.py::test_analyze_article - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_url_input - LookupError: 
+2026-03-31 04:36:24 | WARNING  | tool_builder | ⚠️  ai_fake_news_detector tests failed (loop 3/5) — test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found
+2026-03-31 04:36:30 | DEBUG    | llm_client | LLM response from github_models (5775 chars)
+2026-03-31 04:36:30 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'requests']
+2026-03-31 04:36:31 | WARNING  | test_runner | Tests FAILED for ai_fake_news_detector:
+test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_fake_news_detector.py::test_analyze_article - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_url_input - LookupError: 
+2026-03-31 04:36:31 | WARNING  | tool_builder | ⚠️  ai_fake_news_detector tests failed (loop 4/5) — test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found
+2026-03-31 04:36:38 | DEBUG    | llm_client | LLM response from github_models (5550 chars)
+2026-03-31 04:36:38 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'pytest']
+2026-03-31 04:36:40 | WARNING  | test_runner | Tests FAILED for ai_fake_news_detector:
+test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_fake_news_detector.py::test_analyze_article - LookupError: 
+FAILED test_ai_fake_news_detector.py::test_url_input - LookupError: 
+2026-03-31 04:36:40 | WARNING  | tool_builder | ⚠️  ai_fake_news_detector tests failed (loop 5/5) — test_ai_fake_news_detector.py::test_analyze_article FAILED               [ 33%]
+test_ai_fake_news_detector.py::test_url_input FAILED                     [100%]
+    raise LookupError(resource_not_found
+2026-03-31 04:36:40 | ERROR    | tool_builder | ❌ ai_fake_news_detector failed after 5 loops
+2026-03-31 04:36:40 | INFO     | tool_builder | Building tool: image_misinformation_checker …
+2026-03-31 04:36:50 | DEBUG    | llm_client | LLM response from github_models (6851 chars)
+2026-03-31 04:36:50 | DEBUG    | test_runner | Installing: ['torchvision==0.15.2', 'opencv-python==4.8.0.76', 'pillow==10.0.1', 'pyexif==0.3.0']
+2026-03-31 04:36:51 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement pyexif==0.3.0 (from versions: 0.2, 0.2.1, 0.5.0, 0.9.0, 1.0.0)
+ERROR: No matching distribution found for pyexif==0.3.0
+
+2026-03-31 04:36:51 | WARNING  | test_runner | Tests FAILED for image_misinformation_checker:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_image_misinformation_checker.py _____________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/image_misinformation_checker/test_image_misinformation_checker.py'.
+E   ModuleNotFoundError: No module named 'cv2'
+ERROR test_image_misinformation_checker.py
+2026-03-31 04:36:51 | WARNING  | tool_builder | ⚠️  image_misinformation_checker tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_image_misinformation_checker.py _____________
+ImportError while importing test modul
+2026-03-31 04:37:00 | DEBUG    | llm_client | LLM response from github_models (7105 chars)
+2026-03-31 04:37:00 | DEBUG    | test_runner | Installing: ['pillow', 'pytest']
+2026-03-31 04:37:01 | WARNING  | test_runner | Tests FAILED for image_misinformation_checker:
+test_image_misinformation_checker.py::test_check_image_invalid_file FAILED [ 33%]
+test_image_misinformation_checker.py::test_check_image_valid FAILED      [ 50%]
+    assert result == {"error": "Invalid image file"}
+E   AssertionError: assert {'error': 'File not found'} == {'error': 'In...d image file'}
+    assert result == {
+E   AssertionError: assert {'error': 'File not found'} == {'file_path':...ncies': False}
+FAILED test_image_misinformation_checker.py::test_check_image_invalid_file - AssertionError: assert {'error': 'File not found'} == {'error': 'In...d image file'}
+FAILED test_image_misinformation_checker.py::test_check_image_valid - AssertionError: assert {'error': 'File not found'} == {'file_path':...ncies': False}
+2026-03-31 04:37:01 | WARNING  | tool_builder | ⚠️  image_misinformation_checker tests failed (loop 2/5) — test_image_misinformation_checker.py::test_check_image_invalid_file FAILED [ 33%]
+test_image_misinformation_checker.py::test_check_image_valid FAILED      [ 50%]
+    assert result == {"error": "Invali
+2026-03-31 04:37:08 | DEBUG    | llm_client | LLM response from github_models (6463 chars)
+2026-03-31 04:37:08 | INFO     | test_runner | Tests PASSED for image_misinformation_checker
+2026-03-31 04:37:08 | INFO     | tool_builder | ✅ image_misinformation_checker passed tests on loop 3
+2026-03-31 04:37:08 | INFO     | tool_builder | Building tool: event_misinformation_tracker …
+2026-03-31 04:37:20 | DEBUG    | llm_client | LLM response from github_models (7194 chars)
+2026-03-31 04:37:20 | DEBUG    | test_runner | Installing: ['tweepy==4.15.0', 'transformers==4.33.0', 'textblob==0.17.1', 'beautifulsoup4==4.12.2']
+2026-03-31 04:37:27 | WARNING  | test_runner | Tests FAILED for event_misinformation_tracker:
+test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED test_event_misinformation_tracker.py::test_analyze_sentiment - AssertionError: assert 'positive' == 'neutral'
+2026-03-31 04:37:27 | WARNING  | tool_builder | ⚠️  event_misinformation_tracker tests failed (loop 1/5) — test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED tes
+2026-03-31 04:37:35 | DEBUG    | llm_client | LLM response from github_models (6955 chars)
+2026-03-31 04:37:35 | DEBUG    | test_runner | Installing: ['textblob', 'transformers', 'beautifulsoup4', 'tweepy']
+2026-03-31 04:37:37 | WARNING  | test_runner | Tests FAILED for event_misinformation_tracker:
+test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED test_event_misinformation_tracker.py::test_analyze_sentiment - AssertionError: assert 'positive' == 'neutral'
+2026-03-31 04:37:37 | WARNING  | tool_builder | ⚠️  event_misinformation_tracker tests failed (loop 2/5) — test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED tes
+2026-03-31 04:37:44 | DEBUG    | llm_client | LLM response from github_models (6498 chars)
+2026-03-31 04:37:44 | DEBUG    | test_runner | Installing: ['textblob', 'transformers', 'tweepy', 'bs4']
+2026-03-31 04:37:46 | WARNING  | test_runner | Tests FAILED for event_misinformation_tracker:
+test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED test_event_misinformation_tracker.py::test_analyze_sentiment - AssertionError: assert 'positive' == 'neutral'
+2026-03-31 04:37:46 | WARNING  | tool_builder | ⚠️  event_misinformation_tracker tests failed (loop 3/5) — test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED tes
+2026-03-31 04:37:55 | DEBUG    | llm_client | LLM response from github_models (6999 chars)
+2026-03-31 04:37:55 | DEBUG    | test_runner | Installing: ['textblob', 'transformers', 'beautifulsoup4', 'tweepy']
+2026-03-31 04:37:57 | WARNING  | test_runner | Tests FAILED for event_misinformation_tracker:
+test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED test_event_misinformation_tracker.py::test_analyze_sentiment - AssertionError: assert 'positive' == 'neutral'
+2026-03-31 04:37:57 | WARNING  | tool_builder | ⚠️  event_misinformation_tracker tests failed (loop 4/5) — test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED tes
+2026-03-31 04:38:06 | DEBUG    | llm_client | LLM response from github_models (6942 chars)
+2026-03-31 04:38:06 | DEBUG    | test_runner | Installing: ['textblob', 'transformers', 'bs4', 'tweepy']
+2026-03-31 04:38:08 | WARNING  | test_runner | Tests FAILED for event_misinformation_tracker:
+test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED test_event_misinformation_tracker.py::test_analyze_sentiment - AssertionError: assert 'positive' == 'neutral'
+2026-03-31 04:38:08 | WARNING  | tool_builder | ⚠️  event_misinformation_tracker tests failed (loop 5/5) — test_event_misinformation_tracker.py::test_analyze_sentiment FAILED      [ 33%]
+    assert analyze_sentiment("This is okay.") == "neutral"
+E   AssertionError: assert 'positive' == 'neutral'
+FAILED tes
+2026-03-31 04:38:08 | ERROR    | tool_builder | ❌ event_misinformation_tracker failed after 5 loops
+2026-03-31 04:38:08 | INFO     | tool_builder | Building tool: gpt_claude_debugger …
+2026-03-31 04:38:20 | DEBUG    | llm_client | LLM response from github_models (7612 chars)
+2026-03-31 04:38:20 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.9', 'rich==13.5.2']
+2026-03-31 04:38:22 | INFO     | test_runner | Tests PASSED for gpt_claude_debugger
+2026-03-31 04:38:22 | INFO     | tool_builder | ✅ gpt_claude_debugger passed tests on loop 1
+2026-03-31 04:38:22 | INFO     | tool_builder | Building tool: ai_code_optimizer …
+2026-03-31 04:38:33 | DEBUG    | llm_client | LLM response from github_models (6051 chars)
+2026-03-31 04:38:33 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.9', 'click==8.1.3', 'pytest==7.4.2']
+2026-03-31 04:38:35 | WARNING  | test_runner | Tests FAILED for ai_code_optimizer:
+test_ai_code_optimizer.py::test_annotate_code FAILED                     [ 33%]
+test_ai_code_optimizer.py::test_empty_file FAILED                        [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: dummy_path.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: dummy_path.py
+FAILED test_ai_code_optimizer.py::test_annotate_code - FileNotFoundError: File not found: dummy_path.py
+FAILED test_ai_code_optimizer.py::test_empty_file - FileNotFoundError: File not found: dummy_path.py
+2026-03-31 04:38:35 | WARNING  | tool_builder | ⚠️  ai_code_optimizer tests failed (loop 1/5) — test_ai_code_optimizer.py::test_annotate_code FAILED                     [ 33%]
+test_ai_code_optimizer.py::test_empty_file FAILED                        [100%]
+    raise FileNotFoundError(f"File not f
+2026-03-31 04:38:44 | DEBUG    | llm_client | LLM response from github_models (6017 chars)
+2026-03-31 04:38:44 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'click', 'pytest']
+2026-03-31 04:38:45 | WARNING  | test_runner | Tests FAILED for ai_code_optimizer:
+test_ai_code_optimizer.py::test_annotate_code FAILED                     [ 33%]
+test_ai_code_optimizer.py::test_empty_file FAILED                        [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: dummy_path.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: dummy_path.py
+FAILED test_ai_code_optimizer.py::test_annotate_code - FileNotFoundError: File not found: dummy_path.py
+FAILED test_ai_code_optimizer.py::test_empty_file - FileNotFoundError: File not found: dummy_path.py
+2026-03-31 04:38:45 | WARNING  | tool_builder | ⚠️  ai_code_optimizer tests failed (loop 2/5) — test_ai_code_optimizer.py::test_annotate_code FAILED                     [ 33%]
+test_ai_code_optimizer.py::test_empty_file FAILED                        [100%]
+    raise FileNotFoundError(f"File not f
+2026-03-31 04:38:54 | DEBUG    | llm_client | LLM response from github_models (6392 chars)
+2026-03-31 04:38:54 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'click', 'pytest']
+2026-03-31 04:38:55 | INFO     | test_runner | Tests PASSED for ai_code_optimizer
+2026-03-31 04:38:55 | INFO     | tool_builder | ✅ ai_code_optimizer passed tests on loop 3
+2026-03-31 04:38:55 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-03-31 04:38:55 | INFO     | main |   Built 3/5 tools successfully
+2026-03-31 04:38:55 | INFO     | main |     ✅ image_misinformation_checker (loops: 3)
+2026-03-31 04:38:55 | INFO     | main |     ✅ gpt_claude_debugger (loops: 1)
+2026-03-31 04:38:55 | INFO     | main |     ✅ ai_code_optimizer (loops: 3)
+2026-03-31 04:38:55 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-03-31 04:38:55 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-03-31 04:38:55 | INFO     | github_publisher |   Created zip: image_misinformation_checker.zip (2570 bytes)
+2026-03-31 04:38:55 | INFO     | github_publisher | Saved image_misinformation_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/image_misinformation_checker
+2026-03-31 04:38:55 | INFO     | github_publisher |   Created zip: gpt_claude_debugger.zip (2862 bytes)
+2026-03-31 04:38:55 | INFO     | github_publisher | Saved gpt_claude_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/gpt_claude_debugger
+2026-03-31 04:38:55 | INFO     | github_publisher |   Created zip: ai_code_optimizer.zip (2602 bytes)
+2026-03-31 04:38:55 | INFO     | github_publisher | Saved ai_code_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/ai_code_optimizer
+2026-03-31 04:38:55 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-03-31 04:38:55 | INFO     | main |   Published 3 tools:
+2026-03-31 04:38:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/image_misinformation_checker
+2026-03-31 04:38:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/gpt_claude_debugger
+2026-03-31 04:38:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-31/ai_code_optimizer
+2026-03-31 04:38:55 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-03-31 04:38:55 | INFO     | main | ✅ Generated tools_index.json with 95 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
