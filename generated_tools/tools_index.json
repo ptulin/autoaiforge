@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-03-31T04:38:55.438521+00:00",
-  "total_tools": 95,
+  "last_updated": "2026-04-01T04:52:22.663266+00:00",
+  "total_tools": 98,
   "tools": [
+    {
+      "tool_name": "ai_context_sanitizer",
+      "display_name": "AI Context Sanitizer",
+      "description": "A Python library that provides utility functions to sanitize user inputs and prompts before sending them to models like ChatGPT. This can help AI developers prevent unintended behavior or exploitation through malicious prompt crafting.",
+      "topic": "AI Security Risks in ChatGPT",
+      "date": "2026-04-01",
+      "generated": "2026-04-01T04:45:52.533576+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-01/ai_context_sanitizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/ai_context_sanitizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/ai_context_sanitizer/ai_context_sanitizer.zip"
+    },
+    {
+      "tool_name": "dynamic_behavior_analyzer",
+      "display_name": "Dynamic Behavior Analyzer",
+      "description": "This tool executes leaked AI code in a controlled sandbox environment and monitors runtime behavior to identify potentially suspicious or undocumented operations. It can detect features like 'Undercover Mode' by analyzing input-output patterns, logging behaviors, and system calls.",
+      "topic": "Claude AI Source Code Leak",
+      "date": "2026-04-01",
+      "generated": "2026-04-01T04:45:52.533576+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-01/dynamic_behavior_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/dynamic_behavior_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/dynamic_behavior_analyzer/dynamic_behavior_analyzer.zip"
+    },
+    {
+      "tool_name": "leaked_code_vulnerability_scanner",
+      "display_name": "Leaked Code Vulnerability Scanner",
+      "description": "This tool scans leaked AI source code for common security vulnerabilities such as hardcoded API keys, weak cryptographic practices, and improper input sanitization. It uses pattern matching and static code analysis to flag potential risks, helping AI developers quickly assess leaked code for potential threats.",
+      "topic": "Claude AI Source Code Leak",
+      "date": "2026-04-01",
+      "generated": "2026-04-01T04:45:52.533576+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-01/leaked_code_vulnerability_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/leaked_code_vulnerability_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/leaked_code_vulnerability_scanner/leaked_code_vulnerability_scanner.zip"
+    },
     {
       "tool_name": "ai_code_optimizer",
       "display_name": "AI Code Optimizer",

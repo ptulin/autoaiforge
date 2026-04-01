@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_context_sanitizer",
+  "display_name": "AI Context Sanitizer",
+  "description": "A Python library that provides utility functions to sanitize user inputs and prompts before sending them to models like ChatGPT. This can help AI developers prevent unintended behavior or exploitation through malicious prompt crafting.",
+  "topic": "AI Security Risks in ChatGPT",
+  "date": "2026-04-01",
+  "generated": "2026-04-01T04:45:52.533576+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-01/ai_context_sanitizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/ai_context_sanitizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-01/ai_context_sanitizer/ai_context_sanitizer.zip"
+}
