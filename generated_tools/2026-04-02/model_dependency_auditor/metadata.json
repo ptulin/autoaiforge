@@ -1,0 +1,13 @@
+{
+  "tool_name": "model_dependency_auditor",
+  "display_name": "Model Dependency Auditor",
+  "description": "A CLI tool that audits Python-based AI projects for vulnerabilities in third-party dependencies. It cross-references dependency versions with known CVEs (Common Vulnerabilities and Exposures) and suggests security updates, ensuring a secure AI development environment.",
+  "topic": "AI Model Security Breaches",
+  "date": "2026-04-02",
+  "generated": "2026-04-02T04:27:30.300045+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-02/model_dependency_auditor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-02/model_dependency_auditor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-02/model_dependency_auditor/model_dependency_auditor.zip"
+}
