@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_system_guardian",
+  "display_name": "AI System Guardian",
+  "description": "AI System Guardian provides a secure wrapper for monitoring and logging actions performed by AI agents during system automation tasks. It ensures transparency by capturing agent commands, their execution outcomes, and potential anomalies, making it vital for debugging and compliance in AI-driven automation.",
+  "topic": "AI Agents Controlling Computers",
+  "date": "2026-04-02",
+  "generated": "2026-04-02T04:27:30.300045+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-02/ai_system_guardian",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-02/ai_system_guardian/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-02/ai_system_guardian/ai_system_guardian.zip"
+}
