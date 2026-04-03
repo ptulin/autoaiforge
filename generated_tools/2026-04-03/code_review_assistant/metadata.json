@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_review_assistant",
+  "display_name": "Code Review Assistant",
+  "description": "This tool integrates with Claude AI to perform automated code reviews. Developers can provide a file or directory containing Python code, and the tool will analyze the code for potential bugs, performance issues, and best practices, returning a detailed review report. It's a lightweight, on-demand alternative to manual code reviews.",
+  "topic": "AI for Code Generation",
+  "date": "2026-04-03",
+  "generated": "2026-04-03T04:27:40.187830+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/code_review_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-03/code_review_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-03/code_review_assistant/code_review_assistant.zip"
+}
