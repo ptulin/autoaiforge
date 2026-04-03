@@ -1,0 +1,201 @@
+2026-04-03 04:27:40 | INFO     | main | ============================================================
+2026-04-03 04:27:40 | INFO     | main | AutoAIForge starting run: 2026-04-03T04:27:40.187830+00:00
+2026-04-03 04:27:40 | INFO     | main | ============================================================
+2026-04-03 04:27:40 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-03 04:27:40 | INFO     | youtube_scraper | YouTube client ready
+2026-04-03 04:27:40 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-03 04:27:41 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-03 04:27:41 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-03 04:27:41 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-03 04:27:42 | INFO     | youtube_scraper | YouTube 'Claude Code': 25 results (quota used: 500)
+2026-04-03 04:27:42 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 25 results (quota used: 600)
+2026-04-03 04:27:42 | INFO     | youtube_scraper | YouTube 'machine learning tools': 47 results (quota used: 700)
+2026-04-03 04:27:43 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-03 04:27:43 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-03 04:27:43 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-03 04:27:44 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-03 04:27:44 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-03 04:27:44 | INFO     | youtube_scraper | YouTube 'vector database AI': 22 results (quota used: 1300)
+2026-04-03 04:27:45 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-03 04:27:45 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-03 04:27:45 | INFO     | youtube_scraper | YouTube 'AI safety news': 36 results (quota used: 1600)
+2026-04-03 04:27:46 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-04-03 04:27:46 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-03 04:27:46 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-03 04:27:46 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-03 04:27:46 | INFO     | youtube_scraper | YouTube total: 808 items, quota used: 2000
+2026-04-03 04:27:46 | INFO     | main |   YouTube: 761 items
+2026-04-03 04:27:46 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-03 04:27:51 | INFO     | rss_scraper | HackerNews: 168 items
+2026-04-03 04:27:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-03 04:27:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-03 04:27:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-03 04:27:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-03 04:27:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-03 04:27:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-03 04:27:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-03 04:27:59 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-03 04:27:59 | WARNING  | rss_scraper | ArXiv request failed: 406 Client Error: Not Acceptable for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-03 04:28:00 | WARNING  | rss_scraper | ArXiv request failed: 406 Client Error: Not Acceptable for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-03 04:28:01 | WARNING  | rss_scraper | ArXiv request failed: 406 Client Error: Not Acceptable for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-03 04:28:02 | WARNING  | rss_scraper | ArXiv request failed: 406 Client Error: Not Acceptable for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-03 04:28:03 | INFO     | rss_scraper | ArXiv: 0 items
+2026-04-03 04:28:07 | INFO     | rss_scraper | Dev.to: 192 items
+2026-04-03 04:28:09 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-03 04:28:09 | INFO     | rss_scraper | Free sources total: 410 unique items
+2026-04-03 04:28:09 | INFO     | main |   RSS/API sources: 410 items
+2026-04-03 04:28:09 | INFO     | main |   Total scraped: 1171 items
+2026-04-03 04:28:09 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-03 04:28:09 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-03 04:28:09 | INFO     | db_manager | Purged 1026 old news items
+2026-04-03 04:28:09 | INFO     | db_manager | Inserted 917/1171 news items
+2026-04-03 04:28:09 | INFO     | main |   SQLite: 917 new items (total: 29491)
+2026-04-03 04:28:14 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-03 04:28:15 | INFO     | vector_store | VectorStore ready
+2026-04-03 04:28:41 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-03 04:28:41 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-03 04:28:41 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-03 04:28:41 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-03 04:28:49 | DEBUG    | llm_client | LLM response from github_models (4116 chars)
+2026-04-03 04:28:49 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-03 04:28:49 | INFO     | main |   Found 10 topics:
+2026-04-03 04:28:49 | INFO     | main |      1. [10/10] AI for Code Generation
+2026-04-03 04:28:49 | INFO     | main |      2. [9/10] AI Source Code Leaks
+2026-04-03 04:28:49 | INFO     | main |      3. [9/10] AI-Powered Fake News Detection
+2026-04-03 04:28:49 | INFO     | main |      4. [8/10] AI-Powered Workflow Automation
+2026-04-03 04:28:49 | INFO     | main |      5. [8/10] AI Debugging Assistants
+2026-04-03 04:28:49 | INFO     | main |      6. [8/10] Multi-Model AI Tools
+2026-04-03 04:28:49 | INFO     | main |      7. [8/10] AI-Driven Product Development
+2026-04-03 04:28:49 | INFO     | main |      8. [7/10] AI in Content Creation
+2026-04-03 04:28:49 | INFO     | main |      9. [7/10] AI for Financial Systems
+2026-04-03 04:28:49 | INFO     | main |     10. [7/10] AI in Video Editing
+2026-04-03 04:28:49 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-03 04:28:49 | INFO     | main |   Existing collection: 100 tools across 57 topics
+2026-04-03 04:28:49 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-03 04:28:55 | DEBUG    | llm_client | LLM response from github_models (3659 chars)
+2026-04-03 04:28:55 | INFO     | idea_generator | Generated 3 ideas for topic: AI for Code Generation
+2026-04-03 04:29:00 | DEBUG    | llm_client | LLM response from github_models (2304 chars)
+2026-04-03 04:29:00 | INFO     | idea_generator | Generated 2 ideas for topic: AI Source Code Leaks
+2026-04-03 04:29:00 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-03 04:29:00 | INFO     | main |   Generated 5 tool ideas:
+2026-04-03 04:29:00 | INFO     | main |     • auto_snippet_generator: This tool leverages the Claude AI model to generate reusable code snippets for c
+2026-04-03 04:29:00 | INFO     | main |     • code_review_assistant: This tool integrates with Claude AI to perform automated code reviews. Developer
+2026-04-03 04:29:00 | INFO     | main |     • ai_code_refactor: This tool allows developers to refactor their Python code with the help of the C
+2026-04-03 04:29:00 | INFO     | main |     • sensitive_code_guard: Sensitive Code Guard scans source code repositories for hardcoded API keys, secr
+2026-04-03 04:29:00 | INFO     | main |     • ai_code_watermarker: AI Code Watermarker embeds invisible but detectable watermarks across source cod
+2026-04-03 04:29:00 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-03 04:29:00 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-03 04:29:10 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-03 04:29:10 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-03 04:29:10 | INFO     | tool_builder | Building tool: auto_snippet_generator …
+2026-04-03 04:29:20 | DEBUG    | llm_client | LLM response from github_models (6503 chars)
+2026-04-03 04:29:20 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'pytest==7.4.2']
+2026-04-03 04:29:23 | WARNING  | test_runner | Tests FAILED for auto_snippet_generator:
+test_auto_snippet_generator.py::test_generate_code_snippet_success FAILED [ 25%]
+test_auto_snippet_generator.py::test_generate_code_snippet_with_framework FAILED [ 50%]
+test_auto_snippet_generator.py::test_generate_code_snippet_api_error FAILED [100%]
+    raise ValueError("OPENAI_API_KEY environment variable is not set.")
+E   ValueError: OPENAI_API_KEY environment variable is not set.
+    raise ValueError("OPENAI_API_KEY environment variable is not set.")
+E   ValueError: OPENAI_API_KEY environment variable is not set.
+    raise ValueError("OPENAI_API_KEY environment variable is not set.")
+E   ValueError: OPENAI_API_KEY environment variable is not set.
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_success - ValueError: OPENAI_API_KEY environment variable is not set.
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_with_framework - ValueError: OPENAI_API_KEY environment variable is not set.
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_api_error - ValueError: OPENAI_API_KEY environment variable is not set.
+2026-04-03 04:29:23 | WARNING  | tool_builder | ⚠️  auto_snippet_generator tests failed (loop 1/5) — test_auto_snippet_generator.py::test_generate_code_snippet_success FAILED [ 25%]
+test_auto_snippet_generator.py::test_generate_code_snippet_with_framework FAILED [ 50%]
+test_auto_snippet_generator.py:
+2026-04-03 04:29:30 | DEBUG    | llm_client | LLM response from github_models (5961 chars)
+2026-04-03 04:29:30 | DEBUG    | test_runner | Installing: ['openai', 'click', 'pytest']
+2026-04-03 04:29:31 | WARNING  | test_runner | Tests FAILED for auto_snippet_generator:
+test_auto_snippet_generator.py::test_generate_code_snippet_api_error FAILED [100%]
+E   Exception: API error
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_api_error - Exception: API error
+2026-04-03 04:29:31 | WARNING  | tool_builder | ⚠️  auto_snippet_generator tests failed (loop 2/5) — test_auto_snippet_generator.py::test_generate_code_snippet_api_error FAILED [100%]
+E   Exception: API error
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_api_error - Exception: API
+2026-04-03 04:29:36 | DEBUG    | llm_client | LLM response from github_models (5563 chars)
+2026-04-03 04:29:36 | DEBUG    | test_runner | Installing: ['openai', 'click', 'pytest']
+2026-04-03 04:29:37 | WARNING  | test_runner | Tests FAILED for auto_snippet_generator:
+test_auto_snippet_generator.py::test_generate_code_snippet_api_error FAILED [100%]
+    with patch("openai.Completion.create", side_effect=openai.error.OpenAIError("API error")), \
+E   NameError: name 'openai' is not defined
+FAILED test_auto_snippet_generator.py::test_generate_code_snippet_api_error - NameError: name 'openai' is not defined
+2026-04-03 04:29:37 | WARNING  | tool_builder | ⚠️  auto_snippet_generator tests failed (loop 3/5) — test_auto_snippet_generator.py::test_generate_code_snippet_api_error FAILED [100%]
+    with patch("openai.Completion.create", side_effect=openai.error.OpenAIError("API error")), \
+E   NameError: name 
+2026-04-03 04:29:43 | DEBUG    | llm_client | LLM response from github_models (5889 chars)
+2026-04-03 04:29:43 | DEBUG    | test_runner | Installing: ['openai', 'click', 'pytest']
+2026-04-03 04:29:44 | INFO     | test_runner | Tests PASSED for auto_snippet_generator
+2026-04-03 04:29:44 | INFO     | tool_builder | ✅ auto_snippet_generator passed tests on loop 4
+2026-04-03 04:29:44 | INFO     | tool_builder | Building tool: code_review_assistant …
+2026-04-03 04:29:44 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-03 04:30:58 | DEBUG    | llm_client | LLM response from github_models (8769 chars)
+2026-04-03 04:30:58 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'rich==13.5.2', 'pyyaml==6.0']
+2026-04-03 04:30:59 | INFO     | test_runner | Tests PASSED for code_review_assistant
+2026-04-03 04:30:59 | INFO     | tool_builder | ✅ code_review_assistant passed tests on loop 1
+2026-04-03 04:30:59 | INFO     | tool_builder | Building tool: ai_code_refactor …
+2026-04-03 04:31:09 | DEBUG    | llm_client | LLM response from github_models (5452 chars)
+2026-04-03 04:31:09 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'click==8.1.3', 'black==23.7.0']
+2026-04-03 04:31:11 | WARNING  | test_runner | Tests FAILED for ai_code_refactor:
+test_ai_code_refactor.py::test_refactor_code_success FAILED              [ 66%]
+test_ai_code_refactor.py::test_refactor_code_openai_error FAILED         [100%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file input.py does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file input.py does not exist.
+FAILED test_ai_code_refactor.py::test_refactor_code_success - FileNotFoundError: The file input.py does not exist.
+FAILED test_ai_code_refactor.py::test_refactor_code_openai_error - FileNotFoundError: The file input.py does not exist.
+2026-04-03 04:31:11 | WARNING  | tool_builder | ⚠️  ai_code_refactor tests failed (loop 1/5) — test_ai_code_refactor.py::test_refactor_code_success FAILED              [ 66%]
+test_ai_code_refactor.py::test_refactor_code_openai_error FAILED         [100%]
+    raise FileNotFoundError(f"The file {
+2026-04-03 04:31:18 | DEBUG    | llm_client | LLM response from github_models (5585 chars)
+2026-04-03 04:31:18 | DEBUG    | test_runner | Installing: ['openai', 'black', 'click']
+2026-04-03 04:31:19 | WARNING  | test_runner | Tests FAILED for ai_code_refactor:
+test_ai_code_refactor.py::test_refactor_code_success FAILED              [ 66%]
+E   AttributeError: 'dict' object has no attribute 'text'
+    raise RuntimeError(f"Error communicating with OpenAI API: {e}")
+E   RuntimeError: Error communicating with OpenAI API: 'dict' object has no attribute 'text'
+FAILED test_ai_code_refactor.py::test_refactor_code_success - RuntimeError: Error communicating with OpenAI API: 'dict' object has no attribute 'text'
+2026-04-03 04:31:19 | WARNING  | tool_builder | ⚠️  ai_code_refactor tests failed (loop 2/5) — test_ai_code_refactor.py::test_refactor_code_success FAILED              [ 66%]
+E   AttributeError: 'dict' object has no attribute 'text'
+    raise RuntimeError(f"Error communicating with OpenAI API: 
+2026-04-03 04:31:26 | DEBUG    | llm_client | LLM response from github_models (5784 chars)
+2026-04-03 04:31:26 | DEBUG    | test_runner | Installing: ['openai', 'black', 'click', 'pytest']
+2026-04-03 04:31:27 | INFO     | test_runner | Tests PASSED for ai_code_refactor
+2026-04-03 04:31:27 | INFO     | tool_builder | ✅ ai_code_refactor passed tests on loop 3
+2026-04-03 04:31:27 | INFO     | tool_builder | Building tool: sensitive_code_guard …
+2026-04-03 04:31:35 | DEBUG    | llm_client | LLM response from github_models (3831 chars)
+2026-04-03 04:31:35 | ERROR    | tool_builder | Initial generation failed for sensitive_code_guard: LLM returned non-JSON: {
+  "code": "import os\nimport re\nimport argparse\nimport yaml\nfrom nltk.tokenize import word_tokenize\nfrom nltk.corpus import words\nfrom nltk.corpus import stopwords\nimport string\nimport regex as re\n\ndef load_nltk_resources():\n    try:\n        nltk.data.find('corpora/words.zip')\n        
+Invalid \escape: line 2 column 728 (char 729)
+2026-04-03 04:31:35 | INFO     | tool_builder | Building tool: ai_code_watermarker …
+2026-04-03 04:31:41 | DEBUG    | llm_client | LLM response from github_models (4791 chars)
+2026-04-03 04:31:41 | DEBUG    | test_runner | Installing: ['pygments==2.15.1']
+2026-04-03 04:31:43 | INFO     | test_runner | Tests PASSED for ai_code_watermarker
+2026-04-03 04:31:43 | INFO     | tool_builder | ✅ ai_code_watermarker passed tests on loop 1
+2026-04-03 04:31:43 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-03 04:31:43 | INFO     | main |   Built 4/5 tools successfully
+2026-04-03 04:31:43 | INFO     | main |     ✅ auto_snippet_generator (loops: 4)
+2026-04-03 04:31:43 | INFO     | main |     ✅ code_review_assistant (loops: 1)
+2026-04-03 04:31:43 | INFO     | main |     ✅ ai_code_refactor (loops: 3)
+2026-04-03 04:31:43 | INFO     | main |     ✅ ai_code_watermarker (loops: 1)
+2026-04-03 04:31:43 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-03 04:31:43 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-03 04:31:43 | INFO     | github_publisher |   Created zip: auto_snippet_generator.zip (2607 bytes)
+2026-04-03 04:31:43 | INFO     | github_publisher | Saved auto_snippet_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/auto_snippet_generator
+2026-04-03 04:31:43 | INFO     | github_publisher |   Created zip: code_review_assistant.zip (3317 bytes)
+2026-04-03 04:31:43 | INFO     | github_publisher | Saved code_review_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/code_review_assistant
+2026-04-03 04:31:43 | INFO     | github_publisher |   Created zip: ai_code_refactor.zip (2601 bytes)
+2026-04-03 04:31:43 | INFO     | github_publisher | Saved ai_code_refactor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/ai_code_refactor
+2026-04-03 04:31:43 | INFO     | github_publisher |   Created zip: ai_code_watermarker.zip (2272 bytes)
+2026-04-03 04:31:43 | INFO     | github_publisher | Saved ai_code_watermarker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/ai_code_watermarker
+2026-04-03 04:31:43 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-03 04:31:43 | INFO     | main |   Published 4 tools:
+2026-04-03 04:31:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/auto_snippet_generator
+2026-04-03 04:31:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/code_review_assistant
+2026-04-03 04:31:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/ai_code_refactor
+2026-04-03 04:31:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-03/ai_code_watermarker
+2026-04-03 04:31:43 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-04-03 04:31:43 | INFO     | main | ✅ Generated tools_index.json with 104 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
