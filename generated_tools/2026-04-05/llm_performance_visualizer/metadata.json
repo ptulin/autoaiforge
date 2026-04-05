@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_performance_visualizer",
+  "display_name": "LLM Performance Visualizer",
+  "description": "This CLI tool benchmarks a given large language model across various dataset slices and visualizes its performance trends to help identify bottlenecks and ceilings. It supports multiple metrics (e.g., accuracy, perplexity) and can generate heatmaps and line charts to pinpoint specific areas where the model struggles. Useful for researchers and developers aiming to diagnose and address LLM limitations.",
+  "topic": "LLM Ceiling Challenges",
+  "date": "2026-04-05",
+  "generated": "2026-04-05T04:35:59.496314+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_performance_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_performance_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_performance_visualizer/llm_performance_visualizer.zip"
+}

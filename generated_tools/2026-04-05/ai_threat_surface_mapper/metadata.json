@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_threat_surface_mapper",
+  "display_name": "AI Threat Surface Mapper",
+  "description": "This tool scans an AI model's implementation (e.g., weights, config files, and code) to identify potential security vulnerabilities, such as insecure API endpoints, hardcoded secrets, or weak encryption practices. It's designed to help developers proactively secure their AI systems before deployment.",
+  "topic": "AI and Cybersecurity Risks",
+  "date": "2026-04-05",
+  "generated": "2026-04-05T04:35:59.496314+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_threat_surface_mapper",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_threat_surface_mapper/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_threat_surface_mapper/ai_threat_surface_mapper.zip"
+}
