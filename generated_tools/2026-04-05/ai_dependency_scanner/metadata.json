@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_dependency_scanner",
+  "display_name": "AI Dependency Scanner",
+  "description": "This CLI tool scans Python projects for outdated or vulnerable dependencies in AI-related libraries (e.g., TensorFlow, PyTorch). It cross-references with public vulnerability databases to alert developers to potential risks in their AI software stack.",
+  "topic": "AI and Cybersecurity Risks",
+  "date": "2026-04-05",
+  "generated": "2026-04-05T04:35:59.496314+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_dependency_scanner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_dependency_scanner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_dependency_scanner/ai_dependency_scanner.zip"
+}

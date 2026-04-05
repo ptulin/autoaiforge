@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-04T04:21:08.943051+00:00",
-  "total_tools": 107,
+  "last_updated": "2026-04-05T04:42:40.311137+00:00",
+  "total_tools": 111,
   "tools": [
+    {
+      "tool_name": "ai_dependency_scanner",
+      "display_name": "AI Dependency Scanner",
+      "description": "This CLI tool scans Python projects for outdated or vulnerable dependencies in AI-related libraries (e.g., TensorFlow, PyTorch). It cross-references with public vulnerability databases to alert developers to potential risks in their AI software stack.",
+      "topic": "AI and Cybersecurity Risks",
+      "date": "2026-04-05",
+      "generated": "2026-04-05T04:35:59.496314+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_dependency_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_dependency_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_dependency_scanner/ai_dependency_scanner.zip"
+    },
+    {
+      "tool_name": "ai_threat_surface_mapper",
+      "display_name": "AI Threat Surface Mapper",
+      "description": "This tool scans an AI model's implementation (e.g., weights, config files, and code) to identify potential security vulnerabilities, such as insecure API endpoints, hardcoded secrets, or weak encryption practices. It's designed to help developers proactively secure their AI systems before deployment.",
+      "topic": "AI and Cybersecurity Risks",
+      "date": "2026-04-05",
+      "generated": "2026-04-05T04:35:59.496314+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_threat_surface_mapper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_threat_surface_mapper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/ai_threat_surface_mapper/ai_threat_surface_mapper.zip"
+    },
+    {
+      "tool_name": "llm_efficiency_analyzer",
+      "display_name": "LLM Efficiency Analyzer",
+      "description": "This CLI tool helps evaluate the trade-off between computational resources and model performance. By varying parameters like input sequence length, model size, and batch size, it summarizes the diminishing returns of adding compute or data (i.e., the 'LLM ceiling'). It outputs reports and plots showing where performance gains plateau, aiding decisions about resource allocation for training and inference.",
+      "topic": "LLM Ceiling Challenges",
+      "date": "2026-04-05",
+      "generated": "2026-04-05T04:35:59.496314+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_efficiency_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_efficiency_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_efficiency_analyzer/llm_efficiency_analyzer.zip"
+    },
+    {
+      "tool_name": "llm_performance_visualizer",
+      "display_name": "LLM Performance Visualizer",
+      "description": "This CLI tool benchmarks a given large language model across various dataset slices and visualizes its performance trends to help identify bottlenecks and ceilings. It supports multiple metrics (e.g., accuracy, perplexity) and can generate heatmaps and line charts to pinpoint specific areas where the model struggles. Useful for researchers and developers aiming to diagnose and address LLM limitations.",
+      "topic": "LLM Ceiling Challenges",
+      "date": "2026-04-05",
+      "generated": "2026-04-05T04:35:59.496314+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_performance_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_performance_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-05/llm_performance_visualizer/llm_performance_visualizer.zip"
+    },
     {
       "tool_name": "ai_risk_analyzer",
       "display_name": "AI Risk Analyzer",

@@ -1,0 +1,178 @@
+2026-04-05 04:35:59 | INFO     | main | ============================================================
+2026-04-05 04:35:59 | INFO     | main | AutoAIForge starting run: 2026-04-05T04:35:59.496314+00:00
+2026-04-05 04:35:59 | INFO     | main | ============================================================
+2026-04-05 04:35:59 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-05 04:35:59 | INFO     | youtube_scraper | YouTube client ready
+2026-04-05 04:36:00 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-05 04:36:00 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-05 04:36:00 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-05 04:36:01 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-05 04:36:01 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-05 04:36:01 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 48 results (quota used: 600)
+2026-04-05 04:36:02 | INFO     | youtube_scraper | YouTube 'machine learning tools': 41 results (quota used: 700)
+2026-04-05 04:36:02 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-05 04:36:02 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-05 04:36:03 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-05 04:36:03 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-05 04:36:03 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-05 04:36:04 | INFO     | youtube_scraper | YouTube 'vector database AI': 26 results (quota used: 1300)
+2026-04-05 04:36:04 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-05 04:36:04 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-05 04:36:05 | INFO     | youtube_scraper | YouTube 'AI safety news': 35 results (quota used: 1600)
+2026-04-05 04:36:05 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-05 04:36:05 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-05 04:36:06 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-05 04:36:06 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-05 04:36:06 | INFO     | youtube_scraper | YouTube total: 851 items, quota used: 2000
+2026-04-05 04:36:06 | INFO     | main |   YouTube: 798 items
+2026-04-05 04:36:06 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-05 04:36:11 | INFO     | rss_scraper | HackerNews: 143 items
+2026-04-05 04:36:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-05 04:36:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-05 04:36:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-05 04:36:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-05 04:36:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-05 04:36:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-05 04:36:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-05 04:36:19 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-05 04:36:25 | INFO     | rss_scraper | ArXiv: 101 items
+2026-04-05 04:36:29 | INFO     | rss_scraper | Dev.to: 195 items
+2026-04-05 04:36:30 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-05 04:36:30 | INFO     | rss_scraper | Free sources total: 489 unique items
+2026-04-05 04:36:30 | INFO     | main |   RSS/API sources: 489 items
+2026-04-05 04:36:30 | INFO     | main |   Total scraped: 1287 items
+2026-04-05 04:36:30 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-05 04:36:30 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-05 04:36:30 | INFO     | db_manager | Purged 984 old news items
+2026-04-05 04:36:30 | INFO     | db_manager | Inserted 887/1287 news items
+2026-04-05 04:36:30 | INFO     | main |   SQLite: 887 new items (total: 29434)
+2026-04-05 04:36:35 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-05 04:36:36 | INFO     | vector_store | VectorStore ready
+2026-04-05 04:37:05 | INFO     | vector_store | Indexed 1892 items into vector store
+2026-04-05 04:37:05 | INFO     | main |   Vector store: 1892 items indexed
+2026-04-05 04:37:05 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-05 04:37:05 | INFO     | topic_analyzer | Analyzing 1892 items for top 10 topics …
+2026-04-05 04:37:05 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-05 04:38:12 | DEBUG    | llm_client | LLM response from github_models (4107 chars)
+2026-04-05 04:38:12 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-05 04:38:12 | INFO     | main |   Found 10 topics:
+2026-04-05 04:38:12 | INFO     | main |      1. [10/10] Claude AI Source Code Leak
+2026-04-05 04:38:12 | INFO     | main |      2. [10/10] AI and Cybersecurity Risks
+2026-04-05 04:38:12 | INFO     | main |      3. [9/10] LLM Ceiling Challenges
+2026-04-05 04:38:12 | INFO     | main |      4. [9/10] AI-Driven Code Generation
+2026-04-05 04:38:12 | INFO     | main |      5. [8/10] AI-Powered Workflow Automation
+2026-04-05 04:38:12 | INFO     | main |      6. [8/10] AI in Job Market Disruption
+2026-04-05 04:38:12 | INFO     | main |      7. [8/10] AI in Real-Time Collaboration
+2026-04-05 04:38:12 | INFO     | main |      8. [7/10] AI-Enhanced Data Migration
+2026-04-05 04:38:12 | INFO     | main |      9. [7/10] AI-Driven Emotional Intelligence
+2026-04-05 04:38:12 | INFO     | main |     10. [6/10] AI for Environmental Monitoring
+2026-04-05 04:38:12 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-05 04:38:12 | INFO     | main |   Existing collection: 107 tools across 60 topics
+2026-04-05 04:38:12 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-05 04:38:12 | INFO     | idea_generator |   ⏭  Skipping topic 'Claude AI Source Code Leak' — tool already in collection
+2026-04-05 04:38:19 | DEBUG    | llm_client | LLM response from github_models (3458 chars)
+2026-04-05 04:38:19 | INFO     | idea_generator | Generated 3 ideas for topic: AI and Cybersecurity Risks
+2026-04-05 04:38:24 | DEBUG    | llm_client | LLM response from github_models (2709 chars)
+2026-04-05 04:38:24 | INFO     | idea_generator | Generated 2 ideas for topic: LLM Ceiling Challenges
+2026-04-05 04:38:24 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-05 04:38:24 | INFO     | main |   Generated 5 tool ideas:
+2026-04-05 04:38:24 | INFO     | main |     • ai_threat_surface_mapper: This tool scans an AI model's implementation (e.g., weights, config files, and c
+2026-04-05 04:38:24 | INFO     | main |     • adversarial_input_detector: This library helps developers test their AI models against adversarial inputs by
+2026-04-05 04:38:24 | INFO     | main |     • ai_dependency_scanner: This CLI tool scans Python projects for outdated or vulnerable dependencies in A
+2026-04-05 04:38:24 | INFO     | main |     • llm_performance_visualizer: This CLI tool benchmarks a given large language model across various dataset sli
+2026-04-05 04:38:24 | INFO     | main |     • llm_efficiency_analyzer: This CLI tool helps evaluate the trade-off between computational resources and m
+2026-04-05 04:38:24 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-05 04:38:24 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-05 04:38:33 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-05 04:38:33 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-05 04:38:33 | INFO     | tool_builder | Building tool: ai_threat_surface_mapper …
+2026-04-05 04:38:45 | DEBUG    | llm_client | LLM response from github_models (6668 chars)
+2026-04-05 04:38:45 | DEBUG    | test_runner | Installing: ['rich==13.5.2', 'pyyaml==6.0.1']
+2026-04-05 04:38:46 | INFO     | test_runner | Tests PASSED for ai_threat_surface_mapper
+2026-04-05 04:38:46 | INFO     | tool_builder | ✅ ai_threat_surface_mapper passed tests on loop 1
+2026-04-05 04:38:46 | INFO     | tool_builder | Building tool: adversarial_input_detector …
+2026-04-05 04:38:59 | DEBUG    | llm_client | LLM response from github_models (7247 chars)
+2026-04-05 04:38:59 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'tensorflow==2.10.0', 'textattack==0.3.4']
+2026-04-05 04:39:00 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=3.7,<3.11
+ERROR: Could not find a version that satis
+2026-04-05 04:39:00 | WARNING  | test_runner | Tests FAILED for adversarial_input_detector:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_adversarial_input_detector.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/adversarial_input_detector/test_adversarial_input_detector.py'.
+E   ModuleNotFoundError: No module named 'tensorflow'
+ERROR test_adversarial_input_detector.py
+2026-04-05 04:39:00 | WARNING  | tool_builder | ⚠️  adversarial_input_detector tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_adversarial_input_detector.py ______________
+ImportError while importing test modul
+2026-04-05 04:39:08 | DEBUG    | llm_client | LLM response from github_models (7120 chars)
+2026-04-05 04:39:08 | DEBUG    | test_runner | Installing: ['tensorflow', 'textattack', 'numpy', 'pytest']
+2026-04-05 04:41:09 | ERROR    | tool_builder | Unexpected error building adversarial_input_detector: Command '['/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python', '-m', 'pip', 'install', '--quiet', 'tensorflow', 'textattack', 'numpy', 'pytest']' timed out after 120 seconds
+2026-04-05 04:41:09 | INFO     | tool_builder | Building tool: ai_dependency_scanner …
+2026-04-05 04:41:18 | DEBUG    | llm_client | LLM response from github_models (6412 chars)
+2026-04-05 04:41:18 | DEBUG    | test_runner | Installing: ['pip-audit==2.4.0', 'rich==13.5.2', 'requests==2.31.0', 'pytest==7.4.2']
+2026-04-05 04:41:22 | WARNING  | test_runner | Tests FAILED for ai_dependency_scanner:
+test_ai_dependency_scanner.py::test_scan_dependencies_error FAILED       [ 60%]
+    mock_subprocess.side_effect = subprocess.CalledProcessError(1, "pip-audit", "Error occurred")
+E   NameError: name 'subprocess' is not defined
+FAILED test_ai_dependency_scanner.py::test_scan_dependencies_error - NameError: name 'subprocess' is not defined
+2026-04-05 04:41:22 | WARNING  | tool_builder | ⚠️  ai_dependency_scanner tests failed (loop 1/5) — test_ai_dependency_scanner.py::test_scan_dependencies_error FAILED       [ 60%]
+    mock_subprocess.side_effect = subprocess.CalledProcessError(1, "pip-audit", "Error occurred")
+E   NameError: name 's
+2026-04-05 04:41:32 | DEBUG    | llm_client | LLM response from github_models (6963 chars)
+2026-04-05 04:41:32 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-05 04:41:32 | WARNING  | test_runner | Tests FAILED for ai_dependency_scanner:
+test_ai_dependency_scanner.py::test_scan_dependencies_error FAILED       [ 60%]
+test_ai_dependency_scanner.py::test_display_report_empty FAILED          [ 80%]
+E   subprocess.CalledProcessError: Command '['pip-audit']' returned non-zero exit status 1.
+    console.print(f"[red]Error running pip-audit: {e.stderr.strip()}[/red]")
+E   AttributeError: 'NoneType' object has no attribute 'strip'
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+    mock_print.assert_called_with("[green]No vulnerabilities found![green]")
+E   AssertionError: expected call not found.
+E   assert ('[green]No v...nd![/green]',) == ('[green]No v...und![green]',)
+FAILED test_ai_dependency_scanner.py::test_scan_dependencies_error - AttributeError: 'NoneType' object has no attribute 'strip'
+FAILED test_ai_dependency_scanner.py::test_display_report_empty - AssertionError: expected call not found.
+assert ('[green]No v...nd![/green]',) == ('[green]No v...und![green]',)
+2026-04-05 04:41:32 | WARNING  | tool_builder | ⚠️  ai_dependency_scanner tests failed (loop 2/5) — test_ai_dependency_scanner.py::test_scan_dependencies_error FAILED       [ 60%]
+test_ai_dependency_scanner.py::test_display_report_empty FAILED          [ 80%]
+E   subprocess.CalledProcessError: Comma
+2026-04-05 04:41:42 | DEBUG    | llm_client | LLM response from github_models (6481 chars)
+2026-04-05 04:41:42 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-05 04:41:42 | INFO     | test_runner | Tests PASSED for ai_dependency_scanner
+2026-04-05 04:41:42 | INFO     | tool_builder | ✅ ai_dependency_scanner passed tests on loop 3
+2026-04-05 04:41:42 | INFO     | tool_builder | Building tool: llm_performance_visualizer …
+2026-04-05 04:41:53 | DEBUG    | llm_client | LLM response from github_models (6969 chars)
+2026-04-05 04:41:53 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'matplotlib==3.7.2', 'pandas==2.1.1', 'seaborn==0.12.2']
+2026-04-05 04:42:13 | INFO     | test_runner | Tests PASSED for llm_performance_visualizer
+2026-04-05 04:42:13 | INFO     | tool_builder | ✅ llm_performance_visualizer passed tests on loop 1
+2026-04-05 04:42:13 | INFO     | tool_builder | Building tool: llm_efficiency_analyzer …
+2026-04-05 04:42:30 | DEBUG    | llm_client | LLM response from github_models (9075 chars)
+2026-04-05 04:42:30 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'numpy==1.26.0', 'matplotlib==3.8.0', 'typer==0.9.0']
+2026-04-05 04:42:40 | INFO     | test_runner | Tests PASSED for llm_efficiency_analyzer
+2026-04-05 04:42:40 | INFO     | tool_builder | ✅ llm_efficiency_analyzer passed tests on loop 1
+2026-04-05 04:42:40 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-05 04:42:40 | INFO     | main |   Built 4/5 tools successfully
+2026-04-05 04:42:40 | INFO     | main |     ✅ ai_threat_surface_mapper (loops: 1)
+2026-04-05 04:42:40 | INFO     | main |     ✅ ai_dependency_scanner (loops: 3)
+2026-04-05 04:42:40 | INFO     | main |     ✅ llm_performance_visualizer (loops: 1)
+2026-04-05 04:42:40 | INFO     | main |     ✅ llm_efficiency_analyzer (loops: 1)
+2026-04-05 04:42:40 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-05 04:42:40 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-05 04:42:40 | INFO     | github_publisher |   Created zip: ai_threat_surface_mapper.zip (2865 bytes)
+2026-04-05 04:42:40 | INFO     | github_publisher | Saved ai_threat_surface_mapper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_threat_surface_mapper
+2026-04-05 04:42:40 | INFO     | github_publisher |   Created zip: ai_dependency_scanner.zip (2688 bytes)
+2026-04-05 04:42:40 | INFO     | github_publisher | Saved ai_dependency_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_dependency_scanner
+2026-04-05 04:42:40 | INFO     | github_publisher |   Created zip: llm_performance_visualizer.zip (3144 bytes)
+2026-04-05 04:42:40 | INFO     | github_publisher | Saved llm_performance_visualizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_performance_visualizer
+2026-04-05 04:42:40 | INFO     | github_publisher |   Created zip: llm_efficiency_analyzer.zip (3586 bytes)
+2026-04-05 04:42:40 | INFO     | github_publisher | Saved llm_efficiency_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_efficiency_analyzer
+2026-04-05 04:42:40 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-05 04:42:40 | INFO     | main |   Published 4 tools:
+2026-04-05 04:42:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_threat_surface_mapper
+2026-04-05 04:42:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/ai_dependency_scanner
+2026-04-05 04:42:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_performance_visualizer
+2026-04-05 04:42:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-05/llm_efficiency_analyzer
+2026-04-05 04:42:40 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-04-05 04:42:40 | INFO     | main | ✅ Generated tools_index.json with 111 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
