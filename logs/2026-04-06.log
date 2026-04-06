@@ -1,0 +1,240 @@
+2026-04-06 04:43:06 | INFO     | main | ============================================================
+2026-04-06 04:43:06 | INFO     | main | AutoAIForge starting run: 2026-04-06T04:43:06.223231+00:00
+2026-04-06 04:43:06 | INFO     | main | ============================================================
+2026-04-06 04:43:06 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-06 04:43:06 | INFO     | youtube_scraper | YouTube client ready
+2026-04-06 04:43:06 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-06 04:43:07 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-06 04:43:07 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-06 04:43:07 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-06 04:43:08 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-06 04:43:08 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 32 results (quota used: 600)
+2026-04-06 04:43:08 | INFO     | youtube_scraper | YouTube 'machine learning tools': 45 results (quota used: 700)
+2026-04-06 04:43:09 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-06 04:43:09 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-06 04:43:09 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-06 04:43:10 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-06 04:43:10 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-06 04:43:10 | INFO     | youtube_scraper | YouTube 'vector database AI': 26 results (quota used: 1300)
+2026-04-06 04:43:10 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-06 04:43:11 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-06 04:43:11 | INFO     | youtube_scraper | YouTube 'AI safety news': 26 results (quota used: 1600)
+2026-04-06 04:43:11 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-06 04:43:12 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-06 04:43:12 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-06 04:43:12 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-06 04:43:12 | INFO     | youtube_scraper | YouTube total: 830 items, quota used: 2000
+2026-04-06 04:43:12 | INFO     | main |   YouTube: 786 items
+2026-04-06 04:43:12 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-06 04:43:18 | INFO     | rss_scraper | HackerNews: 160 items
+2026-04-06 04:43:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-06 04:43:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-06 04:43:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-06 04:43:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-06 04:43:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-06 04:43:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-06 04:43:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-06 04:43:25 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-06 04:43:31 | INFO     | rss_scraper | ArXiv: 103 items
+2026-04-06 04:43:36 | INFO     | rss_scraper | Dev.to: 192 items
+2026-04-06 04:43:37 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-06 04:43:37 | INFO     | rss_scraper | Free sources total: 505 unique items
+2026-04-06 04:43:37 | INFO     | main |   RSS/API sources: 505 items
+2026-04-06 04:43:37 | INFO     | main |   Total scraped: 1291 items
+2026-04-06 04:43:37 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-06 04:43:37 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-06 04:43:37 | INFO     | db_manager | Purged 900 old news items
+2026-04-06 04:43:37 | INFO     | db_manager | Inserted 1021/1291 news items
+2026-04-06 04:43:37 | INFO     | main |   SQLite: 1021 new items (total: 29555)
+2026-04-06 04:43:41 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-06 04:43:42 | INFO     | vector_store | VectorStore ready
+2026-04-06 04:44:02 | INFO     | vector_store | Indexed 1908 items into vector store
+2026-04-06 04:44:02 | INFO     | main |   Vector store: 1908 items indexed
+2026-04-06 04:44:02 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-06 04:44:02 | INFO     | topic_analyzer | Analyzing 1908 items for top 10 topics …
+2026-04-06 04:44:09 | DEBUG    | llm_client | LLM response from github_models (4020 chars)
+2026-04-06 04:44:09 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-06 04:44:09 | INFO     | main |   Found 10 topics:
+2026-04-06 04:44:09 | INFO     | main |      1. [10/10] Open-source AI models
+2026-04-06 04:44:09 | INFO     | main |      2. [9/10] AI coding assistants
+2026-04-06 04:44:09 | INFO     | main |      3. [9/10] AI-enabled trading bots
+2026-04-06 04:44:09 | INFO     | main |      4. [9/10] Large context AI models
+2026-04-06 04:44:09 | INFO     | main |      5. [8/10] AI in military applications
+2026-04-06 04:44:09 | INFO     | main |      6. [8/10] AI safety and code leaks
+2026-04-06 04:44:09 | INFO     | main |      7. [8/10] AI misinformation detection
+2026-04-06 04:44:09 | INFO     | main |      8. [7/10] AI for podcast and content creation
+2026-04-06 04:44:09 | INFO     | main |      9. [7/10] AI in restaurant automation
+2026-04-06 04:44:09 | INFO     | main |     10. [7/10] AI in space exploration
+2026-04-06 04:44:09 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-06 04:44:09 | INFO     | main |   Existing collection: 111 tools across 62 topics
+2026-04-06 04:44:09 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-06 04:44:16 | DEBUG    | llm_client | LLM response from github_models (3894 chars)
+2026-04-06 04:44:16 | INFO     | idea_generator | Generated 3 ideas for topic: Open-source AI models
+2026-04-06 04:44:21 | DEBUG    | llm_client | LLM response from github_models (2546 chars)
+2026-04-06 04:44:21 | INFO     | idea_generator | Generated 2 ideas for topic: AI coding assistants
+2026-04-06 04:44:21 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-06 04:44:21 | INFO     | main |   Generated 5 tool ideas:
+2026-04-06 04:44:21 | INFO     | main |     • gemma_deploy_helper: This tool simplifies the deployment of Google Gemma 4 and other open-source AI m
+2026-04-06 04:44:21 | INFO     | main |     • gemma_fine_tuner: This tool provides a simple interface to fine-tune Google Gemma 4 and other tran
+2026-04-06 04:44:21 | INFO     | main |     • model_comparison_benchmarker: This tool allows developers to benchmark and compare the performance of Google G
+2026-04-06 04:44:21 | INFO     | main |     • ai_assistant_snippet_manager: This tool acts as a bridge between AI coding assistants like Claude Code or Chat
+2026-04-06 04:44:21 | INFO     | main |     • ai_error_explainer: This tool enables developers to input complex error messages from their Python p
+2026-04-06 04:44:21 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-06 04:44:21 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-06 04:44:28 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-06 04:44:28 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-06 04:44:28 | INFO     | tool_builder | Building tool: gemma_deploy_helper …
+2026-04-06 04:44:37 | DEBUG    | llm_client | LLM response from github_models (5670 chars)
+2026-04-06 04:44:37 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.3', 'click==8.1.3']
+2026-04-06 04:45:25 | INFO     | test_runner | Tests PASSED for gemma_deploy_helper
+2026-04-06 04:45:25 | INFO     | tool_builder | ✅ gemma_deploy_helper passed tests on loop 1
+2026-04-06 04:45:25 | INFO     | tool_builder | Building tool: gemma_fine_tuner …
+2026-04-06 04:45:37 | DEBUG    | llm_client | LLM response from github_models (7871 chars)
+2026-04-06 04:45:37 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.35.0', 'datasets==2.14.5', 'rich==13.5.2']
+2026-04-06 04:45:51 | WARNING  | test_runner | Tests FAILED for gemma_fine_tuner:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_gemma_fine_tuner.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-04-06 04:45:51 | WARNING  | tool_builder | ⚠️  gemma_fine_tuner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-04-06 04:45:51 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-06 04:47:00 | DEBUG    | llm_client | LLM response from github_models (8819 chars)
+2026-04-06 04:47:00 | DEBUG    | test_runner | Installing: ['datasets', 'transformers', 'torch', 'rich']
+2026-04-06 04:47:01 | WARNING  | test_runner | Tests FAILED for gemma_fine_tuner:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_gemma_fine_tuner.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-04-06 04:47:01 | WARNING  | tool_builder | ⚠️  gemma_fine_tuner tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-04-06 04:47:09 | DEBUG    | llm_client | LLM response from github_models (8367 chars)
+2026-04-06 04:47:09 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "fixed Python source code",
+  "test_code": "fixed pytest test file",
+  "requirements": ["transformers", "datasets", "torch", "rich", "pytest", "unittest.mock"],
+  "readme": "markdown README"
+}
+import argparse
+import os
+from datasets import DatasetDict, Dataset
+from transformers import Au
+Extra data: line 7 column 1 (char 205)
+2026-04-06 04:47:09 | DEBUG    | test_runner | Installing: ['datasets', 'transformers', 'torch', 'rich']
+2026-04-06 04:47:11 | WARNING  | test_runner | Tests FAILED for gemma_fine_tuner:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_gemma_fine_tuner.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-04-06 04:47:11 | WARNING  | tool_builder | ⚠️  gemma_fine_tuner tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-04-06 04:47:20 | DEBUG    | llm_client | LLM response from github_models (8889 chars)
+2026-04-06 04:47:20 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch', 'rich']
+2026-04-06 04:47:21 | WARNING  | test_runner | Tests FAILED for gemma_fine_tuner:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_gemma_fine_tuner.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-04-06 04:47:21 | WARNING  | tool_builder | ⚠️  gemma_fine_tuner tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-04-06 04:47:30 | DEBUG    | llm_client | LLM response from github_models (8718 chars)
+2026-04-06 04:47:30 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch', 'rich', 'pytest']
+2026-04-06 04:47:32 | WARNING  | test_runner | Tests FAILED for gemma_fine_tuner:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_gemma_fine_tuner.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-04-06 04:47:32 | WARNING  | tool_builder | ⚠️  gemma_fine_tuner tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_gemma_fine_tuner.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-04-06 04:47:32 | ERROR    | tool_builder | ❌ gemma_fine_tuner failed after 5 loops
+2026-04-06 04:47:32 | INFO     | tool_builder | Building tool: model_comparison_benchmarker …
+2026-04-06 04:47:41 | DEBUG    | llm_client | LLM response from github_models (6903 chars)
+2026-04-06 04:47:41 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.3', 'pandas==2.0.3', 'matplotlib==3.7.2', 'pytest==7.4.0']
+2026-04-06 04:47:57 | WARNING  | test_runner | Tests FAILED for model_comparison_benchmarker:
+test_model_comparison_benchmarker.py::test_evaluate_model FAILED         [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_model_comparison_benchmarker.py::test_evaluate_model - NameError: name 'torch' is not defined
+2026-04-06 04:47:57 | WARNING  | tool_builder | ⚠️  model_comparison_benchmarker tests failed (loop 1/5) — test_model_comparison_benchmarker.py::test_evaluate_model FAILED         [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_model_comparison_benchmarker.py::test_evaluate_model - NameError:
+2026-04-06 04:48:05 | DEBUG    | llm_client | LLM response from github_models (7611 chars)
+2026-04-06 04:48:05 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pandas', 'matplotlib']
+2026-04-06 04:48:08 | WARNING  | test_runner | Tests FAILED for model_comparison_benchmarker:
+test_model_comparison_benchmarker.py::test_evaluate_model FAILED         [ 66%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_model_comparison_benchmarker.py::test_evaluate_model - AttributeError: 'method' object has no attribute 'return_value'
+2026-04-06 04:48:08 | WARNING  | tool_builder | ⚠️  model_comparison_benchmarker tests failed (loop 2/5) — test_model_comparison_benchmarker.py::test_evaluate_model FAILED         [ 66%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_model_comparison_benchmarker.py::test_ev
+2026-04-06 04:48:16 | DEBUG    | llm_client | LLM response from github_models (7666 chars)
+2026-04-06 04:48:16 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pandas', 'matplotlib']
+2026-04-06 04:48:19 | INFO     | test_runner | Tests PASSED for model_comparison_benchmarker
+2026-04-06 04:48:19 | INFO     | tool_builder | ✅ model_comparison_benchmarker passed tests on loop 3
+2026-04-06 04:48:19 | INFO     | tool_builder | Building tool: ai_assistant_snippet_manager …
+2026-04-06 04:48:31 | DEBUG    | llm_client | LLM response from github_models (5993 chars)
+2026-04-06 04:48:31 | DEBUG    | test_runner | Installing: ['openai==0.27.8']
+2026-04-06 04:48:32 | INFO     | test_runner | Tests PASSED for ai_assistant_snippet_manager
+2026-04-06 04:48:32 | INFO     | tool_builder | ✅ ai_assistant_snippet_manager passed tests on loop 1
+2026-04-06 04:48:32 | INFO     | tool_builder | Building tool: ai_error_explainer …
+2026-04-06 04:48:43 | DEBUG    | llm_client | LLM response from github_models (6639 chars)
+2026-04-06 04:48:43 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'rich==13.5.2']
+2026-04-06 04:48:44 | WARNING  | test_runner | Tests FAILED for ai_error_explainer:
+test_ai_error_explainer.py::test_explain_error_api_error FAILED          [ 66%]
+test_ai_error_explainer.py::test_explain_error_empty_message FAILED      [100%]
+E   Exception: API error
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:900: in assert_not_called
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create' to not have been called. Called 1 times.
+    mock_create.assert_not_called()
+E   AssertionError: Expected 'create' to not have been called. Called 1 times.
+E   assert {'messages': ...del': 'gpt-4'} == {}
+FAILED test_ai_error_explainer.py::test_explain_error_api_error - Exception: API error
+FAILED test_ai_error_explainer.py::test_explain_error_empty_message - AssertionError: Expected 'create' to not have been called. Called 1 times.
+assert {'messages': ...del': 'gpt-4'} == {}
+2026-04-06 04:48:44 | WARNING  | tool_builder | ⚠️  ai_error_explainer tests failed (loop 1/5) — test_ai_error_explainer.py::test_explain_error_api_error FAILED          [ 66%]
+test_ai_error_explainer.py::test_explain_error_empty_message FAILED      [100%]
+E   Exception: API error
+/opt/hostedtool
+2026-04-06 04:48:52 | DEBUG    | llm_client | LLM response from github_models (5828 chars)
+2026-04-06 04:48:52 | DEBUG    | test_runner | Installing: ['rich', 'openai']
+2026-04-06 04:48:53 | WARNING  | test_runner | Tests FAILED for ai_error_explainer:
+test_ai_error_explainer.py::test_explain_error_api_error FAILED          [ 66%]
+    with patch('openai.ChatCompletion.create', side_effect=openai.error.OpenAIError("API error")):
+E   NameError: name 'openai' is not defined
+FAILED test_ai_error_explainer.py::test_explain_error_api_error - NameError: name 'openai' is not defined
+2026-04-06 04:48:53 | WARNING  | tool_builder | ⚠️  ai_error_explainer tests failed (loop 2/5) — test_ai_error_explainer.py::test_explain_error_api_error FAILED          [ 66%]
+    with patch('openai.ChatCompletion.create', side_effect=openai.error.OpenAIError("API error")):
+E   NameError: name '
+2026-04-06 04:49:00 | DEBUG    | llm_client | LLM response from github_models (5715 chars)
+2026-04-06 04:49:00 | DEBUG    | test_runner | Installing: ['rich', 'openai']
+2026-04-06 04:49:01 | INFO     | test_runner | Tests PASSED for ai_error_explainer
+2026-04-06 04:49:01 | INFO     | tool_builder | ✅ ai_error_explainer passed tests on loop 3
+2026-04-06 04:49:01 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-06 04:49:01 | INFO     | main |   Built 4/5 tools successfully
+2026-04-06 04:49:01 | INFO     | main |     ✅ gemma_deploy_helper (loops: 1)
+2026-04-06 04:49:01 | INFO     | main |     ✅ model_comparison_benchmarker (loops: 3)
+2026-04-06 04:49:01 | INFO     | main |     ✅ ai_assistant_snippet_manager (loops: 1)
+2026-04-06 04:49:01 | INFO     | main |     ✅ ai_error_explainer (loops: 3)
+2026-04-06 04:49:01 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-06 04:49:01 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-06 04:49:01 | INFO     | github_publisher |   Created zip: gemma_deploy_helper.zip (2677 bytes)
+2026-04-06 04:49:01 | INFO     | github_publisher | Saved gemma_deploy_helper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/gemma_deploy_helper
+2026-04-06 04:49:01 | INFO     | github_publisher |   Created zip: model_comparison_benchmarker.zip (3200 bytes)
+2026-04-06 04:49:01 | INFO     | github_publisher | Saved model_comparison_benchmarker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/model_comparison_benchmarker
+2026-04-06 04:49:01 | INFO     | github_publisher |   Created zip: ai_assistant_snippet_manager.zip (2800 bytes)
+2026-04-06 04:49:01 | INFO     | github_publisher | Saved ai_assistant_snippet_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_assistant_snippet_manager
+2026-04-06 04:49:01 | INFO     | github_publisher |   Created zip: ai_error_explainer.zip (2607 bytes)
+2026-04-06 04:49:01 | INFO     | github_publisher | Saved ai_error_explainer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_error_explainer
+2026-04-06 04:49:01 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-06 04:49:01 | INFO     | main |   Published 4 tools:
+2026-04-06 04:49:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/gemma_deploy_helper
+2026-04-06 04:49:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/model_comparison_benchmarker
+2026-04-06 04:49:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_assistant_snippet_manager
+2026-04-06 04:49:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_error_explainer
+2026-04-06 04:49:01 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-04-06 04:49:01 | INFO     | main | ✅ Generated tools_index.json with 115 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
