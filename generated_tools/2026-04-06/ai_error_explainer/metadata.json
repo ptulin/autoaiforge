@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_error_explainer",
+  "display_name": "AI Error Explainer",
+  "description": "This tool enables developers to input complex error messages from their Python projects and receive AI-generated explanations and potential fixes. It integrates with AI coding assistants to provide actionable advice and helps reduce debugging time, especially for less experienced developers.",
+  "topic": "AI coding assistants",
+  "date": "2026-04-06",
+  "generated": "2026-04-06T04:43:06.223231+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_error_explainer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_error_explainer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_error_explainer/ai_error_explainer.zip"
+}

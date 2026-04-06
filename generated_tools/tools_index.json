@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-05T04:42:40.311137+00:00",
-  "total_tools": 111,
+  "last_updated": "2026-04-06T04:49:01.591755+00:00",
+  "total_tools": 115,
   "tools": [
+    {
+      "tool_name": "ai_assistant_snippet_manager",
+      "display_name": "AI Assistant Snippet Manager",
+      "description": "This tool acts as a bridge between AI coding assistants like Claude Code or ChatGPT and your IDE. It allows you to query AI for code snippets and save or retrieve them as reusable templates. The tool can automatically tag and organize snippets based on context, making it easy to manage frequently used code patterns.",
+      "topic": "AI coding assistants",
+      "date": "2026-04-06",
+      "generated": "2026-04-06T04:43:06.223231+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_assistant_snippet_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_assistant_snippet_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_assistant_snippet_manager/ai_assistant_snippet_manager.zip"
+    },
+    {
+      "tool_name": "ai_error_explainer",
+      "display_name": "AI Error Explainer",
+      "description": "This tool enables developers to input complex error messages from their Python projects and receive AI-generated explanations and potential fixes. It integrates with AI coding assistants to provide actionable advice and helps reduce debugging time, especially for less experienced developers.",
+      "topic": "AI coding assistants",
+      "date": "2026-04-06",
+      "generated": "2026-04-06T04:43:06.223231+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/ai_error_explainer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_error_explainer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/ai_error_explainer/ai_error_explainer.zip"
+    },
+    {
+      "tool_name": "gemma_deploy_helper",
+      "display_name": "Gemma Deploy Helper",
+      "description": "This tool simplifies the deployment of Google Gemma 4 and other open-source AI models onto local hardware. It automatically detects the available hardware (CPU/GPU), configures model-specific settings for optimal performance, and launches the model server with minimal setup effort. This is useful for developers seeking to quickly test and deploy AI models locally without diving into complex configuration details.",
+      "topic": "Open-source AI models",
+      "date": "2026-04-06",
+      "generated": "2026-04-06T04:43:06.223231+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/gemma_deploy_helper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/gemma_deploy_helper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/gemma_deploy_helper/gemma_deploy_helper.zip"
+    },
+    {
+      "tool_name": "model_comparison_benchmarker",
+      "display_name": "Model Comparison Benchmarker",
+      "description": "This tool allows developers to benchmark and compare the performance of Google Gemma 4 and other open-source AI models across multiple datasets. It provides detailed metrics like latency, accuracy, and resource utilization, making it easier to select the best model for a specific use case.",
+      "topic": "Open-source AI models",
+      "date": "2026-04-06",
+      "generated": "2026-04-06T04:43:06.223231+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-06/model_comparison_benchmarker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/model_comparison_benchmarker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-06/model_comparison_benchmarker/model_comparison_benchmarker.zip"
+    },
     {
       "tool_name": "ai_dependency_scanner",
       "display_name": "AI Dependency Scanner",
