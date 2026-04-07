@@ -1,0 +1,255 @@
+2026-04-07 04:32:09 | INFO     | main | ============================================================
+2026-04-07 04:32:09 | INFO     | main | AutoAIForge starting run: 2026-04-07T04:32:09.442873+00:00
+2026-04-07 04:32:09 | INFO     | main | ============================================================
+2026-04-07 04:32:09 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-07 04:32:09 | INFO     | youtube_scraper | YouTube client ready
+2026-04-07 04:32:10 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-07 04:32:10 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-07 04:32:10 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-07 04:32:11 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-07 04:32:11 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-07 04:32:11 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 44 results (quota used: 600)
+2026-04-07 04:32:12 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-07 04:32:12 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-07 04:32:12 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-07 04:32:13 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-07 04:32:13 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-07 04:32:13 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-07 04:32:14 | INFO     | youtube_scraper | YouTube 'vector database AI': 21 results (quota used: 1300)
+2026-04-07 04:32:14 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-07 04:32:14 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-07 04:32:15 | INFO     | youtube_scraper | YouTube 'AI safety news': 46 results (quota used: 1600)
+2026-04-07 04:32:15 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-07 04:32:15 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-07 04:32:15 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-07 04:32:16 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-07 04:32:16 | INFO     | youtube_scraper | YouTube total: 861 items, quota used: 2000
+2026-04-07 04:32:16 | INFO     | main |   YouTube: 807 items
+2026-04-07 04:32:16 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-07 04:32:21 | INFO     | rss_scraper | HackerNews: 159 items
+2026-04-07 04:32:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-07 04:32:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-07 04:32:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-07 04:32:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-07 04:32:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-07 04:32:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-07 04:32:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-07 04:32:28 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-07 04:32:28 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-07 04:32:30 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-07 04:32:31 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-07 04:32:32 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-07 04:32:33 | INFO     | rss_scraper | ArXiv: 0 items
+2026-04-07 04:32:37 | INFO     | rss_scraper | Dev.to: 189 items
+2026-04-07 04:32:38 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-07 04:32:38 | INFO     | rss_scraper | Free sources total: 398 unique items
+2026-04-07 04:32:38 | INFO     | main |   RSS/API sources: 398 items
+2026-04-07 04:32:38 | INFO     | main |   Total scraped: 1205 items
+2026-04-07 04:32:38 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-07 04:32:38 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-07 04:32:38 | INFO     | db_manager | Purged 861 old news items
+2026-04-07 04:32:38 | INFO     | db_manager | Inserted 968/1205 news items
+2026-04-07 04:32:38 | INFO     | main |   SQLite: 968 new items (total: 29662)
+2026-04-07 04:32:43 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-07 04:32:44 | INFO     | vector_store | VectorStore ready
+2026-04-07 04:33:14 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-07 04:33:14 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-07 04:33:14 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-07 04:33:14 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-07 04:33:21 | DEBUG    | llm_client | LLM response from github_models (3855 chars)
+2026-04-07 04:33:21 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-07 04:33:21 | INFO     | main |   Found 10 topics:
+2026-04-07 04:33:21 | INFO     | main |      1. [10/10] Anthropic Claude Code Leak
+2026-04-07 04:33:21 | INFO     | main |      2. [9/10] Claude AI Memory Portability
+2026-04-07 04:33:21 | INFO     | main |      3. [9/10] Microsoft Multi-Model AI Strategy
+2026-04-07 04:33:21 | INFO     | main |      4. [9/10] AI Deepfake Detection Tools
+2026-04-07 04:33:21 | INFO     | main |      5. [8/10] Neuro-Symbolic AI Energy Efficiency
+2026-04-07 04:33:21 | INFO     | main |      6. [8/10] Claude AI Skills Development
+2026-04-07 04:33:21 | INFO     | main |      7. [8/10] Claude AI for Digital Products
+2026-04-07 04:33:21 | INFO     | main |      8. [7/10] AI Cybersecurity Automation
+2026-04-07 04:33:21 | INFO     | main |      9. [7/10] OpenAI Robot Tax Proposal
+2026-04-07 04:33:21 | INFO     | main |     10. [7/10] AI-Powered Real Estate Tools
+2026-04-07 04:33:21 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-07 04:33:21 | INFO     | main |   Existing collection: 115 tools across 64 topics
+2026-04-07 04:33:21 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-07 04:33:26 | DEBUG    | llm_client | LLM response from github_models (3364 chars)
+2026-04-07 04:33:26 | INFO     | idea_generator | Generated 3 ideas for topic: Anthropic Claude Code Leak
+2026-04-07 04:33:30 | DEBUG    | llm_client | LLM response from github_models (2242 chars)
+2026-04-07 04:33:30 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI Memory Portability
+2026-04-07 04:33:30 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_memory_manager' — name already in collection
+2026-04-07 04:33:33 | DEBUG    | llm_client | LLM response from github_models (1409 chars)
+2026-04-07 04:33:33 | INFO     | idea_generator | Generated 1 ideas for topic: Microsoft Multi-Model AI Strategy
+2026-04-07 04:33:33 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-07 04:33:33 | INFO     | main |   Generated 5 tool ideas:
+2026-04-07 04:33:33 | INFO     | main |     • ai_code_vulnerability_scanner: This tool scans AI model source code for common security vulnerabilities such as
+2026-04-07 04:33:33 | INFO     | main |     • source_code_provenance_checker: This tool analyzes AI source code to detect potential intellectual property viol
+2026-04-07 04:33:33 | INFO     | main |     • ai_dependency_auditor: This tool analyzes dependencies in AI projects for known vulnerabilities, deprec
+2026-04-07 04:33:33 | INFO     | main |     • memory_diff_tool: This Python library and CLI tool allows developers to compare AI memory snapshot
+2026-04-07 04:33:33 | INFO     | main |     • multi_modal_model_router: A Python CLI tool that dynamically routes input data (text, image, or audio) to 
+2026-04-07 04:33:33 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-07 04:33:33 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-07 04:33:42 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-07 04:33:42 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-07 04:33:42 | INFO     | tool_builder | Building tool: ai_code_vulnerability_scanner …
+2026-04-07 04:33:52 | DEBUG    | llm_client | LLM response from github_models (6230 chars)
+2026-04-07 04:33:52 | ERROR    | tool_builder | Initial generation failed for ai_code_vulnerability_scanner: LLM returned non-JSON: {
+  "code": "import os\nimport re\nimport json\nimport argparse\n\ndef scan_file(file_path):\n    vulnerabilities = []\n\n    try:\n        with open(file_path, 'r', encoding='utf-8') as file:\n            content = file.read()\n\n            # Check for hardcoded secrets (e.g., API keys, passwords)
+Invalid \escape: line 2 column 378 (char 379)
+2026-04-07 04:33:52 | INFO     | tool_builder | Building tool: source_code_provenance_checker …
+2026-04-07 04:34:02 | DEBUG    | llm_client | LLM response from github_models (5967 chars)
+2026-04-07 04:34:02 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.2']
+2026-04-07 04:34:03 | WARNING  | test_runner | Tests FAILED for source_code_provenance_checker:
+test_source_code_provenance_checker.py::test_compare_code_with_repositories FAILED [100%]
+    assert len(matches) > 0
+E   assert 0 > 0
+FAILED test_source_code_provenance_checker.py::test_compare_code_with_repositories - assert 0 > 0
+2026-04-07 04:34:03 | WARNING  | tool_builder | ⚠️  source_code_provenance_checker tests failed (loop 1/5) — test_source_code_provenance_checker.py::test_compare_code_with_repositories FAILED [100%]
+    assert len(matches) > 0
+E   assert 0 > 0
+FAILED test_source_code_provenance_checker.py::test_compare_code_
+2026-04-07 04:34:09 | DEBUG    | llm_client | LLM response from github_models (5650 chars)
+2026-04-07 04:34:09 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-04-07 04:34:10 | INFO     | test_runner | Tests PASSED for source_code_provenance_checker
+2026-04-07 04:34:10 | INFO     | tool_builder | ✅ source_code_provenance_checker passed tests on loop 2
+2026-04-07 04:34:10 | INFO     | tool_builder | Building tool: ai_dependency_auditor …
+2026-04-07 04:34:19 | DEBUG    | llm_client | LLM response from github_models (5344 chars)
+2026-04-07 04:34:19 | DEBUG    | test_runner | Installing: ['pkg_resources==0.0.0']
+2026-04-07 04:34:19 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement pkg_resources==0.0.0 (from versions: none)
+ERROR: No matching distribution found for pkg_resources==0.0.0
+
+2026-04-07 04:34:19 | WARNING  | test_runner | Tests FAILED for ai_dependency_auditor:
+test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages - NameError: name 'pkg_resources' is not defined
+2026-04-07 04:34:19 | WARNING  | tool_builder | ⚠️  ai_dependency_auditor tests failed (loop 1/5) — test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencie
+2026-04-07 04:34:29 | DEBUG    | llm_client | LLM response from github_models (6271 chars)
+2026-04-07 04:34:29 | DEBUG    | test_runner | Installing: ['setuptools']
+2026-04-07 04:34:29 | WARNING  | test_runner | Tests FAILED for ai_dependency_auditor:
+test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages - NameError: name 'pkg_resources' is not defined
+2026-04-07 04:34:29 | WARNING  | tool_builder | ⚠️  ai_dependency_auditor tests failed (loop 2/5) — test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencie
+2026-04-07 04:34:37 | DEBUG    | llm_client | LLM response from github_models (6236 chars)
+2026-04-07 04:34:37 | DEBUG    | test_runner | Installing: ['pytest', 'setuptools']
+2026-04-07 04:34:37 | WARNING  | test_runner | Tests FAILED for ai_dependency_auditor:
+test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages - NameError: name 'pkg_resources' is not defined
+2026-04-07 04:34:37 | WARNING  | tool_builder | ⚠️  ai_dependency_auditor tests failed (loop 3/5) — test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+E   NameError: name 'pkg_resources' is not defined
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencie
+2026-04-07 04:34:45 | DEBUG    | llm_client | LLM response from github_models (6548 chars)
+2026-04-07 04:34:45 | DEBUG    | test_runner | Installing: ['setuptools']
+2026-04-07 04:34:46 | WARNING  | test_runner | Tests FAILED for ai_dependency_auditor:
+test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+    assert len(result["licenses"]) == 1
+E   assert 0 == 1
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages - assert 0 == 1
+2026-04-07 04:34:46 | WARNING  | tool_builder | ⚠️  ai_dependency_auditor tests failed (loop 4/5) — test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+    assert len(result["licenses"]) == 1
+E   assert 0 == 1
+FAILED test_ai_dependency_auditor.py::test_analyze_depe
+2026-04-07 04:34:46 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-07 04:35:53 | DEBUG    | llm_client | LLM response from github_models (6432 chars)
+2026-04-07 04:35:53 | DEBUG    | test_runner | Installing: ['pkg_resources']
+2026-04-07 04:35:54 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement pkg_resources (from versions: none)
+ERROR: No matching distribution found for pkg_resources
+
+2026-04-07 04:35:54 | WARNING  | test_runner | Tests FAILED for ai_dependency_auditor:
+test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+    assert len(result["licenses"]) == 1
+E   assert 0 == 1
+FAILED test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages - assert 0 == 1
+2026-04-07 04:35:54 | WARNING  | tool_builder | ⚠️  ai_dependency_auditor tests failed (loop 5/5) — test_ai_dependency_auditor.py::test_analyze_dependencies_mocked_packages FAILED [100%]
+    assert len(result["licenses"]) == 1
+E   assert 0 == 1
+FAILED test_ai_dependency_auditor.py::test_analyze_depe
+2026-04-07 04:35:54 | ERROR    | tool_builder | ❌ ai_dependency_auditor failed after 5 loops
+2026-04-07 04:35:54 | INFO     | tool_builder | Building tool: memory_diff_tool …
+2026-04-07 04:36:05 | DEBUG    | llm_client | LLM response from github_models (5730 chars)
+2026-04-07 04:36:05 | DEBUG    | test_runner | Installing: ['jsondiff==1.3.1', 'tabulate==0.9.0', 'pytest==7.4.2']
+2026-04-07 04:36:07 | WARNING  | test_runner | Tests FAILED for memory_diff_tool:
+test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": ["value2", "value3"]}
+E   AssertionError: assert {} == {'key2': ['value2', 'value3']}
+FAILED test_memory_diff_tool.py::test_compare_memories - AssertionError: assert {} == {'key2': ['value2', 'value3']}
+2026-04-07 04:36:07 | WARNING  | tool_builder | ⚠️  memory_diff_tool tests failed (loop 1/5) — test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": ["value2", "value3"]}
+E   AssertionError: assert {} == {'key2': ['value2', 'value3']}
+FAIL
+2026-04-07 04:36:14 | DEBUG    | llm_client | LLM response from github_models (5615 chars)
+2026-04-07 04:36:14 | DEBUG    | test_runner | Installing: ['jsondiff', 'tabulate']
+2026-04-07 04:36:14 | WARNING  | test_runner | Tests FAILED for memory_diff_tool:
+test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+FAILED test_memory_diff_tool.py::test_compare_memories - AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+2026-04-07 04:36:14 | WARNING  | tool_builder | ⚠️  memory_diff_tool tests failed (loop 2/5) — test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'valu
+2026-04-07 04:36:21 | DEBUG    | llm_client | LLM response from github_models (6104 chars)
+2026-04-07 04:36:21 | DEBUG    | test_runner | Installing: ['jsondiff', 'tabulate']
+2026-04-07 04:36:22 | WARNING  | test_runner | Tests FAILED for memory_diff_tool:
+test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+FAILED test_memory_diff_tool.py::test_compare_memories - AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+2026-04-07 04:36:22 | WARNING  | tool_builder | ⚠️  memory_diff_tool tests failed (loop 3/5) — test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'valu
+2026-04-07 04:36:29 | DEBUG    | llm_client | LLM response from github_models (6263 chars)
+2026-04-07 04:36:29 | DEBUG    | test_runner | Installing: ['jsondiff', 'tabulate']
+2026-04-07 04:36:29 | WARNING  | test_runner | Tests FAILED for memory_diff_tool:
+test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+FAILED test_memory_diff_tool.py::test_compare_memories - AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+2026-04-07 04:36:29 | WARNING  | tool_builder | ⚠️  memory_diff_tool tests failed (loop 4/5) — test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'valu
+2026-04-07 04:36:38 | DEBUG    | llm_client | LLM response from github_models (6061 chars)
+2026-04-07 04:36:38 | DEBUG    | test_runner | Installing: ['jsondiff', 'tabulate']
+2026-04-07 04:36:39 | WARNING  | test_runner | Tests FAILED for memory_diff_tool:
+test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+FAILED test_memory_diff_tool.py::test_compare_memories - AssertionError: assert {} == {'key2': {'0'...1': 'value3'}}
+2026-04-07 04:36:39 | WARNING  | tool_builder | ⚠️  memory_diff_tool tests failed (loop 5/5) — test_memory_diff_tool.py::test_compare_memories FAILED                   [ 20%]
+    assert result == {"key2": {"0": "value2", "1": "value3"}}
+E   AssertionError: assert {} == {'key2': {'0'...1': 'valu
+2026-04-07 04:36:39 | ERROR    | tool_builder | ❌ memory_diff_tool failed after 5 loops
+2026-04-07 04:36:39 | INFO     | tool_builder | Building tool: multi_modal_model_router …
+2026-04-07 04:36:52 | DEBUG    | llm_client | LLM response from github_models (7036 chars)
+2026-04-07 04:36:52 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.3', 'Pillow==10.0.1', 'librosa==0.10.0']
+2026-04-07 04:37:57 | WARNING  | test_runner | Tests FAILED for multi_modal_model_router:
+test_multi_modal_model_router.py::test_process_audio FAILED              [100%]
+E   AttributeError: 'list' object has no attribute 'shape'
+ERROR    MultiModalModelRouter:multi_modal_model_router.py:62 Error processing audio: 'list' object has no attribute 'shape'
+FAILED test_multi_modal_model_router.py::test_process_audio - AttributeError: 'list' object has no attribute 'shape'
+2026-04-07 04:37:57 | WARNING  | tool_builder | ⚠️  multi_modal_model_router tests failed (loop 1/5) — test_multi_modal_model_router.py::test_process_audio FAILED              [100%]
+E   AttributeError: 'list' object has no attribute 'shape'
+ERROR    MultiModalModelRouter:multi_modal_model_router.py:62
+2026-04-07 04:38:06 | DEBUG    | llm_client | LLM response from github_models (6899 chars)
+2026-04-07 04:38:06 | DEBUG    | test_runner | Installing: ['transformers', 'torch', 'Pillow', 'librosa', 'numpy']
+2026-04-07 04:38:10 | INFO     | test_runner | Tests PASSED for multi_modal_model_router
+2026-04-07 04:38:10 | INFO     | tool_builder | ✅ multi_modal_model_router passed tests on loop 2
+2026-04-07 04:38:10 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-04-07 04:38:10 | INFO     | main |   Built 2/5 tools successfully
+2026-04-07 04:38:10 | INFO     | main |     ✅ source_code_provenance_checker (loops: 2)
+2026-04-07 04:38:10 | INFO     | main |     ✅ multi_modal_model_router (loops: 2)
+2026-04-07 04:38:10 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-07 04:38:10 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-07 04:38:10 | INFO     | github_publisher |   Created zip: source_code_provenance_checker.zip (2489 bytes)
+2026-04-07 04:38:10 | INFO     | github_publisher | Saved source_code_provenance_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-07/source_code_provenance_checker
+2026-04-07 04:38:10 | INFO     | github_publisher |   Created zip: multi_modal_model_router.zip (2926 bytes)
+2026-04-07 04:38:10 | INFO     | github_publisher | Saved multi_modal_model_router → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-07/multi_modal_model_router
+2026-04-07 04:38:10 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-04-07 04:38:10 | INFO     | main |   Published 2 tools:
+2026-04-07 04:38:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-07/source_code_provenance_checker
+2026-04-07 04:38:10 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-07/multi_modal_model_router
+2026-04-07 04:38:10 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-04-07 04:38:10 | INFO     | main | ✅ Generated tools_index.json with 117 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

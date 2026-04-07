@@ -1,0 +1,13 @@
+{
+  "tool_name": "source_code_provenance_checker",
+  "display_name": "Source Code Provenance Checker",
+  "description": "This tool analyzes AI source code to detect potential intellectual property violations by comparing code snippets against publicly available repositories. It helps developers ensure compliance and safeguard proprietary code.",
+  "topic": "Anthropic Claude Code Leak",
+  "date": "2026-04-07",
+  "generated": "2026-04-07T04:32:09.442873+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-07/source_code_provenance_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-07/source_code_provenance_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-07/source_code_provenance_checker/source_code_provenance_checker.zip"
+}
