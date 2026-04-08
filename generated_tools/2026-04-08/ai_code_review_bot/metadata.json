@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_review_bot",
+  "display_name": "AI Code Review Bot",
+  "description": "This tool integrates AI-based code review into a developer's workflow by analyzing code for potential issues, providing suggestions for improvement, and generating alternative, optimized solutions. It can be used as a CLI tool or integrated into CI/CD pipelines for automated code quality checks.",
+  "topic": "AI for code generation",
+  "date": "2026-04-08",
+  "generated": "2026-04-08T04:35:28.300550+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-08/ai_code_review_bot",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-08/ai_code_review_bot/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-08/ai_code_review_bot/ai_code_review_bot.zip"
+}
