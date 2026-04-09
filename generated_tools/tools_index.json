@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-08T04:42:05.685797+00:00",
-  "total_tools": 118,
+  "last_updated": "2026-04-09T04:38:17.740792+00:00",
+  "total_tools": 121,
   "tools": [
+    {
+      "tool_name": "browser_ai_orchestrator",
+      "display_name": "Browser AI Orchestrator",
+      "description": "An automation library that simplifies AI-driven browser automation by providing a secure and developer-friendly wrapper around Selenium. It lets AI models control browsers in a structured manner with built-in safeguards to prevent unsafe or unintended actions. Ideal for tasks like web scraping, form filling, or workflow execution.",
+      "topic": "AI-Controlled Automation",
+      "date": "2026-04-09",
+      "generated": "2026-04-09T04:31:54.420390+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/browser_ai_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/browser_ai_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/browser_ai_orchestrator/browser_ai_orchestrator.zip"
+    },
+    {
+      "tool_name": "claude_api_tester",
+      "display_name": "Claude API Tester",
+      "description": "This tool helps developers test and benchmark Anthropic's Claude Managed Agents APIs. It supports sending different payloads, measuring response times, and validating outputs against expected results, helping ensure robustness in production environments.",
+      "topic": "Claude Managed Agents",
+      "date": "2026-04-09",
+      "generated": "2026-04-09T04:31:54.420390+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_api_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/claude_api_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/claude_api_tester/claude_api_tester.zip"
+    },
+    {
+      "tool_name": "claude_workflow_manager",
+      "display_name": "Claude Workflow Manager",
+      "description": "This tool allows developers to define, chain, and execute complex Claude Managed Agent workflows via a simple YAML configuration. It streamlines the orchestration of multi-step AI tasks, such as data extraction, summarization, and decision-making, without requiring manual API calls.",
+      "topic": "Claude Managed Agents",
+      "date": "2026-04-09",
+      "generated": "2026-04-09T04:31:54.420390+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_workflow_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/claude_workflow_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-09/claude_workflow_manager/claude_workflow_manager.zip"
+    },
     {
       "tool_name": "ai_code_review_bot",
       "display_name": "AI Code Review Bot",
