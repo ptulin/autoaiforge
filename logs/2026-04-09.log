@@ -1,0 +1,342 @@
+2026-04-09 04:31:54 | INFO     | main | ============================================================
+2026-04-09 04:31:54 | INFO     | main | AutoAIForge starting run: 2026-04-09T04:31:54.420390+00:00
+2026-04-09 04:31:54 | INFO     | main | ============================================================
+2026-04-09 04:31:54 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-09 04:31:54 | INFO     | youtube_scraper | YouTube client ready
+2026-04-09 04:31:55 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-09 04:31:55 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-09 04:31:55 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-09 04:31:56 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-09 04:31:56 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-09 04:31:56 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 45 results (quota used: 600)
+2026-04-09 04:31:57 | INFO     | youtube_scraper | YouTube 'machine learning tools': 47 results (quota used: 700)
+2026-04-09 04:31:57 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-09 04:31:57 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-09 04:31:58 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-09 04:31:58 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-09 04:31:58 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-09 04:31:59 | INFO     | youtube_scraper | YouTube 'vector database AI': 19 results (quota used: 1300)
+2026-04-09 04:31:59 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-09 04:31:59 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-09 04:31:59 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-09 04:32:00 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-09 04:32:00 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-09 04:32:00 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-09 04:32:01 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-09 04:32:01 | INFO     | youtube_scraper | YouTube total: 862 items, quota used: 2000
+2026-04-09 04:32:01 | INFO     | main |   YouTube: 823 items
+2026-04-09 04:32:01 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-09 04:32:06 | INFO     | rss_scraper | HackerNews: 177 items
+2026-04-09 04:32:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-09 04:32:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-09 04:32:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-09 04:32:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-09 04:32:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-09 04:32:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-09 04:32:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-09 04:32:14 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-09 04:32:19 | INFO     | rss_scraper | ArXiv: 114 items
+2026-04-09 04:32:24 | INFO     | rss_scraper | Dev.to: 189 items
+2026-04-09 04:32:25 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-09 04:32:25 | INFO     | rss_scraper | Free sources total: 530 unique items
+2026-04-09 04:32:25 | INFO     | main |   RSS/API sources: 530 items
+2026-04-09 04:32:25 | INFO     | main |   Total scraped: 1353 items
+2026-04-09 04:32:25 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-09 04:32:25 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-09 04:32:26 | INFO     | db_manager | Purged 1054 old news items
+2026-04-09 04:32:26 | INFO     | db_manager | Inserted 1066/1353 news items
+2026-04-09 04:32:26 | INFO     | main |   SQLite: 1066 new items (total: 29691)
+2026-04-09 04:32:30 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-09 04:32:31 | INFO     | vector_store | VectorStore ready
+2026-04-09 04:32:58 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-09 04:32:58 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-09 04:32:58 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-09 04:32:58 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-09 04:33:04 | DEBUG    | llm_client | LLM response from github_models (3656 chars)
+2026-04-09 04:33:04 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-09 04:33:04 | INFO     | main |   Found 10 topics:
+2026-04-09 04:33:04 | INFO     | main |      1. [9/10] Claude Managed Agents
+2026-04-09 04:33:04 | INFO     | main |      2. [9/10] AI-Controlled Automation
+2026-04-09 04:33:04 | INFO     | main |      3. [9/10] AI-Powered Trading Bots
+2026-04-09 04:33:04 | INFO     | main |      4. [8/10] AI Model Security Concerns
+2026-04-09 04:33:04 | INFO     | main |      5. [8/10] Multimodal AI Advancements
+2026-04-09 04:33:04 | INFO     | main |      6. [8/10] AI Sandbox Escapes
+2026-04-09 04:33:04 | INFO     | main |      7. [8/10] AI-Driven Design Integration
+2026-04-09 04:33:04 | INFO     | main |      8. [7/10] Conversational Search AI
+2026-04-09 04:33:04 | INFO     | main |      9. [7/10] AI Literacy Tools
+2026-04-09 04:33:04 | INFO     | main |     10. [7/10] AI in Healthcare Bias
+2026-04-09 04:33:04 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-09 04:33:04 | INFO     | main |   Existing collection: 118 tools across 67 topics
+2026-04-09 04:33:04 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Trading Bots' (relevance 9/10, last built 2026-03-23)
+2026-04-09 04:33:04 | INFO     | main |   Topics flagged for upgrade: AI-Powered Trading Bots
+2026-04-09 04:33:10 | DEBUG    | llm_client | LLM response from github_models (3355 chars)
+2026-04-09 04:33:10 | INFO     | idea_generator | Generated 3 ideas for topic: Claude Managed Agents
+2026-04-09 04:33:15 | DEBUG    | llm_client | LLM response from github_models (2788 chars)
+2026-04-09 04:33:15 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Controlled Automation
+2026-04-09 04:33:15 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-09 04:33:15 | INFO     | main |   Generated 5 tool ideas:
+2026-04-09 04:33:15 | INFO     | main |     • claude_workflow_manager: This tool allows developers to define, chain, and execute complex Claude Managed
+2026-04-09 04:33:15 | INFO     | main |     • claude_api_tester: This tool helps developers test and benchmark Anthropic's Claude Managed Agents 
+2026-04-09 04:33:15 | INFO     | main |     • claude_data_preprocessor: This utility preprocesses datasets for use with Claude Managed Agents. It includ
+2026-04-09 04:33:15 | INFO     | main |     • ai_automation_guardian: A CLI tool that acts as a safety and monitoring layer for AI-driven automation w
+2026-04-09 04:33:15 | INFO     | main |     • browser_ai_orchestrator: An automation library that simplifies AI-driven browser automation by providing 
+2026-04-09 04:33:15 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-09 04:33:15 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-09 04:33:24 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-09 04:33:24 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-09 04:33:24 | INFO     | tool_builder | Building tool: claude_workflow_manager …
+2026-04-09 04:33:33 | DEBUG    | llm_client | LLM response from github_models (6591 chars)
+2026-04-09 04:33:33 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'httpx==0.24.1']
+2026-04-09 04:33:35 | WARNING  | test_runner | Tests FAILED for claude_workflow_manager:
+test_claude_workflow_manager.py::test_load_workflow FAILED               [ 25%]
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+E   yaml.parser.ParserError: while parsing a block mapping
+ERROR    root:claude_workflow_manager.py:20 Error parsing YAML file: while parsing a block mapping
+FAILED test_claude_workflow_manager.py::test_load_workflow - yaml.parser.ParserError: while parsing a block mapping
+2026-04-09 04:33:35 | WARNING  | tool_builder | ⚠️  claude_workflow_manager tests failed (loop 1/5) — test_claude_workflow_manager.py::test_load_workflow FAILED               [ 25%]
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+E   yaml.parser.ParserError: while parsing a bloc
+2026-04-09 04:33:44 | DEBUG    | llm_client | LLM response from github_models (7387 chars)
+2026-04-09 04:33:44 | DEBUG    | test_runner | Installing: ['httpx', 'PyYAML']
+2026-04-09 04:33:45 | INFO     | test_runner | Tests PASSED for claude_workflow_manager
+2026-04-09 04:33:45 | INFO     | tool_builder | ✅ claude_workflow_manager passed tests on loop 2
+2026-04-09 04:33:45 | INFO     | tool_builder | Building tool: claude_api_tester …
+2026-04-09 04:33:52 | DEBUG    | llm_client | LLM response from github_models (5506 chars)
+2026-04-09 04:33:52 | DEBUG    | test_runner | Installing: ['httpx==0.24.0', 'pytest==7.4.0']
+2026-04-09 04:33:53 | WARNING  | test_runner | Tests FAILED for claude_api_tester:
+test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+FAILED test_claude_api_tester.py::test_send_request_failure - NameError: name 'httpx' is not defined
+2026-04-09 04:33:53 | WARNING  | tool_builder | ⚠️  claude_api_tester tests failed (loop 1/5) — test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+FAILED test_c
+2026-04-09 04:34:00 | DEBUG    | llm_client | LLM response from github_models (5784 chars)
+2026-04-09 04:34:00 | DEBUG    | test_runner | Installing: ['httpx', 'pytest']
+2026-04-09 04:34:01 | WARNING  | test_runner | Tests FAILED for claude_api_tester:
+test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+FAILED test_claude_api_tester.py::test_send_request_failure - NameError: name 'httpx' is not defined
+2026-04-09 04:34:01 | WARNING  | tool_builder | ⚠️  claude_api_tester tests failed (loop 2/5) — test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error")
+E   NameError: name 'httpx' is not defined
+FAILED test_c
+2026-04-09 04:34:08 | DEBUG    | llm_client | LLM response from github_models (5682 chars)
+2026-04-09 04:34:08 | DEBUG    | test_runner | Installing: ['httpx']
+2026-04-09 04:34:08 | WARNING  | test_runner | Tests FAILED for claude_api_tester:
+test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error", request=Mock())
+E   NameError: name 'httpx' is not defined
+FAILED test_claude_api_tester.py::test_send_request_failure - NameError: name 'httpx' is not defined
+2026-04-09 04:34:08 | WARNING  | tool_builder | ⚠️  claude_api_tester tests failed (loop 3/5) — test_claude_api_tester.py::test_send_request_failure FAILED              [ 66%]
+    mock_post.side_effect = httpx.RequestError("Network error", request=Mock())
+E   NameError: name 'httpx' is not defin
+2026-04-09 04:34:16 | DEBUG    | llm_client | LLM response from github_models (6095 chars)
+2026-04-09 04:34:16 | DEBUG    | test_runner | Installing: ['httpx']
+2026-04-09 04:34:16 | INFO     | test_runner | Tests PASSED for claude_api_tester
+2026-04-09 04:34:16 | INFO     | tool_builder | ✅ claude_api_tester passed tests on loop 4
+2026-04-09 04:34:16 | INFO     | tool_builder | Building tool: claude_data_preprocessor …
+2026-04-09 04:34:28 | DEBUG    | llm_client | LLM response from github_models (6368 chars)
+2026-04-09 04:34:28 | DEBUG    | test_runner | Installing: ['nltk==3.8.1']
+2026-04-09 04:34:30 | WARNING  | test_runner | Tests FAILED for claude_data_preprocessor:
+test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_main_json FAILED                  [ 80%]
+test_claude_data_preprocessor.py::test_main_text FAILED                  [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_chunk_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_preprocess_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_main_json - NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_main_text - NameError: name 'argparse' is not defined
+2026-04-09 04:34:30 | WARNING  | tool_builder | ⚠️  claude_data_preprocessor tests failed (loop 1/5) — test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_m
+2026-04-09 04:34:38 | DEBUG    | llm_client | LLM response from github_models (6587 chars)
+2026-04-09 04:34:38 | DEBUG    | test_runner | Installing: ['nltk']
+2026-04-09 04:34:39 | WARNING  | test_runner | Tests FAILED for claude_data_preprocessor:
+test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_main_json FAILED                  [ 80%]
+test_claude_data_preprocessor.py::test_main_text FAILED                  [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_chunk_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_preprocess_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_main_json - NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_main_text - NameError: name 'argparse' is not defined
+2026-04-09 04:34:39 | WARNING  | tool_builder | ⚠️  claude_data_preprocessor tests failed (loop 2/5) — test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_m
+2026-04-09 04:34:47 | DEBUG    | llm_client | LLM response from github_models (6394 chars)
+2026-04-09 04:34:47 | DEBUG    | test_runner | Installing: ['nltk']
+2026-04-09 04:34:48 | WARNING  | test_runner | Tests FAILED for claude_data_preprocessor:
+test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_main_json FAILED                  [ 80%]
+test_claude_data_preprocessor.py::test_main_text FAILED                  [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_chunk_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_preprocess_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_main_json - NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_main_text - NameError: name 'argparse' is not defined
+2026-04-09 04:34:48 | WARNING  | tool_builder | ⚠️  claude_data_preprocessor tests failed (loop 3/5) — test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_m
+2026-04-09 04:34:57 | DEBUG    | llm_client | LLM response from github_models (6947 chars)
+2026-04-09 04:34:57 | DEBUG    | test_runner | Installing: ['nltk']
+2026-04-09 04:34:58 | WARNING  | test_runner | Tests FAILED for claude_data_preprocessor:
+test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_main_json FAILED                  [ 80%]
+test_claude_data_preprocessor.py::test_main_text FAILED                  [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_chunk_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_preprocess_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_main_json - NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_main_text - NameError: name 'argparse' is not defined
+2026-04-09 04:34:58 | WARNING  | tool_builder | ⚠️  claude_data_preprocessor tests failed (loop 4/5) — test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_m
+2026-04-09 04:35:07 | DEBUG    | llm_client | LLM response from github_models (7061 chars)
+2026-04-09 04:35:07 | DEBUG    | test_runner | Installing: ['nltk']
+2026-04-09 04:35:08 | WARNING  | test_runner | Tests FAILED for claude_data_preprocessor:
+test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_main_json FAILED                  [ 80%]
+test_claude_data_preprocessor.py::test_main_text FAILED                  [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_chunk_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_preprocess_text - LookupError: 
+FAILED test_claude_data_preprocessor.py::test_main_json - NameError: name 'argparse' is not defined
+FAILED test_claude_data_preprocessor.py::test_main_text - NameError: name 'argparse' is not defined
+2026-04-09 04:35:08 | WARNING  | tool_builder | ⚠️  claude_data_preprocessor tests failed (loop 5/5) — test_claude_data_preprocessor.py::test_chunk_text FAILED                 [ 40%]
+test_claude_data_preprocessor.py::test_preprocess_text FAILED            [ 60%]
+test_claude_data_preprocessor.py::test_m
+2026-04-09 04:35:08 | ERROR    | tool_builder | ❌ claude_data_preprocessor failed after 5 loops
+2026-04-09 04:35:08 | INFO     | tool_builder | Building tool: ai_automation_guardian …
+2026-04-09 04:35:14 | DEBUG    | llm_client | LLM response from github_models (4623 chars)
+2026-04-09 04:35:14 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'watchdog==3.0.0']
+2026-04-09 04:35:15 | WARNING  | test_runner | Tests FAILED for ai_automation_guardian:
+test_ai_automation_guardian.py::test_invalid_rules_file FAILED           [100%]
+E   TypeError: Context.__init__() got an unexpected keyword argument 'script'
+FAILED test_ai_automation_guardian.py::test_invalid_rules_file - TypeError: Context.__init__() got an unexpected keyword argument 'script'
+2026-04-09 04:35:15 | WARNING  | tool_builder | ⚠️  ai_automation_guardian tests failed (loop 1/5) — test_ai_automation_guardian.py::test_invalid_rules_file FAILED           [100%]
+E   TypeError: Context.__init__() got an unexpected keyword argument 'script'
+FAILED test_ai_automation_guardian.py::tes
+2026-04-09 04:35:15 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-09 04:36:24 | DEBUG    | llm_client | LLM response from github_models (5146 chars)
+2026-04-09 04:36:24 | DEBUG    | test_runner | Installing: ['watchdog']
+2026-04-09 04:36:24 | WARNING  | test_runner | Tests FAILED for ai_automation_guardian:
+test_ai_automation_guardian.py::test_invalid_rules_file FAILED           [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_automation_guardian.py::test_invalid_rules_file - NameError: name 'argparse' is not defined
+2026-04-09 04:36:24 | WARNING  | tool_builder | ⚠️  ai_automation_guardian tests failed (loop 2/5) — test_ai_automation_guardian.py::test_invalid_rules_file FAILED           [100%]
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_automation_guardian.py::test_invalid_rules_file - NameError
+2026-04-09 04:36:33 | DEBUG    | llm_client | LLM response from github_models (6735 chars)
+2026-04-09 04:36:33 | DEBUG    | test_runner | Installing: ['watchdog', 'pytest']
+2026-04-09 04:36:33 | WARNING  | test_runner | Tests FAILED for ai_automation_guardian:
+test_ai_automation_guardian.py::test_invalid_json_format FAILED          [ 80%]
+test_ai_automation_guardian.py::test_monitor_start_and_stop FAILED       [100%]
+E   NameError: name 'mock_open' is not defined
+E   NameError: name 'mock_open' is not defined
+FAILED test_ai_automation_guardian.py::test_invalid_json_format - NameError: name 'mock_open' is not defined
+FAILED test_ai_automation_guardian.py::test_monitor_start_and_stop - NameError: name 'mock_open' is not defined
+2026-04-09 04:36:33 | WARNING  | tool_builder | ⚠️  ai_automation_guardian tests failed (loop 3/5) — test_ai_automation_guardian.py::test_invalid_json_format FAILED          [ 80%]
+test_ai_automation_guardian.py::test_monitor_start_and_stop FAILED       [100%]
+E   NameError: name 'mock_open' is not d
+2026-04-09 04:36:44 | DEBUG    | llm_client | LLM response from github_models (6783 chars)
+2026-04-09 04:36:44 | DEBUG    | test_runner | Installing: ['watchdog', 'pytest']
+2026-04-09 04:37:44 | WARNING  | test_runner | Tests FAILED for ai_automation_guardian:
+test_ai_automation_guardian.py::test_monitor_start_and_stop FAILED       [100%]
+FAILED test_ai_automation_guardian.py::test_monitor_start_and_stop - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-09 04:37:44 | WARNING  | tool_builder | ⚠️  ai_automation_guardian tests failed (loop 4/5) — test_ai_automation_guardian.py::test_monitor_start_and_stop FAILED       [100%]
+FAILED test_ai_automation_guardian.py::test_monitor_start_and_stop - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-09 04:37:53 | DEBUG    | llm_client | LLM response from github_models (6247 chars)
+2026-04-09 04:37:53 | DEBUG    | test_runner | Installing: ['watchdog', 'pytest']
+2026-04-09 04:37:54 | WARNING  | test_runner | Tests FAILED for ai_automation_guardian:
+============================= test session starts ==============================
+collecting ... collected 5 items
+
+test_ai_automation_guardian.py::test_rule_violation PASSED               [ 20%]
+test_ai_automation_guardian.py::test_no_rule_violation PASSED            [ 40%]
+test_ai_automation_guardian.py::test_invalid_rules_file PASSED           [ 60%]
+test_ai_automation_guardian.py::test_invalid_json_format PASSED          [ 80%]
+test_ai_automation_guardian.py::test_monitor_start_and_stop 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1183: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+============================== 4 passed in 0.21s ===============================
+
+2026-04-09 04:37:54 | WARNING  | tool_builder | ⚠️  ai_automation_guardian tests failed (loop 5/5) — ============================= test session starts ==============================
+collecting ... collected 5 items
+
+test_ai_automation_guardian.py::test_rule_violation PASSED               [ 20%]
+test_
+2026-04-09 04:37:54 | ERROR    | tool_builder | ❌ ai_automation_guardian failed after 5 loops
+2026-04-09 04:37:54 | INFO     | tool_builder | Building tool: browser_ai_orchestrator …
+2026-04-09 04:38:04 | DEBUG    | llm_client | LLM response from github_models (7629 chars)
+2026-04-09 04:38:04 | DEBUG    | test_runner | Installing: ['selenium==4.15.0', 'loguru==0.7.0']
+2026-04-09 04:38:08 | WARNING  | test_runner | Tests FAILED for browser_ai_orchestrator:
+test_browser_ai_orchestrator.py::test_click_element FAILED               [ 66%]
+test_browser_ai_orchestrator.py::test_fill_form FAILED                   [100%]
+    mock_instance.find_element.assert_called_once_with(By.CSS_SELECTOR, "#test")
+E   NameError: name 'By' is not defined
+    mock_instance.find_element.assert_called_once_with(By.CSS_SELECTOR, "#input")
+E   NameError: name 'By' is not defined
+FAILED test_browser_ai_orchestrator.py::test_click_element - NameError: name 'By' is not defined
+FAILED test_browser_ai_orchestrator.py::test_fill_form - NameError: name 'By' is not defined
+2026-04-09 04:38:08 | WARNING  | tool_builder | ⚠️  browser_ai_orchestrator tests failed (loop 1/5) — test_browser_ai_orchestrator.py::test_click_element FAILED               [ 66%]
+test_browser_ai_orchestrator.py::test_fill_form FAILED                   [100%]
+    mock_instance.find_element.assert_ca
+2026-04-09 04:38:16 | DEBUG    | llm_client | LLM response from github_models (7827 chars)
+2026-04-09 04:38:16 | DEBUG    | test_runner | Installing: ['selenium', 'loguru']
+2026-04-09 04:38:17 | INFO     | test_runner | Tests PASSED for browser_ai_orchestrator
+2026-04-09 04:38:17 | INFO     | tool_builder | ✅ browser_ai_orchestrator passed tests on loop 2
+2026-04-09 04:38:17 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-04-09 04:38:17 | INFO     | main |   Built 3/5 tools successfully
+2026-04-09 04:38:17 | INFO     | main |     ✅ claude_workflow_manager (loops: 2)
+2026-04-09 04:38:17 | INFO     | main |     ✅ claude_api_tester (loops: 4)
+2026-04-09 04:38:17 | INFO     | main |     ✅ browser_ai_orchestrator (loops: 2)
+2026-04-09 04:38:17 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-09 04:38:17 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-09 04:38:17 | INFO     | github_publisher |   Created zip: claude_workflow_manager.zip (2953 bytes)
+2026-04-09 04:38:17 | INFO     | github_publisher | Saved claude_workflow_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_workflow_manager
+2026-04-09 04:38:17 | INFO     | github_publisher |   Created zip: claude_api_tester.zip (2599 bytes)
+2026-04-09 04:38:17 | INFO     | github_publisher | Saved claude_api_tester → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_api_tester
+2026-04-09 04:38:17 | INFO     | github_publisher |   Created zip: browser_ai_orchestrator.zip (2779 bytes)
+2026-04-09 04:38:17 | INFO     | github_publisher | Saved browser_ai_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/browser_ai_orchestrator
+2026-04-09 04:38:17 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-04-09 04:38:17 | INFO     | main |   Published 3 tools:
+2026-04-09 04:38:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_workflow_manager
+2026-04-09 04:38:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/claude_api_tester
+2026-04-09 04:38:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-09/browser_ai_orchestrator
+2026-04-09 04:38:17 | INFO     | main |   Deduplicated 1 older tool version(s) from index
+2026-04-09 04:38:17 | INFO     | main | ✅ Generated tools_index.json with 121 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
