@@ -1,0 +1,13 @@
+{
+  "tool_name": "deepfake_scan",
+  "display_name": "Deepfake Video and Image Scanner",
+  "description": "Deepfake Scan is a CLI tool that allows users to scan videos and images for potential deepfake content. Leveraging state-of-the-art AI models for deepfake detection, this tool provides a confidence score and visual heatmaps highlighting suspicious areas in the media files. This is useful for researchers, journalists, and developers working on detecting manipulated media in high-stakes scenarios like elections or misinformation campaigns.",
+  "topic": "AI for Deepfake Detection",
+  "date": "2026-04-10",
+  "generated": "2026-04-10T04:46:15.979426+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-10/deepfake_scan",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/deepfake_scan/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/deepfake_scan/deepfake_scan.zip"
+}

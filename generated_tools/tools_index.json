@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-04-09T04:38:17.740792+00:00",
-  "total_tools": 121,
+  "last_updated": "2026-04-10T04:52:58.946228+00:00",
+  "total_tools": 123,
   "tools": [
+    {
+      "tool_name": "deepfake_scan",
+      "display_name": "Deepfake Video and Image Scanner",
+      "description": "Deepfake Scan is a CLI tool that allows users to scan videos and images for potential deepfake content. Leveraging state-of-the-art AI models for deepfake detection, this tool provides a confidence score and visual heatmaps highlighting suspicious areas in the media files. This is useful for researchers, journalists, and developers working on detecting manipulated media in high-stakes scenarios like elections or misinformation campaigns.",
+      "topic": "AI for Deepfake Detection",
+      "date": "2026-04-10",
+      "generated": "2026-04-10T04:46:15.979426+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-10/deepfake_scan",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/deepfake_scan/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/deepfake_scan/deepfake_scan.zip"
+    },
+    {
+      "tool_name": "prompt_debugger",
+      "display_name": "Prompt Debugger",
+      "description": "A focused CLI tool designed to identify weaknesses in AI prompts by testing edge cases and generating diagnostic insights. It analyzes prompt responses for consistency, ambiguity, and sensitivity to wording changes.",
+      "topic": "AI-Powered Prompt Engineering",
+      "date": "2026-04-10",
+      "generated": "2026-04-10T04:46:15.979426+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-10/prompt_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/prompt_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-10/prompt_debugger/prompt_debugger.zip"
+    },
     {
       "tool_name": "browser_ai_orchestrator",
       "display_name": "Browser AI Orchestrator",

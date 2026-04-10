@@ -1,0 +1,5 @@
+torch==2.0.1
+opencv-python==4.8.0.74
+numpy==1.23.5
+matplotlib==3.7.2
+pytest==7.4.2
