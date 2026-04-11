@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_refactor_assistant",
+  "display_name": "AI Refactor Assistant",
+  "description": "This Python library provides an interface for AI-assisted code refactoring. Developers can pass their scripts or functions, and the tool suggests improvements in readability, performance, or adherence to best practices. Useful for optimizing legacy codebases or improving development standards.",
+  "topic": "AI Coding Assistants",
+  "date": "2026-04-11",
+  "generated": "2026-04-11T04:18:42.429112+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-11/ai_refactor_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-11/ai_refactor_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-11/ai_refactor_assistant/ai_refactor_assistant.zip"
+}

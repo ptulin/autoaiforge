@@ -1,0 +1,13 @@
+{
+  "tool_name": "deepfake_image_detector",
+  "display_name": "Deepfake Image Detector",
+  "description": "This CLI tool enables developers to analyze image files for potential deepfakes using pre-trained AI models. It leverages computer vision techniques to detect visual anomalies or artifacts often present in manipulated content. This is particularly useful for validating image authenticity in social media, news outlets, or forensic analysis workflows.",
+  "topic": "Deepfake Detection",
+  "date": "2026-04-11",
+  "generated": "2026-04-11T04:18:42.429112+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-11/deepfake_image_detector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-11/deepfake_image_detector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-11/deepfake_image_detector/deepfake_image_detector.zip"
+}
