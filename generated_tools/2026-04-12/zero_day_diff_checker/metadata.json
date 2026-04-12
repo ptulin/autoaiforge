@@ -1,0 +1,13 @@
+{
+  "tool_name": "zero_day_diff_checker",
+  "display_name": "Zero-Day Diff Checker",
+  "description": "A Python library for comparing two versions of a codebase to identify potential zero-day vulnerabilities introduced in new changes. Ideal for use in CI pipelines or during code reviews.",
+  "topic": "AI for Zero-Day Vulnerability Detection",
+  "date": "2026-04-12",
+  "generated": "2026-04-12T04:46:14.717434+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/zero_day_diff_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/zero_day_diff_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/zero_day_diff_checker/zero_day_diff_checker.zip"
+}

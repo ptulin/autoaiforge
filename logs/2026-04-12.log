@@ -1,0 +1,336 @@
+2026-04-12 04:46:14 | INFO     | main | ============================================================
+2026-04-12 04:46:14 | INFO     | main | AutoAIForge starting run: 2026-04-12T04:46:14.717434+00:00
+2026-04-12 04:46:14 | INFO     | main | ============================================================
+2026-04-12 04:46:14 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-12 04:46:14 | INFO     | youtube_scraper | YouTube client ready
+2026-04-12 04:46:15 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-12 04:46:15 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-12 04:46:16 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-12 04:46:16 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-12 04:46:16 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-12 04:46:16 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-12 04:46:17 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-12 04:46:17 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-12 04:46:18 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-12 04:46:18 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-12 04:46:18 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-12 04:46:19 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-12 04:46:19 | INFO     | youtube_scraper | YouTube 'vector database AI': 29 results (quota used: 1300)
+2026-04-12 04:46:19 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-12 04:46:19 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-12 04:46:20 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-12 04:46:20 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-12 04:46:20 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-12 04:46:21 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-12 04:46:21 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-12 04:46:21 | INFO     | youtube_scraper | YouTube total: 880 items, quota used: 2000
+2026-04-12 04:46:21 | INFO     | main |   YouTube: 827 items
+2026-04-12 04:46:21 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-12 04:46:26 | INFO     | rss_scraper | HackerNews: 157 items
+2026-04-12 04:46:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-12 04:46:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-12 04:46:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-12 04:46:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-12 04:46:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-12 04:46:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-12 04:46:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-12 04:46:34 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-12 04:46:40 | INFO     | rss_scraper | ArXiv: 98 items
+2026-04-12 04:46:45 | INFO     | rss_scraper | Dev.to: 198 items
+2026-04-12 04:46:46 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-12 04:46:46 | INFO     | rss_scraper | Free sources total: 503 unique items
+2026-04-12 04:46:46 | INFO     | main |   RSS/API sources: 503 items
+2026-04-12 04:46:46 | INFO     | main |   Total scraped: 1330 items
+2026-04-12 04:46:46 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-12 04:46:46 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-12 04:46:46 | INFO     | db_manager | Purged 1031 old news items
+2026-04-12 04:46:46 | INFO     | db_manager | Inserted 966/1330 news items
+2026-04-12 04:46:46 | INFO     | main |   SQLite: 966 new items (total: 29624)
+2026-04-12 04:46:51 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-12 04:46:53 | INFO     | vector_store | VectorStore ready
+2026-04-12 04:47:25 | INFO     | vector_store | Indexed 1975 items into vector store
+2026-04-12 04:47:25 | INFO     | main |   Vector store: 1975 items indexed
+2026-04-12 04:47:25 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-12 04:47:25 | INFO     | topic_analyzer | Analyzing 1975 items for top 10 topics …
+2026-04-12 04:47:34 | DEBUG    | llm_client | LLM response from github_models (4621 chars)
+2026-04-12 04:47:34 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-12 04:47:34 | INFO     | main |   Found 10 topics:
+2026-04-12 04:47:34 | INFO     | main |      1. [10/10] AI for Zero-Day Vulnerability Detection
+2026-04-12 04:47:34 | INFO     | main |      2. [9/10] AI-Powered Code Analysis
+2026-04-12 04:47:34 | INFO     | main |      3. [8/10] AI-Driven Workflow Automation
+2026-04-12 04:47:34 | INFO     | main |      4. [8/10] AI Integration with Productivity Tools
+2026-04-12 04:47:34 | INFO     | main |      5. [8/10] AI for E-commerce Automation
+2026-04-12 04:47:34 | INFO     | main |      6. [8/10] AI-Driven Meeting Automation
+2026-04-12 04:47:34 | INFO     | main |      7. [8/10] AI in Creative Content Generation
+2026-04-12 04:47:34 | INFO     | main |      8. [7/10] AI in Financial Market Analysis
+2026-04-12 04:47:34 | INFO     | main |      9. [7/10] AI-Enhanced File Organization
+2026-04-12 04:47:34 | INFO     | main |     10. [7/10] AI for Drug Prescription Management
+2026-04-12 04:47:34 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-12 04:47:34 | INFO     | main |   Existing collection: 125 tools across 72 topics
+2026-04-12 04:47:34 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-12 04:47:34 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-12 04:48:40 | DEBUG    | llm_client | LLM response from github_models (3360 chars)
+2026-04-12 04:48:40 | INFO     | idea_generator | Generated 3 ideas for topic: AI for Zero-Day Vulnerability Detection
+2026-04-12 04:48:44 | DEBUG    | llm_client | LLM response from github_models (2136 chars)
+2026-04-12 04:48:44 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Code Analysis
+2026-04-12 04:48:44 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-12 04:48:44 | INFO     | main |   Generated 5 tool ideas:
+2026-04-12 04:48:44 | INFO     | main |     • ai_zero_day_scanner: A CLI tool that leverages pre-trained AI models to perform static code analysis 
+2026-04-12 04:48:44 | INFO     | main |     • zero_day_diff_checker: A Python library for comparing two versions of a codebase to identify potential 
+2026-04-12 04:48:44 | INFO     | main |     • ai_vuln_exploit_simulator: A CLI-based automation tool that simulates potential exploits based on identifie
+2026-04-12 04:48:44 | INFO     | main |     • code_review_ai: A CLI tool that uses AI to perform an in-depth analysis of Python scripts or pro
+2026-04-12 04:48:44 | INFO     | main |     • real_time_debugger_ai: A Python module that integrates directly into your development workflow to provi
+2026-04-12 04:48:44 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-12 04:48:44 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-12 04:48:53 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-12 04:48:53 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-12 04:48:53 | INFO     | tool_builder | Building tool: ai_zero_day_scanner …
+2026-04-12 04:49:02 | DEBUG    | llm_client | LLM response from github_models (5036 chars)
+2026-04-12 04:49:02 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'rich==13.5.2', 'pygments==2.16.1']
+2026-04-12 04:49:10 | WARNING  | test_runner | Tests FAILED for ai_zero_day_scanner:
+test_ai_zero_day_scanner.py::test_analyze_code_success FAILED            [ 66%]
+test_ai_zero_day_scanner.py::test_generate_report FAILED                 [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test_file.py
+E   TypeError: write() argument must be str, not MagicMock
+FAILED test_ai_zero_day_scanner.py::test_analyze_code_success - FileNotFoundError: File not found: test_file.py
+FAILED test_ai_zero_day_scanner.py::test_generate_report - TypeError: write() argument must be str, not MagicMock
+2026-04-12 04:49:10 | WARNING  | tool_builder | ⚠️  ai_zero_day_scanner tests failed (loop 1/5) — test_ai_zero_day_scanner.py::test_analyze_code_success FAILED            [ 66%]
+test_ai_zero_day_scanner.py::test_generate_report FAILED                 [100%]
+    raise FileNotFoundError(f"File not f
+2026-04-12 04:49:16 | DEBUG    | llm_client | LLM response from github_models (5020 chars)
+2026-04-12 04:49:16 | DEBUG    | test_runner | Installing: ['transformers', 'rich', 'pygments']
+2026-04-12 04:49:17 | WARNING  | test_runner | Tests FAILED for ai_zero_day_scanner:
+test_ai_zero_day_scanner.py::test_analyze_code_success FAILED            [ 66%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test_file.py
+FAILED test_ai_zero_day_scanner.py::test_analyze_code_success - FileNotFoundError: File not found: test_file.py
+2026-04-12 04:49:17 | WARNING  | tool_builder | ⚠️  ai_zero_day_scanner tests failed (loop 2/5) — test_ai_zero_day_scanner.py::test_analyze_code_success FAILED            [ 66%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test_file.py
+FAILED t
+2026-04-12 04:49:23 | DEBUG    | llm_client | LLM response from github_models (5399 chars)
+2026-04-12 04:49:23 | DEBUG    | test_runner | Installing: ['transformers', 'rich', 'pygments']
+2026-04-12 04:49:24 | INFO     | test_runner | Tests PASSED for ai_zero_day_scanner
+2026-04-12 04:49:24 | INFO     | tool_builder | ✅ ai_zero_day_scanner passed tests on loop 3
+2026-04-12 04:49:24 | INFO     | tool_builder | Building tool: zero_day_diff_checker …
+2026-04-12 04:49:34 | DEBUG    | llm_client | LLM response from github_models (6233 chars)
+2026-04-12 04:49:34 | DEBUG    | test_runner | Installing: ['diff-match-patch==20200713', 'transformers==4.33.3', 'pygit2==1.6.1', 'pytest==7.4.2']
+2026-04-12 04:49:38 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Building wheel for pygit2 (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [62 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.linux-x86_64-cpython-311/pygit2
+      copying py
+2026-04-12 04:49:38 | WARNING  | test_runner | Tests FAILED for zero_day_diff_checker:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_zero_day_diff_checker.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/zero_day_diff_checker/test_zero_day_diff_checker.py'.
+E   ModuleNotFoundError: No module named 'pygit2'
+ERROR test_zero_day_diff_checker.py
+2026-04-12 04:49:38 | WARNING  | tool_builder | ⚠️  zero_day_diff_checker tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_zero_day_diff_checker.py ________________
+ImportError while importing test modul
+2026-04-12 04:49:44 | DEBUG    | llm_client | LLM response from github_models (5137 chars)
+2026-04-12 04:49:44 | DEBUG    | test_runner | Installing: ['diff-match-patch']
+2026-04-12 04:49:45 | INFO     | test_runner | Tests PASSED for zero_day_diff_checker
+2026-04-12 04:49:45 | INFO     | tool_builder | ✅ zero_day_diff_checker passed tests on loop 2
+2026-04-12 04:49:45 | INFO     | tool_builder | Building tool: ai_vuln_exploit_simulator …
+2026-04-12 04:49:56 | DEBUG    | llm_client | LLM response from github_models (6932 chars)
+2026-04-12 04:49:56 | DEBUG    | test_runner | Installing: ['transformers==4.34.0', 'docker==6.1.3', 'pyyaml==6.0']
+2026-04-12 04:50:03 | WARNING  | test_runner | Tests FAILED for ai_vuln_exploit_simulator:
+test_ai_vuln_exploit_simulator.py::test_load_vulnerability_report FAILED [ 25%]
+test_ai_vuln_exploit_simulator.py::test_load_config FAILED               [ 75%]
+E   NameError: name 'mock_open' is not defined
+E   NameError: name 'mock_open' is not defined
+FAILED test_ai_vuln_exploit_simulator.py::test_load_vulnerability_report - NameError: name 'mock_open' is not defined
+FAILED test_ai_vuln_exploit_simulator.py::test_load_config - NameError: name 'mock_open' is not defined
+2026-04-12 04:50:03 | WARNING  | tool_builder | ⚠️  ai_vuln_exploit_simulator tests failed (loop 1/5) — test_ai_vuln_exploit_simulator.py::test_load_vulnerability_report FAILED [ 25%]
+test_ai_vuln_exploit_simulator.py::test_load_config FAILED               [ 75%]
+E   NameError: name 'mock_open' is not d
+2026-04-12 04:50:10 | DEBUG    | llm_client | LLM response from github_models (5970 chars)
+2026-04-12 04:50:10 | DEBUG    | test_runner | Installing: ['docker', 'transformers', 'pyyaml', 'pytest']
+2026-04-12 04:50:11 | INFO     | test_runner | Tests PASSED for ai_vuln_exploit_simulator
+2026-04-12 04:50:11 | INFO     | tool_builder | ✅ ai_vuln_exploit_simulator passed tests on loop 2
+2026-04-12 04:50:11 | INFO     | tool_builder | Building tool: code_review_ai …
+2026-04-12 04:50:22 | DEBUG    | llm_client | LLM response from github_models (6533 chars)
+2026-04-12 04:50:22 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3']
+2026-04-12 04:50:25 | WARNING  | test_runner | Tests FAILED for code_review_ai:
+test_code_review_ai.py::test_analyze_code FAILED                         [ 33%]
+test_code_review_ai.py::test_process_file FAILED                         [ 66%]
+    assert result == "Mocked analysis report."
+E   assert "Error during...ribute 'text'" == 'Mocked analysis report.'
+E     + Error during analysis: 'dict' object has no attribute 'text'
+    assert result == "Mocked analysis report."
+E   AssertionError: assert 'Error: File ...est_script.py' == 'Mocked analysis report.'
+E     + Error: File not found - test_script.py
+FAILED test_code_review_ai.py::test_analyze_code - assert "Error during...ribute 'text'" == 'Mocked analysis report.'
+  + Error during analysis: 'dict' object has no attribute 'text'
+FAILED test_code_review_ai.py::test_process_file - AssertionError: assert 'Error: File ...est_script.py' == 'Mocked analysis report.'
+  + Error: File not found - test_script.py
+2026-04-12 04:50:25 | WARNING  | tool_builder | ⚠️  code_review_ai tests failed (loop 1/5) — test_code_review_ai.py::test_analyze_code FAILED                         [ 33%]
+test_code_review_ai.py::test_process_file FAILED                         [ 66%]
+    assert result == "Mocked analysis re
+2026-04-12 04:50:34 | DEBUG    | llm_client | LLM response from github_models (6812 chars)
+2026-04-12 04:50:34 | DEBUG    | test_runner | Installing: ['openai', 'click']
+2026-04-12 04:50:35 | INFO     | test_runner | Tests PASSED for code_review_ai
+2026-04-12 04:50:35 | INFO     | tool_builder | ✅ code_review_ai passed tests on loop 2
+2026-04-12 04:50:35 | INFO     | tool_builder | Building tool: real_time_debugger_ai …
+2026-04-12 04:50:46 | DEBUG    | llm_client | LLM response from github_models (7340 chars)
+2026-04-12 04:50:46 | DEBUG    | test_runner | Installing: ['openai==0.27.8']
+2026-04-12 04:51:52 | WARNING  | test_runner | Tests FAILED for real_time_debugger_ai:
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+    mock_logger_info.assert_any_call("Function call: test_func")
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1007: in assert_any_call
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'real_time_debugger_ai.Debugger'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: AttributeError - module 'real_time_debugger_ai' has no attribute '__path__'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: AttributeError - module 'real_time_debugger_ai' has no attribute '__path__'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: ModuleNotFoundError - No module named 'real_time_debugger_ai.Debugger'; 'real_time_debugger_ai' is not a package
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'info'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: StopIteration - 
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'spec'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'wraps'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'spec_set'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - '_spec_state'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - '_new_name'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - '_new_parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - '_spec_as_instance'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - '_eat_self'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: KeyError - 'unsafe'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:65 Exception detected: AttributeError - _mock_methods
+FAILED test_real_time_debugger_ai.py::test_monitor_execution - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-12 04:51:52 | WARNING  | tool_builder | ⚠️  real_time_debugger_ai tests failed (loop 1/5) — test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+    mock_logger_info.assert_any_call("Function call: test_func")
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/
+2026-04-12 04:52:01 | DEBUG    | llm_client | LLM response from github_models (7114 chars)
+2026-04-12 04:52:01 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-12 04:53:07 | WARNING  | test_runner | Tests FAILED for real_time_debugger_ai:
+test_real_time_debugger_ai.py::test_analyze_code ERROR                   [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_analyze_code ______________________
+E   AttributeError: module 'real_time_debugger_ai' has no attribute 'ChatCompletion'
+    mock_logger_info.assert_any_call("Function call: test_func")
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1007: in assert_any_call
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'info'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: StopIteration - 
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'spec'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'wraps'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'spec_set'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_spec_state'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_new_name'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_new_parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_spec_as_instance'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_eat_self'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'unsafe'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: AttributeError - _mock_methods
+FAILED test_real_time_debugger_ai.py::test_monitor_execution - Failed: Timeout (>60.0s) from pytest-timeout.
+ERROR test_real_time_debugger_ai.py::test_analyze_code - AttributeError: module 'real_time_debugger_ai' has no attribute 'ChatCompletion'
+2026-04-12 04:53:07 | WARNING  | tool_builder | ⚠️  real_time_debugger_ai tests failed (loop 2/5) — test_real_time_debugger_ai.py::test_analyze_code ERROR                   [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+==================================== ERR
+2026-04-12 04:53:15 | DEBUG    | llm_client | LLM response from github_models (6533 chars)
+2026-04-12 04:53:15 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-12 04:54:21 | WARNING  | test_runner | Tests FAILED for real_time_debugger_ai:
+test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: info('AI Suggestions:\nNo issues found in the code.') call not found
+    mock_logger_info.assert_any_call("AI Suggestions:\nNo issues found in the code.")
+E   AssertionError: info('AI Suggestions:\nNo issues found in the code.') call not found
+E   assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+    mock_logger_info.assert_any_call("Function call: test_func")
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1007: in assert_any_call
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'info'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: StopIteration - 
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'spec'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'wraps'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'spec_set'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_spec_state'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_new_name'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_new_parent'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_spec_as_instance'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - '_eat_self'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: KeyError - 'unsafe'
+ERROR    RealTimeDebugger:real_time_debugger_ai.py:63 Exception detected: AttributeError - _mock_methods
+FAILED test_real_time_debugger_ai.py::test_analyze_code - AssertionError: info('AI Suggestions:\nNo issues found in the code.') call not found
+assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+FAILED test_real_time_debugger_ai.py::test_monitor_execution - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-12 04:54:21 | WARNING  | tool_builder | ⚠️  real_time_debugger_ai tests failed (loop 3/5) — test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-04-12 04:54:31 | DEBUG    | llm_client | LLM response from github_models (8277 chars)
+2026-04-12 04:54:31 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-12 04:54:31 | WARNING  | test_runner | Tests FAILED for real_time_debugger_ai:
+test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+    mock_info.assert_any_call("AI Suggestions: No issues found in the code.")
+E   AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+E   assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+FAILED test_real_time_debugger_ai.py::test_analyze_code - AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+2026-04-12 04:54:31 | WARNING  | tool_builder | ⚠️  real_time_debugger_ai tests failed (loop 4/5) — test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-04-12 04:54:39 | DEBUG    | llm_client | LLM response from github_models (7418 chars)
+2026-04-12 04:54:39 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-12 04:54:40 | WARNING  | test_runner | Tests FAILED for real_time_debugger_ai:
+test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+    mock_info.assert_any_call("AI Suggestions: No issues found in the code.")
+E   AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+E   assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+E   NameError: name 'sys' is not defined
+FAILED test_real_time_debugger_ai.py::test_analyze_code - AssertionError: info('AI Suggestions: No issues found in the code.') call not found
+assert ('AI Suggesti...in the code.') == ('AI Suggesti...n the code.',)
+FAILED test_real_time_debugger_ai.py::test_monitor_execution - NameError: name 'sys' is not defined
+2026-04-12 04:54:40 | WARNING  | tool_builder | ⚠️  real_time_debugger_ai tests failed (loop 5/5) — test_real_time_debugger_ai.py::test_analyze_code FAILED                  [ 66%]
+test_real_time_debugger_ai.py::test_monitor_execution FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-04-12 04:54:40 | ERROR    | tool_builder | ❌ real_time_debugger_ai failed after 5 loops
+2026-04-12 04:54:40 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-12 04:54:40 | INFO     | main |   Built 4/5 tools successfully
+2026-04-12 04:54:40 | INFO     | main |     ✅ ai_zero_day_scanner (loops: 3)
+2026-04-12 04:54:40 | INFO     | main |     ✅ zero_day_diff_checker (loops: 2)
+2026-04-12 04:54:40 | INFO     | main |     ✅ ai_vuln_exploit_simulator (loops: 2)
+2026-04-12 04:54:40 | INFO     | main |     ✅ code_review_ai (loops: 2)
+2026-04-12 04:54:40 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-12 04:54:40 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-12 04:54:40 | INFO     | github_publisher |   Created zip: ai_zero_day_scanner.zip (2599 bytes)
+2026-04-12 04:54:40 | INFO     | github_publisher | Saved ai_zero_day_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_zero_day_scanner
+2026-04-12 04:54:40 | INFO     | github_publisher |   Created zip: zero_day_diff_checker.zip (2407 bytes)
+2026-04-12 04:54:40 | INFO     | github_publisher | Saved zero_day_diff_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/zero_day_diff_checker
+2026-04-12 04:54:40 | INFO     | github_publisher |   Created zip: ai_vuln_exploit_simulator.zip (2641 bytes)
+2026-04-12 04:54:40 | INFO     | github_publisher | Saved ai_vuln_exploit_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_vuln_exploit_simulator
+2026-04-12 04:54:40 | INFO     | github_publisher |   Created zip: code_review_ai.zip (2743 bytes)
+2026-04-12 04:54:40 | INFO     | github_publisher | Saved code_review_ai → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/code_review_ai
+2026-04-12 04:54:40 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-12 04:54:40 | INFO     | main |   Published 4 tools:
+2026-04-12 04:54:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_zero_day_scanner
+2026-04-12 04:54:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/zero_day_diff_checker
+2026-04-12 04:54:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_vuln_exploit_simulator
+2026-04-12 04:54:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/code_review_ai
+2026-04-12 04:54:40 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-12 04:54:40 | INFO     | main | ✅ Generated tools_index.json with 129 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
