@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-11T04:24:37.681556+00:00",
-  "total_tools": 125,
+  "last_updated": "2026-04-12T04:54:40.637064+00:00",
+  "total_tools": 129,
   "tools": [
+    {
+      "tool_name": "ai_vuln_exploit_simulator",
+      "display_name": "AI Vulnerability Exploit Simulator",
+      "description": "A CLI-based automation tool that simulates potential exploits based on identified vulnerabilities in a codebase using AI models. This helps developers test their remediation strategies against simulated attacks.",
+      "topic": "AI for Zero-Day Vulnerability Detection",
+      "date": "2026-04-12",
+      "generated": "2026-04-12T04:46:14.717434+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_vuln_exploit_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/ai_vuln_exploit_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/ai_vuln_exploit_simulator/ai_vuln_exploit_simulator.zip"
+    },
+    {
+      "tool_name": "ai_zero_day_scanner",
+      "display_name": "AI Zero-Day Scanner",
+      "description": "A CLI tool that leverages pre-trained AI models to perform static code analysis and detect potential zero-day vulnerabilities. Useful for developers who want to identify security flaws in their codebase before deployment.",
+      "topic": "AI for Zero-Day Vulnerability Detection",
+      "date": "2026-04-12",
+      "generated": "2026-04-12T04:46:14.717434+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/ai_zero_day_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/ai_zero_day_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/ai_zero_day_scanner/ai_zero_day_scanner.zip"
+    },
+    {
+      "tool_name": "code_review_ai",
+      "display_name": "AI-Powered Code Review",
+      "description": "A CLI tool that uses AI to perform an in-depth analysis of Python scripts or projects. It identifies potential bugs, provides optimization suggestions, and offers coding best practices. Useful for developers who want instant feedback on their code to improve quality and performance.",
+      "topic": "AI-Powered Code Analysis",
+      "date": "2026-04-12",
+      "generated": "2026-04-12T04:46:14.717434+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/code_review_ai",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/code_review_ai/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/code_review_ai/code_review_ai.zip"
+    },
+    {
+      "tool_name": "zero_day_diff_checker",
+      "display_name": "Zero-Day Diff Checker",
+      "description": "A Python library for comparing two versions of a codebase to identify potential zero-day vulnerabilities introduced in new changes. Ideal for use in CI pipelines or during code reviews.",
+      "topic": "AI for Zero-Day Vulnerability Detection",
+      "date": "2026-04-12",
+      "generated": "2026-04-12T04:46:14.717434+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-12/zero_day_diff_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/zero_day_diff_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-12/zero_day_diff_checker/zero_day_diff_checker.zip"
+    },
     {
       "tool_name": "ai_code_suggestion_cli",
       "display_name": "AI Code Suggestion CLI",
