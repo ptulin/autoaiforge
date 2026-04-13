@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-04-12T04:54:40.637064+00:00",
-  "total_tools": 129,
+  "last_updated": "2026-04-13T05:01:38.168132+00:00",
+  "total_tools": 131,
   "tools": [
+    {
+      "tool_name": "ai_news_summary_generator",
+      "display_name": "AI News Summary Generator",
+      "description": "Fetches AI news articles and generates concise summaries for quick consumption. Saves developers time by extracting essential information from long articles.",
+      "topic": "AI news",
+      "date": "2026-04-13",
+      "generated": "2026-04-13T04:56:39.514207+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_news_summary_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_news_summary_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_news_summary_generator/ai_news_summary_generator.zip"
+    },
+    {
+      "tool_name": "ai_workflow_optimizer",
+      "display_name": "AI Workflow Optimizer",
+      "description": "A CLI tool for automating AI model workflows. It allows developers to define tasks such as data preprocessing, model training, and evaluation in a YAML file and automatically schedules and executes these tasks. This tool helps streamline repetitive workflows and ensures consistency in AI pipeline execution.",
+      "topic": "AI automation",
+      "date": "2026-04-13",
+      "generated": "2026-04-13T04:56:39.514207+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_workflow_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_workflow_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_workflow_optimizer/ai_workflow_optimizer.zip"
+    },
     {
       "tool_name": "ai_vuln_exploit_simulator",
       "display_name": "AI Vulnerability Exploit Simulator",
