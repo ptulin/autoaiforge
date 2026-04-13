@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_news_summary_generator",
+  "display_name": "AI News Summary Generator",
+  "description": "Fetches AI news articles and generates concise summaries for quick consumption. Saves developers time by extracting essential information from long articles.",
+  "topic": "AI news",
+  "date": "2026-04-13",
+  "generated": "2026-04-13T04:56:39.514207+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_news_summary_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_news_summary_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_news_summary_generator/ai_news_summary_generator.zip"
+}

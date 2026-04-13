@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_workflow_optimizer",
+  "display_name": "AI Workflow Optimizer",
+  "description": "A CLI tool for automating AI model workflows. It allows developers to define tasks such as data preprocessing, model training, and evaluation in a YAML file and automatically schedules and executes these tasks. This tool helps streamline repetitive workflows and ensures consistency in AI pipeline execution.",
+  "topic": "AI automation",
+  "date": "2026-04-13",
+  "generated": "2026-04-13T04:56:39.514207+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_workflow_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_workflow_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-13/ai_workflow_optimizer/ai_workflow_optimizer.zip"
+}

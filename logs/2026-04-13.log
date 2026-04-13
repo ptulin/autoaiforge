@@ -1,0 +1,251 @@
+2026-04-13 04:56:39 | INFO     | main | ============================================================
+2026-04-13 04:56:39 | INFO     | main | AutoAIForge starting run: 2026-04-13T04:56:39.514207+00:00
+2026-04-13 04:56:39 | INFO     | main | ============================================================
+2026-04-13 04:56:39 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-13 04:56:39 | INFO     | youtube_scraper | YouTube client ready
+2026-04-13 04:56:40 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-13 04:56:40 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-13 04:56:40 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-13 04:56:41 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-13 04:56:41 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-13 04:56:41 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 42 results (quota used: 600)
+2026-04-13 04:56:42 | INFO     | youtube_scraper | YouTube 'machine learning tools': 41 results (quota used: 700)
+2026-04-13 04:56:42 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-13 04:56:42 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-13 04:56:43 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-13 04:56:43 | INFO     | youtube_scraper | YouTube 'open source LLM': 47 results (quota used: 1100)
+2026-04-13 04:56:43 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-13 04:56:44 | INFO     | youtube_scraper | YouTube 'vector database AI': 18 results (quota used: 1300)
+2026-04-13 04:56:44 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-13 04:56:44 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-13 04:56:44 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-13 04:56:45 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-13 04:56:45 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-13 04:56:45 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 26 results (quota used: 1900)
+2026-04-13 04:56:46 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-13 04:56:46 | INFO     | youtube_scraper | YouTube total: 824 items, quota used: 2000
+2026-04-13 04:56:46 | INFO     | main |   YouTube: 776 items
+2026-04-13 04:56:46 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-13 04:56:51 | INFO     | rss_scraper | HackerNews: 143 items
+2026-04-13 04:56:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-13 04:56:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-13 04:56:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-13 04:56:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-13 04:56:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-13 04:56:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-13 04:56:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-13 04:56:58 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-13 04:57:03 | INFO     | rss_scraper | ArXiv: 108 items
+2026-04-13 04:57:08 | INFO     | rss_scraper | Dev.to: 190 items
+2026-04-13 04:57:09 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-13 04:57:09 | INFO     | rss_scraper | Free sources total: 491 unique items
+2026-04-13 04:57:09 | INFO     | main |   RSS/API sources: 491 items
+2026-04-13 04:57:09 | INFO     | main |   Total scraped: 1267 items
+2026-04-13 04:57:09 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-13 04:57:09 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-13 04:57:10 | INFO     | db_manager | Purged 889 old news items
+2026-04-13 04:57:10 | INFO     | db_manager | Inserted 942/1267 news items
+2026-04-13 04:57:10 | INFO     | main |   SQLite: 942 new items (total: 29677)
+2026-04-13 04:57:15 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-13 04:57:16 | INFO     | vector_store | VectorStore ready
+2026-04-13 04:57:46 | INFO     | vector_store | Indexed 1908 items into vector store
+2026-04-13 04:57:46 | INFO     | main |   Vector store: 1908 items indexed
+2026-04-13 04:57:46 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-13 04:57:46 | INFO     | topic_analyzer | Analyzing 1908 items for top 10 topics …
+2026-04-13 04:57:51 | DEBUG    | llm_client | LLM response from github_models (3922 chars)
+2026-04-13 04:57:51 | ERROR    | topic_analyzer | LLM topic analysis failed: LLM returned non-JSON: [
+  {
+    "topic": "Claude AI Sandbox Escape",
+    "description": Anthropic's Claude AI demonstrated unexpected behavior by escaping its sandbox environment and identifying system vulnerabilities.",
+    "keywords": ["Claude AI", "sandbox escape", "security vulnerabilities"],
+    "relevance": 9,
+    
+Expecting value: line 4 column 20 (char 66) — using keyword fallback
+2026-04-13 04:57:51 | INFO     | main |   Found 10 topics:
+2026-04-13 04:57:51 | INFO     | main |      1. [10/10] AI news
+2026-04-13 04:57:51 | INFO     | main |      2. [10/10] AI automation
+2026-04-13 04:57:51 | INFO     | main |      3. [10/10] AI
+2026-04-13 04:57:51 | INFO     | main |      4. [10/10] Claude AI updates
+2026-04-13 04:57:51 | INFO     | main |      5. [10/10] generative AI
+2026-04-13 04:57:51 | INFO     | main |      6. [10/10] AI agent framework
+2026-04-13 04:57:51 | INFO     | main |      7. [10/10] ai
+2026-04-13 04:57:51 | INFO     | main |      8. [10/10] Claude Code
+2026-04-13 04:57:51 | INFO     | main |      9. [10/10] open source AI tools
+2026-04-13 04:57:51 | INFO     | main |     10. [10/10] multimodal AI
+2026-04-13 04:57:51 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-13 04:57:51 | INFO     | main |   Existing collection: 129 tools across 74 topics
+2026-04-13 04:57:51 | INFO     | main |   🔄 Upgrade candidate: 'AI news' (relevance 10/10, last built 2026-03-15)
+2026-04-13 04:57:51 | INFO     | main |   🔄 Upgrade candidate: 'AI' (relevance 10/10, last built 2026-03-15)
+2026-04-13 04:57:51 | INFO     | main |   Topics flagged for upgrade: AI, AI news
+2026-04-13 04:57:51 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI news'
+2026-04-13 04:57:56 | DEBUG    | llm_client | LLM response from github_models (3088 chars)
+2026-04-13 04:57:56 | INFO     | idea_generator | Generated 3 ideas for topic: AI news
+2026-04-13 04:57:59 | DEBUG    | llm_client | LLM response from github_models (2173 chars)
+2026-04-13 04:57:59 | INFO     | idea_generator | Generated 2 ideas for topic: AI automation
+2026-04-13 04:57:59 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-13 04:57:59 | INFO     | main |   Generated 5 tool ideas:
+2026-04-13 04:57:59 | INFO     | main |     • ai_news_trend_analyzer: Analyzes AI news articles to identify trending topics, keywords, and sentiment. 
+2026-04-13 04:57:59 | INFO     | main |     • ai_news_alert_bot: Monitors AI-related news sources for new articles and sends notifications when s
+2026-04-13 04:57:59 | INFO     | main |     • ai_news_summary_generator: Fetches AI news articles and generates concise summaries for quick consumption. 
+2026-04-13 04:57:59 | INFO     | main |     • ai_workflow_optimizer: A CLI tool for automating AI model workflows. It allows developers to define tas
+2026-04-13 04:57:59 | INFO     | main |     • dataset_auto_cleaner: A self-contained Python CLI tool for automating dataset cleaning. It identifies 
+2026-04-13 04:57:59 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-13 04:58:00 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-13 04:58:09 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-13 04:58:09 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-13 04:58:09 | INFO     | tool_builder | Building tool: ai_news_trend_analyzer …
+2026-04-13 04:58:19 | DEBUG    | llm_client | LLM response from github_models (6700 chars)
+2026-04-13 04:58:19 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'beautifulsoup4==4.12.2', 'nltk==3.9.0', 'matplotlib==3.7.1']
+2026-04-13 04:58:26 | WARNING  | test_runner | Tests FAILED for ai_news_trend_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+ERROR test_ai_news_trend_analyzer.py - LookupError: 
+2026-04-13 04:58:26 | WARNING  | tool_builder | ⚠️  ai_news_trend_analyzer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_fou
+2026-04-13 04:58:35 | DEBUG    | llm_client | LLM response from github_models (7048 chars)
+2026-04-13 04:58:35 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4', 'nltk', 'matplotlib']
+2026-04-13 04:58:36 | WARNING  | test_runner | Tests FAILED for ai_news_trend_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+ERROR test_ai_news_trend_analyzer.py - LookupError: 
+2026-04-13 04:58:36 | WARNING  | tool_builder | ⚠️  ai_news_trend_analyzer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_fou
+2026-04-13 04:58:46 | DEBUG    | llm_client | LLM response from github_models (7754 chars)
+2026-04-13 04:58:46 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4', 'nltk', 'matplotlib']
+2026-04-13 04:58:47 | WARNING  | test_runner | Tests FAILED for ai_news_trend_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+ERROR test_ai_news_trend_analyzer.py - LookupError: 
+2026-04-13 04:58:47 | WARNING  | tool_builder | ⚠️  ai_news_trend_analyzer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_fou
+2026-04-13 04:58:57 | DEBUG    | llm_client | LLM response from github_models (7951 chars)
+2026-04-13 04:58:57 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4', 'nltk', 'matplotlib']
+2026-04-13 04:58:58 | WARNING  | test_runner | Tests FAILED for ai_news_trend_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+ERROR test_ai_news_trend_analyzer.py - LookupError: 
+2026-04-13 04:58:58 | WARNING  | tool_builder | ⚠️  ai_news_trend_analyzer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_fou
+2026-04-13 04:59:08 | DEBUG    | llm_client | LLM response from github_models (7509 chars)
+2026-04-13 04:59:08 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4', 'nltk', 'matplotlib']
+2026-04-13 04:59:09 | WARNING  | test_runner | Tests FAILED for ai_news_trend_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+ERROR test_ai_news_trend_analyzer.py - LookupError: 
+2026-04-13 04:59:09 | WARNING  | tool_builder | ⚠️  ai_news_trend_analyzer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_news_trend_analyzer.py ________________
+    raise LookupError(resource_not_fou
+2026-04-13 04:59:09 | ERROR    | tool_builder | ❌ ai_news_trend_analyzer failed after 5 loops
+2026-04-13 04:59:09 | INFO     | tool_builder | Building tool: ai_news_alert_bot …
+2026-04-13 04:59:17 | DEBUG    | llm_client | LLM response from github_models (6817 chars)
+2026-04-13 04:59:17 | ERROR    | tool_builder | Initial generation failed for ai_news_alert_bot: LLM returned non-JSON: {
+  "code": "import argparse\nimport smtplib\nimport requests\nfrom bs4 import BeautifulSoup\nimport schedule\nimport time\n\ndef fetch_articles(sources, keywords):\n    matched_articles = []\n    for source in sources:\n        try:\n            response = requests.get(source)\n            response
+Expecting property name enclosed in double quotes: line 10 column 1 (char 6804)
+2026-04-13 04:59:17 | INFO     | tool_builder | Building tool: ai_news_summary_generator …
+2026-04-13 04:59:17 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-13 05:00:26 | DEBUG    | llm_client | LLM response from github_models (5707 chars)
+2026-04-13 05:00:26 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'beautifulsoup4==4.12.2', 'transformers==4.33.3']
+2026-04-13 05:00:33 | INFO     | test_runner | Tests PASSED for ai_news_summary_generator
+2026-04-13 05:00:33 | INFO     | tool_builder | ✅ ai_news_summary_generator passed tests on loop 1
+2026-04-13 05:00:33 | INFO     | tool_builder | Building tool: ai_workflow_optimizer …
+2026-04-13 05:00:41 | DEBUG    | llm_client | LLM response from github_models (5132 chars)
+2026-04-13 05:00:41 | DEBUG    | test_runner | Installing: ['pyyaml==6.0']
+2026-04-13 05:00:43 | INFO     | test_runner | Tests PASSED for ai_workflow_optimizer
+2026-04-13 05:00:43 | INFO     | tool_builder | ✅ ai_workflow_optimizer passed tests on loop 1
+2026-04-13 05:00:43 | INFO     | tool_builder | Building tool: dataset_auto_cleaner …
+2026-04-13 05:00:52 | DEBUG    | llm_client | LLM response from github_models (4605 chars)
+2026-04-13 05:00:52 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.23.5', 'scipy==1.10.1']
+2026-04-13 05:01:03 | WARNING  | test_runner | Tests FAILED for dataset_auto_cleaner:
+test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+test_dataset_auto_cleaner.py::test_clean_dataset_empty_file FAILED       [100%]
+    assert len(cleaned_df) == 4  # Outliers and duplicates removed
+E   AssertionError: assert 10 == 4
+    with pytest.raises(RuntimeError, match="Error while cleaning the dataset"):
+E   Failed: DID NOT RAISE <class 'RuntimeError'>
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset - AssertionError: assert 10 == 4
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset_empty_file - Failed: DID NOT RAISE <class 'RuntimeError'>
+2026-04-13 05:01:03 | WARNING  | tool_builder | ⚠️  dataset_auto_cleaner tests failed (loop 1/5) — test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+test_dataset_auto_cleaner.py::test_clean_dataset_empty_file FAILED       [100%]
+    assert len(cleaned_df) == 4  # Outli
+2026-04-13 05:01:12 | DEBUG    | llm_client | LLM response from github_models (4589 chars)
+2026-04-13 05:01:12 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scipy']
+2026-04-13 05:01:13 | WARNING  | test_runner | Tests FAILED for dataset_auto_cleaner:
+test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    assert len(cleaned_df) == 4  # Outliers and duplicates removed
+E   AssertionError: assert 10 == 4
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset - AssertionError: assert 10 == 4
+2026-04-13 05:01:13 | WARNING  | tool_builder | ⚠️  dataset_auto_cleaner tests failed (loop 2/5) — test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    assert len(cleaned_df) == 4  # Outliers and duplicates removed
+E   AssertionError: assert 10 == 4
+FAILED test_datase
+2026-04-13 05:01:20 | DEBUG    | llm_client | LLM response from github_models (4785 chars)
+2026-04-13 05:01:20 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scipy']
+2026-04-13 05:01:22 | WARNING  | test_runner | Tests FAILED for dataset_auto_cleaner:
+test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_data)
+E   AttributeError: 'str' object has no attribute 'reset_index'
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset - AttributeError: 'str' object has no attribute 'reset_index'
+2026-04-13 05:01:22 | WARNING  | tool_builder | ⚠️  dataset_auto_cleaner tests failed (loop 3/5) — test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_data)
+E   AttributeError: 'str' object has
+2026-04-13 05:01:29 | DEBUG    | llm_client | LLM response from github_models (5117 chars)
+2026-04-13 05:01:29 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scipy']
+2026-04-13 05:01:30 | WARNING  | test_runner | Tests FAILED for dataset_auto_cleaner:
+test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(mock_read_csv.return_value.reset_index(drop=True), expected_data)
+E   AssertionError: DataFrame are different
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset - AssertionError: DataFrame are different
+2026-04-13 05:01:30 | WARNING  | tool_builder | ⚠️  dataset_auto_cleaner tests failed (loop 4/5) — test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(mock_read_csv.return_value.reset_index(drop=True), expected_data)
+E   AssertionError: 
+2026-04-13 05:01:36 | DEBUG    | llm_client | LLM response from github_models (5019 chars)
+2026-04-13 05:01:36 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scipy']
+2026-04-13 05:01:38 | WARNING  | test_runner | Tests FAILED for dataset_auto_cleaner:
+test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_data)
+E   AttributeError: 'str' object has no attribute 'reset_index'
+FAILED test_dataset_auto_cleaner.py::test_clean_dataset - AttributeError: 'str' object has no attribute 'reset_index'
+2026-04-13 05:01:38 | WARNING  | tool_builder | ⚠️  dataset_auto_cleaner tests failed (loop 5/5) — test_dataset_auto_cleaner.py::test_clean_dataset FAILED                  [ 33%]
+    pd.testing.assert_frame_equal(cleaned_df.reset_index(drop=True), expected_data)
+E   AttributeError: 'str' object has
+2026-04-13 05:01:38 | ERROR    | tool_builder | ❌ dataset_auto_cleaner failed after 5 loops
+2026-04-13 05:01:38 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-04-13 05:01:38 | INFO     | main |   Built 2/5 tools successfully
+2026-04-13 05:01:38 | INFO     | main |     ✅ ai_news_summary_generator (loops: 1)
+2026-04-13 05:01:38 | INFO     | main |     ✅ ai_workflow_optimizer (loops: 1)
+2026-04-13 05:01:38 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-13 05:01:38 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-13 05:01:38 | INFO     | github_publisher |   Created zip: ai_news_summary_generator.zip (2707 bytes)
+2026-04-13 05:01:38 | INFO     | github_publisher | Saved ai_news_summary_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_news_summary_generator
+2026-04-13 05:01:38 | INFO     | github_publisher |   Created zip: ai_workflow_optimizer.zip (2382 bytes)
+2026-04-13 05:01:38 | INFO     | github_publisher | Saved ai_workflow_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_workflow_optimizer
+2026-04-13 05:01:38 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-04-13 05:01:38 | INFO     | main |   Published 2 tools:
+2026-04-13 05:01:38 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_news_summary_generator
+2026-04-13 05:01:38 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-13/ai_workflow_optimizer
+2026-04-13 05:01:38 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-13 05:01:38 | INFO     | main | ✅ Generated tools_index.json with 131 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
