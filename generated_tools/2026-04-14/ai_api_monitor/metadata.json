@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_api_monitor",
+  "display_name": "AI API Traffic Monitor",
+  "description": "AI API Traffic Monitor acts as a middleware that logs and inspects requests and responses between your application and AI APIs like Claude AI. It analyzes traffic for anomalies, including sensitive data leaks, unexpected API calls, or malicious payloads.",
+  "topic": "Claude AI Security Concerns",
+  "date": "2026-04-14",
+  "generated": "2026-04-14T04:45:41.925079+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_api_monitor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_api_monitor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_api_monitor/ai_api_monitor.zip"
+}
