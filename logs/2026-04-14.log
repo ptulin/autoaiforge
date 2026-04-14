@@ -1,0 +1,212 @@
+2026-04-14 04:45:41 | INFO     | main | ============================================================
+2026-04-14 04:45:41 | INFO     | main | AutoAIForge starting run: 2026-04-14T04:45:41.925079+00:00
+2026-04-14 04:45:41 | INFO     | main | ============================================================
+2026-04-14 04:45:41 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-14 04:45:42 | INFO     | youtube_scraper | YouTube client ready
+2026-04-14 04:45:42 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-14 04:45:42 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-14 04:45:43 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-14 04:45:43 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-04-14 04:45:43 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-14 04:45:44 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-14 04:45:44 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-14 04:45:44 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-14 04:45:45 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-14 04:45:45 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-14 04:45:45 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-14 04:45:46 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-14 04:45:46 | INFO     | youtube_scraper | YouTube 'vector database AI': 18 results (quota used: 1300)
+2026-04-14 04:45:46 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-14 04:45:46 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-14 04:45:47 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-14 04:45:47 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-14 04:45:47 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-14 04:45:47 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-14 04:45:48 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-14 04:45:48 | INFO     | youtube_scraper | YouTube total: 869 items, quota used: 2000
+2026-04-14 04:45:48 | INFO     | main |   YouTube: 825 items
+2026-04-14 04:45:48 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-14 04:45:53 | INFO     | rss_scraper | HackerNews: 156 items
+2026-04-14 04:45:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-14 04:45:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-14 04:45:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-14 04:45:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-14 04:45:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-14 04:45:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-14 04:46:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-14 04:46:01 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-14 04:46:31 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-04-14 04:46:43 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-14 04:46:55 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-14 04:47:06 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-04-14 04:47:07 | INFO     | rss_scraper | ArXiv: 0 items
+2026-04-14 04:47:12 | INFO     | rss_scraper | Dev.to: 201 items
+2026-04-14 04:47:13 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-14 04:47:13 | INFO     | rss_scraper | Free sources total: 407 unique items
+2026-04-14 04:47:13 | INFO     | main |   RSS/API sources: 407 items
+2026-04-14 04:47:13 | INFO     | main |   Total scraped: 1232 items
+2026-04-14 04:47:13 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-14 04:47:13 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-14 04:47:14 | INFO     | db_manager | Purged 877 old news items
+2026-04-14 04:47:14 | INFO     | db_manager | Inserted 1001/1232 news items
+2026-04-14 04:47:14 | INFO     | main |   SQLite: 1001 new items (total: 29801)
+2026-04-14 04:47:18 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-14 04:47:20 | INFO     | vector_store | VectorStore ready
+2026-04-14 04:47:43 | INFO     | vector_store | Indexed 1943 items into vector store
+2026-04-14 04:47:43 | INFO     | main |   Vector store: 1943 items indexed
+2026-04-14 04:47:43 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-14 04:47:43 | INFO     | topic_analyzer | Analyzing 1943 items for top 10 topics …
+2026-04-14 04:47:49 | DEBUG    | llm_client | LLM response from github_models (3915 chars)
+2026-04-14 04:47:49 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-14 04:47:49 | INFO     | main |   Found 10 topics:
+2026-04-14 04:47:49 | INFO     | main |      1. [9/10] AI Code Writing Advancements
+2026-04-14 04:47:49 | INFO     | main |      2. [9/10] Claude AI Security Concerns
+2026-04-14 04:47:49 | INFO     | main |      3. [8/10] Claude AI Workflow Automation
+2026-04-14 04:47:49 | INFO     | main |      4. [8/10] AI Integration with Microsoft Word
+2026-04-14 04:47:49 | INFO     | main |      5. [8/10] AI-Powered Smart Glasses
+2026-04-14 04:47:49 | INFO     | main |      6. [8/10] AI Model Context Protocol (MCP)
+2026-04-14 04:47:49 | INFO     | main |      7. [7/10] AI-Powered Local Business Tools
+2026-04-14 04:47:49 | INFO     | main |      8. [7/10] AI-Driven SEO Tools
+2026-04-14 04:47:49 | INFO     | main |      9. [7/10] AI-Powered Clothing Store
+2026-04-14 04:47:49 | INFO     | main |     10. [6/10] AI Watermarking for News
+2026-04-14 04:47:49 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-14 04:47:49 | INFO     | main |   Existing collection: 131 tools across 75 topics
+2026-04-14 04:47:49 | INFO     | main |   🔄 Upgrade candidate: 'Claude AI Workflow Automation' (relevance 8/10, last built 2026-03-01)
+2026-04-14 04:47:49 | INFO     | main |   Topics flagged for upgrade: Claude AI Workflow Automation
+2026-04-14 04:47:55 | DEBUG    | llm_client | LLM response from github_models (3116 chars)
+2026-04-14 04:47:55 | ERROR    | idea_generator | Idea generation failed for topic 'AI Code Writing Advancements': LLM returned non-JSON: [
+  {
+    "tool_name": "ai_code_optimizer",
+    "display_name": "AI Code Optimizer",
+    "description": "AI Code Optimizer is a CLI tool that integrates AI code generation with automated code profiling and optimization suggestions. It allows developers to feed AI-generated code and receive performan
+Expecting property name enclosed in double quotes: line 27 column 3 (char 2081)
+2026-04-14 04:48:01 | DEBUG    | llm_client | LLM response from github_models (3289 chars)
+2026-04-14 04:48:01 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Security Concerns
+2026-04-14 04:48:01 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Claude AI Workflow Automation'
+2026-04-14 04:48:05 | DEBUG    | llm_client | LLM response from github_models (1591 chars)
+2026-04-14 04:48:05 | INFO     | idea_generator | Generated 1 ideas for topic: Claude AI Workflow Automation
+2026-04-14 04:48:05 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-14 04:48:05 | INFO     | main |   Generated 5 tool ideas:
+2026-04-14 04:48:05 | INFO     | main |     • ai_code_writing_advancements_helper: A Python utility for working with AI Code Writing Advancements
+2026-04-14 04:48:05 | INFO     | main |     • ai_integration_scanner: This tool scans codebases for security vulnerabilities in AI integrations like C
+2026-04-14 04:48:05 | INFO     | main |     • ai_api_monitor: AI API Traffic Monitor acts as a middleware that logs and inspects requests and 
+2026-04-14 04:48:05 | INFO     | main |     • ai_payload_sanitizer: This tool sanitizes potentially unsafe user inputs before they are sent to AI AP
+2026-04-14 04:48:05 | INFO     | main |     • claude_task_orchestrator: This tool is an API wrapper and automation utility for orchestrating multiple Cl
+2026-04-14 04:48:05 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-14 04:48:05 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-14 04:48:14 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-14 04:48:14 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-14 04:48:14 | INFO     | tool_builder | Building tool: ai_code_writing_advancements_helper …
+2026-04-14 04:48:23 | DEBUG    | llm_client | LLM response from github_models (5102 chars)
+2026-04-14 04:48:23 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'click==8.1.3', 'rich==13.5.2']
+2026-04-14 04:48:26 | WARNING  | test_runner | Tests FAILED for ai_code_writing_advancements_helper:
+test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    assert "Error fetching data" in result.output
+E   AssertionError: assert 'Error fetching data' in 'Fetching AI advancements...\nAn unexpected error occurred: Network error\n'
+FAILED test_ai_code_writing_advancements_helper.py::test_main_request_error - AssertionError: assert 'Error fetching data' in 'Fetching AI advancements...\nAn unexpected error occurred: Network error\n'
+2026-04-14 04:48:26 | WARNING  | tool_builder | ⚠️  ai_code_writing_advancements_helper tests failed (loop 1/5) — test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    assert "Error fetching data" in result.output
+E   AssertionError: assert 'Error fetching data' in 'Fetching AI ad
+2026-04-14 04:48:32 | DEBUG    | llm_client | LLM response from github_models (5026 chars)
+2026-04-14 04:48:32 | DEBUG    | test_runner | Installing: ['click', 'rich', 'requests']
+2026-04-14 04:48:33 | WARNING  | test_runner | Tests FAILED for ai_code_writing_advancements_helper:
+test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_ai_code_writing_advancements_helper.py::test_main_request_error - NameError: name 'requests' is not defined
+2026-04-14 04:48:33 | WARNING  | tool_builder | ⚠️  ai_code_writing_advancements_helper tests failed (loop 2/5) — test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: nam
+2026-04-14 04:48:39 | DEBUG    | llm_client | LLM response from github_models (4517 chars)
+2026-04-14 04:48:39 | DEBUG    | test_runner | Installing: ['requests', 'click', 'rich']
+2026-04-14 04:48:39 | WARNING  | test_runner | Tests FAILED for ai_code_writing_advancements_helper:
+test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_ai_code_writing_advancements_helper.py::test_main_request_error - NameError: name 'requests' is not defined
+2026-04-14 04:48:39 | WARNING  | tool_builder | ⚠️  ai_code_writing_advancements_helper tests failed (loop 3/5) — test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: nam
+2026-04-14 04:48:47 | DEBUG    | llm_client | LLM response from github_models (4682 chars)
+2026-04-14 04:48:47 | DEBUG    | test_runner | Installing: ['requests', 'click', 'rich']
+2026-04-14 04:48:48 | WARNING  | test_runner | Tests FAILED for ai_code_writing_advancements_helper:
+test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_ai_code_writing_advancements_helper.py::test_main_request_error - NameError: name 'requests' is not defined
+2026-04-14 04:48:48 | WARNING  | tool_builder | ⚠️  ai_code_writing_advancements_helper tests failed (loop 4/5) — test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: nam
+2026-04-14 04:48:54 | DEBUG    | llm_client | LLM response from github_models (4571 chars)
+2026-04-14 04:48:54 | DEBUG    | test_runner | Installing: ['requests', 'click', 'rich']
+2026-04-14 04:48:55 | WARNING  | test_runner | Tests FAILED for ai_code_writing_advancements_helper:
+test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: name 'requests' is not defined
+FAILED test_ai_code_writing_advancements_helper.py::test_main_request_error - NameError: name 'requests' is not defined
+2026-04-14 04:48:55 | WARNING  | tool_builder | ⚠️  ai_code_writing_advancements_helper tests failed (loop 5/5) — test_ai_code_writing_advancements_helper.py::test_main_request_error FAILED [100%]
+    with patch("requests.get", side_effect=requests.exceptions.RequestException("Network error")):
+E   NameError: nam
+2026-04-14 04:48:55 | ERROR    | tool_builder | ❌ ai_code_writing_advancements_helper failed after 5 loops
+2026-04-14 04:48:55 | INFO     | tool_builder | Building tool: ai_integration_scanner …
+2026-04-14 04:49:06 | DEBUG    | llm_client | LLM response from github_models (7427 chars)
+2026-04-14 04:49:06 | DEBUG    | test_runner | Installing: ['colorama==0.4.6']
+2026-04-14 04:49:07 | INFO     | test_runner | Tests PASSED for ai_integration_scanner
+2026-04-14 04:49:07 | INFO     | tool_builder | ✅ ai_integration_scanner passed tests on loop 1
+2026-04-14 04:49:07 | INFO     | tool_builder | Building tool: ai_api_monitor …
+2026-04-14 04:49:18 | DEBUG    | llm_client | LLM response from github_models (6170 chars)
+2026-04-14 04:49:18 | DEBUG    | test_runner | Installing: ['httpx==0.24.0', 'pandas==1.5.3', 'pytest==7.4.2']
+2026-04-14 04:49:23 | WARNING  | test_runner | Tests FAILED for ai_api_monitor:
+test_ai_api_monitor.py::test_forward_request FAILED                      [ 33%]
+test_ai_api_monitor.py::test_log_request ERROR                           [ 66%]
+test_ai_api_monitor.py::test_save_logs ERROR                             [100%]
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_log_request ______________________
+E   OSError: [Errno 98] Address already in use
+_______________________ ERROR at setup of test_save_logs _______________________
+E   OSError: [Errno 98] Address already in use
+E   AttributeError: 'ProxyServer' object has no attribute 'headers'
+FAILED test_ai_api_monitor.py::test_forward_request - AttributeError: 'ProxyServer' object has no attribute 'headers'
+ERROR test_ai_api_monitor.py::test_log_request - OSError: [Errno 98] Address already in use
+ERROR test_ai_api_monitor.py::test_save_logs - OSError: [Errno 98] Address already in use
+2026-04-14 04:49:23 | WARNING  | tool_builder | ⚠️  ai_api_monitor tests failed (loop 1/5) — test_ai_api_monitor.py::test_forward_request FAILED                      [ 33%]
+test_ai_api_monitor.py::test_log_request ERROR                           [ 66%]
+test_ai_api_monitor.py::test_save_logs E
+2026-04-14 04:49:32 | DEBUG    | llm_client | LLM response from github_models (6513 chars)
+2026-04-14 04:49:32 | DEBUG    | test_runner | Installing: ['httpx']
+2026-04-14 04:49:32 | INFO     | test_runner | Tests PASSED for ai_api_monitor
+2026-04-14 04:49:32 | INFO     | tool_builder | ✅ ai_api_monitor passed tests on loop 2
+2026-04-14 04:49:32 | INFO     | tool_builder | Building tool: ai_payload_sanitizer …
+2026-04-14 04:49:32 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-14 04:50:40 | DEBUG    | llm_client | LLM response from github_models (4588 chars)
+2026-04-14 04:50:40 | INFO     | test_runner | Tests PASSED for ai_payload_sanitizer
+2026-04-14 04:50:40 | INFO     | tool_builder | ✅ ai_payload_sanitizer passed tests on loop 1
+2026-04-14 04:50:40 | INFO     | tool_builder | Building tool: claude_task_orchestrator …
+2026-04-14 04:50:51 | DEBUG    | llm_client | LLM response from github_models (6316 chars)
+2026-04-14 04:50:51 | DEBUG    | test_runner | Installing: ['typer==0.9.0', 'requests==2.31.0', 'pytest==7.4.2']
+2026-04-14 04:50:52 | INFO     | test_runner | Tests PASSED for claude_task_orchestrator
+2026-04-14 04:50:52 | INFO     | tool_builder | ✅ claude_task_orchestrator passed tests on loop 1
+2026-04-14 04:50:52 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-14 04:50:52 | INFO     | main |   Built 4/5 tools successfully
+2026-04-14 04:50:52 | INFO     | main |     ✅ ai_integration_scanner (loops: 1)
+2026-04-14 04:50:52 | INFO     | main |     ✅ ai_api_monitor (loops: 2)
+2026-04-14 04:50:52 | INFO     | main |     ✅ ai_payload_sanitizer (loops: 1)
+2026-04-14 04:50:52 | INFO     | main |     ✅ claude_task_orchestrator (loops: 1)
+2026-04-14 04:50:52 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-14 04:50:52 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-14 04:50:52 | INFO     | github_publisher |   Created zip: ai_integration_scanner.zip (2826 bytes)
+2026-04-14 04:50:52 | INFO     | github_publisher | Saved ai_integration_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_integration_scanner
+2026-04-14 04:50:52 | INFO     | github_publisher |   Created zip: ai_api_monitor.zip (2793 bytes)
+2026-04-14 04:50:52 | INFO     | github_publisher | Saved ai_api_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_api_monitor
+2026-04-14 04:50:52 | INFO     | github_publisher |   Created zip: ai_payload_sanitizer.zip (2215 bytes)
+2026-04-14 04:50:52 | INFO     | github_publisher | Saved ai_payload_sanitizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_payload_sanitizer
+2026-04-14 04:50:52 | INFO     | github_publisher |   Created zip: claude_task_orchestrator.zip (2879 bytes)
+2026-04-14 04:50:52 | INFO     | github_publisher | Saved claude_task_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/claude_task_orchestrator
+2026-04-14 04:50:52 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-14 04:50:52 | INFO     | main |   Published 4 tools:
+2026-04-14 04:50:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_integration_scanner
+2026-04-14 04:50:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_api_monitor
+2026-04-14 04:50:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_payload_sanitizer
+2026-04-14 04:50:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/claude_task_orchestrator
+2026-04-14 04:50:52 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-14 04:50:52 | INFO     | main | ✅ Generated tools_index.json with 135 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

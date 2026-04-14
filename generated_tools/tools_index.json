@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-13T05:01:38.168132+00:00",
-  "total_tools": 131,
+  "last_updated": "2026-04-14T04:50:52.803561+00:00",
+  "total_tools": 135,
   "tools": [
+    {
+      "tool_name": "ai_api_monitor",
+      "display_name": "AI API Traffic Monitor",
+      "description": "AI API Traffic Monitor acts as a middleware that logs and inspects requests and responses between your application and AI APIs like Claude AI. It analyzes traffic for anomalies, including sensitive data leaks, unexpected API calls, or malicious payloads.",
+      "topic": "Claude AI Security Concerns",
+      "date": "2026-04-14",
+      "generated": "2026-04-14T04:45:41.925079+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_api_monitor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_api_monitor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_api_monitor/ai_api_monitor.zip"
+    },
+    {
+      "tool_name": "ai_integration_scanner",
+      "display_name": "AI Integration Security Scanner",
+      "description": "This tool scans codebases for security vulnerabilities in AI integrations like Claude AI, such as hardcoded API keys, insecure HTTP usage, and unvalidated external inputs. It helps developers proactively identify and fix potential risks.",
+      "topic": "Claude AI Security Concerns",
+      "date": "2026-04-14",
+      "generated": "2026-04-14T04:45:41.925079+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_integration_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_integration_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_integration_scanner/ai_integration_scanner.zip"
+    },
+    {
+      "tool_name": "ai_payload_sanitizer",
+      "display_name": "AI Payload Sanitizer",
+      "description": "This tool sanitizes potentially unsafe user inputs before they are sent to AI APIs like Claude AI, reducing the risk of injection attacks or unintended behavior. It applies customizable rules for filtering and sanitization.",
+      "topic": "Claude AI Security Concerns",
+      "date": "2026-04-14",
+      "generated": "2026-04-14T04:45:41.925079+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/ai_payload_sanitizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_payload_sanitizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/ai_payload_sanitizer/ai_payload_sanitizer.zip"
+    },
+    {
+      "tool_name": "claude_task_orchestrator",
+      "display_name": "Claude Task Orchestrator",
+      "description": "This tool is an API wrapper and automation utility for orchestrating multiple Claude AI tasks in a seamless workflow. It allows small businesses and developers to chain document editing, email composition, and file organization operations into a single automated pipeline. The tool is customizable and simplifies repetitive task automation by leveraging Claude AI's capabilities programmatically.",
+      "topic": "Claude AI Workflow Automation",
+      "date": "2026-04-14",
+      "generated": "2026-04-14T04:45:41.925079+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-14/claude_task_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/claude_task_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-14/claude_task_orchestrator/claude_task_orchestrator.zip"
+    },
     {
       "tool_name": "ai_news_summary_generator",
       "display_name": "AI News Summary Generator",
