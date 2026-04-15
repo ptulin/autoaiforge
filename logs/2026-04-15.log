@@ -1,0 +1,261 @@
+2026-04-15 04:45:07 | INFO     | main | ============================================================
+2026-04-15 04:45:07 | INFO     | main | AutoAIForge starting run: 2026-04-15T04:45:07.017864+00:00
+2026-04-15 04:45:07 | INFO     | main | ============================================================
+2026-04-15 04:45:07 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-15 04:45:07 | INFO     | youtube_scraper | YouTube client ready
+2026-04-15 04:45:07 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-15 04:45:07 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-15 04:45:08 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-15 04:45:08 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-04-15 04:45:09 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-15 04:45:09 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-15 04:45:09 | INFO     | youtube_scraper | YouTube 'machine learning tools': 46 results (quota used: 700)
+2026-04-15 04:45:10 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-15 04:45:10 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-15 04:45:10 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-15 04:45:11 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-15 04:45:11 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-15 04:45:11 | INFO     | youtube_scraper | YouTube 'vector database AI': 29 results (quota used: 1300)
+2026-04-15 04:45:11 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-15 04:45:12 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-15 04:45:12 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-15 04:45:12 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-15 04:45:12 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-15 04:45:13 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-15 04:45:13 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-15 04:45:13 | INFO     | youtube_scraper | YouTube total: 876 items, quota used: 2000
+2026-04-15 04:45:13 | INFO     | main |   YouTube: 821 items
+2026-04-15 04:45:13 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-15 04:45:18 | INFO     | rss_scraper | HackerNews: 163 items
+2026-04-15 04:45:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-15 04:45:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-15 04:45:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-15 04:45:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-15 04:45:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-15 04:45:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-15 04:45:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-15 04:45:26 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-15 04:45:32 | INFO     | rss_scraper | ArXiv: 102 items
+2026-04-15 04:45:36 | INFO     | rss_scraper | Dev.to: 190 items
+2026-04-15 04:45:38 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-15 04:45:38 | INFO     | rss_scraper | Free sources total: 505 unique items
+2026-04-15 04:45:38 | INFO     | main |   RSS/API sources: 505 items
+2026-04-15 04:45:38 | INFO     | main |   Total scraped: 1326 items
+2026-04-15 04:45:38 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-15 04:45:38 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-15 04:45:38 | INFO     | db_manager | Purged 996 old news items
+2026-04-15 04:45:38 | INFO     | db_manager | Inserted 1111/1326 news items
+2026-04-15 04:45:38 | INFO     | main |   SQLite: 1111 new items (total: 29916)
+2026-04-15 04:45:42 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-15 04:45:44 | INFO     | vector_store | VectorStore ready
+2026-04-15 04:46:02 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-15 04:46:02 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-15 04:46:02 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-15 04:46:02 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-15 04:46:10 | DEBUG    | llm_client | LLM response from github_models (3686 chars)
+2026-04-15 04:46:10 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-15 04:46:10 | INFO     | main |   Found 10 topics:
+2026-04-15 04:46:10 | INFO     | main |      1. [9/10] AI-Powered Task Automation
+2026-04-15 04:46:10 | INFO     | main |      2. [9/10] AI for Real-Time News Summarization
+2026-04-15 04:46:10 | INFO     | main |      3. [9/10] Advancements in AI Hardware
+2026-04-15 04:46:10 | INFO     | main |      4. [8/10] AI Model Integration
+2026-04-15 04:46:10 | INFO     | main |      5. [8/10] AI Safety and Reliability
+2026-04-15 04:46:10 | INFO     | main |      6. [8/10] AI in Content Creation
+2026-04-15 04:46:10 | INFO     | main |      7. [8/10] AI for Small Business Automation
+2026-04-15 04:46:10 | INFO     | main |      8. [7/10] AI in Financial Applications
+2026-04-15 04:46:10 | INFO     | main |      9. [7/10] AI-Powered Skill Libraries
+2026-04-15 04:46:10 | INFO     | main |     10. [7/10] AI in Gaming and Real-Time Applications
+2026-04-15 04:46:10 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-15 04:46:10 | INFO     | main |   Existing collection: 135 tools across 76 topics
+2026-04-15 04:46:10 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-15 04:46:17 | DEBUG    | llm_client | LLM response from github_models (3078 chars)
+2026-04-15 04:46:17 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Task Automation
+2026-04-15 04:46:20 | DEBUG    | llm_client | LLM response from github_models (2572 chars)
+2026-04-15 04:46:20 | INFO     | idea_generator | Generated 2 ideas for topic: AI for Real-Time News Summarization
+2026-04-15 04:46:20 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-15 04:46:20 | INFO     | main |   Generated 5 tool ideas:
+2026-04-15 04:46:20 | INFO     | main |     • ai_task_flow: This tool allows developers to define, manage, and execute automated workflows p
+2026-04-15 04:46:20 | INFO     | main |     • auto_doc_generator: This tool uses AI to automate the generation of documentation for Python project
+2026-04-15 04:46:20 | INFO     | main |     • smart_batch_executor: This tool leverages AI models to intelligently batch and execute repetitive task
+2026-04-15 04:46:20 | INFO     | main |     • real_time_news_summarizer: A CLI tool that aggregates trending news articles from online sources and genera
+2026-04-15 04:46:20 | INFO     | main |     • news_trend_tracker: A Python library that tracks emerging news trends by analyzing real-time updates
+2026-04-15 04:46:20 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-15 04:46:20 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-15 04:46:28 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-15 04:46:28 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-15 04:46:28 | INFO     | tool_builder | Building tool: ai_task_flow …
+2026-04-15 04:46:36 | DEBUG    | llm_client | LLM response from github_models (5768 chars)
+2026-04-15 04:46:36 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'openai==0.27.0', 'networkx==3.1']
+2026-04-15 04:47:45 | WARNING  | test_runner | Tests FAILED for ai_task_flow:
+test_ai_task_flow.py::test_load_workflow_yaml FAILED                     [ 33%]
+test_ai_task_flow.py::test_load_workflow_json FAILED                     [ 66%]
+E   NameError: name 'json' is not defined
+FAILED test_ai_task_flow.py::test_load_workflow_yaml - Failed: Timeout (>60.0s) from pytest-timeout.
+FAILED test_ai_task_flow.py::test_load_workflow_json - NameError: name 'json' is not defined
+2026-04-15 04:47:45 | WARNING  | tool_builder | ⚠️  ai_task_flow tests failed (loop 1/5) — test_ai_task_flow.py::test_load_workflow_yaml FAILED                     [ 33%]
+test_ai_task_flow.py::test_load_workflow_json FAILED                     [ 66%]
+E   NameError: name 'json' is not define
+2026-04-15 04:47:53 | DEBUG    | llm_client | LLM response from github_models (7458 chars)
+2026-04-15 04:47:53 | DEBUG    | test_runner | Installing: ['openai', 'pyyaml', 'networkx', 'pytest']
+2026-04-15 04:48:59 | WARNING  | test_runner | Tests FAILED for ai_task_flow:
+test_ai_task_flow.py::test_load_workflow_yaml FAILED                     [ 25%]
+FAILED test_ai_task_flow.py::test_load_workflow_yaml - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-15 04:48:59 | WARNING  | tool_builder | ⚠️  ai_task_flow tests failed (loop 2/5) — test_ai_task_flow.py::test_load_workflow_yaml FAILED                     [ 25%]
+FAILED test_ai_task_flow.py::test_load_workflow_yaml - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-04-15 04:49:07 | DEBUG    | llm_client | LLM response from github_models (7515 chars)
+2026-04-15 04:49:07 | DEBUG    | test_runner | Installing: ['openai', 'pyyaml', 'networkx']
+2026-04-15 04:49:08 | INFO     | test_runner | Tests PASSED for ai_task_flow
+2026-04-15 04:49:08 | INFO     | tool_builder | ✅ ai_task_flow passed tests on loop 3
+2026-04-15 04:49:08 | INFO     | tool_builder | Building tool: auto_doc_generator …
+2026-04-15 04:49:20 | DEBUG    | llm_client | LLM response from github_models (7287 chars)
+2026-04-15 04:49:20 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'markdown==3.4.3', 'pytest==7.4.2']
+2026-04-15 04:49:21 | WARNING  | test_runner | Tests FAILED for auto_doc_generator:
+test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert "test.py" in result
+E   AssertionError: assert 'test.py' in {'/tmp/pytest-of-runner/pytest-0/test_analyze_codebase0/test.py': [{'lineno': 1, 'name': 'foo', 'type': 'function'}, {'lineno': 4, 'name': 'Bar', 'type': 'class'}, {'lineno': 5, 'name': 'method', 'type': 'function'}]}
+E   NameError: name 'ast' is not defined
+FAILED test_auto_doc_generator.py::test_analyze_codebase - AssertionError: assert 'test.py' in {'/tmp/pytest-of-runner/pytest-0/test_analyze_codebase0/test.py': [{'lineno': 1, 'name': 'foo', 'type': 'function'}, {'lineno': 4, 'name': 'Bar', 'type': 'class'}, {'lineno': 5, 'name': 'method', 'type': 'function'}]}
+FAILED test_auto_doc_generator.py::test_extract_definitions - NameError: name 'ast' is not defined
+2026-04-15 04:49:21 | WARNING  | tool_builder | ⚠️  auto_doc_generator tests failed (loop 1/5) — test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert "test.py" in result
+E   Asser
+2026-04-15 04:49:30 | DEBUG    | llm_client | LLM response from github_models (7009 chars)
+2026-04-15 04:49:30 | DEBUG    | test_runner | Installing: ['openai', 'markdown']
+2026-04-15 04:49:31 | WARNING  | test_runner | Tests FAILED for auto_doc_generator:
+test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) == 2
+E   AssertionError: assert 3 == 2
+E   NameError: name 'ast' is not defined
+FAILED test_auto_doc_generator.py::test_analyze_codebase - AssertionError: assert 3 == 2
+FAILED test_auto_doc_generator.py::test_extract_definitions - NameError: name 'ast' is not defined
+2026-04-15 04:49:31 | WARNING  | tool_builder | ⚠️  auto_doc_generator tests failed (loop 2/5) — test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) =
+2026-04-15 04:49:50 | DEBUG    | llm_client | LLM response from github_models (7017 chars)
+2026-04-15 04:49:50 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-04-15 04:49:51 | WARNING  | test_runner | Tests FAILED for auto_doc_generator:
+test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) == 2
+E   AssertionError: assert 3 == 2
+E   NameError: name 'ast' is not defined
+FAILED test_auto_doc_generator.py::test_analyze_codebase - AssertionError: assert 3 == 2
+FAILED test_auto_doc_generator.py::test_extract_definitions - NameError: name 'ast' is not defined
+2026-04-15 04:49:51 | WARNING  | tool_builder | ⚠️  auto_doc_generator tests failed (loop 3/5) — test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) =
+2026-04-15 04:50:00 | DEBUG    | llm_client | LLM response from github_models (6793 chars)
+2026-04-15 04:50:00 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-15 04:50:01 | WARNING  | test_runner | Tests FAILED for auto_doc_generator:
+test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) == 2
+E   AssertionError: assert 3 == 2
+E   NameError: name 'ast' is not defined
+FAILED test_auto_doc_generator.py::test_analyze_codebase - AssertionError: assert 3 == 2
+FAILED test_auto_doc_generator.py::test_extract_definitions - NameError: name 'ast' is not defined
+2026-04-15 04:50:01 | WARNING  | tool_builder | ⚠️  auto_doc_generator tests failed (loop 4/5) — test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) =
+2026-04-15 04:50:09 | DEBUG    | llm_client | LLM response from github_models (6959 chars)
+2026-04-15 04:50:09 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-15 04:50:09 | WARNING  | test_runner | Tests FAILED for auto_doc_generator:
+test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) == 2
+E   AssertionError: assert 3 == 2
+E   NameError: name 'ast' is not defined
+FAILED test_auto_doc_generator.py::test_analyze_codebase - AssertionError: assert 3 == 2
+FAILED test_auto_doc_generator.py::test_extract_definitions - NameError: name 'ast' is not defined
+2026-04-15 04:50:09 | WARNING  | tool_builder | ⚠️  auto_doc_generator tests failed (loop 5/5) — test_auto_doc_generator.py::test_analyze_codebase FAILED                 [ 33%]
+test_auto_doc_generator.py::test_extract_definitions FAILED              [ 66%]
+    assert len(result[str(file_path)]) =
+2026-04-15 04:50:09 | ERROR    | tool_builder | ❌ auto_doc_generator failed after 5 loops
+2026-04-15 04:50:09 | INFO     | tool_builder | Building tool: smart_batch_executor …
+2026-04-15 04:50:18 | DEBUG    | llm_client | LLM response from github_models (6682 chars)
+2026-04-15 04:50:18 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'openai==0.27.8']
+2026-04-15 04:50:19 | INFO     | test_runner | Tests PASSED for smart_batch_executor
+2026-04-15 04:50:19 | INFO     | tool_builder | ✅ smart_batch_executor passed tests on loop 1
+2026-04-15 04:50:19 | INFO     | tool_builder | Building tool: real_time_news_summarizer …
+2026-04-15 04:50:29 | DEBUG    | llm_client | LLM response from github_models (6039 chars)
+2026-04-15 04:50:29 | DEBUG    | test_runner | Installing: ['feedparser==6.0.10', 'transformers==4.33.2', 'beautifulsoup4==4.12.2']
+2026-04-15 04:50:35 | WARNING  | test_runner | Tests FAILED for real_time_news_summarizer:
+test_real_time_news_summarizer.py::test_extract_text_from_entry FAILED   [100%]
+E   AttributeError: 'dict' object has no attribute 'summary'
+FAILED test_real_time_news_summarizer.py::test_extract_text_from_entry - AttributeError: 'dict' object has no attribute 'summary'
+2026-04-15 04:50:35 | WARNING  | tool_builder | ⚠️  real_time_news_summarizer tests failed (loop 1/5) — test_real_time_news_summarizer.py::test_extract_text_from_entry FAILED   [100%]
+E   AttributeError: 'dict' object has no attribute 'summary'
+FAILED test_real_time_news_summarizer.py::test_extract_text
+2026-04-15 04:50:43 | DEBUG    | llm_client | LLM response from github_models (6318 chars)
+2026-04-15 04:50:43 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "import argparse\nimport feedparser\nfrom transformers import pipeline\nfrom bs4 import BeautifulSoup\nimport sys\nimport os\n\ndef fetch_rss_feed(url):\n    try:\n        feed = feedparser.parse(url)\n        if feed.bozo:\n            raise ValueError(f\"Failed to parse feed: {feed.boz
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6305)
+2026-04-15 04:50:43 | DEBUG    | test_runner | Installing: ['feedparser==6.0.10', 'transformers==4.33.2', 'beautifulsoup4==4.12.2']
+2026-04-15 04:50:44 | WARNING  | test_runner | Tests FAILED for real_time_news_summarizer:
+test_real_time_news_summarizer.py::test_extract_text_from_entry FAILED   [100%]
+E   AttributeError: 'dict' object has no attribute 'summary'
+FAILED test_real_time_news_summarizer.py::test_extract_text_from_entry - AttributeError: 'dict' object has no attribute 'summary'
+2026-04-15 04:50:44 | WARNING  | tool_builder | ⚠️  real_time_news_summarizer tests failed (loop 2/5) — test_real_time_news_summarizer.py::test_extract_text_from_entry FAILED   [100%]
+E   AttributeError: 'dict' object has no attribute 'summary'
+FAILED test_real_time_news_summarizer.py::test_extract_text
+2026-04-15 04:50:54 | DEBUG    | llm_client | LLM response from github_models (6702 chars)
+2026-04-15 04:50:54 | DEBUG    | test_runner | Installing: ['feedparser', 'transformers', 'beautifulsoup4', 'pytest']
+2026-04-15 04:50:55 | INFO     | test_runner | Tests PASSED for real_time_news_summarizer
+2026-04-15 04:50:55 | INFO     | tool_builder | ✅ real_time_news_summarizer passed tests on loop 3
+2026-04-15 04:50:55 | INFO     | tool_builder | Building tool: news_trend_tracker …
+2026-04-15 04:51:07 | DEBUG    | llm_client | LLM response from github_models (8610 chars)
+2026-04-15 04:51:07 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.1', 'transformers==4.34.0', 'feedparser==6.0.10']
+2026-04-15 04:51:18 | WARNING  | test_runner | Tests FAILED for news_trend_tracker:
+test_news_trend_tracker.py::test_fetch_feed_entries FAILED               [ 25%]
+test_news_trend_tracker.py::test_summarize_clusters FAILED               [ 75%]
+    assert result == ['Title 1 Description 1', 'Title 2 Description 2']
+E   AssertionError: assert [] == ['Title 1 Des...escription 2']
+Error fetching or parsing feed https://example.com/rss: 'dict' object has no attribute 'entries'
+    assert summaries[1] == 'Samsung news summary.'
+E   AssertionError: assert 'Apple news summary.' == 'Samsung news summary.'
+FAILED test_news_trend_tracker.py::test_fetch_feed_entries - AssertionError: assert [] == ['Title 1 Des...escription 2']
+FAILED test_news_trend_tracker.py::test_summarize_clusters - AssertionError: assert 'Apple news summary.' == 'Samsung news summary.'
+2026-04-15 04:51:18 | WARNING  | tool_builder | ⚠️  news_trend_tracker tests failed (loop 1/5) — test_news_trend_tracker.py::test_fetch_feed_entries FAILED               [ 25%]
+test_news_trend_tracker.py::test_summarize_clusters FAILED               [ 75%]
+    assert result == ['Title 1 Descripti
+2026-04-15 04:51:28 | DEBUG    | llm_client | LLM response from github_models (8491 chars)
+2026-04-15 04:51:28 | DEBUG    | test_runner | Installing: ['feedparser', 'scikit-learn', 'transformers']
+2026-04-15 04:51:30 | WARNING  | test_runner | Tests FAILED for news_trend_tracker:
+test_news_trend_tracker.py::test_summarize_clusters FAILED               [ 75%]
+    assert summaries[1] == 'Samsung news summary.'
+E   AssertionError: assert 'Apple news summary.' == 'Samsung news summary.'
+FAILED test_news_trend_tracker.py::test_summarize_clusters - AssertionError: assert 'Apple news summary.' == 'Samsung news summary.'
+2026-04-15 04:51:30 | WARNING  | tool_builder | ⚠️  news_trend_tracker tests failed (loop 2/5) — test_news_trend_tracker.py::test_summarize_clusters FAILED               [ 75%]
+    assert summaries[1] == 'Samsung news summary.'
+E   AssertionError: assert 'Apple news summary.' == 'Samsung news sum
+2026-04-15 04:51:41 | DEBUG    | llm_client | LLM response from github_models (8672 chars)
+2026-04-15 04:51:41 | DEBUG    | test_runner | Installing: ['feedparser', 'scikit-learn', 'transformers']
+2026-04-15 04:51:43 | INFO     | test_runner | Tests PASSED for news_trend_tracker
+2026-04-15 04:51:43 | INFO     | tool_builder | ✅ news_trend_tracker passed tests on loop 3
+2026-04-15 04:51:43 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-15 04:51:43 | INFO     | main |   Built 4/5 tools successfully
+2026-04-15 04:51:43 | INFO     | main |     ✅ ai_task_flow (loops: 3)
+2026-04-15 04:51:43 | INFO     | main |     ✅ smart_batch_executor (loops: 1)
+2026-04-15 04:51:43 | INFO     | main |     ✅ real_time_news_summarizer (loops: 3)
+2026-04-15 04:51:43 | INFO     | main |     ✅ news_trend_tracker (loops: 3)
+2026-04-15 04:51:43 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-15 04:51:43 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-15 04:51:43 | INFO     | github_publisher |   Created zip: ai_task_flow.zip (2816 bytes)
+2026-04-15 04:51:43 | INFO     | github_publisher | Saved ai_task_flow → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/ai_task_flow
+2026-04-15 04:51:43 | INFO     | github_publisher |   Created zip: smart_batch_executor.zip (2768 bytes)
+2026-04-15 04:51:43 | INFO     | github_publisher | Saved smart_batch_executor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/smart_batch_executor
+2026-04-15 04:51:43 | INFO     | github_publisher |   Created zip: real_time_news_summarizer.zip (2956 bytes)
+2026-04-15 04:51:43 | INFO     | github_publisher | Saved real_time_news_summarizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/real_time_news_summarizer
+2026-04-15 04:51:43 | INFO     | github_publisher |   Created zip: news_trend_tracker.zip (3419 bytes)
+2026-04-15 04:51:43 | INFO     | github_publisher | Saved news_trend_tracker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/news_trend_tracker
+2026-04-15 04:51:43 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-15 04:51:43 | INFO     | main |   Published 4 tools:
+2026-04-15 04:51:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/ai_task_flow
+2026-04-15 04:51:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/smart_batch_executor
+2026-04-15 04:51:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/real_time_news_summarizer
+2026-04-15 04:51:43 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-15/news_trend_tracker
+2026-04-15 04:51:43 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-15 04:51:43 | INFO     | main | ✅ Generated tools_index.json with 139 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
