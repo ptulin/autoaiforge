@@ -1,0 +1,4 @@
+feedparser
+transformers
+beautifulsoup4
+pytest
