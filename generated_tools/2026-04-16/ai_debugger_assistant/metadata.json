@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_debugger_assistant",
+  "display_name": "AI Debugger Assistant",
+  "description": "This tool serves as a CLI-based AI-powered debugging assistant. It identifies potential bugs in Python scripts by analyzing error traceback and context, and suggests fixes. It leverages AI models to provide detailed explanations and recommended code changes, helping developers quickly understand and resolve issues.",
+  "topic": "AI Agents for Coding Assistance",
+  "date": "2026-04-16",
+  "generated": "2026-04-16T04:50:09.719195+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/ai_debugger_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-16/ai_debugger_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-16/ai_debugger_assistant/ai_debugger_assistant.zip"
+}

@@ -1,0 +1,319 @@
+2026-04-16 04:50:09 | INFO     | main | ============================================================
+2026-04-16 04:50:09 | INFO     | main | AutoAIForge starting run: 2026-04-16T04:50:09.719195+00:00
+2026-04-16 04:50:09 | INFO     | main | ============================================================
+2026-04-16 04:50:09 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-16 04:50:09 | INFO     | youtube_scraper | YouTube client ready
+2026-04-16 04:50:10 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-16 04:50:10 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-16 04:50:11 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-16 04:50:11 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-16 04:50:11 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-16 04:50:12 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-16 04:50:12 | INFO     | youtube_scraper | YouTube 'machine learning tools': 46 results (quota used: 700)
+2026-04-16 04:50:12 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-16 04:50:13 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-16 04:50:13 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-16 04:50:13 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-16 04:50:14 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-16 04:50:14 | INFO     | youtube_scraper | YouTube 'vector database AI': 37 results (quota used: 1300)
+2026-04-16 04:50:14 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-16 04:50:14 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-16 04:50:15 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-16 04:50:15 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-16 04:50:15 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-16 04:50:16 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-16 04:50:16 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-16 04:50:16 | INFO     | youtube_scraper | YouTube total: 883 items, quota used: 2000
+2026-04-16 04:50:16 | INFO     | main |   YouTube: 830 items
+2026-04-16 04:50:16 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-16 04:50:21 | INFO     | rss_scraper | HackerNews: 163 items
+2026-04-16 04:50:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-16 04:50:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-16 04:50:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-16 04:50:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-16 04:50:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-16 04:50:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-16 04:50:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-16 04:50:28 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-16 04:50:33 | INFO     | rss_scraper | ArXiv: 105 items
+2026-04-16 04:50:38 | INFO     | rss_scraper | Dev.to: 198 items
+2026-04-16 04:50:39 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-16 04:50:39 | INFO     | rss_scraper | Free sources total: 516 unique items
+2026-04-16 04:50:39 | INFO     | main |   RSS/API sources: 516 items
+2026-04-16 04:50:39 | INFO     | main |   Total scraped: 1346 items
+2026-04-16 04:50:39 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-16 04:50:39 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-16 04:50:39 | INFO     | db_manager | Purged 1071 old news items
+2026-04-16 04:50:39 | INFO     | db_manager | Inserted 1126/1346 news items
+2026-04-16 04:50:39 | INFO     | main |   SQLite: 1126 new items (total: 29971)
+2026-04-16 04:50:44 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-16 04:50:45 | INFO     | vector_store | VectorStore ready
+2026-04-16 04:51:10 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-16 04:51:10 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-16 04:51:10 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-16 04:51:10 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-16 04:51:18 | DEBUG    | llm_client | LLM response from github_models (4276 chars)
+2026-04-16 04:51:18 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-16 04:51:18 | INFO     | main |   Found 10 topics:
+2026-04-16 04:51:18 | INFO     | main |      1. [10/10] AI Agents for Coding Assistance
+2026-04-16 04:51:18 | INFO     | main |      2. [9/10] Generative AI Security Challenges
+2026-04-16 04:51:18 | INFO     | main |      3. [9/10] AI for Personalized Content Creation
+2026-04-16 04:51:18 | INFO     | main |      4. [9/10] AI in Creative Media Production
+2026-04-16 04:51:18 | INFO     | main |      5. [8/10] AI-Powered Workflow Automation
+2026-04-16 04:51:18 | INFO     | main |      6. [8/10] AI-Driven Data Visualization
+2026-04-16 04:51:18 | INFO     | main |      7. [8/10] AI-Powered Financial Analysis
+2026-04-16 04:51:18 | INFO     | main |      8. [8/10] AI for Data Cleaning and Preparation
+2026-04-16 04:51:18 | INFO     | main |      9. [7/10] AI in Legal and Compliance
+2026-04-16 04:51:18 | INFO     | main |     10. [7/10] AI Model Comparisons and Benchmarks
+2026-04-16 04:51:18 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-16 04:51:18 | INFO     | main |   Existing collection: 139 tools across 78 topics
+2026-04-16 04:51:18 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-16 04:51:23 | DEBUG    | llm_client | LLM response from github_models (3110 chars)
+2026-04-16 04:51:23 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agents for Coding Assistance
+2026-04-16 04:51:28 | DEBUG    | llm_client | LLM response from github_models (2588 chars)
+2026-04-16 04:51:28 | INFO     | idea_generator | Generated 2 ideas for topic: Generative AI Security Challenges
+2026-04-16 04:51:28 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-16 04:51:28 | INFO     | main |   Generated 5 tool ideas:
+2026-04-16 04:51:28 | INFO     | main |     • ai_debugger_assistant: This tool serves as a CLI-based AI-powered debugging assistant. It identifies po
+2026-04-16 04:51:28 | INFO     | main |     • code_optimizer_agent: This tool analyzes Python scripts for performance and readability improvements. 
+2026-04-16 04:51:28 | INFO     | main |     • function_docstring_generator: This tool scans Python script files to identify functions lacking docstrings and
+2026-04-16 04:51:28 | INFO     | main |     • generative_ai_risk_scanner: A CLI tool that scans generative AI model configurations and parameters for comm
+2026-04-16 04:51:28 | INFO     | main |     • prompt_injection_defender: A Python library that allows developers to test their generative AI models for r
+2026-04-16 04:51:28 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-16 04:51:28 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-16 04:51:37 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-16 04:51:37 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-16 04:51:37 | INFO     | tool_builder | Building tool: ai_debugger_assistant …
+2026-04-16 04:51:45 | DEBUG    | llm_client | LLM response from github_models (4875 chars)
+2026-04-16 04:51:45 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'rich==13.5.2']
+2026-04-16 04:51:48 | WARNING  | test_runner | Tests FAILED for ai_debugger_assistant:
+test_ai_debugger_assistant.py::test_analyze_traceback_success FAILED     [ 66%]
+test_ai_debugger_assistant.py::test_analyze_traceback_ai_error FAILED    [100%]
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'example.py' does not exist.
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'example.py' does not exist.
+FAILED test_ai_debugger_assistant.py::test_analyze_traceback_success - FileNotFoundError: The file 'example.py' does not exist.
+FAILED test_ai_debugger_assistant.py::test_analyze_traceback_ai_error - FileNotFoundError: The file 'example.py' does not exist.
+2026-04-16 04:51:48 | WARNING  | tool_builder | ⚠️  ai_debugger_assistant tests failed (loop 1/5) — test_ai_debugger_assistant.py::test_analyze_traceback_success FAILED     [ 66%]
+test_ai_debugger_assistant.py::test_analyze_traceback_ai_error FAILED    [100%]
+    raise FileNotFoundError(f"The file '
+2026-04-16 04:51:56 | DEBUG    | llm_client | LLM response from github_models (5189 chars)
+2026-04-16 04:51:56 | DEBUG    | test_runner | Installing: ['openai', 'rich']
+2026-04-16 04:51:57 | INFO     | test_runner | Tests PASSED for ai_debugger_assistant
+2026-04-16 04:51:57 | INFO     | tool_builder | ✅ ai_debugger_assistant passed tests on loop 2
+2026-04-16 04:51:57 | INFO     | tool_builder | Building tool: code_optimizer_agent …
+2026-04-16 04:52:06 | DEBUG    | llm_client | LLM response from github_models (5827 chars)
+2026-04-16 04:52:06 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'black==23.9.1', 'pytest==7.4.2']
+2026-04-16 04:52:07 | WARNING  | test_runner | Tests FAILED for code_optimizer_agent:
+test_code_optimizer_agent.py::test_optimize_code_valid_file FAILED       [ 33%]
+    assert "print('Hello, World!')" in optimized_code
+E   assert "print('Hello, World!')" in 'print("Hello, World!")\n'
+FAILED test_code_optimizer_agent.py::test_optimize_code_valid_file - assert "print('Hello, World!')" in 'print("Hello, World!")\n'
+2026-04-16 04:52:07 | WARNING  | tool_builder | ⚠️  code_optimizer_agent tests failed (loop 1/5) — test_code_optimizer_agent.py::test_optimize_code_valid_file FAILED       [ 33%]
+    assert "print('Hello, World!')" in optimized_code
+E   assert "print('Hello, World!')" in 'print("Hello, World!")\n'
+
+2026-04-16 04:52:15 | DEBUG    | llm_client | LLM response from github_models (6013 chars)
+2026-04-16 04:52:15 | DEBUG    | test_runner | Installing: ['openai', 'black', 'pytest']
+2026-04-16 04:52:16 | INFO     | test_runner | Tests PASSED for code_optimizer_agent
+2026-04-16 04:52:16 | INFO     | tool_builder | ✅ code_optimizer_agent passed tests on loop 2
+2026-04-16 04:52:16 | INFO     | tool_builder | Building tool: function_docstring_generator …
+2026-04-16 04:52:28 | DEBUG    | llm_client | LLM response from github_models (7248 chars)
+2026-04-16 04:52:28 | DEBUG    | test_runner | Installing: ['openai==0.27.2']
+2026-04-16 04:52:29 | WARNING  | test_runner | Tests FAILED for function_docstring_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: unterminated string literal (detected at line 23)
+ERROR test_function_docstring_generator.py
+2026-04-16 04:52:29 | WARNING  | tool_builder | ⚠️  function_docstring_generator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-04-16 04:52:37 | DEBUG    | llm_client | LLM response from github_models (6863 chars)
+2026-04-16 04:52:37 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-16 04:52:37 | WARNING  | test_runner | Tests FAILED for function_docstring_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_function_docstring_generator.py
+2026-04-16 04:52:37 | WARNING  | tool_builder | ⚠️  function_docstring_generator tests failed (loop 2/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-04-16 04:52:45 | DEBUG    | llm_client | LLM response from github_models (6739 chars)
+2026-04-16 04:52:45 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-16 04:52:46 | WARNING  | test_runner | Tests FAILED for function_docstring_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_function_docstring_generator.py
+2026-04-16 04:52:46 | WARNING  | tool_builder | ⚠️  function_docstring_generator tests failed (loop 3/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-04-16 04:52:54 | DEBUG    | llm_client | LLM response from github_models (6859 chars)
+2026-04-16 04:52:54 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-16 04:52:55 | WARNING  | test_runner | Tests FAILED for function_docstring_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_function_docstring_generator.py
+2026-04-16 04:52:55 | WARNING  | tool_builder | ⚠️  function_docstring_generator tests failed (loop 4/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-04-16 04:53:04 | DEBUG    | llm_client | LLM response from github_models (7768 chars)
+2026-04-16 04:53:04 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-16 04:53:04 | WARNING  | test_runner | Tests FAILED for function_docstring_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_function_docstring_generator.py
+2026-04-16 04:53:04 | WARNING  | tool_builder | ⚠️  function_docstring_generator tests failed (loop 5/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_function_docstring_generator.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-04-16 04:53:04 | ERROR    | tool_builder | ❌ function_docstring_generator failed after 5 loops
+2026-04-16 04:53:04 | INFO     | tool_builder | Building tool: generative_ai_risk_scanner …
+2026-04-16 04:53:15 | DEBUG    | llm_client | LLM response from github_models (6085 chars)
+2026-04-16 04:53:15 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'transformers==4.31.0', 'numpy==1.25.2']
+2026-04-16 04:53:25 | WARNING  | test_runner | Tests FAILED for generative_ai_risk_scanner:
+test_generative_ai_risk_scanner.py::test_simulate_prompt_injection FAILED [ 66%]
+test_generative_ai_risk_scanner.py::test_main_with_config FAILED         [100%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   FileNotFoundError: [Errno 2] No such file or directory: 'test.json'
+Error: Invalid value for '--config-file': Path 'test.json' does not exist.
+FAILED test_generative_ai_risk_scanner.py::test_simulate_prompt_injection - ImportError: 
+FAILED test_generative_ai_risk_scanner.py::test_main_with_config - SystemExit: 2
+2026-04-16 04:53:25 | WARNING  | tool_builder | ⚠️  generative_ai_risk_scanner tests failed (loop 1/5) — test_generative_ai_risk_scanner.py::test_simulate_prompt_injection FAILED [ 66%]
+test_generative_ai_risk_scanner.py::test_main_with_config FAILED         [100%]
+E   KeyError: 'from_pretrained'
+    rai
+2026-04-16 04:53:32 | DEBUG    | llm_client | LLM response from github_models (5683 chars)
+2026-04-16 04:53:32 | DEBUG    | test_runner | Installing: ['transformers', 'pytest']
+2026-04-16 04:53:33 | WARNING  | test_runner | Tests FAILED for generative_ai_risk_scanner:
+test_generative_ai_risk_scanner.py::test_main_with_config FAILED         [100%]
+E   TypeError: main() takes 0 positional arguments but 1 was given
+FAILED test_generative_ai_risk_scanner.py::test_main_with_config - TypeError: main() takes 0 positional arguments but 1 was given
+2026-04-16 04:53:33 | WARNING  | tool_builder | ⚠️  generative_ai_risk_scanner tests failed (loop 2/5) — test_generative_ai_risk_scanner.py::test_main_with_config FAILED         [100%]
+E   TypeError: main() takes 0 positional arguments but 1 was given
+FAILED test_generative_ai_risk_scanner.py::test_main_
+2026-04-16 04:53:39 | DEBUG    | llm_client | LLM response from github_models (6166 chars)
+2026-04-16 04:53:39 | DEBUG    | test_runner | Installing: ['transformers']
+2026-04-16 04:53:40 | INFO     | test_runner | Tests PASSED for generative_ai_risk_scanner
+2026-04-16 04:53:40 | INFO     | tool_builder | ✅ generative_ai_risk_scanner passed tests on loop 3
+2026-04-16 04:53:40 | INFO     | tool_builder | Building tool: prompt_injection_defender …
+2026-04-16 04:53:49 | DEBUG    | llm_client | LLM response from github_models (5621 chars)
+2026-04-16 04:53:49 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'pandas==1.5.3', 'pytest==7.4.2']
+2026-04-16 04:53:59 | WARNING  | test_runner | Tests FAILED for prompt_injection_defender:
+test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_model _________________________
+ERROR test_prompt_injection_defender.py::test_model
+2026-04-16 04:53:59 | WARNING  | tool_builder | ⚠️  prompt_injection_defender tests failed (loop 1/5) — test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setu
+2026-04-16 04:54:06 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:15 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:18 | DEBUG    | llm_client | LLM response from groq (4753 chars)
+2026-04-16 04:54:18 | DEBUG    | test_runner | Installing: ['transformers', 'pandas']
+2026-04-16 04:54:19 | WARNING  | test_runner | Tests FAILED for prompt_injection_defender:
+test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_model _________________________
+ERROR test_prompt_injection_defender.py::test_model
+2026-04-16 04:54:19 | WARNING  | tool_builder | ⚠️  prompt_injection_defender tests failed (loop 2/5) — test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setu
+2026-04-16 04:54:27 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:36 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:38 | DEBUG    | llm_client | LLM response from groq (5009 chars)
+2026-04-16 04:54:38 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import pandas as pd
+from transformers import pipeline
+from typing import List, Dict
+import random
+import argparse
+
+
+def generate_adversarial_prompts(baseline_prompts: List[str]) -> List[str]:
+    """
+    Generate adversarial prompts by injecting manipulative phrases into baseline promp
+Invalid control character at: line 2 column 12 (char 13)
+2026-04-16 04:54:38 | DEBUG    | test_runner | Installing: ['transformers', 'pandas']
+2026-04-16 04:54:40 | WARNING  | test_runner | Tests FAILED for prompt_injection_defender:
+test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_model _________________________
+ERROR test_prompt_injection_defender.py::test_model
+2026-04-16 04:54:40 | WARNING  | tool_builder | ⚠️  prompt_injection_defender tests failed (loop 3/5) — test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setu
+2026-04-16 04:54:48 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:57 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:54:57 | WARNING  | llm_client | groq rate-limited — sleeping 18s
+2026-04-16 04:55:17 | DEBUG    | llm_client | LLM response from groq (4999 chars)
+2026-04-16 04:55:17 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import pandas as pd
+from transformers import pipeline
+from typing import List, Dict
+import random
+import argparse
+
+
+def generate_adversarial_prompts(baseline_prompts: List[str]) -> List[str]:
+    """
+    Generate adversarial prompts by injecting manipulative phrases into baseline promp
+Invalid control character at: line 2 column 12 (char 13)
+2026-04-16 04:55:17 | DEBUG    | test_runner | Installing: ['transformers', 'pandas']
+2026-04-16 04:55:19 | WARNING  | test_runner | Tests FAILED for prompt_injection_defender:
+test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_model _________________________
+ERROR test_prompt_injection_defender.py::test_model
+2026-04-16 04:55:19 | WARNING  | tool_builder | ⚠️  prompt_injection_defender tests failed (loop 4/5) — test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setu
+2026-04-16 04:55:27 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:55:35 | ERROR    | llm_client | github_models HTTP error: 400 Client Error: Bad Request for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"message":"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766","type":null,"p
+2026-04-16 04:55:38 | DEBUG    | llm_client | LLM response from groq (4948 chars)
+2026-04-16 04:55:38 | DEBUG    | test_runner | Installing: ['transformers', 'pandas']
+2026-04-16 04:55:39 | WARNING  | test_runner | Tests FAILED for prompt_injection_defender:
+test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_model _________________________
+ERROR test_prompt_injection_defender.py::test_model
+2026-04-16 04:55:39 | WARNING  | tool_builder | ⚠️  prompt_injection_defender tests failed (loop 5/5) — test_prompt_injection_defender.py::test_model ERROR                      [ 25%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setu
+2026-04-16 04:55:39 | ERROR    | tool_builder | ❌ prompt_injection_defender failed after 5 loops
+2026-04-16 04:55:39 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-04-16 04:55:39 | INFO     | main |   Built 3/5 tools successfully
+2026-04-16 04:55:39 | INFO     | main |     ✅ ai_debugger_assistant (loops: 2)
+2026-04-16 04:55:39 | INFO     | main |     ✅ code_optimizer_agent (loops: 2)
+2026-04-16 04:55:39 | INFO     | main |     ✅ generative_ai_risk_scanner (loops: 3)
+2026-04-16 04:55:39 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-16 04:55:39 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-16 04:55:39 | INFO     | github_publisher |   Created zip: ai_debugger_assistant.zip (2546 bytes)
+2026-04-16 04:55:39 | INFO     | github_publisher | Saved ai_debugger_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/ai_debugger_assistant
+2026-04-16 04:55:39 | INFO     | github_publisher |   Created zip: code_optimizer_agent.zip (2723 bytes)
+2026-04-16 04:55:39 | INFO     | github_publisher | Saved code_optimizer_agent → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/code_optimizer_agent
+2026-04-16 04:55:39 | INFO     | github_publisher |   Created zip: generative_ai_risk_scanner.zip (2864 bytes)
+2026-04-16 04:55:39 | INFO     | github_publisher | Saved generative_ai_risk_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/generative_ai_risk_scanner
+2026-04-16 04:55:39 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-04-16 04:55:39 | INFO     | main |   Published 3 tools:
+2026-04-16 04:55:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/ai_debugger_assistant
+2026-04-16 04:55:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/code_optimizer_agent
+2026-04-16 04:55:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/generative_ai_risk_scanner
+2026-04-16 04:55:39 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-16 04:55:39 | INFO     | main | ✅ Generated tools_index.json with 142 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
