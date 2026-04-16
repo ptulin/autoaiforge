@@ -1,0 +1,13 @@
+{
+  "tool_name": "generative_ai_risk_scanner",
+  "display_name": "Generative AI Risk Scanner",
+  "description": "A CLI tool that scans generative AI model configurations and parameters for common security vulnerabilities, such as unsafe sampling settings (e.g., low temperature or high top-p values), exposure to prompt injection attacks, and susceptibility to adversarial examples. This tool helps developers assess the security posture of their models before deployment.",
+  "topic": "Generative AI Security Challenges",
+  "date": "2026-04-16",
+  "generated": "2026-04-16T04:50:09.719195+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-16/generative_ai_risk_scanner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-16/generative_ai_risk_scanner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-16/generative_ai_risk_scanner/generative_ai_risk_scanner.zip"
+}
