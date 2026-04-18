@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_design_tester",
+  "display_name": "Claude Design Tester",
+  "description": "A testing utility that validates UI/UX designs generated via Claude Design by simulating user flows and interactions programmatically. This ensures the generated designs are functional and adhere to user experience standards.",
+  "topic": "Claude Design for UI/UX Automation",
+  "date": "2026-04-18",
+  "generated": "2026-04-18T04:31:02.915747+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_design_tester",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_design_tester/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_design_tester/claude_design_tester.zip"
+}

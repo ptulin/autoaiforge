@@ -1,0 +1,135 @@
+2026-04-18 04:31:02 | INFO     | main | ============================================================
+2026-04-18 04:31:02 | INFO     | main | AutoAIForge starting run: 2026-04-18T04:31:02.915747+00:00
+2026-04-18 04:31:02 | INFO     | main | ============================================================
+2026-04-18 04:31:02 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-18 04:31:03 | INFO     | youtube_scraper | YouTube client ready
+2026-04-18 04:31:03 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-18 04:31:04 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-18 04:31:04 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-18 04:31:04 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-18 04:31:05 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-18 04:31:05 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-18 04:31:05 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-18 04:31:06 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-18 04:31:06 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-18 04:31:06 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-18 04:31:07 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-18 04:31:07 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-18 04:31:07 | INFO     | youtube_scraper | YouTube 'vector database AI': 46 results (quota used: 1300)
+2026-04-18 04:31:07 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-18 04:31:08 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-18 04:31:08 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-18 04:31:08 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-04-18 04:31:09 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-18 04:31:09 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-18 04:31:10 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-18 04:31:10 | INFO     | youtube_scraper | YouTube total: 896 items, quota used: 2000
+2026-04-18 04:31:10 | INFO     | main |   YouTube: 840 items
+2026-04-18 04:31:10 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-18 04:31:15 | INFO     | rss_scraper | HackerNews: 168 items
+2026-04-18 04:31:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-18 04:31:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-18 04:31:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-18 04:31:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-18 04:31:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-18 04:31:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-18 04:31:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-18 04:31:22 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-18 04:31:59 | INFO     | rss_scraper | ArXiv: 108 items
+2026-04-18 04:32:04 | INFO     | rss_scraper | Dev.to: 193 items
+2026-04-18 04:32:05 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-18 04:32:05 | INFO     | rss_scraper | Free sources total: 519 unique items
+2026-04-18 04:32:05 | INFO     | main |   RSS/API sources: 519 items
+2026-04-18 04:32:05 | INFO     | main |   Total scraped: 1359 items
+2026-04-18 04:32:05 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-18 04:32:05 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-18 04:32:05 | INFO     | db_manager | Purged 1061 old news items
+2026-04-18 04:32:05 | INFO     | db_manager | Inserted 1004/1359 news items
+2026-04-18 04:32:05 | INFO     | main |   SQLite: 1004 new items (total: 29984)
+2026-04-18 04:32:10 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-18 04:32:11 | INFO     | vector_store | VectorStore ready
+2026-04-18 04:32:41 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-18 04:32:41 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-18 04:32:41 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-18 04:32:41 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-18 04:32:48 | DEBUG    | llm_client | LLM response from github_models (4256 chars)
+2026-04-18 04:32:48 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-18 04:32:48 | INFO     | main |   Found 10 topics:
+2026-04-18 04:32:48 | INFO     | main |      1. [9/10] Claude Design for UI/UX Automation
+2026-04-18 04:32:48 | INFO     | main |      2. [9/10] AI Agents for Coding Assistance
+2026-04-18 04:32:48 | INFO     | main |      3. [8/10] Claude Code with Multi-Subagent Support
+2026-04-18 04:32:48 | INFO     | main |      4. [8/10] AI-Powered Voice Cloning
+2026-04-18 04:32:48 | INFO     | main |      5. [8/10] AI in Biometric Security
+2026-04-18 04:32:48 | INFO     | main |      6. [8/10] AI-Powered App Blueprints
+2026-04-18 04:32:48 | INFO     | main |      7. [8/10] AI-Driven Life Operating Systems
+2026-04-18 04:32:48 | INFO     | main |      8. [7/10] AI in Fake News Detection
+2026-04-18 04:32:48 | INFO     | main |      9. [7/10] AI and Fake Media Sites
+2026-04-18 04:32:48 | INFO     | main |     10. [7/10] AI in News and Journalism
+2026-04-18 04:32:48 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-18 04:32:48 | INFO     | main |   Existing collection: 145 tools across 82 topics
+2026-04-18 04:32:48 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-18 04:32:54 | DEBUG    | llm_client | LLM response from github_models (3388 chars)
+2026-04-18 04:32:54 | INFO     | idea_generator | Generated 3 ideas for topic: Claude Design for UI/UX Automation
+2026-04-18 04:32:54 | INFO     | idea_generator |   ⏭  Skipping topic 'AI Agents for Coding Assistance' — tool already in collection
+2026-04-18 04:32:59 | DEBUG    | llm_client | LLM response from github_models (2630 chars)
+2026-04-18 04:32:59 | INFO     | idea_generator | Generated 2 ideas for topic: Claude Code with Multi-Subagent Support
+2026-04-18 04:32:59 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-18 04:32:59 | INFO     | main |   Generated 5 tool ideas:
+2026-04-18 04:32:59 | INFO     | main |     • claude_ui_blueprinter: This tool generates Flask or Django blueprint modules by leveraging Claude Desig
+2026-04-18 04:32:59 | INFO     | main |     • claude_design_tester: A testing utility that validates UI/UX designs generated via Claude Design by si
+2026-04-18 04:32:59 | INFO     | main |     • claude_theme_builder: This tool generates custom CSS themes and component styles by connecting with Cl
+2026-04-18 04:32:59 | INFO     | main |     • claude_subagent_orchestrator: This tool provides a streamlined way to orchestrate and manage communication bet
+2026-04-18 04:32:59 | INFO     | main |     • multi_claude_chat_simulator: This library creates a simulated multi-agent chat environment to test and debug 
+2026-04-18 04:32:59 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-18 04:32:59 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-18 04:33:08 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-18 04:33:08 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-18 04:33:08 | INFO     | tool_builder | Building tool: claude_ui_blueprinter …
+2026-04-18 04:33:20 | DEBUG    | llm_client | LLM response from github_models (7045 chars)
+2026-04-18 04:33:20 | DEBUG    | test_runner | Installing: ['flask==2.3.3', 'django==4.2.5', 'requests==2.31.0', 'pytest==7.4.2']
+2026-04-18 04:33:25 | INFO     | test_runner | Tests PASSED for claude_ui_blueprinter
+2026-04-18 04:33:25 | INFO     | tool_builder | ✅ claude_ui_blueprinter passed tests on loop 1
+2026-04-18 04:33:25 | INFO     | tool_builder | Building tool: claude_design_tester …
+2026-04-18 04:33:34 | DEBUG    | llm_client | LLM response from github_models (5858 chars)
+2026-04-18 04:33:34 | DEBUG    | test_runner | Installing: ['selenium==4.11.2', 'pytest==7.4.2', 'requests==2.31.0']
+2026-04-18 04:33:37 | INFO     | test_runner | Tests PASSED for claude_design_tester
+2026-04-18 04:33:37 | INFO     | tool_builder | ✅ claude_design_tester passed tests on loop 1
+2026-04-18 04:33:37 | INFO     | tool_builder | Building tool: claude_theme_builder …
+2026-04-18 04:33:47 | DEBUG    | llm_client | LLM response from github_models (6196 chars)
+2026-04-18 04:33:47 | DEBUG    | test_runner | Installing: ['jinja2==3.1.2', 'requests==2.31.0', 'flask==2.3.3']
+2026-04-18 04:33:48 | INFO     | test_runner | Tests PASSED for claude_theme_builder
+2026-04-18 04:33:48 | INFO     | tool_builder | ✅ claude_theme_builder passed tests on loop 1
+2026-04-18 04:33:48 | INFO     | tool_builder | Building tool: claude_subagent_orchestrator …
+2026-04-18 04:33:59 | DEBUG    | llm_client | LLM response from github_models (6936 chars)
+2026-04-18 04:33:59 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'rich==13.5.2', 'pydantic==1.10.12']
+2026-04-18 04:34:02 | INFO     | test_runner | Tests PASSED for claude_subagent_orchestrator
+2026-04-18 04:34:02 | INFO     | tool_builder | ✅ claude_subagent_orchestrator passed tests on loop 1
+2026-04-18 04:34:02 | INFO     | tool_builder | Building tool: multi_claude_chat_simulator …
+2026-04-18 04:34:18 | DEBUG    | llm_client | LLM response from github_models (7236 chars)
+2026-04-18 04:34:18 | ERROR    | tool_builder | Initial generation failed for multi_claude_chat_simulator: LLM returned non-JSON: {
+  "code": "import json\nfrom typing import List, Dict, Callable\nfrom colorama import Fore, Style\nimport openai\n\nclass SubAgent:\n    def __init__(self, name: str, personality: str, rules: Callable[[str], str]):\n        self.name = name\n        self.personality = personality\n        self.rul
+Expecting property name enclosed in double quotes: line 10 column 1 (char 7223)
+2026-04-18 04:34:18 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-04-18 04:34:18 | INFO     | main |   Built 4/5 tools successfully
+2026-04-18 04:34:18 | INFO     | main |     ✅ claude_ui_blueprinter (loops: 1)
+2026-04-18 04:34:18 | INFO     | main |     ✅ claude_design_tester (loops: 1)
+2026-04-18 04:34:18 | INFO     | main |     ✅ claude_theme_builder (loops: 1)
+2026-04-18 04:34:18 | INFO     | main |     ✅ claude_subagent_orchestrator (loops: 1)
+2026-04-18 04:34:18 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-18 04:34:18 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-18 04:34:18 | INFO     | github_publisher |   Created zip: claude_ui_blueprinter.zip (2895 bytes)
+2026-04-18 04:34:18 | INFO     | github_publisher | Saved claude_ui_blueprinter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_ui_blueprinter
+2026-04-18 04:34:18 | INFO     | github_publisher |   Created zip: claude_design_tester.zip (2474 bytes)
+2026-04-18 04:34:18 | INFO     | github_publisher | Saved claude_design_tester → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_design_tester
+2026-04-18 04:34:18 | INFO     | github_publisher |   Created zip: claude_theme_builder.zip (2888 bytes)
+2026-04-18 04:34:18 | INFO     | github_publisher | Saved claude_theme_builder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_theme_builder
+2026-04-18 04:34:18 | INFO     | github_publisher |   Created zip: claude_subagent_orchestrator.zip (2994 bytes)
+2026-04-18 04:34:18 | INFO     | github_publisher | Saved claude_subagent_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_subagent_orchestrator
+2026-04-18 04:34:18 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-04-18 04:34:18 | INFO     | main |   Published 4 tools:
+2026-04-18 04:34:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_ui_blueprinter
+2026-04-18 04:34:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_design_tester
+2026-04-18 04:34:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_theme_builder
+2026-04-18 04:34:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_subagent_orchestrator
+2026-04-18 04:34:18 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-18 04:34:18 | INFO     | main | ✅ Generated tools_index.json with 149 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

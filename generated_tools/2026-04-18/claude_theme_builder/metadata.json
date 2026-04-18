@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_theme_builder",
+  "display_name": "Claude Theme Builder",
+  "description": "This tool generates custom CSS themes and component styles by connecting with Claude Design. Developers can specify branding details (e.g., primary colors, fonts), and the tool produces a complete CSS file tailored to their requirements.",
+  "topic": "Claude Design for UI/UX Automation",
+  "date": "2026-04-18",
+  "generated": "2026-04-18T04:31:02.915747+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_theme_builder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_theme_builder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_theme_builder/claude_theme_builder.zip"
+}

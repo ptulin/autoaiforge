@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-17T04:54:14.214490+00:00",
-  "total_tools": 145,
+  "last_updated": "2026-04-18T04:34:18.112260+00:00",
+  "total_tools": 149,
   "tools": [
+    {
+      "tool_name": "claude_design_tester",
+      "display_name": "Claude Design Tester",
+      "description": "A testing utility that validates UI/UX designs generated via Claude Design by simulating user flows and interactions programmatically. This ensures the generated designs are functional and adhere to user experience standards.",
+      "topic": "Claude Design for UI/UX Automation",
+      "date": "2026-04-18",
+      "generated": "2026-04-18T04:31:02.915747+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_design_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_design_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_design_tester/claude_design_tester.zip"
+    },
+    {
+      "tool_name": "claude_subagent_orchestrator",
+      "display_name": "Claude Subagent Orchestrator",
+      "description": "This tool provides a streamlined way to orchestrate and manage communication between multiple Claude subagents, making it easier to implement complex multi-agent workflows. It allows developers to define subagent roles, assign tasks, and track responses in a structured way, all from a single interface.",
+      "topic": "Claude Code with Multi-Subagent Support",
+      "date": "2026-04-18",
+      "generated": "2026-04-18T04:31:02.915747+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_subagent_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_subagent_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_subagent_orchestrator/claude_subagent_orchestrator.zip"
+    },
+    {
+      "tool_name": "claude_theme_builder",
+      "display_name": "Claude Theme Builder",
+      "description": "This tool generates custom CSS themes and component styles by connecting with Claude Design. Developers can specify branding details (e.g., primary colors, fonts), and the tool produces a complete CSS file tailored to their requirements.",
+      "topic": "Claude Design for UI/UX Automation",
+      "date": "2026-04-18",
+      "generated": "2026-04-18T04:31:02.915747+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_theme_builder",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_theme_builder/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_theme_builder/claude_theme_builder.zip"
+    },
+    {
+      "tool_name": "claude_ui_blueprinter",
+      "display_name": "Claude UI Blueprinter",
+      "description": "This tool generates Flask or Django blueprint modules by leveraging Claude Design's AI capabilities to create ready-to-use UI components. Developers can quickly scaffold a complete UI for their projects based on high-level design specifications provided as input.",
+      "topic": "Claude Design for UI/UX Automation",
+      "date": "2026-04-18",
+      "generated": "2026-04-18T04:31:02.915747+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-18/claude_ui_blueprinter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_ui_blueprinter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-18/claude_ui_blueprinter/claude_ui_blueprinter.zip"
+    },
     {
       "tool_name": "ai_video_gen",
       "display_name": "AI Video Generator",
