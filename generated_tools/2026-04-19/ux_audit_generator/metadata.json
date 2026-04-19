@@ -1,0 +1,13 @@
+{
+  "tool_name": "ux_audit_generator",
+  "display_name": "UX Audit Generator",
+  "description": "This automation tool uses the Claude Design API to perform automated audits of UI/UX prototypes. It evaluates designs for usability, accessibility, and aesthetic consistency based on well-known UX principles and generates a detailed audit report.",
+  "topic": "AI-Driven Design Tools",
+  "date": "2026-04-19",
+  "generated": "2026-04-19T04:49:28.097051+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ux_audit_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-19/ux_audit_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-19/ux_audit_generator/ux_audit_generator.zip"
+}

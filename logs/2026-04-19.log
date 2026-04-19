@@ -1,0 +1,171 @@
+2026-04-19 04:49:28 | INFO     | main | ============================================================
+2026-04-19 04:49:28 | INFO     | main | AutoAIForge starting run: 2026-04-19T04:49:28.097051+00:00
+2026-04-19 04:49:28 | INFO     | main | ============================================================
+2026-04-19 04:49:28 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-19 04:49:28 | INFO     | youtube_scraper | YouTube client ready
+2026-04-19 04:49:28 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-19 04:49:29 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-19 04:49:29 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-19 04:49:29 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-19 04:49:30 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-19 04:49:30 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-19 04:49:31 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-19 04:49:31 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-19 04:49:31 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-19 04:49:32 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-19 04:49:32 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-19 04:49:32 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-19 04:49:33 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-04-19 04:49:33 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-19 04:49:33 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-19 04:49:33 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-19 04:49:34 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-19 04:49:34 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-19 04:49:34 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-19 04:49:35 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-19 04:49:35 | INFO     | youtube_scraper | YouTube total: 901 items, quota used: 2000
+2026-04-19 04:49:35 | INFO     | main |   YouTube: 847 items
+2026-04-19 04:49:35 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-19 04:49:40 | INFO     | rss_scraper | HackerNews: 167 items
+2026-04-19 04:49:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-19 04:49:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-19 04:49:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-19 04:49:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-19 04:49:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-19 04:49:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-19 04:49:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-19 04:49:47 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-19 04:49:53 | INFO     | rss_scraper | ArXiv: 108 items
+2026-04-19 04:49:58 | INFO     | rss_scraper | Dev.to: 204 items
+2026-04-19 04:49:59 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-19 04:49:59 | INFO     | rss_scraper | Free sources total: 529 unique items
+2026-04-19 04:49:59 | INFO     | main |   RSS/API sources: 529 items
+2026-04-19 04:49:59 | INFO     | main |   Total scraped: 1376 items
+2026-04-19 04:49:59 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-19 04:49:59 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-19 04:49:59 | INFO     | db_manager | Purged 1034 old news items
+2026-04-19 04:49:59 | INFO     | db_manager | Inserted 981/1376 news items
+2026-04-19 04:49:59 | INFO     | main |   SQLite: 981 new items (total: 29931)
+2026-04-19 04:50:04 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-19 04:50:05 | INFO     | vector_store | VectorStore ready
+2026-04-19 04:50:35 | INFO     | vector_store | Indexed 1985 items into vector store
+2026-04-19 04:50:35 | INFO     | main |   Vector store: 1985 items indexed
+2026-04-19 04:50:35 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-19 04:50:35 | INFO     | topic_analyzer | Analyzing 1985 items for top 10 topics …
+2026-04-19 04:50:42 | DEBUG    | llm_client | LLM response from github_models (3983 chars)
+2026-04-19 04:50:42 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-19 04:50:42 | INFO     | main |   Found 10 topics:
+2026-04-19 04:50:42 | INFO     | main |      1. [9/10] AI-Driven Design Tools
+2026-04-19 04:50:42 | INFO     | main |      2. [9/10] AI for Code Development
+2026-04-19 04:50:42 | INFO     | main |      3. [8/10] AI Workflow Automation
+2026-04-19 04:50:42 | INFO     | main |      4. [8/10] AI-Powered Content Creation
+2026-04-19 04:50:42 | INFO     | main |      5. [8/10] AI Model Benchmarking
+2026-04-19 04:50:42 | INFO     | main |      6. [7/10] AI in Legal Tech
+2026-04-19 04:50:42 | INFO     | main |      7. [7/10] AI in Healthcare Diagnostics
+2026-04-19 04:50:42 | INFO     | main |      8. [7/10] AI Hardware Optimization
+2026-04-19 04:50:42 | INFO     | main |      9. [7/10] AI in Decentralized Computing
+2026-04-19 04:50:42 | INFO     | main |     10. [6/10] AI Quota Management Tools
+2026-04-19 04:50:42 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-19 04:50:42 | INFO     | main |   Existing collection: 149 tools across 84 topics
+2026-04-19 04:50:42 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-19 04:50:47 | DEBUG    | llm_client | LLM response from github_models (3477 chars)
+2026-04-19 04:50:47 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Driven Design Tools
+2026-04-19 04:50:52 | DEBUG    | llm_client | LLM response from github_models (2416 chars)
+2026-04-19 04:50:52 | INFO     | idea_generator | Generated 2 ideas for topic: AI for Code Development
+2026-04-19 04:50:52 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-19 04:50:52 | INFO     | main |   Generated 5 tool ideas:
+2026-04-19 04:50:52 | INFO     | main |     • claude_design_prototype_generator: This CLI tool enables developers to generate UI/UX prototypes by providing text 
+2026-04-19 04:50:52 | INFO     | main |     • design_feedback_summarizer: This library allows developers to analyze and summarize feedback for UI/UX desig
+2026-04-19 04:50:52 | INFO     | main |     • ux_audit_generator: This automation tool uses the Claude Design API to perform automated audits of U
+2026-04-19 04:50:52 | INFO     | main |     • claude_code_assist: A CLI tool that integrates with Claude Code to provide real-time code suggestion
+2026-04-19 04:50:52 | INFO     | main |     • ai_code_linter: A Python library and CLI tool that uses Claude Code to analyze code for potentia
+2026-04-19 04:50:52 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-19 04:50:52 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-19 04:51:02 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-19 04:51:02 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-19 04:51:02 | INFO     | tool_builder | Building tool: claude_design_prototype_generator …
+2026-04-19 04:51:11 | DEBUG    | llm_client | LLM response from github_models (6297 chars)
+2026-04-19 04:51:11 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.2']
+2026-04-19 04:51:12 | INFO     | test_runner | Tests PASSED for claude_design_prototype_generator
+2026-04-19 04:51:12 | INFO     | tool_builder | ✅ claude_design_prototype_generator passed tests on loop 1
+2026-04-19 04:51:12 | INFO     | tool_builder | Building tool: design_feedback_summarizer …
+2026-04-19 04:51:23 | DEBUG    | llm_client | LLM response from github_models (8042 chars)
+2026-04-19 04:51:23 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'numpy==1.26.0', 'pandas==2.0.3', 'pytest==7.4.2']
+2026-04-19 04:51:31 | INFO     | test_runner | Tests PASSED for design_feedback_summarizer
+2026-04-19 04:51:31 | INFO     | tool_builder | ✅ design_feedback_summarizer passed tests on loop 1
+2026-04-19 04:51:31 | INFO     | tool_builder | Building tool: ux_audit_generator …
+2026-04-19 04:51:42 | DEBUG    | llm_client | LLM response from github_models (7714 chars)
+2026-04-19 04:51:42 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'jinja2==3.1.2']
+2026-04-19 04:51:43 | INFO     | test_runner | Tests PASSED for ux_audit_generator
+2026-04-19 04:51:43 | INFO     | tool_builder | ✅ ux_audit_generator passed tests on loop 1
+2026-04-19 04:51:43 | INFO     | tool_builder | Building tool: claude_code_assist …
+2026-04-19 04:51:43 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-19 04:52:54 | DEBUG    | llm_client | LLM response from github_models (6303 chars)
+2026-04-19 04:52:54 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'rich==13.5.2']
+2026-04-19 04:52:57 | WARNING  | test_runner | Tests FAILED for claude_code_assist:
+test_claude_code_assist.py::test_process_code_debug FAILED               [ 66%]
+test_claude_code_assist.py::test_process_code_suggest FAILED             [100%]
+    assert result == "Debugged code"
+E   AssertionError: assert None == 'Debugged code'
+Error: File 'example.py' does not exist.
+    assert result == "Suggested code"
+E   AssertionError: assert None == 'Suggested code'
+Error: File 'example.py' does not exist.
+FAILED test_claude_code_assist.py::test_process_code_debug - AssertionError: assert None == 'Debugged code'
+FAILED test_claude_code_assist.py::test_process_code_suggest - AssertionError: assert None == 'Suggested code'
+2026-04-19 04:52:57 | WARNING  | tool_builder | ⚠️  claude_code_assist tests failed (loop 1/5) — test_claude_code_assist.py::test_process_code_debug FAILED               [ 66%]
+test_claude_code_assist.py::test_process_code_suggest FAILED             [100%]
+    assert result == "Debugged code"
+E  
+2026-04-19 04:53:04 | DEBUG    | llm_client | LLM response from github_models (6008 chars)
+2026-04-19 04:53:04 | DEBUG    | test_runner | Installing: ['openai', 'rich']
+2026-04-19 04:53:05 | INFO     | test_runner | Tests PASSED for claude_code_assist
+2026-04-19 04:53:05 | INFO     | tool_builder | ✅ claude_code_assist passed tests on loop 2
+2026-04-19 04:53:05 | INFO     | tool_builder | Building tool: ai_code_linter …
+2026-04-19 04:53:15 | DEBUG    | llm_client | LLM response from github_models (6055 chars)
+2026-04-19 04:53:15 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pylint==2.17.5', 'pytest==7.4.2']
+2026-04-19 04:53:18 | WARNING  | test_runner | Tests FAILED for ai_code_linter:
+test_ai_code_linter.py::test_lint_code FAILED                            [ 66%]
+test_ai_code_linter.py::test_analyze_with_ai FAILED                      [100%]
+    raise FileNotFoundError(f"File or directory not found: {file_path}")
+E   FileNotFoundError: File or directory not found: test_file.py
+E   AttributeError: 'dict' object has no attribute 'text'
+    raise RuntimeError(f"Error analyzing code with OpenAI: {e}")
+E   RuntimeError: Error analyzing code with OpenAI: 'dict' object has no attribute 'text'
+FAILED test_ai_code_linter.py::test_lint_code - FileNotFoundError: File or directory not found: test_file.py
+FAILED test_ai_code_linter.py::test_analyze_with_ai - RuntimeError: Error analyzing code with OpenAI: 'dict' object has no attribute 'text'
+2026-04-19 04:53:18 | WARNING  | tool_builder | ⚠️  ai_code_linter tests failed (loop 1/5) — test_ai_code_linter.py::test_lint_code FAILED                            [ 66%]
+test_ai_code_linter.py::test_analyze_with_ai FAILED                      [100%]
+    raise FileNotFoundError(f"File or di
+2026-04-19 04:53:27 | DEBUG    | llm_client | LLM response from github_models (6222 chars)
+2026-04-19 04:53:27 | DEBUG    | test_runner | Installing: ['openai', 'pylint']
+2026-04-19 04:53:28 | INFO     | test_runner | Tests PASSED for ai_code_linter
+2026-04-19 04:53:28 | INFO     | tool_builder | ✅ ai_code_linter passed tests on loop 2
+2026-04-19 04:53:28 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-04-19 04:53:28 | INFO     | main |   Built 5/5 tools successfully
+2026-04-19 04:53:28 | INFO     | main |     ✅ claude_design_prototype_generator (loops: 1)
+2026-04-19 04:53:28 | INFO     | main |     ✅ design_feedback_summarizer (loops: 1)
+2026-04-19 04:53:28 | INFO     | main |     ✅ ux_audit_generator (loops: 1)
+2026-04-19 04:53:28 | INFO     | main |     ✅ claude_code_assist (loops: 2)
+2026-04-19 04:53:28 | INFO     | main |     ✅ ai_code_linter (loops: 2)
+2026-04-19 04:53:28 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-19 04:53:28 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-19 04:53:28 | INFO     | github_publisher |   Created zip: claude_design_prototype_generator.zip (2749 bytes)
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved claude_design_prototype_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/claude_design_prototype_generator
+2026-04-19 04:53:28 | INFO     | github_publisher |   Created zip: design_feedback_summarizer.zip (3187 bytes)
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved design_feedback_summarizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/design_feedback_summarizer
+2026-04-19 04:53:28 | INFO     | github_publisher |   Created zip: ux_audit_generator.zip (3100 bytes)
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved ux_audit_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ux_audit_generator
+2026-04-19 04:53:28 | INFO     | github_publisher |   Created zip: claude_code_assist.zip (2571 bytes)
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved claude_code_assist → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/claude_code_assist
+2026-04-19 04:53:28 | INFO     | github_publisher |   Created zip: ai_code_linter.zip (2801 bytes)
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved ai_code_linter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ai_code_linter
+2026-04-19 04:53:28 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-04-19 04:53:28 | INFO     | main |   Published 5 tools:
+2026-04-19 04:53:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/claude_design_prototype_generator
+2026-04-19 04:53:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/design_feedback_summarizer
+2026-04-19 04:53:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ux_audit_generator
+2026-04-19 04:53:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/claude_code_assist
+2026-04-19 04:53:28 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ai_code_linter
+2026-04-19 04:53:28 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-19 04:53:28 | INFO     | main | ✅ Generated tools_index.json with 154 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
