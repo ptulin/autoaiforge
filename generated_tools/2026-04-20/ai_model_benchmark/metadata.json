@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_model_benchmark",
+  "display_name": "AI Model Benchmark",
+  "description": "This tool allows developers to benchmark GPT-5 and Claude 4.7 against a custom dataset of prompts. It evaluates response quality using metrics like response length, latency, and BLEU score (for reference-based evaluation), generating a comparative report. Useful for developers optimizing workflows or choosing the right model for specific tasks.",
+  "topic": "Advanced AI Model Releases",
+  "date": "2026-04-20",
+  "generated": "2026-04-20T04:56:24.205982+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_model_benchmark",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_model_benchmark/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_model_benchmark/ai_model_benchmark.zip"
+}
