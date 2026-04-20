@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-19T04:53:28.684455+00:00",
-  "total_tools": 154,
+  "last_updated": "2026-04-20T05:02:06.351549+00:00",
+  "total_tools": 157,
   "tools": [
+    {
+      "tool_name": "ai_model_benchmark",
+      "display_name": "AI Model Benchmark",
+      "description": "This tool allows developers to benchmark GPT-5 and Claude 4.7 against a custom dataset of prompts. It evaluates response quality using metrics like response length, latency, and BLEU score (for reference-based evaluation), generating a comparative report. Useful for developers optimizing workflows or choosing the right model for specific tasks.",
+      "topic": "Advanced AI Model Releases",
+      "date": "2026-04-20",
+      "generated": "2026-04-20T04:56:24.205982+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_model_benchmark",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_model_benchmark/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_model_benchmark/ai_model_benchmark.zip"
+    },
+    {
+      "tool_name": "ai_prompt_optimizer",
+      "display_name": "AI Prompt Optimizer",
+      "description": "A CLI tool that helps developers fine-tune their prompts for GPT-5 and Claude 4.7. It uses techniques like prompt permutation and response evaluation to suggest optimized prompts that yield higher quality or more specific responses from AI models. This is ideal for maximizing prompt efficiency in production applications.",
+      "topic": "Advanced AI Model Releases",
+      "date": "2026-04-20",
+      "generated": "2026-04-20T04:56:24.205982+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_prompt_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_prompt_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/ai_prompt_optimizer/ai_prompt_optimizer.zip"
+    },
+    {
+      "tool_name": "model_risk_profiler",
+      "display_name": "Model Risk Profiler",
+      "description": "This library helps AI developers evaluate and quantify the risk of unintended consequences in their models. By running systematic tests across edge cases, adversarial inputs, and ethical considerations, it generates a risk profile that highlights vulnerabilities and provides actionable insights to improve model robustness.",
+      "topic": "AI Safety and Risk Management",
+      "date": "2026-04-20",
+      "generated": "2026-04-20T04:56:24.205982+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/model_risk_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/model_risk_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/model_risk_profiler/model_risk_profiler.zip"
+    },
     {
       "tool_name": "ai_code_linter",
       "display_name": "AI Code Linter",

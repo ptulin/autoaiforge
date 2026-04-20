@@ -1,0 +1,291 @@
+2026-04-20 04:56:24 | INFO     | main | ============================================================
+2026-04-20 04:56:24 | INFO     | main | AutoAIForge starting run: 2026-04-20T04:56:24.205982+00:00
+2026-04-20 04:56:24 | INFO     | main | ============================================================
+2026-04-20 04:56:24 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-20 04:56:24 | INFO     | youtube_scraper | YouTube client ready
+2026-04-20 04:56:24 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-20 04:56:25 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-20 04:56:25 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-20 04:56:25 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-04-20 04:56:26 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-20 04:56:26 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 45 results (quota used: 600)
+2026-04-20 04:56:26 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-20 04:56:27 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-20 04:56:27 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-20 04:56:27 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-20 04:56:28 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-20 04:56:28 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-20 04:56:28 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-04-20 04:56:28 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-20 04:56:29 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-20 04:56:29 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-20 04:56:29 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-20 04:56:30 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-20 04:56:30 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-20 04:56:30 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-20 04:56:30 | INFO     | youtube_scraper | YouTube total: 897 items, quota used: 2000
+2026-04-20 04:56:30 | INFO     | main |   YouTube: 827 items
+2026-04-20 04:56:30 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-20 04:56:35 | INFO     | rss_scraper | HackerNews: 159 items
+2026-04-20 04:56:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-20 04:56:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-20 04:56:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-20 04:56:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-20 04:56:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-20 04:56:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-20 04:56:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-20 04:56:42 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-20 04:56:50 | INFO     | rss_scraper | ArXiv: 110 items
+2026-04-20 04:56:54 | INFO     | rss_scraper | Dev.to: 198 items
+2026-04-20 04:56:55 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-20 04:56:55 | INFO     | rss_scraper | Free sources total: 517 unique items
+2026-04-20 04:56:55 | INFO     | main |   RSS/API sources: 517 items
+2026-04-20 04:56:55 | INFO     | main |   Total scraped: 1344 items
+2026-04-20 04:56:55 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-20 04:56:55 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-20 04:56:55 | INFO     | db_manager | Purged 869 old news items
+2026-04-20 04:56:55 | INFO     | db_manager | Inserted 1061/1344 news items
+2026-04-20 04:56:55 | INFO     | main |   SQLite: 1061 new items (total: 30123)
+2026-04-20 04:57:01 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-20 04:57:01 | INFO     | vector_store | VectorStore ready
+2026-04-20 04:57:29 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-20 04:57:29 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-20 04:57:29 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-20 04:57:29 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-20 04:57:36 | DEBUG    | llm_client | LLM response from github_models (4057 chars)
+2026-04-20 04:57:36 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-20 04:57:36 | INFO     | main |   Found 10 topics:
+2026-04-20 04:57:36 | INFO     | main |      1. [10/10] Advanced AI Model Releases
+2026-04-20 04:57:36 | INFO     | main |      2. [10/10] AI Safety and Risk Management
+2026-04-20 04:57:36 | INFO     | main |      3. [9/10] AI-Driven Unit Testing
+2026-04-20 04:57:36 | INFO     | main |      4. [9/10] AI for Design Automation
+2026-04-20 04:57:36 | INFO     | main |      5. [9/10] AI-Enhanced Debugging Tools
+2026-04-20 04:57:36 | INFO     | main |      6. [8/10] AI-Powered Code Refactoring
+2026-04-20 04:57:36 | INFO     | main |      7. [8/10] AI in Financial Automation
+2026-04-20 04:57:36 | INFO     | main |      8. [8/10] AI for Resume and Content Creation
+2026-04-20 04:57:36 | INFO     | main |      9. [8/10] AI in Data Visualization
+2026-04-20 04:57:36 | INFO     | main |     10. [7/10] AI and Decentralized Systems
+2026-04-20 04:57:36 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-20 04:57:36 | INFO     | main |   Existing collection: 154 tools across 86 topics
+2026-04-20 04:57:36 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-20 04:57:43 | DEBUG    | llm_client | LLM response from github_models (3755 chars)
+2026-04-20 04:57:43 | INFO     | idea_generator | Generated 3 ideas for topic: Advanced AI Model Releases
+2026-04-20 04:57:47 | DEBUG    | llm_client | LLM response from github_models (2484 chars)
+2026-04-20 04:57:47 | INFO     | idea_generator | Generated 2 ideas for topic: AI Safety and Risk Management
+2026-04-20 04:57:47 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-20 04:57:47 | INFO     | main |   Generated 5 tool ideas:
+2026-04-20 04:57:47 | INFO     | main |     • ai_model_benchmark: This tool allows developers to benchmark GPT-5 and Claude 4.7 against a custom d
+2026-04-20 04:57:47 | INFO     | main |     • dual_model_comparator: This library offers utilities for side-by-side comparisons of GPT-5 and Claude 4
+2026-04-20 04:57:47 | INFO     | main |     • ai_prompt_optimizer: A CLI tool that helps developers fine-tune their prompts for GPT-5 and Claude 4.
+2026-04-20 04:57:47 | INFO     | main |     • ai_hallucination_detector: This CLI tool analyzes the outputs of AI models to detect potential hallucinatio
+2026-04-20 04:57:47 | INFO     | main |     • model_risk_profiler: This library helps AI developers evaluate and quantify the risk of unintended co
+2026-04-20 04:57:47 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-20 04:57:47 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-20 04:57:57 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-20 04:57:57 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-20 04:57:57 | INFO     | tool_builder | Building tool: ai_model_benchmark …
+2026-04-20 04:58:11 | DEBUG    | llm_client | LLM response from github_models (9742 chars)
+2026-04-20 04:58:11 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.9', 'pandas==2.1.1', 'nltk==3.8.1', 'pytest==7.4.2']
+2026-04-20 04:58:25 | WARNING  | test_runner | Tests FAILED for ai_model_benchmark:
+test_ai_model_benchmark.py::test_load_dataset_csv FAILED                 [ 40%]
+test_ai_model_benchmark.py::test_generate_report_json FAILED             [ 80%]
+test_ai_model_benchmark.py::test_generate_report_html FAILED             [100%]
+E   NameError: name 'pd' is not defined
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_ai_model_benchmark.py::test_load_dataset_csv - NameError: name 'pd' is not defined
+FAILED test_ai_model_benchmark.py::test_generate_report_json - AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_ai_model_benchmark.py::test_generate_report_html - AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-04-20 04:58:25 | WARNING  | tool_builder | ⚠️  ai_model_benchmark tests failed (loop 1/5) — test_ai_model_benchmark.py::test_load_dataset_csv FAILED                 [ 40%]
+test_ai_model_benchmark.py::test_generate_report_json FAILED             [ 80%]
+test_ai_model_benchmark.py::test_generat
+2026-04-20 04:58:33 | DEBUG    | llm_client | LLM response from github_models (8946 chars)
+2026-04-20 04:58:33 | DEBUG    | test_runner | Installing: ['pandas', 'nltk', 'openai', 'anthropic']
+2026-04-20 04:58:35 | INFO     | test_runner | Tests PASSED for ai_model_benchmark
+2026-04-20 04:58:35 | INFO     | tool_builder | ✅ ai_model_benchmark passed tests on loop 2
+2026-04-20 04:58:35 | INFO     | tool_builder | Building tool: dual_model_comparator …
+2026-04-20 04:58:45 | DEBUG    | llm_client | LLM response from github_models (6576 chars)
+2026-04-20 04:58:45 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.3.0', 'textstat==0.7.3', 'requests==2.31.0', 'pytest==7.4.2']
+2026-04-20 04:58:48 | WARNING  | test_runner | Tests FAILED for dual_model_comparator:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dual_model_comparator/test_dual_model_comparator.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_dual_model_comparator.py
+2026-04-20 04:58:48 | WARNING  | tool_builder | ⚠️  dual_model_comparator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test modul
+2026-04-20 04:58:56 | DEBUG    | llm_client | LLM response from github_models (6637 chars)
+2026-04-20 04:58:56 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'textstat', 'pytest']
+2026-04-20 04:58:57 | WARNING  | test_runner | Tests FAILED for dual_model_comparator:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dual_model_comparator/test_dual_model_comparator.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_dual_model_comparator.py
+2026-04-20 04:58:57 | WARNING  | tool_builder | ⚠️  dual_model_comparator tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test modul
+2026-04-20 04:59:07 | DEBUG    | llm_client | LLM response from github_models (6906 chars)
+2026-04-20 04:59:07 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'textstat', 'pytest']
+2026-04-20 04:59:09 | WARNING  | test_runner | Tests FAILED for dual_model_comparator:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dual_model_comparator/test_dual_model_comparator.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_dual_model_comparator.py
+2026-04-20 04:59:09 | WARNING  | tool_builder | ⚠️  dual_model_comparator tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test modul
+2026-04-20 04:59:21 | DEBUG    | llm_client | LLM response from github_models (7834 chars)
+2026-04-20 04:59:21 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'textstat', 'pytest']
+2026-04-20 04:59:22 | WARNING  | test_runner | Tests FAILED for dual_model_comparator:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dual_model_comparator/test_dual_model_comparator.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_dual_model_comparator.py
+2026-04-20 04:59:22 | WARNING  | tool_builder | ⚠️  dual_model_comparator tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dual_model_comparator.py ________________
+ImportError while importing test modul
+2026-04-20 04:59:29 | DEBUG    | llm_client | LLM response from github_models (5865 chars)
+2026-04-20 04:59:29 | DEBUG    | test_runner | Installing: ['openai', 'textstat', 'pytest']
+2026-04-20 04:59:31 | WARNING  | test_runner | Tests FAILED for dual_model_comparator:
+test_dual_model_comparator.py::test_compare_responses FAILED             [100%]
+    assert result["claude_metrics"]["token_count"] == 6
+E   assert 7 == 6
+FAILED test_dual_model_comparator.py::test_compare_responses - assert 7 == 6
+2026-04-20 04:59:31 | WARNING  | tool_builder | ⚠️  dual_model_comparator tests failed (loop 5/5) — test_dual_model_comparator.py::test_compare_responses FAILED             [100%]
+    assert result["claude_metrics"]["token_count"] == 6
+E   assert 7 == 6
+FAILED test_dual_model_comparator.py::test_com
+2026-04-20 04:59:31 | ERROR    | tool_builder | ❌ dual_model_comparator failed after 5 loops
+2026-04-20 04:59:31 | INFO     | tool_builder | Building tool: ai_prompt_optimizer …
+2026-04-20 04:59:41 | DEBUG    | llm_client | LLM response from github_models (8075 chars)
+2026-04-20 04:59:41 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.7', 'jinja2==3.1.2', 'nltk==3.8.1']
+2026-04-20 04:59:43 | WARNING  | test_runner | Tests FAILED for ai_prompt_optimizer:
+test_ai_prompt_optimizer.py::test_evaluate_response FAILED               [ 66%]
+test_ai_prompt_optimizer.py::test_optimize_prompts FAILED                [100%]
+    assert evaluate_response(response, reference) > 0.9
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_ai_prompt_optimizer.py::test_evaluate_response - LookupError: 
+FAILED test_ai_prompt_optimizer.py::test_optimize_prompts - LookupError: 
+2026-04-20 04:59:43 | WARNING  | tool_builder | ⚠️  ai_prompt_optimizer tests failed (loop 1/5) — test_ai_prompt_optimizer.py::test_evaluate_response FAILED               [ 66%]
+test_ai_prompt_optimizer.py::test_optimize_prompts FAILED                [100%]
+    assert evaluate_response(response, r
+2026-04-20 04:59:53 | DEBUG    | llm_client | LLM response from github_models (8014 chars)
+2026-04-20 04:59:53 | DEBUG    | test_runner | Installing: ['jinja2', 'nltk', 'openai', 'anthropic']
+2026-04-20 04:59:55 | INFO     | test_runner | Tests PASSED for ai_prompt_optimizer
+2026-04-20 04:59:55 | INFO     | tool_builder | ✅ ai_prompt_optimizer passed tests on loop 2
+2026-04-20 04:59:55 | INFO     | tool_builder | Building tool: ai_hallucination_detector …
+2026-04-20 05:00:05 | DEBUG    | llm_client | LLM response from github_models (7306 chars)
+2026-04-20 05:00:05 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'requests==2.31.0']
+2026-04-20 05:00:06 | WARNING  | test_runner | Tests FAILED for ai_hallucination_detector:
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai - AssertionError: assert ['The capital...ce is Paris.'] == []
+2026-04-20 05:00:06 | WARNING  | tool_builder | ⚠️  ai_hallucination_detector tests failed (loop 1/5) — test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED 
+2026-04-20 05:00:14 | DEBUG    | llm_client | LLM response from github_models (6726 chars)
+2026-04-20 05:00:14 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-20 05:00:15 | WARNING  | test_runner | Tests FAILED for ai_hallucination_detector:
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies FAILED [100%]
+E   KeyError: 0
+E   KeyError: 0
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai - KeyError: 0
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies - KeyError: 0
+2026-04-20 05:00:15 | WARNING  | tool_builder | ⚠️  ai_hallucination_detector tests failed (loop 2/5) — test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies FAILED [100%]
+E   KeyError: 0
+E
+2026-04-20 05:00:24 | DEBUG    | llm_client | LLM response from github_models (7117 chars)
+2026-04-20 05:00:24 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-04-20 05:00:25 | WARNING  | test_runner | Tests FAILED for ai_hallucination_detector:
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai - AssertionError: assert ['The capital...ce is Paris.'] == []
+2026-04-20 05:00:25 | WARNING  | tool_builder | ⚠️  ai_hallucination_detector tests failed (loop 3/5) — test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED 
+2026-04-20 05:00:33 | DEBUG    | llm_client | LLM response from github_models (7019 chars)
+2026-04-20 05:00:33 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nfrom openai import OpenAIError, ChatCompletion\n\ndef detect_hallucinations(input_text, api_key, reference_data=None):\n    \"\"\"\n    Detect potential hallucinations in AI-generated text.\n\n    Args:\n        input_text (str): The AI-generated text to an
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7006)
+2026-04-20 05:00:33 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-04-20 05:00:34 | WARNING  | test_runner | Tests FAILED for ai_hallucination_detector:
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai - AssertionError: assert ['The capital...ce is Paris.'] == []
+2026-04-20 05:00:34 | WARNING  | tool_builder | ⚠️  ai_hallucination_detector tests failed (loop 4/5) — test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED 
+2026-04-20 05:00:43 | DEBUG    | llm_client | LLM response from github_models (7023 chars)
+2026-04-20 05:00:43 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-20 05:00:44 | WARNING  | test_runner | Tests FAILED for ai_hallucination_detector:
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies FAILED [100%]
+    assert result["discrepancies"] == []
+E   AssertionError: assert ['The capital...ce is Paris.'] == []
+    assert result["discrepancies"] == ["The Eiffel Tower is in Paris."]
+E   AssertionError: assert ['The Eiffel ...ce is Paris.'] == ['The Eiffel ...is in Paris.']
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai - AssertionError: assert ['The capital...ce is Paris.'] == []
+FAILED test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies - AssertionError: assert ['The Eiffel ...ce is Paris.'] == ['The Eiffel ...is in Paris.']
+2026-04-20 05:00:44 | WARNING  | tool_builder | ⚠️  ai_hallucination_detector tests failed (loop 5/5) — test_ai_hallucination_detector.py::test_detect_hallucinations_with_openai FAILED [ 75%]
+test_ai_hallucination_detector.py::test_detect_hallucinations_with_discrepancies FAILED [100%]
+    assert result
+2026-04-20 05:00:44 | ERROR    | tool_builder | ❌ ai_hallucination_detector failed after 5 loops
+2026-04-20 05:00:44 | INFO     | tool_builder | Building tool: model_risk_profiler …
+2026-04-20 05:00:44 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-20 05:01:54 | DEBUG    | llm_client | LLM response from github_models (6456 chars)
+2026-04-20 05:01:54 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pytest==7.4.2']
+2026-04-20 05:01:57 | WARNING  | test_runner | Tests FAILED for model_risk_profiler:
+test_model_risk_profiler.py::test_evaluate_edge_cases FAILED             [ 33%]
+test_model_risk_profiler.py::test_evaluate_adversarial_inputs FAILED     [ 66%]
+test_model_risk_profiler.py::test_generate_risk_profile FAILED           [100%]
+E   AttributeError: 'list' object has no attribute 'reshape'
+E   AttributeError: 'list' object has no attribute 'tolist'
+E   TypeError: 'int' object is not iterable
+E   AttributeError: 'list' object has no attribute 'tolist'
+E   AttributeError: 'list' object has no attribute 'reshape'
+E   AttributeError: 'list' object has no attribute 'tolist'
+FAILED test_model_risk_profiler.py::test_evaluate_edge_cases - AttributeError: 'list' object has no attribute 'tolist'
+FAILED test_model_risk_profiler.py::test_evaluate_adversarial_inputs - AttributeError: 'list' object has no attribute 'tolist'
+FAILED test_model_risk_profiler.py::test_generate_risk_profile - AttributeError: 'list' object has no attribute 'tolist'
+2026-04-20 05:01:57 | WARNING  | tool_builder | ⚠️  model_risk_profiler tests failed (loop 1/5) — test_model_risk_profiler.py::test_evaluate_edge_cases FAILED             [ 33%]
+test_model_risk_profiler.py::test_evaluate_adversarial_inputs FAILED     [ 66%]
+test_model_risk_profiler.py::test_genera
+2026-04-20 05:02:05 | DEBUG    | llm_client | LLM response from github_models (6553 chars)
+2026-04-20 05:02:05 | DEBUG    | test_runner | Installing: ['numpy']
+2026-04-20 05:02:06 | INFO     | test_runner | Tests PASSED for model_risk_profiler
+2026-04-20 05:02:06 | INFO     | tool_builder | ✅ model_risk_profiler passed tests on loop 2
+2026-04-20 05:02:06 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-04-20 05:02:06 | INFO     | main |   Built 3/5 tools successfully
+2026-04-20 05:02:06 | INFO     | main |     ✅ ai_model_benchmark (loops: 2)
+2026-04-20 05:02:06 | INFO     | main |     ✅ ai_prompt_optimizer (loops: 2)
+2026-04-20 05:02:06 | INFO     | main |     ✅ model_risk_profiler (loops: 2)
+2026-04-20 05:02:06 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-20 05:02:06 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-20 05:02:06 | INFO     | github_publisher |   Created zip: ai_model_benchmark.zip (3350 bytes)
+2026-04-20 05:02:06 | INFO     | github_publisher | Saved ai_model_benchmark → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_model_benchmark
+2026-04-20 05:02:06 | INFO     | github_publisher |   Created zip: ai_prompt_optimizer.zip (3195 bytes)
+2026-04-20 05:02:06 | INFO     | github_publisher | Saved ai_prompt_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_prompt_optimizer
+2026-04-20 05:02:06 | INFO     | github_publisher |   Created zip: model_risk_profiler.zip (2519 bytes)
+2026-04-20 05:02:06 | INFO     | github_publisher | Saved model_risk_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/model_risk_profiler
+2026-04-20 05:02:06 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-04-20 05:02:06 | INFO     | main |   Published 3 tools:
+2026-04-20 05:02:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_model_benchmark
+2026-04-20 05:02:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/ai_prompt_optimizer
+2026-04-20 05:02:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/model_risk_profiler
+2026-04-20 05:02:06 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-20 05:02:06 | INFO     | main | ✅ Generated tools_index.json with 157 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
