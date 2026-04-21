@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_refactor_ai",
+  "display_name": "Code Refactor AI",
+  "description": "Code Refactor AI is a CLI tool that integrates with AI models like Claude to analyze and refactor Python codebases. It identifies repetitive patterns, unused imports, inefficient loops, and suggests improvements or directly applies optimizations to enhance readability and performance. This tool is useful for developers looking to streamline their code maintenance process and save time.",
+  "topic": "AI in Code Scanning and Optimization",
+  "date": "2026-04-21",
+  "generated": "2026-04-21T04:47:02.957416+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/code_refactor_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/code_refactor_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/code_refactor_ai/code_refactor_ai.zip"
+}

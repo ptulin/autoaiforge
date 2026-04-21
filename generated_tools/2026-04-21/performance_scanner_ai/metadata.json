@@ -1,0 +1,13 @@
+{
+  "tool_name": "performance_scanner_ai",
+  "display_name": "Performance Scanner AI",
+  "description": "Performance Scanner AI is a Python library that scans Python codebases and identifies performance bottlenecks using AI analysis. It highlights sections of code that are computationally expensive and suggests alternative implementations. The tool is ideal for developers working with large projects or resource-intensive applications where optimization is critical.",
+  "topic": "AI in Code Scanning and Optimization",
+  "date": "2026-04-21",
+  "generated": "2026-04-21T04:47:02.957416+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/performance_scanner_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/performance_scanner_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/performance_scanner_ai/performance_scanner_ai.zip"
+}
