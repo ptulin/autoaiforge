@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-20T05:02:06.351549+00:00",
-  "total_tools": 157,
+  "last_updated": "2026-04-21T04:52:18.931581+00:00",
+  "total_tools": 161,
   "tools": [
+    {
+      "tool_name": "code_refactor_ai",
+      "display_name": "Code Refactor AI",
+      "description": "Code Refactor AI is a CLI tool that integrates with AI models like Claude to analyze and refactor Python codebases. It identifies repetitive patterns, unused imports, inefficient loops, and suggests improvements or directly applies optimizations to enhance readability and performance. This tool is useful for developers looking to streamline their code maintenance process and save time.",
+      "topic": "AI in Code Scanning and Optimization",
+      "date": "2026-04-21",
+      "generated": "2026-04-21T04:47:02.957416+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/code_refactor_ai",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/code_refactor_ai/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/code_refactor_ai/code_refactor_ai.zip"
+    },
+    {
+      "tool_name": "performance_scanner_ai",
+      "display_name": "Performance Scanner AI",
+      "description": "Performance Scanner AI is a Python library that scans Python codebases and identifies performance bottlenecks using AI analysis. It highlights sections of code that are computationally expensive and suggests alternative implementations. The tool is ideal for developers working with large projects or resource-intensive applications where optimization is critical.",
+      "topic": "AI in Code Scanning and Optimization",
+      "date": "2026-04-21",
+      "generated": "2026-04-21T04:47:02.957416+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/performance_scanner_ai",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/performance_scanner_ai/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/performance_scanner_ai/performance_scanner_ai.zip"
+    },
+    {
+      "tool_name": "real_time_voice_analyzer",
+      "display_name": "Real-Time Voice Analyzer",
+      "description": "This CLI tool analyzes audio streams in real-time to detect potential AI-generated voices. It uses a combination of deep learning models and audio fingerprinting techniques to flag synthetic audio, enabling developers to integrate it into fraud prevention systems or live communication platforms.",
+      "topic": "AI Voice Cloning Fraud Prevention",
+      "date": "2026-04-21",
+      "generated": "2026-04-21T04:47:02.957416+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/real_time_voice_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/real_time_voice_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/real_time_voice_analyzer/real_time_voice_analyzer.zip"
+    },
+    {
+      "tool_name": "synthetic_voice_dataset_auditor",
+      "display_name": "Synthetic Voice Dataset Auditor",
+      "description": "This tool audits audio datasets for the presence of AI-generated voices. It helps developers clean up datasets or assess their vulnerability to misuse by providing an analysis of synthetic content presence within large collections of audio files.",
+      "topic": "AI Voice Cloning Fraud Prevention",
+      "date": "2026-04-21",
+      "generated": "2026-04-21T04:47:02.957416+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor/synthetic_voice_dataset_auditor.zip"
+    },
     {
       "tool_name": "ai_model_benchmark",
       "display_name": "AI Model Benchmark",

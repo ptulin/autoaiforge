@@ -1,0 +1,13 @@
+{
+  "tool_name": "synthetic_voice_dataset_auditor",
+  "display_name": "Synthetic Voice Dataset Auditor",
+  "description": "This tool audits audio datasets for the presence of AI-generated voices. It helps developers clean up datasets or assess their vulnerability to misuse by providing an analysis of synthetic content presence within large collections of audio files.",
+  "topic": "AI Voice Cloning Fraud Prevention",
+  "date": "2026-04-21",
+  "generated": "2026-04-21T04:47:02.957416+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-21/synthetic_voice_dataset_auditor/synthetic_voice_dataset_auditor.zip"
+}
