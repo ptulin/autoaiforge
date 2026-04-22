@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-04-21T04:52:18.931581+00:00",
-  "total_tools": 161,
+  "last_updated": "2026-04-22T04:49:30.717358+00:00",
+  "total_tools": 165,
   "tools": [
+    {
+      "tool_name": "claude_ui_blueprint_generator",
+      "display_name": "Claude UI Blueprint Generator",
+      "description": "This CLI tool uses Claude Design's APIs to generate UI blueprints in JSON or Figma-compatible formats from simple textual descriptions of user interfaces. Developers can use it to quickly prototype UI layouts or explore design ideas without manually creating wireframes.",
+      "topic": "Claude Design for UI Tools",
+      "date": "2026-04-22",
+      "generated": "2026-04-22T04:44:54.147201+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/claude_ui_blueprint_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_blueprint_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_blueprint_generator/claude_ui_blueprint_generator.zip"
+    },
+    {
+      "tool_name": "claude_ui_customizer",
+      "display_name": "Claude UI Customizer",
+      "description": "A Python library that integrates with Claude Design APIs to fetch, modify, and customize existing UI designs programmatically. It allows developers to input existing layouts and apply modifications such as theme changes, resizing, or component replacements.",
+      "topic": "Claude Design for UI Tools",
+      "date": "2026-04-22",
+      "generated": "2026-04-22T04:44:54.147201+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/claude_ui_customizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_customizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_customizer/claude_ui_customizer.zip"
+    },
+    {
+      "tool_name": "codex_code_explainer",
+      "display_name": "Codex Code Explainer",
+      "description": "A library that uses OpenAI Codex to generate human-readable explanations for complex Python code. This is ideal for onboarding new developers, analyzing third-party scripts, or understanding obscure algorithms.",
+      "topic": "OpenAI Codex Updates",
+      "date": "2026-04-22",
+      "generated": "2026-04-22T04:44:54.147201+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/codex_code_explainer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_code_explainer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_code_explainer/codex_code_explainer.zip"
+    },
+    {
+      "tool_name": "codex_debug_assistant",
+      "display_name": "Codex Debug Assistant",
+      "description": "An API wrapper that integrates OpenAI Codex into debugging workflows. Developers can provide error messages, stack traces, or problematic code snippets, and the tool suggests fixes, explanations, or relevant tests to diagnose issues effectively.",
+      "topic": "OpenAI Codex Updates",
+      "date": "2026-04-22",
+      "generated": "2026-04-22T04:44:54.147201+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/codex_debug_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_debug_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_debug_assistant/codex_debug_assistant.zip"
+    },
     {
       "tool_name": "code_refactor_ai",
       "display_name": "Code Refactor AI",

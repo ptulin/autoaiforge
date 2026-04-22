@@ -1,0 +1,13 @@
+{
+  "tool_name": "codex_debug_assistant",
+  "display_name": "Codex Debug Assistant",
+  "description": "An API wrapper that integrates OpenAI Codex into debugging workflows. Developers can provide error messages, stack traces, or problematic code snippets, and the tool suggests fixes, explanations, or relevant tests to diagnose issues effectively.",
+  "topic": "OpenAI Codex Updates",
+  "date": "2026-04-22",
+  "generated": "2026-04-22T04:44:54.147201+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/codex_debug_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_debug_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/codex_debug_assistant/codex_debug_assistant.zip"
+}
