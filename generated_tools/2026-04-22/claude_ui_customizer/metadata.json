@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_ui_customizer",
+  "display_name": "Claude UI Customizer",
+  "description": "A Python library that integrates with Claude Design APIs to fetch, modify, and customize existing UI designs programmatically. It allows developers to input existing layouts and apply modifications such as theme changes, resizing, or component replacements.",
+  "topic": "Claude Design for UI Tools",
+  "date": "2026-04-22",
+  "generated": "2026-04-22T04:44:54.147201+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-22/claude_ui_customizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_customizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-22/claude_ui_customizer/claude_ui_customizer.zip"
+}
