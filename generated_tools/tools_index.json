@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-22T04:49:30.717358+00:00",
-  "total_tools": 165,
+  "last_updated": "2026-04-23T04:54:24.204948+00:00",
+  "total_tools": 168,
   "tools": [
+    {
+      "tool_name": "agent_debugger",
+      "display_name": "Agent Debugger",
+      "description": "A Python CLI tool for debugging autonomous AI agents by simulating task flows and inspecting decision-making processes. It provides developers with step-by-step insights into agent behavior and traces intermediate states for better understanding and debugging.",
+      "topic": "Autonomous AI Agents",
+      "date": "2026-04-23",
+      "generated": "2026-04-23T04:49:52.190910+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/agent_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/agent_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/agent_debugger/agent_debugger.zip"
+    },
+    {
+      "tool_name": "ai_batch_processor",
+      "display_name": "AI Batch Processor",
+      "description": "This script provides a batch processing pipeline for developers who need to run free AI models (like GPT-J or LLaMA) on multiple input files or data entries. It supports parallel processing, logging, and output aggregation, making it ideal for large-scale AI tasks like bulk text generation, translation, or summarization.",
+      "topic": "Open-Source AI Accessibility",
+      "date": "2026-04-23",
+      "generated": "2026-04-23T04:49:52.190910+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_batch_processor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_batch_processor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_batch_processor/ai_batch_processor.zip"
+    },
+    {
+      "tool_name": "ai_task_validator",
+      "display_name": "AI Task Validator",
+      "description": "A Python library for validating task definitions and logic for autonomous AI agents. It ensures that tasks are correctly defined, dependencies are resolvable, and logic does not lead to deadlocks or circular dependencies.",
+      "topic": "Autonomous AI Agents",
+      "date": "2026-04-23",
+      "generated": "2026-04-23T04:49:52.190910+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_task_validator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_task_validator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_task_validator/ai_task_validator.zip"
+    },
     {
       "tool_name": "claude_ui_blueprint_generator",
       "display_name": "Claude UI Blueprint Generator",

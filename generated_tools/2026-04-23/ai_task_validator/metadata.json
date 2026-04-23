@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_task_validator",
+  "display_name": "AI Task Validator",
+  "description": "A Python library for validating task definitions and logic for autonomous AI agents. It ensures that tasks are correctly defined, dependencies are resolvable, and logic does not lead to deadlocks or circular dependencies.",
+  "topic": "Autonomous AI Agents",
+  "date": "2026-04-23",
+  "generated": "2026-04-23T04:49:52.190910+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_task_validator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_task_validator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-23/ai_task_validator/ai_task_validator.zip"
+}

@@ -1,0 +1,239 @@
+2026-04-23 04:49:52 | INFO     | main | ============================================================
+2026-04-23 04:49:52 | INFO     | main | AutoAIForge starting run: 2026-04-23T04:49:52.190910+00:00
+2026-04-23 04:49:52 | INFO     | main | ============================================================
+2026-04-23 04:49:52 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-23 04:49:52 | INFO     | youtube_scraper | YouTube client ready
+2026-04-23 04:49:52 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-23 04:49:53 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-23 04:49:53 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-23 04:49:53 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-04-23 04:49:54 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-23 04:49:54 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-23 04:49:54 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-23 04:49:55 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-23 04:49:55 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-23 04:49:55 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-23 04:49:56 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-23 04:49:56 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-23 04:49:56 | INFO     | youtube_scraper | YouTube 'vector database AI': 40 results (quota used: 1300)
+2026-04-23 04:49:57 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-23 04:49:57 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-23 04:49:57 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-04-23 04:49:58 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-23 04:49:58 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-23 04:49:58 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-23 04:49:59 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-23 04:49:59 | INFO     | youtube_scraper | YouTube total: 892 items, quota used: 2000
+2026-04-23 04:49:59 | INFO     | main |   YouTube: 848 items
+2026-04-23 04:49:59 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-23 04:50:04 | INFO     | rss_scraper | HackerNews: 171 items
+2026-04-23 04:50:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-23 04:50:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-23 04:50:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-23 04:50:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-23 04:50:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-23 04:50:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-23 04:50:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-23 04:50:11 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-23 04:50:18 | INFO     | rss_scraper | ArXiv: 102 items
+2026-04-23 04:50:22 | INFO     | rss_scraper | Dev.to: 192 items
+2026-04-23 04:50:23 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-23 04:50:23 | INFO     | rss_scraper | Free sources total: 515 unique items
+2026-04-23 04:50:23 | INFO     | main |   RSS/API sources: 515 items
+2026-04-23 04:50:23 | INFO     | main |   Total scraped: 1363 items
+2026-04-23 04:50:23 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-23 04:50:23 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-23 04:50:23 | INFO     | db_manager | Purged 1042 old news items
+2026-04-23 04:50:24 | INFO     | db_manager | Inserted 1110/1363 news items
+2026-04-23 04:50:24 | INFO     | main |   SQLite: 1110 new items (total: 30579)
+2026-04-23 04:50:28 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-23 04:50:30 | INFO     | vector_store | VectorStore ready
+2026-04-23 04:50:47 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-23 04:50:47 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-23 04:50:47 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-23 04:50:47 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-23 04:50:55 | DEBUG    | llm_client | LLM response from github_models (3886 chars)
+2026-04-23 04:50:55 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-23 04:50:55 | INFO     | main |   Found 10 topics:
+2026-04-23 04:50:55 | INFO     | main |      1. [10/10] Autonomous AI Agents
+2026-04-23 04:50:55 | INFO     | main |      2. [10/10] Open-Source AI Accessibility
+2026-04-23 04:50:55 | INFO     | main |      3. [9/10] AI Model Fine-Tuning Tools
+2026-04-23 04:50:55 | INFO     | main |      4. [9/10] AI-Powered Codebase Management
+2026-04-23 04:50:55 | INFO     | main |      5. [9/10] AI Hardware Innovations
+2026-04-23 04:50:55 | INFO     | main |      6. [8/10] AI Data Poisoning Detection
+2026-04-23 04:50:55 | INFO     | main |      7. [8/10] AI in Spreadsheet Automation
+2026-04-23 04:50:55 | INFO     | main |      8. [8/10] AI-Generated Design Tools
+2026-04-23 04:50:55 | INFO     | main |      9. [7/10] AI-Powered News Aggregators
+2026-04-23 04:50:55 | INFO     | main |     10. [7/10] AI for Smart Money Indicators
+2026-04-23 04:50:55 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-23 04:50:55 | INFO     | main |   Existing collection: 165 tools across 92 topics
+2026-04-23 04:50:55 | INFO     | main |   🔄 Upgrade candidate: 'Autonomous AI Agents' (relevance 10/10, last built 2026-03-18)
+2026-04-23 04:50:55 | INFO     | main |   Topics flagged for upgrade: Autonomous AI Agents
+2026-04-23 04:50:55 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Autonomous AI Agents'
+2026-04-23 04:51:00 | DEBUG    | llm_client | LLM response from github_models (3088 chars)
+2026-04-23 04:51:00 | INFO     | idea_generator | Generated 3 ideas for topic: Autonomous AI Agents
+2026-04-23 04:51:05 | DEBUG    | llm_client | LLM response from github_models (2642 chars)
+2026-04-23 04:51:05 | INFO     | idea_generator | Generated 2 ideas for topic: Open-Source AI Accessibility
+2026-04-23 04:51:05 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-23 04:51:05 | INFO     | main |   Generated 5 tool ideas:
+2026-04-23 04:51:05 | INFO     | main |     • task_orchestrator: A Python CLI tool for creating, organizing, and executing autonomous AI agent ta
+2026-04-23 04:51:05 | INFO     | main |     • agent_debugger: A Python CLI tool for debugging autonomous AI agents by simulating task flows an
+2026-04-23 04:51:05 | INFO     | main |     • ai_task_validator: A Python library for validating task definitions and logic for autonomous AI age
+2026-04-23 04:51:05 | INFO     | main |     • openai_model_switcher: This CLI tool allows developers to seamlessly switch between free/open-source AI
+2026-04-23 04:51:05 | INFO     | main |     • ai_batch_processor: This script provides a batch processing pipeline for developers who need to run 
+2026-04-23 04:51:05 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-23 04:51:05 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-23 04:51:13 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-23 04:51:13 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-23 04:51:13 | INFO     | tool_builder | Building tool: task_orchestrator …
+2026-04-23 04:51:24 | DEBUG    | llm_client | LLM response from github_models (6878 chars)
+2026-04-23 04:51:24 | ERROR    | tool_builder | Initial generation failed for task_orchestrator: LLM returned non-JSON: {
+  "code": "import argparse\nimport yaml\nimport logging\nfrom concurrent.futures import ThreadPoolExecutor, as_completed\nimport os\n\ndef load_workflow_config(file_path):\n    \"\"\"Load the workflow configuration from a YAML or JSON file.\"\"\"\n    if not os.path.exists(file_path):\n        rai
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6865)
+2026-04-23 04:51:24 | INFO     | tool_builder | Building tool: agent_debugger …
+2026-04-23 04:51:32 | DEBUG    | llm_client | LLM response from github_models (5835 chars)
+2026-04-23 04:51:32 | DEBUG    | test_runner | Installing: ['networkx==3.1', 'matplotlib==3.8.0']
+2026-04-23 04:51:39 | INFO     | test_runner | Tests PASSED for agent_debugger
+2026-04-23 04:51:39 | INFO     | tool_builder | ✅ agent_debugger passed tests on loop 1
+2026-04-23 04:51:39 | INFO     | tool_builder | Building tool: ai_task_validator …
+2026-04-23 04:51:47 | DEBUG    | llm_client | LLM response from github_models (5929 chars)
+2026-04-23 04:51:47 | DEBUG    | test_runner | Installing: ['pydantic==1.10.2', 'networkx==3.0']
+2026-04-23 04:51:50 | WARNING  | test_runner | Tests FAILED for ai_task_validator:
+test_ai_task_validator.py::test_valid_tasks FAILED                       [ 33%]
+test_ai_task_validator.py::test_missing_dependency FAILED                [100%]
+    assert len(result["optimizations"]) == 0
+E   assert 1 == 0
+    assert result["status"] == "error"
+E   AssertionError: assert 'success' == 'error'
+FAILED test_ai_task_validator.py::test_valid_tasks - assert 1 == 0
+FAILED test_ai_task_validator.py::test_missing_dependency - AssertionError: assert 'success' == 'error'
+2026-04-23 04:51:50 | WARNING  | tool_builder | ⚠️  ai_task_validator tests failed (loop 1/5) — test_ai_task_validator.py::test_valid_tasks FAILED                       [ 33%]
+test_ai_task_validator.py::test_missing_dependency FAILED                [100%]
+    assert len(result["optimizations"]) 
+2026-04-23 04:51:50 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-23 04:52:58 | DEBUG    | llm_client | LLM response from github_models (6077 chars)
+2026-04-23 04:52:58 | DEBUG    | test_runner | Installing: ['pydantic', 'networkx']
+2026-04-23 04:52:59 | WARNING  | test_runner | Tests FAILED for ai_task_validator:
+test_ai_task_validator.py::test_valid_tasks FAILED                       [ 33%]
+    assert len(result["optimizations"]) == 0
+E   assert 1 == 0
+FAILED test_ai_task_validator.py::test_valid_tasks - assert 1 == 0
+2026-04-23 04:52:59 | WARNING  | tool_builder | ⚠️  ai_task_validator tests failed (loop 2/5) — test_ai_task_validator.py::test_valid_tasks FAILED                       [ 33%]
+    assert len(result["optimizations"]) == 0
+E   assert 1 == 0
+FAILED test_ai_task_validator.py::test_valid_tasks - asse
+2026-04-23 04:53:07 | DEBUG    | llm_client | LLM response from github_models (7219 chars)
+2026-04-23 04:53:07 | DEBUG    | test_runner | Installing: ['pydantic', 'networkx']
+2026-04-23 04:53:08 | WARNING  | test_runner | Tests FAILED for ai_task_validator:
+test_ai_task_validator.py::test_valid_tasks FAILED                       [ 25%]
+    assert len(result["optimizations"]) == 0
+E   assert 1 == 0
+FAILED test_ai_task_validator.py::test_valid_tasks - assert 1 == 0
+2026-04-23 04:53:08 | WARNING  | tool_builder | ⚠️  ai_task_validator tests failed (loop 3/5) — test_ai_task_validator.py::test_valid_tasks FAILED                       [ 25%]
+    assert len(result["optimizations"]) == 0
+E   assert 1 == 0
+FAILED test_ai_task_validator.py::test_valid_tasks - asse
+2026-04-23 04:53:16 | DEBUG    | llm_client | LLM response from github_models (7123 chars)
+2026-04-23 04:53:16 | DEBUG    | test_runner | Installing: ['pydantic', 'networkx']
+2026-04-23 04:53:17 | INFO     | test_runner | Tests PASSED for ai_task_validator
+2026-04-23 04:53:17 | INFO     | tool_builder | ✅ ai_task_validator passed tests on loop 4
+2026-04-23 04:53:17 | INFO     | tool_builder | Building tool: openai_model_switcher …
+2026-04-23 04:53:25 | DEBUG    | llm_client | LLM response from github_models (5079 chars)
+2026-04-23 04:53:25 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'requests==2.31.0', 'pytest==7.4.2']
+2026-04-23 04:53:32 | WARNING  | test_runner | Tests FAILED for openai_model_switcher:
+test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_huggingface - ImportError: 
+2026-04-23 04:53:32 | WARNING  | tool_builder | ⚠️  openai_model_switcher tests failed (loop 1/5) — test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switch
+2026-04-23 04:53:40 | DEBUG    | llm_client | LLM response from github_models (5980 chars)
+2026-04-23 04:53:40 | DEBUG    | test_runner | Installing: ['transformers']
+2026-04-23 04:53:41 | WARNING  | test_runner | Tests FAILED for openai_model_switcher:
+test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_huggingface - ImportError: 
+2026-04-23 04:53:41 | WARNING  | tool_builder | ⚠️  openai_model_switcher tests failed (loop 2/5) — test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switch
+2026-04-23 04:53:49 | DEBUG    | llm_client | LLM response from github_models (5712 chars)
+2026-04-23 04:53:49 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nfrom transformers import pipeline, AutoModelForCausalLM, AutoTokenizer\n\ndef load_model(model_name):\n    \"\"\"\n    Load the specified model. If the model is an open-source model, it will be loaded using Hugging Face.\n    If the model is 'gpt-4', it will use OpenAI'
+Expecting property name enclosed in double quotes: line 6 column 1 (char 5699)
+2026-04-23 04:53:49 | DEBUG    | test_runner | Installing: ['transformers']
+2026-04-23 04:53:50 | WARNING  | test_runner | Tests FAILED for openai_model_switcher:
+test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_huggingface - ImportError: 
+2026-04-23 04:53:50 | WARNING  | tool_builder | ⚠️  openai_model_switcher tests failed (loop 3/5) — test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switch
+2026-04-23 04:53:57 | DEBUG    | llm_client | LLM response from github_models (6105 chars)
+2026-04-23 04:53:57 | DEBUG    | test_runner | Installing: ['transformers']
+2026-04-23 04:53:58 | WARNING  | test_runner | Tests FAILED for openai_model_switcher:
+test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_huggingface - ImportError: 
+2026-04-23 04:53:58 | WARNING  | tool_builder | ⚠️  openai_model_switcher tests failed (loop 4/5) — test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switch
+2026-04-23 04:54:07 | DEBUG    | llm_client | LLM response from github_models (6633 chars)
+2026-04-23 04:54:07 | DEBUG    | test_runner | Installing: ['transformers', 'pytest']
+2026-04-23 04:54:08 | WARNING  | test_runner | Tests FAILED for openai_model_switcher:
+test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+test_openai_model_switcher.py::test_load_model_invalid FAILED            [ 50%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    with patch("transformers.AutoTokenizer.from_pretrained", side_effect=Exception("Model not found")), \
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_huggingface - ImportError: 
+FAILED test_openai_model_switcher.py::test_load_model_invalid - ImportError: 
+2026-04-23 04:54:08 | WARNING  | tool_builder | ⚠️  openai_model_switcher tests failed (loop 5/5) — test_openai_model_switcher.py::test_load_model_huggingface FAILED        [ 25%]
+test_openai_model_switcher.py::test_load_model_invalid FAILED            [ 50%]
+E   KeyError: 'from_pretrained'
+    rais
+2026-04-23 04:54:08 | ERROR    | tool_builder | ❌ openai_model_switcher failed after 5 loops
+2026-04-23 04:54:08 | INFO     | tool_builder | Building tool: ai_batch_processor …
+2026-04-23 04:54:15 | DEBUG    | llm_client | LLM response from github_models (5752 chars)
+2026-04-23 04:54:15 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'pandas==1.5.3']
+2026-04-23 04:54:24 | INFO     | test_runner | Tests PASSED for ai_batch_processor
+2026-04-23 04:54:24 | INFO     | tool_builder | ✅ ai_batch_processor passed tests on loop 1
+2026-04-23 04:54:24 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-04-23 04:54:24 | INFO     | main |   Built 3/5 tools successfully
+2026-04-23 04:54:24 | INFO     | main |     ✅ agent_debugger (loops: 1)
+2026-04-23 04:54:24 | INFO     | main |     ✅ ai_task_validator (loops: 4)
+2026-04-23 04:54:24 | INFO     | main |     ✅ ai_batch_processor (loops: 1)
+2026-04-23 04:54:24 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-23 04:54:24 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-23 04:54:24 | INFO     | github_publisher |   Created zip: agent_debugger.zip (2695 bytes)
+2026-04-23 04:54:24 | INFO     | github_publisher | Saved agent_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/agent_debugger
+2026-04-23 04:54:24 | INFO     | github_publisher |   Created zip: ai_task_validator.zip (2606 bytes)
+2026-04-23 04:54:24 | INFO     | github_publisher | Saved ai_task_validator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_task_validator
+2026-04-23 04:54:24 | INFO     | github_publisher |   Created zip: ai_batch_processor.zip (2499 bytes)
+2026-04-23 04:54:24 | INFO     | github_publisher | Saved ai_batch_processor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_batch_processor
+2026-04-23 04:54:24 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-04-23 04:54:24 | INFO     | main |   Published 3 tools:
+2026-04-23 04:54:24 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/agent_debugger
+2026-04-23 04:54:24 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_task_validator
+2026-04-23 04:54:24 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-23/ai_batch_processor
+2026-04-23 04:54:24 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-23 04:54:24 | INFO     | main | ✅ Generated tools_index.json with 168 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
