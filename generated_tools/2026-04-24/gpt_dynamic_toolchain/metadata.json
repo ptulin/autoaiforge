@@ -1,0 +1,13 @@
+{
+  "tool_name": "gpt_dynamic_toolchain",
+  "display_name": "GPT Dynamic Toolchain Builder",
+  "description": "This library helps AI developers dynamically create and test GPT-5.5-compatible toolchains. Users can define custom tools via JSON specifications, which are automatically integrated and executed. It simplifies prototyping and testing workflows for tools using GPT-5.5.",
+  "topic": "GPT-5.5 Advanced Features",
+  "date": "2026-04-24",
+  "generated": "2026-04-24T04:53:26.100028+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-24/gpt_dynamic_toolchain",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/gpt_dynamic_toolchain/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/gpt_dynamic_toolchain/gpt_dynamic_toolchain.zip"
+}

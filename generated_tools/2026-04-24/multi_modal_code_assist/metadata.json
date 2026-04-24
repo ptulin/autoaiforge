@@ -1,0 +1,13 @@
+{
+  "tool_name": "multi_modal_code_assist",
+  "display_name": "Multi-Modal Code Assist",
+  "description": "This tool integrates GPT-5.5's multi-modal processing capabilities to allow developers to upload code snippets, diagrams, or screenshots, and receive detailed recommendations, debugging insights, or documentation suggestions using GPT-5.5. It's useful for developers working with complex codebases and visual aids.",
+  "topic": "GPT-5.5 Advanced Features",
+  "date": "2026-04-24",
+  "generated": "2026-04-24T04:53:26.100028+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-24/multi_modal_code_assist",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/multi_modal_code_assist/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/multi_modal_code_assist/multi_modal_code_assist.zip"
+}
