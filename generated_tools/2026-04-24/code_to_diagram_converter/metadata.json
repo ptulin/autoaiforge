@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_to_diagram_converter",
+  "display_name": "Code-to-Diagram Converter",
+  "description": "This CLI tool uses GPT-5.5 to transform code logic into visual flowcharts or UML diagrams, enabling developers to understand or document codebases more easily. It is particularly helpful in analyzing complex functions or systems.",
+  "topic": "GPT-5.5 Advanced Features",
+  "date": "2026-04-24",
+  "generated": "2026-04-24T04:53:26.100028+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-24/code_to_diagram_converter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/code_to_diagram_converter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-24/code_to_diagram_converter/code_to_diagram_converter.zip"
+}
