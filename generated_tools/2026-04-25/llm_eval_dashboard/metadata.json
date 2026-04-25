@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_eval_dashboard",
+  "display_name": "LLM Evaluation Dashboard",
+  "description": "This tool generates an interactive dashboard to visualize and compare the evaluation metrics of multiple large language models (e.g., GPT-5.5 and Claude Opus 4.7) across diverse datasets. It supports metrics like BLEU, ROUGE, and latency, helping developers interpret results more effectively.",
+  "topic": "Advanced Large Language Models",
+  "date": "2026-04-25",
+  "generated": "2026-04-25T04:34:55.638769+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_eval_dashboard",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_eval_dashboard/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_eval_dashboard/llm_eval_dashboard.zip"
+}

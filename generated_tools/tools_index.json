@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-24T04:56:51.746877+00:00",
-  "total_tools": 173,
+  "last_updated": "2026-04-25T04:41:07.519096+00:00",
+  "total_tools": 176,
   "tools": [
+    {
+      "tool_name": "ai_code_review_assistant",
+      "display_name": "AI Code Review Assistant",
+      "description": "This Python script acts as an AI-powered code review assistant by integrating with Claude Code or similar tools. It allows developers to provide a piece of code and receive a detailed review with suggestions for optimization, error fixes, and improvements—all from the CLI.",
+      "topic": "AI-Powered Code Generation",
+      "date": "2026-04-25",
+      "generated": "2026-04-25T04:34:55.638769+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/ai_code_review_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/ai_code_review_assistant/ai_code_review_assistant.zip"
+    },
+    {
+      "tool_name": "llm_eval_dashboard",
+      "display_name": "LLM Evaluation Dashboard",
+      "description": "This tool generates an interactive dashboard to visualize and compare the evaluation metrics of multiple large language models (e.g., GPT-5.5 and Claude Opus 4.7) across diverse datasets. It supports metrics like BLEU, ROUGE, and latency, helping developers interpret results more effectively.",
+      "topic": "Advanced Large Language Models",
+      "date": "2026-04-25",
+      "generated": "2026-04-25T04:34:55.638769+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_eval_dashboard",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_eval_dashboard/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_eval_dashboard/llm_eval_dashboard.zip"
+    },
+    {
+      "tool_name": "llm_input_optimizer",
+      "display_name": "LLM Input Optimizer",
+      "description": "A Python library that helps developers optimize their inputs to LLMs such as GPT-5.5 or Claude Opus 4.7. This tool analyzes input prompts for clarity, length, and structure, providing suggestions to maximize model performance and minimize token usage.",
+      "topic": "Advanced Large Language Models",
+      "date": "2026-04-25",
+      "generated": "2026-04-25T04:34:55.638769+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_input_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_input_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_input_optimizer/llm_input_optimizer.zip"
+    },
     {
       "tool_name": "claude_apify_connector",
       "display_name": "Claude Apify Connector",
