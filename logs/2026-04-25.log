@@ -1,0 +1,333 @@
+2026-04-25 04:34:55 | INFO     | main | ============================================================
+2026-04-25 04:34:55 | INFO     | main | AutoAIForge starting run: 2026-04-25T04:34:55.638769+00:00
+2026-04-25 04:34:55 | INFO     | main | ============================================================
+2026-04-25 04:34:55 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-25 04:34:55 | INFO     | youtube_scraper | YouTube client ready
+2026-04-25 04:34:56 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-25 04:34:56 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-25 04:34:57 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-25 04:34:57 | INFO     | youtube_scraper | YouTube 'LLM advancements': 2 results (quota used: 400)
+2026-04-25 04:34:57 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-25 04:34:57 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-25 04:34:58 | INFO     | youtube_scraper | YouTube 'machine learning tools': 45 results (quota used: 700)
+2026-04-25 04:34:58 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-25 04:34:58 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-25 04:34:59 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-25 04:34:59 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-25 04:34:59 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-25 04:35:00 | INFO     | youtube_scraper | YouTube 'vector database AI': 33 results (quota used: 1300)
+2026-04-25 04:35:00 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-25 04:35:00 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-25 04:35:01 | INFO     | youtube_scraper | YouTube 'AI safety news': 40 results (quota used: 1600)
+2026-04-25 04:35:01 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-04-25 04:35:01 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-25 04:35:02 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-25 04:35:02 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-25 04:35:02 | INFO     | youtube_scraper | YouTube total: 872 items, quota used: 2000
+2026-04-25 04:35:02 | INFO     | main |   YouTube: 824 items
+2026-04-25 04:35:02 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-25 04:35:07 | INFO     | rss_scraper | HackerNews: 169 items
+2026-04-25 04:35:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-25 04:35:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-25 04:35:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-25 04:35:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-25 04:35:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-25 04:35:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-25 04:35:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-25 04:35:14 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-25 04:35:20 | INFO     | rss_scraper | ArXiv: 107 items
+2026-04-25 04:35:24 | INFO     | rss_scraper | Dev.to: 199 items
+2026-04-25 04:35:25 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-25 04:35:25 | INFO     | rss_scraper | Free sources total: 525 unique items
+2026-04-25 04:35:25 | INFO     | main |   RSS/API sources: 525 items
+2026-04-25 04:35:25 | INFO     | main |   Total scraped: 1349 items
+2026-04-25 04:35:25 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-25 04:35:25 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-25 04:35:25 | INFO     | db_manager | Purged 1085 old news items
+2026-04-25 04:35:25 | INFO     | db_manager | Inserted 954/1349 news items
+2026-04-25 04:35:25 | INFO     | main |   SQLite: 954 new items (total: 30504)
+2026-04-25 04:35:30 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-25 04:35:31 | INFO     | vector_store | VectorStore ready
+2026-04-25 04:35:59 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-25 04:35:59 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-25 04:35:59 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-25 04:35:59 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-25 04:36:06 | DEBUG    | llm_client | LLM response from github_models (4127 chars)
+2026-04-25 04:36:06 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-25 04:36:06 | INFO     | main |   Found 10 topics:
+2026-04-25 04:36:06 | INFO     | main |      1. [10/10] Advanced Large Language Models
+2026-04-25 04:36:06 | INFO     | main |      2. [9/10] AI-Powered Code Generation
+2026-04-25 04:36:06 | INFO     | main |      3. [9/10] AI-Driven Misinformation Detection
+2026-04-25 04:36:06 | INFO     | main |      4. [9/10] AI in Cybersecurity
+2026-04-25 04:36:06 | INFO     | main |      5. [8/10] AI for Content Creation
+2026-04-25 04:36:06 | INFO     | main |      6. [8/10] AI in Financial Analysis
+2026-04-25 04:36:06 | INFO     | main |      7. [8/10] AI in Design Automation
+2026-04-25 04:36:06 | INFO     | main |      8. [8/10] AI Model Orchestration Platforms
+2026-04-25 04:36:06 | INFO     | main |      9. [7/10] AI for Personalized Education
+2026-04-25 04:36:06 | INFO     | main |     10. [7/10] AI for Workplace Training
+2026-04-25 04:36:06 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-25 04:36:06 | INFO     | main |   Existing collection: 173 tools across 95 topics
+2026-04-25 04:36:06 | INFO     | main |   🔄 Upgrade candidate: 'AI for Content Creation' (relevance 8/10, last built 2026-04-17)
+2026-04-25 04:36:06 | INFO     | main |   Topics flagged for upgrade: AI for Content Creation
+2026-04-25 04:36:12 | DEBUG    | llm_client | LLM response from github_models (3714 chars)
+2026-04-25 04:36:12 | INFO     | idea_generator | Generated 3 ideas for topic: Advanced Large Language Models
+2026-04-25 04:36:16 | DEBUG    | llm_client | LLM response from github_models (2426 chars)
+2026-04-25 04:36:16 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Code Generation
+2026-04-25 04:36:16 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-25 04:36:16 | INFO     | main |   Generated 5 tool ideas:
+2026-04-25 04:36:16 | INFO     | main |     • llm_task_benchmark: This CLI tool allows AI developers to benchmark and compare the performance of l
+2026-04-25 04:36:16 | INFO     | main |     • llm_input_optimizer: A Python library that helps developers optimize their inputs to LLMs such as GPT
+2026-04-25 04:36:16 | INFO     | main |     • llm_eval_dashboard: This tool generates an interactive dashboard to visualize and compare the evalua
+2026-04-25 04:36:16 | INFO     | main |     • claude_code_snippet_manager: This CLI tool allows developers to manage, refine, and reuse code snippets gener
+2026-04-25 04:36:16 | INFO     | main |     • ai_code_review_assistant: This Python script acts as an AI-powered code review assistant by integrating wi
+2026-04-25 04:36:16 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-25 04:36:16 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-25 04:36:25 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-25 04:36:25 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-25 04:36:25 | INFO     | tool_builder | Building tool: llm_task_benchmark …
+2026-04-25 04:36:37 | DEBUG    | llm_client | LLM response from github_models (6788 chars)
+2026-04-25 04:36:37 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.7', 'pandas==1.5.3']
+2026-04-25 04:36:47 | WARNING  | test_runner | Tests FAILED for llm_task_benchmark:
+test_llm_task_benchmark.py::test_benchmark_model_anthropic FAILED        [ 66%]
+E   KeyError: 'question'
+FAILED test_llm_task_benchmark.py::test_benchmark_model_anthropic - KeyError: 'question'
+2026-04-25 04:36:47 | WARNING  | tool_builder | ⚠️  llm_task_benchmark tests failed (loop 1/5) — test_llm_task_benchmark.py::test_benchmark_model_anthropic FAILED        [ 66%]
+E   KeyError: 'question'
+FAILED test_llm_task_benchmark.py::test_benchmark_model_anthropic - KeyError: 'question'
+2026-04-25 04:36:57 | DEBUG    | llm_client | LLM response from github_models (7909 chars)
+2026-04-25 04:36:57 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport pandas as pd\nimport time\nfrom openai import ChatCompletion as OpenAIChatCompletion\nfrom anthropic import Client as AnthropicClient\n\ndef benchmark_model(model_name, task, input_data):\n    results = []\n    if model_name.startswith(\"gpt-\"):\n  
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7896)
+2026-04-25 04:36:57 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'anthropic==0.2.7', 'pandas==1.5.3']
+2026-04-25 04:36:58 | WARNING  | test_runner | Tests FAILED for llm_task_benchmark:
+test_llm_task_benchmark.py::test_benchmark_model_anthropic FAILED        [ 66%]
+E   KeyError: 'question'
+FAILED test_llm_task_benchmark.py::test_benchmark_model_anthropic - KeyError: 'question'
+2026-04-25 04:36:58 | WARNING  | tool_builder | ⚠️  llm_task_benchmark tests failed (loop 2/5) — test_llm_task_benchmark.py::test_benchmark_model_anthropic FAILED        [ 66%]
+E   KeyError: 'question'
+FAILED test_llm_task_benchmark.py::test_benchmark_model_anthropic - KeyError: 'question'
+2026-04-25 04:37:09 | DEBUG    | llm_client | LLM response from github_models (8060 chars)
+2026-04-25 04:37:09 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'pandas', 'pytest']
+2026-04-25 04:37:11 | WARNING  | test_runner | Tests FAILED for llm_task_benchmark:
+test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_llm_task_benchmark.py::test_benchmark_model_missing_fields - Failed: DID NOT RAISE <class 'ValueError'>
+2026-04-25 04:37:11 | WARNING  | tool_builder | ⚠️  llm_task_benchmark tests failed (loop 3/5) — test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID 
+2026-04-25 04:37:20 | DEBUG    | llm_client | LLM response from github_models (7962 chars)
+2026-04-25 04:37:20 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'pandas', 'pytest']
+2026-04-25 04:37:22 | WARNING  | test_runner | Tests FAILED for llm_task_benchmark:
+test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_llm_task_benchmark.py::test_benchmark_model_missing_fields - Failed: DID NOT RAISE <class 'ValueError'>
+2026-04-25 04:37:22 | WARNING  | tool_builder | ⚠️  llm_task_benchmark tests failed (loop 4/5) — test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID 
+2026-04-25 04:37:33 | DEBUG    | llm_client | LLM response from github_models (8952 chars)
+2026-04-25 04:37:33 | DEBUG    | test_runner | Installing: ['openai', 'anthropic', 'pandas', 'pytest']
+2026-04-25 04:37:34 | WARNING  | test_runner | Tests FAILED for llm_task_benchmark:
+test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_llm_task_benchmark.py::test_benchmark_model_missing_fields - Failed: DID NOT RAISE <class 'ValueError'>
+2026-04-25 04:37:34 | WARNING  | tool_builder | ⚠️  llm_task_benchmark tests failed (loop 5/5) — test_llm_task_benchmark.py::test_benchmark_model_missing_fields FAILED   [100%]
+    with pytest.raises(ValueError, match="Missing 'text' field in input data for summarization task."):
+E   Failed: DID 
+2026-04-25 04:37:34 | ERROR    | tool_builder | ❌ llm_task_benchmark failed after 5 loops
+2026-04-25 04:37:34 | INFO     | tool_builder | Building tool: llm_input_optimizer …
+2026-04-25 04:37:46 | DEBUG    | llm_client | LLM response from github_models (6370 chars)
+2026-04-25 04:37:46 | DEBUG    | test_runner | Installing: ['tiktoken==0.4.0', 'openai==0.27.8', 'anthropic==0.2.0']
+2026-04-25 04:37:47 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement anthropic==0.2.0 (from versions: 0.2.2, 0.2.3, 0.2.4, 0.2.5, 0.2.6, 0.2.7, 0.2.8, 0.2.9, 0.2.10, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.3.4, 0.3.5, 0.3.6, 0.3.7, 0.3.8, 0.3.9, 0.3.10, 0.3.11, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4
+2026-04-25 04:37:47 | WARNING  | test_runner | Tests FAILED for llm_input_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_llm_input_optimizer.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_input_optimizer/test_llm_input_optimizer.py'.
+E   ModuleNotFoundError: No module named 'tiktoken'
+ERROR test_llm_input_optimizer.py
+2026-04-25 04:37:47 | WARNING  | tool_builder | ⚠️  llm_input_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_llm_input_optimizer.py _________________
+ImportError while importing test modul
+2026-04-25 04:37:53 | DEBUG    | llm_client | LLM response from github_models (5794 chars)
+2026-04-25 04:37:53 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-25 04:37:54 | WARNING  | test_runner | Tests FAILED for llm_input_optimizer:
+test_llm_input_optimizer.py::test_count_tokens FAILED                    [ 33%]
+    assert count_tokens("Test prompt", "gpt-4") == 4
+E   AssertionError: assert 2 == 4
+FAILED test_llm_input_optimizer.py::test_count_tokens - AssertionError: assert 2 == 4
+2026-04-25 04:37:54 | WARNING  | tool_builder | ⚠️  llm_input_optimizer tests failed (loop 2/5) — test_llm_input_optimizer.py::test_count_tokens FAILED                    [ 33%]
+    assert count_tokens("Test prompt", "gpt-4") == 4
+E   AssertionError: assert 2 == 4
+FAILED test_llm_input_optimizer.p
+2026-04-25 04:38:01 | DEBUG    | llm_client | LLM response from github_models (6100 chars)
+2026-04-25 04:38:01 | INFO     | test_runner | Tests PASSED for llm_input_optimizer
+2026-04-25 04:38:01 | INFO     | tool_builder | ✅ llm_input_optimizer passed tests on loop 3
+2026-04-25 04:38:01 | INFO     | tool_builder | Building tool: llm_eval_dashboard …
+2026-04-25 04:38:13 | DEBUG    | llm_client | LLM response from github_models (7300 chars)
+2026-04-25 04:38:13 | DEBUG    | test_runner | Installing: ['streamlit==1.26.0', 'pandas==1.5.3', 'matplotlib==3.7.2', 'pytest==7.4.2']
+2026-04-25 04:38:24 | WARNING  | test_runner | Tests FAILED for llm_eval_dashboard:
+test_llm_eval_dashboard.py::test_load_data_csv FAILED                    [ 50%]
+    assert isinstance(df, pd.DataFrame)
+E   AssertionError: assert False
+FAILED test_llm_eval_dashboard.py::test_load_data_csv - AssertionError: assert False
+2026-04-25 04:38:24 | WARNING  | tool_builder | ⚠️  llm_eval_dashboard tests failed (loop 1/5) — test_llm_eval_dashboard.py::test_load_data_csv FAILED                    [ 50%]
+    assert isinstance(df, pd.DataFrame)
+E   AssertionError: assert False
+FAILED test_llm_eval_dashboard.py::test_load_da
+2026-04-25 04:38:33 | DEBUG    | llm_client | LLM response from github_models (7117 chars)
+2026-04-25 04:38:33 | DEBUG    | test_runner | Installing: ['streamlit', 'pandas', 'matplotlib']
+2026-04-25 04:38:35 | WARNING  | test_runner | Tests FAILED for llm_eval_dashboard:
+test_llm_eval_dashboard.py::test_generate_dashboard FAILED               [100%]
+    mock_dataframe.assert_called_once_with(data)
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:951: in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:937: in assert_called_with
+    raise ValueError(
+E   ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+FAILED test_llm_eval_dashboard.py::test_generate_dashboard - ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-04-25 04:38:35 | WARNING  | tool_builder | ⚠️  llm_eval_dashboard tests failed (loop 2/5) — test_llm_eval_dashboard.py::test_generate_dashboard FAILED               [100%]
+    mock_dataframe.assert_called_once_with(data)
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py
+2026-04-25 04:38:44 | DEBUG    | llm_client | LLM response from github_models (7136 chars)
+2026-04-25 04:38:44 | DEBUG    | test_runner | Installing: ['streamlit', 'pandas', 'matplotlib']
+2026-04-25 04:38:46 | INFO     | test_runner | Tests PASSED for llm_eval_dashboard
+2026-04-25 04:38:46 | INFO     | tool_builder | ✅ llm_eval_dashboard passed tests on loop 3
+2026-04-25 04:38:46 | INFO     | tool_builder | Building tool: claude_code_snippet_manager …
+2026-04-25 04:38:56 | DEBUG    | llm_client | LLM response from github_models (6824 chars)
+2026-04-25 04:38:56 | DEBUG    | test_runner | Installing: ['rich==13.5.1']
+2026-04-25 04:38:57 | WARNING  | test_runner | Tests FAILED for claude_code_snippet_manager:
+test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+    assert len(results) == 1
+E   assert 0 == 1
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - assert 0 == 1
+2026-04-25 04:38:57 | WARNING  | tool_builder | ⚠️  claude_code_snippet_manager tests failed (loop 1/5) — test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+    assert len(results) == 1
+E   assert 0 == 1
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - assert 0 
+2026-04-25 04:39:06 | DEBUG    | llm_client | LLM response from github_models (6901 chars)
+2026-04-25 04:39:06 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-25 04:39:07 | WARNING  | test_runner | Tests FAILED for claude_code_snippet_manager:
+test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::test_view_snippets FAILED           [100%]
+E   sqlite3.OperationalError: no such table: snippets
+    assert "Hello, World!" in args[0]
+E   TypeError: argument of type 'Table' is not iterable
+    assert "Hello, World!" in args[0]
+E   TypeError: argument of type 'Table' is not iterable
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - sqlite3.OperationalError: no such table: snippets
+FAILED test_claude_code_snippet_manager.py::test_search_snippets - TypeError: argument of type 'Table' is not iterable
+FAILED test_claude_code_snippet_manager.py::test_view_snippets - TypeError: argument of type 'Table' is not iterable
+2026-04-25 04:39:07 | WARNING  | tool_builder | ⚠️  claude_code_snippet_manager tests failed (loop 2/5) — test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::tes
+2026-04-25 04:39:17 | DEBUG    | llm_client | LLM response from github_models (7124 chars)
+2026-04-25 04:39:17 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-25 04:39:17 | WARNING  | test_runner | Tests FAILED for claude_code_snippet_manager:
+test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::test_view_snippets FAILED           [100%]
+E   sqlite3.OperationalError: no such table: snippets
+    assert "Hello, World!" in printed_table.__str__()
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f46ea5b1f50>'
+    assert "Hello, World!" in printed_table.__str__()
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f46ea5ec2d0>'
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - sqlite3.OperationalError: no such table: snippets
+FAILED test_claude_code_snippet_manager.py::test_search_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f46ea5b1f50>'
+FAILED test_claude_code_snippet_manager.py::test_view_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f46ea5ec2d0>'
+2026-04-25 04:39:17 | WARNING  | tool_builder | ⚠️  claude_code_snippet_manager tests failed (loop 3/5) — test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::tes
+2026-04-25 04:39:26 | DEBUG    | llm_client | LLM response from github_models (6845 chars)
+2026-04-25 04:39:26 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-25 04:39:27 | WARNING  | test_runner | Tests FAILED for claude_code_snippet_manager:
+test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::test_view_snippets FAILED           [100%]
+E   sqlite3.OperationalError: no such table: snippets
+    assert "Hello, World!" in str(printed_table)
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7fcbc8afafd0>'
+    assert "Hello, World!" in str(printed_table)
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7fcbc852ee50>'
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - sqlite3.OperationalError: no such table: snippets
+FAILED test_claude_code_snippet_manager.py::test_search_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7fcbc8afafd0>'
+FAILED test_claude_code_snippet_manager.py::test_view_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7fcbc852ee50>'
+2026-04-25 04:39:27 | WARNING  | tool_builder | ⚠️  claude_code_snippet_manager tests failed (loop 4/5) — test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::tes
+2026-04-25 04:39:27 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-25 04:40:38 | DEBUG    | llm_client | LLM response from github_models (6676 chars)
+2026-04-25 04:40:38 | DEBUG    | test_runner | Installing: ['rich']
+2026-04-25 04:40:39 | WARNING  | test_runner | Tests FAILED for claude_code_snippet_manager:
+test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::test_view_snippets FAILED           [100%]
+E   sqlite3.OperationalError: no such table: snippets
+    assert "Hello, World!" in str(printed_table)
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f3e0a38f8d0>'
+    assert "Hello, World!" in str(printed_table)
+E   AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f3e0a1cfc10>'
+FAILED test_claude_code_snippet_manager.py::test_save_snippet - sqlite3.OperationalError: no such table: snippets
+FAILED test_claude_code_snippet_manager.py::test_search_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f3e0a38f8d0>'
+FAILED test_claude_code_snippet_manager.py::test_view_snippets - AssertionError: assert 'Hello, World!' in '<rich.table.Table object at 0x7f3e0a1cfc10>'
+2026-04-25 04:40:39 | WARNING  | tool_builder | ⚠️  claude_code_snippet_manager tests failed (loop 5/5) — test_claude_code_snippet_manager.py::test_save_snippet FAILED            [ 33%]
+test_claude_code_snippet_manager.py::test_search_snippets FAILED         [ 66%]
+test_claude_code_snippet_manager.py::tes
+2026-04-25 04:40:39 | ERROR    | tool_builder | ❌ claude_code_snippet_manager failed after 5 loops
+2026-04-25 04:40:39 | INFO     | tool_builder | Building tool: ai_code_review_assistant …
+2026-04-25 04:40:48 | DEBUG    | llm_client | LLM response from github_models (6308 chars)
+2026-04-25 04:40:48 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pytest==7.4.2']
+2026-04-25 04:40:49 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_analyze_code_with_ai_success FAILED [ 25%]
+test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure FAILED [ 50%]
+test_ai_code_review_assistant.py::test_load_code_from_file_success FAILED [ 75%]
+E   NameError: name 'openai' is not defined
+E   NameError: name 'openai' is not defined
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'dummy_file.py' does not exist.
+FAILED test_ai_code_review_assistant.py::test_analyze_code_with_ai_success - NameError: name 'openai' is not defined
+FAILED test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure - NameError: name 'openai' is not defined
+FAILED test_ai_code_review_assistant.py::test_load_code_from_file_success - FileNotFoundError: The file 'dummy_file.py' does not exist.
+2026-04-25 04:40:49 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 1/5) — test_ai_code_review_assistant.py::test_analyze_code_with_ai_success FAILED [ 25%]
+test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure FAILED [ 50%]
+test_ai_code_review_assistant.py::te
+2026-04-25 04:40:57 | DEBUG    | llm_client | LLM response from github_models (6129 chars)
+2026-04-25 04:40:57 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-25 04:40:58 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure FAILED [ 50%]
+test_ai_code_review_assistant.py::test_load_code_from_file_success FAILED [ 75%]
+    with patch("ai_code_review_assistant.openai.ChatCompletion.create", side_effect=OpenAIError("API Error")):
+E   NameError: name 'OpenAIError' is not defined
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'dummy_file.py' does not exist.
+FAILED test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure - NameError: name 'OpenAIError' is not defined
+FAILED test_ai_code_review_assistant.py::test_load_code_from_file_success - FileNotFoundError: The file 'dummy_file.py' does not exist.
+2026-04-25 04:40:58 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 2/5) — test_ai_code_review_assistant.py::test_analyze_code_with_ai_failure FAILED [ 50%]
+test_ai_code_review_assistant.py::test_load_code_from_file_success FAILED [ 75%]
+    with patch("ai_code_review_assist
+2026-04-25 04:41:06 | DEBUG    | llm_client | LLM response from github_models (6453 chars)
+2026-04-25 04:41:06 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-25 04:41:07 | INFO     | test_runner | Tests PASSED for ai_code_review_assistant
+2026-04-25 04:41:07 | INFO     | tool_builder | ✅ ai_code_review_assistant passed tests on loop 3
+2026-04-25 04:41:07 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-04-25 04:41:07 | INFO     | main |   Built 3/5 tools successfully
+2026-04-25 04:41:07 | INFO     | main |     ✅ llm_input_optimizer (loops: 3)
+2026-04-25 04:41:07 | INFO     | main |     ✅ llm_eval_dashboard (loops: 3)
+2026-04-25 04:41:07 | INFO     | main |     ✅ ai_code_review_assistant (loops: 3)
+2026-04-25 04:41:07 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-25 04:41:07 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-25 04:41:07 | INFO     | github_publisher |   Created zip: llm_input_optimizer.zip (2671 bytes)
+2026-04-25 04:41:07 | INFO     | github_publisher | Saved llm_input_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_input_optimizer
+2026-04-25 04:41:07 | INFO     | github_publisher |   Created zip: llm_eval_dashboard.zip (3171 bytes)
+2026-04-25 04:41:07 | INFO     | github_publisher | Saved llm_eval_dashboard → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_eval_dashboard
+2026-04-25 04:41:07 | INFO     | github_publisher |   Created zip: ai_code_review_assistant.zip (2829 bytes)
+2026-04-25 04:41:07 | INFO     | github_publisher | Saved ai_code_review_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant
+2026-04-25 04:41:07 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-04-25 04:41:07 | INFO     | main |   Published 3 tools:
+2026-04-25 04:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_input_optimizer
+2026-04-25 04:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_eval_dashboard
+2026-04-25 04:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant
+2026-04-25 04:41:07 | INFO     | main |   Deduplicated 3 older tool version(s) from index
+2026-04-25 04:41:07 | INFO     | main | ✅ Generated tools_index.json with 176 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

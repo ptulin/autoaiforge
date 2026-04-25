@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_input_optimizer",
+  "display_name": "LLM Input Optimizer",
+  "description": "A Python library that helps developers optimize their inputs to LLMs such as GPT-5.5 or Claude Opus 4.7. This tool analyzes input prompts for clarity, length, and structure, providing suggestions to maximize model performance and minimize token usage.",
+  "topic": "Advanced Large Language Models",
+  "date": "2026-04-25",
+  "generated": "2026-04-25T04:34:55.638769+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_input_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_input_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/llm_input_optimizer/llm_input_optimizer.zip"
+}
