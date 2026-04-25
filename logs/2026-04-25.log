@@ -331,3 +331,22 @@ test_ai_code_review_assistant.py::test_load_code_from_file_success FAILED [ 75%]
 2026-04-25 04:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant
 2026-04-25 04:41:07 | INFO     | main |   Deduplicated 3 older tool version(s) from index
 2026-04-25 04:41:07 | INFO     | main | ✅ Generated tools_index.json with 176 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-04-25 04:41:11 | INFO     | main | Database committed and pushed to repo
+2026-04-25 04:41:11 | INFO     | main | 
+2026-04-25 04:41:11 | INFO     | main | ============================================================
+2026-04-25 04:41:11 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-04-25 04:41:11 | INFO     | main | ============================================================
+2026-04-25 04:41:11 | INFO     | main |   Date:            2026-04-25
+2026-04-25 04:41:11 | INFO     | main |   Items scraped:   1349
+2026-04-25 04:41:11 | INFO     | main |   Items stored:    954
+2026-04-25 04:41:11 | INFO     | main |   Topics found:    10
+2026-04-25 04:41:11 | INFO     | main |   Ideas generated: 5
+2026-04-25 04:41:11 | INFO     | main |   Tools built:     3
+2026-04-25 04:41:11 | INFO     | main |   Tools published: 3
+2026-04-25 04:41:11 | INFO     | main |   Elapsed:         371.9s
+2026-04-25 04:41:11 | INFO     | main |   Published URLs:
+2026-04-25 04:41:11 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_input_optimizer
+2026-04-25 04:41:11 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/llm_eval_dashboard
+2026-04-25 04:41:11 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant
+2026-04-25 04:41:11 | INFO     | main | ============================================================
+2026-04-25 04:41:12 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
