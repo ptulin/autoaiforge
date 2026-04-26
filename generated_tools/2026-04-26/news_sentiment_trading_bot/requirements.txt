@@ -1,0 +1,5 @@
+newsapi-python
+transformers
+alpaca-trade-api
+pandas
+pytest
