@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_test_generator",
+  "display_name": "Claude Test Generator",
+  "description": "A Python library and CLI tool that uses Claude AI to auto-generate unit tests for Python functions or classes. This tool aids developers in quickly generating robust test cases, saving time and improving test coverage.",
+  "topic": "Claude AI for Coding",
+  "date": "2026-04-26",
+  "generated": "2026-04-26T04:57:39.234363+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-26/claude_test_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/claude_test_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/claude_test_generator/claude_test_generator.zip"
+}

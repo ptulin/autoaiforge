@@ -1,0 +1,13 @@
+{
+  "tool_name": "news_sentiment_trading_bot",
+  "display_name": "News Sentiment Trading Bot",
+  "description": "This tool creates an automation pipeline for executing trades based on sentiment analysis of financial news. It fetches news headlines, evaluates sentiment scores, and triggers buy/sell actions based on predefined thresholds. This tool helps automate trading strategies for AI developers and quantitative traders.",
+  "topic": "AI-Powered Trading Automation",
+  "date": "2026-04-26",
+  "generated": "2026-04-26T04:57:39.234363+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-26/news_sentiment_trading_bot",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/news_sentiment_trading_bot/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/news_sentiment_trading_bot/news_sentiment_trading_bot.zip"
+}
