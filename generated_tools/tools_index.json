@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-04-26T05:02:13.389326+00:00",
-  "total_tools": 179,
+  "last_updated": "2026-04-27T05:28:27.942065+00:00",
+  "total_tools": 181,
   "tools": [
+    {
+      "tool_name": "learning_rate_finder",
+      "display_name": "Learning Rate Finder for Fine-Tuning",
+      "description": "A CLI tool that helps developers identify the optimal learning rate for fine-tuning large language models. By performing a learning rate range test, it generates a learning rate vs. loss plot to guide hyperparameter tuning.",
+      "topic": "AI Model Fine-Tuning Tools",
+      "date": "2026-04-27",
+      "generated": "2026-04-27T05:21:10.280475+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/learning_rate_finder",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/learning_rate_finder/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/learning_rate_finder/learning_rate_finder.zip"
+    },
+    {
+      "tool_name": "parameter_freezer",
+      "display_name": "Model Parameter Freezer",
+      "description": "A Python library that allows developers to selectively freeze specific layers or modules of a pre-trained language model during fine-tuning. This helps reduce computational costs and avoid overfitting while focusing on training specific parts of the model.",
+      "topic": "AI Model Fine-Tuning Tools",
+      "date": "2026-04-27",
+      "generated": "2026-04-27T05:21:10.280475+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/parameter_freezer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/parameter_freezer.zip"
+    },
     {
       "tool_name": "claude_code_assistant",
       "display_name": "Claude Code Assistant",

@@ -1,0 +1,453 @@
+2026-04-27 05:21:10 | INFO     | main | ============================================================
+2026-04-27 05:21:10 | INFO     | main | AutoAIForge starting run: 2026-04-27T05:21:10.280475+00:00
+2026-04-27 05:21:10 | INFO     | main | ============================================================
+2026-04-27 05:21:10 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-27 05:21:10 | INFO     | youtube_scraper | YouTube client ready
+2026-04-27 05:21:11 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-27 05:21:11 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-27 05:21:11 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-27 05:21:11 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-27 05:21:12 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-27 05:21:12 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-27 05:21:12 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-27 05:21:13 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-27 05:21:13 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-27 05:21:14 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-27 05:21:14 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-27 05:21:14 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-27 05:21:14 | INFO     | youtube_scraper | YouTube 'vector database AI': 27 results (quota used: 1300)
+2026-04-27 05:21:15 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-27 05:21:15 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-27 05:21:15 | INFO     | youtube_scraper | YouTube 'AI safety news': 42 results (quota used: 1600)
+2026-04-27 05:21:15 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-04-27 05:21:16 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-27 05:21:16 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-27 05:21:16 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-27 05:21:16 | INFO     | youtube_scraper | YouTube total: 870 items, quota used: 2000
+2026-04-27 05:21:16 | INFO     | main |   YouTube: 825 items
+2026-04-27 05:21:16 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-27 05:21:21 | INFO     | rss_scraper | HackerNews: 146 items
+2026-04-27 05:21:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-27 05:21:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-27 05:21:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-27 05:21:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-27 05:21:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-27 05:21:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-27 05:21:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-27 05:21:29 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-27 05:21:34 | INFO     | rss_scraper | ArXiv: 102 items
+2026-04-27 05:21:38 | INFO     | rss_scraper | Dev.to: 197 items
+2026-04-27 05:21:39 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-27 05:21:39 | INFO     | rss_scraper | Free sources total: 495 unique items
+2026-04-27 05:21:39 | INFO     | main |   RSS/API sources: 495 items
+2026-04-27 05:21:39 | INFO     | main |   Total scraped: 1320 items
+2026-04-27 05:21:39 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-27 05:21:39 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-27 05:21:40 | INFO     | db_manager | Purged 1013 old news items
+2026-04-27 05:21:40 | INFO     | db_manager | Inserted 1035/1320 news items
+2026-04-27 05:21:40 | INFO     | main |   SQLite: 1035 new items (total: 30491)
+2026-04-27 05:21:44 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-27 05:21:45 | INFO     | vector_store | VectorStore ready
+2026-04-27 05:22:12 | INFO     | vector_store | Indexed 1997 items into vector store
+2026-04-27 05:22:12 | INFO     | main |   Vector store: 1997 items indexed
+2026-04-27 05:22:12 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-27 05:22:12 | INFO     | topic_analyzer | Analyzing 1997 items for top 10 topics …
+2026-04-27 05:22:19 | DEBUG    | llm_client | LLM response from github_models (4226 chars)
+2026-04-27 05:22:19 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-27 05:22:19 | INFO     | main |   Found 10 topics:
+2026-04-27 05:22:19 | INFO     | main |      1. [10/10] AI-Powered Code Generation
+2026-04-27 05:22:19 | INFO     | main |      2. [10/10] AI Model Fine-Tuning Tools
+2026-04-27 05:22:19 | INFO     | main |      3. [9/10] AI in Healthcare Diagnostics
+2026-04-27 05:22:19 | INFO     | main |      4. [9/10] AI in Creative Design
+2026-04-27 05:22:19 | INFO     | main |      5. [9/10] AI in Cloud Infrastructure
+2026-04-27 05:22:19 | INFO     | main |      6. [8/10] AI for eLearning Platforms
+2026-04-27 05:22:19 | INFO     | main |      7. [8/10] AI-Driven Trading Bots
+2026-04-27 05:22:19 | INFO     | main |      8. [8/10] AI for Small Business Automation
+2026-04-27 05:22:19 | INFO     | main |      9. [7/10] AI-Powered News Generation
+2026-04-27 05:22:19 | INFO     | main |     10. [7/10] AI for File Organization
+2026-04-27 05:22:19 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-27 05:22:19 | INFO     | main |   Existing collection: 179 tools across 98 topics
+2026-04-27 05:22:19 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-27 05:22:19 | INFO     | idea_generator |   ⏭  Skipping topic 'AI-Powered Code Generation' — tool already in collection
+2026-04-27 05:22:25 | DEBUG    | llm_client | LLM response from github_models (3156 chars)
+2026-04-27 05:22:25 | INFO     | idea_generator | Generated 3 ideas for topic: AI Model Fine-Tuning Tools
+2026-04-27 05:22:29 | DEBUG    | llm_client | LLM response from github_models (2469 chars)
+2026-04-27 05:22:29 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Healthcare Diagnostics
+2026-04-27 05:22:29 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-27 05:22:29 | INFO     | main |   Generated 5 tool ideas:
+2026-04-27 05:22:29 | INFO     | main |     • dataset_preprocessor: A CLI tool for preparing custom datasets for fine-tuning large language models l
+2026-04-27 05:22:29 | INFO     | main |     • parameter_freezer: A Python library that allows developers to selectively freeze specific layers or
+2026-04-27 05:22:29 | INFO     | main |     • learning_rate_finder: A CLI tool that helps developers identify the optimal learning rate for fine-tun
+2026-04-27 05:22:29 | INFO     | main |     • ai_diagnostic_logger: This tool acts as a middleware script that logs AI diagnostic model predictions 
+2026-04-27 05:22:29 | INFO     | main |     • model_hl7_converter: This tool facilitates the integration of AI diagnostic models with hospital syst
+2026-04-27 05:22:29 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-27 05:22:29 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-27 05:22:38 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-27 05:22:38 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-27 05:22:38 | INFO     | tool_builder | Building tool: dataset_preprocessor …
+2026-04-27 05:22:50 | DEBUG    | llm_client | LLM response from github_models (7584 chars)
+2026-04-27 05:22:50 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'nltk==3.8.1', 'tqdm==4.64.1']
+2026-04-27 05:22:57 | WARNING  | test_runner | Tests FAILED for dataset_preprocessor:
+test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_process_txt FAILED                    [ 75%]
+test_dataset_preprocessor.py::test_process_json FAILED                   [100%]
+    assert clean_text("Hello, world!") == "Hello , world !"
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error processing CSV file: {e}")
+E   RuntimeError: Error processing CSV file: 
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('{"text": "Hello , world !"}\n') call not found
+    mock_out().write.assert_any_call(json.dumps({"text": "Hello , world !"}) + "\n")
+E   AssertionError: write('{"text": "Hello , world !"}\n') call not found
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    raise RuntimeError(f"Error processing JSON file: {e}")
+E   RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+FAILED test_dataset_preprocessor.py::test_clean_text - LookupError: 
+FAILED test_dataset_preprocessor.py::test_process_csv - RuntimeError: Error processing CSV file: 
+FAILED test_dataset_preprocessor.py::test_process_txt - AssertionError: write('{"text": "Hello , world !"}\n') call not found
+FAILED test_dataset_preprocessor.py::test_process_json - RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+2026-04-27 05:22:57 | WARNING  | tool_builder | ⚠️  dataset_preprocessor tests failed (loop 1/5) — test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_proce
+2026-04-27 05:23:07 | DEBUG    | llm_client | LLM response from github_models (7930 chars)
+2026-04-27 05:23:07 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'tqdm']
+2026-04-27 05:23:08 | WARNING  | test_runner | Tests FAILED for dataset_preprocessor:
+test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_process_txt FAILED                    [ 75%]
+test_dataset_preprocessor.py::test_process_json FAILED                   [100%]
+    assert clean_text("Hello, world!") == "Hello , world !"
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error processing CSV file: {e}")
+E   RuntimeError: Error processing CSV file: 
+    assert {"text": "Hello , world !"} in [json.loads(line) for line in mock_output]
+E   AssertionError: assert {'text': 'Hello , world !'} in []
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    raise RuntimeError(f"Error processing JSON file: {e}")
+E   RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+FAILED test_dataset_preprocessor.py::test_clean_text - LookupError: 
+FAILED test_dataset_preprocessor.py::test_process_csv - RuntimeError: Error processing CSV file: 
+FAILED test_dataset_preprocessor.py::test_process_txt - AssertionError: assert {'text': 'Hello , world !'} in []
+FAILED test_dataset_preprocessor.py::test_process_json - RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+2026-04-27 05:23:08 | WARNING  | tool_builder | ⚠️  dataset_preprocessor tests failed (loop 2/5) — test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_proce
+2026-04-27 05:23:17 | DEBUG    | llm_client | LLM response from github_models (7627 chars)
+2026-04-27 05:23:17 | DEBUG    | test_runner | Installing: ['pandas', 'nltk', 'tqdm']
+2026-04-27 05:23:18 | WARNING  | test_runner | Tests FAILED for dataset_preprocessor:
+test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_process_txt FAILED                    [ 75%]
+test_dataset_preprocessor.py::test_process_json FAILED                   [100%]
+    assert clean_text("Hello, world!") == "Hello , world !"
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error processing CSV file: {e}")
+E   RuntimeError: Error processing CSV file: 
+    assert {"text": "Hello , world !"} in [json.loads(line) for line in mock_output]
+E   AssertionError: assert {'text': 'Hello , world !'} in []
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    raise RuntimeError(f"Error processing JSON file: {e}")
+E   RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+FAILED test_dataset_preprocessor.py::test_clean_text - LookupError: 
+FAILED test_dataset_preprocessor.py::test_process_csv - RuntimeError: Error processing CSV file: 
+FAILED test_dataset_preprocessor.py::test_process_txt - AssertionError: assert {'text': 'Hello , world !'} in []
+FAILED test_dataset_preprocessor.py::test_process_json - RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+2026-04-27 05:23:18 | WARNING  | tool_builder | ⚠️  dataset_preprocessor tests failed (loop 3/5) — test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_proce
+2026-04-27 05:23:18 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-04-27 05:24:28 | DEBUG    | llm_client | LLM response from github_models (8483 chars)
+2026-04-27 05:24:28 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'tqdm']
+2026-04-27 05:24:30 | WARNING  | test_runner | Tests FAILED for dataset_preprocessor:
+test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_process_txt FAILED                    [ 75%]
+test_dataset_preprocessor.py::test_process_json FAILED                   [100%]
+    assert clean_text("Hello, world!") == "Hello , world !"
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error processing CSV file: {e}")
+E   RuntimeError: Error processing CSV file: 
+    assert {"text": "Hello , world !"} in [json.loads(line) for line in mock_output]
+E   AssertionError: assert {'text': 'Hello , world !'} in []
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    raise RuntimeError(f"Error processing JSON file: {e}")
+E   RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+FAILED test_dataset_preprocessor.py::test_clean_text - LookupError: 
+FAILED test_dataset_preprocessor.py::test_process_csv - RuntimeError: Error processing CSV file: 
+FAILED test_dataset_preprocessor.py::test_process_txt - AssertionError: assert {'text': 'Hello , world !'} in []
+FAILED test_dataset_preprocessor.py::test_process_json - RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+2026-04-27 05:24:30 | WARNING  | tool_builder | ⚠️  dataset_preprocessor tests failed (loop 4/5) — test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_proce
+2026-04-27 05:24:43 | DEBUG    | llm_client | LLM response from github_models (7661 chars)
+2026-04-27 05:24:43 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'tqdm']
+2026-04-27 05:24:44 | WARNING  | test_runner | Tests FAILED for dataset_preprocessor:
+test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_process_txt FAILED                    [ 75%]
+test_dataset_preprocessor.py::test_process_json FAILED                   [100%]
+    assert clean_text("Hello, world!") == "Hello , world !"
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise LookupError(resource_not_found)
+E   LookupError: 
+    raise RuntimeError(f"Error processing CSV file: {e}")
+E   RuntimeError: Error processing CSV file: 
+    assert {"text": "Hello , world !"} in [json.loads(line) for line in mock_output]
+E   AssertionError: assert {'text': 'Hello , world !'} in []
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+E   json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    raise RuntimeError(f"Error processing JSON file: {e}")
+E   RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+FAILED test_dataset_preprocessor.py::test_clean_text - LookupError: 
+FAILED test_dataset_preprocessor.py::test_process_csv - RuntimeError: Error processing CSV file: 
+FAILED test_dataset_preprocessor.py::test_process_txt - AssertionError: assert {'text': 'Hello , world !'} in []
+FAILED test_dataset_preprocessor.py::test_process_json - RuntimeError: Error processing JSON file: Expecting value: line 1 column 1 (char 0)
+2026-04-27 05:24:44 | WARNING  | tool_builder | ⚠️  dataset_preprocessor tests failed (loop 5/5) — test_dataset_preprocessor.py::test_clean_text FAILED                     [ 25%]
+test_dataset_preprocessor.py::test_process_csv FAILED                    [ 50%]
+test_dataset_preprocessor.py::test_proce
+2026-04-27 05:24:44 | ERROR    | tool_builder | ❌ dataset_preprocessor failed after 5 loops
+2026-04-27 05:24:44 | INFO     | tool_builder | Building tool: parameter_freezer …
+2026-04-27 05:24:52 | DEBUG    | llm_client | LLM response from github_models (4877 chars)
+2026-04-27 05:24:52 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.34.0', 'pyyaml==6.0']
+2026-04-27 05:25:40 | WARNING  | test_runner | Tests FAILED for parameter_freezer:
+test_parameter_freezer.py::test_load_config FAILED                       [ 66%]
+E   NameError: name 'mock_open' is not defined
+FAILED test_parameter_freezer.py::test_load_config - NameError: name 'mock_open' is not defined
+2026-04-27 05:25:40 | WARNING  | tool_builder | ⚠️  parameter_freezer tests failed (loop 1/5) — test_parameter_freezer.py::test_load_config FAILED                       [ 66%]
+E   NameError: name 'mock_open' is not defined
+FAILED test_parameter_freezer.py::test_load_config - NameError: name 'moc
+2026-04-27 05:25:47 | DEBUG    | llm_client | LLM response from github_models (5249 chars)
+2026-04-27 05:25:47 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pyyaml']
+2026-04-27 05:25:49 | WARNING  | test_runner | Tests FAILED for parameter_freezer:
+test_parameter_freezer.py::test_freeze_model_layers FAILED               [ 20%]
+test_parameter_freezer.py::test_freeze_layers[mock_layers0-layers_to_freeze0-expected0] FAILED [ 60%]
+test_parameter_freezer.py::test_freeze_layers[mock_layers1-layers_to_freeze1-expected1] FAILED [ 80%]
+    assert model.named_parameters.return_value[1][1].requires_grad is True
+E   AssertionError: assert <MagicMock name='mock.requires_grad' id='139921127351888'> is True
+    assert param.requires_grad is expected[i]
+E   AssertionError: assert <MagicMock name='mock.requires_grad' id='139920591186640'> is True
+    assert param.requires_grad is expected[i]
+E   AssertionError: assert <MagicMock name='mock.requires_grad' id='139920602092880'> is True
+FAILED test_parameter_freezer.py::test_freeze_model_layers - AssertionError: assert <MagicMock name='mock.requires_grad' id='139921127351888'> is True
+FAILED test_parameter_freezer.py::test_freeze_layers[mock_layers0-layers_to_freeze0-expected0] - AssertionError: assert <MagicMock name='mock.requires_grad' id='139920591186640'> is True
+FAILED test_parameter_freezer.py::test_freeze_layers[mock_layers1-layers_to_freeze1-expected1] - AssertionError: assert <MagicMock name='mock.requires_grad' id='139920602092880'> is True
+2026-04-27 05:25:49 | WARNING  | tool_builder | ⚠️  parameter_freezer tests failed (loop 2/5) — test_parameter_freezer.py::test_freeze_model_layers FAILED               [ 20%]
+test_parameter_freezer.py::test_freeze_layers[mock_layers0-layers_to_freeze0-expected0] FAILED [ 60%]
+test_parameter_fre
+2026-04-27 05:25:56 | DEBUG    | llm_client | LLM response from github_models (5200 chars)
+2026-04-27 05:25:56 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pyyaml']
+2026-04-27 05:25:58 | INFO     | test_runner | Tests PASSED for parameter_freezer
+2026-04-27 05:25:58 | INFO     | tool_builder | ✅ parameter_freezer passed tests on loop 3
+2026-04-27 05:25:58 | INFO     | tool_builder | Building tool: learning_rate_finder …
+2026-04-27 05:26:12 | DEBUG    | llm_client | LLM response from github_models (7955 chars)
+2026-04-27 05:26:12 | DEBUG    | test_runner | Installing: ['matplotlib==3.7.1', 'transformers==4.33.2', 'torch==2.0.1']
+2026-04-27 05:26:24 | WARNING  | test_runner | Tests FAILED for learning_rate_finder:
+test_learning_rate_finder.py::test_learning_rate_range_test FAILED       [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_learning_rate_finder.py::test_learning_rate_range_test - ValueError: optimizer got an empty parameter list
+2026-04-27 05:26:24 | WARNING  | tool_builder | ⚠️  learning_rate_finder tests failed (loop 1/5) — test_learning_rate_finder.py::test_learning_rate_range_test FAILED       [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAIL
+2026-04-27 05:26:34 | DEBUG    | llm_client | LLM response from github_models (8182 chars)
+2026-04-27 05:26:34 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'matplotlib']
+2026-04-27 05:26:37 | WARNING  | test_runner | Tests FAILED for learning_rate_finder:
+test_learning_rate_finder.py::test_learning_rate_range_test FAILED       [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_learning_rate_finder.py::test_learning_rate_range_test - NameError: name 'torch' is not defined
+2026-04-27 05:26:37 | WARNING  | tool_builder | ⚠️  learning_rate_finder tests failed (loop 2/5) — test_learning_rate_finder.py::test_learning_rate_range_test FAILED       [100%]
+E   NameError: name 'torch' is not defined
+FAILED test_learning_rate_finder.py::test_learning_rate_range_test - NameErro
+2026-04-27 05:26:46 | DEBUG    | llm_client | LLM response from github_models (8346 chars)
+2026-04-27 05:26:46 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'matplotlib']
+2026-04-27 05:26:47 | WARNING  | test_runner | Tests FAILED for learning_rate_finder:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_learning_rate_finder.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:357: in _rewrite_test
+E   SyntaxError: unmatched '}'
+ERROR test_learning_rate_finder.py
+2026-04-27 05:26:47 | WARNING  | tool_builder | ⚠️  learning_rate_finder tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_learning_rate_finder.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-04-27 05:26:56 | DEBUG    | llm_client | LLM response from github_models (8499 chars)
+2026-04-27 05:26:56 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'matplotlib']
+2026-04-27 05:26:59 | INFO     | test_runner | Tests PASSED for learning_rate_finder
+2026-04-27 05:26:59 | INFO     | tool_builder | ✅ learning_rate_finder passed tests on loop 4
+2026-04-27 05:26:59 | INFO     | tool_builder | Building tool: ai_diagnostic_logger …
+2026-04-27 05:27:08 | DEBUG    | llm_client | LLM response from github_models (5723 chars)
+2026-04-27 05:27:08 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'sqlalchemy==2.0.21']
+2026-04-27 05:27:11 | WARNING  | test_runner | Tests FAILED for ai_diagnostic_logger:
+test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create_engine' to have been called once. Called 0 times.
+    mock_engine.assert_called_once()
+E   AssertionError: Expected 'create_engine' to have been called once. Called 0 times.
+FAILED test_ai_diagnostic_logger.py::test_log_to_database - AssertionError: Expected 'create_engine' to have been called once. Called 0 times.
+2026-04-27 05:27:11 | WARNING  | tool_builder | ⚠️  ai_diagnostic_logger tests failed (loop 1/5) — test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-04-27 05:27:17 | DEBUG    | llm_client | LLM response from github_models (6034 chars)
+2026-04-27 05:27:17 | DEBUG    | test_runner | Installing: ['pandas', 'sqlalchemy']
+2026-04-27 05:27:18 | WARNING  | test_runner | Tests FAILED for ai_diagnostic_logger:
+test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+    mock_create_engine.assert_called_once_with("sqlite:///:memory:")
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+FAILED test_ai_diagnostic_logger.py::test_log_to_database - AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+2026-04-27 05:27:18 | WARNING  | tool_builder | ⚠️  ai_diagnostic_logger tests failed (loop 2/5) — test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:27:25 | DEBUG    | llm_client | LLM response from github_models (5541 chars)
+2026-04-27 05:27:25 | DEBUG    | test_runner | Installing: ['pandas', 'sqlalchemy']
+2026-04-27 05:27:26 | WARNING  | test_runner | Tests FAILED for ai_diagnostic_logger:
+test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+    mock_create_engine.assert_called_once_with("sqlite:///:memory:")
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+FAILED test_ai_diagnostic_logger.py::test_log_to_database - AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+2026-04-27 05:27:26 | WARNING  | tool_builder | ⚠️  ai_diagnostic_logger tests failed (loop 3/5) — test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:27:32 | DEBUG    | llm_client | LLM response from github_models (5789 chars)
+2026-04-27 05:27:32 | DEBUG    | test_runner | Installing: ['sqlalchemy', 'pandas']
+2026-04-27 05:27:33 | WARNING  | test_runner | Tests FAILED for ai_diagnostic_logger:
+test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+    mock_create_engine.assert_called_once_with("sqlite:///:memory:")
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+FAILED test_ai_diagnostic_logger.py::test_log_to_database - AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+2026-04-27 05:27:33 | WARNING  | tool_builder | ⚠️  ai_diagnostic_logger tests failed (loop 4/5) — test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:27:39 | DEBUG    | llm_client | LLM response from github_models (6097 chars)
+2026-04-27 05:27:39 | DEBUG    | test_runner | Installing: ['pandas', 'sqlalchemy']
+2026-04-27 05:27:40 | WARNING  | test_runner | Tests FAILED for ai_diagnostic_logger:
+test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+    mock_create_engine.assert_called_once_with("sqlite:///:memory:")
+E   AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+FAILED test_ai_diagnostic_logger.py::test_log_to_database - AssertionError: Expected 'create_engine' to be called once. Called 0 times.
+2026-04-27 05:27:40 | WARNING  | tool_builder | ⚠️  ai_diagnostic_logger tests failed (loop 5/5) — test_ai_diagnostic_logger.py::test_log_to_database FAILED                [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:27:40 | ERROR    | tool_builder | ❌ ai_diagnostic_logger failed after 5 loops
+2026-04-27 05:27:40 | INFO     | tool_builder | Building tool: model_hl7_converter …
+2026-04-27 05:27:52 | DEBUG    | llm_client | LLM response from github_models (6179 chars)
+2026-04-27 05:27:52 | DEBUG    | test_runner | Installing: ['hl7==0.3.4']
+2026-04-27 05:27:52 | WARNING  | test_runner | Tests FAILED for model_hl7_converter:
+test_model_hl7_converter.py::test_create_hl7_message FAILED              [ 75%]
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+E   TypeError: Container.__init__() missing 1 required positional argument: 'separator'
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_output().write.assert_called_once_with("OBR|123|ABC|Positive||2023-01-01T00:00:00\n")
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error: Expecting value: line 1 column 1 (char 0)
+FAILED test_model_hl7_converter.py::test_create_hl7_message - TypeError: Container.__init__() missing 1 required positional argument: 'separator'
+FAILED test_model_hl7_converter.py::test_convert_to_hl7 - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-04-27 05:27:52 | WARNING  | tool_builder | ⚠️  model_hl7_converter tests failed (loop 1/5) — test_model_hl7_converter.py::test_create_hl7_message FAILED              [ 75%]
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+E   TypeError: Container.__init__() miss
+2026-04-27 05:28:00 | DEBUG    | llm_client | LLM response from github_models (5895 chars)
+2026-04-27 05:28:00 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-27 05:28:01 | WARNING  | test_runner | Tests FAILED for model_hl7_converter:
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_output().write.assert_called_once_with("OBR|123|ABC|Positive||2023-01-01T00:00:00\n")
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error: Expecting value: line 1 column 1 (char 0)
+FAILED test_model_hl7_converter.py::test_convert_to_hl7 - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-04-27 05:28:01 | WARNING  | tool_builder | ⚠️  model_hl7_converter tests failed (loop 2/5) — test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:28:09 | DEBUG    | llm_client | LLM response from github_models (6348 chars)
+2026-04-27 05:28:09 | WARNING  | test_runner | Tests FAILED for model_hl7_converter:
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_output().write.assert_called_once_with("OBR|123|ABC|Positive||2023-01-01T00:00:00\n")
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error: Expecting value: line 1 column 1 (char 0)
+FAILED test_model_hl7_converter.py::test_convert_to_hl7 - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-04-27 05:28:09 | WARNING  | tool_builder | ⚠️  model_hl7_converter tests failed (loop 3/5) — test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:28:18 | DEBUG    | llm_client | LLM response from github_models (6188 chars)
+2026-04-27 05:28:18 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-27 05:28:18 | WARNING  | test_runner | Tests FAILED for model_hl7_converter:
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_output_file().write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error: Expecting value: line 1 column 1 (char 0)
+FAILED test_model_hl7_converter.py::test_convert_to_hl7 - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-04-27 05:28:18 | WARNING  | tool_builder | ⚠️  model_hl7_converter tests failed (loop 4/5) — test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:28:27 | DEBUG    | llm_client | LLM response from github_models (6763 chars)
+2026-04-27 05:28:27 | DEBUG    | test_runner | Installing: ['pytest']
+2026-04-27 05:28:27 | WARNING  | test_runner | Tests FAILED for model_hl7_converter:
+test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_file_output().write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error: Invalid JSON format in file: input.json
+FAILED test_model_hl7_converter.py::test_convert_to_hl7 - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-04-27 05:28:27 | WARNING  | tool_builder | ⚠️  model_hl7_converter tests failed (loop 5/5) — test_model_hl7_converter.py::test_convert_to_hl7 FAILED                  [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-04-27 05:28:27 | ERROR    | tool_builder | ❌ model_hl7_converter failed after 5 loops
+2026-04-27 05:28:27 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-04-27 05:28:27 | INFO     | main |   Built 2/5 tools successfully
+2026-04-27 05:28:27 | INFO     | main |     ✅ parameter_freezer (loops: 3)
+2026-04-27 05:28:27 | INFO     | main |     ✅ learning_rate_finder (loops: 4)
+2026-04-27 05:28:27 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-27 05:28:27 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-27 05:28:27 | INFO     | github_publisher |   Created zip: parameter_freezer.zip (2255 bytes)
+2026-04-27 05:28:27 | INFO     | github_publisher | Saved parameter_freezer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/parameter_freezer
+2026-04-27 05:28:27 | INFO     | github_publisher |   Created zip: learning_rate_finder.zip (3484 bytes)
+2026-04-27 05:28:27 | INFO     | github_publisher | Saved learning_rate_finder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/learning_rate_finder
+2026-04-27 05:28:27 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-04-27 05:28:27 | INFO     | main |   Published 2 tools:
+2026-04-27 05:28:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/parameter_freezer
+2026-04-27 05:28:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/learning_rate_finder
+2026-04-27 05:28:27 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-04-27 05:28:27 | INFO     | main | ✅ Generated tools_index.json with 181 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

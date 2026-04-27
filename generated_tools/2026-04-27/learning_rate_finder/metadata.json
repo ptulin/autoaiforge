@@ -1,0 +1,13 @@
+{
+  "tool_name": "learning_rate_finder",
+  "display_name": "Learning Rate Finder for Fine-Tuning",
+  "description": "A CLI tool that helps developers identify the optimal learning rate for fine-tuning large language models. By performing a learning rate range test, it generates a learning rate vs. loss plot to guide hyperparameter tuning.",
+  "topic": "AI Model Fine-Tuning Tools",
+  "date": "2026-04-27",
+  "generated": "2026-04-27T05:21:10.280475+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/learning_rate_finder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/learning_rate_finder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/learning_rate_finder/learning_rate_finder.zip"
+}
