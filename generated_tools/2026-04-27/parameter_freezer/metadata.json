@@ -1,0 +1,13 @@
+{
+  "tool_name": "parameter_freezer",
+  "display_name": "Model Parameter Freezer",
+  "description": "A Python library that allows developers to selectively freeze specific layers or modules of a pre-trained language model during fine-tuning. This helps reduce computational costs and avoid overfitting while focusing on training specific parts of the model.",
+  "topic": "AI Model Fine-Tuning Tools",
+  "date": "2026-04-27",
+  "generated": "2026-04-27T05:21:10.280475+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/parameter_freezer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/parameter_freezer.zip"
+}
