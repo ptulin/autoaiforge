@@ -1,0 +1,13 @@
+{
+  "tool_name": "news_data_pipeline",
+  "display_name": "News Data Pipeline",
+  "description": "A Python library that provides a pipeline for fetching, cleaning, and summarizing news data. It enables developers to integrate AI-powered content curation into their own applications by providing modular components for API access, preprocessing, and summarization.",
+  "topic": "AI-Powered News Aggregation",
+  "date": "2026-04-28",
+  "generated": "2026-04-28T05:28:44.471479+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_data_pipeline",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_data_pipeline/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_data_pipeline/news_data_pipeline.zip"
+}

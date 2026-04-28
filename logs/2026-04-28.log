@@ -1,0 +1,302 @@
+2026-04-28 05:28:44 | INFO     | main | ============================================================
+2026-04-28 05:28:44 | INFO     | main | AutoAIForge starting run: 2026-04-28T05:28:44.471479+00:00
+2026-04-28 05:28:44 | INFO     | main | ============================================================
+2026-04-28 05:28:44 | INFO     | main | [STEP 1/6] News Scraping
+2026-04-28 05:28:44 | INFO     | youtube_scraper | YouTube client ready
+2026-04-28 05:28:45 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-04-28 05:28:45 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-04-28 05:28:45 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-04-28 05:28:45 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-04-28 05:28:46 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-04-28 05:28:46 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-04-28 05:28:47 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-04-28 05:28:47 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-04-28 05:28:47 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-04-28 05:28:48 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-04-28 05:28:48 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-04-28 05:28:48 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-04-28 05:28:49 | INFO     | youtube_scraper | YouTube 'vector database AI': 38 results (quota used: 1300)
+2026-04-28 05:28:49 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-04-28 05:28:49 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-04-28 05:28:50 | INFO     | youtube_scraper | YouTube 'AI safety news': 42 results (quota used: 1600)
+2026-04-28 05:28:50 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-04-28 05:28:50 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-04-28 05:28:51 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-04-28 05:28:51 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-04-28 05:28:51 | INFO     | youtube_scraper | YouTube total: 882 items, quota used: 2000
+2026-04-28 05:28:51 | INFO     | main |   YouTube: 831 items
+2026-04-28 05:28:51 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-04-28 05:28:56 | INFO     | rss_scraper | HackerNews: 158 items
+2026-04-28 05:28:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-04-28 05:28:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-04-28 05:28:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-04-28 05:28:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-04-28 05:29:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-04-28 05:29:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-04-28 05:29:02 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-04-28 05:29:03 | INFO     | rss_scraper | Reddit: 0 items
+2026-04-28 05:29:09 | INFO     | rss_scraper | ArXiv: 97 items
+2026-04-28 05:29:13 | INFO     | rss_scraper | Dev.to: 196 items
+2026-04-28 05:29:15 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-04-28 05:29:15 | INFO     | rss_scraper | Free sources total: 501 unique items
+2026-04-28 05:29:15 | INFO     | main |   RSS/API sources: 501 items
+2026-04-28 05:29:15 | INFO     | main |   Total scraped: 1332 items
+2026-04-28 05:29:15 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-04-28 05:29:15 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-04-28 05:29:15 | INFO     | db_manager | Purged 877 old news items
+2026-04-28 05:29:15 | INFO     | db_manager | Inserted 1118/1332 news items
+2026-04-28 05:29:15 | INFO     | main |   SQLite: 1118 new items (total: 30732)
+2026-04-28 05:29:20 | INFO     | vector_store | Loading sentence-transformer model …
+2026-04-28 05:29:21 | INFO     | vector_store | VectorStore ready
+2026-04-28 05:29:55 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-04-28 05:29:55 | INFO     | main |   Vector store: 2000 items indexed
+2026-04-28 05:29:55 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-04-28 05:29:55 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-04-28 05:30:04 | DEBUG    | llm_client | LLM response from github_models (4075 chars)
+2026-04-28 05:30:04 | INFO     | topic_analyzer | Identified 10 topics
+2026-04-28 05:30:04 | INFO     | main |   Found 10 topics:
+2026-04-28 05:30:04 | INFO     | main |      1. [9/10] AI Workflow Automation
+2026-04-28 05:30:04 | INFO     | main |      2. [9/10] AI Code Management Tools
+2026-04-28 05:30:04 | INFO     | main |      3. [8/10] AI-Powered News Aggregation
+2026-04-28 05:30:04 | INFO     | main |      4. [8/10] AI for Stock Analysis
+2026-04-28 05:30:04 | INFO     | main |      5. [8/10] AI-Generated Content
+2026-04-28 05:30:04 | INFO     | main |      6. [8/10] AI in Robotics
+2026-04-28 05:30:04 | INFO     | main |      7. [7/10] AI-Powered Lead Generation
+2026-04-28 05:30:04 | INFO     | main |      8. [7/10] AI-Driven Game Development
+2026-04-28 05:30:04 | INFO     | main |      9. [7/10] AI-Powered Personal Finance Tools
+2026-04-28 05:30:04 | INFO     | main |     10. [7/10] AI for Accessibility
+2026-04-28 05:30:04 | INFO     | main | [STEP 4/6] Idea Generation
+2026-04-28 05:30:04 | INFO     | main |   Existing collection: 181 tools across 99 topics
+2026-04-28 05:30:04 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-04-28 05:30:09 | DEBUG    | llm_client | LLM response from github_models (3322 chars)
+2026-04-28 05:30:09 | INFO     | idea_generator | Generated 3 ideas for topic: AI Workflow Automation
+2026-04-28 05:30:09 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_workflow_manager' — name already in collection
+2026-04-28 05:30:09 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_task_scheduler' — name already in collection
+2026-04-28 05:30:15 | DEBUG    | llm_client | LLM response from github_models (3268 chars)
+2026-04-28 05:30:15 | INFO     | idea_generator | Generated 3 ideas for topic: AI Code Management Tools
+2026-04-28 05:30:15 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_task_scheduler' — name already in collection
+2026-04-28 05:30:15 | INFO     | idea_generator |   ⏭  Skipping idea 'claude_code_sync' — name already in collection
+2026-04-28 05:30:22 | DEBUG    | llm_client | LLM response from github_models (3552 chars)
+2026-04-28 05:30:22 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered News Aggregation
+2026-04-28 05:30:22 | INFO     | idea_generator | Total ideas generated: 5
+2026-04-28 05:30:22 | INFO     | main |   Generated 5 tool ideas:
+2026-04-28 05:30:22 | INFO     | main |     • claude_pipeline_validator: A CLI tool that validates and simulates Claude AI workflows before deployment. I
+2026-04-28 05:30:22 | INFO     | main |     • ai_diff_inspector: This tool compares two versions of codebases and uses Claude Code to generate a 
+2026-04-28 05:30:22 | INFO     | main |     • news_summarizer_cli: A command-line tool that aggregates headlines and articles from multiple news AP
+2026-04-28 05:30:22 | INFO     | main |     • news_data_pipeline: A Python library that provides a pipeline for fetching, cleaning, and summarizin
+2026-04-28 05:30:22 | INFO     | main |     • customizable_news_alerts: A Python automation tool that fetches news updates on a schedule, summarizes the
+2026-04-28 05:30:22 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-04-28 05:30:22 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-04-28 05:30:30 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-04-28 05:30:30 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-04-28 05:30:30 | INFO     | tool_builder | Building tool: claude_pipeline_validator …
+2026-04-28 05:30:42 | DEBUG    | llm_client | LLM response from github_models (8385 chars)
+2026-04-28 05:30:42 | DEBUG    | test_runner | Installing: ['jsonschema==4.19.0', 'requests==2.31.0', 'pyyaml==6.0']
+2026-04-28 05:30:43 | WARNING  | test_runner | Tests FAILED for claude_pipeline_validator:
+test_claude_pipeline_validator.py::test_load_workflow_json FAILED        [ 25%]
+test_claude_pipeline_validator.py::test_load_workflow_yaml FAILED        [ 50%]
+test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    raise FileNotFoundError(f"Workflow file not found: {file_path}")
+E   FileNotFoundError: Workflow file not found: workflow.json
+    raise FileNotFoundError(f"Workflow file not found: {file_path}")
+E   FileNotFoundError: Workflow file not found: workflow.yaml
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_load_workflow_json - FileNotFoundError: Workflow file not found: workflow.json
+FAILED test_claude_pipeline_validator.py::test_load_workflow_yaml - FileNotFoundError: Workflow file not found: workflow.yaml
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 > 0
+2026-04-28 05:30:43 | WARNING  | tool_builder | ⚠️  claude_pipeline_validator tests failed (loop 1/5) — test_claude_pipeline_validator.py::test_load_workflow_json FAILED        [ 25%]
+test_claude_pipeline_validator.py::test_load_workflow_yaml FAILED        [ 50%]
+test_claude_pipeline_validator.py::test_
+2026-04-28 05:30:54 | DEBUG    | llm_client | LLM response from github_models (8567 chars)
+2026-04-28 05:30:54 | DEBUG    | test_runner | Installing: ['jsonschema', 'pyyaml']
+2026-04-28 05:30:54 | WARNING  | test_runner | Tests FAILED for claude_pipeline_validator:
+test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 > 0
+2026-04-28 05:30:54 | WARNING  | tool_builder | ⚠️  claude_pipeline_validator tests failed (loop 2/5) — test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 
+2026-04-28 05:31:03 | DEBUG    | llm_client | LLM response from github_models (8399 chars)
+2026-04-28 05:31:03 | DEBUG    | test_runner | Installing: ['jsonschema', 'pyyaml']
+2026-04-28 05:31:04 | WARNING  | test_runner | Tests FAILED for claude_pipeline_validator:
+test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 > 0
+2026-04-28 05:31:04 | WARNING  | tool_builder | ⚠️  claude_pipeline_validator tests failed (loop 3/5) — test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 
+2026-04-28 05:31:15 | DEBUG    | llm_client | LLM response from github_models (8629 chars)
+2026-04-28 05:31:15 | DEBUG    | test_runner | Installing: ['jsonschema', 'pyyaml']
+2026-04-28 05:31:15 | WARNING  | test_runner | Tests FAILED for claude_pipeline_validator:
+test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 > 0
+2026-04-28 05:31:15 | WARNING  | tool_builder | ⚠️  claude_pipeline_validator tests failed (loop 4/5) — test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 
+2026-04-28 05:31:24 | DEBUG    | llm_client | LLM response from github_models (8493 chars)
+2026-04-28 05:31:24 | DEBUG    | test_runner | Installing: ['jsonschema', 'pyyaml']
+2026-04-28 05:31:25 | WARNING  | test_runner | Tests FAILED for claude_pipeline_validator:
+test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 > 0
+2026-04-28 05:31:25 | WARNING  | tool_builder | ⚠️  claude_pipeline_validator tests failed (loop 5/5) — test_claude_pipeline_validator.py::test_validate_workflow FAILED         [ 75%]
+    assert len(errors) > 0
+E   assert 0 > 0
+FAILED test_claude_pipeline_validator.py::test_validate_workflow - assert 0 
+2026-04-28 05:31:25 | ERROR    | tool_builder | ❌ claude_pipeline_validator failed after 5 loops
+2026-04-28 05:31:25 | INFO     | tool_builder | Building tool: ai_diff_inspector …
+2026-04-28 05:31:37 | DEBUG    | llm_client | LLM response from github_models (7666 chars)
+2026-04-28 05:31:37 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'pytest==7.4.2']
+2026-04-28 05:31:40 | WARNING  | test_runner | Tests FAILED for ai_diff_inspector:
+test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate_natural_language_diff FAILED    [100%]
+    assert "+line2 changed" in diff
+E   AssertionError: assert '+line2 changed' in '--- file1.txt\n+++ file2.txt\n@@ -1,3 +0,0 @@\n-line1\n\n-line2 changed\n\n-line3\n'
+E   AttributeError: module 'difflib' has no attribute 'fnmatch'
+    assert explanation == "This change modifies line1."
+E   AssertionError: assert 'Failed to ge...s not defined' == 'This change modifies line1.'
+FAILED test_ai_diff_inspector.py::test_compare_files - AssertionError: assert '+line2 changed' in '--- file1.txt\n+++ file2.txt\n@@ -1,3 +0,0 @@\n-line1\n\n-line2 changed\n\n-line3\n'
+FAILED test_ai_diff_inspector.py::test_compare_directories - AttributeError: module 'difflib' has no attribute 'fnmatch'
+FAILED test_ai_diff_inspector.py::test_generate_natural_language_diff - AssertionError: assert 'Failed to ge...s not defined' == 'This change modifies line1.'
+2026-04-28 05:31:40 | WARNING  | tool_builder | ⚠️  ai_diff_inspector tests failed (loop 1/5) — test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate
+2026-04-28 05:31:50 | DEBUG    | llm_client | LLM response from github_models (7741 chars)
+2026-04-28 05:31:50 | DEBUG    | test_runner | Installing: ['openai', 'click']
+2026-04-28 05:31:51 | WARNING  | test_runner | Tests FAILED for ai_diff_inspector:
+test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate_natural_language_diff FAILED    [100%]
+    assert "-line2" in diff
+E   AssertionError: assert '-line2' in ''
+    assert "Mocked diff" in diff
+E   AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+    assert explanation == "This change modifies line1."
+E   AssertionError: assert 'Failed to ge...s not defined' == 'This change modifies line1.'
+FAILED test_ai_diff_inspector.py::test_compare_files - AssertionError: assert '-line2' in ''
+FAILED test_ai_diff_inspector.py::test_compare_directories - AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+FAILED test_ai_diff_inspector.py::test_generate_natural_language_diff - AssertionError: assert 'Failed to ge...s not defined' == 'This change modifies line1.'
+2026-04-28 05:31:51 | WARNING  | tool_builder | ⚠️  ai_diff_inspector tests failed (loop 2/5) — test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate
+2026-04-28 05:32:02 | DEBUG    | llm_client | LLM response from github_models (8036 chars)
+2026-04-28 05:32:02 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-04-28 05:32:03 | WARNING  | test_runner | Tests FAILED for ai_diff_inspector:
+test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate_natural_language_diff FAILED    [100%]
+    assert "-line2\n" in diff
+E   AssertionError: assert '-line2\n' in ''
+    assert "Mocked diff" in diff
+E   AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+    assert explanation == "This change modifies line1."
+E   AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+FAILED test_ai_diff_inspector.py::test_compare_files - AssertionError: assert '-line2\n' in ''
+FAILED test_ai_diff_inspector.py::test_compare_directories - AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+FAILED test_ai_diff_inspector.py::test_generate_natural_language_diff - AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+2026-04-28 05:32:03 | WARNING  | tool_builder | ⚠️  ai_diff_inspector tests failed (loop 3/5) — test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate
+2026-04-28 05:32:14 | DEBUG    | llm_client | LLM response from github_models (7804 chars)
+2026-04-28 05:32:14 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-28 05:32:15 | WARNING  | test_runner | Tests FAILED for ai_diff_inspector:
+test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate_natural_language_diff FAILED    [100%]
+    assert "-line2\n" in diff
+E   AssertionError: assert '-line2\n' in ''
+    assert "Mocked diff" in diff
+E   AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+    assert explanation == "This change modifies line1."
+E   AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+FAILED test_ai_diff_inspector.py::test_compare_files - AssertionError: assert '-line2\n' in ''
+FAILED test_ai_diff_inspector.py::test_compare_directories - AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+FAILED test_ai_diff_inspector.py::test_generate_natural_language_diff - AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+2026-04-28 05:32:15 | WARNING  | tool_builder | ⚠️  ai_diff_inspector tests failed (loop 4/5) — test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate
+2026-04-28 05:32:24 | DEBUG    | llm_client | LLM response from github_models (8229 chars)
+2026-04-28 05:32:24 | DEBUG    | test_runner | Installing: ['openai']
+2026-04-28 05:32:25 | WARNING  | test_runner | Tests FAILED for ai_diff_inspector:
+test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate_natural_language_diff FAILED    [100%]
+    assert "-line2\n" in diff
+E   AssertionError: assert '-line2\n' in ''
+    assert "Mocked diff" in diff
+E   AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+    assert explanation == "This change modifies line1."
+E   AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+FAILED test_ai_diff_inspector.py::test_compare_files - AssertionError: assert '-line2\n' in ''
+FAILED test_ai_diff_inspector.py::test_compare_directories - AssertionError: assert 'Mocked diff' in 'File /old/file1.txt is missing in /new.\nFile /new/file1.txt is new in /new.'
+FAILED test_ai_diff_inspector.py::test_generate_natural_language_diff - AssertionError: assert 'Failed to ge...e is not set.' == 'This change modifies line1.'
+2026-04-28 05:32:25 | WARNING  | tool_builder | ⚠️  ai_diff_inspector tests failed (loop 5/5) — test_ai_diff_inspector.py::test_compare_files FAILED                     [ 33%]
+test_ai_diff_inspector.py::test_compare_directories FAILED               [ 66%]
+test_ai_diff_inspector.py::test_generate
+2026-04-28 05:32:25 | ERROR    | tool_builder | ❌ ai_diff_inspector failed after 5 loops
+2026-04-28 05:32:25 | INFO     | tool_builder | Building tool: news_summarizer_cli …
+2026-04-28 05:32:35 | DEBUG    | llm_client | LLM response from github_models (6038 chars)
+2026-04-28 05:32:35 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'openai==0.27.8']
+2026-04-28 05:32:36 | INFO     | test_runner | Tests PASSED for news_summarizer_cli
+2026-04-28 05:32:36 | INFO     | tool_builder | ✅ news_summarizer_cli passed tests on loop 1
+2026-04-28 05:32:36 | INFO     | tool_builder | Building tool: news_data_pipeline …
+2026-04-28 05:32:47 | DEBUG    | llm_client | LLM response from github_models (7424 chars)
+2026-04-28 05:32:47 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pandas==1.5.3', 'transformers==4.33.2']
+2026-04-28 05:32:59 | WARNING  | test_runner | Tests FAILED for news_data_pipeline:
+test_news_data_pipeline.py::test_fetch_news ERROR                        [ 25%]
+test_news_data_pipeline.py::test_summarize ERROR                         [ 50%]
+test_news_data_pipeline.py::test_clean_data ERROR                        [ 75%]
+test_news_data_pipeline.py::test_fetch_and_summarize ERROR               [100%]
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_fetch_news _______________________
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+_______________________ ERROR at setup of test_summarize _______________________
+______________________ ERROR at setup of test_clean_data _______________________
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+__________________ ERROR at setup of test_fetch_and_summarize __________________
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+ERROR test_news_data_pipeline.py::test_fetch_news - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+ERROR test_news_data_pipeline.py::test_summarize
+ERROR test_news_data_pipeline.py::test_clean_data - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+ERROR test_news_data_pipeline.py::test_fetch_and_summarize - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+2026-04-28 05:32:59 | WARNING  | tool_builder | ⚠️  news_data_pipeline tests failed (loop 1/5) — test_news_data_pipeline.py::test_fetch_news ERROR                        [ 25%]
+test_news_data_pipeline.py::test_summarize ERROR                         [ 50%]
+test_news_data_pipeline.py::test_clean_d
+2026-04-28 05:33:07 | DEBUG    | llm_client | LLM response from github_models (7068 chars)
+2026-04-28 05:33:07 | DEBUG    | test_runner | Installing: ['requests', 'pandas']
+2026-04-28 05:33:08 | INFO     | test_runner | Tests PASSED for news_data_pipeline
+2026-04-28 05:33:08 | INFO     | tool_builder | ✅ news_data_pipeline passed tests on loop 2
+2026-04-28 05:33:08 | INFO     | tool_builder | Building tool: customizable_news_alerts …
+2026-04-28 05:33:23 | DEBUG    | llm_client | LLM response from github_models (8788 chars)
+2026-04-28 05:33:23 | ERROR    | tool_builder | Initial generation failed for customizable_news_alerts: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport smtplib\nfrom email.mime.text import MIMEText\nfrom transformers import pipeline\nimport requests\nimport schedule\nimport time\nfrom typing import List\n\ndef load_config(config_path: str) -> dict:\n    \"\"\"Load configuration from a JSON file.\"\"
+Expecting property name enclosed in double quotes: line 10 column 1 (char 8775)
+2026-04-28 05:33:23 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-04-28 05:33:23 | INFO     | main |   Built 2/5 tools successfully
+2026-04-28 05:33:23 | INFO     | main |     ✅ news_summarizer_cli (loops: 1)
+2026-04-28 05:33:23 | INFO     | main |     ✅ news_data_pipeline (loops: 2)
+2026-04-28 05:33:23 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-04-28 05:33:23 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-04-28 05:33:23 | INFO     | github_publisher |   Created zip: news_summarizer_cli.zip (2611 bytes)
+2026-04-28 05:33:23 | INFO     | github_publisher | Saved news_summarizer_cli → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_summarizer_cli
+2026-04-28 05:33:23 | INFO     | github_publisher |   Created zip: news_data_pipeline.zip (2779 bytes)
+2026-04-28 05:33:23 | INFO     | github_publisher | Saved news_data_pipeline → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_data_pipeline
+2026-04-28 05:33:23 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-04-28 05:33:23 | INFO     | main |   Published 2 tools:
+2026-04-28 05:33:23 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_summarizer_cli
+2026-04-28 05:33:23 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_data_pipeline
+2026-04-28 05:33:23 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-04-28 05:33:23 | INFO     | main | ✅ Generated tools_index.json with 183 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

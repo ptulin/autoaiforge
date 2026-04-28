@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-04-27T05:28:27.942065+00:00",
-  "total_tools": 181,
+  "last_updated": "2026-04-28T05:33:23.952205+00:00",
+  "total_tools": 183,
   "tools": [
+    {
+      "tool_name": "news_data_pipeline",
+      "display_name": "News Data Pipeline",
+      "description": "A Python library that provides a pipeline for fetching, cleaning, and summarizing news data. It enables developers to integrate AI-powered content curation into their own applications by providing modular components for API access, preprocessing, and summarization.",
+      "topic": "AI-Powered News Aggregation",
+      "date": "2026-04-28",
+      "generated": "2026-04-28T05:28:44.471479+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_data_pipeline",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_data_pipeline/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_data_pipeline/news_data_pipeline.zip"
+    },
+    {
+      "tool_name": "news_summarizer_cli",
+      "display_name": "News Summarizer CLI",
+      "description": "A command-line tool that aggregates headlines and articles from multiple news APIs and summarizes them using an AI model like OpenAI's GPT or Hugging Face models. Developers can easily fetch, filter, and summarize news by topic or region for faster consumption.",
+      "topic": "AI-Powered News Aggregation",
+      "date": "2026-04-28",
+      "generated": "2026-04-28T05:28:44.471479+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-28/news_summarizer_cli",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_summarizer_cli/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-28/news_summarizer_cli/news_summarizer_cli.zip"
+    },
     {
       "tool_name": "learning_rate_finder",
       "display_name": "Learning Rate Finder for Fine-Tuning",
