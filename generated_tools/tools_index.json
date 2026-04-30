@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-28T05:33:23.952205+00:00",
-  "total_tools": 183,
+  "last_updated": "2026-04-30T05:34:29.093069+00:00",
+  "total_tools": 186,
   "tools": [
+    {
+      "tool_name": "ai_debugger_assist",
+      "display_name": "AI Debugger Assist",
+      "description": "This CLI tool integrates GPT-5.4 or Claude AI to analyze Python stack traces and help debug code by providing explanations, potential fixes, and relevant documentation links. It reduces debugging time by automating error analysis.",
+      "topic": "AI-Powered Coding Assistants",
+      "date": "2026-04-30",
+      "generated": "2026-04-30T05:28:45.032184+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/ai_debugger_assist",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/ai_debugger_assist/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/ai_debugger_assist/ai_debugger_assist.zip"
+    },
+    {
+      "tool_name": "ai_test_case_generator",
+      "display_name": "AI Test Case Generator",
+      "description": "This CLI tool utilizes advanced AI models to automatically generate pytest test cases for a given Python module or function. It reduces the burden of writing repetitive tests while promoting better code coverage.",
+      "topic": "AI-Powered Coding Assistants",
+      "date": "2026-04-30",
+      "generated": "2026-04-30T05:28:45.032184+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/ai_test_case_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/ai_test_case_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/ai_test_case_generator/ai_test_case_generator.zip"
+    },
+    {
+      "tool_name": "db_change_audit",
+      "display_name": "AI-Powered DB Change Auditor",
+      "description": "A library to record, audit, and analyze database changes triggered by AI-generated queries. It tracks changes, identifies anomalies, and provides a clear audit trail for database governance.",
+      "topic": "AI-Powered Database Management",
+      "date": "2026-04-30",
+      "generated": "2026-04-30T05:28:45.032184+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/db_change_audit",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/db_change_audit/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-30/db_change_audit/db_change_audit.zip"
+    },
     {
       "tool_name": "news_data_pipeline",
       "display_name": "News Data Pipeline",
