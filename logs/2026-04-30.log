@@ -298,3 +298,22 @@ _________________________ ERROR at setu
 2026-04-30 05:34:29 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/db_change_audit
 2026-04-30 05:34:29 | INFO     | main |   Deduplicated 4 older tool version(s) from index
 2026-04-30 05:34:29 | INFO     | main | ✅ Generated tools_index.json with 186 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-04-30 05:34:33 | INFO     | main | Database committed and pushed to repo
+2026-04-30 05:34:33 | INFO     | main | 
+2026-04-30 05:34:33 | INFO     | main | ============================================================
+2026-04-30 05:34:33 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-04-30 05:34:33 | INFO     | main | ============================================================
+2026-04-30 05:34:33 | INFO     | main |   Date:            2026-04-30
+2026-04-30 05:34:33 | INFO     | main |   Items scraped:   1340
+2026-04-30 05:34:33 | INFO     | main |   Items stored:    1052
+2026-04-30 05:34:33 | INFO     | main |   Topics found:    10
+2026-04-30 05:34:33 | INFO     | main |   Ideas generated: 5
+2026-04-30 05:34:33 | INFO     | main |   Tools built:     3
+2026-04-30 05:34:33 | INFO     | main |   Tools published: 3
+2026-04-30 05:34:33 | INFO     | main |   Elapsed:         344.0s
+2026-04-30 05:34:33 | INFO     | main |   Published URLs:
+2026-04-30 05:34:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/ai_debugger_assist
+2026-04-30 05:34:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/ai_test_case_generator
+2026-04-30 05:34:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-30/db_change_audit
+2026-04-30 05:34:33 | INFO     | main | ============================================================
+2026-04-30 05:34:35 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
