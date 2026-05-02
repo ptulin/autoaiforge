@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-04-30T05:34:29.093069+00:00",
-  "total_tools": 186,
+  "last_updated": "2026-05-02T05:04:16.055857+00:00",
+  "total_tools": 188,
   "tools": [
+    {
+      "tool_name": "auto_patch_applier",
+      "display_name": "Auto Patch Applier",
+      "description": "Auto Patch Applier integrates with AI models to identify, download, and apply patches to your codebase without manual intervention. It uses a sandboxing approach to test patches before applying them to ensure stability.",
+      "topic": "AI Auto-Patching Systems",
+      "date": "2026-05-02",
+      "generated": "2026-05-02T04:58:40.264639+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-02/auto_patch_applier",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_patch_applier/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_patch_applier/auto_patch_applier.zip"
+    },
+    {
+      "tool_name": "auto_test_gen",
+      "display_name": "Auto Test Generator",
+      "description": "A Python library that leverages Claude Code to automatically generate unit tests for your code. By analyzing the input source code, it predicts edge cases, creates relevant test cases, and outputs pytest-compatible test functions. This saves developers significant time when writing test suites.",
+      "topic": "AI-Powered Code Generation",
+      "date": "2026-05-02",
+      "generated": "2026-05-02T04:58:40.264639+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-02/auto_test_gen",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_test_gen/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_test_gen/auto_test_gen.zip"
+    },
     {
       "tool_name": "ai_debugger_assist",
       "display_name": "AI Debugger Assist",

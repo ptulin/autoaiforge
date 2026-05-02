@@ -1,0 +1,13 @@
+{
+  "tool_name": "auto_patch_applier",
+  "display_name": "Auto Patch Applier",
+  "description": "Auto Patch Applier integrates with AI models to identify, download, and apply patches to your codebase without manual intervention. It uses a sandboxing approach to test patches before applying them to ensure stability.",
+  "topic": "AI Auto-Patching Systems",
+  "date": "2026-05-02",
+  "generated": "2026-05-02T04:58:40.264639+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-02/auto_patch_applier",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_patch_applier/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-02/auto_patch_applier/auto_patch_applier.zip"
+}
