@@ -1,0 +1,285 @@
+2026-05-03 05:28:02 | INFO     | main | ============================================================
+2026-05-03 05:28:02 | INFO     | main | AutoAIForge starting run: 2026-05-03T05:28:02.821939+00:00
+2026-05-03 05:28:02 | INFO     | main | ============================================================
+2026-05-03 05:28:02 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-03 05:28:02 | INFO     | youtube_scraper | YouTube client ready
+2026-05-03 05:28:03 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-03 05:28:03 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-03 05:28:04 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-03 05:28:04 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-03 05:28:04 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-03 05:28:05 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 41 results (quota used: 600)
+2026-05-03 05:28:05 | INFO     | youtube_scraper | YouTube 'machine learning tools': 36 results (quota used: 700)
+2026-05-03 05:28:05 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-03 05:28:06 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-03 05:28:06 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 45 results (quota used: 1000)
+2026-05-03 05:28:06 | INFO     | youtube_scraper | YouTube 'open source LLM': 47 results (quota used: 1100)
+2026-05-03 05:28:07 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-03 05:28:07 | INFO     | youtube_scraper | YouTube 'vector database AI': 25 results (quota used: 1300)
+2026-05-03 05:28:07 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-03 05:28:08 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-03 05:28:08 | INFO     | youtube_scraper | YouTube 'AI safety news': 21 results (quota used: 1600)
+2026-05-03 05:28:08 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-03 05:28:09 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-03 05:28:09 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-03 05:28:09 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-03 05:28:09 | INFO     | youtube_scraper | YouTube total: 817 items, quota used: 2000
+2026-05-03 05:28:09 | INFO     | main |   YouTube: 777 items
+2026-05-03 05:28:09 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-03 05:28:14 | INFO     | rss_scraper | HackerNews: 144 items
+2026-05-03 05:28:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-03 05:28:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-03 05:28:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-03 05:28:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-03 05:28:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-03 05:28:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-03 05:28:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-03 05:28:22 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-03 05:28:28 | INFO     | rss_scraper | ArXiv: 99 items
+2026-05-03 05:28:32 | INFO     | rss_scraper | Dev.to: 182 items
+2026-05-03 05:28:33 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-03 05:28:33 | INFO     | rss_scraper | Free sources total: 475 unique items
+2026-05-03 05:28:33 | INFO     | main |   RSS/API sources: 475 items
+2026-05-03 05:28:33 | INFO     | main |   Total scraped: 1252 items
+2026-05-03 05:28:33 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-03 05:28:33 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-03 05:28:33 | INFO     | db_manager | Purged 917 old news items
+2026-05-03 05:28:34 | INFO     | db_manager | Inserted 864/1252 news items
+2026-05-03 05:28:34 | INFO     | main |   SQLite: 864 new items (total: 30130)
+2026-05-03 05:28:38 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-03 05:28:40 | INFO     | vector_store | VectorStore ready
+2026-05-03 05:29:04 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-03 05:29:04 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-03 05:29:04 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-03 05:29:04 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-03 05:29:12 | DEBUG    | llm_client | LLM response from github_models (4007 chars)
+2026-05-03 05:29:12 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-03 05:29:12 | INFO     | main |   Found 10 topics:
+2026-05-03 05:29:12 | INFO     | main |      1. [9/10] AI-Powered Code Generation
+2026-05-03 05:29:12 | INFO     | main |      2. [9/10] AI in Content Creation
+2026-05-03 05:29:12 | INFO     | main |      3. [9/10] Recursive AI Agents
+2026-05-03 05:29:12 | INFO     | main |      4. [8/10] AI for Automated Testing
+2026-05-03 05:29:12 | INFO     | main |      5. [8/10] AI in Healthcare Diagnostics
+2026-05-03 05:29:12 | INFO     | main |      6. [8/10] AI in Financial Analysis
+2026-05-03 05:29:12 | INFO     | main |      7. [8/10] AI-Powered Trading Bots
+2026-05-03 05:29:12 | INFO     | main |      8. [7/10] AI Model Optimization Techniques
+2026-05-03 05:29:12 | INFO     | main |      9. [7/10] AI Token Usage Optimization
+2026-05-03 05:29:12 | INFO     | main |     10. [7/10] AI in Military Applications
+2026-05-03 05:29:12 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-03 05:29:12 | INFO     | main |   Existing collection: 188 tools across 103 topics
+2026-05-03 05:29:12 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Trading Bots' (relevance 8/10, last built 2026-03-23)
+2026-05-03 05:29:12 | INFO     | main |   Topics flagged for upgrade: AI-Powered Trading Bots
+2026-05-03 05:29:12 | INFO     | idea_generator |   ⏭  Skipping topic 'AI-Powered Code Generation' — tool already in collection
+2026-05-03 05:29:17 | DEBUG    | llm_client | LLM response from github_models (2979 chars)
+2026-05-03 05:29:17 | INFO     | idea_generator | Generated 3 ideas for topic: AI in Content Creation
+2026-05-03 05:29:22 | DEBUG    | llm_client | LLM response from github_models (2752 chars)
+2026-05-03 05:29:22 | INFO     | idea_generator | Generated 2 ideas for topic: Recursive AI Agents
+2026-05-03 05:29:22 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-03 05:29:22 | INFO     | main |   Generated 5 tool ideas:
+2026-05-03 05:29:22 | INFO     | main |     • ai_video_captioner: This tool uses AI to automatically generate captions for video files by transcri
+2026-05-03 05:29:22 | INFO     | main |     • ai_music_looper: An AI-powered tool that analyzes a music file, identifies repetitive patterns or
+2026-05-03 05:29:22 | INFO     | main |     • ai_script_enhancer: A tool that takes a text-based script or screenplay as input and uses AI to sugg
+2026-05-03 05:29:22 | INFO     | main |     • recursive_agent_debugger: This tool allows AI developers to step through and visualize the recursive decis
+2026-05-03 05:29:22 | INFO     | main |     • recursive_agent_tester: A library for testing the performance and convergence properties of recursive AI
+2026-05-03 05:29:22 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-03 05:29:22 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-03 05:29:31 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-03 05:29:31 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-03 05:29:31 | INFO     | tool_builder | Building tool: ai_video_captioner …
+2026-05-03 05:29:41 | DEBUG    | llm_client | LLM response from github_models (6849 chars)
+2026-05-03 05:29:41 | DEBUG    | test_runner | Installing: ['ffmpeg-python==0.2.0', 'openai==0.27.0']
+2026-05-03 05:29:44 | WARNING  | test_runner | Tests FAILED for ai_video_captioner:
+test_ai_video_captioner.py::test_extract_audio FAILED                    [ 25%]
+test_ai_video_captioner.py::test_translate_text FAILED                   [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'output' to be called once. Called 0 times.
+    mock_output.assert_called_once_with("output.wav", ac=1, ar='16000')
+E   AssertionError: Expected 'output' to be called once. Called 0 times.
+E   AttributeError: 'dict' object has no attribute 'choices'
+    raise RuntimeError(f"Error translating to {lang}: {e}")
+E   RuntimeError: Error translating to es: 'dict' object has no attribute 'choices'
+FAILED test_ai_video_captioner.py::test_extract_audio - AssertionError: Expected 'output' to be called once. Called 0 times.
+FAILED test_ai_video_captioner.py::test_translate_text - RuntimeError: Error translating to es: 'dict' object has no attribute 'choices'
+2026-05-03 05:29:44 | WARNING  | tool_builder | ⚠️  ai_video_captioner tests failed (loop 1/5) — test_ai_video_captioner.py::test_extract_audio FAILED                    [ 25%]
+test_ai_video_captioner.py::test_translate_text FAILED                   [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-05-03 05:29:58 | DEBUG    | llm_client | LLM response from github_models (7787 chars)
+2026-05-03 05:29:58 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai', 'pytest']
+2026-05-03 05:29:59 | WARNING  | test_runner | Tests FAILED for ai_video_captioner:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_video_captioner.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:197: in exec_module
+E       } except Exception as e:
+E   SyntaxError: unmatched '}'
+ERROR test_ai_video_captioner.py
+2026-05-03 05:29:59 | WARNING  | tool_builder | ⚠️  ai_video_captioner tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_video_captioner.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-05-03 05:30:08 | DEBUG    | llm_client | LLM response from github_models (7487 chars)
+2026-05-03 05:30:08 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai', 'pytest']
+2026-05-03 05:30:09 | WARNING  | test_runner | Tests FAILED for ai_video_captioner:
+test_ai_video_captioner.py::test_transcribe_audio FAILED                 [ 50%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:951: in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+E   AssertionError: expected call not found.
+E   assert ('whisper-1',...29393319248'>) == ('whisper-1',...29426463824'>)
+    mock_transcribe.assert_called_once_with("whisper-1", mock_file().return_value)
+E   AssertionError: expected call not found.
+E   assert ('whisper-1',...29393319248'>) == ('whisper-1',...29426463824'>)
+FAILED test_ai_video_captioner.py::test_transcribe_audio - AssertionError: expected call not found.
+assert ('whisper-1',...29393319248'>) == ('whisper-1',...29426463824'>)
+2026-05-03 05:30:09 | WARNING  | tool_builder | ⚠️  ai_video_captioner tests failed (loop 3/5) — test_ai_video_captioner.py::test_transcribe_audio FAILED                 [ 50%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionEr
+2026-05-03 05:30:19 | DEBUG    | llm_client | LLM response from github_models (7877 chars)
+2026-05-03 05:30:19 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import os\nimport argparse\nimport ffmpeg\nimport openai\n\ndef extract_audio(video_path, audio_path):\n    try:\n        (\n            ffmpeg\n            .input(video_path)\n            .output(audio_path, ac=1, ar='16000')\n            .run(overwrite_output=True)\n        )\n    exc
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7864)
+2026-05-03 05:30:19 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai', 'pytest']
+2026-05-03 05:30:20 | WARNING  | test_runner | Tests FAILED for ai_video_captioner:
+test_ai_video_captioner.py::test_transcribe_audio FAILED                 [ 50%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:951: in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+E   AssertionError: expected call not found.
+E   assert ('whisper-1',...99162755600'>) == ('whisper-1',...99163189136'>)
+    mock_transcribe.assert_called_once_with("whisper-1", mock_file().return_value)
+E   AssertionError: expected call not found.
+E   assert ('whisper-1',...99162755600'>) == ('whisper-1',...99163189136'>)
+FAILED test_ai_video_captioner.py::test_transcribe_audio - AssertionError: expected call not found.
+assert ('whisper-1',...99162755600'>) == ('whisper-1',...99163189136'>)
+2026-05-03 05:30:20 | WARNING  | tool_builder | ⚠️  ai_video_captioner tests failed (loop 4/5) — test_ai_video_captioner.py::test_transcribe_audio FAILED                 [ 50%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionEr
+2026-05-03 05:30:30 | DEBUG    | llm_client | LLM response from github_models (7786 chars)
+2026-05-03 05:30:30 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai', 'pytest']
+2026-05-03 05:30:31 | INFO     | test_runner | Tests PASSED for ai_video_captioner
+2026-05-03 05:30:31 | INFO     | tool_builder | ✅ ai_video_captioner passed tests on loop 5
+2026-05-03 05:30:31 | INFO     | tool_builder | Building tool: ai_music_looper …
+2026-05-03 05:30:40 | DEBUG    | llm_client | LLM response from github_models (5289 chars)
+2026-05-03 05:30:40 | DEBUG    | test_runner | Installing: ['librosa==0.10.0', 'numpy==1.26.0']
+2026-05-03 05:31:06 | INFO     | test_runner | Tests PASSED for ai_music_looper
+2026-05-03 05:31:06 | INFO     | tool_builder | ✅ ai_music_looper passed tests on loop 1
+2026-05-03 05:31:06 | INFO     | tool_builder | Building tool: ai_script_enhancer …
+2026-05-03 05:31:14 | DEBUG    | llm_client | LLM response from github_models (6167 chars)
+2026-05-03 05:31:14 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pytest==7.4.0']
+2026-05-03 05:31:15 | WARNING  | test_runner | Tests FAILED for ai_script_enhancer:
+test_ai_script_enhancer.py::test_enhance_script_openai_error FAILED      [100%]
+E   Exception: API Error
+FAILED test_ai_script_enhancer.py::test_enhance_script_openai_error - Exception: API Error
+2026-05-03 05:31:15 | WARNING  | tool_builder | ⚠️  ai_script_enhancer tests failed (loop 1/5) — test_ai_script_enhancer.py::test_enhance_script_openai_error FAILED      [100%]
+E   Exception: API Error
+FAILED test_ai_script_enhancer.py::test_enhance_script_openai_error - Exception: API Error
+2026-05-03 05:31:23 | DEBUG    | llm_client | LLM response from github_models (6263 chars)
+2026-05-03 05:31:23 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-05-03 05:31:24 | WARNING  | test_runner | Tests FAILED for ai_script_enhancer:
+test_ai_script_enhancer.py::test_enhance_script_openai_error FAILED      [100%]
+    with patch('openai.ChatCompletion.create', side_effect=openai.error.OpenAIError("API Error")):
+E   NameError: name 'openai' is not defined
+FAILED test_ai_script_enhancer.py::test_enhance_script_openai_error - NameError: name 'openai' is not defined
+2026-05-03 05:31:24 | WARNING  | tool_builder | ⚠️  ai_script_enhancer tests failed (loop 2/5) — test_ai_script_enhancer.py::test_enhance_script_openai_error FAILED      [100%]
+    with patch('openai.ChatCompletion.create', side_effect=openai.error.OpenAIError("API Error")):
+E   NameError: name '
+2026-05-03 05:31:32 | DEBUG    | llm_client | LLM response from github_models (6507 chars)
+2026-05-03 05:31:32 | DEBUG    | test_runner | Installing: ['openai']
+2026-05-03 05:31:33 | INFO     | test_runner | Tests PASSED for ai_script_enhancer
+2026-05-03 05:31:33 | INFO     | tool_builder | ✅ ai_script_enhancer passed tests on loop 3
+2026-05-03 05:31:33 | INFO     | tool_builder | Building tool: recursive_agent_debugger …
+2026-05-03 05:31:43 | DEBUG    | llm_client | LLM response from github_models (6826 chars)
+2026-05-03 05:31:43 | DEBUG    | test_runner | Installing: ['networkx==3.1', 'matplotlib==3.7.2', 'rich==13.5.2', 'pytest==7.4.2']
+2026-05-03 05:31:50 | WARNING  | test_runner | Tests FAILED for recursive_agent_debugger:
+test_recursive_agent_debugger.py::test_load_agent_class_valid FAILED     [ 25%]
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'dummy_path.py' does not exist.
+FAILED test_recursive_agent_debugger.py::test_load_agent_class_valid - FileNotFoundError: The file 'dummy_path.py' does not exist.
+2026-05-03 05:31:50 | WARNING  | tool_builder | ⚠️  recursive_agent_debugger tests failed (loop 1/5) — test_recursive_agent_debugger.py::test_load_agent_class_valid FAILED     [ 25%]
+    raise FileNotFoundError(f"The file '{file_path}' does not exist.")
+E   FileNotFoundError: The file 'dummy_path.py' d
+2026-05-03 05:31:58 | DEBUG    | llm_client | LLM response from github_models (6716 chars)
+2026-05-03 05:31:58 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib', 'rich']
+2026-05-03 05:31:59 | INFO     | test_runner | Tests PASSED for recursive_agent_debugger
+2026-05-03 05:31:59 | INFO     | tool_builder | ✅ recursive_agent_debugger passed tests on loop 2
+2026-05-03 05:31:59 | INFO     | tool_builder | Building tool: recursive_agent_tester …
+2026-05-03 05:32:11 | DEBUG    | llm_client | LLM response from github_models (8926 chars)
+2026-05-03 05:32:11 | DEBUG    | test_runner | Installing: ['pytest==7.4.2', 'numpy==1.26.0', 'pandas==2.1.1']
+2026-05-03 05:32:16 | WARNING  | test_runner | Tests FAILED for recursive_agent_tester:
+test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True
+E   assert False is True
+FAILED test_recursive_agent_tester.py::test_recursive_agent_tester - assert False is True
+2026-05-03 05:32:16 | WARNING  | tool_builder | ⚠️  recursive_agent_tester tests failed (loop 1/5) — test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True
+E   assert False is True
+FAILED test_recursive_agent_tester.py::test_recursiv
+2026-05-03 05:32:27 | DEBUG    | llm_client | LLM response from github_models (9382 chars)
+2026-05-03 05:32:27 | DEBUG    | test_runner | Installing: ['numpy', 'pandas']
+2026-05-03 05:32:28 | WARNING  | test_runner | Tests FAILED for recursive_agent_tester:
+test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is False  # Fix: Convergence requires at least 5 stable values
+E   assert False is False
+FAILED test_recursive_agent_tester.py::test_recursive_agent_tester - assert False is False
+2026-05-03 05:32:28 | WARNING  | tool_builder | ⚠️  recursive_agent_tester tests failed (loop 2/5) — test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is False  # Fix: Convergence requires at least 5 stable values
+E   assert False is Fa
+2026-05-03 05:32:40 | DEBUG    | llm_client | LLM response from github_models (9425 chars)
+2026-05-03 05:32:40 | DEBUG    | test_runner | Installing: ['numpy', 'pandas']
+2026-05-03 05:32:41 | WARNING  | test_runner | Tests FAILED for recursive_agent_tester:
+test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Fix: Scenario 1 converges because last 5 values are stable
+E   assert False is True
+FAILED test_recursive_agent_tester.py::test_recursive_agent_tester - assert False is True
+2026-05-03 05:32:41 | WARNING  | tool_builder | ⚠️  recursive_agent_tester tests failed (loop 3/5) — test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Fix: Scenario 1 converges because last 5 values are stable
+E   assert Fals
+2026-05-03 05:32:51 | DEBUG    | llm_client | LLM response from github_models (8863 chars)
+2026-05-03 05:32:51 | DEBUG    | test_runner | Installing: ['numpy', 'pandas']
+2026-05-03 05:32:52 | WARNING  | test_runner | Tests FAILED for recursive_agent_tester:
+test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Scenario 1 converges because last 5 values are stable
+E   assert False is True
+FAILED test_recursive_agent_tester.py::test_recursive_agent_tester - assert False is True
+2026-05-03 05:32:52 | WARNING  | tool_builder | ⚠️  recursive_agent_tester tests failed (loop 4/5) — test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Scenario 1 converges because last 5 values are stable
+E   assert False is 
+2026-05-03 05:32:52 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-03 05:34:02 | DEBUG    | llm_client | LLM response from github_models (8999 chars)
+2026-05-03 05:34:02 | DEBUG    | test_runner | Installing: ['numpy', 'pandas']
+2026-05-03 05:34:03 | WARNING  | test_runner | Tests FAILED for recursive_agent_tester:
+test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Scenario 1 converges because last 5 values are stable
+E   assert False is True
+FAILED test_recursive_agent_tester.py::test_recursive_agent_tester - assert False is True
+2026-05-03 05:34:03 | WARNING  | tool_builder | ⚠️  recursive_agent_tester tests failed (loop 5/5) — test_recursive_agent_tester.py::test_recursive_agent_tester FAILED       [ 33%]
+    assert results['converged'][0] is True  # Scenario 1 converges because last 5 values are stable
+E   assert False is 
+2026-05-03 05:34:03 | ERROR    | tool_builder | ❌ recursive_agent_tester failed after 5 loops
+2026-05-03 05:34:03 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-03 05:34:03 | INFO     | main |   Built 4/5 tools successfully
+2026-05-03 05:34:03 | INFO     | main |     ✅ ai_video_captioner (loops: 5)
+2026-05-03 05:34:03 | INFO     | main |     ✅ ai_music_looper (loops: 1)
+2026-05-03 05:34:03 | INFO     | main |     ✅ ai_script_enhancer (loops: 3)
+2026-05-03 05:34:03 | INFO     | main |     ✅ recursive_agent_debugger (loops: 2)
+2026-05-03 05:34:03 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-03 05:34:03 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-03 05:34:03 | INFO     | github_publisher |   Created zip: ai_video_captioner.zip (3100 bytes)
+2026-05-03 05:34:03 | INFO     | github_publisher | Saved ai_video_captioner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_video_captioner
+2026-05-03 05:34:03 | INFO     | github_publisher |   Created zip: ai_music_looper.zip (2434 bytes)
+2026-05-03 05:34:03 | INFO     | github_publisher | Saved ai_music_looper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_music_looper
+2026-05-03 05:34:03 | INFO     | github_publisher |   Created zip: ai_script_enhancer.zip (2846 bytes)
+2026-05-03 05:34:03 | INFO     | github_publisher | Saved ai_script_enhancer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_script_enhancer
+2026-05-03 05:34:03 | INFO     | github_publisher |   Created zip: recursive_agent_debugger.zip (2989 bytes)
+2026-05-03 05:34:03 | INFO     | github_publisher | Saved recursive_agent_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/recursive_agent_debugger
+2026-05-03 05:34:03 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-03 05:34:03 | INFO     | main |   Published 4 tools:
+2026-05-03 05:34:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_video_captioner
+2026-05-03 05:34:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_music_looper
+2026-05-03 05:34:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_script_enhancer
+2026-05-03 05:34:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/recursive_agent_debugger
+2026-05-03 05:34:03 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-03 05:34:03 | INFO     | main | ✅ Generated tools_index.json with 192 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

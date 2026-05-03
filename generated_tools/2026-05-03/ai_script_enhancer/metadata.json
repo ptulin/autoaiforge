@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_script_enhancer",
+  "display_name": "AI Script Enhancer",
+  "description": "A tool that takes a text-based script or screenplay as input and uses AI to suggest improvements, including character dialogue enhancement, grammar fixes, and tone adjustments. Aimed at writers and filmmakers for refining their scripts.",
+  "topic": "AI in Content Creation",
+  "date": "2026-05-03",
+  "generated": "2026-05-03T05:28:02.821939+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_script_enhancer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_script_enhancer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_script_enhancer/ai_script_enhancer.zip"
+}
