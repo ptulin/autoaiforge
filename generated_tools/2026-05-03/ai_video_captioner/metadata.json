@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_video_captioner",
+  "display_name": "AI Video Captioner",
+  "description": "This tool uses AI to automatically generate captions for video files by transcribing audio and optionally translating captions into multiple languages. Useful for content creators looking to make their videos more accessible and global.",
+  "topic": "AI in Content Creation",
+  "date": "2026-05-03",
+  "generated": "2026-05-03T05:28:02.821939+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_video_captioner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_video_captioner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_video_captioner/ai_video_captioner.zip"
+}

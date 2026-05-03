@@ -1,0 +1,13 @@
+{
+  "tool_name": "recursive_agent_debugger",
+  "display_name": "Recursive Agent Debugger",
+  "description": "This tool allows AI developers to step through and visualize the recursive decision-making process of self-improving AI agents. It monitors how agents evolve their logic over iterations and provides debugging hooks to inspect state changes, decision trees, and improvement metrics. This is particularly useful for identifying where recursive agents might encounter logical flaws or inefficiencies in their self-improvement loops.",
+  "topic": "Recursive AI Agents",
+  "date": "2026-05-03",
+  "generated": "2026-05-03T05:28:02.821939+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/recursive_agent_debugger",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/recursive_agent_debugger/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/recursive_agent_debugger/recursive_agent_debugger.zip"
+}

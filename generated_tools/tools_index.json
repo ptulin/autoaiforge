@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-02T05:04:16.055857+00:00",
-  "total_tools": 188,
+  "last_updated": "2026-05-03T05:34:03.622506+00:00",
+  "total_tools": 192,
   "tools": [
+    {
+      "tool_name": "ai_music_looper",
+      "display_name": "AI Music Looper",
+      "description": "An AI-powered tool that analyzes a music file, identifies repetitive patterns or loops, and suggests seamless looping points. Ideal for music producers and video editors who need perfectly looping audio tracks for their projects.",
+      "topic": "AI in Content Creation",
+      "date": "2026-05-03",
+      "generated": "2026-05-03T05:28:02.821939+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_music_looper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_music_looper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_music_looper/ai_music_looper.zip"
+    },
+    {
+      "tool_name": "ai_script_enhancer",
+      "display_name": "AI Script Enhancer",
+      "description": "A tool that takes a text-based script or screenplay as input and uses AI to suggest improvements, including character dialogue enhancement, grammar fixes, and tone adjustments. Aimed at writers and filmmakers for refining their scripts.",
+      "topic": "AI in Content Creation",
+      "date": "2026-05-03",
+      "generated": "2026-05-03T05:28:02.821939+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_script_enhancer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_script_enhancer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_script_enhancer/ai_script_enhancer.zip"
+    },
+    {
+      "tool_name": "ai_video_captioner",
+      "display_name": "AI Video Captioner",
+      "description": "This tool uses AI to automatically generate captions for video files by transcribing audio and optionally translating captions into multiple languages. Useful for content creators looking to make their videos more accessible and global.",
+      "topic": "AI in Content Creation",
+      "date": "2026-05-03",
+      "generated": "2026-05-03T05:28:02.821939+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_video_captioner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_video_captioner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_video_captioner/ai_video_captioner.zip"
+    },
+    {
+      "tool_name": "recursive_agent_debugger",
+      "display_name": "Recursive Agent Debugger",
+      "description": "This tool allows AI developers to step through and visualize the recursive decision-making process of self-improving AI agents. It monitors how agents evolve their logic over iterations and provides debugging hooks to inspect state changes, decision trees, and improvement metrics. This is particularly useful for identifying where recursive agents might encounter logical flaws or inefficiencies in their self-improvement loops.",
+      "topic": "Recursive AI Agents",
+      "date": "2026-05-03",
+      "generated": "2026-05-03T05:28:02.821939+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/recursive_agent_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/recursive_agent_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/recursive_agent_debugger/recursive_agent_debugger.zip"
+    },
     {
       "tool_name": "auto_patch_applier",
       "display_name": "Auto Patch Applier",

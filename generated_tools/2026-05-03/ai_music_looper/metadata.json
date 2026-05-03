@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_music_looper",
+  "display_name": "AI Music Looper",
+  "description": "An AI-powered tool that analyzes a music file, identifies repetitive patterns or loops, and suggests seamless looping points. Ideal for music producers and video editors who need perfectly looping audio tracks for their projects.",
+  "topic": "AI in Content Creation",
+  "date": "2026-05-03",
+  "generated": "2026-05-03T05:28:02.821939+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-03/ai_music_looper",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_music_looper/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-03/ai_music_looper/ai_music_looper.zip"
+}
