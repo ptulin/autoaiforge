@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_task_syncer",
+  "display_name": "AI Task Syncer",
+  "description": "This CLI tool integrates with task management tools (e.g., Todoist or Microsoft To Do) and uses Claude AI to analyze incoming tasks, auto-prioritize them, and suggest deadlines. It can also extract action items from meeting notes and add them to the task manager.",
+  "topic": "AI-Powered Productivity Tools",
+  "date": "2026-05-04",
+  "generated": "2026-05-04T05:32:35.335839+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/ai_task_syncer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-04/ai_task_syncer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-04/ai_task_syncer/ai_task_syncer.zip"
+}

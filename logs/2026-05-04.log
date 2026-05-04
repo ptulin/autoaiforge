@@ -1,0 +1,319 @@
+2026-05-04 05:32:35 | INFO     | main | ============================================================
+2026-05-04 05:32:35 | INFO     | main | AutoAIForge starting run: 2026-05-04T05:32:35.335839+00:00
+2026-05-04 05:32:35 | INFO     | main | ============================================================
+2026-05-04 05:32:35 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-04 05:32:35 | INFO     | youtube_scraper | YouTube client ready
+2026-05-04 05:32:36 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-04 05:32:36 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-04 05:32:36 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-04 05:32:36 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-04 05:32:37 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-04 05:32:37 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 41 results (quota used: 600)
+2026-05-04 05:32:38 | INFO     | youtube_scraper | YouTube 'machine learning tools': 40 results (quota used: 700)
+2026-05-04 05:32:38 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-04 05:32:38 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-04 05:32:39 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-04 05:32:39 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-04 05:32:39 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-04 05:32:39 | INFO     | youtube_scraper | YouTube 'vector database AI': 22 results (quota used: 1300)
+2026-05-04 05:32:40 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-04 05:32:40 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-04 05:32:40 | INFO     | youtube_scraper | YouTube 'AI safety news': 23 results (quota used: 1600)
+2026-05-04 05:32:40 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-05-04 05:32:41 | INFO     | youtube_scraper | YouTube 'local LLM': 40 results (quota used: 1800)
+2026-05-04 05:32:41 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-04 05:32:42 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-04 05:32:42 | INFO     | youtube_scraper | YouTube total: 816 items, quota used: 2000
+2026-05-04 05:32:42 | INFO     | main |   YouTube: 780 items
+2026-05-04 05:32:42 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-04 05:32:46 | INFO     | rss_scraper | HackerNews: 145 items
+2026-05-04 05:32:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-04 05:32:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-04 05:32:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-04 05:32:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-04 05:32:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-04 05:32:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-04 05:32:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-04 05:32:54 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-04 05:33:00 | INFO     | rss_scraper | ArXiv: 110 items
+2026-05-04 05:33:05 | INFO     | rss_scraper | Dev.to: 199 items
+2026-05-04 05:33:06 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-04 05:33:06 | INFO     | rss_scraper | Free sources total: 504 unique items
+2026-05-04 05:33:06 | INFO     | main |   RSS/API sources: 504 items
+2026-05-04 05:33:06 | INFO     | main |   Total scraped: 1284 items
+2026-05-04 05:33:06 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-04 05:33:06 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-04 05:33:06 | INFO     | db_manager | Purged 1005 old news items
+2026-05-04 05:33:06 | INFO     | db_manager | Inserted 986/1284 news items
+2026-05-04 05:33:06 | INFO     | main |   SQLite: 986 new items (total: 30111)
+2026-05-04 05:33:11 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-04 05:33:13 | INFO     | vector_store | VectorStore ready
+2026-05-04 05:33:43 | INFO     | vector_store | Indexed 1850 items into vector store
+2026-05-04 05:33:43 | INFO     | main |   Vector store: 1850 items indexed
+2026-05-04 05:33:43 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-04 05:33:43 | INFO     | topic_analyzer | Analyzing 1850 items for top 10 topics …
+2026-05-04 05:33:51 | DEBUG    | llm_client | LLM response from github_models (4290 chars)
+2026-05-04 05:33:51 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-04 05:33:51 | INFO     | main |   Found 10 topics:
+2026-05-04 05:33:51 | INFO     | main |      1. [9/10] AI-Powered Productivity Tools
+2026-05-04 05:33:51 | INFO     | main |      2. [9/10] AI in Healthcare Diagnostics
+2026-05-04 05:33:51 | INFO     | main |      3. [9/10] Open-Source AI Agents
+2026-05-04 05:33:51 | INFO     | main |      4. [8/10] AI for Financial Analysis
+2026-05-04 05:33:51 | INFO     | main |      5. [8/10] AI in Creative Writing
+2026-05-04 05:33:51 | INFO     | main |      6. [8/10] AI-Powered Real-Time Dashboards
+2026-05-04 05:33:51 | INFO     | main |      7. [8/10] AI for Video Content Creation
+2026-05-04 05:33:51 | INFO     | main |      8. [8/10] AI in Education and Learning
+2026-05-04 05:33:51 | INFO     | main |      9. [7/10] AI in Language Translation
+2026-05-04 05:33:51 | INFO     | main |     10. [7/10] AI Model Comparisons and Benchmarks
+2026-05-04 05:33:51 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-04 05:33:51 | INFO     | main |   Existing collection: 192 tools across 105 topics
+2026-05-04 05:33:51 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-04 05:33:58 | DEBUG    | llm_client | LLM response from github_models (3581 chars)
+2026-05-04 05:33:58 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Productivity Tools
+2026-05-04 05:34:02 | DEBUG    | llm_client | LLM response from github_models (2603 chars)
+2026-05-04 05:34:02 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Healthcare Diagnostics
+2026-05-04 05:34:02 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_diagnostic_report_generator' — name already in collection
+2026-05-04 05:34:05 | DEBUG    | llm_client | LLM response from github_models (1285 chars)
+2026-05-04 05:34:05 | INFO     | idea_generator | Generated 1 ideas for topic: Open-Source AI Agents
+2026-05-04 05:34:05 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-04 05:34:05 | INFO     | main |   Generated 5 tool ideas:
+2026-05-04 05:34:05 | INFO     | main |     • email_ai_sorter: This tool connects to an email inbox, processes unread emails using Claude AI to
+2026-05-04 05:34:05 | INFO     | main |     • ai_task_syncer: This CLI tool integrates with task management tools (e.g., Todoist or Microsoft 
+2026-05-04 05:34:05 | INFO     | main |     • dashboard_ai_assistant: This library allows developers to integrate Claude AI with popular dashboarding 
+2026-05-04 05:34:05 | INFO     | main |     • real_time_diagnostics_monitor: A Python library for monitoring and integrating real-time AI-powered diagnostics
+2026-05-04 05:34:05 | INFO     | main |     • goose_agent_deployer: This CLI tool simplifies the deployment and configuration of Goose AI agents for
+2026-05-04 05:34:05 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-04 05:34:06 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-04 05:34:15 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-04 05:34:15 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-04 05:34:15 | INFO     | tool_builder | Building tool: email_ai_sorter …
+2026-05-04 05:34:27 | DEBUG    | llm_client | LLM response from github_models (8167 chars)
+2026-05-04 05:34:27 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'python-dotenv==1.0.0']
+2026-05-04 05:34:30 | WARNING  | test_runner | Tests FAILED for email_ai_sorter:
+test_email_ai_sorter.py::test_classify_email FAILED                      [ 80%]
+E   NameError: name 'openai' is not defined
+    raise RuntimeError(f"Error classifying email: {e}")
+E   RuntimeError: Error classifying email: name 'openai' is not defined
+FAILED test_email_ai_sorter.py::test_classify_email - RuntimeError: Error classifying email: name 'openai' is not defined
+2026-05-04 05:34:30 | WARNING  | tool_builder | ⚠️  email_ai_sorter tests failed (loop 1/5) — test_email_ai_sorter.py::test_classify_email FAILED                      [ 80%]
+E   NameError: name 'openai' is not defined
+    raise RuntimeError(f"Error classifying email: {e}")
+E   RuntimeError: Er
+2026-05-04 05:34:41 | DEBUG    | llm_client | LLM response from github_models (9349 chars)
+2026-05-04 05:34:41 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv']
+2026-05-04 05:34:42 | INFO     | test_runner | Tests PASSED for email_ai_sorter
+2026-05-04 05:34:42 | INFO     | tool_builder | ✅ email_ai_sorter passed tests on loop 2
+2026-05-04 05:34:42 | INFO     | tool_builder | Building tool: ai_task_syncer …
+2026-05-04 05:34:53 | DEBUG    | llm_client | LLM response from github_models (7849 chars)
+2026-05-04 05:34:53 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'openai==0.27.8', 'python-dotenv==1.0.0', 'pytest==7.4.2']
+2026-05-04 05:34:55 | INFO     | test_runner | Tests PASSED for ai_task_syncer
+2026-05-04 05:34:55 | INFO     | tool_builder | ✅ ai_task_syncer passed tests on loop 1
+2026-05-04 05:34:55 | INFO     | tool_builder | Building tool: dashboard_ai_assistant …
+2026-05-04 05:35:06 | DEBUG    | llm_client | LLM response from github_models (4874 chars)
+2026-05-04 05:35:06 | DEBUG    | test_runner | Installing: ['dash==2.11.1', 'openai==0.27.8', 'pandas==1.5.3', 'pytest==7.4.2']
+2026-05-04 05:35:16 | WARNING  | test_runner | Tests FAILED for dashboard_ai_assistant:
+test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   AttributeError: 'Dash' object has no attribute 'test_client'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - AttributeError: 'Dash' object has no attribute 'test_client'
+2026-05-04 05:35:16 | WARNING  | tool_builder | ⚠️  dashboard_ai_assistant tests failed (loop 1/5) — test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   AttributeError: 'Dash' object has no attribute 'test_client'
+FAILED test_dashboard_ai_assistant.py::test_handle_quer
+2026-05-04 05:35:25 | DEBUG    | llm_client | LLM response from github_models (5387 chars)
+2026-05-04 05:35:25 | DEBUG    | test_runner | Installing: ['dash', 'pandas', 'openai', 'pytest']
+2026-05-04 05:35:26 | WARNING  | test_runner | Tests FAILED for dashboard_ai_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_dashboard_ai_assistant.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/dashboard_ai_assistant/test_dashboard_ai_assistant.py'.
+E   ModuleNotFoundError: No module named 'psutil'
+ERROR test_dashboard_ai_assistant.py
+2026-05-04 05:35:26 | WARNING  | tool_builder | ⚠️  dashboard_ai_assistant tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_dashboard_ai_assistant.py ________________
+ImportError while importing test modul
+2026-05-04 05:35:33 | DEBUG    | llm_client | LLM response from github_models (4855 chars)
+2026-05-04 05:35:33 | DEBUG    | test_runner | Installing: ['dash', 'pandas', 'openai', 'pytest']
+2026-05-04 05:35:34 | WARNING  | test_runner | Tests FAILED for dashboard_ai_assistant:
+test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:34 | WARNING  | tool_builder | ⚠️  dashboard_ai_assistant tests failed (loop 3/5) — test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:41 | DEBUG    | llm_client | LLM response from github_models (4873 chars)
+2026-05-04 05:35:41 | DEBUG    | test_runner | Installing: ['dash', 'pandas', 'openai', 'pytest']
+2026-05-04 05:35:42 | WARNING  | test_runner | Tests FAILED for dashboard_ai_assistant:
+test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:42 | WARNING  | tool_builder | ⚠️  dashboard_ai_assistant tests failed (loop 4/5) — test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:49 | DEBUG    | llm_client | LLM response from github_models (4923 chars)
+2026-05-04 05:35:49 | DEBUG    | test_runner | Installing: ['dash', 'pandas', 'openai', 'pytest']
+2026-05-04 05:35:50 | WARNING  | test_runner | Tests FAILED for dashboard_ai_assistant:
+test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:50 | WARNING  | tool_builder | ⚠️  dashboard_ai_assistant tests failed (loop 5/5) — test_dashboard_ai_assistant.py::test_handle_query FAILED                 [100%]
+E   KeyError: 'outputs_list'
+FAILED test_dashboard_ai_assistant.py::test_handle_query - KeyError: 'outputs_list'
+2026-05-04 05:35:50 | ERROR    | tool_builder | ❌ dashboard_ai_assistant failed after 5 loops
+2026-05-04 05:35:50 | INFO     | tool_builder | Building tool: real_time_diagnostics_monitor …
+2026-05-04 05:36:02 | DEBUG    | llm_client | LLM response from github_models (7355 chars)
+2026-05-04 05:36:02 | DEBUG    | test_runner | Installing: ['fastapi==0.95.2', 'websockets==11.0.3', 'scikit-learn==1.3.0']
+2026-05-04 05:36:11 | WARNING  | test_runner | Tests FAILED for real_time_diagnostics_monitor:
+test_real_time_diagnostics_monitor.py::test_model_loading FAILED         [ 33%]
+test_real_time_diagnostics_monitor.py::test_process_message FAILED       [ 66%]
+test_real_time_diagnostics_monitor.py::test_start_stream FAILED          [100%]
+    raise ValueError("Loaded object is not a scikit-learn model.")
+E   ValueError: Loaded object is not a scikit-learn model.
+    raise RuntimeError(f"Failed to load model: {e}")
+E   RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+    raise ValueError("Loaded object is not a scikit-learn model.")
+E   ValueError: Loaded object is not a scikit-learn model.
+    raise RuntimeError(f"Failed to load model: {e}")
+E   RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+    raise ValueError("Loaded object is not a scikit-learn model.")
+E   ValueError: Loaded object is not a scikit-learn model.
+    raise RuntimeError(f"Failed to load model: {e}")
+E   RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+FAILED test_real_time_diagnostics_monitor.py::test_model_loading - RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+FAILED test_real_time_diagnostics_monitor.py::test_process_message - RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+FAILED test_real_time_diagnostics_monitor.py::test_start_stream - RuntimeError: Failed to load model: Loaded object is not a scikit-learn model.
+2026-05-04 05:36:11 | WARNING  | tool_builder | ⚠️  real_time_diagnostics_monitor tests failed (loop 1/5) — test_real_time_diagnostics_monitor.py::test_model_loading FAILED         [ 33%]
+test_real_time_diagnostics_monitor.py::test_process_message FAILED       [ 66%]
+test_real_time_diagnostics_monitor.py::t
+2026-05-04 05:36:20 | DEBUG    | llm_client | LLM response from github_models (7617 chars)
+2026-05-04 05:36:20 | DEBUG    | test_runner | Installing: ['websockets', 'scikit-learn']
+2026-05-04 05:36:21 | WARNING  | test_runner | Tests FAILED for real_time_diagnostics_monitor:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_real_time_diagnostics_monitor.py ____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:353: in _rewrite_test
+E   SyntaxError: 'await' outside async function
+ERROR test_real_time_diagnostics_monitor.py
+2026-05-04 05:36:21 | WARNING  | tool_builder | ⚠️  real_time_diagnostics_monitor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_real_time_diagnostics_monitor.py ____________
+../_venv/lib/python3.11/site-packages/
+2026-05-04 05:36:29 | DEBUG    | llm_client | LLM response from github_models (7378 chars)
+2026-05-04 05:36:29 | DEBUG    | test_runner | Installing: ['websockets', 'scikit-learn', 'pytest']
+2026-05-04 05:36:31 | INFO     | test_runner | Tests PASSED for real_time_diagnostics_monitor
+2026-05-04 05:36:31 | INFO     | tool_builder | ✅ real_time_diagnostics_monitor passed tests on loop 3
+2026-05-04 05:36:31 | INFO     | tool_builder | Building tool: goose_agent_deployer …
+2026-05-04 05:36:40 | DEBUG    | llm_client | LLM response from github_models (6451 chars)
+2026-05-04 05:36:40 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pydantic==1.10.2', 'requests==2.31.0', 'pytest==7.4.0']
+2026-05-04 05:36:42 | WARNING  | test_runner | Tests FAILED for goose_agent_deployer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_goose_agent_deployer.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/goose_agent_deployer/test_goose_agent_deployer.py'.
+E   ModuleNotFoundError: No module named 'yaml'
+ERROR test_goose_agent_deployer.py
+2026-05-04 05:36:42 | WARNING  | tool_builder | ⚠️  goose_agent_deployer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_goose_agent_deployer.py _________________
+ImportError while importing test modul
+2026-05-04 05:36:49 | DEBUG    | llm_client | LLM response from github_models (7237 chars)
+2026-05-04 05:36:49 | DEBUG    | test_runner | Installing: ['pydantic', 'pyyaml', 'requests']
+2026-05-04 05:36:51 | WARNING  | test_runner | Tests FAILED for goose_agent_deployer:
+test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_invalid_config_deploy FAILED          [ 75%]
+test_goose_agent_deployer.py::test_export_config FAILED                  [100%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_agent _________________________
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mocked_file.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+FAILED test_goose_agent_deployer.py::test_invalid_config_deploy - Failed: DID NOT RAISE <class 'SystemExit'>
+FAILED test_goose_agent_deployer.py::test_export_config - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+ERROR test_goose_agent_deployer.py::test_agent
+2026-05-04 05:36:51 | WARNING  | tool_builder | ⚠️  goose_agent_deployer tests failed (loop 2/5) — test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_invalid_config_deploy FAILED          [ 75%]
+test_goose_agent_deployer.py::test_expor
+2026-05-04 05:36:58 | DEBUG    | llm_client | LLM response from github_models (7166 chars)
+2026-05-04 05:36:58 | DEBUG    | test_runner | Installing: ['pydantic', 'pyyaml', 'requests', 'pytest']
+2026-05-04 05:36:59 | WARNING  | test_runner | Tests FAILED for goose_agent_deployer:
+test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_invalid_config_deploy FAILED          [ 75%]
+test_goose_agent_deployer.py::test_export_config FAILED                  [100%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_agent _________________________
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mocked_file.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+FAILED test_goose_agent_deployer.py::test_invalid_config_deploy - Failed: DID NOT RAISE <class 'SystemExit'>
+FAILED test_goose_agent_deployer.py::test_export_config - AssertionError: Expected 'write' to be called once. Called 0 times.
+ERROR test_goose_agent_deployer.py::test_agent
+2026-05-04 05:36:59 | WARNING  | tool_builder | ⚠️  goose_agent_deployer tests failed (loop 3/5) — test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_invalid_config_deploy FAILED          [ 75%]
+test_goose_agent_deployer.py::test_expor
+2026-05-04 05:37:07 | DEBUG    | llm_client | LLM response from github_models (7790 chars)
+2026-05-04 05:37:07 | DEBUG    | test_runner | Installing: ['pydantic', 'pyyaml', 'requests']
+2026-05-04 05:37:08 | WARNING  | test_runner | Tests FAILED for goose_agent_deployer:
+test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_valid_config_deploy FAILED            [ 50%]
+test_goose_agent_deployer.py::test_export_config FAILED                  [100%]
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_agent _________________________
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Successfully loaded configuration for model: test-model\n') call not found
+    mock_stdout.write.assert_any_call("Successfully loaded configuration for model: test-model\n")
+E   AssertionError: write('Successfully loaded configuration for model: test-model\n') call not found
+E   assert ('\n',) == ('Successfull...est-model\n',)
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mocked_file.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+FAILED test_goose_agent_deployer.py::test_valid_config_deploy - AssertionError: write('Successfully loaded configuration for model: test-model\n') call not found
+assert ('\n',) == ('Successfull...est-model\n',)
+FAILED test_goose_agent_deployer.py::test_export_config - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+ERROR test_goose_agent_deployer.py::test_agent
+2026-05-04 05:37:08 | WARNING  | tool_builder | ⚠️  goose_agent_deployer tests failed (loop 4/5) — test_goose_agent_deployer.py::test_agent ERROR                           [ 25%]
+test_goose_agent_deployer.py::test_valid_config_deploy FAILED            [ 50%]
+test_goose_agent_deployer.py::test_expor
+2026-05-04 05:37:16 | DEBUG    | llm_client | LLM response from github_models (8358 chars)
+2026-05-04 05:37:16 | DEBUG    | test_runner | Installing: ['pydantic', 'pyyaml', 'requests']
+2026-05-04 05:37:17 | WARNING  | test_runner | Tests FAILED for goose_agent_deployer:
+test_goose_agent_deployer.py::test_agent FAILED                          [ 25%]
+test_goose_agent_deployer.py::test_export_config FAILED                  [100%]
+E   TypeError: test_agent() takes 0 positional arguments but 2 were given
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+    mocked_file.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 21 times.
+E   assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+FAILED test_goose_agent_deployer.py::test_agent - TypeError: test_agent() takes 0 positional arguments but 2 were given
+FAILED test_goose_agent_deployer.py::test_export_config - AssertionError: Expected 'write' to be called once. Called 21 times.
+assert ('}',) == ('{\n    "mod...7\n    }\n}',)
+2026-05-04 05:37:17 | WARNING  | tool_builder | ⚠️  goose_agent_deployer tests failed (loop 5/5) — test_goose_agent_deployer.py::test_agent FAILED                          [ 25%]
+test_goose_agent_deployer.py::test_export_config FAILED                  [100%]
+E   TypeError: test_agent() takes 0 posi
+2026-05-04 05:37:17 | ERROR    | tool_builder | ❌ goose_agent_deployer failed after 5 loops
+2026-05-04 05:37:17 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-04 05:37:17 | INFO     | main |   Built 3/5 tools successfully
+2026-05-04 05:37:17 | INFO     | main |     ✅ email_ai_sorter (loops: 2)
+2026-05-04 05:37:17 | INFO     | main |     ✅ ai_task_syncer (loops: 1)
+2026-05-04 05:37:17 | INFO     | main |     ✅ real_time_diagnostics_monitor (loops: 3)
+2026-05-04 05:37:17 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-04 05:37:17 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-04 05:37:17 | INFO     | github_publisher |   Created zip: email_ai_sorter.zip (3405 bytes)
+2026-05-04 05:37:17 | INFO     | github_publisher | Saved email_ai_sorter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/email_ai_sorter
+2026-05-04 05:37:17 | INFO     | github_publisher |   Created zip: ai_task_syncer.zip (3101 bytes)
+2026-05-04 05:37:17 | INFO     | github_publisher | Saved ai_task_syncer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/ai_task_syncer
+2026-05-04 05:37:17 | INFO     | github_publisher |   Created zip: real_time_diagnostics_monitor.zip (2906 bytes)
+2026-05-04 05:37:17 | INFO     | github_publisher | Saved real_time_diagnostics_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/real_time_diagnostics_monitor
+2026-05-04 05:37:17 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-04 05:37:17 | INFO     | main |   Published 3 tools:
+2026-05-04 05:37:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/email_ai_sorter
+2026-05-04 05:37:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/ai_task_syncer
+2026-05-04 05:37:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/real_time_diagnostics_monitor
+2026-05-04 05:37:17 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-04 05:37:17 | INFO     | main | ✅ Generated tools_index.json with 195 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

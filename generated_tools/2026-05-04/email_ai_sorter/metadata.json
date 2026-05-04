@@ -1,0 +1,13 @@
+{
+  "tool_name": "email_ai_sorter",
+  "display_name": "Email AI Sorter",
+  "description": "This tool connects to an email inbox, processes unread emails using Claude AI to classify them into categories (e.g., 'work', 'personal', 'urgent'), and applies labels or moves them to appropriate folders. Useful for developers who frequently deal with inbox overload.",
+  "topic": "AI-Powered Productivity Tools",
+  "date": "2026-05-04",
+  "generated": "2026-05-04T05:32:35.335839+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-04/email_ai_sorter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-04/email_ai_sorter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-04/email_ai_sorter/email_ai_sorter.zip"
+}
