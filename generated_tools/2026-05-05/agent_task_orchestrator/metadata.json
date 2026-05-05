@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_task_orchestrator",
+  "display_name": "Agent Task Orchestrator",
+  "description": "This tool allows developers to create and manage autonomous AI agents capable of executing multi-step workflows. It provides a framework for defining tasks, dependencies, and execution logic, making it easier to build robust and reusable agent-driven workflows.",
+  "topic": "Autonomous AI Agents",
+  "date": "2026-05-05",
+  "generated": "2026-05-05T04:59:11.200647+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/agent_task_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/agent_task_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/agent_task_orchestrator/agent_task_orchestrator.zip"
+}

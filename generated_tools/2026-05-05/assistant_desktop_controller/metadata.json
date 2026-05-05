@@ -1,0 +1,13 @@
+{
+  "tool_name": "assistant_desktop_controller",
+  "display_name": "Assistant Desktop Controller",
+  "description": "A CLI tool that uses natural language commands to control desktop applications and perform common tasks. It connects to AI assistants like Claude to interpret commands and uses Python libraries to execute these tasks, such as sending emails, managing files, or scheduling events. This tool is ideal for developers looking to integrate AI with local computer automation.",
+  "topic": "AI-Powered Personal Assistants",
+  "date": "2026-05-05",
+  "generated": "2026-05-05T04:59:11.200647+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/assistant_desktop_controller",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/assistant_desktop_controller/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/assistant_desktop_controller/assistant_desktop_controller.zip"
+}
