@@ -1,0 +1,213 @@
+2026-05-05 04:59:11 | INFO     | main | ============================================================
+2026-05-05 04:59:11 | INFO     | main | AutoAIForge starting run: 2026-05-05T04:59:11.200647+00:00
+2026-05-05 04:59:11 | INFO     | main | ============================================================
+2026-05-05 04:59:11 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-05 04:59:11 | INFO     | youtube_scraper | YouTube client ready
+2026-05-05 04:59:11 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-05 04:59:12 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-05 04:59:12 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-05 04:59:12 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-05 04:59:13 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-05 04:59:13 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 35 results (quota used: 600)
+2026-05-05 04:59:13 | INFO     | youtube_scraper | YouTube 'machine learning tools': 42 results (quota used: 700)
+2026-05-05 04:59:14 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-05 04:59:14 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-05 04:59:15 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-05 04:59:15 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-05 04:59:15 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-05 04:59:15 | INFO     | youtube_scraper | YouTube 'vector database AI': 15 results (quota used: 1300)
+2026-05-05 04:59:16 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-05 04:59:16 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-05 04:59:16 | INFO     | youtube_scraper | YouTube 'AI safety news': 34 results (quota used: 1600)
+2026-05-05 04:59:17 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-05 04:59:17 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-05 04:59:17 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-05 04:59:18 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-05 04:59:18 | INFO     | youtube_scraper | YouTube total: 828 items, quota used: 2000
+2026-05-05 04:59:18 | INFO     | main |   YouTube: 784 items
+2026-05-05 04:59:18 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-05 04:59:23 | INFO     | rss_scraper | HackerNews: 147 items
+2026-05-05 04:59:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-05 04:59:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-05 04:59:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-05 04:59:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-05 04:59:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-05 04:59:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-05 04:59:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-05 04:59:30 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-05 04:59:36 | INFO     | rss_scraper | ArXiv: 103 items
+2026-05-05 04:59:40 | INFO     | rss_scraper | Dev.to: 190 items
+2026-05-05 04:59:41 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-05 04:59:41 | INFO     | rss_scraper | Free sources total: 490 unique items
+2026-05-05 04:59:41 | INFO     | main |   RSS/API sources: 490 items
+2026-05-05 04:59:41 | INFO     | main |   Total scraped: 1274 items
+2026-05-05 04:59:41 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-05 04:59:41 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-05 04:59:42 | INFO     | db_manager | Purged 887 old news items
+2026-05-05 04:59:42 | INFO     | db_manager | Inserted 1035/1274 news items
+2026-05-05 04:59:42 | INFO     | main |   SQLite: 1035 new items (total: 30259)
+2026-05-05 04:59:47 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-05 04:59:47 | INFO     | vector_store | VectorStore ready
+2026-05-05 05:00:20 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-05 05:00:20 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-05 05:00:20 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-05 05:00:20 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-05 05:00:20 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-05 05:01:26 | DEBUG    | llm_client | LLM response from github_models (3872 chars)
+2026-05-05 05:01:26 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-05 05:01:26 | INFO     | main |   Found 10 topics:
+2026-05-05 05:01:26 | INFO     | main |      1. [9/10] Autonomous AI Agents
+2026-05-05 05:01:26 | INFO     | main |      2. [9/10] AI-Powered Personal Assistants
+2026-05-05 05:01:26 | INFO     | main |      3. [8/10] AI Workflow Automation
+2026-05-05 05:01:26 | INFO     | main |      4. [8/10] Claude AI Design Tools
+2026-05-05 05:01:26 | INFO     | main |      5. [8/10] AI in Cybersecurity
+2026-05-05 05:01:26 | INFO     | main |      6. [8/10] AI in Robotics
+2026-05-05 05:01:26 | INFO     | main |      7. [7/10] AI-Generated Content Moderation
+2026-05-05 05:01:26 | INFO     | main |      8. [7/10] AI in Government Systems
+2026-05-05 05:01:26 | INFO     | main |      9. [7/10] AI-Powered Marketing Tools
+2026-05-05 05:01:26 | INFO     | main |     10. [6/10] AI-Enhanced Audio Systems
+2026-05-05 05:01:26 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-05 05:01:26 | INFO     | main |   Existing collection: 195 tools across 107 topics
+2026-05-05 05:01:26 | INFO     | main |   🔄 Upgrade candidate: 'Autonomous AI Agents' (relevance 9/10, last built 2026-04-23)
+2026-05-05 05:01:26 | INFO     | main |   Topics flagged for upgrade: Autonomous AI Agents
+2026-05-05 05:01:26 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Autonomous AI Agents'
+2026-05-05 05:01:33 | DEBUG    | llm_client | LLM response from github_models (3381 chars)
+2026-05-05 05:01:33 | INFO     | idea_generator | Generated 3 ideas for topic: Autonomous AI Agents
+2026-05-05 05:01:37 | DEBUG    | llm_client | LLM response from github_models (2678 chars)
+2026-05-05 05:01:37 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Personal Assistants
+2026-05-05 05:01:37 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-05 05:01:37 | INFO     | main |   Generated 5 tool ideas:
+2026-05-05 05:01:37 | INFO     | main |     • agent_task_orchestrator: This tool allows developers to create and manage autonomous AI agents capable of
+2026-05-05 05:01:37 | INFO     | main |     • autonomous_agent_sandbox: This CLI tool provides a controlled environment for safely testing and simulatin
+2026-05-05 05:01:37 | INFO     | main |     • agent_health_monitor: This tool is designed to monitor the health and performance of deployed autonomo
+2026-05-05 05:01:37 | INFO     | main |     • task_chain_orchestrator: This tool allows developers to define, run, and automate complex task chains usi
+2026-05-05 05:01:37 | INFO     | main |     • assistant_desktop_controller: A CLI tool that uses natural language commands to control desktop applications a
+2026-05-05 05:01:37 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-05 05:01:37 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-05 05:01:46 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-05 05:01:46 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-05 05:01:46 | INFO     | tool_builder | Building tool: agent_task_orchestrator …
+2026-05-05 05:01:56 | DEBUG    | llm_client | LLM response from github_models (7092 chars)
+2026-05-05 05:01:56 | DEBUG    | test_runner | Installing: ['typer==0.9.0', 'jsonschema==4.19.0', 'rich==13.5.2', 'pyyaml==6.0']
+2026-05-05 05:01:59 | WARNING  | test_runner | Tests FAILED for agent_task_orchestrator:
+test_agent_task_orchestrator.py::test_load_config_valid FAILED           [ 33%]
+test_agent_task_orchestrator.py::test_load_config_invalid FAILED         [ 66%]
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+E   FileNotFoundError: Configuration file not found: mock_config.json
+    raise FileNotFoundError(f"Configuration file not found: {config_path}")
+E   FileNotFoundError: Configuration file not found: mock_invalid_config.json
+FAILED test_agent_task_orchestrator.py::test_load_config_valid - FileNotFoundError: Configuration file not found: mock_config.json
+FAILED test_agent_task_orchestrator.py::test_load_config_invalid - FileNotFoundError: Configuration file not found: mock_invalid_config.json
+2026-05-05 05:01:59 | WARNING  | tool_builder | ⚠️  agent_task_orchestrator tests failed (loop 1/5) — test_agent_task_orchestrator.py::test_load_config_valid FAILED           [ 33%]
+test_agent_task_orchestrator.py::test_load_config_invalid FAILED         [ 66%]
+    raise FileNotFoundError(f"Configurat
+2026-05-05 05:02:08 | DEBUG    | llm_client | LLM response from github_models (7008 chars)
+2026-05-05 05:02:08 | DEBUG    | test_runner | Installing: ['typer', 'rich', 'jsonschema', 'pyyaml']
+2026-05-05 05:02:08 | INFO     | test_runner | Tests PASSED for agent_task_orchestrator
+2026-05-05 05:02:08 | INFO     | tool_builder | ✅ agent_task_orchestrator passed tests on loop 2
+2026-05-05 05:02:08 | INFO     | tool_builder | Building tool: autonomous_agent_sandbox …
+2026-05-05 05:02:16 | DEBUG    | llm_client | LLM response from github_models (6287 chars)
+2026-05-05 05:02:16 | DEBUG    | test_runner | Installing: ['gym==0.26.2', 'pandas==1.5.3', 'typer==0.9.0', 'pyyaml==6.0']
+2026-05-05 05:02:22 | WARNING  | test_runner | Tests FAILED for autonomous_agent_sandbox:
+test_autonomous_agent_sandbox.py::test_load_scenario_json FAILED         [ 25%]
+test_autonomous_agent_sandbox.py::test_load_scenario_yaml FAILED         [ 50%]
+E   NameError: name 'json' is not defined
+E   NameError: name 'yaml' is not defined
+FAILED test_autonomous_agent_sandbox.py::test_load_scenario_json - NameError: name 'json' is not defined
+FAILED test_autonomous_agent_sandbox.py::test_load_scenario_yaml - NameError: name 'yaml' is not defined
+2026-05-05 05:02:22 | WARNING  | tool_builder | ⚠️  autonomous_agent_sandbox tests failed (loop 1/5) — test_autonomous_agent_sandbox.py::test_load_scenario_json FAILED         [ 25%]
+test_autonomous_agent_sandbox.py::test_load_scenario_yaml FAILED         [ 50%]
+E   NameError: name 'json' is not define
+2026-05-05 05:02:29 | DEBUG    | llm_client | LLM response from github_models (6433 chars)
+2026-05-05 05:02:29 | DEBUG    | test_runner | Installing: ['typer', 'gym', 'pandas', 'pyyaml']
+2026-05-05 05:02:30 | INFO     | test_runner | Tests PASSED for autonomous_agent_sandbox
+2026-05-05 05:02:30 | INFO     | tool_builder | ✅ autonomous_agent_sandbox passed tests on loop 2
+2026-05-05 05:02:30 | INFO     | tool_builder | Building tool: agent_health_monitor …
+2026-05-05 05:02:38 | DEBUG    | llm_client | LLM response from github_models (6140 chars)
+2026-05-05 05:02:38 | DEBUG    | test_runner | Installing: ['psutil==5.9.6', 'matplotlib==3.7.1', 'typer==0.9.0']
+2026-05-05 05:02:51 | WARNING  | test_runner | Tests FAILED for agent_health_monitor:
+test_agent_health_monitor.py::test_monitor_agent_no_process FAILED       [ 33%]
+test_agent_health_monitor.py::test_send_email_alert FAILED               [100%]
+E   NameError: name 'psutil' is not defined
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+    mock_server.starttls.assert_called_once()
+E   AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+FAILED test_agent_health_monitor.py::test_monitor_agent_no_process - NameError: name 'psutil' is not defined
+FAILED test_agent_health_monitor.py::test_send_email_alert - AssertionError: Expected 'starttls' to have been called once. Called 0 times.
+2026-05-05 05:02:51 | WARNING  | tool_builder | ⚠️  agent_health_monitor tests failed (loop 1/5) — test_agent_health_monitor.py::test_monitor_agent_no_process FAILED       [ 33%]
+test_agent_health_monitor.py::test_send_email_alert FAILED               [100%]
+E   NameError: name 'psutil' is not defi
+2026-05-05 05:03:00 | DEBUG    | llm_client | LLM response from github_models (6987 chars)
+2026-05-05 05:03:00 | DEBUG    | test_runner | Installing: ['psutil', 'matplotlib', 'typer']
+2026-05-05 05:03:08 | WARNING  | test_runner | Tests FAILED for agent_health_monitor:
+test_agent_health_monitor.py::test_monitor_agent_no_process FAILED       [ 33%]
+E   TypeError: NoSuchProcess.__init__() missing 1 required positional argument: 'pid'
+FAILED test_agent_health_monitor.py::test_monitor_agent_no_process - TypeError: NoSuchProcess.__init__() missing 1 required positional argument: 'pid'
+2026-05-05 05:03:08 | WARNING  | tool_builder | ⚠️  agent_health_monitor tests failed (loop 2/5) — test_agent_health_monitor.py::test_monitor_agent_no_process FAILED       [ 33%]
+E   TypeError: NoSuchProcess.__init__() missing 1 required positional argument: 'pid'
+FAILED test_agent_health_monitor.p
+2026-05-05 05:03:19 | DEBUG    | llm_client | LLM response from github_models (6316 chars)
+2026-05-05 05:03:19 | DEBUG    | test_runner | Installing: ['psutil', 'matplotlib', 'typer']
+2026-05-05 05:03:26 | INFO     | test_runner | Tests PASSED for agent_health_monitor
+2026-05-05 05:03:26 | INFO     | tool_builder | ✅ agent_health_monitor passed tests on loop 3
+2026-05-05 05:03:26 | INFO     | tool_builder | Building tool: task_chain_orchestrator …
+2026-05-05 05:03:36 | DEBUG    | llm_client | LLM response from github_models (6493 chars)
+2026-05-05 05:03:36 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.2']
+2026-05-05 05:03:37 | WARNING  | test_runner | Tests FAILED for task_chain_orchestrator:
+test_task_chain_orchestrator.py::test_call_ai_api_failure FAILED         [ 66%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_task_chain_orchestrator.py::test_call_ai_api_failure - NameError: name 'requests' is not defined
+2026-05-05 05:03:37 | WARNING  | tool_builder | ⚠️  task_chain_orchestrator tests failed (loop 1/5) — test_task_chain_orchestrator.py::test_call_ai_api_failure FAILED         [ 66%]
+    mock_post.side_effect = requests.exceptions.RequestException("API error")
+E   NameError: name 'requests' is not defi
+2026-05-05 05:03:46 | DEBUG    | llm_client | LLM response from github_models (7353 chars)
+2026-05-05 05:03:46 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-05-05 05:03:46 | INFO     | test_runner | Tests PASSED for task_chain_orchestrator
+2026-05-05 05:03:46 | INFO     | tool_builder | ✅ task_chain_orchestrator passed tests on loop 2
+2026-05-05 05:03:46 | INFO     | tool_builder | Building tool: assistant_desktop_controller …
+2026-05-05 05:03:52 | DEBUG    | llm_client | LLM response from github_models (4675 chars)
+2026-05-05 05:03:52 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pyautogui==0.9.53', 'schedule==1.1.0']
+2026-05-05 05:03:55 | WARNING  | test_runner | Tests FAILED for assistant_desktop_controller:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_assistant_desktop_controller.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   KeyError: 'DISPLAY'
+ERROR test_assistant_desktop_controller.py - KeyError: 'DISPLAY'
+2026-05-05 05:03:55 | WARNING  | tool_builder | ⚠️  assistant_desktop_controller tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_assistant_desktop_controller.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-05-05 05:04:00 | DEBUG    | llm_client | LLM response from github_models (4235 chars)
+2026-05-05 05:04:00 | DEBUG    | test_runner | Installing: ['openai', 'schedule']
+2026-05-05 05:04:01 | INFO     | test_runner | Tests PASSED for assistant_desktop_controller
+2026-05-05 05:04:01 | INFO     | tool_builder | ✅ assistant_desktop_controller passed tests on loop 2
+2026-05-05 05:04:01 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-05-05 05:04:01 | INFO     | main |   Built 5/5 tools successfully
+2026-05-05 05:04:01 | INFO     | main |     ✅ agent_task_orchestrator (loops: 2)
+2026-05-05 05:04:01 | INFO     | main |     ✅ autonomous_agent_sandbox (loops: 2)
+2026-05-05 05:04:01 | INFO     | main |     ✅ agent_health_monitor (loops: 3)
+2026-05-05 05:04:01 | INFO     | main |     ✅ task_chain_orchestrator (loops: 2)
+2026-05-05 05:04:01 | INFO     | main |     ✅ assistant_desktop_controller (loops: 2)
+2026-05-05 05:04:01 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-05 05:04:01 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-05 05:04:01 | INFO     | github_publisher |   Created zip: agent_task_orchestrator.zip (2958 bytes)
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved agent_task_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/agent_task_orchestrator
+2026-05-05 05:04:01 | INFO     | github_publisher |   Created zip: autonomous_agent_sandbox.zip (2701 bytes)
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved autonomous_agent_sandbox → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/autonomous_agent_sandbox
+2026-05-05 05:04:01 | INFO     | github_publisher |   Created zip: agent_health_monitor.zip (2827 bytes)
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved agent_health_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/agent_health_monitor
+2026-05-05 05:04:01 | INFO     | github_publisher |   Created zip: task_chain_orchestrator.zip (3015 bytes)
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved task_chain_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/task_chain_orchestrator
+2026-05-05 05:04:01 | INFO     | github_publisher |   Created zip: assistant_desktop_controller.zip (2205 bytes)
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved assistant_desktop_controller → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/assistant_desktop_controller
+2026-05-05 05:04:01 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-05-05 05:04:01 | INFO     | main |   Published 5 tools:
+2026-05-05 05:04:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/agent_task_orchestrator
+2026-05-05 05:04:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/autonomous_agent_sandbox
+2026-05-05 05:04:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/agent_health_monitor
+2026-05-05 05:04:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/task_chain_orchestrator
+2026-05-05 05:04:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/assistant_desktop_controller
+2026-05-05 05:04:01 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-05 05:04:01 | INFO     | main | ✅ Generated tools_index.json with 200 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

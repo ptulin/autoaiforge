@@ -1,0 +1,13 @@
+{
+  "tool_name": "task_chain_orchestrator",
+  "display_name": "Task Chain Orchestrator",
+  "description": "This tool allows developers to define, run, and automate complex task chains using AI assistants like Claude. Users can specify sequential or conditional tasks, and the AI dynamically reacts to intermediate outputs to decide the next step. It\u2019s useful for automating workflows that involve multiple stages, like data analysis, report generation, and email summarization.",
+  "topic": "AI-Powered Personal Assistants",
+  "date": "2026-05-05",
+  "generated": "2026-05-05T04:59:11.200647+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-05/task_chain_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/task_chain_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-05/task_chain_orchestrator/task_chain_orchestrator.zip"
+}
