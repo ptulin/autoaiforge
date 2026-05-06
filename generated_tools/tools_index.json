@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-05-05T05:04:01.454457+00:00",
-  "total_tools": 200,
+  "last_updated": "2026-05-06T05:33:35.038650+00:00",
+  "total_tools": 202,
   "tools": [
+    {
+      "tool_name": "ai_workflow_orchestrator",
+      "display_name": "AI Workflow Orchestrator",
+      "description": "A Python library for designing and running customizable AI-powered workflow automation pipelines. It allows developers to chain together AI API calls such as Claude AI or Oxygen AI, as well as other custom Python functions, into modular and reusable workflows. This makes it easier to automate complex tasks like document processing, conversational AI, or data enrichment.",
+      "topic": "AI Workflow Automation",
+      "date": "2026-05-06",
+      "generated": "2026-05-06T05:27:23.891505+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/ai_workflow_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-06/ai_workflow_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-06/ai_workflow_orchestrator/ai_workflow_orchestrator.zip"
+    },
+    {
+      "tool_name": "smart_task_scheduler",
+      "display_name": "Smart Task Scheduler",
+      "description": "A CLI tool that schedules and executes AI-driven tasks in a workflow using a time-based or event-driven trigger. Developers can define tasks such as making API requests to Claude AI or Oxygen AI, preprocessing data, or sending notifications, and the tool will handle scheduling and execution using a lightweight, cron-like syntax.",
+      "topic": "AI Workflow Automation",
+      "date": "2026-05-06",
+      "generated": "2026-05-06T05:27:23.891505+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/smart_task_scheduler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-06/smart_task_scheduler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-06/smart_task_scheduler/smart_task_scheduler.zip"
+    },
     {
       "tool_name": "agent_health_monitor",
       "display_name": "Agent Health Monitor",

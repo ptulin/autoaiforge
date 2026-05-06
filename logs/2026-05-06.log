@@ -1,0 +1,346 @@
+2026-05-06 05:27:23 | INFO     | main | ============================================================
+2026-05-06 05:27:23 | INFO     | main | AutoAIForge starting run: 2026-05-06T05:27:23.891505+00:00
+2026-05-06 05:27:23 | INFO     | main | ============================================================
+2026-05-06 05:27:23 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-06 05:27:24 | INFO     | youtube_scraper | YouTube client ready
+2026-05-06 05:27:24 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-06 05:27:24 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-06 05:27:25 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-06 05:27:25 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-06 05:27:25 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-06 05:27:26 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-06 05:27:26 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-06 05:27:26 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-06 05:27:27 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-06 05:27:27 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-06 05:27:27 | INFO     | youtube_scraper | YouTube 'open source LLM': 45 results (quota used: 1100)
+2026-05-06 05:27:28 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-06 05:27:28 | INFO     | youtube_scraper | YouTube 'vector database AI': 26 results (quota used: 1300)
+2026-05-06 05:27:28 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-06 05:27:29 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-06 05:27:29 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-06 05:27:29 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-06 05:27:30 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-06 05:27:30 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-06 05:27:30 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-06 05:27:30 | INFO     | youtube_scraper | YouTube total: 873 items, quota used: 2000
+2026-05-06 05:27:30 | INFO     | main |   YouTube: 809 items
+2026-05-06 05:27:30 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-06 05:27:35 | INFO     | rss_scraper | HackerNews: 164 items
+2026-05-06 05:27:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-06 05:27:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-06 05:27:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-06 05:27:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-06 05:27:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-06 05:27:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-06 05:27:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-06 05:27:42 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-06 05:27:48 | INFO     | rss_scraper | ArXiv: 103 items
+2026-05-06 05:27:52 | INFO     | rss_scraper | Dev.to: 197 items
+2026-05-06 05:27:54 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-06 05:27:54 | INFO     | rss_scraper | Free sources total: 514 unique items
+2026-05-06 05:27:54 | INFO     | main |   RSS/API sources: 514 items
+2026-05-06 05:27:54 | INFO     | main |   Total scraped: 1323 items
+2026-05-06 05:27:54 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-06 05:27:54 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-06 05:27:54 | INFO     | db_manager | Purged 1021 old news items
+2026-05-06 05:27:54 | INFO     | db_manager | Inserted 1091/1323 news items
+2026-05-06 05:27:54 | INFO     | main |   SQLite: 1091 new items (total: 30329)
+2026-05-06 05:27:59 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-06 05:28:00 | INFO     | vector_store | VectorStore ready
+2026-05-06 05:28:29 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-06 05:28:29 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-06 05:28:29 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-06 05:28:29 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-06 05:28:35 | DEBUG    | llm_client | LLM response from github_models (3690 chars)
+2026-05-06 05:28:35 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-06 05:28:35 | INFO     | main |   Found 10 topics:
+2026-05-06 05:28:35 | INFO     | main |      1. [10/10] AI Model Updates
+2026-05-06 05:28:35 | INFO     | main |      2. [9/10] AI Workflow Automation
+2026-05-06 05:28:35 | INFO     | main |      3. [9/10] AI for Small Businesses
+2026-05-06 05:28:35 | INFO     | main |      4. [9/10] AI in Financial Analysis
+2026-05-06 05:28:35 | INFO     | main |      5. [8/10] Local LLM Compatibility
+2026-05-06 05:28:35 | INFO     | main |      6. [8/10] AI in Design Automation
+2026-05-06 05:28:35 | INFO     | main |      7. [8/10] Fake News Detection
+2026-05-06 05:28:35 | INFO     | main |      8. [8/10] AI-Powered Website Creation
+2026-05-06 05:28:35 | INFO     | main |      9. [8/10] AI Policy and Regulation
+2026-05-06 05:28:35 | INFO     | main |     10. [7/10] AI Subscription Management
+2026-05-06 05:28:35 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-06 05:28:35 | INFO     | main |   Existing collection: 200 tools across 108 topics
+2026-05-06 05:28:35 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-06 05:28:41 | DEBUG    | llm_client | LLM response from github_models (3548 chars)
+2026-05-06 05:28:41 | INFO     | idea_generator | Generated 3 ideas for topic: AI Model Updates
+2026-05-06 05:28:46 | DEBUG    | llm_client | LLM response from github_models (2410 chars)
+2026-05-06 05:28:46 | INFO     | idea_generator | Generated 2 ideas for topic: AI Workflow Automation
+2026-05-06 05:28:46 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-06 05:28:46 | INFO     | main |   Generated 5 tool ideas:
+2026-05-06 05:28:46 | INFO     | main |     • model_update_tracker: A CLI tool for tracking the latest updates to popular AI models such as Claude O
+2026-05-06 05:28:46 | INFO     | main |     • ai_model_api_comparator: A Python library for comparing the APIs of different AI models, including input/
+2026-05-06 05:28:46 | INFO     | main |     • auto_model_metadata_sync: An automation tool that periodically retrieves metadata about the latest AI mode
+2026-05-06 05:28:46 | INFO     | main |     • ai_workflow_orchestrator: A Python library for designing and running customizable AI-powered workflow auto
+2026-05-06 05:28:46 | INFO     | main |     • smart_task_scheduler: A CLI tool that schedules and executes AI-driven tasks in a workflow using a tim
+2026-05-06 05:28:46 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-06 05:28:46 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-06 05:28:55 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-06 05:28:55 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-06 05:28:55 | INFO     | tool_builder | Building tool: model_update_tracker …
+2026-05-06 05:29:10 | DEBUG    | llm_client | LLM response from github_models (7131 chars)
+2026-05-06 05:29:10 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'beautifulsoup4==4.12.2']
+2026-05-06 05:29:11 | WARNING  | test_runner | Tests FAILED for model_update_tracker:
+test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+test_model_update_tracker.py::test_save_updates_to_file_json FAILED      [ 75%]
+E   Exception: Network error
+E   NameError: name 'json' is not defined
+FAILED test_model_update_tracker.py::test_fetch_model_updates_network_error - Exception: Network error
+FAILED test_model_update_tracker.py::test_save_updates_to_file_json - NameError: name 'json' is not defined
+2026-05-06 05:29:11 | WARNING  | tool_builder | ⚠️  model_update_tracker tests failed (loop 1/5) — test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+test_model_update_tracker.py::test_save_updates_to_file_json FAILED      [ 75%]
+E   Exception: Network error
+E   Name
+2026-05-06 05:29:19 | DEBUG    | llm_client | LLM response from github_models (6936 chars)
+2026-05-06 05:29:19 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4']
+2026-05-06 05:29:20 | WARNING  | test_runner | Tests FAILED for model_update_tracker:
+test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+FAILED test_model_update_tracker.py::test_fetch_model_updates_network_error - NameError: name 'requests' is not defined
+2026-05-06 05:29:20 | WARNING  | tool_builder | ⚠️  model_update_tracker tests failed (loop 2/5) — test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+F
+2026-05-06 05:29:27 | DEBUG    | llm_client | LLM response from github_models (7265 chars)
+2026-05-06 05:29:27 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4']
+2026-05-06 05:29:28 | WARNING  | test_runner | Tests FAILED for model_update_tracker:
+test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+FAILED test_model_update_tracker.py::test_fetch_model_updates_network_error - NameError: name 'requests' is not defined
+2026-05-06 05:29:28 | WARNING  | tool_builder | ⚠️  model_update_tracker tests failed (loop 3/5) — test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+F
+2026-05-06 05:29:35 | DEBUG    | llm_client | LLM response from github_models (6841 chars)
+2026-05-06 05:29:35 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4']
+2026-05-06 05:29:35 | WARNING  | test_runner | Tests FAILED for model_update_tracker:
+test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+FAILED test_model_update_tracker.py::test_fetch_model_updates_network_error - NameError: name 'requests' is not defined
+2026-05-06 05:29:35 | WARNING  | tool_builder | ⚠️  model_update_tracker tests failed (loop 4/5) — test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    mock_get.side_effect = requests.RequestException("Network error")
+E   NameError: name 'requests' is not defined
+F
+2026-05-06 05:29:46 | DEBUG    | llm_client | LLM response from github_models (7052 chars)
+2026-05-06 05:29:46 | DEBUG    | test_runner | Installing: ['requests', 'beautifulsoup4']
+2026-05-06 05:29:46 | WARNING  | test_runner | Tests FAILED for model_update_tracker:
+test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    with patch("requests.get", side_effect=requests.RequestException("Network error")) as mock_get:
+E   NameError: name 'requests' is not defined
+FAILED test_model_update_tracker.py::test_fetch_model_updates_network_error - NameError: name 'requests' is not defined
+2026-05-06 05:29:46 | WARNING  | tool_builder | ⚠️  model_update_tracker tests failed (loop 5/5) — test_model_update_tracker.py::test_fetch_model_updates_network_error FAILED [ 50%]
+    with patch("requests.get", side_effect=requests.RequestException("Network error")) as mock_get:
+E   NameError: na
+2026-05-06 05:29:46 | ERROR    | tool_builder | ❌ model_update_tracker failed after 5 loops
+2026-05-06 05:29:46 | INFO     | tool_builder | Building tool: ai_model_api_comparator …
+2026-05-06 05:30:00 | DEBUG    | llm_client | LLM response from github_models (8349 chars)
+2026-05-06 05:30:00 | DEBUG    | test_runner | Installing: ['jsonschema==4.19.0', 'pandas==2.1.1', 'pyyaml==6.0.1', 'pytest==7.4.2']
+2026-05-06 05:30:06 | WARNING  | test_runner | Tests FAILED for ai_model_api_comparator:
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    assert '{\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n}' in content
+E   assert '{\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n}' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+FAILED test_ai_model_api_comparator.py::test_export_comparison_report_json - assert '{\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n}' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+2026-05-06 05:30:06 | WARNING  | tool_builder | ⚠️  ai_model_api_comparator tests failed (loop 1/5) — test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    assert '{\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n}' in content
+E   assert '{\n   
+2026-05-06 05:30:16 | DEBUG    | llm_client | LLM response from github_models (7910 chars)
+2026-05-06 05:30:16 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml', 'jsonschema']
+2026-05-06 05:30:17 | WARNING  | test_runner | Tests FAILED for ai_model_api_comparator:
+test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(result, expected)
+testing.pyx:55: in pandas._libs.testing.assert_almost_equal
+testing.pyx:173: in pandas._libs.testing.assert_almost_equal
+E   AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+    assert '[\n    {\n        "Key": "key1",\n        "Model 1": "value1",\n        "Model 2": "value2"\n    }\n]' in content
+E   assert '[\n    {\n        "Key": "key1",\n        "Model 1": "value1",\n        "Model 2": "value2"\n    }\n]' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+FAILED test_ai_model_api_comparator.py::test_compare_apis - AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+FAILED test_ai_model_api_comparator.py::test_export_comparison_report_json - assert '[\n    {\n        "Key": "key1",\n        "Model 1": "value1",\n        "Model 2": "value2"\n    }\n]' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+2026-05-06 05:30:17 | WARNING  | tool_builder | ⚠️  ai_model_api_comparator tests failed (loop 2/5) — test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(resu
+2026-05-06 05:30:26 | DEBUG    | llm_client | LLM response from github_models (7688 chars)
+2026-05-06 05:30:26 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml', 'jsonschema']
+2026-05-06 05:30:27 | WARNING  | test_runner | Tests FAILED for ai_model_api_comparator:
+test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(result, expected)
+testing.pyx:55: in pandas._libs.testing.assert_almost_equal
+testing.pyx:173: in pandas._libs.testing.assert_almost_equal
+E   AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+    assert '[\n  {\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n  }\n]' in content
+E   assert '[\n  {\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n  }\n]' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+FAILED test_ai_model_api_comparator.py::test_compare_apis - AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+FAILED test_ai_model_api_comparator.py::test_export_comparison_report_json - assert '[\n  {\n    "Key": "key1",\n    "Model 1": "value1",\n    "Model 2": "value2"\n  }\n]' in '[\n    {\n        "Key":"key1",\n        "Model 1":"value1",\n        "Model 2":"value2"\n    }\n]'
+2026-05-06 05:30:27 | WARNING  | tool_builder | ⚠️  ai_model_api_comparator tests failed (loop 3/5) — test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(resu
+2026-05-06 05:30:39 | DEBUG    | llm_client | LLM response from github_models (8327 chars)
+2026-05-06 05:30:39 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml', 'jsonschema']
+2026-05-06 05:30:40 | WARNING  | test_runner | Tests FAILED for ai_model_api_comparator:
+test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(result.reset_index(drop=True), expected.reset_index(drop=True))
+testing.pyx:55: in pandas._libs.testing.assert_almost_equal
+testing.pyx:173: in pandas._libs.testing.assert_almost_equal
+E   AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+    assert content.strip() == expected_json
+E   assert '[\n    {\n  ...e2"\n    }\n]' == '[\n    {\n  ...e2"\n    }\n]'
+FAILED test_ai_model_api_comparator.py::test_compare_apis - AssertionError: DataFrame.iloc[:, 0] (column name="Key") are different
+FAILED test_ai_model_api_comparator.py::test_export_comparison_report_json - assert '[\n    {\n  ...e2"\n    }\n]' == '[\n    {\n  ...e2"\n    }\n]'
+2026-05-06 05:30:40 | WARNING  | tool_builder | ⚠️  ai_model_api_comparator tests failed (loop 4/5) — test_ai_model_api_comparator.py::test_compare_apis FAILED                [ 50%]
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    pd.testing.assert_frame_equal(resu
+2026-05-06 05:30:50 | DEBUG    | llm_client | LLM response from github_models (8026 chars)
+2026-05-06 05:30:50 | DEBUG    | test_runner | Installing: ['pandas', 'pyyaml', 'jsonschema']
+2026-05-06 05:30:51 | WARNING  | test_runner | Tests FAILED for ai_model_api_comparator:
+test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    assert content.strip() == expected_json
+E   assert '[\n    {\n  ...e2"\n    }\n]' == '[\n    {\n  ...e2"\n    }\n]'
+FAILED test_ai_model_api_comparator.py::test_export_comparison_report_json - assert '[\n    {\n  ...e2"\n    }\n]' == '[\n    {\n  ...e2"\n    }\n]'
+2026-05-06 05:30:51 | WARNING  | tool_builder | ⚠️  ai_model_api_comparator tests failed (loop 5/5) — test_ai_model_api_comparator.py::test_export_comparison_report_json FAILED [ 83%]
+    assert content.strip() == expected_json
+E   assert '[\n    {\n  ...e2"\n    }\n]' == '[\n    {\n  ...e2"\n    }\n]
+2026-05-06 05:30:51 | ERROR    | tool_builder | ❌ ai_model_api_comparator failed after 5 loops
+2026-05-06 05:30:51 | INFO     | tool_builder | Building tool: auto_model_metadata_sync …
+2026-05-06 05:31:01 | DEBUG    | llm_client | LLM response from github_models (6548 chars)
+2026-05-06 05:31:01 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'schedule==1.2.0']
+2026-05-06 05:31:02 | WARNING  | test_runner | Tests FAILED for auto_model_metadata_sync:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_auto_model_metadata_sync.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_auto_model_metadata_sync.py
+2026-05-06 05:31:02 | WARNING  | tool_builder | ⚠️  auto_model_metadata_sync tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_auto_model_metadata_sync.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-05-06 05:31:10 | DEBUG    | llm_client | LLM response from github_models (6325 chars)
+2026-05-06 05:31:10 | DEBUG    | test_runner | Installing: ['requests', 'schedule', 'pytest']
+2026-05-06 05:31:11 | WARNING  | test_runner | Tests FAILED for auto_model_metadata_sync:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_auto_model_metadata_sync.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_auto_model_metadata_sync.py
+2026-05-06 05:31:11 | WARNING  | tool_builder | ⚠️  auto_model_metadata_sync tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_auto_model_metadata_sync.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-05-06 05:31:18 | DEBUG    | llm_client | LLM response from github_models (6386 chars)
+2026-05-06 05:31:18 | DEBUG    | test_runner | Installing: ['requests', 'schedule']
+2026-05-06 05:31:19 | WARNING  | test_runner | Tests FAILED for auto_model_metadata_sync:
+test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os' is not defined
+FAILED test_auto_model_metadata_sync.py::test_save_metadata - NameError: name 'os' is not defined
+2026-05-06 05:31:19 | WARNING  | tool_builder | ⚠️  auto_model_metadata_sync tests failed (loop 3/5) — test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os'
+2026-05-06 05:31:27 | DEBUG    | llm_client | LLM response from github_models (6615 chars)
+2026-05-06 05:31:27 | DEBUG    | test_runner | Installing: ['requests', 'schedule']
+2026-05-06 05:31:27 | WARNING  | test_runner | Tests FAILED for auto_model_metadata_sync:
+test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os' is not defined
+FAILED test_auto_model_metadata_sync.py::test_save_metadata - NameError: name 'os' is not defined
+2026-05-06 05:31:27 | WARNING  | tool_builder | ⚠️  auto_model_metadata_sync tests failed (loop 4/5) — test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os'
+2026-05-06 05:31:36 | DEBUG    | llm_client | LLM response from github_models (6753 chars)
+2026-05-06 05:31:36 | DEBUG    | test_runner | Installing: ['requests', 'schedule']
+2026-05-06 05:31:36 | WARNING  | test_runner | Tests FAILED for auto_model_metadata_sync:
+test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os' is not defined
+FAILED test_auto_model_metadata_sync.py::test_save_metadata - NameError: name 'os' is not defined
+2026-05-06 05:31:36 | WARNING  | tool_builder | ⚠️  auto_model_metadata_sync tests failed (loop 5/5) — test_auto_model_metadata_sync.py::test_save_metadata FAILED              [ 75%]
+    mocked_makedirs.assert_called_once_with(os.path.dirname("test_output.json"), exist_ok=True)
+E   NameError: name 'os'
+2026-05-06 05:31:36 | ERROR    | tool_builder | ❌ auto_model_metadata_sync failed after 5 loops
+2026-05-06 05:31:36 | INFO     | tool_builder | Building tool: ai_workflow_orchestrator …
+2026-05-06 05:31:36 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-06 05:32:46 | DEBUG    | llm_client | LLM response from github_models (5654 chars)
+2026-05-06 05:32:46 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pyyaml==6.0', 'tenacity==8.2.2']
+2026-05-06 05:32:47 | INFO     | test_runner | Tests PASSED for ai_workflow_orchestrator
+2026-05-06 05:32:47 | INFO     | tool_builder | ✅ ai_workflow_orchestrator passed tests on loop 1
+2026-05-06 05:32:47 | INFO     | tool_builder | Building tool: smart_task_scheduler …
+2026-05-06 05:32:59 | DEBUG    | llm_client | LLM response from github_models (7083 chars)
+2026-05-06 05:32:59 | DEBUG    | test_runner | Installing: ['schedule==1.1.0', 'requests==2.31.0', 'click==8.1.3', 'loguru==0.7.0', 'pytest==7.4.2']
+2026-05-06 05:33:00 | WARNING  | test_runner | Tests FAILED for smart_task_scheduler:
+test_smart_task_scheduler.py::test_execute_api_task ERROR                [ 33%]
+test_smart_task_scheduler.py::test_execute_custom_script_task ERROR      [ 66%]
+test_smart_task_scheduler.py::test_schedule_tasks ERROR                  [100%]
+==================================== ERRORS ====================================
+___________________ ERROR at setup of test_execute_api_task ____________________
+E   NameError: name 'json' is not defined
+______________ ERROR at setup of test_execute_custom_script_task _______________
+E   NameError: name 'json' is not defined
+____________________ ERROR at setup of test_schedule_tasks _____________________
+E   NameError: name 'json' is not defined
+ERROR test_smart_task_scheduler.py::test_execute_api_task - NameError: name 'json' is not defined
+ERROR test_smart_task_scheduler.py::test_execute_custom_script_task - NameError: name 'json' is not defined
+ERROR test_smart_task_scheduler.py::test_schedule_tasks - NameError: name 'json' is not defined
+2026-05-06 05:33:00 | WARNING  | tool_builder | ⚠️  smart_task_scheduler tests failed (loop 1/5) — test_smart_task_scheduler.py::test_execute_api_task ERROR                [ 33%]
+test_smart_task_scheduler.py::test_execute_custom_script_task ERROR      [ 66%]
+test_smart_task_scheduler.py::test_sched
+2026-05-06 05:33:09 | DEBUG    | llm_client | LLM response from github_models (7712 chars)
+2026-05-06 05:33:09 | DEBUG    | test_runner | Installing: ['schedule', 'requests', 'loguru', 'click', 'pyyaml']
+2026-05-06 05:33:10 | WARNING  | test_runner | Tests FAILED for smart_task_scheduler:
+test_smart_task_scheduler.py::test_execute_api_task FAILED               [ 33%]
+test_smart_task_scheduler.py::test_execute_custom_script_task FAILED     [ 66%]
+test_smart_task_scheduler.py::test_schedule_tasks FAILED                 [100%]
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-05-06 05:33:10.030 | ERROR    | smart_task_scheduler:load_config:28 - Failed to load configuration: 'PosixPath' object has no attribute 'endswith'
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-05-06 05:33:10.065 | ERROR    | smart_task_scheduler:load_config:28 - Failed to load configuration: 'PosixPath' object has no attribute 'endswith'
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-05-06 05:33:10.070 | ERROR    | smart_task_scheduler:load_config:28 - Failed to load configuration: 'PosixPath' object has no attribute 'endswith'
+FAILED test_smart_task_scheduler.py::test_execute_api_task - AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_smart_task_scheduler.py::test_execute_custom_script_task - AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_smart_task_scheduler.py::test_schedule_tasks - AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-05-06 05:33:10 | WARNING  | tool_builder | ⚠️  smart_task_scheduler tests failed (loop 2/5) — test_smart_task_scheduler.py::test_execute_api_task FAILED               [ 33%]
+test_smart_task_scheduler.py::test_execute_custom_script_task FAILED     [ 66%]
+test_smart_task_scheduler.py::test_sched
+2026-05-06 05:33:25 | DEBUG    | llm_client | LLM response from github_models (7850 chars)
+2026-05-06 05:33:25 | DEBUG    | test_runner | Installing: ['loguru', 'click', 'PyYAML', 'schedule', 'pytest']
+2026-05-06 05:33:25 | WARNING  | test_runner | Tests FAILED for smart_task_scheduler:
+test_smart_task_scheduler.py::test_schedule_tasks FAILED                 [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: at('12:00') call not found
+    mock_job.at.assert_any_call("12:00")
+E   AssertionError: at('12:00') call not found
+FAILED test_smart_task_scheduler.py::test_schedule_tasks - AssertionError: at('12:00') call not found
+2026-05-06 05:33:25 | WARNING  | tool_builder | ⚠️  smart_task_scheduler tests failed (loop 3/5) — test_smart_task_scheduler.py::test_schedule_tasks FAILED                 [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-05-06 05:33:34 | DEBUG    | llm_client | LLM response from github_models (7065 chars)
+2026-05-06 05:33:34 | DEBUG    | test_runner | Installing: ['schedule', 'requests', 'loguru', 'click', 'pyyaml']
+2026-05-06 05:33:35 | INFO     | test_runner | Tests PASSED for smart_task_scheduler
+2026-05-06 05:33:35 | INFO     | tool_builder | ✅ smart_task_scheduler passed tests on loop 4
+2026-05-06 05:33:35 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-05-06 05:33:35 | INFO     | main |   Built 2/5 tools successfully
+2026-05-06 05:33:35 | INFO     | main |     ✅ ai_workflow_orchestrator (loops: 1)
+2026-05-06 05:33:35 | INFO     | main |     ✅ smart_task_scheduler (loops: 4)
+2026-05-06 05:33:35 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-06 05:33:35 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-06 05:33:35 | INFO     | github_publisher |   Created zip: ai_workflow_orchestrator.zip (2545 bytes)
+2026-05-06 05:33:35 | INFO     | github_publisher | Saved ai_workflow_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/ai_workflow_orchestrator
+2026-05-06 05:33:35 | INFO     | github_publisher |   Created zip: smart_task_scheduler.zip (2957 bytes)
+2026-05-06 05:33:35 | INFO     | github_publisher | Saved smart_task_scheduler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/smart_task_scheduler
+2026-05-06 05:33:35 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-05-06 05:33:35 | INFO     | main |   Published 2 tools:
+2026-05-06 05:33:35 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/ai_workflow_orchestrator
+2026-05-06 05:33:35 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/smart_task_scheduler
+2026-05-06 05:33:35 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-06 05:33:35 | INFO     | main | ✅ Generated tools_index.json with 202 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
