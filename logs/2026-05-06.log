@@ -344,3 +344,21 @@ FAILED test_smart_task_scheduler.py::test_schedule_tasks - AssertionError: at('1
 2026-05-06 05:33:35 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/smart_task_scheduler
 2026-05-06 05:33:35 | INFO     | main |   Deduplicated 4 older tool version(s) from index
 2026-05-06 05:33:35 | INFO     | main | ✅ Generated tools_index.json with 202 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-05-06 05:33:39 | INFO     | main | Database committed and pushed to repo
+2026-05-06 05:33:39 | INFO     | main | 
+2026-05-06 05:33:39 | INFO     | main | ============================================================
+2026-05-06 05:33:39 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-05-06 05:33:39 | INFO     | main | ============================================================
+2026-05-06 05:33:39 | INFO     | main |   Date:            2026-05-06
+2026-05-06 05:33:39 | INFO     | main |   Items scraped:   1323
+2026-05-06 05:33:39 | INFO     | main |   Items stored:    1091
+2026-05-06 05:33:39 | INFO     | main |   Topics found:    10
+2026-05-06 05:33:39 | INFO     | main |   Ideas generated: 5
+2026-05-06 05:33:39 | INFO     | main |   Tools built:     2
+2026-05-06 05:33:39 | INFO     | main |   Tools published: 2
+2026-05-06 05:33:39 | INFO     | main |   Elapsed:         371.1s
+2026-05-06 05:33:39 | INFO     | main |   Published URLs:
+2026-05-06 05:33:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/ai_workflow_orchestrator
+2026-05-06 05:33:39 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-06/smart_task_scheduler
+2026-05-06 05:33:39 | INFO     | main | ============================================================
+2026-05-06 05:33:41 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
