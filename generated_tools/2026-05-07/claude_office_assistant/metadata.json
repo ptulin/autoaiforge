@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_office_assistant",
+  "display_name": "Claude Office Assistant",
+  "description": "This library provides a Python API wrapper that connects Claude AI with Microsoft Office files (Word, Excel, and PowerPoint). It allows developers to automate tasks like summarizing documents, generating presentation slides from text, and analyzing Excel data. This is ideal for those building custom productivity tools for document-heavy workflows.",
+  "topic": "Claude AI Integration",
+  "date": "2026-05-07",
+  "generated": "2026-05-07T05:29:19.462335+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_office_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_office_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_office_assistant/claude_office_assistant.zip"
+}

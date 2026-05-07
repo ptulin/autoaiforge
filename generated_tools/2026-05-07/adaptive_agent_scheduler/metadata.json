@@ -1,0 +1,13 @@
+{
+  "tool_name": "adaptive_agent_scheduler",
+  "display_name": "Adaptive Agent Scheduler",
+  "description": "A Python CLI tool for dynamically scheduling tasks for multiple AI agents based on workload, priority, and agent availability. It uses heuristics and basic machine learning to ensure task allocation is optimized for efficiency and fairness.",
+  "topic": "AI Agent Frameworks",
+  "date": "2026-05-07",
+  "generated": "2026-05-07T05:29:19.462335+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/adaptive_agent_scheduler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/adaptive_agent_scheduler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/adaptive_agent_scheduler/adaptive_agent_scheduler.zip"
+}

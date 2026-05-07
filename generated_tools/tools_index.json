@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-06T05:33:35.038650+00:00",
-  "total_tools": 202,
+  "last_updated": "2026-05-07T05:34:22.539557+00:00",
+  "total_tools": 206,
   "tools": [
+    {
+      "tool_name": "adaptive_agent_scheduler",
+      "display_name": "Adaptive Agent Scheduler",
+      "description": "A Python CLI tool for dynamically scheduling tasks for multiple AI agents based on workload, priority, and agent availability. It uses heuristics and basic machine learning to ensure task allocation is optimized for efficiency and fairness.",
+      "topic": "AI Agent Frameworks",
+      "date": "2026-05-07",
+      "generated": "2026-05-07T05:29:19.462335+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/adaptive_agent_scheduler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/adaptive_agent_scheduler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/adaptive_agent_scheduler/adaptive_agent_scheduler.zip"
+    },
+    {
+      "tool_name": "agent_state_tracker",
+      "display_name": "Agent State Tracker",
+      "description": "A lightweight Python library for tracking and managing the state of autonomous AI agents during task execution. It offers state transition management, logging, and checkpointing features for developers building robust AI systems.",
+      "topic": "AI Agent Frameworks",
+      "date": "2026-05-07",
+      "generated": "2026-05-07T05:29:19.462335+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/agent_state_tracker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/agent_state_tracker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/agent_state_tracker/agent_state_tracker.zip"
+    },
+    {
+      "tool_name": "claude_email_automation",
+      "display_name": "Claude Email Automation",
+      "description": "This tool integrates Claude AI into email workflows by analyzing email content and generating intelligent responses or summaries. It can be used to automate tasks such as drafting replies, extracting action items, or summarizing long email threads. This is useful for developers looking to enhance productivity by embedding Claude's natural language capabilities into email integrations.",
+      "topic": "Claude AI Integration",
+      "date": "2026-05-07",
+      "generated": "2026-05-07T05:29:19.462335+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_email_automation",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_email_automation/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_email_automation/claude_email_automation.zip"
+    },
+    {
+      "tool_name": "claude_office_assistant",
+      "display_name": "Claude Office Assistant",
+      "description": "This library provides a Python API wrapper that connects Claude AI with Microsoft Office files (Word, Excel, and PowerPoint). It allows developers to automate tasks like summarizing documents, generating presentation slides from text, and analyzing Excel data. This is ideal for those building custom productivity tools for document-heavy workflows.",
+      "topic": "Claude AI Integration",
+      "date": "2026-05-07",
+      "generated": "2026-05-07T05:29:19.462335+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_office_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_office_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_office_assistant/claude_office_assistant.zip"
+    },
     {
       "tool_name": "ai_workflow_orchestrator",
       "display_name": "AI Workflow Orchestrator",
