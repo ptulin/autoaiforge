@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_state_tracker",
+  "display_name": "Agent State Tracker",
+  "description": "A lightweight Python library for tracking and managing the state of autonomous AI agents during task execution. It offers state transition management, logging, and checkpointing features for developers building robust AI systems.",
+  "topic": "AI Agent Frameworks",
+  "date": "2026-05-07",
+  "generated": "2026-05-07T05:29:19.462335+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/agent_state_tracker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/agent_state_tracker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/agent_state_tracker/agent_state_tracker.zip"
+}

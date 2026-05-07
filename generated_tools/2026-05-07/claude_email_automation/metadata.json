@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_email_automation",
+  "display_name": "Claude Email Automation",
+  "description": "This tool integrates Claude AI into email workflows by analyzing email content and generating intelligent responses or summaries. It can be used to automate tasks such as drafting replies, extracting action items, or summarizing long email threads. This is useful for developers looking to enhance productivity by embedding Claude's natural language capabilities into email integrations.",
+  "topic": "Claude AI Integration",
+  "date": "2026-05-07",
+  "generated": "2026-05-07T05:29:19.462335+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_email_automation",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_email_automation/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-07/claude_email_automation/claude_email_automation.zip"
+}

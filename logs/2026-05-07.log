@@ -1,0 +1,267 @@
+2026-05-07 05:29:19 | INFO     | main | ============================================================
+2026-05-07 05:29:19 | INFO     | main | AutoAIForge starting run: 2026-05-07T05:29:19.462335+00:00
+2026-05-07 05:29:19 | INFO     | main | ============================================================
+2026-05-07 05:29:19 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-07 05:29:19 | INFO     | youtube_scraper | YouTube client ready
+2026-05-07 05:29:20 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-07 05:29:20 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-07 05:29:20 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-07 05:29:20 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-07 05:29:21 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-07 05:29:21 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-07 05:29:21 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-07 05:29:22 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-07 05:29:22 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-07 05:29:22 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-07 05:29:23 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-07 05:29:23 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-07 05:29:23 | INFO     | youtube_scraper | YouTube 'vector database AI': 47 results (quota used: 1300)
+2026-05-07 05:29:23 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-07 05:29:24 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-07 05:29:24 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-07 05:29:24 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-05-07 05:29:24 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-07 05:29:25 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-07 05:29:25 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-07 05:29:25 | INFO     | youtube_scraper | YouTube total: 898 items, quota used: 2000
+2026-05-07 05:29:25 | INFO     | main |   YouTube: 842 items
+2026-05-07 05:29:25 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-07 05:29:30 | INFO     | rss_scraper | HackerNews: 155 items
+2026-05-07 05:29:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-07 05:29:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-07 05:29:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-07 05:29:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-07 05:29:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-07 05:29:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-07 05:29:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-07 05:29:37 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-07 05:29:42 | INFO     | rss_scraper | ArXiv: 111 items
+2026-05-07 05:29:46 | INFO     | rss_scraper | Dev.to: 196 items
+2026-05-07 05:29:47 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-07 05:29:47 | INFO     | rss_scraper | Free sources total: 512 unique items
+2026-05-07 05:29:47 | INFO     | main |   RSS/API sources: 512 items
+2026-05-07 05:29:47 | INFO     | main |   Total scraped: 1354 items
+2026-05-07 05:29:47 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-07 05:29:47 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-07 05:29:48 | INFO     | db_manager | Purged 968 old news items
+2026-05-07 05:29:48 | INFO     | db_manager | Inserted 1113/1354 news items
+2026-05-07 05:29:48 | INFO     | main |   SQLite: 1113 new items (total: 30474)
+2026-05-07 05:29:52 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-07 05:29:53 | INFO     | vector_store | VectorStore ready
+2026-05-07 05:30:21 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-07 05:30:21 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-07 05:30:21 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-07 05:30:21 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-07 05:30:27 | DEBUG    | llm_client | LLM response from github_models (3939 chars)
+2026-05-07 05:30:27 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-07 05:30:27 | INFO     | main |   Found 10 topics:
+2026-05-07 05:30:27 | INFO     | main |      1. [9/10] AI Agent Frameworks
+2026-05-07 05:30:27 | INFO     | main |      2. [9/10] Claude AI Integration
+2026-05-07 05:30:27 | INFO     | main |      3. [8/10] AI-Powered Personal Finance Tools
+2026-05-07 05:30:27 | INFO     | main |      4. [8/10] AI in App Design Automation
+2026-05-07 05:30:27 | INFO     | main |      5. [8/10] AI-Powered News Filtering
+2026-05-07 05:30:27 | INFO     | main |      6. [8/10] AI Server Demand Surge
+2026-05-07 05:30:27 | INFO     | main |      7. [7/10] AI Token Optimization
+2026-05-07 05:30:27 | INFO     | main |      8. [7/10] AI-Powered Chemistry Synthesis
+2026-05-07 05:30:27 | INFO     | main |      9. [7/10] AI-Powered Travel Planning
+2026-05-07 05:30:27 | INFO     | main |     10. [7/10] Free AI Education Platforms
+2026-05-07 05:30:27 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-07 05:30:27 | INFO     | main |   Existing collection: 202 tools across 109 topics
+2026-05-07 05:30:27 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-07 05:30:27 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-07 05:31:33 | DEBUG    | llm_client | LLM response from github_models (3378 chars)
+2026-05-07 05:31:33 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agent Frameworks
+2026-05-07 05:31:37 | DEBUG    | llm_client | LLM response from github_models (2415 chars)
+2026-05-07 05:31:37 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI Integration
+2026-05-07 05:31:37 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-07 05:31:37 | INFO     | main |   Generated 5 tool ideas:
+2026-05-07 05:31:37 | INFO     | main |     • taskflow_optimizer: A Python CLI tool that helps AI developers design, simulate, and optimize workfl
+2026-05-07 05:31:37 | INFO     | main |     • agent_state_tracker: A lightweight Python library for tracking and managing the state of autonomous A
+2026-05-07 05:31:37 | INFO     | main |     • adaptive_agent_scheduler: A Python CLI tool for dynamically scheduling tasks for multiple AI agents based 
+2026-05-07 05:31:37 | INFO     | main |     • claude_email_automation: This tool integrates Claude AI into email workflows by analyzing email content a
+2026-05-07 05:31:37 | INFO     | main |     • claude_office_assistant: This library provides a Python API wrapper that connects Claude AI with Microsof
+2026-05-07 05:31:37 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-07 05:31:37 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-07 05:31:46 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-07 05:31:46 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-07 05:31:46 | INFO     | tool_builder | Building tool: taskflow_optimizer …
+2026-05-07 05:31:57 | DEBUG    | llm_client | LLM response from github_models (6799 chars)
+2026-05-07 05:31:57 | DEBUG    | test_runner | Installing: ['networkx==3.1']
+2026-05-07 05:31:59 | WARNING  | test_runner | Tests FAILED for taskflow_optimizer:
+test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+E   assert ('}',) == ()
+FAILED test_taskflow_optimizer.py::test_save_optimized_workflow - AssertionError: Expected 'write' to have been called once. Called 42 times.
+assert ('}',) == ()
+2026-05-07 05:31:59 | WARNING  | tool_builder | ⚠️  taskflow_optimizer tests failed (loop 1/5) — test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-05-07 05:32:07 | DEBUG    | llm_client | LLM response from github_models (6817 chars)
+2026-05-07 05:32:07 | DEBUG    | test_runner | Installing: ['networkx']
+2026-05-07 05:32:08 | WARNING  | test_runner | Tests FAILED for taskflow_optimizer:
+test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+E   assert ('}',) == ()
+FAILED test_taskflow_optimizer.py::test_save_optimized_workflow - AssertionError: Expected 'write' to have been called once. Called 42 times.
+assert ('}',) == ()
+2026-05-07 05:32:08 | WARNING  | tool_builder | ⚠️  taskflow_optimizer tests failed (loop 2/5) — test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-05-07 05:32:18 | DEBUG    | llm_client | LLM response from github_models (7500 chars)
+2026-05-07 05:32:18 | DEBUG    | test_runner | Installing: ['networkx']
+2026-05-07 05:32:19 | WARNING  | test_runner | Tests FAILED for taskflow_optimizer:
+test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+    handle.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+E   assert ('}',) == ('{\n    "tas...}\n    ]\n}',)
+FAILED test_taskflow_optimizer.py::test_save_optimized_workflow - AssertionError: Expected 'write' to be called once. Called 42 times.
+assert ('}',) == ('{\n    "tas...}\n    ]\n}',)
+2026-05-07 05:32:19 | WARNING  | tool_builder | ⚠️  taskflow_optimizer tests failed (loop 3/5) — test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-07 05:32:28 | DEBUG    | llm_client | LLM response from github_models (7265 chars)
+2026-05-07 05:32:28 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport networkx as nx\n\ndef load_config(config_path):\n    \"\"\"Load and validate the JSON configuration file.\"\"\"\n    try:\n        with open(config_path, 'r') as f:\n            config = json.load(f)\n        validate_config(config)\n        return c
+Expecting property name enclosed in double quotes: line 6 column 1 (char 7252)
+2026-05-07 05:32:28 | DEBUG    | test_runner | Installing: ['networkx']
+2026-05-07 05:32:29 | WARNING  | test_runner | Tests FAILED for taskflow_optimizer:
+test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+    handle.write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+E   assert ('}',) == ('{\n    "tas...}\n    ]\n}',)
+FAILED test_taskflow_optimizer.py::test_save_optimized_workflow - AssertionError: Expected 'write' to be called once. Called 42 times.
+assert ('}',) == ('{\n    "tas...}\n    ]\n}',)
+2026-05-07 05:32:29 | WARNING  | tool_builder | ⚠️  taskflow_optimizer tests failed (loop 4/5) — test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-07 05:32:37 | DEBUG    | llm_client | LLM response from github_models (6943 chars)
+2026-05-07 05:32:37 | DEBUG    | test_runner | Installing: ['networkx']
+2026-05-07 05:32:38 | WARNING  | test_runner | Tests FAILED for taskflow_optimizer:
+test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+    handle.write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+E   assert ('}',) == ()
+FAILED test_taskflow_optimizer.py::test_save_optimized_workflow - AssertionError: Expected 'write' to have been called once. Called 42 times.
+assert ('}',) == ()
+2026-05-07 05:32:38 | WARNING  | tool_builder | ⚠️  taskflow_optimizer tests failed (loop 5/5) — test_taskflow_optimizer.py::test_save_optimized_workflow FAILED          [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-05-07 05:32:38 | ERROR    | tool_builder | ❌ taskflow_optimizer failed after 5 loops
+2026-05-07 05:32:38 | INFO     | tool_builder | Building tool: agent_state_tracker …
+2026-05-07 05:32:44 | DEBUG    | llm_client | LLM response from github_models (4507 chars)
+2026-05-07 05:32:44 | DEBUG    | test_runner | Installing: ['pytest==7.4.0']
+2026-05-07 05:32:44 | INFO     | test_runner | Tests PASSED for agent_state_tracker
+2026-05-07 05:32:44 | INFO     | tool_builder | ✅ agent_state_tracker passed tests on loop 1
+2026-05-07 05:32:44 | INFO     | tool_builder | Building tool: adaptive_agent_scheduler …
+2026-05-07 05:32:53 | DEBUG    | llm_client | LLM response from github_models (6330 chars)
+2026-05-07 05:32:53 | DEBUG    | test_runner | Installing: ['pandas==1.3.5', 'scikit-learn==1.0.2', 'pytest==7.4.0']
+2026-05-07 05:32:57 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [20 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-05-07 05:32:57 | WARNING  | test_runner | Tests FAILED for adaptive_agent_scheduler:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_adaptive_agent_scheduler.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/adaptive_agent_scheduler/test_adaptive_agent_scheduler.py'.
+E   ModuleNotFoundError: No module named 'pandas'
+ERROR test_adaptive_agent_scheduler.py
+2026-05-07 05:32:57 | WARNING  | tool_builder | ⚠️  adaptive_agent_scheduler tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_adaptive_agent_scheduler.py _______________
+ImportError while importing test modul
+2026-05-07 05:33:06 | DEBUG    | llm_client | LLM response from github_models (6203 chars)
+2026-05-07 05:33:06 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn']
+2026-05-07 05:33:18 | WARNING  | test_runner | Tests FAILED for adaptive_agent_scheduler:
+test_adaptive_agent_scheduler.py::test_save_schedule FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+    handle.write.assert_called_once_with(json.dumps(schedule, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 42 times.
+E   assert (']',) == ('[\n    {\n ...5\n    }\n]',)
+FAILED test_adaptive_agent_scheduler.py::test_save_schedule - AssertionError: Expected 'write' to be called once. Called 42 times.
+assert (']',) == ('[\n    {\n ...5\n    }\n]',)
+2026-05-07 05:33:18 | WARNING  | tool_builder | ⚠️  adaptive_agent_scheduler tests failed (loop 2/5) — test_adaptive_agent_scheduler.py::test_save_schedule FAILED              [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-07 05:33:28 | DEBUG    | llm_client | LLM response from github_models (6139 chars)
+2026-05-07 05:33:28 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn']
+2026-05-07 05:33:29 | INFO     | test_runner | Tests PASSED for adaptive_agent_scheduler
+2026-05-07 05:33:29 | INFO     | tool_builder | ✅ adaptive_agent_scheduler passed tests on loop 3
+2026-05-07 05:33:29 | INFO     | tool_builder | Building tool: claude_email_automation …
+2026-05-07 05:33:42 | DEBUG    | llm_client | LLM response from github_models (7671 chars)
+2026-05-07 05:33:42 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'email-parser==0.6.8']
+2026-05-07 05:33:42 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement email-parser==0.6.8 (from versions: none)
+ERROR: No matching distribution found for email-parser==0.6.8
+
+2026-05-07 05:33:42 | WARNING  | test_runner | Tests FAILED for claude_email_automation:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_email_automation.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_email_automation/test_claude_email_automation.py'.
+E   ModuleNotFoundError: No module named 'email_parser'
+ERROR test_claude_email_automation.py
+2026-05-07 05:33:42 | WARNING  | tool_builder | ⚠️  claude_email_automation tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_claude_email_automation.py _______________
+ImportError while importing test modul
+2026-05-07 05:33:51 | DEBUG    | llm_client | LLM response from github_models (7916 chars)
+2026-05-07 05:33:51 | DEBUG    | test_runner | Installing: ['openai']
+2026-05-07 05:33:55 | INFO     | test_runner | Tests PASSED for claude_email_automation
+2026-05-07 05:33:55 | INFO     | tool_builder | ✅ claude_email_automation passed tests on loop 2
+2026-05-07 05:33:55 | INFO     | tool_builder | Building tool: claude_office_assistant …
+2026-05-07 05:34:06 | DEBUG    | llm_client | LLM response from github_models (6724 chars)
+2026-05-07 05:34:06 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'python-docx==0.8.11', 'openpyxl==3.1.2', 'python-pptx==0.6.21']
+2026-05-07 05:34:14 | WARNING  | test_runner | Tests FAILED for claude_office_assistant:
+test_claude_office_assistant.py::test_summarize_word FAILED              [ 33%]
+    raise FileNotFoundError("The specified Word file does not exist.")
+E   FileNotFoundError: The specified Word file does not exist.
+FAILED test_claude_office_assistant.py::test_summarize_word - FileNotFoundError: The specified Word file does not exist.
+2026-05-07 05:34:14 | WARNING  | tool_builder | ⚠️  claude_office_assistant tests failed (loop 1/5) — test_claude_office_assistant.py::test_summarize_word FAILED              [ 33%]
+    raise FileNotFoundError("The specified Word file does not exist.")
+E   FileNotFoundError: The specified Word file do
+2026-05-07 05:34:21 | DEBUG    | llm_client | LLM response from github_models (6618 chars)
+2026-05-07 05:34:21 | DEBUG    | test_runner | Installing: ['python-docx', 'openpyxl', 'python-pptx', 'openai']
+2026-05-07 05:34:22 | INFO     | test_runner | Tests PASSED for claude_office_assistant
+2026-05-07 05:34:22 | INFO     | tool_builder | ✅ claude_office_assistant passed tests on loop 2
+2026-05-07 05:34:22 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-07 05:34:22 | INFO     | main |   Built 4/5 tools successfully
+2026-05-07 05:34:22 | INFO     | main |     ✅ agent_state_tracker (loops: 1)
+2026-05-07 05:34:22 | INFO     | main |     ✅ adaptive_agent_scheduler (loops: 3)
+2026-05-07 05:34:22 | INFO     | main |     ✅ claude_email_automation (loops: 2)
+2026-05-07 05:34:22 | INFO     | main |     ✅ claude_office_assistant (loops: 2)
+2026-05-07 05:34:22 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-07 05:34:22 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-07 05:34:22 | INFO     | github_publisher |   Created zip: agent_state_tracker.zip (1911 bytes)
+2026-05-07 05:34:22 | INFO     | github_publisher | Saved agent_state_tracker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/agent_state_tracker
+2026-05-07 05:34:22 | INFO     | github_publisher |   Created zip: adaptive_agent_scheduler.zip (2697 bytes)
+2026-05-07 05:34:22 | INFO     | github_publisher | Saved adaptive_agent_scheduler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/adaptive_agent_scheduler
+2026-05-07 05:34:22 | INFO     | github_publisher |   Created zip: claude_email_automation.zip (3017 bytes)
+2026-05-07 05:34:22 | INFO     | github_publisher | Saved claude_email_automation → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_email_automation
+2026-05-07 05:34:22 | INFO     | github_publisher |   Created zip: claude_office_assistant.zip (2915 bytes)
+2026-05-07 05:34:22 | INFO     | github_publisher | Saved claude_office_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_office_assistant
+2026-05-07 05:34:22 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-07 05:34:22 | INFO     | main |   Published 4 tools:
+2026-05-07 05:34:22 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/agent_state_tracker
+2026-05-07 05:34:22 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/adaptive_agent_scheduler
+2026-05-07 05:34:22 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_email_automation
+2026-05-07 05:34:22 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-07/claude_office_assistant
+2026-05-07 05:34:22 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-07 05:34:22 | INFO     | main | ✅ Generated tools_index.json with 206 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
