@@ -1,0 +1,13 @@
+{
+  "tool_name": "safe_command_validator",
+  "display_name": "Safe Command Validator",
+  "description": "This library acts as a middleware for AI agents to validate system-level commands before execution. By comparing commands against a predefined whitelist or blacklist, it prevents unauthorized or dangerous commands from running, adding a safety layer in production environments.",
+  "topic": "AI Safety and Risk Monitoring",
+  "date": "2026-05-08",
+  "generated": "2026-05-08T04:52:58.789140+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-08/safe_command_validator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-08/safe_command_validator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-08/safe_command_validator/safe_command_validator.zip"
+}
