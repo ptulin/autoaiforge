@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_to_storyboard",
+  "display_name": "Prompt to Storyboard Generator",
+  "description": "This tool takes a text prompt describing a movie scene and generates a storyboard with keyframes and descriptions. It leverages AI text-to-image models to create visual representations of scenes and combines them into a coherent storyboard structure, allowing developers and storytellers to prototype AI-generated videos more effectively.",
+  "topic": "AI-Powered Movie Generation",
+  "date": "2026-05-08",
+  "generated": "2026-05-08T04:52:58.789140+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-08/prompt_to_storyboard",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-08/prompt_to_storyboard/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-08/prompt_to_storyboard/prompt_to_storyboard.zip"
+}
