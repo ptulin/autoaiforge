@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_agent_orchestrator",
+  "display_name": "Claude Agent Orchestrator",
+  "description": "This tool allows developers to efficiently manage, monitor, and optimize multiple Claude AI agents working on collaborative tasks. It provides a CLI for orchestrating workflows, setting task dependencies, and visualizing agent interactions in real-time. This ensures that tasks are completed in the most efficient order with minimal resource contention.",
+  "topic": "Claude AI Multi-Agent Collaboration",
+  "date": "2026-05-09",
+  "generated": "2026-05-09T05:20:16.676160+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/claude_agent_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/claude_agent_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/claude_agent_orchestrator/claude_agent_orchestrator.zip"
+}

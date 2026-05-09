@@ -1,0 +1,13 @@
+{
+  "tool_name": "gemini_workflow_integration",
+  "display_name": "Gemini Workflow Integration Tool",
+  "description": "This automation tool helps developers integrate Google Gemini models directly into their existing machine learning workflows. It generates boilerplate code, configuration files, and API wrappers to simplify adoption of Gemini models into Python-based projects.",
+  "topic": "Google Gemini AI Advancements",
+  "date": "2026-05-09",
+  "generated": "2026-05-09T05:20:16.676160+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_workflow_integration",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/gemini_workflow_integration/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/gemini_workflow_integration/gemini_workflow_integration.zip"
+}
