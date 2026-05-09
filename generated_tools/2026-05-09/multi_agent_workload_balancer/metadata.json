@@ -1,0 +1,13 @@
+{
+  "tool_name": "multi_agent_workload_balancer",
+  "display_name": "Multi-Agent Workload Balancer",
+  "description": "A utility to balance workloads for Claude AI multi-agent systems by dynamically assigning tasks based on agent performance metrics and task complexity. This tool helps ensure resources are optimally utilized while avoiding bottlenecks or idle agents.",
+  "topic": "Claude AI Multi-Agent Collaboration",
+  "date": "2026-05-09",
+  "generated": "2026-05-09T05:20:16.676160+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/multi_agent_workload_balancer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/multi_agent_workload_balancer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/multi_agent_workload_balancer/multi_agent_workload_balancer.zip"
+}

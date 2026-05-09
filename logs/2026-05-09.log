@@ -1,0 +1,228 @@
+2026-05-09 05:20:16 | INFO     | main | ============================================================
+2026-05-09 05:20:16 | INFO     | main | AutoAIForge starting run: 2026-05-09T05:20:16.676160+00:00
+2026-05-09 05:20:16 | INFO     | main | ============================================================
+2026-05-09 05:20:16 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-09 05:20:16 | INFO     | youtube_scraper | YouTube client ready
+2026-05-09 05:20:17 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-09 05:20:17 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-09 05:20:18 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-09 05:20:18 | INFO     | youtube_scraper | YouTube 'LLM advancements': 2 results (quota used: 400)
+2026-05-09 05:20:18 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-09 05:20:19 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-09 05:20:19 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-09 05:20:19 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-09 05:20:20 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-09 05:20:20 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-09 05:20:20 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-09 05:20:21 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-09 05:20:21 | INFO     | youtube_scraper | YouTube 'vector database AI': 32 results (quota used: 1300)
+2026-05-09 05:20:21 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-09 05:20:22 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-09 05:20:22 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-09 05:20:22 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-09 05:20:23 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-09 05:20:23 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-09 05:20:23 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-09 05:20:23 | INFO     | youtube_scraper | YouTube total: 886 items, quota used: 2000
+2026-05-09 05:20:23 | INFO     | main |   YouTube: 819 items
+2026-05-09 05:20:23 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-09 05:20:28 | INFO     | rss_scraper | HackerNews: 160 items
+2026-05-09 05:20:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-09 05:20:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-09 05:20:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-09 05:20:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-09 05:20:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-09 05:20:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-09 05:20:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-09 05:20:36 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-09 05:20:46 | INFO     | rss_scraper | ArXiv: 113 items
+2026-05-09 05:20:50 | INFO     | rss_scraper | Dev.to: 195 items
+2026-05-09 05:20:51 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-09 05:20:51 | INFO     | rss_scraper | Free sources total: 518 unique items
+2026-05-09 05:20:51 | INFO     | main |   RSS/API sources: 518 items
+2026-05-09 05:20:51 | INFO     | main |   Total scraped: 1337 items
+2026-05-09 05:20:51 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-09 05:20:51 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-09 05:20:52 | INFO     | db_manager | Purged 1066 old news items
+2026-05-09 05:20:52 | INFO     | db_manager | Inserted 1133/1337 news items
+2026-05-09 05:20:52 | INFO     | main |   SQLite: 1133 new items (total: 30542)
+2026-05-09 05:20:56 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-09 05:20:58 | INFO     | vector_store | VectorStore ready
+2026-05-09 05:21:16 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-09 05:21:16 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-09 05:21:16 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-09 05:21:16 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-09 05:21:24 | DEBUG    | llm_client | LLM response from github_models (3809 chars)
+2026-05-09 05:21:24 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-09 05:21:24 | INFO     | main |   Found 10 topics:
+2026-05-09 05:21:24 | INFO     | main |      1. [9/10] Google Gemini AI Advancements
+2026-05-09 05:21:24 | INFO     | main |      2. [8/10] Claude AI Multi-Agent Collaboration
+2026-05-09 05:21:24 | INFO     | main |      3. [8/10] Voice AI Upgrades by OpenAI
+2026-05-09 05:21:24 | INFO     | main |      4. [8/10] AI-Driven Cybersecurity Threats
+2026-05-09 05:21:24 | INFO     | main |      5. [8/10] AI for Green Technology
+2026-05-09 05:21:24 | INFO     | main |      6. [7/10] LLMs for Formal Verification
+2026-05-09 05:21:24 | INFO     | main |      7. [7/10] AI-Powered Prompt Engineering Tools
+2026-05-09 05:21:24 | INFO     | main |      8. [7/10] AI in Drug Discovery
+2026-05-09 05:21:24 | INFO     | main |      9. [6/10] AI in Ethical Military Applications
+2026-05-09 05:21:24 | INFO     | main |     10. [6/10] Claude AI Effort Level Tracking
+2026-05-09 05:21:24 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-09 05:21:24 | INFO     | main |   Existing collection: 209 tools across 113 topics
+2026-05-09 05:21:24 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-09 05:21:31 | DEBUG    | llm_client | LLM response from github_models (3472 chars)
+2026-05-09 05:21:31 | INFO     | idea_generator | Generated 3 ideas for topic: Google Gemini AI Advancements
+2026-05-09 05:21:38 | DEBUG    | llm_client | LLM response from github_models (2589 chars)
+2026-05-09 05:21:38 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI Multi-Agent Collaboration
+2026-05-09 05:21:38 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-09 05:21:38 | INFO     | main |   Generated 5 tool ideas:
+2026-05-09 05:21:38 | INFO     | main |     • gemini_benchmark_suite: This CLI tool benchmarks Google Gemini models (e.g., Gemini 3 and 3.1) on a vari
+2026-05-09 05:21:38 | INFO     | main |     • gemini_cost_optimizer: This library helps developers estimate and optimize the cost-efficiency of using
+2026-05-09 05:21:38 | INFO     | main |     • gemini_workflow_integration: This automation tool helps developers integrate Google Gemini models directly in
+2026-05-09 05:21:38 | INFO     | main |     • claude_agent_orchestrator: This tool allows developers to efficiently manage, monitor, and optimize multipl
+2026-05-09 05:21:38 | INFO     | main |     • multi_agent_workload_balancer: A utility to balance workloads for Claude AI multi-agent systems by dynamically 
+2026-05-09 05:21:38 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-09 05:21:38 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-09 05:21:46 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-09 05:21:46 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-09 05:21:46 | INFO     | tool_builder | Building tool: gemini_benchmark_suite …
+2026-05-09 05:21:57 | DEBUG    | llm_client | LLM response from github_models (6200 chars)
+2026-05-09 05:21:57 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pandas==1.5.3', 'matplotlib==3.7.2']
+2026-05-09 05:22:06 | WARNING  | test_runner | Tests FAILED for gemini_benchmark_suite:
+test_gemini_benchmark_suite.py::test_benchmark_model FAILED              [ 33%]
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+    assert result["accuracy"] == 0.9
+E   assert 0.79 == 0.9
+E   FileNotFoundError: [Errno 2] No such file or directory: 'dataset.csv'
+Error: Invalid value for '--dataset': Path 'dataset.csv' does not exist.
+FAILED test_gemini_benchmark_suite.py::test_benchmark_model - assert 0.79 == 0.9
+FAILED test_gemini_benchmark_suite.py::test_main_with_valid_data - SystemExit: 2
+2026-05-09 05:22:06 | WARNING  | tool_builder | ⚠️  gemini_benchmark_suite tests failed (loop 1/5) — test_gemini_benchmark_suite.py::test_benchmark_model FAILED              [ 33%]
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+    assert result["accuracy"] == 0.9
+E  
+2026-05-09 05:22:16 | DEBUG    | llm_client | LLM response from github_models (7221 chars)
+2026-05-09 05:22:16 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-09 05:22:17 | WARNING  | test_runner | Tests FAILED for gemini_benchmark_suite:
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+test_gemini_benchmark_suite.py::test_main_with_empty_dataset FAILED      [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+    mock_benchmark.assert_called_once_with("gemini-3", mock_read_csv.return_value)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+Error: Dataset file 'dataset.csv' does not exist.
+Error: Dataset file 'dataset.csv' does not exist.
+FAILED test_gemini_benchmark_suite.py::test_main_with_valid_data - AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+FAILED test_gemini_benchmark_suite.py::test_main_with_empty_dataset - Failed: DID NOT RAISE <class 'SystemExit'>
+2026-05-09 05:22:17 | WARNING  | tool_builder | ⚠️  gemini_benchmark_suite tests failed (loop 2/5) — test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+test_gemini_benchmark_suite.py::test_main_with_empty_dataset FAILED      [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-05-09 05:22:26 | DEBUG    | llm_client | LLM response from github_models (7006 chars)
+2026-05-09 05:22:26 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'pytest']
+2026-05-09 05:22:28 | WARNING  | test_runner | Tests FAILED for gemini_benchmark_suite:
+test_gemini_benchmark_suite.py::test_benchmark_model FAILED              [ 33%]
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+    assert result["latency"] == 0.2
+E   assert 0.5 == 0.2
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+    mock_benchmark.assert_called_once_with("gemini-3", mock_read_csv.return_value)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+Error: Dataset file 'dataset.csv' does not exist.
+FAILED test_gemini_benchmark_suite.py::test_benchmark_model - assert 0.5 == 0.2
+FAILED test_gemini_benchmark_suite.py::test_main_with_valid_data - AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+2026-05-09 05:22:28 | WARNING  | tool_builder | ⚠️  gemini_benchmark_suite tests failed (loop 3/5) — test_gemini_benchmark_suite.py::test_benchmark_model FAILED              [ 33%]
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+    assert result["latency"] == 0.2
+E   
+2026-05-09 05:22:37 | DEBUG    | llm_client | LLM response from github_models (7251 chars)
+2026-05-09 05:22:37 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-09 05:22:38 | WARNING  | test_runner | Tests FAILED for gemini_benchmark_suite:
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+    mock_benchmark.assert_called_once_with("gemini-3", mock_read_csv.return_value)
+E   AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+Error: Dataset file 'dataset.csv' does not exist.
+FAILED test_gemini_benchmark_suite.py::test_main_with_valid_data - AssertionError: Expected 'benchmark_model' to be called once. Called 0 times.
+2026-05-09 05:22:38 | WARNING  | tool_builder | ⚠️  gemini_benchmark_suite tests failed (loop 4/5) — test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-09 05:22:48 | DEBUG    | llm_client | LLM response from github_models (7718 chars)
+2026-05-09 05:22:48 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'pytest']
+2026-05-09 05:22:50 | WARNING  | test_runner | Tests FAILED for gemini_benchmark_suite:
+test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 50%]
+test_gemini_benchmark_suite.py::test_main_with_empty_dataset FAILED      [ 75%]
+E   TypeError: a bytes-like object is required, not 'str'
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_gemini_benchmark_suite.py::test_main_with_valid_data - TypeError: a bytes-like object is required, not 'str'
+FAILED test_gemini_benchmark_suite.py::test_main_with_empty_dataset - TypeError: a bytes-like object is required, not 'str'
+2026-05-09 05:22:50 | WARNING  | tool_builder | ⚠️  gemini_benchmark_suite tests failed (loop 5/5) — test_gemini_benchmark_suite.py::test_main_with_valid_data FAILED         [ 50%]
+test_gemini_benchmark_suite.py::test_main_with_empty_dataset FAILED      [ 75%]
+E   TypeError: a bytes-like object is re
+2026-05-09 05:22:50 | ERROR    | tool_builder | ❌ gemini_benchmark_suite failed after 5 loops
+2026-05-09 05:22:50 | INFO     | tool_builder | Building tool: gemini_cost_optimizer …
+2026-05-09 05:22:58 | DEBUG    | llm_client | LLM response from github_models (6812 chars)
+2026-05-09 05:22:58 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pyyaml==6.0', 'tabulate==0.9.0']
+2026-05-09 05:23:01 | INFO     | test_runner | Tests PASSED for gemini_cost_optimizer
+2026-05-09 05:23:01 | INFO     | tool_builder | ✅ gemini_cost_optimizer passed tests on loop 1
+2026-05-09 05:23:01 | INFO     | tool_builder | Building tool: gemini_workflow_integration …
+2026-05-09 05:23:11 | DEBUG    | llm_client | LLM response from github_models (6121 chars)
+2026-05-09 05:23:11 | DEBUG    | test_runner | Installing: ['typer==0.9.0', 'jinja2==3.1.2', 'requests==2.31.0']
+2026-05-09 05:23:12 | WARNING  | test_runner | Tests FAILED for gemini_workflow_integration:
+test_gemini_workflow_integration.py::test_generate_files FAILED          [100%]
+E   NameError: name 'json' is not defined
+FAILED test_gemini_workflow_integration.py::test_generate_files - NameError: name 'json' is not defined
+2026-05-09 05:23:12 | WARNING  | tool_builder | ⚠️  gemini_workflow_integration tests failed (loop 1/5) — test_gemini_workflow_integration.py::test_generate_files FAILED          [100%]
+E   NameError: name 'json' is not defined
+FAILED test_gemini_workflow_integration.py::test_generate_files - NameError: n
+2026-05-09 05:23:20 | DEBUG    | llm_client | LLM response from github_models (5769 chars)
+2026-05-09 05:23:20 | DEBUG    | test_runner | Installing: ['typer', 'jinja2', 'requests']
+2026-05-09 05:23:20 | INFO     | test_runner | Tests PASSED for gemini_workflow_integration
+2026-05-09 05:23:20 | INFO     | tool_builder | ✅ gemini_workflow_integration passed tests on loop 2
+2026-05-09 05:23:20 | INFO     | tool_builder | Building tool: claude_agent_orchestrator …
+2026-05-09 05:23:31 | DEBUG    | llm_client | LLM response from github_models (7364 chars)
+2026-05-09 05:23:31 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'rich==13.5.2', 'networkx==3.1', 'PyYAML==6.0']
+2026-05-09 05:23:33 | WARNING  | test_runner | Tests FAILED for claude_agent_orchestrator:
+test_claude_agent_orchestrator.py::test_execute_workflow FAILED          [100%]
+    assert task['status'] == 'completed'
+E   AssertionError: assert 'pending' == 'completed'
+FAILED test_claude_agent_orchestrator.py::test_execute_workflow - AssertionError: assert 'pending' == 'completed'
+2026-05-09 05:23:33 | WARNING  | tool_builder | ⚠️  claude_agent_orchestrator tests failed (loop 1/5) — test_claude_agent_orchestrator.py::test_execute_workflow FAILED          [100%]
+    assert task['status'] == 'completed'
+E   AssertionError: assert 'pending' == 'completed'
+FAILED test_claude_agent_or
+2026-05-09 05:23:43 | DEBUG    | llm_client | LLM response from github_models (8377 chars)
+2026-05-09 05:23:43 | DEBUG    | test_runner | Installing: ['rich', 'pyyaml', 'networkx']
+2026-05-09 05:23:43 | INFO     | test_runner | Tests PASSED for claude_agent_orchestrator
+2026-05-09 05:23:43 | INFO     | tool_builder | ✅ claude_agent_orchestrator passed tests on loop 2
+2026-05-09 05:23:43 | INFO     | tool_builder | Building tool: multi_agent_workload_balancer …
+2026-05-09 05:23:52 | DEBUG    | llm_client | LLM response from github_models (5835 chars)
+2026-05-09 05:23:52 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pandas==1.5.3', 'psutil==5.9.5', 'pyyaml==6.0']
+2026-05-09 05:23:53 | INFO     | test_runner | Tests PASSED for multi_agent_workload_balancer
+2026-05-09 05:23:53 | INFO     | tool_builder | ✅ multi_agent_workload_balancer passed tests on loop 1
+2026-05-09 05:23:53 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-09 05:23:53 | INFO     | main |   Built 4/5 tools successfully
+2026-05-09 05:23:53 | INFO     | main |     ✅ gemini_cost_optimizer (loops: 1)
+2026-05-09 05:23:53 | INFO     | main |     ✅ gemini_workflow_integration (loops: 2)
+2026-05-09 05:23:53 | INFO     | main |     ✅ claude_agent_orchestrator (loops: 2)
+2026-05-09 05:23:53 | INFO     | main |     ✅ multi_agent_workload_balancer (loops: 1)
+2026-05-09 05:23:53 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-09 05:23:53 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-09 05:23:53 | INFO     | github_publisher |   Created zip: gemini_cost_optimizer.zip (2721 bytes)
+2026-05-09 05:23:53 | INFO     | github_publisher | Saved gemini_cost_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_cost_optimizer
+2026-05-09 05:23:53 | INFO     | github_publisher |   Created zip: gemini_workflow_integration.zip (2538 bytes)
+2026-05-09 05:23:53 | INFO     | github_publisher | Saved gemini_workflow_integration → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_workflow_integration
+2026-05-09 05:23:53 | INFO     | github_publisher |   Created zip: claude_agent_orchestrator.zip (2928 bytes)
+2026-05-09 05:23:53 | INFO     | github_publisher | Saved claude_agent_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/claude_agent_orchestrator
+2026-05-09 05:23:53 | INFO     | github_publisher |   Created zip: multi_agent_workload_balancer.zip (2602 bytes)
+2026-05-09 05:23:53 | INFO     | github_publisher | Saved multi_agent_workload_balancer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/multi_agent_workload_balancer
+2026-05-09 05:23:53 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-09 05:23:53 | INFO     | main |   Published 4 tools:
+2026-05-09 05:23:53 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_cost_optimizer
+2026-05-09 05:23:53 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_workflow_integration
+2026-05-09 05:23:53 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/claude_agent_orchestrator
+2026-05-09 05:23:53 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/multi_agent_workload_balancer
+2026-05-09 05:23:53 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-09 05:23:53 | INFO     | main | ✅ Generated tools_index.json with 213 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

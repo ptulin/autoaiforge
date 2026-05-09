@@ -1,0 +1,13 @@
+{
+  "tool_name": "gemini_cost_optimizer",
+  "display_name": "Gemini Cost Optimizer",
+  "description": "This library helps developers estimate and optimize the cost-efficiency of using Google Gemini models in their workflows. By analyzing usage patterns and input/output sizes, it provides recommendations for cost-effective configurations and helps balance performance and expenses.",
+  "topic": "Google Gemini AI Advancements",
+  "date": "2026-05-09",
+  "generated": "2026-05-09T05:20:16.676160+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-09/gemini_cost_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/gemini_cost_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-09/gemini_cost_optimizer/gemini_cost_optimizer.zip"
+}
