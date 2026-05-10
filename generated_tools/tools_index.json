@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-09T05:23:53.966609+00:00",
-  "total_tools": 213,
+  "last_updated": "2026-05-10T05:41:07.390411+00:00",
+  "total_tools": 217,
   "tools": [
+    {
+      "tool_name": "claude_change_tracker",
+      "display_name": "Claude Change Tracker",
+      "description": "A Python library that tracks and highlights changes in Claude's performance metrics over time, based on input/output pairs and expected results. This tool helps developers assess the impact of Claude's learning iterations on task-specific performance.",
+      "topic": "Claude AI Self-Improvement",
+      "date": "2026-05-10",
+      "generated": "2026-05-10T05:35:03.631756+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/claude_change_tracker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/claude_change_tracker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/claude_change_tracker/claude_change_tracker.zip"
+    },
+    {
+      "tool_name": "dream_diff_visualizer",
+      "display_name": "Dream Diff Visualizer",
+      "description": "A CLI tool to compare two dreaming session outputs from Claude AI and generate an interactive visual diff, helping developers pinpoint specific areas of improvement or regression in the model's updates.",
+      "topic": "Claude AI Self-Improvement",
+      "date": "2026-05-10",
+      "generated": "2026-05-10T05:35:03.631756+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/dream_diff_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/dream_diff_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/dream_diff_visualizer/dream_diff_visualizer.zip"
+    },
+    {
+      "tool_name": "pathfinder_navigation_assist",
+      "display_name": "Pathfinder Navigation Assist",
+      "description": "This CLI tool processes sensor input (e.g., depth cameras or LiDAR) from smart glasses to identify obstacles and generate navigation guidance. It is tailored for developers creating assistive tools for visually impaired users and includes features like collision warnings and optimal path suggestions.",
+      "topic": "AI-Powered Assistive Technologies",
+      "date": "2026-05-10",
+      "generated": "2026-05-10T05:35:03.631756+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/pathfinder_navigation_assist",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/pathfinder_navigation_assist/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/pathfinder_navigation_assist/pathfinder_navigation_assist.zip"
+    },
+    {
+      "tool_name": "smart_glasses_ai_bridge",
+      "display_name": "Smart Glasses AI Bridge",
+      "description": "This library simplifies the integration of AI models with smart glasses hardware by providing an abstracted interface to process video streams, perform real-time object detection, and send audio feedback to the user. It is highly useful for developers building AI-powered assistive technologies for visually impaired individuals.",
+      "topic": "AI-Powered Assistive Technologies",
+      "date": "2026-05-10",
+      "generated": "2026-05-10T05:35:03.631756+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/smart_glasses_ai_bridge",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/smart_glasses_ai_bridge/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/smart_glasses_ai_bridge/smart_glasses_ai_bridge.zip"
+    },
     {
       "tool_name": "claude_agent_orchestrator",
       "display_name": "Claude Agent Orchestrator",

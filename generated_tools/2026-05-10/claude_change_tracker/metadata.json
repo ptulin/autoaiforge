@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_change_tracker",
+  "display_name": "Claude Change Tracker",
+  "description": "A Python library that tracks and highlights changes in Claude's performance metrics over time, based on input/output pairs and expected results. This tool helps developers assess the impact of Claude's learning iterations on task-specific performance.",
+  "topic": "Claude AI Self-Improvement",
+  "date": "2026-05-10",
+  "generated": "2026-05-10T05:35:03.631756+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/claude_change_tracker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/claude_change_tracker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/claude_change_tracker/claude_change_tracker.zip"
+}

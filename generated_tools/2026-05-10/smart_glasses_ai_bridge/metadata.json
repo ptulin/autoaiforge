@@ -1,0 +1,13 @@
+{
+  "tool_name": "smart_glasses_ai_bridge",
+  "display_name": "Smart Glasses AI Bridge",
+  "description": "This library simplifies the integration of AI models with smart glasses hardware by providing an abstracted interface to process video streams, perform real-time object detection, and send audio feedback to the user. It is highly useful for developers building AI-powered assistive technologies for visually impaired individuals.",
+  "topic": "AI-Powered Assistive Technologies",
+  "date": "2026-05-10",
+  "generated": "2026-05-10T05:35:03.631756+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/smart_glasses_ai_bridge",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/smart_glasses_ai_bridge/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/smart_glasses_ai_bridge/smart_glasses_ai_bridge.zip"
+}

@@ -1,0 +1,13 @@
+{
+  "tool_name": "dream_diff_visualizer",
+  "display_name": "Dream Diff Visualizer",
+  "description": "A CLI tool to compare two dreaming session outputs from Claude AI and generate an interactive visual diff, helping developers pinpoint specific areas of improvement or regression in the model's updates.",
+  "topic": "Claude AI Self-Improvement",
+  "date": "2026-05-10",
+  "generated": "2026-05-10T05:35:03.631756+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/dream_diff_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/dream_diff_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/dream_diff_visualizer/dream_diff_visualizer.zip"
+}

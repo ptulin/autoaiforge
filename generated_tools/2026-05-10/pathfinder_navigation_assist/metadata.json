@@ -1,0 +1,13 @@
+{
+  "tool_name": "pathfinder_navigation_assist",
+  "display_name": "Pathfinder Navigation Assist",
+  "description": "This CLI tool processes sensor input (e.g., depth cameras or LiDAR) from smart glasses to identify obstacles and generate navigation guidance. It is tailored for developers creating assistive tools for visually impaired users and includes features like collision warnings and optimal path suggestions.",
+  "topic": "AI-Powered Assistive Technologies",
+  "date": "2026-05-10",
+  "generated": "2026-05-10T05:35:03.631756+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/pathfinder_navigation_assist",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/pathfinder_navigation_assist/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-10/pathfinder_navigation_assist/pathfinder_navigation_assist.zip"
+}

@@ -1,0 +1,315 @@
+2026-05-10 05:35:03 | INFO     | main | ============================================================
+2026-05-10 05:35:03 | INFO     | main | AutoAIForge starting run: 2026-05-10T05:35:03.631756+00:00
+2026-05-10 05:35:03 | INFO     | main | ============================================================
+2026-05-10 05:35:03 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-10 05:35:03 | INFO     | youtube_scraper | YouTube client ready
+2026-05-10 05:35:04 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-10 05:35:04 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-10 05:35:04 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-10 05:35:05 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-10 05:35:05 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-10 05:35:06 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-10 05:35:06 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-10 05:35:06 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-10 05:35:07 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-10 05:35:07 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-10 05:35:07 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-10 05:35:08 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-10 05:35:08 | INFO     | youtube_scraper | YouTube 'vector database AI': 45 results (quota used: 1300)
+2026-05-10 05:35:08 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-10 05:35:09 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-10 05:35:09 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-10 05:35:09 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-05-10 05:35:09 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-10 05:35:10 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-10 05:35:10 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-10 05:35:10 | INFO     | youtube_scraper | YouTube total: 898 items, quota used: 2000
+2026-05-10 05:35:10 | INFO     | main |   YouTube: 828 items
+2026-05-10 05:35:10 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-10 05:35:15 | INFO     | rss_scraper | HackerNews: 151 items
+2026-05-10 05:35:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-10 05:35:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-10 05:35:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-10 05:35:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-10 05:35:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-10 05:35:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-10 05:35:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-10 05:35:22 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-10 05:35:28 | INFO     | rss_scraper | ArXiv: 113 items
+2026-05-10 05:35:32 | INFO     | rss_scraper | Dev.to: 199 items
+2026-05-10 05:35:33 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-10 05:35:33 | INFO     | rss_scraper | Free sources total: 513 unique items
+2026-05-10 05:35:33 | INFO     | main |   RSS/API sources: 513 items
+2026-05-10 05:35:33 | INFO     | main |   Total scraped: 1341 items
+2026-05-10 05:35:33 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-10 05:35:33 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-10 05:35:33 | INFO     | db_manager | Purged 1115 old news items
+2026-05-10 05:35:33 | INFO     | db_manager | Inserted 989/1341 news items
+2026-05-10 05:35:33 | INFO     | main |   SQLite: 989 new items (total: 30416)
+2026-05-10 05:35:38 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-10 05:35:39 | INFO     | vector_store | VectorStore ready
+2026-05-10 05:36:10 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-10 05:36:10 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-10 05:36:10 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-10 05:36:10 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-10 05:36:19 | DEBUG    | llm_client | LLM response from github_models (4323 chars)
+2026-05-10 05:36:19 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-10 05:36:19 | INFO     | main |   Found 10 topics:
+2026-05-10 05:36:19 | INFO     | main |      1. [10/10] Claude AI Self-Improvement
+2026-05-10 05:36:19 | INFO     | main |      2. [9/10] AI-Powered Assistive Technologies
+2026-05-10 05:36:19 | INFO     | main |      3. [9/10] AI in Cybersecurity
+2026-05-10 05:36:19 | INFO     | main |      4. [9/10] AI Memory Persistence
+2026-05-10 05:36:19 | INFO     | main |      5. [9/10] Frontier AI Model Optimization
+2026-05-10 05:36:19 | INFO     | main |      6. [8/10] LLM Document Integrity
+2026-05-10 05:36:19 | INFO     | main |      7. [8/10] AI-Powered Journalism
+2026-05-10 05:36:19 | INFO     | main |      8. [8/10] AI-Powered Video Game Development
+2026-05-10 05:36:19 | INFO     | main |      9. [8/10] AI for Women's Safety
+2026-05-10 05:36:19 | INFO     | main |     10. [7/10] AI Lie Detection Systems
+2026-05-10 05:36:19 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-10 05:36:19 | INFO     | main |   Existing collection: 213 tools across 115 topics
+2026-05-10 05:36:19 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-10 05:36:25 | DEBUG    | llm_client | LLM response from github_models (3445 chars)
+2026-05-10 05:36:25 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Self-Improvement
+2026-05-10 05:36:29 | DEBUG    | llm_client | LLM response from github_models (2436 chars)
+2026-05-10 05:36:29 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Assistive Technologies
+2026-05-10 05:36:29 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-10 05:36:29 | INFO     | main |   Generated 5 tool ideas:
+2026-05-10 05:36:29 | INFO     | main |     • claude_dream_analysis: A CLI tool to parse, analyze, and visualize the 'dreaming' logs or outputs from 
+2026-05-10 05:36:29 | INFO     | main |     • claude_change_tracker: A Python library that tracks and highlights changes in Claude's performance metr
+2026-05-10 05:36:29 | INFO     | main |     • dream_diff_visualizer: A CLI tool to compare two dreaming session outputs from Claude AI and generate a
+2026-05-10 05:36:29 | INFO     | main |     • smart_glasses_ai_bridge: This library simplifies the integration of AI models with smart glasses hardware
+2026-05-10 05:36:29 | INFO     | main |     • pathfinder_navigation_assist: This CLI tool processes sensor input (e.g., depth cameras or LiDAR) from smart g
+2026-05-10 05:36:29 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-10 05:36:29 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-10 05:36:39 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-10 05:36:39 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-10 05:36:39 | INFO     | tool_builder | Building tool: claude_dream_analysis …
+2026-05-10 05:36:45 | DEBUG    | llm_client | LLM response from github_models (5568 chars)
+2026-05-10 05:36:45 | DEBUG    | test_runner | Installing: ['matplotlib==3.7.1', 'pandas==2.0.3']
+2026-05-10 05:36:56 | WARNING  | test_runner | Tests FAILED for claude_dream_analysis:
+test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+E   TypeError: Object of type int64 is not JSON serializable
+FAILED test_claude_dream_analysis.py::test_generate_report - TypeError: Object of type int64 is not JSON serializable
+2026-05-10 05:36:56 | WARNING  | tool_builder | ⚠️  claude_dream_analysis tests failed (loop 1/5) — test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+E   TypeError: Object of type int64 is not JSON serializab
+2026-05-10 05:37:04 | DEBUG    | llm_client | LLM response from github_models (5665 chars)
+2026-05-10 05:37:04 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-10 05:37:05 | WARNING  | test_runner | Tests FAILED for claude_dream_analysis:
+test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 19 times.
+    mocked_file().write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 19 times.
+E   assert ('}',) == ()
+FAILED test_claude_dream_analysis.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 19 times.
+assert ('}',) == ()
+2026-05-10 05:37:05 | WARNING  | tool_builder | ⚠️  claude_dream_analysis tests failed (loop 2/5) — test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-05-10 05:37:13 | DEBUG    | llm_client | LLM response from github_models (6011 chars)
+2026-05-10 05:37:13 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-10 05:37:14 | WARNING  | test_runner | Tests FAILED for claude_dream_analysis:
+test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+    mocked_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+E   assert ('}',) == ('{\n    "tot...ore": 85\n}',)
+FAILED test_claude_dream_analysis.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 19 times.
+assert ('}',) == ('{\n    "tot...ore": 85\n}',)
+2026-05-10 05:37:14 | WARNING  | tool_builder | ⚠️  claude_dream_analysis tests failed (loop 3/5) — test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-10 05:37:22 | DEBUG    | llm_client | LLM response from github_models (5705 chars)
+2026-05-10 05:37:22 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-10 05:37:23 | WARNING  | test_runner | Tests FAILED for claude_dream_analysis:
+test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+    mocked_file().write.assert_called_once_with(json.dumps(report, indent=4) + '\n')
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+E   assert ('}',) == ('{\n    "tot...e": 85\n}\n',)
+FAILED test_claude_dream_analysis.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 19 times.
+assert ('}',) == ('{\n    "tot...e": 85\n}\n',)
+2026-05-10 05:37:23 | WARNING  | tool_builder | ⚠️  claude_dream_analysis tests failed (loop 4/5) — test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-10 05:37:31 | DEBUG    | llm_client | LLM response from github_models (5924 chars)
+2026-05-10 05:37:31 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-05-10 05:37:32 | WARNING  | test_runner | Tests FAILED for claude_dream_analysis:
+test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 19 times.
+E   assert ('}',) == ('{\n    "tot...ore": 85\n}',)
+FAILED test_claude_dream_analysis.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 19 times.
+assert ('}',) == ('{\n    "tot...ore": 85\n}',)
+2026-05-10 05:37:32 | WARNING  | tool_builder | ⚠️  claude_dream_analysis tests failed (loop 5/5) — test_claude_dream_analysis.py::test_generate_report FAILED               [ 75%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-10 05:37:32 | ERROR    | tool_builder | ❌ claude_dream_analysis failed after 5 loops
+2026-05-10 05:37:32 | INFO     | tool_builder | Building tool: claude_change_tracker …
+2026-05-10 05:37:40 | DEBUG    | llm_client | LLM response from github_models (5870 chars)
+2026-05-10 05:37:40 | DEBUG    | test_runner | Installing: ['numpy==1.24.3', 'pandas==1.5.3', 'pytest==7.4.0']
+2026-05-10 05:37:48 | WARNING  | test_runner | Tests FAILED for claude_change_tracker:
+test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   KeyError: 'expected'
+    raise KeyError(key) from err
+E   KeyError: 'expected'
+E   KeyError: 'expected'
+    raise KeyError(key) from err
+E   KeyError: 'expected'
+FAILED test_claude_change_tracker.py::test_track_changes_basic - KeyError: 'expected'
+FAILED test_claude_change_tracker.py::test_track_changes_edge_case_empty - KeyError: 'expected'
+2026-05-10 05:37:48 | WARNING  | tool_builder | ⚠️  claude_change_tracker tests failed (loop 1/5) — test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   KeyError: 'expected'
+    raise KeyEr
+2026-05-10 05:37:57 | DEBUG    | llm_client | LLM response from github_models (6218 chars)
+2026-05-10 05:37:57 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-05-10 05:37:58 | WARNING  | test_runner | Tests FAILED for claude_change_tracker:
+test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   KeyError: 'expected'
+    raise KeyError(key) from err
+E   KeyError: 'expected'
+E   KeyError: 'expected'
+    raise KeyError(key) from err
+E   KeyError: 'expected'
+FAILED test_claude_change_tracker.py::test_track_changes_basic - KeyError: 'expected'
+FAILED test_claude_change_tracker.py::test_track_changes_edge_case_empty - KeyError: 'expected'
+2026-05-10 05:37:58 | WARNING  | tool_builder | ⚠️  claude_change_tracker tests failed (loop 2/5) — test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   KeyError: 'expected'
+    raise KeyEr
+2026-05-10 05:38:08 | DEBUG    | llm_client | LLM response from github_models (7486 chars)
+2026-05-10 05:38:08 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-05-10 05:38:09 | WARNING  | test_runner | Tests FAILED for claude_change_tracker:
+test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+E   TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+FAILED test_claude_change_tracker.py::test_track_changes_basic - TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+FAILED test_claude_change_tracker.py::test_track_changes_edge_case_empty - TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+2026-05-10 05:38:09 | WARNING  | tool_builder | ⚠️  claude_change_tracker tests failed (loop 3/5) — test_claude_change_tracker.py::test_track_changes_basic FAILED           [ 33%]
+test_claude_change_tracker.py::test_track_changes_edge_case_empty FAILED [100%]
+E   TypeError: numpy boolean subtract, t
+2026-05-10 05:38:09 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-10 05:39:16 | DEBUG    | llm_client | LLM response from github_models (6018 chars)
+2026-05-10 05:39:16 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-05-10 05:39:17 | INFO     | test_runner | Tests PASSED for claude_change_tracker
+2026-05-10 05:39:17 | INFO     | tool_builder | ✅ claude_change_tracker passed tests on loop 4
+2026-05-10 05:39:17 | INFO     | tool_builder | Building tool: dream_diff_visualizer …
+2026-05-10 05:39:25 | DEBUG    | llm_client | LLM response from github_models (5333 chars)
+2026-05-10 05:39:25 | DEBUG    | test_runner | Installing: ['jinja2==3.1.2']
+2026-05-10 05:39:26 | WARNING  | test_runner | Tests FAILED for dream_diff_visualizer:
+test_dream_diff_visualizer.py::test_generate_diff FAILED                 [ 75%]
+test_dream_diff_visualizer.py::test_generate_html_diff FAILED            [100%]
+    assert "Line 2 changed" in diff_html
+E   assert 'Line 2 changed' in '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n\n<html>\n\n<head>\n    <meta http-equiv="Content-Type"\n          content="text/html; charset=utf-8" />\n    <title></title>\n    <style type="text/css">\n        table.diff {font-family:Courier; border:medium;}\n        .diff_header {background-color:#e0e0e0}\n        td.diff_header {text-align:right}\n        .diff_next {background-color:#c0c0c0}\n        .diff_add {background-color:#aaffaa}\n        .diff_chg {background-color:#ffff77}\n        .diff_sub {background-color:#ffaaaa}\n    </style>\n</head>\n\n<body>\n    \n    <table class="diff" id="difflib_chg_to0__top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        \n        <tbody>\n            <tr><td class="diff_next" id="difflib_chg_to0__0"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">Line&nbsp;1</td><td class="diff_next"><a href="#difflib_chg_to0__0">f</a></td..._top">t</a></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap"><span class="diff_add">Line&nbsp;2&nbsp;changed</span></td></tr>\n            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">Line&nbsp;3</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">Line&nbsp;3</td></tr>\n        </tbody>\n    </table>\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <table border="" summary="Colors">\n                      <tr><th> Colors </th> </tr>\n                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>\n                      <tr><td class="diff_chg">Changed</td> </tr>\n                      <tr><td class="diff_sub">Deleted</td> </tr>\n                  </table></td>\n             <td> <table border="" summary="Links">\n                      <tr><th colspan="2"> Links </th> </tr>\n                      <tr><td>(f)irst change</td> </tr>\n                      <tr><td>(n)ext change</td> </tr>\n                      <tr><td>(t)op</td> </tr>\n                  </table></td> </tr>\n    </table>\n</body>\n\n</html>'
+    assert "Line 2 changed" in written_content
+E   assert 'Line 2 changed' in '\n    <!DOCTYPE html>\n    <html>\n    <head>\n        <title>Dream Diff Visualizer</title>\n        <style>\n            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }\n            .diff { margin: 20px; }\n        </style>\n    </head>\n    <body>\n        <h1>Dream Diff Visualizer</h1>\n        <div class="diff">\n            \n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n\n<html>\n\n<head>\n    <meta http-equiv="Content-Type"\n          content="text/html; charset=utf-8" />\n    <title></title>\n    <style type="text/css">\n        table.diff {font-family:Courier; border:medium;}\n        .diff_header {background-color:#e0e0e0}\n        td.diff_header {text-align:right}\n        .diff_next {background-color:#c0c0c0}\n        .diff_add {background-color:#aaffaa}\n        .diff_chg {background-color:#ffff77}\n        .diff_sub {background-color:#ffaaaa}\n    </style>\n</head>\n\n<body>\n    \n    <table class="diff" id="difflib_chg_to1__top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup...2">2</td><td nowrap="nowrap"><span class="diff_add">Line&nbsp;2&nbsp;changed</span></td></tr>\n            <tr><td class="diff_next"></td><td class="diff_header" id="from1_3">3</td><td nowrap="nowrap">Line&nbsp;3</td><td class="diff_next"></td><td class="diff_header" id="to1_3">3</td><td nowrap="nowrap">Line&nbsp;3</td></tr>\n        </tbody>\n    </table>\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <table border="" summary="Colors">\n                      <tr><th> Colors </th> </tr>\n                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>\n                      <tr><td class="diff_chg">Changed</td> </tr>\n                      <tr><td class="diff_sub">Deleted</td> </tr>\n                  </table></td>\n             <td> <table border="" summary="Links">\n                      <tr><th colspan="2"> Links </th> </tr>\n                      <tr><td>(f)irst change</td> </tr>\n                      <tr><td>(n)ext change</td> </tr>\n                      <tr><td>(t)op</td> </tr>\n                  </table></td> </tr>\n    </table>\n</body>\n\n</html>\n        </div>\n    </body>\n    </html>\n    '
+FAILED test_dream_diff_visualizer.py::test_generate_diff - assert 'Line 2 changed' in '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n\n<html>\n\n<head>\n    <meta http-equiv="Content-Type"\n          content="text/html; charset=utf-8" />\n    <title></title>\n    <style type="text/css">\n        table.diff {font-family:Courier; border:medium;}\n        .diff_header {background-color:#e0e0e0}\n        td.diff_header {text-align:right}\n        .diff_next {background-color:#c0c0c0}\n        .diff_add {background-color:#aaffaa}\n        .diff_chg {background-color:#ffff77}\n        .diff_sub {background-color:#ffaaaa}\n    </style>\n</head>\n\n<body>\n    \n    <table class="diff" id="difflib_chg_to0__top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        \n        <tbody>\n            <tr><td class="diff_next" id="difflib_chg_to0__0"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">Line&nbsp;1</td><td class="diff_next"><a href="#difflib_chg_to0__0">f</a></td..._top">t</a></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap"><span class="diff_add">Line&nbsp;2&nbsp;changed</span></td></tr>\n            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">Line&nbsp;3</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">Line&nbsp;3</td></tr>\n        </tbody>\n    </table>\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <table border="" summary="Colors">\n                      <tr><th> Colors </th> </tr>\n                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>\n                      <tr><td class="diff_chg">Changed</td> </tr>\n                      <tr><td class="diff_sub">Deleted</td> </tr>\n                  </table></td>\n             <td> <table border="" summary="Links">\n                      <tr><th colspan="2"> Links </th> </tr>\n                      <tr><td>(f)irst change</td> </tr>\n                      <tr><td>(n)ext change</td> </tr>\n                      <tr><td>(t)op</td> </tr>\n                  </table></td> </tr>\n    </table>\n</body>\n\n</html>'
+FAILED test_dream_diff_visualizer.py::test_generate_html_diff - assert 'Line 2 changed' in '\n    <!DOCTYPE html>\n    <html>\n    <head>\n        <title>Dream Diff Visualizer</title>\n        <style>\n            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }\n            .diff { margin: 20px; }\n        </style>\n    </head>\n    <body>\n        <h1>Dream Diff Visualizer</h1>\n        <div class="diff">\n            \n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n\n<html>\n\n<head>\n    <meta http-equiv="Content-Type"\n          content="text/html; charset=utf-8" />\n    <title></title>\n    <style type="text/css">\n        table.diff {font-family:Courier; border:medium;}\n        .diff_header {background-color:#e0e0e0}\n        td.diff_header {text-align:right}\n        .diff_next {background-color:#c0c0c0}\n        .diff_add {background-color:#aaffaa}\n        .diff_chg {background-color:#ffff77}\n        .diff_sub {background-color:#ffaaaa}\n    </style>\n</head>\n\n<body>\n    \n    <table class="diff" id="difflib_chg_to1__top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup...2">2</td><td nowrap="nowrap"><span class="diff_add">Line&nbsp;2&nbsp;changed</span></td></tr>\n            <tr><td class="diff_next"></td><td class="diff_header" id="from1_3">3</td><td nowrap="nowrap">Line&nbsp;3</td><td class="diff_next"></td><td class="diff_header" id="to1_3">3</td><td nowrap="nowrap">Line&nbsp;3</td></tr>\n        </tbody>\n    </table>\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <table border="" summary="Colors">\n                      <tr><th> Colors </th> </tr>\n                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>\n                      <tr><td class="diff_chg">Changed</td> </tr>\n                      <tr><td class="diff_sub">Deleted</td> </tr>\n                  </table></td>\n             <td> <table border="" summary="Links">\n                      <tr><th colspan="2"> Links </th> </tr>\n                      <tr><td>(f)irst change</td> </tr>\n                      <tr><td>(n)ext change</td> </tr>\n                      <tr><td>(t)op</td> </tr>\n                  </table></td> </tr>\n    </table>\n</body>\n\n</html>\n        </div>\n    </body>\n    </html>\n    '
+2026-05-10 05:39:26 | WARNING  | tool_builder | ⚠️  dream_diff_visualizer tests failed (loop 1/5) — test_dream_diff_visualizer.py::test_generate_diff FAILED                 [ 75%]
+test_dream_diff_visualizer.py::test_generate_html_diff FAILED            [100%]
+    assert "Line 2 changed" in diff_html
+2026-05-10 05:39:33 | DEBUG    | llm_client | LLM response from github_models (5570 chars)
+2026-05-10 05:39:33 | DEBUG    | test_runner | Installing: ['jinja2']
+2026-05-10 05:39:33 | INFO     | test_runner | Tests PASSED for dream_diff_visualizer
+2026-05-10 05:39:33 | INFO     | tool_builder | ✅ dream_diff_visualizer passed tests on loop 2
+2026-05-10 05:39:33 | INFO     | tool_builder | Building tool: smart_glasses_ai_bridge …
+2026-05-10 05:39:42 | DEBUG    | llm_client | LLM response from github_models (5974 chars)
+2026-05-10 05:39:42 | DEBUG    | test_runner | Installing: ['opencv-python==4.5.5.64', 'torch==1.13.1', 'pyttsx3==2.90']
+2026-05-10 05:40:19 | WARNING  | test_runner | Tests FAILED for smart_glasses_ai_bridge:
+test_smart_glasses_ai_bridge.py::test_process_video FAILED               [100%]
+E   AttributeError: 'list' object has no attribute 'iterrows'
+FAILED test_smart_glasses_ai_bridge.py::test_process_video - AttributeError: 'list' object has no attribute 'iterrows'
+2026-05-10 05:40:19 | WARNING  | tool_builder | ⚠️  smart_glasses_ai_bridge tests failed (loop 1/5) — test_smart_glasses_ai_bridge.py::test_process_video FAILED               [100%]
+E   AttributeError: 'list' object has no attribute 'iterrows'
+FAILED test_smart_glasses_ai_bridge.py::test_process_video
+2026-05-10 05:40:26 | DEBUG    | llm_client | LLM response from github_models (6089 chars)
+2026-05-10 05:40:26 | DEBUG    | test_runner | Installing: ['torch', 'opencv-python', 'pyttsx3', 'pandas']
+2026-05-10 05:40:27 | WARNING  | test_runner | Tests FAILED for smart_glasses_ai_bridge:
+test_smart_glasses_ai_bridge.py::test_process_video FAILED               [100%]
+FAILED test_smart_glasses_ai_bridge.py::test_process_video - cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imshow'
+2026-05-10 05:40:27 | WARNING  | tool_builder | ⚠️  smart_glasses_ai_bridge tests failed (loop 2/5) — test_smart_glasses_ai_bridge.py::test_process_video FAILED               [100%]
+FAILED test_smart_glasses_ai_bridge.py::test_process_video - cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in f
+2026-05-10 05:40:35 | DEBUG    | llm_client | LLM response from github_models (6511 chars)
+2026-05-10 05:40:35 | DEBUG    | test_runner | Installing: ['opencv-python', 'torch', 'pyttsx3', 'pandas']
+2026-05-10 05:40:36 | INFO     | test_runner | Tests PASSED for smart_glasses_ai_bridge
+2026-05-10 05:40:36 | INFO     | tool_builder | ✅ smart_glasses_ai_bridge passed tests on loop 3
+2026-05-10 05:40:36 | INFO     | tool_builder | Building tool: pathfinder_navigation_assist …
+2026-05-10 05:40:46 | DEBUG    | llm_client | LLM response from github_models (5747 chars)
+2026-05-10 05:40:46 | DEBUG    | test_runner | Installing: ['open3d==0.17.0', 'numpy==1.23.5', 'sounddevice==0.4.6']
+2026-05-10 05:40:46 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement open3d==0.17.0 (from versions: 0.18.0, 0.19.0)
+ERROR: No matching distribution found for open3d==0.17.0
+
+2026-05-10 05:40:47 | WARNING  | test_runner | Tests FAILED for pathfinder_navigation_assist:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_pathfinder_navigation_assist.py _____________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/pathfinder_navigation_assist/test_pathfinder_navigation_assist.py'.
+E   ModuleNotFoundError: No module named 'open3d'
+ERROR test_pathfinder_navigation_assist.py
+2026-05-10 05:40:47 | WARNING  | tool_builder | ⚠️  pathfinder_navigation_assist tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_pathfinder_navigation_assist.py _____________
+ImportError while importing test modul
+2026-05-10 05:40:53 | DEBUG    | llm_client | LLM response from github_models (5930 chars)
+2026-05-10 05:40:53 | DEBUG    | test_runner | Installing: ['numpy', 'sounddevice']
+2026-05-10 05:40:54 | WARNING  | test_runner | Tests FAILED for pathfinder_navigation_assist:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_pathfinder_navigation_assist.py _____________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise OSError('PortAudio library not found')
+E   OSError: PortAudio library not found
+ERROR test_pathfinder_navigation_assist.py - OSError: PortAudio library not found
+2026-05-10 05:40:54 | WARNING  | tool_builder | ⚠️  pathfinder_navigation_assist tests failed (loop 2/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_pathfinder_navigation_assist.py _____________
+../_venv/lib/python3.11/site-packages/
+2026-05-10 05:41:00 | DEBUG    | llm_client | LLM response from github_models (6036 chars)
+2026-05-10 05:41:00 | DEBUG    | test_runner | Installing: ['numpy']
+2026-05-10 05:41:01 | WARNING  | test_runner | Tests FAILED for pathfinder_navigation_assist:
+test_pathfinder_navigation_assist.py::test_load_point_cloud_valid_file FAILED [ 16%]
+    assert point_cloud.shape == (2, 3)
+E   assert (100, 3) == (2, 3)
+FAILED test_pathfinder_navigation_assist.py::test_load_point_cloud_valid_file - assert (100, 3) == (2, 3)
+2026-05-10 05:41:01 | WARNING  | tool_builder | ⚠️  pathfinder_navigation_assist tests failed (loop 3/5) — test_pathfinder_navigation_assist.py::test_load_point_cloud_valid_file FAILED [ 16%]
+    assert point_cloud.shape == (2, 3)
+E   assert (100, 3) == (2, 3)
+FAILED test_pathfinder_navigation_assist.py::t
+2026-05-10 05:41:06 | DEBUG    | llm_client | LLM response from github_models (5572 chars)
+2026-05-10 05:41:06 | DEBUG    | test_runner | Installing: ['numpy', 'pytest']
+2026-05-10 05:41:07 | INFO     | test_runner | Tests PASSED for pathfinder_navigation_assist
+2026-05-10 05:41:07 | INFO     | tool_builder | ✅ pathfinder_navigation_assist passed tests on loop 4
+2026-05-10 05:41:07 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-10 05:41:07 | INFO     | main |   Built 4/5 tools successfully
+2026-05-10 05:41:07 | INFO     | main |     ✅ claude_change_tracker (loops: 4)
+2026-05-10 05:41:07 | INFO     | main |     ✅ dream_diff_visualizer (loops: 2)
+2026-05-10 05:41:07 | INFO     | main |     ✅ smart_glasses_ai_bridge (loops: 3)
+2026-05-10 05:41:07 | INFO     | main |     ✅ pathfinder_navigation_assist (loops: 4)
+2026-05-10 05:41:07 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-10 05:41:07 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-10 05:41:07 | INFO     | github_publisher |   Created zip: claude_change_tracker.zip (2435 bytes)
+2026-05-10 05:41:07 | INFO     | github_publisher | Saved claude_change_tracker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/claude_change_tracker
+2026-05-10 05:41:07 | INFO     | github_publisher |   Created zip: dream_diff_visualizer.zip (2586 bytes)
+2026-05-10 05:41:07 | INFO     | github_publisher | Saved dream_diff_visualizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/dream_diff_visualizer
+2026-05-10 05:41:07 | INFO     | github_publisher |   Created zip: smart_glasses_ai_bridge.zip (2893 bytes)
+2026-05-10 05:41:07 | INFO     | github_publisher | Saved smart_glasses_ai_bridge → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/smart_glasses_ai_bridge
+2026-05-10 05:41:07 | INFO     | github_publisher |   Created zip: pathfinder_navigation_assist.zip (2622 bytes)
+2026-05-10 05:41:07 | INFO     | github_publisher | Saved pathfinder_navigation_assist → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/pathfinder_navigation_assist
+2026-05-10 05:41:07 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-10 05:41:07 | INFO     | main |   Published 4 tools:
+2026-05-10 05:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/claude_change_tracker
+2026-05-10 05:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/dream_diff_visualizer
+2026-05-10 05:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/smart_glasses_ai_bridge
+2026-05-10 05:41:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-10/pathfinder_navigation_assist
+2026-05-10 05:41:07 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-10 05:41:07 | INFO     | main | ✅ Generated tools_index.json with 217 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
