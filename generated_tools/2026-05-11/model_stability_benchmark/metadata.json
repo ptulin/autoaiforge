@@ -1,0 +1,13 @@
+{
+  "tool_name": "model_stability_benchmark",
+  "display_name": "Model Stability Benchmark",
+  "description": "This tool evaluates the stability of generative AI models by running multiple iterations of the same prompt and analyzing the consistency of the outputs. It provides metrics on output variance, token-level differences, and semantic similarity, helping developers identify how deterministic or stable their models are.",
+  "topic": "Generative AI Advancements",
+  "date": "2026-05-11",
+  "generated": "2026-05-11T05:56:15.880167+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/model_stability_benchmark",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/model_stability_benchmark/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/model_stability_benchmark/model_stability_benchmark.zip"
+}

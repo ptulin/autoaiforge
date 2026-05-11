@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-10T05:41:07.390411+00:00",
-  "total_tools": 217,
+  "last_updated": "2026-05-11T05:59:45.394695+00:00",
+  "total_tools": 221,
   "tools": [
+    {
+      "tool_name": "long_term_memory_inspector",
+      "display_name": "Long-Term Memory Inspector",
+      "description": "This library provides AI developers with a simple interface to monitor and manage long-term memory in AI systems. It offers utilities to query, filter, and prune memory storage programmatically. The library can also summarize memory contents for inspection, helping developers ensure the AI's memory remains relevant and efficient over time.",
+      "topic": "AI Memory Persistence",
+      "date": "2026-05-11",
+      "generated": "2026-05-11T05:56:15.880167+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/long_term_memory_inspector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/long_term_memory_inspector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/long_term_memory_inspector/long_term_memory_inspector.zip"
+    },
+    {
+      "tool_name": "memory_usage_profiler",
+      "display_name": "Memory Usage Profiler",
+      "description": "This library profiles memory consumption patterns of generative AI models during inference by tracking memory usage over time, as well as for specific model calls. Developers can use it to identify potential memory bottlenecks, optimize infrastructure, and understand resource requirements for deploying their models.",
+      "topic": "Generative AI Advancements",
+      "date": "2026-05-11",
+      "generated": "2026-05-11T05:56:15.880167+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/memory_usage_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/memory_usage_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/memory_usage_profiler/memory_usage_profiler.zip"
+    },
+    {
+      "tool_name": "model_stability_benchmark",
+      "display_name": "Model Stability Benchmark",
+      "description": "This tool evaluates the stability of generative AI models by running multiple iterations of the same prompt and analyzing the consistency of the outputs. It provides metrics on output variance, token-level differences, and semantic similarity, helping developers identify how deterministic or stable their models are.",
+      "topic": "Generative AI Advancements",
+      "date": "2026-05-11",
+      "generated": "2026-05-11T05:56:15.880167+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/model_stability_benchmark",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/model_stability_benchmark/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/model_stability_benchmark/model_stability_benchmark.zip"
+    },
+    {
+      "tool_name": "synthetic_dataset_generator",
+      "display_name": "Synthetic Dataset Generator",
+      "description": "This tool allows users to generate synthetic datasets by leveraging generative AI models. Developers can use it to create custom datasets for training or fine-tuning models, with controls over the style, complexity, and diversity of the generated data. It helps save time and effort in creating quality datasets.",
+      "topic": "Generative AI Advancements",
+      "date": "2026-05-11",
+      "generated": "2026-05-11T05:56:15.880167+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/synthetic_dataset_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/synthetic_dataset_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-11/synthetic_dataset_generator/synthetic_dataset_generator.zip"
+    },
     {
       "tool_name": "claude_change_tracker",
       "display_name": "Claude Change Tracker",

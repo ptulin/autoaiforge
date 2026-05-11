@@ -1,0 +1,226 @@
+2026-05-11 05:56:15 | INFO     | main | ============================================================
+2026-05-11 05:56:15 | INFO     | main | AutoAIForge starting run: 2026-05-11T05:56:15.880167+00:00
+2026-05-11 05:56:15 | INFO     | main | ============================================================
+2026-05-11 05:56:15 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-11 05:56:16 | INFO     | youtube_scraper | YouTube client ready
+2026-05-11 05:56:16 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-11 05:56:16 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-11 05:56:17 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-11 05:56:17 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-11 05:56:17 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-11 05:56:18 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-11 05:56:18 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-11 05:56:18 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-11 05:56:19 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-11 05:56:19 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-11 05:56:20 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-11 05:56:20 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-11 05:56:20 | INFO     | youtube_scraper | YouTube 'vector database AI': 36 results (quota used: 1300)
+2026-05-11 05:56:20 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-11 05:56:21 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-11 05:56:21 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-11 05:56:21 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-11 05:56:22 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-11 05:56:22 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-11 05:56:23 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-11 05:56:23 | INFO     | youtube_scraper | YouTube total: 889 items, quota used: 2000
+2026-05-11 05:56:23 | INFO     | main |   YouTube: 832 items
+2026-05-11 05:56:23 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-11 05:56:27 | INFO     | rss_scraper | HackerNews: 134 items
+2026-05-11 05:56:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-11 05:56:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-11 05:56:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-11 05:56:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-11 05:56:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-11 05:56:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-11 05:56:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-11 05:56:35 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-11 05:56:44 | INFO     | rss_scraper | ArXiv: 113 items
+2026-05-11 05:56:48 | INFO     | rss_scraper | Dev.to: 196 items
+2026-05-11 05:56:49 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-11 05:56:49 | INFO     | rss_scraper | Free sources total: 493 unique items
+2026-05-11 05:56:49 | INFO     | main |   RSS/API sources: 493 items
+2026-05-11 05:56:49 | INFO     | main |   Total scraped: 1325 items
+2026-05-11 05:56:49 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-11 05:56:49 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-11 05:56:49 | INFO     | db_manager | Purged 1009 old news items
+2026-05-11 05:56:49 | INFO     | db_manager | Inserted 1052/1325 news items
+2026-05-11 05:56:49 | INFO     | main |   SQLite: 1052 new items (total: 30459)
+2026-05-11 05:56:54 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-11 05:56:55 | INFO     | vector_store | VectorStore ready
+2026-05-11 05:57:23 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-11 05:57:23 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-11 05:57:23 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-11 05:57:23 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-11 05:57:29 | DEBUG    | llm_client | LLM response from github_models (3771 chars)
+2026-05-11 05:57:29 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-11 05:57:29 | INFO     | main |   Found 10 topics:
+2026-05-11 05:57:29 | INFO     | main |      1. [10/10] Generative AI Advancements
+2026-05-11 05:57:29 | INFO     | main |      2. [9/10] AI Memory Persistence
+2026-05-11 05:57:29 | INFO     | main |      3. [9/10] AI Fighting Fake News
+2026-05-11 05:57:29 | INFO     | main |      4. [9/10] AI Integration in Web Browsers
+2026-05-11 05:57:29 | INFO     | main |      5. [8/10] AI Ethics Expansion
+2026-05-11 05:57:29 | INFO     | main |      6. [8/10] AI in Data Centers
+2026-05-11 05:57:29 | INFO     | main |      7. [8/10] AI Workflow Automation
+2026-05-11 05:57:29 | INFO     | main |      8. [8/10] AI-Powered Smart Agents
+2026-05-11 05:57:29 | INFO     | main |      9. [7/10] AI-Driven Design Tools
+2026-05-11 05:57:29 | INFO     | main |     10. [7/10] AI Security Vulnerabilities
+2026-05-11 05:57:29 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-11 05:57:29 | INFO     | main |   Existing collection: 217 tools across 117 topics
+2026-05-11 05:57:29 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-11 05:57:35 | DEBUG    | llm_client | LLM response from github_models (3828 chars)
+2026-05-11 05:57:35 | INFO     | idea_generator | Generated 3 ideas for topic: Generative AI Advancements
+2026-05-11 05:57:40 | DEBUG    | llm_client | LLM response from github_models (2473 chars)
+2026-05-11 05:57:40 | INFO     | idea_generator | Generated 2 ideas for topic: AI Memory Persistence
+2026-05-11 05:57:40 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-11 05:57:40 | INFO     | main |   Generated 5 tool ideas:
+2026-05-11 05:57:40 | INFO     | main |     • model_stability_benchmark: This tool evaluates the stability of generative AI models by running multiple it
+2026-05-11 05:57:40 | INFO     | main |     • memory_usage_profiler: This library profiles memory consumption patterns of generative AI models during
+2026-05-11 05:57:40 | INFO     | main |     • synthetic_dataset_generator: This tool allows users to generate synthetic datasets by leveraging generative A
+2026-05-11 05:57:40 | INFO     | main |     • memory_snapshot_manager: This tool enables developers to save, load, and visualize memory snapshots of AI
+2026-05-11 05:57:40 | INFO     | main |     • long_term_memory_inspector: This library provides AI developers with a simple interface to monitor and manag
+2026-05-11 05:57:40 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-11 05:57:40 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-11 05:57:49 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-11 05:57:49 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-11 05:57:49 | INFO     | tool_builder | Building tool: model_stability_benchmark …
+2026-05-11 05:57:57 | DEBUG    | llm_client | LLM response from github_models (6797 chars)
+2026-05-11 05:57:57 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'numpy==1.24.2', 'scipy==1.10.1', 'tqdm==4.65.0']
+2026-05-11 05:58:04 | INFO     | test_runner | Tests PASSED for model_stability_benchmark
+2026-05-11 05:58:04 | INFO     | tool_builder | ✅ model_stability_benchmark passed tests on loop 1
+2026-05-11 05:58:04 | INFO     | tool_builder | Building tool: memory_usage_profiler …
+2026-05-11 05:58:14 | DEBUG    | llm_client | LLM response from github_models (5697 chars)
+2026-05-11 05:58:14 | DEBUG    | test_runner | Installing: ['psutil==5.9.5', 'matplotlib==3.8.0']
+2026-05-11 05:58:22 | INFO     | test_runner | Tests PASSED for memory_usage_profiler
+2026-05-11 05:58:22 | INFO     | tool_builder | ✅ memory_usage_profiler passed tests on loop 1
+2026-05-11 05:58:22 | INFO     | tool_builder | Building tool: synthetic_dataset_generator …
+2026-05-11 05:58:33 | DEBUG    | llm_client | LLM response from github_models (6441 chars)
+2026-05-11 05:58:33 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pandas==1.5.3', 'pytest==7.4.0']
+2026-05-11 05:58:39 | WARNING  | test_runner | Tests FAILED for synthetic_dataset_generator:
+test_synthetic_dataset_generator.py::test_generate_synthetic_data_json FAILED [ 33%]
+test_synthetic_dataset_generator.py::test_generate_synthetic_data_csv FAILED [ 66%]
+E   TypeError: 'MockResponse' object is not subscriptable
+    raise RuntimeError(f"Error during data generation: {e}")
+E   RuntimeError: Error during data generation: 'MockResponse' object is not subscriptable
+E   TypeError: 'MockResponse' object is not subscriptable
+    raise RuntimeError(f"Error during data generation: {e}")
+E   RuntimeError: Error during data generation: 'MockResponse' object is not subscriptable
+FAILED test_synthetic_dataset_generator.py::test_generate_synthetic_data_json - RuntimeError: Error during data generation: 'MockResponse' object is not subscriptable
+FAILED test_synthetic_dataset_generator.py::test_generate_synthetic_data_csv - RuntimeError: Error during data generation: 'MockResponse' object is not subscriptable
+2026-05-11 05:58:39 | WARNING  | tool_builder | ⚠️  synthetic_dataset_generator tests failed (loop 1/5) — test_synthetic_dataset_generator.py::test_generate_synthetic_data_json FAILED [ 33%]
+test_synthetic_dataset_generator.py::test_generate_synthetic_data_csv FAILED [ 66%]
+E   TypeError: 'MockResponse' o
+2026-05-11 05:58:47 | DEBUG    | llm_client | LLM response from github_models (7309 chars)
+2026-05-11 05:58:47 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'pytest']
+2026-05-11 05:58:49 | INFO     | test_runner | Tests PASSED for synthetic_dataset_generator
+2026-05-11 05:58:49 | INFO     | tool_builder | ✅ synthetic_dataset_generator passed tests on loop 2
+2026-05-11 05:58:49 | INFO     | tool_builder | Building tool: memory_snapshot_manager …
+2026-05-11 05:58:58 | DEBUG    | llm_client | LLM response from github_models (6743 chars)
+2026-05-11 05:58:58 | DEBUG    | test_runner | Installing: ['rich==13.5.2']
+2026-05-11 05:58:59 | WARNING  | test_runner | Tests FAILED for memory_snapshot_manager:
+test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(snapshot, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_snapshot_manager.py::test_save_memory - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-05-11 05:58:59 | WARNING  | tool_builder | ⚠️  memory_snapshot_manager tests failed (loop 1/5) — test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-11 05:59:06 | DEBUG    | llm_client | LLM response from github_models (6559 chars)
+2026-05-11 05:59:06 | DEBUG    | test_runner | Installing: ['rich']
+2026-05-11 05:59:07 | WARNING  | test_runner | Tests FAILED for memory_snapshot_manager:
+test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(snapshot, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key...value"\n}\n',)
+FAILED test_memory_snapshot_manager.py::test_save_memory - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key...value"\n}\n',)
+2026-05-11 05:59:07 | WARNING  | tool_builder | ⚠️  memory_snapshot_manager tests failed (loop 2/5) — test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-11 05:59:14 | DEBUG    | llm_client | LLM response from github_models (6420 chars)
+2026-05-11 05:59:14 | DEBUG    | test_runner | Installing: ['rich']
+2026-05-11 05:59:15 | WARNING  | test_runner | Tests FAILED for memory_snapshot_manager:
+test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(snapshot, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_snapshot_manager.py::test_save_memory - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+2026-05-11 05:59:15 | WARNING  | tool_builder | ⚠️  memory_snapshot_manager tests failed (loop 3/5) — test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-11 05:59:23 | DEBUG    | llm_client | LLM response from github_models (6659 chars)
+2026-05-11 05:59:23 | DEBUG    | test_runner | Installing: ['rich']
+2026-05-11 05:59:23 | WARNING  | test_runner | Tests FAILED for memory_snapshot_manager:
+test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(snapshot, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key...value"\n}\n',)
+FAILED test_memory_snapshot_manager.py::test_save_memory - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key...value"\n}\n',)
+2026-05-11 05:59:23 | WARNING  | tool_builder | ⚠️  memory_snapshot_manager tests failed (loop 4/5) — test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-11 05:59:32 | DEBUG    | llm_client | LLM response from github_models (6756 chars)
+2026-05-11 05:59:32 | DEBUG    | test_runner | Installing: ['rich']
+2026-05-11 05:59:32 | WARNING  | test_runner | Tests FAILED for memory_snapshot_manager:
+test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+test_memory_snapshot_manager.py::test_compare_snapshots FAILED           [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+    mocked_file().write.assert_called_once_with(json.dumps(snapshot, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 7 times.
+E   assert ('}',) == ('{\n    "key": "value"\n}',)
+    assert "key2" in args[0].title
+E   AssertionError: assert 'key2' in 'Memory Snapshot Differences'
+FAILED test_memory_snapshot_manager.py::test_save_memory - AssertionError: Expected 'write' to be called once. Called 7 times.
+assert ('}',) == ('{\n    "key": "value"\n}',)
+FAILED test_memory_snapshot_manager.py::test_compare_snapshots - AssertionError: assert 'key2' in 'Memory Snapshot Differences'
+2026-05-11 05:59:32 | WARNING  | tool_builder | ⚠️  memory_snapshot_manager tests failed (loop 5/5) — test_memory_snapshot_manager.py::test_save_memory FAILED                 [ 33%]
+test_memory_snapshot_manager.py::test_compare_snapshots FAILED           [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-05-11 05:59:32 | ERROR    | tool_builder | ❌ memory_snapshot_manager failed after 5 loops
+2026-05-11 05:59:32 | INFO     | tool_builder | Building tool: long_term_memory_inspector …
+2026-05-11 05:59:42 | DEBUG    | llm_client | LLM response from github_models (7260 chars)
+2026-05-11 05:59:42 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.23.5']
+2026-05-11 05:59:45 | INFO     | test_runner | Tests PASSED for long_term_memory_inspector
+2026-05-11 05:59:45 | INFO     | tool_builder | ✅ long_term_memory_inspector passed tests on loop 1
+2026-05-11 05:59:45 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-11 05:59:45 | INFO     | main |   Built 4/5 tools successfully
+2026-05-11 05:59:45 | INFO     | main |     ✅ model_stability_benchmark (loops: 1)
+2026-05-11 05:59:45 | INFO     | main |     ✅ memory_usage_profiler (loops: 1)
+2026-05-11 05:59:45 | INFO     | main |     ✅ synthetic_dataset_generator (loops: 2)
+2026-05-11 05:59:45 | INFO     | main |     ✅ long_term_memory_inspector (loops: 1)
+2026-05-11 05:59:45 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-11 05:59:45 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-11 05:59:45 | INFO     | github_publisher |   Created zip: model_stability_benchmark.zip (2844 bytes)
+2026-05-11 05:59:45 | INFO     | github_publisher | Saved model_stability_benchmark → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/model_stability_benchmark
+2026-05-11 05:59:45 | INFO     | github_publisher |   Created zip: memory_usage_profiler.zip (2670 bytes)
+2026-05-11 05:59:45 | INFO     | github_publisher | Saved memory_usage_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/memory_usage_profiler
+2026-05-11 05:59:45 | INFO     | github_publisher |   Created zip: synthetic_dataset_generator.zip (2862 bytes)
+2026-05-11 05:59:45 | INFO     | github_publisher | Saved synthetic_dataset_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/synthetic_dataset_generator
+2026-05-11 05:59:45 | INFO     | github_publisher |   Created zip: long_term_memory_inspector.zip (2836 bytes)
+2026-05-11 05:59:45 | INFO     | github_publisher | Saved long_term_memory_inspector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/long_term_memory_inspector
+2026-05-11 05:59:45 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-11 05:59:45 | INFO     | main |   Published 4 tools:
+2026-05-11 05:59:45 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/model_stability_benchmark
+2026-05-11 05:59:45 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/memory_usage_profiler
+2026-05-11 05:59:45 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/synthetic_dataset_generator
+2026-05-11 05:59:45 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-11/long_term_memory_inspector
+2026-05-11 05:59:45 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-11 05:59:45 | INFO     | main | ✅ Generated tools_index.json with 221 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
