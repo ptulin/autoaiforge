@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_review_pipeline",
+  "display_name": "AI Code Review Pipeline",
+  "description": "This tool allows developers to create customized code review pipelines by integrating multiple AI reviewers like Claude AI and Cursor AI. Users can define rules for different AI reviewers, aggregate their feedback, and apply filters to prioritize or categorize results. This makes the code review process more organized and tailored to specific project needs.",
+  "topic": "AI Code Review Automation",
+  "date": "2026-05-12",
+  "generated": "2026-05-12T05:36:19.140371+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_pipeline",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_pipeline/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_pipeline/ai_code_review_pipeline.zip"
+}
