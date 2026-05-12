@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-11T05:59:45.394695+00:00",
-  "total_tools": 221,
+  "last_updated": "2026-05-12T05:42:34.948255+00:00",
+  "total_tools": 224,
   "tools": [
+    {
+      "tool_name": "ai_code_review_pipeline",
+      "display_name": "AI Code Review Pipeline",
+      "description": "This tool allows developers to create customized code review pipelines by integrating multiple AI reviewers like Claude AI and Cursor AI. Users can define rules for different AI reviewers, aggregate their feedback, and apply filters to prioritize or categorize results. This makes the code review process more organized and tailored to specific project needs.",
+      "topic": "AI Code Review Automation",
+      "date": "2026-05-12",
+      "generated": "2026-05-12T05:36:19.140371+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_pipeline",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_pipeline/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_pipeline/ai_code_review_pipeline.zip"
+    },
+    {
+      "tool_name": "ai_code_review_reporter",
+      "display_name": "AI Code Review Reporter",
+      "description": "This tool generates comprehensive reports based on AI code review feedback for a given codebase. It connects to AI reviewers like Claude AI, analyzes their outputs, and formats the results into developer-friendly reports, highlighting issues, suggestions, and actionable insights. The reports can be exported as markdown or HTML for easy sharing.",
+      "topic": "AI Code Review Automation",
+      "date": "2026-05-12",
+      "generated": "2026-05-12T05:36:19.140371+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_reporter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_reporter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_code_review_reporter/ai_code_review_reporter.zip"
+    },
+    {
+      "tool_name": "ai_vulnerability_scanner",
+      "display_name": "AI Vulnerability Scanner for CI/CD",
+      "description": "This CLI tool integrates AI-powered vulnerability detection into CI/CD pipelines by analyzing code changes for potential vulnerabilities using Claude AI. It helps developers identify and fix security issues before deploying to production, improving software security practices.",
+      "topic": "AI-Powered Vulnerability Detection",
+      "date": "2026-05-12",
+      "generated": "2026-05-12T05:36:19.140371+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_vulnerability_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_vulnerability_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-12/ai_vulnerability_scanner/ai_vulnerability_scanner.zip"
+    },
     {
       "tool_name": "long_term_memory_inspector",
       "display_name": "Long-Term Memory Inspector",

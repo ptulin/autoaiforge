@@ -1,0 +1,385 @@
+2026-05-12 05:36:19 | INFO     | main | ============================================================
+2026-05-12 05:36:19 | INFO     | main | AutoAIForge starting run: 2026-05-12T05:36:19.140371+00:00
+2026-05-12 05:36:19 | INFO     | main | ============================================================
+2026-05-12 05:36:19 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-12 05:36:19 | INFO     | youtube_scraper | YouTube client ready
+2026-05-12 05:36:19 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-12 05:36:20 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-12 05:36:20 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-12 05:36:20 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-12 05:36:20 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-12 05:36:21 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-12 05:36:21 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-12 05:36:22 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-12 05:36:22 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-12 05:36:22 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-12 05:36:22 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-12 05:36:23 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-12 05:36:23 | INFO     | youtube_scraper | YouTube 'vector database AI': 40 results (quota used: 1300)
+2026-05-12 05:36:23 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-12 05:36:24 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-12 05:36:24 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-12 05:36:24 | INFO     | youtube_scraper | YouTube 'Groq inference': 2 results (quota used: 1700)
+2026-05-12 05:36:24 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-12 05:36:25 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-12 05:36:25 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-12 05:36:25 | INFO     | youtube_scraper | YouTube total: 893 items, quota used: 2000
+2026-05-12 05:36:25 | INFO     | main |   YouTube: 838 items
+2026-05-12 05:36:25 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-12 05:36:30 | INFO     | rss_scraper | HackerNews: 157 items
+2026-05-12 05:36:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-12 05:36:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-12 05:36:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-12 05:36:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-12 05:36:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-12 05:36:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-12 05:36:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-12 05:36:37 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-12 05:37:07 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-12 05:37:19 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-12 05:37:20 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-12 05:37:32 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-12 05:37:33 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-12 05:37:37 | INFO     | rss_scraper | Dev.to: 189 items
+2026-05-12 05:37:39 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-12 05:37:39 | INFO     | rss_scraper | Free sources total: 396 unique items
+2026-05-12 05:37:39 | INFO     | main |   RSS/API sources: 396 items
+2026-05-12 05:37:39 | INFO     | main |   Total scraped: 1234 items
+2026-05-12 05:37:39 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-12 05:37:39 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-12 05:37:39 | INFO     | db_manager | Purged 966 old news items
+2026-05-12 05:37:39 | INFO     | db_manager | Inserted 1059/1234 news items
+2026-05-12 05:37:39 | INFO     | main |   SQLite: 1059 new items (total: 30552)
+2026-05-12 05:37:44 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-12 05:37:45 | INFO     | vector_store | VectorStore ready
+2026-05-12 05:38:13 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-12 05:38:13 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-12 05:38:13 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-12 05:38:13 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-12 05:38:22 | DEBUG    | llm_client | LLM response from github_models (4273 chars)
+2026-05-12 05:38:22 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-12 05:38:22 | INFO     | main |   Found 10 topics:
+2026-05-12 05:38:22 | INFO     | main |      1. [10/10] AI-Powered Vulnerability Detection
+2026-05-12 05:38:22 | INFO     | main |      2. [9/10] AI Code Review Automation
+2026-05-12 05:38:22 | INFO     | main |      3. [9/10] AI Safety and Regulation
+2026-05-12 05:38:22 | INFO     | main |      4. [8/10] AI Agent Swarm Systems
+2026-05-12 05:38:22 | INFO     | main |      5. [8/10] AI in Healthcare Diagnostics
+2026-05-12 05:38:22 | INFO     | main |      6. [8/10] AI-Assisted Financial Analysis
+2026-05-12 05:38:22 | INFO     | main |      7. [8/10] AI for Military and Rescue Operations
+2026-05-12 05:38:22 | INFO     | main |      8. [7/10] AI Cost Optimization
+2026-05-12 05:38:22 | INFO     | main |      9. [7/10] AI-Enhanced Writing Tools
+2026-05-12 05:38:22 | INFO     | main |     10. [6/10] AI-Driven News Aggregation
+2026-05-12 05:38:22 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-12 05:38:22 | INFO     | main |   Existing collection: 221 tools across 119 topics
+2026-05-12 05:38:22 | INFO     | main |   🔄 Upgrade candidate: 'AI in Healthcare Diagnostics' (relevance 8/10, last built 2026-05-04)
+2026-05-12 05:38:22 | INFO     | main |   Topics flagged for upgrade: AI in Healthcare Diagnostics
+2026-05-12 05:38:26 | DEBUG    | llm_client | LLM response from github_models (3241 chars)
+2026-05-12 05:38:26 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Vulnerability Detection
+2026-05-12 05:38:30 | DEBUG    | llm_client | LLM response from github_models (2530 chars)
+2026-05-12 05:38:30 | INFO     | idea_generator | Generated 2 ideas for topic: AI Code Review Automation
+2026-05-12 05:38:30 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-12 05:38:30 | INFO     | main |   Generated 5 tool ideas:
+2026-05-12 05:38:30 | INFO     | main |     • ai_vulnerability_scanner: This CLI tool integrates AI-powered vulnerability detection into CI/CD pipelines
+2026-05-12 05:38:30 | INFO     | main |     • code_patch_assessor: A library that allows developers to assess the security impact of patches or upd
+2026-05-12 05:38:30 | INFO     | main |     • ai_dependency_checker: This automation script scans Python project dependencies for known vulnerabiliti
+2026-05-12 05:38:30 | INFO     | main |     • ai_code_review_pipeline: This tool allows developers to create customized code review pipelines by integr
+2026-05-12 05:38:30 | INFO     | main |     • ai_code_review_reporter: This tool generates comprehensive reports based on AI code review feedback for a
+2026-05-12 05:38:30 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-12 05:38:30 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-12 05:38:39 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-12 05:38:39 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-12 05:38:39 | INFO     | tool_builder | Building tool: ai_vulnerability_scanner …
+2026-05-12 05:38:49 | DEBUG    | llm_client | LLM response from github_models (5499 chars)
+2026-05-12 05:38:49 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'requests==2.31.0']
+2026-05-12 05:38:52 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_analyze_file FAILED               [ 33%]
+test_ai_vulnerability_scanner.py::test_analyze_path FAILED               [100%]
+    assert "analysis" in result
+E   AssertionError: assert 'analysis' in {'error': 'File does not exist.', 'file': 'test_file.py'}
+    assert "analysis" in result[0]
+E   AssertionError: assert 'analysis' in {'error': 'File does not exist.', 'file': 'test_file.py'}
+FAILED test_ai_vulnerability_scanner.py::test_analyze_file - AssertionError: assert 'analysis' in {'error': 'File does not exist.', 'file': 'test_file.py'}
+FAILED test_ai_vulnerability_scanner.py::test_analyze_path - AssertionError: assert 'analysis' in {'error': 'File does not exist.', 'file': 'test_file.py'}
+2026-05-12 05:38:52 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 1/5) — test_ai_vulnerability_scanner.py::test_analyze_file FAILED               [ 33%]
+test_ai_vulnerability_scanner.py::test_analyze_path FAILED               [100%]
+    assert "analysis" in result
+E   Asse
+2026-05-12 05:38:59 | DEBUG    | llm_client | LLM response from github_models (6263 chars)
+2026-05-12 05:38:59 | DEBUG    | test_runner | Installing: ['openai']
+2026-05-12 05:39:00 | INFO     | test_runner | Tests PASSED for ai_vulnerability_scanner
+2026-05-12 05:39:00 | INFO     | tool_builder | ✅ ai_vulnerability_scanner passed tests on loop 2
+2026-05-12 05:39:00 | INFO     | tool_builder | Building tool: code_patch_assessor …
+2026-05-12 05:39:09 | DEBUG    | llm_client | LLM response from github_models (6315 chars)
+2026-05-12 05:39:09 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'unidiff==0.7.3', 'pytest==7.4.2']
+2026-05-12 05:39:11 | WARNING  | test_runner | Tests FAILED for code_patch_assessor:
+test_code_patch_assessor.py::test_assess_security_with_valid_diff FAILED [ 20%]
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 60%]
+test_code_patch_assessor.py::test_assess_security_with_ai_error FAILED   [100%]
+    assert result == {"vulnerabilities": []}
+E   assert {'vulnerabili...lities": []}'} == {'vulnerabilities': []}
+    raise openai.error.AuthenticationError(
+E   openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise RuntimeError(f"Error communicating with the AI model: {e}")
+E   RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise ValueError("Either diff_string or diff_file must be provided.")
+E   ValueError: Either diff_string or diff_file must be provided.
+    with pytest.raises(ValueError, match="The provided diff is empty."):
+E   AssertionError: Regex pattern did not match.
+E   Exception: AI error
+FAILED test_code_patch_assessor.py::test_assess_security_with_valid_diff - assert {'vulnerabili...lities": []}'} == {'vulnerabilities': []}
+FAILED test_code_patch_assessor.py::test_assess_security_with_invalid_diff - RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+FAILED test_code_patch_assessor.py::test_assess_security_with_empty_diff - AssertionError: Regex pattern did not match.
+FAILED test_code_patch_assessor.py::test_assess_security_with_ai_error - Exception: AI error
+2026-05-12 05:39:11 | WARNING  | tool_builder | ⚠️  code_patch_assessor tests failed (loop 1/5) — test_code_patch_assessor.py::test_assess_security_with_valid_diff FAILED [ 20%]
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_asse
+2026-05-12 05:39:11 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-12 05:40:19 | DEBUG    | llm_client | LLM response from github_models (6054 chars)
+2026-05-12 05:40:19 | DEBUG    | test_runner | Installing: ['openai', 'unidiff', 'pytest']
+2026-05-12 05:40:20 | WARNING  | test_runner | Tests FAILED for code_patch_assessor:
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 60%]
+test_code_patch_assessor.py::test_assess_security_with_ai_error FAILED   [100%]
+    raise openai.error.AuthenticationError(
+E   openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise RuntimeError(f"Error communicating with the AI model: {e}")
+E   RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise ValueError("Either diff_string or diff_file must be provided.")
+E   ValueError: Either diff_string or diff_file must be provided.
+    with pytest.raises(ValueError, match="The provided diff is empty."):
+E   AssertionError: Regex pattern did not match.
+E   Exception: AI error
+FAILED test_code_patch_assessor.py::test_assess_security_with_invalid_diff - RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+FAILED test_code_patch_assessor.py::test_assess_security_with_empty_diff - AssertionError: Regex pattern did not match.
+FAILED test_code_patch_assessor.py::test_assess_security_with_ai_error - Exception: AI error
+2026-05-12 05:40:20 | WARNING  | tool_builder | ⚠️  code_patch_assessor tests failed (loop 2/5) — test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 60%]
+test_code_patch_assessor.py::test_asse
+2026-05-12 05:40:29 | DEBUG    | llm_client | LLM response from github_models (6352 chars)
+2026-05-12 05:40:29 | DEBUG    | test_runner | Installing: ['openai', 'unidiff', 'pytest']
+2026-05-12 05:40:30 | WARNING  | test_runner | Tests FAILED for code_patch_assessor:
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 60%]
+test_code_patch_assessor.py::test_assess_security_with_ai_error FAILED   [100%]
+    raise openai.error.AuthenticationError(
+E   openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise RuntimeError(f"Error communicating with the AI model: {e}")
+E   RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+    raise ValueError("Either diff_string or diff_file must be provided.")
+E   ValueError: Either diff_string or diff_file must be provided.
+    with pytest.raises(ValueError, match="The provided diff is empty."):
+E   AssertionError: Regex pattern did not match.
+E   Exception: AI error
+FAILED test_code_patch_assessor.py::test_assess_security_with_invalid_diff - RuntimeError: Error communicating with the AI model: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+FAILED test_code_patch_assessor.py::test_assess_security_with_empty_diff - AssertionError: Regex pattern did not match.
+FAILED test_code_patch_assessor.py::test_assess_security_with_ai_error - Exception: AI error
+2026-05-12 05:40:30 | WARNING  | tool_builder | ⚠️  code_patch_assessor tests failed (loop 3/5) — test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 40%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 60%]
+test_code_patch_assessor.py::test_asse
+2026-05-12 05:40:40 | DEBUG    | llm_client | LLM response from github_models (7741 chars)
+2026-05-12 05:40:40 | DEBUG    | test_runner | Installing: ['openai', 'unidiff', 'pytest']
+2026-05-12 05:40:41 | WARNING  | test_runner | Tests FAILED for code_patch_assessor:
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 33%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 50%]
+test_code_patch_assessor.py::test_assess_security_with_ai_error FAILED   [ 83%]
+test_code_patch_assessor.py::test_assess_security_with_diff_file FAILED  [100%]
+E   RuntimeError: This should not be called for invalid diffs.
+    raise ValueError("Either diff_string or diff_file must be provided.")
+E   ValueError: Either diff_string or diff_file must be provided.
+    with pytest.raises(ValueError, match="The provided diff is empty."):
+E   AssertionError: Regex pattern did not match.
+E   Exception: AI error
+    raise FileNotFoundError(f"The file '{diff_file}' does not exist.")
+E   FileNotFoundError: The file 'mocked_file.diff' does not exist.
+FAILED test_code_patch_assessor.py::test_assess_security_with_invalid_diff - RuntimeError: This should not be called for invalid diffs.
+FAILED test_code_patch_assessor.py::test_assess_security_with_empty_diff - AssertionError: Regex pattern did not match.
+FAILED test_code_patch_assessor.py::test_assess_security_with_ai_error - Exception: AI error
+FAILED test_code_patch_assessor.py::test_assess_security_with_diff_file - FileNotFoundError: The file 'mocked_file.diff' does not exist.
+2026-05-12 05:40:41 | WARNING  | tool_builder | ⚠️  code_patch_assessor tests failed (loop 4/5) — test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 33%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 50%]
+test_code_patch_assessor.py::test_asse
+2026-05-12 05:40:49 | DEBUG    | llm_client | LLM response from github_models (6991 chars)
+2026-05-12 05:40:49 | DEBUG    | test_runner | Installing: ['openai', 'unidiff', 'pytest']
+2026-05-12 05:40:50 | WARNING  | test_runner | Tests FAILED for code_patch_assessor:
+test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 33%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 50%]
+test_code_patch_assessor.py::test_assess_security_with_ai_error FAILED   [ 83%]
+E   RuntimeError: This should not be called for invalid diffs.
+    raise ValueError("Either diff_string or diff_file must be provided.")
+E   ValueError: Either diff_string or diff_file must be provided.
+    with pytest.raises(ValueError, match="The provided diff is empty."):
+E   AssertionError: Regex pattern did not match.
+E   Exception: AI error
+FAILED test_code_patch_assessor.py::test_assess_security_with_invalid_diff - RuntimeError: This should not be called for invalid diffs.
+FAILED test_code_patch_assessor.py::test_assess_security_with_empty_diff - AssertionError: Regex pattern did not match.
+FAILED test_code_patch_assessor.py::test_assess_security_with_ai_error - Exception: AI error
+2026-05-12 05:40:50 | WARNING  | tool_builder | ⚠️  code_patch_assessor tests failed (loop 5/5) — test_code_patch_assessor.py::test_assess_security_with_invalid_diff FAILED [ 33%]
+test_code_patch_assessor.py::test_assess_security_with_empty_diff FAILED [ 50%]
+test_code_patch_assessor.py::test_asse
+2026-05-12 05:40:50 | ERROR    | tool_builder | ❌ code_patch_assessor failed after 5 loops
+2026-05-12 05:40:50 | INFO     | tool_builder | Building tool: ai_dependency_checker …
+2026-05-12 05:41:05 | DEBUG    | llm_client | LLM response from github_models (7809 chars)
+2026-05-12 05:41:05 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'requests==2.31.0', 'pip-audit==2.4.8', 'pytest==7.4.2']
+2026-05-12 05:41:07 | WARNING  | test_runner | Tests FAILED for ai_dependency_checker:
+test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_dependency_checker.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 22 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-05-12 05:41:07 | WARNING  | tool_builder | ⚠️  ai_dependency_checker tests failed (loop 1/5) — test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-12 05:41:16 | DEBUG    | llm_client | LLM response from github_models (7645 chars)
+2026-05-12 05:41:16 | DEBUG    | test_runner | Installing: ['requests', 'openai']
+2026-05-12 05:41:17 | WARNING  | test_runner | Tests FAILED for ai_dependency_checker:
+test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ai_dependency_checker.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 22 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-05-12 05:41:17 | WARNING  | tool_builder | ⚠️  ai_dependency_checker tests failed (loop 2/5) — test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-12 05:41:25 | DEBUG    | llm_client | LLM response from github_models (7610 chars)
+2026-05-12 05:41:25 | DEBUG    | test_runner | Installing: ['requests', 'openai']
+2026-05-12 05:41:26 | WARNING  | test_runner | Tests FAILED for ai_dependency_checker:
+test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_dependency_checker.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 22 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-05-12 05:41:26 | WARNING  | tool_builder | ⚠️  ai_dependency_checker tests failed (loop 3/5) — test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-12 05:41:36 | DEBUG    | llm_client | LLM response from github_models (7697 chars)
+2026-05-12 05:41:36 | DEBUG    | test_runner | Installing: ['requests', 'openai']
+2026-05-12 05:41:37 | WARNING  | test_runner | Tests FAILED for ai_dependency_checker:
+test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4) + "\n")
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+E   assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+FAILED test_ai_dependency_checker.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 22 times.
+assert (']',) == ('[\n    {\n ...n    }\n]\n',)
+2026-05-12 05:41:37 | WARNING  | tool_builder | ⚠️  ai_dependency_checker tests failed (loop 4/5) — test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-12 05:41:47 | DEBUG    | llm_client | LLM response from github_models (7803 chars)
+2026-05-12 05:41:47 | DEBUG    | test_runner | Installing: ['requests', 'openai']
+2026-05-12 05:41:48 | WARNING  | test_runner | Tests FAILED for ai_dependency_checker:
+test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 22 times.
+E   assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+FAILED test_ai_dependency_checker.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 22 times.
+assert (']',) == ('[\n    {\n ..."\n    }\n]',)
+2026-05-12 05:41:48 | WARNING  | tool_builder | ⚠️  ai_dependency_checker tests failed (loop 5/5) — test_ai_dependency_checker.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-12 05:41:48 | ERROR    | tool_builder | ❌ ai_dependency_checker failed after 5 loops
+2026-05-12 05:41:48 | INFO     | tool_builder | Building tool: ai_code_review_pipeline …
+2026-05-12 05:41:56 | DEBUG    | llm_client | LLM response from github_models (7047 chars)
+2026-05-12 05:41:56 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'requests==2.31.0']
+2026-05-12 05:41:57 | INFO     | test_runner | Tests PASSED for ai_code_review_pipeline
+2026-05-12 05:41:57 | INFO     | tool_builder | ✅ ai_code_review_pipeline passed tests on loop 1
+2026-05-12 05:41:57 | INFO     | tool_builder | Building tool: ai_code_review_reporter …
+2026-05-12 05:42:07 | DEBUG    | llm_client | LLM response from github_models (6905 chars)
+2026-05-12 05:42:07 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'jinja2==3.1.2', 'pytest==7.4.2']
+2026-05-12 05:42:08 | WARNING  | test_runner | Tests FAILED for ai_code_review_reporter:
+test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_reporter.py::test_main_file_not_found - NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_reporter.py::test_main_empty_file - NameError: name 'argparse' is not defined
+2026-05-12 05:42:08 | WARNING  | tool_builder | ⚠️  ai_code_review_reporter tests failed (loop 1/5) — test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+E   NameError: name 'argparse' is not de
+2026-05-12 05:42:15 | DEBUG    | llm_client | LLM response from github_models (6428 chars)
+2026-05-12 05:42:15 | DEBUG    | test_runner | Installing: ['openai', 'jinja2', 'pytest']
+2026-05-12 05:42:16 | WARNING  | test_runner | Tests FAILED for ai_code_review_reporter:
+test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+FAILED test_ai_code_review_reporter.py::test_main_file_not_found - Failed: DID NOT RAISE <class 'SystemExit'>
+FAILED test_ai_code_review_reporter.py::test_main_empty_file - Failed: DID NOT RAISE <class 'SystemExit'>
+2026-05-12 05:42:16 | WARNING  | tool_builder | ⚠️  ai_code_review_reporter tests failed (loop 2/5) — test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+FAILED test_ai_code_review_reporter.py::
+2026-05-12 05:42:24 | DEBUG    | llm_client | LLM response from github_models (6915 chars)
+2026-05-12 05:42:24 | DEBUG    | test_runner | Installing: ['openai', 'jinja2', 'pytest']
+2026-05-12 05:42:26 | WARNING  | test_runner | Tests FAILED for ai_code_review_reporter:
+test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+E   Expected: print('Error: File nonexistent.py does not exist.')
+E     Actual: print('Error: File nonexistent.py does not exist.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+    mock_print.assert_called_with("Error: File nonexistent.py does not exist.")
+E   AssertionError: expected call not found.
+E   Expected: print('Error: File nonexistent.py does not exist.')
+E     Actual: print('Error: File nonexistent.py does not exist.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+E   assert {'file': <_io...ding='utf-8'>} == {}
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+E   Expected: print('Error: The file is empty.')
+E     Actual: print('Error: The file is empty.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+    mock_print.assert_called_with("Error: The file is empty.")
+E   AssertionError: expected call not found.
+E   Expected: print('Error: The file is empty.')
+E     Actual: print('Error: The file is empty.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+E   assert {'file': <_io...ding='utf-8'>} == {}
+FAILED test_ai_code_review_reporter.py::test_main_file_not_found - AssertionError: expected call not found.
+Expected: print('Error: File nonexistent.py does not exist.')
+  Actual: print('Error: File nonexistent.py does not exist.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+assert {'file': <_io...ding='utf-8'>} == {}
+FAILED test_ai_code_review_reporter.py::test_main_empty_file - AssertionError: expected call not found.
+Expected: print('Error: The file is empty.')
+  Actual: print('Error: The file is empty.', file=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>)
+assert {'file': <_io...ding='utf-8'>} == {}
+2026-05-12 05:42:26 | WARNING  | tool_builder | ⚠️  ai_code_review_reporter tests failed (loop 3/5) — test_ai_code_review_reporter.py::test_main_file_not_found FAILED         [ 80%]
+test_ai_code_review_reporter.py::test_main_empty_file FAILED             [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-05-12 05:42:34 | DEBUG    | llm_client | LLM response from github_models (6859 chars)
+2026-05-12 05:42:34 | DEBUG    | test_runner | Installing: ['openai', 'jinja2']
+2026-05-12 05:42:34 | INFO     | test_runner | Tests PASSED for ai_code_review_reporter
+2026-05-12 05:42:34 | INFO     | tool_builder | ✅ ai_code_review_reporter passed tests on loop 4
+2026-05-12 05:42:34 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-12 05:42:34 | INFO     | main |   Built 3/5 tools successfully
+2026-05-12 05:42:34 | INFO     | main |     ✅ ai_vulnerability_scanner (loops: 2)
+2026-05-12 05:42:34 | INFO     | main |     ✅ ai_code_review_pipeline (loops: 1)
+2026-05-12 05:42:34 | INFO     | main |     ✅ ai_code_review_reporter (loops: 4)
+2026-05-12 05:42:34 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-12 05:42:34 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-12 05:42:34 | INFO     | github_publisher |   Created zip: ai_vulnerability_scanner.zip (2393 bytes)
+2026-05-12 05:42:34 | INFO     | github_publisher | Saved ai_vulnerability_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_vulnerability_scanner
+2026-05-12 05:42:34 | INFO     | github_publisher |   Created zip: ai_code_review_pipeline.zip (2913 bytes)
+2026-05-12 05:42:34 | INFO     | github_publisher | Saved ai_code_review_pipeline → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_pipeline
+2026-05-12 05:42:34 | INFO     | github_publisher |   Created zip: ai_code_review_reporter.zip (2934 bytes)
+2026-05-12 05:42:34 | INFO     | github_publisher | Saved ai_code_review_reporter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_reporter
+2026-05-12 05:42:34 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-12 05:42:34 | INFO     | main |   Published 3 tools:
+2026-05-12 05:42:34 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_vulnerability_scanner
+2026-05-12 05:42:34 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_pipeline
+2026-05-12 05:42:34 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-12/ai_code_review_reporter
+2026-05-12 05:42:34 | INFO     | main |   Deduplicated 4 older tool version(s) from index
+2026-05-12 05:42:34 | INFO     | main | ✅ Generated tools_index.json with 224 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
