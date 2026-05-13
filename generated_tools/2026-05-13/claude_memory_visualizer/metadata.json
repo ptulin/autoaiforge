@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_memory_visualizer",
+  "display_name": "Claude Memory Visualizer",
+  "description": "This CLI tool offers a visualization of Claude AI's memory contents, displaying memory entries in an organized and human-readable format. It helps developers better understand and debug memory usage in their AI applications.",
+  "topic": "Claude AI Updates and Features",
+  "date": "2026-05-13",
+  "generated": "2026-05-13T05:46:06.253677+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_visualizer/claude_memory_visualizer.zip"
+}

@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-12T05:42:34.948255+00:00",
-  "total_tools": 224,
+  "last_updated": "2026-05-13T05:50:20.703161+00:00",
+  "total_tools": 226,
   "tools": [
+    {
+      "tool_name": "claude_code_assistant",
+      "display_name": "Claude Code Assistant",
+      "description": "This library helps developers enhance their coding workflows by leveraging Claude AI's improved coding capabilities. It integrates with Claude's API to suggest code snippets, debug issues, and refactor code based on user input, streamlining development processes.",
+      "topic": "Claude AI Updates and Features",
+      "date": "2026-05-13",
+      "generated": "2026-05-13T05:46:06.253677+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_code_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_code_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_code_assistant/claude_code_assistant.zip"
+    },
+    {
+      "tool_name": "claude_memory_manager",
+      "display_name": "Claude Memory Manager",
+      "description": "This tool provides developers a way to interact with Claude AI's self-updating memory feature. It allows for querying, updating, and deleting stored memory items programmatically, enabling fine-grained memory management to optimize AI-driven workflows.",
+      "topic": "Claude AI Updates and Features",
+      "date": "2026-05-13",
+      "generated": "2026-05-13T05:46:06.253677+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_manager/claude_memory_manager.zip"
+    },
+    {
+      "tool_name": "ai_strategy_simulator",
+      "display_name": "AI Strategy Simulator",
+      "description": "AI Strategy Simulator is a CLI tool that allows users to test and refine trading strategies using historical market data. It integrates AI-powered predictive models to analyze trends and evaluate the performance of custom strategies over chosen time periods. This tool is invaluable for developers and traders experimenting with new algorithmic approaches to financial trading.",
+      "topic": "AI in Financial Trading",
+      "date": "2026-05-13",
+      "generated": "2026-05-13T05:46:06.253677+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/ai_strategy_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/ai_strategy_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/ai_strategy_simulator/ai_strategy_simulator.zip"
+    },
+    {
+      "tool_name": "claude_memory_visualizer",
+      "display_name": "Claude Memory Visualizer",
+      "description": "This CLI tool offers a visualization of Claude AI's memory contents, displaying memory entries in an organized and human-readable format. It helps developers better understand and debug memory usage in their AI applications.",
+      "topic": "Claude AI Updates and Features",
+      "date": "2026-05-13",
+      "generated": "2026-05-13T05:46:06.253677+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_visualizer/claude_memory_visualizer.zip"
+    },
     {
       "tool_name": "ai_code_review_pipeline",
       "display_name": "AI Code Review Pipeline",
@@ -586,19 +638,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-27/parameter_freezer",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-27/parameter_freezer/parameter_freezer.zip"
-    },
-    {
-      "tool_name": "claude_code_assistant",
-      "display_name": "Claude Code Assistant",
-      "description": "A CLI tool that integrates with Claude AI to generate boilerplate code, refactor existing codebases, and provide code completion suggestions. This is useful for AI developers who want to streamline repetitive coding tasks or explore AI-generated solutions.",
-      "topic": "Claude AI for Coding",
-      "date": "2026-04-26",
-      "generated": "2026-04-26T04:57:39.234363+00:00",
-      "loops_needed": 3,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-26/claude_code_assistant",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/claude_code_assistant/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/claude_code_assistant/claude_code_assistant.zip"
     },
     {
       "tool_name": "claude_ci_linter",
@@ -2497,19 +2536,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_code_reviewer",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_code_reviewer/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_code_reviewer/claude_code_reviewer.zip"
-    },
-    {
-      "tool_name": "claude_memory_manager",
-      "display_name": "Claude Memory Manager",
-      "description": "A tool to interact with Claude AI's memory feature by storing, retrieving, and managing contextual information for better AI responses. Developers can use this to maintain long-term context across conversations or tasks, making it easier to handle complex workflows.",
-      "topic": "Claude AI Updates and Features",
-      "date": "2026-03-11",
-      "generated": "2026-03-11T04:06:43.907579+00:00",
-      "loops_needed": 4,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-03-11/claude_memory_manager",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_memory_manager/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-03-11/claude_memory_manager/claude_memory_manager.zip"
     },
     {
       "tool_name": "medical_dataset_synthesizer",

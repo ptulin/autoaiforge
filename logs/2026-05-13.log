@@ -1,0 +1,242 @@
+2026-05-13 05:46:06 | INFO     | main | ============================================================
+2026-05-13 05:46:06 | INFO     | main | AutoAIForge starting run: 2026-05-13T05:46:06.253677+00:00
+2026-05-13 05:46:06 | INFO     | main | ============================================================
+2026-05-13 05:46:06 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-13 05:46:06 | INFO     | youtube_scraper | YouTube client ready
+2026-05-13 05:46:06 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-13 05:46:07 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-13 05:46:07 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-13 05:46:07 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-13 05:46:08 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-13 05:46:08 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-13 05:46:08 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-13 05:46:09 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-13 05:46:09 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-13 05:46:10 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-13 05:46:10 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-13 05:46:10 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-13 05:46:10 | INFO     | youtube_scraper | YouTube 'vector database AI': 46 results (quota used: 1300)
+2026-05-13 05:46:11 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-13 05:46:11 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-13 05:46:11 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-13 05:46:12 | INFO     | youtube_scraper | YouTube 'Groq inference': 7 results (quota used: 1700)
+2026-05-13 05:46:12 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-13 05:46:12 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-13 05:46:13 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-13 05:46:13 | INFO     | youtube_scraper | YouTube total: 904 items, quota used: 2000
+2026-05-13 05:46:13 | INFO     | main |   YouTube: 853 items
+2026-05-13 05:46:13 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-13 05:46:18 | INFO     | rss_scraper | HackerNews: 163 items
+2026-05-13 05:46:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-13 05:46:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-13 05:46:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-13 05:46:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-13 05:46:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-13 05:46:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-13 05:46:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-13 05:46:25 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-13 05:46:30 | INFO     | rss_scraper | ArXiv: 111 items
+2026-05-13 05:46:34 | INFO     | rss_scraper | Dev.to: 196 items
+2026-05-13 05:46:36 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-13 05:46:36 | INFO     | rss_scraper | Free sources total: 520 unique items
+2026-05-13 05:46:36 | INFO     | main |   RSS/API sources: 520 items
+2026-05-13 05:46:36 | INFO     | main |   Total scraped: 1373 items
+2026-05-13 05:46:36 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-13 05:46:36 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-13 05:46:36 | INFO     | db_manager | Purged 942 old news items
+2026-05-13 05:46:36 | INFO     | db_manager | Inserted 1180/1373 news items
+2026-05-13 05:46:36 | INFO     | main |   SQLite: 1180 new items (total: 30790)
+2026-05-13 05:46:40 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-13 05:46:42 | INFO     | vector_store | VectorStore ready
+2026-05-13 05:47:02 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-13 05:47:02 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-13 05:47:02 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-13 05:47:02 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-13 05:47:12 | DEBUG    | llm_client | LLM response from github_models (4198 chars)
+2026-05-13 05:47:12 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-13 05:47:12 | INFO     | main |   Found 10 topics:
+2026-05-13 05:47:12 | INFO     | main |      1. [9/10] Claude AI Updates and Features
+2026-05-13 05:47:12 | INFO     | main |      2. [9/10] AI in Financial Trading
+2026-05-13 05:47:12 | INFO     | main |      3. [9/10] AI-Powered Content Moderation
+2026-05-13 05:47:12 | INFO     | main |      4. [8/10] AI-Powered Design Tools
+2026-05-13 05:47:12 | INFO     | main |      5. [8/10] AI Cost Reduction Innovations
+2026-05-13 05:47:12 | INFO     | main |      6. [8/10] AI-Driven Legal Assistance
+2026-05-13 05:47:12 | INFO     | main |      7. [8/10] AI in Education and Workforce Training
+2026-05-13 05:47:12 | INFO     | main |      8. [7/10] AI in Cybersecurity Training
+2026-05-13 05:47:12 | INFO     | main |      9. [7/10] AI-Powered Autonomous Vehicles
+2026-05-13 05:47:12 | INFO     | main |     10. [7/10] AI and Data Center Optimization
+2026-05-13 05:47:12 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-13 05:47:12 | INFO     | main |   Existing collection: 224 tools across 121 topics
+2026-05-13 05:47:12 | INFO     | main |   🔄 Upgrade candidate: 'Claude AI Updates and Features' (relevance 9/10, last built 2026-03-11)
+2026-05-13 05:47:12 | INFO     | main |   Topics flagged for upgrade: Claude AI Updates and Features
+2026-05-13 05:47:12 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Claude AI Updates and Features'
+2026-05-13 05:47:18 | DEBUG    | llm_client | LLM response from github_models (3442 chars)
+2026-05-13 05:47:18 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Updates and Features
+2026-05-13 05:47:22 | DEBUG    | llm_client | LLM response from github_models (2834 chars)
+2026-05-13 05:47:22 | INFO     | idea_generator | Generated 2 ideas for topic: AI in Financial Trading
+2026-05-13 05:47:22 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-13 05:47:22 | INFO     | main |   Generated 5 tool ideas:
+2026-05-13 05:47:22 | INFO     | main |     • claude_memory_manager: This tool provides developers a way to interact with Claude AI's self-updating m
+2026-05-13 05:47:22 | INFO     | main |     • claude_code_assistant: This library helps developers enhance their coding workflows by leveraging Claud
+2026-05-13 05:47:22 | INFO     | main |     • claude_memory_visualizer: This CLI tool offers a visualization of Claude AI's memory contents, displaying 
+2026-05-13 05:47:22 | INFO     | main |     • ai_strategy_simulator: AI Strategy Simulator is a CLI tool that allows users to test and refine trading
+2026-05-13 05:47:22 | INFO     | main |     • realtime_ai_signal_monitor: Realtime AI Signal Monitor is a Python library that enables developers to integr
+2026-05-13 05:47:22 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-13 05:47:22 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-13 05:47:30 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-13 05:47:30 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-13 05:47:30 | INFO     | tool_builder | Building tool: claude_memory_manager …
+2026-05-13 05:47:36 | DEBUG    | llm_client | LLM response from github_models (4522 chars)
+2026-05-13 05:47:36 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.0']
+2026-05-13 05:47:37 | INFO     | test_runner | Tests PASSED for claude_memory_manager
+2026-05-13 05:47:37 | INFO     | tool_builder | ✅ claude_memory_manager passed tests on loop 1
+2026-05-13 05:47:37 | INFO     | tool_builder | Building tool: claude_code_assistant …
+2026-05-13 05:47:47 | DEBUG    | llm_client | LLM response from github_models (6392 chars)
+2026-05-13 05:47:47 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'openai==0.27.8', 'pytest==7.4.2']
+2026-05-13 05:47:49 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_suggest_code_api_error FAILED        [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_code_assistant.py::test_suggest_code_api_error - NameError: name 'requests' is not defined
+2026-05-13 05:47:49 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 1/5) — test_claude_code_assistant.py::test_suggest_code_api_error FAILED        [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED 
+2026-05-13 05:47:55 | DEBUG    | llm_client | LLM response from github_models (6032 chars)
+2026-05-13 05:47:55 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-05-13 05:47:56 | WARNING  | test_runner | Tests FAILED for claude_code_assistant:
+test_claude_code_assistant.py::test_suggest_code_api_error FAILED        [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED test_claude_code_assistant.py::test_suggest_code_api_error - NameError: name 'requests' is not defined
+2026-05-13 05:47:56 | WARNING  | tool_builder | ⚠️  claude_code_assistant tests failed (loop 2/5) — test_claude_code_assistant.py::test_suggest_code_api_error FAILED        [100%]
+    mock_post.side_effect = requests.RequestException("API error")
+E   NameError: name 'requests' is not defined
+FAILED 
+2026-05-13 05:47:56 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-13 05:49:02 | DEBUG    | llm_client | LLM response from github_models (6093 chars)
+2026-05-13 05:49:02 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-05-13 05:49:03 | INFO     | test_runner | Tests PASSED for claude_code_assistant
+2026-05-13 05:49:03 | INFO     | tool_builder | ✅ claude_code_assistant passed tests on loop 3
+2026-05-13 05:49:03 | INFO     | tool_builder | Building tool: claude_memory_visualizer …
+2026-05-13 05:49:13 | DEBUG    | llm_client | LLM response from github_models (6827 chars)
+2026-05-13 05:49:13 | DEBUG    | test_runner | Installing: ['tabulate==0.9.0', 'requests==2.31.0']
+2026-05-13 05:49:14 | WARNING  | test_runner | Tests FAILED for claude_memory_visualizer:
+test_claude_memory_visualizer.py::test_filter_memory_data FAILED         [ 66%]
+E   NameError: name 'datetime' is not defined
+FAILED test_claude_memory_visualizer.py::test_filter_memory_data - NameError: name 'datetime' is not defined
+2026-05-13 05:49:14 | WARNING  | tool_builder | ⚠️  claude_memory_visualizer tests failed (loop 1/5) — test_claude_memory_visualizer.py::test_filter_memory_data FAILED         [ 66%]
+E   NameError: name 'datetime' is not defined
+FAILED test_claude_memory_visualizer.py::test_filter_memory_data - NameErr
+2026-05-13 05:49:22 | DEBUG    | llm_client | LLM response from github_models (7435 chars)
+2026-05-13 05:49:22 | DEBUG    | test_runner | Installing: ['tabulate', 'requests']
+2026-05-13 05:49:23 | INFO     | test_runner | Tests PASSED for claude_memory_visualizer
+2026-05-13 05:49:23 | INFO     | tool_builder | ✅ claude_memory_visualizer passed tests on loop 2
+2026-05-13 05:49:23 | INFO     | tool_builder | Building tool: ai_strategy_simulator …
+2026-05-13 05:49:33 | DEBUG    | llm_client | LLM response from github_models (6247 chars)
+2026-05-13 05:49:33 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.23.5', 'scikit-learn==1.2.2', 'matplotlib==3.7.1']
+2026-05-13 05:49:48 | INFO     | test_runner | Tests PASSED for ai_strategy_simulator
+2026-05-13 05:49:48 | INFO     | tool_builder | ✅ ai_strategy_simulator passed tests on loop 1
+2026-05-13 05:49:48 | INFO     | tool_builder | Building tool: realtime_ai_signal_monitor …
+2026-05-13 05:49:54 | DEBUG    | llm_client | LLM response from github_models (5439 chars)
+2026-05-13 05:49:54 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'websocket-client==1.6.2', 'tensorflow==2.12.0', 'numpy==1.24.4']
+2026-05-13 05:49:56 | WARNING  | test_runner | pip install warning: ERROR: Cannot install numpy==1.24.4 and tensorflow==2.12.0 because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+2026-05-13 05:49:56 | WARNING  | test_runner | Tests FAILED for realtime_ai_signal_monitor:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_realtime_ai_signal_monitor.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/realtime_ai_signal_monitor/test_realtime_ai_signal_monitor.py'.
+E   ModuleNotFoundError: No module named 'tensorflow'
+ERROR test_realtime_ai_signal_monitor.py
+2026-05-13 05:49:56 | WARNING  | tool_builder | ⚠️  realtime_ai_signal_monitor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_realtime_ai_signal_monitor.py ______________
+ImportError while importing test modul
+2026-05-13 05:50:02 | DEBUG    | llm_client | LLM response from github_models (4844 chars)
+2026-05-13 05:50:02 | DEBUG    | test_runner | Installing: ['numpy']
+2026-05-13 05:50:02 | WARNING  | test_runner | Tests FAILED for realtime_ai_signal_monitor:
+test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+test_realtime_ai_signal_monitor.py::test_process_data_no_signal FAILED   [100%]
+E   NameError: name 'json' is not defined
+E   NameError: name 'json' is not defined
+E   NameError: name 'json' is not defined
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_buy_signal - NameError: name 'json' is not defined
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_sell_signal - NameError: name 'json' is not defined
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_no_signal - NameError: name 'json' is not defined
+2026-05-13 05:50:02 | WARNING  | tool_builder | ⚠️  realtime_ai_signal_monitor tests failed (loop 2/5) — test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+test_realtime_ai_signal_monitor.py::test
+2026-05-13 05:50:07 | DEBUG    | llm_client | LLM response from github_models (4810 chars)
+2026-05-13 05:50:07 | DEBUG    | test_runner | Installing: ['numpy']
+2026-05-13 05:50:08 | WARNING  | test_runner | Tests FAILED for realtime_ai_signal_monitor:
+test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "confidence": 0.8}
+E   AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+    assert signal == {"action": "SELL", "confidence": 0.2}
+E   AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_buy_signal - AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_sell_signal - AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+2026-05-13 05:50:08 | WARNING  | tool_builder | ⚠️  realtime_ai_signal_monitor tests failed (loop 3/5) — test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "
+2026-05-13 05:50:13 | DEBUG    | llm_client | LLM response from github_models (4758 chars)
+2026-05-13 05:50:13 | DEBUG    | test_runner | Installing: ['numpy', 'pytest']
+2026-05-13 05:50:14 | WARNING  | test_runner | Tests FAILED for realtime_ai_signal_monitor:
+test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "confidence": 0.8}
+E   AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+    assert signal == {"action": "SELL", "confidence": 0.2}
+E   AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_buy_signal - AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_sell_signal - AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+2026-05-13 05:50:14 | WARNING  | tool_builder | ⚠️  realtime_ai_signal_monitor tests failed (loop 4/5) — test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "
+2026-05-13 05:50:20 | DEBUG    | llm_client | LLM response from github_models (5027 chars)
+2026-05-13 05:50:20 | DEBUG    | test_runner | Installing: ['numpy']
+2026-05-13 05:50:20 | WARNING  | test_runner | Tests FAILED for realtime_ai_signal_monitor:
+test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "confidence": 0.8}
+E   AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+    assert signal == {"action": "SELL", "confidence": 0.2}
+E   AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+ERROR    root:realtime_ai_signal_monitor.py:44 Error processing data: 'function' object is not subscriptable
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_buy_signal - AssertionError: assert None == {'action': 'BUY', 'confidence': 0.8}
+FAILED test_realtime_ai_signal_monitor.py::test_process_data_sell_signal - AssertionError: assert None == {'action': 'SELL', 'confidence': 0.2}
+2026-05-13 05:50:20 | WARNING  | tool_builder | ⚠️  realtime_ai_signal_monitor tests failed (loop 5/5) — test_realtime_ai_signal_monitor.py::test_process_data_buy_signal FAILED  [ 50%]
+test_realtime_ai_signal_monitor.py::test_process_data_sell_signal FAILED [ 75%]
+    assert signal == {"action": "BUY", "
+2026-05-13 05:50:20 | ERROR    | tool_builder | ❌ realtime_ai_signal_monitor failed after 5 loops
+2026-05-13 05:50:20 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-13 05:50:20 | INFO     | main |   Built 4/5 tools successfully
+2026-05-13 05:50:20 | INFO     | main |     ✅ claude_memory_manager (loops: 1)
+2026-05-13 05:50:20 | INFO     | main |     ✅ claude_code_assistant (loops: 3)
+2026-05-13 05:50:20 | INFO     | main |     ✅ claude_memory_visualizer (loops: 2)
+2026-05-13 05:50:20 | INFO     | main |     ✅ ai_strategy_simulator (loops: 1)
+2026-05-13 05:50:20 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-13 05:50:20 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-13 05:50:20 | INFO     | github_publisher |   Created zip: claude_memory_manager.zip (1961 bytes)
+2026-05-13 05:50:20 | INFO     | github_publisher | Saved claude_memory_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_manager
+2026-05-13 05:50:20 | INFO     | github_publisher |   Created zip: claude_code_assistant.zip (2611 bytes)
+2026-05-13 05:50:20 | INFO     | github_publisher | Saved claude_code_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_code_assistant
+2026-05-13 05:50:20 | INFO     | github_publisher |   Created zip: claude_memory_visualizer.zip (2962 bytes)
+2026-05-13 05:50:20 | INFO     | github_publisher | Saved claude_memory_visualizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_visualizer
+2026-05-13 05:50:20 | INFO     | github_publisher |   Created zip: ai_strategy_simulator.zip (2762 bytes)
+2026-05-13 05:50:20 | INFO     | github_publisher | Saved ai_strategy_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/ai_strategy_simulator
+2026-05-13 05:50:20 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-13 05:50:20 | INFO     | main |   Published 4 tools:
+2026-05-13 05:50:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_manager
+2026-05-13 05:50:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_code_assistant
+2026-05-13 05:50:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_visualizer
+2026-05-13 05:50:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/ai_strategy_simulator
+2026-05-13 05:50:20 | INFO     | main |   Deduplicated 6 older tool version(s) from index
+2026-05-13 05:50:20 | INFO     | main | ✅ Generated tools_index.json with 226 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
