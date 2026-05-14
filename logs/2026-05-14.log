@@ -1,0 +1,345 @@
+2026-05-14 05:45:09 | INFO     | main | ============================================================
+2026-05-14 05:45:09 | INFO     | main | AutoAIForge starting run: 2026-05-14T05:45:09.009964+00:00
+2026-05-14 05:45:09 | INFO     | main | ============================================================
+2026-05-14 05:45:09 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-14 05:45:09 | INFO     | youtube_scraper | YouTube client ready
+2026-05-14 05:45:09 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-14 05:45:09 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-14 05:45:10 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-14 05:45:10 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-14 05:45:11 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-14 05:45:11 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-14 05:45:11 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-14 05:45:12 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-14 05:45:12 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-14 05:45:12 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-14 05:45:13 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-14 05:45:13 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-14 05:45:13 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-05-14 05:45:13 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-14 05:45:14 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-14 05:45:14 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-14 05:45:14 | INFO     | youtube_scraper | YouTube 'Groq inference': 7 results (quota used: 1700)
+2026-05-14 05:45:15 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-14 05:45:15 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-14 05:45:15 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-14 05:45:15 | INFO     | youtube_scraper | YouTube total: 907 items, quota used: 2000
+2026-05-14 05:45:15 | INFO     | main |   YouTube: 852 items
+2026-05-14 05:45:15 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-14 05:45:20 | INFO     | rss_scraper | HackerNews: 167 items
+2026-05-14 05:45:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-14 05:45:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-14 05:45:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-14 05:45:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-14 05:45:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-14 05:45:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-14 05:45:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-14 05:45:28 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-14 05:45:58 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-14 05:46:14 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-14 05:46:15 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-14 05:46:17 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-14 05:46:18 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-14 05:46:22 | INFO     | rss_scraper | Dev.to: 188 items
+2026-05-14 05:46:23 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-14 05:46:23 | INFO     | rss_scraper | Free sources total: 405 unique items
+2026-05-14 05:46:23 | INFO     | main |   RSS/API sources: 405 items
+2026-05-14 05:46:23 | INFO     | main |   Total scraped: 1257 items
+2026-05-14 05:46:23 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-14 05:46:23 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-14 05:46:23 | INFO     | db_manager | Purged 1001 old news items
+2026-05-14 05:46:23 | INFO     | db_manager | Inserted 1048/1257 news items
+2026-05-14 05:46:23 | INFO     | main |   SQLite: 1048 new items (total: 30837)
+2026-05-14 05:46:28 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-14 05:46:29 | INFO     | vector_store | VectorStore ready
+2026-05-14 05:47:00 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-14 05:47:00 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-14 05:47:00 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-14 05:47:00 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-14 05:47:05 | DEBUG    | llm_client | LLM response from github_models (4034 chars)
+2026-05-14 05:47:05 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-14 05:47:05 | INFO     | main |   Found 10 topics:
+2026-05-14 05:47:05 | INFO     | main |      1. [10/10] AI Benchmarking Breakthroughs
+2026-05-14 05:47:05 | INFO     | main |      2. [9/10] AI-Powered Weather Forecasting
+2026-05-14 05:47:05 | INFO     | main |      3. [9/10] Reinforcement Learning Infrastructure
+2026-05-14 05:47:05 | INFO     | main |      4. [8/10] Generative AI for Legal Agents
+2026-05-14 05:47:05 | INFO     | main |      5. [8/10] AI Malware Detection
+2026-05-14 05:47:05 | INFO     | main |      6. [8/10] AI in Military Applications
+2026-05-14 05:47:05 | INFO     | main |      7. [7/10] AI Memory Optimization
+2026-05-14 05:47:05 | INFO     | main |      8. [7/10] AI in Smart Homes
+2026-05-14 05:47:05 | INFO     | main |      9. [7/10] AI for Creative Automation
+2026-05-14 05:47:05 | INFO     | main |     10. [6/10] AI-Driven Fitness Coaching
+2026-05-14 05:47:05 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-14 05:47:05 | INFO     | main |   Existing collection: 226 tools across 122 topics
+2026-05-14 05:47:05 | INFO     | main |   🔄 Upgrade candidate: 'AI in Military Applications' (relevance 8/10, last built 2026-03-01)
+2026-05-14 05:47:05 | INFO     | main |   Topics flagged for upgrade: AI in Military Applications
+2026-05-14 05:47:13 | DEBUG    | llm_client | LLM response from github_models (3766 chars)
+2026-05-14 05:47:13 | INFO     | idea_generator | Generated 3 ideas for topic: AI Benchmarking Breakthroughs
+2026-05-14 05:47:18 | DEBUG    | llm_client | LLM response from github_models (2627 chars)
+2026-05-14 05:47:18 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Weather Forecasting
+2026-05-14 05:47:18 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-14 05:47:18 | INFO     | main |   Generated 5 tool ideas:
+2026-05-14 05:47:18 | INFO     | main |     • model_eval_comparator: A CLI tool that allows users to benchmark and compare the performance of multipl
+2026-05-14 05:47:18 | INFO     | main |     • dataset_bias_detector: A Python library that analyzes datasets for potential biases and evaluates how t
+2026-05-14 05:47:18 | INFO     | main |     • response_quality_assessor: This CLI tool evaluates the quality of AI-generated responses (e.g., GPT-6 outpu
+2026-05-14 05:47:18 | INFO     | main |     • hyperlocal_weather_visualizer: This tool fetches hyperlocal AI-driven weather forecast data via a public weathe
+2026-05-14 05:47:18 | INFO     | main |     • weather_data_analyzer: This is a lightweight Python library for processing and analyzing AI-driven weat
+2026-05-14 05:47:18 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-14 05:47:18 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-14 05:47:27 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-14 05:47:27 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-14 05:47:27 | INFO     | tool_builder | Building tool: model_eval_comparator …
+2026-05-14 05:47:39 | DEBUG    | llm_client | LLM response from github_models (7624 chars)
+2026-05-14 05:47:39 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pandas==1.5.3', 'numpy==1.23.5']
+2026-05-14 05:47:47 | WARNING  | test_runner | Tests FAILED for model_eval_comparator:
+test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+test_model_eval_comparator.py::test_main_missing_dataset FAILED          [100%]
+    assert result.exit_code == 0
+E   AssertionError: assert 1 == 0
+E    +  where 1 = <Result KeyError('/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo')>.exit_code
+    assert result.exit_code == 0
+E   AssertionError: assert 1 == 0
+E    +  where 1 = <Result KeyError('/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo')>.exit_code
+    assert result.exit_code != 0
+E   assert 0 != 0
+FAILED test_model_eval_comparator.py::test_main_json_output - AssertionError: assert 1 == 0
+ +  where 1 = <Result KeyError('/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo')>.exit_code
+FAILED test_model_eval_comparator.py::test_main_csv_output - AssertionError: assert 1 == 0
+ +  where 1 = <Result KeyError('/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo')>.exit_code
+FAILED test_model_eval_comparator.py::test_main_missing_dataset - assert 0 != 0
+2026-05-14 05:47:47 | WARNING  | tool_builder | ⚠️  model_eval_comparator tests failed (loop 1/5) — test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+test_model_eval_comparator.py::test_main
+2026-05-14 05:47:55 | DEBUG    | llm_client | LLM response from github_models (7375 chars)
+2026-05-14 05:47:55 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-05-14 05:47:57 | WARNING  | test_runner | Tests FAILED for model_eval_comparator:
+test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_json_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_csv_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+2026-05-14 05:47:57 | WARNING  | tool_builder | ⚠️  model_eval_comparator tests failed (loop 2/5) — test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/o
+2026-05-14 05:48:04 | DEBUG    | llm_client | LLM response from github_models (7366 chars)
+2026-05-14 05:48:04 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'pytest']
+2026-05-14 05:48:05 | WARNING  | test_runner | Tests FAILED for model_eval_comparator:
+test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_json_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_csv_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+2026-05-14 05:48:05 | WARNING  | tool_builder | ⚠️  model_eval_comparator tests failed (loop 3/5) — test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/o
+2026-05-14 05:48:14 | DEBUG    | llm_client | LLM response from github_models (7650 chars)
+2026-05-14 05:48:14 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'pytest']
+2026-05-14 05:48:15 | WARNING  | test_runner | Tests FAILED for model_eval_comparator:
+test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   TypeError: 'dict' object is not callable
+    assert main() == 0
+E   TypeError: 'dict' object is not callable
+FAILED test_model_eval_comparator.py::test_main_json_output - TypeError: 'dict' object is not callable
+FAILED test_model_eval_comparator.py::test_main_csv_output - TypeError: 'dict' object is not callable
+2026-05-14 05:48:15 | WARNING  | tool_builder | ⚠️  model_eval_comparator tests failed (loop 4/5) — test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   TypeError: 'd
+2026-05-14 05:48:23 | DEBUG    | llm_client | LLM response from github_models (7378 chars)
+2026-05-14 05:48:23 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'pytest']
+2026-05-14 05:48:25 | WARNING  | test_runner | Tests FAILED for model_eval_comparator:
+test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+    assert main() == 0
+E   KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_json_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+FAILED test_model_eval_comparator.py::test_main_csv_output - KeyError: '/opt/hostedtoolcache/Python/3.11.15/x64/share/locale/en_US.UTF-8/LC_MESSAGES/messages.mo'
+2026-05-14 05:48:25 | WARNING  | tool_builder | ⚠️  model_eval_comparator tests failed (loop 5/5) — test_model_eval_comparator.py::test_main_json_output FAILED              [ 33%]
+test_model_eval_comparator.py::test_main_csv_output FAILED               [ 66%]
+    assert main() == 0
+E   KeyError: '/o
+2026-05-14 05:48:25 | ERROR    | tool_builder | ❌ model_eval_comparator failed after 5 loops
+2026-05-14 05:48:25 | INFO     | tool_builder | Building tool: dataset_bias_detector …
+2026-05-14 05:48:34 | DEBUG    | llm_client | LLM response from github_models (7016 chars)
+2026-05-14 05:48:34 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'matplotlib==3.7.1', 'seaborn==0.12.2']
+2026-05-14 05:48:40 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_bias_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:48:40 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:48:47 | DEBUG    | llm_client | LLM response from github_models (6592 chars)
+2026-05-14 05:48:47 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'seaborn']
+2026-05-14 05:48:48 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_bias_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:48:48 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:48:54 | DEBUG    | llm_client | LLM response from github_models (6345 chars)
+2026-05-14 05:48:54 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'seaborn']
+2026-05-14 05:48:55 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_bias_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:48:55 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:01 | DEBUG    | llm_client | LLM response from github_models (6596 chars)
+2026-05-14 05:49:01 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'seaborn']
+2026-05-14 05:49:02 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_bias_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:02 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:07 | DEBUG    | llm_client | LLM response from github_models (6296 chars)
+2026-05-14 05:49:07 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'seaborn', 'pytest']
+2026-05-14 05:49:08 | WARNING  | test_runner | Tests FAILED for dataset_bias_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_bias_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:08 | WARNING  | tool_builder | ⚠️  dataset_bias_detector tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_bias_detector.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:08 | ERROR    | tool_builder | ❌ dataset_bias_detector failed after 5 loops
+2026-05-14 05:49:08 | INFO     | tool_builder | Building tool: response_quality_assessor …
+2026-05-14 05:49:18 | DEBUG    | llm_client | LLM response from github_models (8636 chars)
+2026-05-14 05:49:18 | ERROR    | tool_builder | Initial generation failed for response_quality_assessor: LLM returned non-JSON: {
+  "code": "import json\nimport pandas as pd\nimport nltk\nfrom nltk.tokenize import word_tokenize\nfrom nltk.translate.bleu_score import sentence_bleu\nimport click\n\ndef evaluate_responses(outputs, references, criteria):\n    \"\"\"\n    Evaluate the quality of AI-generated responses.\n\n    Arg
+Expecting property name enclosed in double quotes: line 6 column 1 (char 8623)
+2026-05-14 05:49:18 | INFO     | tool_builder | Building tool: hyperlocal_weather_visualizer …
+2026-05-14 05:49:26 | DEBUG    | llm_client | LLM response from github_models (5688 chars)
+2026-05-14 05:49:26 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'folium==0.14.0', 'pandas==1.5.3', 'matplotlib==3.7.1']
+2026-05-14 05:49:28 | WARNING  | test_runner | Tests FAILED for hyperlocal_weather_visualizer:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_hyperlocal_weather_visualizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:28 | WARNING  | tool_builder | ⚠️  hyperlocal_weather_visualizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:35 | DEBUG    | llm_client | LLM response from github_models (6355 chars)
+2026-05-14 05:49:35 | DEBUG    | test_runner | Installing: ['folium', 'pandas', 'matplotlib']
+2026-05-14 05:49:36 | WARNING  | test_runner | Tests FAILED for hyperlocal_weather_visualizer:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_hyperlocal_weather_visualizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:36 | WARNING  | tool_builder | ⚠️  hyperlocal_weather_visualizer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:42 | DEBUG    | llm_client | LLM response from github_models (6111 chars)
+2026-05-14 05:49:42 | DEBUG    | test_runner | Installing: ['folium', 'pandas', 'pytest']
+2026-05-14 05:49:43 | WARNING  | test_runner | Tests FAILED for hyperlocal_weather_visualizer:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_hyperlocal_weather_visualizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:43 | WARNING  | tool_builder | ⚠️  hyperlocal_weather_visualizer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:49 | DEBUG    | llm_client | LLM response from github_models (6601 chars)
+2026-05-14 05:49:49 | DEBUG    | test_runner | Installing: ['requests', 'folium', 'pandas']
+2026-05-14 05:49:50 | WARNING  | test_runner | Tests FAILED for hyperlocal_weather_visualizer:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_hyperlocal_weather_visualizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:50 | WARNING  | tool_builder | ⚠️  hyperlocal_weather_visualizer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:57 | DEBUG    | llm_client | LLM response from github_models (6341 chars)
+2026-05-14 05:49:57 | DEBUG    | test_runner | Installing: ['requests', 'folium', 'pandas']
+2026-05-14 05:49:58 | WARNING  | test_runner | Tests FAILED for hyperlocal_weather_visualizer:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_hyperlocal_weather_visualizer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:49:58 | WARNING  | tool_builder | ⚠️  hyperlocal_weather_visualizer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_hyperlocal_weather_visualizer.py ____________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:49:58 | ERROR    | tool_builder | ❌ hyperlocal_weather_visualizer failed after 5 loops
+2026-05-14 05:49:58 | INFO     | tool_builder | Building tool: weather_data_analyzer …
+2026-05-14 05:49:58 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-14 05:51:06 | DEBUG    | llm_client | LLM response from github_models (6692 chars)
+2026-05-14 05:51:06 | DEBUG    | test_runner | Installing: ['pandas==1.3.3', 'numpy==1.21.2', 'matplotlib==3.4.3', 'scipy==1.7.1']
+2026-05-14 05:52:31 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × installing build dependencies for pandas did not run successfully.
+  │ exit code: 1
+  ╰─> [1165 lines of output]
+      Ignoring numpy: markers 'python_version == "3.7" and (platform_machine != "arm64" or platform_system != "Darwin") and platform_machine !
+2026-05-14 05:52:32 | WARNING  | test_runner | Tests FAILED for weather_data_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_weather_data_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:52:32 | WARNING  | tool_builder | ⚠️  weather_data_analyzer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:52:42 | DEBUG    | llm_client | LLM response from github_models (7328 chars)
+2026-05-14 05:52:42 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'scipy']
+2026-05-14 05:52:46 | WARNING  | test_runner | Tests FAILED for weather_data_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_weather_data_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:52:46 | WARNING  | tool_builder | ⚠️  weather_data_analyzer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:52:56 | DEBUG    | llm_client | LLM response from github_models (7444 chars)
+2026-05-14 05:52:56 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'scipy']
+2026-05-14 05:52:56 | WARNING  | test_runner | Tests FAILED for weather_data_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_weather_data_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:52:56 | WARNING  | tool_builder | ⚠️  weather_data_analyzer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:53:05 | DEBUG    | llm_client | LLM response from github_models (7242 chars)
+2026-05-14 05:53:05 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'scipy']
+2026-05-14 05:53:06 | WARNING  | test_runner | Tests FAILED for weather_data_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_weather_data_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:53:06 | WARNING  | tool_builder | ⚠️  weather_data_analyzer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:53:14 | DEBUG    | llm_client | LLM response from github_models (7020 chars)
+2026-05-14 05:53:14 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'scipy']
+2026-05-14 05:53:15 | WARNING  | test_runner | Tests FAILED for weather_data_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_weather_data_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-14 05:53:15 | WARNING  | tool_builder | ⚠️  weather_data_analyzer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_weather_data_analyzer.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-14 05:53:15 | ERROR    | tool_builder | ❌ weather_data_analyzer failed after 5 loops
+2026-05-14 05:53:15 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-05-14 05:53:15 | INFO     | main |   Built 0/5 tools successfully
+2026-05-14 05:53:15 | WARNING  | main | No tools built successfully
