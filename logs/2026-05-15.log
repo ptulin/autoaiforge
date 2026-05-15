@@ -1,0 +1,199 @@
+2026-05-15 05:53:05 | INFO     | main | ============================================================
+2026-05-15 05:53:05 | INFO     | main | AutoAIForge starting run: 2026-05-15T05:53:05.900925+00:00
+2026-05-15 05:53:05 | INFO     | main | ============================================================
+2026-05-15 05:53:05 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-15 05:53:06 | INFO     | youtube_scraper | YouTube client ready
+2026-05-15 05:53:06 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-15 05:53:06 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-15 05:53:07 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-15 05:53:07 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-15 05:53:07 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-15 05:53:08 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-15 05:53:08 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-15 05:53:08 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-15 05:53:09 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-15 05:53:09 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-15 05:53:09 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-15 05:53:09 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-15 05:53:10 | INFO     | youtube_scraper | YouTube 'vector database AI': 38 results (quota used: 1300)
+2026-05-15 05:53:10 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-15 05:53:10 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-15 05:53:10 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-15 05:53:11 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-05-15 05:53:11 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-15 05:53:11 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-15 05:53:12 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-15 05:53:12 | INFO     | youtube_scraper | YouTube total: 890 items, quota used: 2000
+2026-05-15 05:53:12 | INFO     | main |   YouTube: 829 items
+2026-05-15 05:53:12 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-15 05:53:17 | INFO     | rss_scraper | HackerNews: 161 items
+2026-05-15 05:53:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-15 05:53:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-15 05:53:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-15 05:53:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-15 05:53:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-15 05:53:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-15 05:53:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-15 05:53:25 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-15 05:53:25 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-15 05:53:57 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-15 05:54:28 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-15 05:54:59 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-15 05:55:00 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-15 05:55:04 | INFO     | rss_scraper | Dev.to: 190 items
+2026-05-15 05:55:06 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-15 05:55:06 | INFO     | rss_scraper | Free sources total: 401 unique items
+2026-05-15 05:55:06 | INFO     | main |   RSS/API sources: 401 items
+2026-05-15 05:55:06 | INFO     | main |   Total scraped: 1230 items
+2026-05-15 05:55:06 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-15 05:55:06 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-15 05:55:06 | INFO     | db_manager | Purged 1111 old news items
+2026-05-15 05:55:06 | INFO     | db_manager | Inserted 989/1230 news items
+2026-05-15 05:55:06 | INFO     | main |   SQLite: 989 new items (total: 30715)
+2026-05-15 05:55:11 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-15 05:55:12 | INFO     | vector_store | VectorStore ready
+2026-05-15 05:55:44 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-15 05:55:44 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-15 05:55:44 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-15 05:55:44 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-15 05:55:53 | DEBUG    | llm_client | LLM response from github_models (3950 chars)
+2026-05-15 05:55:53 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-15 05:55:53 | INFO     | main |   Found 10 topics:
+2026-05-15 05:55:53 | INFO     | main |      1. [9/10] Claude AI Code Enhancements
+2026-05-15 05:55:53 | INFO     | main |      2. [9/10] AI-Driven Business Automation
+2026-05-15 05:55:53 | INFO     | main |      3. [9/10] AI in Code Generation
+2026-05-15 05:55:53 | INFO     | main |      4. [8/10] AI-Powered PDF and HTML Generation
+2026-05-15 05:55:53 | INFO     | main |      5. [8/10] AI for Email and Schedule Management
+2026-05-15 05:55:53 | INFO     | main |      6. [8/10] AI in Robotics and Gaming
+2026-05-15 05:55:53 | INFO     | main |      7. [8/10] AI Memory Features for Chatbots
+2026-05-15 05:55:53 | INFO     | main |      8. [8/10] AI in Decentralized Data Centers
+2026-05-15 05:55:53 | INFO     | main |      9. [7/10] AI in Financial Protocols
+2026-05-15 05:55:53 | INFO     | main |     10. [7/10] AI-Enhanced Learning Platforms
+2026-05-15 05:55:53 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-15 05:55:53 | INFO     | main |   Existing collection: 226 tools across 122 topics
+2026-05-15 05:55:53 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-15 05:55:59 | DEBUG    | llm_client | LLM response from github_models (3142 chars)
+2026-05-15 05:55:59 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI Code Enhancements
+2026-05-15 05:56:04 | DEBUG    | llm_client | LLM response from github_models (2369 chars)
+2026-05-15 05:56:04 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Driven Business Automation
+2026-05-15 05:56:04 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-15 05:56:04 | INFO     | main |   Generated 5 tool ideas:
+2026-05-15 05:56:04 | INFO     | main |     • claude_skills_manager: A CLI tool to manage and deploy custom automation Skills using Claude AI. It all
+2026-05-15 05:56:04 | INFO     | main |     • claude_usage_monitor: A Python library and CLI tool to track usage of Claude AI's API in real-time, in
+2026-05-15 05:56:04 | INFO     | main |     • claude_batch_automator: A tool for batch-processing datasets using Claude AI Skills. This is useful for 
+2026-05-15 05:56:04 | INFO     | main |     • workflow_ai_automator: A CLI tool designed to streamline repetitive business workflows by integrating C
+2026-05-15 05:56:04 | INFO     | main |     • ai_task_scheduler: A Python library that enables developers to schedule and automate business tasks
+2026-05-15 05:56:04 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-15 05:56:04 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-15 05:56:13 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-15 05:56:13 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-15 05:56:13 | INFO     | tool_builder | Building tool: claude_skills_manager …
+2026-05-15 05:56:23 | DEBUG    | llm_client | LLM response from github_models (5865 chars)
+2026-05-15 05:56:23 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pyyaml==6.0', 'pytest==7.4.2']
+2026-05-15 05:56:24 | WARNING  | test_runner | Tests FAILED for claude_skills_manager:
+test_claude_skills_manager.py::test_load_skill_config FAILED             [ 66%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: fake_path.yaml
+FAILED test_claude_skills_manager.py::test_load_skill_config - FileNotFoundError: File not found: fake_path.yaml
+2026-05-15 05:56:24 | WARNING  | tool_builder | ⚠️  claude_skills_manager tests failed (loop 1/5) — test_claude_skills_manager.py::test_load_skill_config FAILED             [ 66%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: fake_path.yaml
+FAILED
+2026-05-15 05:56:30 | DEBUG    | llm_client | LLM response from github_models (5646 chars)
+2026-05-15 05:56:30 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests', 'pytest']
+2026-05-15 05:56:31 | INFO     | test_runner | Tests PASSED for claude_skills_manager
+2026-05-15 05:56:31 | INFO     | tool_builder | ✅ claude_skills_manager passed tests on loop 2
+2026-05-15 05:56:31 | INFO     | tool_builder | Building tool: claude_usage_monitor …
+2026-05-15 05:56:39 | DEBUG    | llm_client | LLM response from github_models (6235 chars)
+2026-05-15 05:56:39 | DEBUG    | test_runner | Installing: ['argparse', 'requests==2.31.0', 'matplotlib==3.7.2', 'pandas==2.1.1']
+2026-05-15 05:57:58 | WARNING  | test_runner | Tests FAILED for claude_usage_monitor:
+test_claude_usage_monitor.py::test_monitor_usage FAILED                  [ 66%]
+FAILED test_claude_usage_monitor.py::test_monitor_usage - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-05-15 05:57:58 | WARNING  | tool_builder | ⚠️  claude_usage_monitor tests failed (loop 1/5) — test_claude_usage_monitor.py::test_monitor_usage FAILED                  [ 66%]
+FAILED test_claude_usage_monitor.py::test_monitor_usage - Failed: Timeout (>60.0s) from pytest-timeout.
+2026-05-15 05:58:07 | DEBUG    | llm_client | LLM response from github_models (7502 chars)
+2026-05-15 05:58:07 | DEBUG    | test_runner | Installing: ['requests', 'pandas', 'matplotlib']
+2026-05-15 05:58:08 | INFO     | test_runner | Tests PASSED for claude_usage_monitor
+2026-05-15 05:58:08 | INFO     | tool_builder | ✅ claude_usage_monitor passed tests on loop 2
+2026-05-15 05:58:08 | INFO     | tool_builder | Building tool: claude_batch_automator …
+2026-05-15 05:58:16 | DEBUG    | llm_client | LLM response from github_models (6157 chars)
+2026-05-15 05:58:16 | DEBUG    | test_runner | Installing: ['argparse==1.4.0', 'requests==2.31.0', 'tqdm==4.66.1', 'pandas==1.5.3']
+2026-05-15 05:58:22 | WARNING  | test_runner | Tests FAILED for claude_batch_automator:
+test_claude_batch_automator.py::test_process_data_csv FAILED             [ 33%]
+test_claude_batch_automator.py::test_process_data_json FAILED            [ 66%]
+test_claude_batch_automator.py::test_process_data_txt FAILED             [100%]
+E   NameError: name 'pd' is not defined
+E   NameError: name 'json' is not defined
+    assert "result" in json.loads(lines[0])
+E   NameError: name 'json' is not defined
+FAILED test_claude_batch_automator.py::test_process_data_csv - NameError: name 'pd' is not defined
+FAILED test_claude_batch_automator.py::test_process_data_json - NameError: name 'json' is not defined
+FAILED test_claude_batch_automator.py::test_process_data_txt - NameError: name 'json' is not defined
+2026-05-15 05:58:22 | WARNING  | tool_builder | ⚠️  claude_batch_automator tests failed (loop 1/5) — test_claude_batch_automator.py::test_process_data_csv FAILED             [ 33%]
+test_claude_batch_automator.py::test_process_data_json FAILED            [ 66%]
+test_claude_batch_automator.py::test_pro
+2026-05-15 05:58:28 | DEBUG    | llm_client | LLM response from github_models (6282 chars)
+2026-05-15 05:58:28 | DEBUG    | test_runner | Installing: ['pandas', 'requests', 'tqdm']
+2026-05-15 05:58:29 | WARNING  | test_runner | Tests FAILED for claude_batch_automator:
+test_claude_batch_automator.py::test_process_data_json FAILED            [ 66%]
+E   AttributeError: 'dict' object has no attribute 'strip'
+FAILED test_claude_batch_automator.py::test_process_data_json - AttributeError: 'dict' object has no attribute 'strip'
+2026-05-15 05:58:29 | WARNING  | tool_builder | ⚠️  claude_batch_automator tests failed (loop 2/5) — test_claude_batch_automator.py::test_process_data_json FAILED            [ 66%]
+E   AttributeError: 'dict' object has no attribute 'strip'
+FAILED test_claude_batch_automator.py::test_process_data_json
+2026-05-15 05:58:36 | DEBUG    | llm_client | LLM response from github_models (6503 chars)
+2026-05-15 05:58:36 | DEBUG    | test_runner | Installing: ['requests', 'pandas', 'tqdm']
+2026-05-15 05:58:37 | INFO     | test_runner | Tests PASSED for claude_batch_automator
+2026-05-15 05:58:37 | INFO     | tool_builder | ✅ claude_batch_automator passed tests on loop 3
+2026-05-15 05:58:37 | INFO     | tool_builder | Building tool: workflow_ai_automator …
+2026-05-15 05:58:45 | DEBUG    | llm_client | LLM response from github_models (6752 chars)
+2026-05-15 05:58:45 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'jsonschema==4.19.0', 'requests==2.31.0']
+2026-05-15 05:58:48 | INFO     | test_runner | Tests PASSED for workflow_ai_automator
+2026-05-15 05:58:48 | INFO     | tool_builder | ✅ workflow_ai_automator passed tests on loop 1
+2026-05-15 05:58:48 | INFO     | tool_builder | Building tool: ai_task_scheduler …
+2026-05-15 05:58:59 | DEBUG    | llm_client | LLM response from github_models (6299 chars)
+2026-05-15 05:58:59 | DEBUG    | test_runner | Installing: ['schedule==1.1.0', 'openai==0.27.8', 'pyyaml==6.0']
+2026-05-15 05:59:00 | WARNING  | test_runner | Tests FAILED for ai_task_scheduler:
+test_ai_task_scheduler.py::test_execute_task FAILED                      [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_file().write.assert_called_once_with("Generated content")
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+Error executing task 'task1': 'dict' object has no attribute 'text'
+FAILED test_ai_task_scheduler.py::test_execute_task - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-05-15 05:59:00 | WARNING  | tool_builder | ⚠️  ai_task_scheduler tests failed (loop 1/5) — test_ai_task_scheduler.py::test_execute_task FAILED                      [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-15 05:59:08 | DEBUG    | llm_client | LLM response from github_models (6217 chars)
+2026-05-15 05:59:08 | DEBUG    | test_runner | Installing: ['openai', 'pyyaml', 'schedule']
+2026-05-15 05:59:09 | INFO     | test_runner | Tests PASSED for ai_task_scheduler
+2026-05-15 05:59:09 | INFO     | tool_builder | ✅ ai_task_scheduler passed tests on loop 2
+2026-05-15 05:59:09 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-05-15 05:59:09 | INFO     | main |   Built 5/5 tools successfully
+2026-05-15 05:59:09 | INFO     | main |     ✅ claude_skills_manager (loops: 2)
+2026-05-15 05:59:09 | INFO     | main |     ✅ claude_usage_monitor (loops: 2)
+2026-05-15 05:59:09 | INFO     | main |     ✅ claude_batch_automator (loops: 3)
+2026-05-15 05:59:09 | INFO     | main |     ✅ workflow_ai_automator (loops: 1)
+2026-05-15 05:59:09 | INFO     | main |     ✅ ai_task_scheduler (loops: 2)
+2026-05-15 05:59:09 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-15 05:59:09 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-15 05:59:09 | INFO     | github_publisher |   Created zip: claude_skills_manager.zip (2423 bytes)
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved claude_skills_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_skills_manager
+2026-05-15 05:59:09 | INFO     | github_publisher |   Created zip: claude_usage_monitor.zip (3024 bytes)
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved claude_usage_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_usage_monitor
+2026-05-15 05:59:09 | INFO     | github_publisher |   Created zip: claude_batch_automator.zip (2662 bytes)
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved claude_batch_automator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_batch_automator
+2026-05-15 05:59:09 | INFO     | github_publisher |   Created zip: workflow_ai_automator.zip (2815 bytes)
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved workflow_ai_automator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/workflow_ai_automator
+2026-05-15 05:59:09 | INFO     | github_publisher |   Created zip: ai_task_scheduler.zip (2720 bytes)
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved ai_task_scheduler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/ai_task_scheduler
+2026-05-15 05:59:09 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-05-15 05:59:09 | INFO     | main |   Published 5 tools:
+2026-05-15 05:59:09 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_skills_manager
+2026-05-15 05:59:09 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_usage_monitor
+2026-05-15 05:59:09 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_batch_automator
+2026-05-15 05:59:09 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/workflow_ai_automator
+2026-05-15 05:59:09 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/ai_task_scheduler
+2026-05-15 05:59:09 | INFO     | main |   Deduplicated 6 older tool version(s) from index
+2026-05-15 05:59:09 | INFO     | main | ✅ Generated tools_index.json with 231 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

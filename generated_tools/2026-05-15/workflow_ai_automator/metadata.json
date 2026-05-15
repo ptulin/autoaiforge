@@ -1,0 +1,13 @@
+{
+  "tool_name": "workflow_ai_automator",
+  "display_name": "Workflow AI Automator",
+  "description": "A CLI tool designed to streamline repetitive business workflows by integrating Claude AI's text processing capabilities. Users can define workflows as JSON files with step-by-step instructions, and the tool automates these using Claude AI for tasks like summarization, email drafting, and decision-making.",
+  "topic": "AI-Driven Business Automation",
+  "date": "2026-05-15",
+  "generated": "2026-05-15T05:53:05.900925+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/workflow_ai_automator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-15/workflow_ai_automator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-15/workflow_ai_automator/workflow_ai_automator.zip"
+}
