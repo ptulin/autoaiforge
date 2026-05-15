@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_skills_manager",
+  "display_name": "Claude Skills Manager",
+  "description": "A CLI tool to manage and deploy custom automation Skills using Claude AI. It allows AI developers to define, edit, and upload Skills configurations to the Claude API, streamlining the automation workflow.",
+  "topic": "Claude AI Code Enhancements",
+  "date": "2026-05-15",
+  "generated": "2026-05-15T05:53:05.900925+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-15/claude_skills_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-15/claude_skills_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-15/claude_skills_manager/claude_skills_manager.zip"
+}
