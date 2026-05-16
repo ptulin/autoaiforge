@@ -1,0 +1,13 @@
+{
+  "tool_name": "smart_code_refactor",
+  "display_name": "Smart Code Refactoring Tool",
+  "description": "This tool uses AI coding assistants to perform intelligent code refactoring. It can optimize code for readability, performance, or specific coding standards with suggested changes. Developers can focus on logic while the tool improves maintainability.",
+  "topic": "AI-Powered Coding Assistants",
+  "date": "2026-05-16",
+  "generated": "2026-05-16T05:25:25.707821+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/smart_code_refactor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/smart_code_refactor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/smart_code_refactor/smart_code_refactor.zip"
+}

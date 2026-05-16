@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_auto_responder",
+  "display_name": "Claude Auto Responder",
+  "description": "A Python CLI tool that integrates with Anthropic's Claude to provide automated customer support via email. Users can define common customer scenarios and responses, allowing small businesses to streamline email support while maintaining a professional touch.",
+  "topic": "AI for Small Business Automation",
+  "date": "2026-05-16",
+  "generated": "2026-05-16T05:25:25.707821+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/claude_auto_responder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/claude_auto_responder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/claude_auto_responder/claude_auto_responder.zip"
+}
