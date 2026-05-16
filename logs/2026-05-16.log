@@ -1,0 +1,345 @@
+2026-05-16 05:25:25 | INFO     | main | ============================================================
+2026-05-16 05:25:25 | INFO     | main | AutoAIForge starting run: 2026-05-16T05:25:25.707821+00:00
+2026-05-16 05:25:25 | INFO     | main | ============================================================
+2026-05-16 05:25:25 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-16 05:25:25 | INFO     | youtube_scraper | YouTube client ready
+2026-05-16 05:25:26 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-16 05:25:26 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-16 05:25:27 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-16 05:25:27 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-16 05:25:27 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-16 05:25:27 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-16 05:25:28 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-16 05:25:28 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-16 05:25:29 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-16 05:25:29 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-16 05:25:29 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-16 05:25:30 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-16 05:25:30 | INFO     | youtube_scraper | YouTube 'vector database AI': 43 results (quota used: 1300)
+2026-05-16 05:25:30 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-16 05:25:30 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-16 05:25:31 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-16 05:25:31 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-05-16 05:25:31 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-16 05:25:31 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-16 05:25:32 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-16 05:25:32 | INFO     | youtube_scraper | YouTube total: 894 items, quota used: 2000
+2026-05-16 05:25:32 | INFO     | main |   YouTube: 836 items
+2026-05-16 05:25:32 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-16 05:25:37 | INFO     | rss_scraper | HackerNews: 152 items
+2026-05-16 05:25:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-16 05:25:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-16 05:25:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-16 05:25:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-16 05:25:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-16 05:25:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-16 05:25:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-16 05:25:44 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-16 05:25:49 | INFO     | rss_scraper | ArXiv: 105 items
+2026-05-16 05:25:53 | INFO     | rss_scraper | Dev.to: 194 items
+2026-05-16 05:25:55 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-16 05:25:55 | INFO     | rss_scraper | Free sources total: 501 unique items
+2026-05-16 05:25:55 | INFO     | main |   RSS/API sources: 501 items
+2026-05-16 05:25:55 | INFO     | main |   Total scraped: 1337 items
+2026-05-16 05:25:55 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-16 05:25:55 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-16 05:25:55 | INFO     | db_manager | Purged 1126 old news items
+2026-05-16 05:25:55 | INFO     | db_manager | Inserted 1110/1337 news items
+2026-05-16 05:25:55 | INFO     | main |   SQLite: 1110 new items (total: 30699)
+2026-05-16 05:26:00 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-16 05:26:01 | INFO     | vector_store | VectorStore ready
+2026-05-16 05:26:28 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-16 05:26:28 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-16 05:26:28 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-16 05:26:28 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-16 05:26:34 | DEBUG    | llm_client | LLM response from github_models (4084 chars)
+2026-05-16 05:26:34 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-16 05:26:34 | INFO     | main |   Found 10 topics:
+2026-05-16 05:26:34 | INFO     | main |      1. [10/10] AI-Powered Coding Assistants
+2026-05-16 05:26:34 | INFO     | main |      2. [9/10] Deepfake Detection Tools
+2026-05-16 05:26:34 | INFO     | main |      3. [9/10] AI for Small Business Automation
+2026-05-16 05:26:34 | INFO     | main |      4. [9/10] AI-Driven Image and Video Creation
+2026-05-16 05:26:34 | INFO     | main |      5. [8/10] AI Subscription Cost Optimization
+2026-05-16 05:26:34 | INFO     | main |      6. [8/10] AI-Powered App Development
+2026-05-16 05:26:34 | INFO     | main |      7. [8/10] AI-Powered Marketing Tools
+2026-05-16 05:26:34 | INFO     | main |      8. [8/10] AI Efficiency Optimization
+2026-05-16 05:26:34 | INFO     | main |      9. [7/10] AI Memory Transfer Techniques
+2026-05-16 05:26:34 | INFO     | main |     10. [7/10] AI in Fintech Regulation
+2026-05-16 05:26:34 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-16 05:26:34 | INFO     | main |   Existing collection: 231 tools across 124 topics
+2026-05-16 05:26:34 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Coding Assistants' (relevance 10/10, last built 2026-04-30)
+2026-05-16 05:26:34 | INFO     | main |   Topics flagged for upgrade: AI-Powered Coding Assistants
+2026-05-16 05:26:34 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI-Powered Coding Assistants'
+2026-05-16 05:26:39 | DEBUG    | llm_client | LLM response from github_models (3271 chars)
+2026-05-16 05:26:39 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Coding Assistants
+2026-05-16 05:26:42 | DEBUG    | llm_client | LLM response from github_models (2290 chars)
+2026-05-16 05:26:42 | INFO     | idea_generator | Generated 2 ideas for topic: Deepfake Detection Tools
+2026-05-16 05:26:42 | INFO     | idea_generator |   ⏭  Skipping idea 'deepfake_image_detector' — name already in collection
+2026-05-16 05:26:45 | DEBUG    | llm_client | LLM response from github_models (1180 chars)
+2026-05-16 05:26:45 | INFO     | idea_generator | Generated 1 ideas for topic: AI for Small Business Automation
+2026-05-16 05:26:45 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-16 05:26:45 | INFO     | main |   Generated 5 tool ideas:
+2026-05-16 05:26:45 | INFO     | main |     • ai_code_linter: This tool integrates AI coding assistants to provide intelligent code linting su
+2026-05-16 05:26:45 | INFO     | main |     • ai_debug_assistant: This tool analyzes errors and exceptions in your code using AI coding assistants
+2026-05-16 05:26:45 | INFO     | main |     • smart_code_refactor: This tool uses AI coding assistants to perform intelligent code refactoring. It 
+2026-05-16 05:26:45 | INFO     | main |     • video_deepfake_analyzer: This Python library analyzes video files for deepfake content using a frame-by-f
+2026-05-16 05:26:45 | INFO     | main |     • claude_auto_responder: A Python CLI tool that integrates with Anthropic's Claude to provide automated c
+2026-05-16 05:26:45 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-16 05:26:45 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-16 05:26:54 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-16 05:26:54 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-16 05:26:54 | INFO     | tool_builder | Building tool: ai_code_linter …
+2026-05-16 05:27:00 | DEBUG    | llm_client | LLM response from github_models (4094 chars)
+2026-05-16 05:27:00 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'python-dotenv==1.0.0']
+2026-05-16 05:27:03 | WARNING  | test_runner | Tests FAILED for ai_code_linter:
+test_ai_code_linter.py::test_lint_code_empty_file FAILED                 [ 66%]
+test_ai_code_linter.py::test_lint_code_valid_file FAILED                 [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: empty_file.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: valid_file.py
+FAILED test_ai_code_linter.py::test_lint_code_empty_file - FileNotFoundError: File not found: empty_file.py
+FAILED test_ai_code_linter.py::test_lint_code_valid_file - FileNotFoundError: File not found: valid_file.py
+2026-05-16 05:27:03 | WARNING  | tool_builder | ⚠️  ai_code_linter tests failed (loop 1/5) — test_ai_code_linter.py::test_lint_code_empty_file FAILED                 [ 66%]
+test_ai_code_linter.py::test_lint_code_valid_file FAILED                 [100%]
+    raise FileNotFoundError(f"File not f
+2026-05-16 05:27:10 | DEBUG    | llm_client | LLM response from github_models (4635 chars)
+2026-05-16 05:27:10 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-16 05:27:11 | WARNING  | test_runner | Tests FAILED for ai_code_linter:
+test_ai_code_linter.py::test_lint_code_valid_file FAILED                 [100%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_ai_code_linter.py::test_lint_code_valid_file - AttributeError: 'dict' object has no attribute 'choices'
+2026-05-16 05:27:11 | WARNING  | tool_builder | ⚠️  ai_code_linter tests failed (loop 2/5) — test_ai_code_linter.py::test_lint_code_valid_file FAILED                 [100%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_ai_code_linter.py::test_lint_code_valid_file - 
+2026-05-16 05:27:17 | DEBUG    | llm_client | LLM response from github_models (5295 chars)
+2026-05-16 05:27:17 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-16 05:27:18 | WARNING  | test_runner | Tests FAILED for ai_code_linter:
+test_ai_code_linter.py::test_lint_code_api_error FAILED                  [100%]
+    with patch("openai.Completion.create", side_effect=openai.error.OpenAIError("API error")):
+E   NameError: name 'openai' is not defined
+FAILED test_ai_code_linter.py::test_lint_code_api_error - NameError: name 'openai' is not defined
+2026-05-16 05:27:18 | WARNING  | tool_builder | ⚠️  ai_code_linter tests failed (loop 3/5) — test_ai_code_linter.py::test_lint_code_api_error FAILED                  [100%]
+    with patch("openai.Completion.create", side_effect=openai.error.OpenAIError("API error")):
+E   NameError: name 'open
+2026-05-16 05:27:25 | DEBUG    | llm_client | LLM response from github_models (5284 chars)
+2026-05-16 05:27:25 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-16 05:27:26 | INFO     | test_runner | Tests PASSED for ai_code_linter
+2026-05-16 05:27:26 | INFO     | tool_builder | ✅ ai_code_linter passed tests on loop 4
+2026-05-16 05:27:26 | INFO     | tool_builder | Building tool: ai_debug_assistant …
+2026-05-16 05:27:34 | DEBUG    | llm_client | LLM response from github_models (5763 chars)
+2026-05-16 05:27:34 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'python-dotenv==1.0.0', 'rich==13.5.2', 'pytest==7.4.2']
+2026-05-16 05:27:36 | WARNING  | test_runner | Tests FAILED for ai_debug_assistant:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_debug_assistant.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
+E   ValueError: OPENAI_API_KEY is not set in the environment variables.
+ERROR test_ai_debug_assistant.py - ValueError: OPENAI_API_KEY is not set in the environment variables.
+2026-05-16 05:27:36 | WARNING  | tool_builder | ⚠️  ai_debug_assistant tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_debug_assistant.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-05-16 05:27:44 | DEBUG    | llm_client | LLM response from github_models (6318 chars)
+2026-05-16 05:27:44 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'rich']
+2026-05-16 05:27:45 | WARNING  | test_runner | Tests FAILED for ai_debug_assistant:
+test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 20%]
+E   AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace - AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+2026-05-16 05:27:45 | WARNING  | tool_builder | ⚠️  ai_debug_assistant tests failed (loop 2/5) — test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 20%]
+E   AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyz
+2026-05-16 05:27:53 | DEBUG    | llm_client | LLM response from github_models (6420 chars)
+2026-05-16 05:27:53 | DEBUG    | test_runner | Installing: ['python-dotenv', 'rich', 'openai']
+2026-05-16 05:27:54 | WARNING  | test_runner | Tests FAILED for ai_debug_assistant:
+test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+    raise AttributeError(
+E   AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace - AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace_no_openai_library - AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+2026-05-16 05:27:54 | WARNING  | tool_builder | ⚠️  ai_debug_assistant tests failed (loop 3/5) — test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_ass
+2026-05-16 05:28:02 | DEBUG    | llm_client | LLM response from github_models (6385 chars)
+2026-05-16 05:28:02 | DEBUG    | test_runner | Installing: ['python-dotenv', 'rich', 'openai']
+2026-05-16 05:28:03 | WARNING  | test_runner | Tests FAILED for ai_debug_assistant:
+test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+    raise AttributeError(
+E   AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace - AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace_no_openai_library - AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+2026-05-16 05:28:03 | WARNING  | tool_builder | ⚠️  ai_debug_assistant tests failed (loop 4/5) — test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_ass
+2026-05-16 05:28:11 | DEBUG    | llm_client | LLM response from github_models (6261 chars)
+2026-05-16 05:28:11 | DEBUG    | test_runner | Installing: ['python-dotenv', 'rich', 'openai']
+2026-05-16 05:28:12 | WARNING  | test_runner | Tests FAILED for ai_debug_assistant:
+test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+    raise AttributeError(
+E   AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace - AttributeError: module 'ai_debug_assistant' has no attribute 'openai'
+FAILED test_ai_debug_assistant.py::test_analyze_trace_no_openai_library - AttributeError: <module 'ai_debug_assistant' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_debug_assistant/ai_debug_assistant.py'> does not have the attribute 'openai'
+2026-05-16 05:28:12 | WARNING  | tool_builder | ⚠️  ai_debug_assistant tests failed (loop 5/5) — test_ai_debug_assistant.py::test_analyze_trace FAILED                    [ 16%]
+test_ai_debug_assistant.py::test_analyze_trace_no_openai_library FAILED  [ 50%]
+E   AttributeError: module 'ai_debug_ass
+2026-05-16 05:28:12 | ERROR    | tool_builder | ❌ ai_debug_assistant failed after 5 loops
+2026-05-16 05:28:12 | INFO     | tool_builder | Building tool: smart_code_refactor …
+2026-05-16 05:28:23 | DEBUG    | llm_client | LLM response from github_models (6175 chars)
+2026-05-16 05:28:23 | DEBUG    | test_runner | Installing: ['openai==0.27.2', 'python-dotenv==1.0.0', 'diff-match-patch==20200713', 'pytest==7.4.2']
+2026-05-16 05:28:25 | WARNING  | test_runner | Tests FAILED for smart_code_refactor:
+test_smart_code_refactor.py::test_refactor_code_empty_file FAILED        [ 50%]
+test_smart_code_refactor.py::test_refactor_code_success FAILED           [ 75%]
+test_smart_code_refactor.py::test_display_diff FAILED                    [100%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file empty_file.py does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file file.py does not exist.
+    assert "<ins>2</ins>" in diff
+E   assert '<ins>2</ins>' in '<span>print(</span><del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>)</span>'
+FAILED test_smart_code_refactor.py::test_refactor_code_empty_file - FileNotFoundError: The file empty_file.py does not exist.
+FAILED test_smart_code_refactor.py::test_refactor_code_success - FileNotFoundError: The file file.py does not exist.
+FAILED test_smart_code_refactor.py::test_display_diff - assert '<ins>2</ins>' in '<span>print(</span><del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>)</span>'
+2026-05-16 05:28:25 | WARNING  | tool_builder | ⚠️  smart_code_refactor tests failed (loop 1/5) — test_smart_code_refactor.py::test_refactor_code_empty_file FAILED        [ 50%]
+test_smart_code_refactor.py::test_refactor_code_success FAILED           [ 75%]
+test_smart_code_refactor.py::test_displa
+2026-05-16 05:28:25 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-16 05:29:34 | DEBUG    | llm_client | LLM response from github_models (6760 chars)
+2026-05-16 05:29:34 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'diff-match-patch']
+2026-05-16 05:29:34 | WARNING  | test_runner | Tests FAILED for smart_code_refactor:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_smart_code_refactor.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 40)
+ERROR test_smart_code_refactor.py
+2026-05-16 05:29:34 | WARNING  | tool_builder | ⚠️  smart_code_refactor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_smart_code_refactor.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-05-16 05:29:44 | DEBUG    | llm_client | LLM response from github_models (7313 chars)
+2026-05-16 05:29:44 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'diff-match-patch', 'pytest']
+2026-05-16 05:29:45 | WARNING  | test_runner | Tests FAILED for smart_code_refactor:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_smart_code_refactor.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 40)
+ERROR test_smart_code_refactor.py
+2026-05-16 05:29:45 | WARNING  | tool_builder | ⚠️  smart_code_refactor tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_smart_code_refactor.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-05-16 05:29:54 | DEBUG    | llm_client | LLM response from github_models (6739 chars)
+2026-05-16 05:29:54 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'diff-match-patch', 'pytest']
+2026-05-16 05:29:55 | WARNING  | test_runner | Tests FAILED for smart_code_refactor:
+test_smart_code_refactor.py::test_refactor_code_success FAILED           [ 75%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_smart_code_refactor.py::test_refactor_code_success - AttributeError: 'dict' object has no attribute 'choices'
+2026-05-16 05:29:55 | WARNING  | tool_builder | ⚠️  smart_code_refactor tests failed (loop 4/5) — test_smart_code_refactor.py::test_refactor_code_success FAILED           [ 75%]
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_smart_code_refactor.py::test_refactor_code_succ
+2026-05-16 05:30:03 | DEBUG    | llm_client | LLM response from github_models (6795 chars)
+2026-05-16 05:30:03 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'diff-match-patch', 'pytest']
+2026-05-16 05:30:04 | INFO     | test_runner | Tests PASSED for smart_code_refactor
+2026-05-16 05:30:04 | INFO     | tool_builder | ✅ smart_code_refactor passed tests on loop 5
+2026-05-16 05:30:04 | INFO     | tool_builder | Building tool: video_deepfake_analyzer …
+2026-05-16 05:30:19 | DEBUG    | llm_client | LLM response from github_models (6577 chars)
+2026-05-16 05:30:19 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'ffmpeg-python==0.2.0', 'scipy==1.11.3', 'matplotlib==3.8.0']
+2026-05-16 05:31:10 | WARNING  | test_runner | Tests FAILED for video_deepfake_analyzer:
+test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: invalid_file.txt
+FAILED test_video_deepfake_analyzer.py::test_analyze_video - AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_video_deepfake_analyzer.py::test_invalid_file_format - FileNotFoundError: Video file not found: invalid_file.txt
+2026-05-16 05:31:10 | WARNING  | tool_builder | ⚠️  video_deepfake_analyzer tests failed (loop 1/5) — test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+E   AttributeError: 'method' object has 
+2026-05-16 05:31:17 | DEBUG    | llm_client | LLM response from github_models (6290 chars)
+2026-05-16 05:31:17 | DEBUG    | test_runner | Installing: ['torch', 'ffmpeg-python', 'numpy', 'matplotlib', 'scipy']
+2026-05-16 05:31:20 | WARNING  | test_runner | Tests FAILED for video_deepfake_analyzer:
+test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: test_video.mp4
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: invalid_file.txt
+FAILED test_video_deepfake_analyzer.py::test_analyze_video - FileNotFoundError: Video file not found: test_video.mp4
+FAILED test_video_deepfake_analyzer.py::test_invalid_file_format - FileNotFoundError: Video file not found: invalid_file.txt
+2026-05-16 05:31:20 | WARNING  | tool_builder | ⚠️  video_deepfake_analyzer tests failed (loop 2/5) — test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file
+2026-05-16 05:31:27 | DEBUG    | llm_client | LLM response from github_models (6550 chars)
+2026-05-16 05:31:27 | DEBUG    | test_runner | Installing: ['torch', 'ffmpeg-python', 'numpy', 'matplotlib', 'scipy']
+2026-05-16 05:31:29 | WARNING  | test_runner | Tests FAILED for video_deepfake_analyzer:
+test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: test_video.mp4
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: invalid_file.txt
+FAILED test_video_deepfake_analyzer.py::test_analyze_video - FileNotFoundError: Video file not found: test_video.mp4
+FAILED test_video_deepfake_analyzer.py::test_invalid_file_format - FileNotFoundError: Video file not found: invalid_file.txt
+2026-05-16 05:31:29 | WARNING  | tool_builder | ⚠️  video_deepfake_analyzer tests failed (loop 3/5) — test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file
+2026-05-16 05:31:36 | DEBUG    | llm_client | LLM response from github_models (6628 chars)
+2026-05-16 05:31:36 | DEBUG    | test_runner | Installing: ['torch', 'ffmpeg-python', 'numpy', 'matplotlib', 'scipy']
+2026-05-16 05:31:39 | WARNING  | test_runner | Tests FAILED for video_deepfake_analyzer:
+test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: test_video.mp4
+    raise FileNotFoundError(f"Video file not found: {video_path}")
+E   FileNotFoundError: Video file not found: invalid_file.txt
+FAILED test_video_deepfake_analyzer.py::test_analyze_video - FileNotFoundError: Video file not found: test_video.mp4
+FAILED test_video_deepfake_analyzer.py::test_invalid_file_format - FileNotFoundError: Video file not found: invalid_file.txt
+2026-05-16 05:31:39 | WARNING  | tool_builder | ⚠️  video_deepfake_analyzer tests failed (loop 4/5) — test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+test_video_deepfake_analyzer.py::test_invalid_file_format FAILED         [ 66%]
+    raise FileNotFoundError(f"Video file
+2026-05-16 05:31:48 | DEBUG    | llm_client | LLM response from github_models (6945 chars)
+2026-05-16 05:31:48 | DEBUG    | test_runner | Installing: ['torch', 'ffmpeg-python', 'numpy', 'matplotlib', 'scipy', 'pytest']
+2026-05-16 05:31:51 | WARNING  | test_runner | Tests FAILED for video_deepfake_analyzer:
+test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+FAILED test_video_deepfake_analyzer.py::test_analyze_video - FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+2026-05-16 05:31:51 | WARNING  | tool_builder | ⚠️  video_deepfake_analyzer tests failed (loop 5/5) — test_video_deepfake_analyzer.py::test_analyze_video FAILED               [ 33%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+FAILED test_video_deepfake_analyzer.py::test_analyz
+2026-05-16 05:31:51 | ERROR    | tool_builder | ❌ video_deepfake_analyzer failed after 5 loops
+2026-05-16 05:31:51 | INFO     | tool_builder | Building tool: claude_auto_responder …
+2026-05-16 05:32:03 | DEBUG    | llm_client | LLM response from github_models (8836 chars)
+2026-05-16 05:32:03 | DEBUG    | test_runner | Installing: ['anthropic==0.3.0', 'google-api-python-client==2.92.0', 'openai==0.27.8', 'pydantic==1.10.9', 'pytest==7.4.2']
+2026-05-16 05:32:08 | WARNING  | test_runner | Tests FAILED for claude_auto_responder:
+test_claude_auto_responder.py::test_load_config_valid FAILED             [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_claude_auto_responder.py::test_load_config_valid - NameError: name 'json' is not defined
+2026-05-16 05:32:08 | WARNING  | tool_builder | ⚠️  claude_auto_responder tests failed (loop 1/5) — test_claude_auto_responder.py::test_load_config_valid FAILED             [ 33%]
+E   NameError: name 'json' is not defined
+FAILED test_claude_auto_responder.py::test_load_config_valid - NameError: name
+2026-05-16 05:32:17 | DEBUG    | llm_client | LLM response from github_models (8396 chars)
+2026-05-16 05:32:17 | DEBUG    | test_runner | Installing: ['google-api-python-client', 'pydantic', 'anthropic']
+2026-05-16 05:32:18 | INFO     | test_runner | Tests PASSED for claude_auto_responder
+2026-05-16 05:32:18 | INFO     | tool_builder | ✅ claude_auto_responder passed tests on loop 2
+2026-05-16 05:32:18 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-16 05:32:18 | INFO     | main |   Built 3/5 tools successfully
+2026-05-16 05:32:18 | INFO     | main |     ✅ ai_code_linter (loops: 4)
+2026-05-16 05:32:18 | INFO     | main |     ✅ smart_code_refactor (loops: 5)
+2026-05-16 05:32:18 | INFO     | main |     ✅ claude_auto_responder (loops: 2)
+2026-05-16 05:32:18 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-16 05:32:18 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-16 05:32:18 | INFO     | github_publisher |   Created zip: ai_code_linter.zip (2404 bytes)
+2026-05-16 05:32:18 | INFO     | github_publisher | Saved ai_code_linter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/ai_code_linter
+2026-05-16 05:32:18 | INFO     | github_publisher |   Created zip: smart_code_refactor.zip (2874 bytes)
+2026-05-16 05:32:18 | INFO     | github_publisher | Saved smart_code_refactor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/smart_code_refactor
+2026-05-16 05:32:18 | INFO     | github_publisher |   Created zip: claude_auto_responder.zip (3502 bytes)
+2026-05-16 05:32:18 | INFO     | github_publisher | Saved claude_auto_responder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/claude_auto_responder
+2026-05-16 05:32:18 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-16 05:32:18 | INFO     | main |   Published 3 tools:
+2026-05-16 05:32:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/ai_code_linter
+2026-05-16 05:32:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/smart_code_refactor
+2026-05-16 05:32:18 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/claude_auto_responder
+2026-05-16 05:32:18 | INFO     | main |   Deduplicated 7 older tool version(s) from index
+2026-05-16 05:32:18 | INFO     | main | ✅ Generated tools_index.json with 233 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

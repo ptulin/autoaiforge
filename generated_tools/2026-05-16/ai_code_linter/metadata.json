@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_linter",
+  "display_name": "AI-Powered Code Linter",
+  "description": "This tool integrates AI coding assistants to provide intelligent code linting suggestions. It checks style, syntax, and potential bugs, offering fixes and explanations via Codex or Claude. Ideal for developers who want real-time feedback and cleaner code.",
+  "topic": "AI-Powered Coding Assistants",
+  "date": "2026-05-16",
+  "generated": "2026-05-16T05:25:25.707821+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/ai_code_linter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/ai_code_linter.zip"
+}

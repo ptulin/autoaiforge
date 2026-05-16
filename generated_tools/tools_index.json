@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-15T05:59:09.045543+00:00",
-  "total_tools": 231,
+  "last_updated": "2026-05-16T05:32:18.423756+00:00",
+  "total_tools": 233,
   "tools": [
+    {
+      "tool_name": "ai_code_linter",
+      "display_name": "AI-Powered Code Linter",
+      "description": "This tool integrates AI coding assistants to provide intelligent code linting suggestions. It checks style, syntax, and potential bugs, offering fixes and explanations via Codex or Claude. Ideal for developers who want real-time feedback and cleaner code.",
+      "topic": "AI-Powered Coding Assistants",
+      "date": "2026-05-16",
+      "generated": "2026-05-16T05:25:25.707821+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/ai_code_linter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/ai_code_linter.zip"
+    },
+    {
+      "tool_name": "claude_auto_responder",
+      "display_name": "Claude Auto Responder",
+      "description": "A Python CLI tool that integrates with Anthropic's Claude to provide automated customer support via email. Users can define common customer scenarios and responses, allowing small businesses to streamline email support while maintaining a professional touch.",
+      "topic": "AI for Small Business Automation",
+      "date": "2026-05-16",
+      "generated": "2026-05-16T05:25:25.707821+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/claude_auto_responder",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/claude_auto_responder/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/claude_auto_responder/claude_auto_responder.zip"
+    },
+    {
+      "tool_name": "smart_code_refactor",
+      "display_name": "Smart Code Refactoring Tool",
+      "description": "This tool uses AI coding assistants to perform intelligent code refactoring. It can optimize code for readability, performance, or specific coding standards with suggested changes. Developers can focus on logic while the tool improves maintainability.",
+      "topic": "AI-Powered Coding Assistants",
+      "date": "2026-05-16",
+      "generated": "2026-05-16T05:25:25.707821+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/smart_code_refactor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/smart_code_refactor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/smart_code_refactor/smart_code_refactor.zip"
+    },
     {
       "tool_name": "ai_task_scheduler",
       "display_name": "AI Task Scheduler",
@@ -1028,19 +1067,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-20/model_risk_profiler",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/model_risk_profiler/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-20/model_risk_profiler/model_risk_profiler.zip"
-    },
-    {
-      "tool_name": "ai_code_linter",
-      "display_name": "AI Code Linter",
-      "description": "A Python library and CLI tool that uses Claude Code to analyze code for potential issues, style violations, and bugs. It can integrate into CI/CD pipelines or be used locally to ensure high-quality code standards.",
-      "topic": "AI for Code Development",
-      "date": "2026-04-19",
-      "generated": "2026-04-19T04:49:28.097051+00:00",
-      "loops_needed": 2,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-19/ai_code_linter",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-19/ai_code_linter/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-19/ai_code_linter/ai_code_linter.zip"
     },
     {
       "tool_name": "claude_code_assist",
