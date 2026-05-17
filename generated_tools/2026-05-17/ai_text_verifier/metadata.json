@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_text_verifier",
+  "display_name": "AI-Generated Text Verifier",
+  "description": "A library that uses natural language models and statistical analysis to determine whether text content is human-written or AI-generated. It is useful for spotting fake AI-generated news articles or social media posts.",
+  "topic": "AI-Generated Deepfake Verification",
+  "date": "2026-05-17",
+  "generated": "2026-05-17T05:46:18.722117+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/ai_text_verifier",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-17/ai_text_verifier/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-17/ai_text_verifier/ai_text_verifier.zip"
+}
