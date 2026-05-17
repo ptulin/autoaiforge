@@ -1,0 +1,270 @@
+2026-05-17 05:46:18 | INFO     | main | ============================================================
+2026-05-17 05:46:18 | INFO     | main | AutoAIForge starting run: 2026-05-17T05:46:18.722117+00:00
+2026-05-17 05:46:18 | INFO     | main | ============================================================
+2026-05-17 05:46:18 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-17 05:46:18 | INFO     | youtube_scraper | YouTube client ready
+2026-05-17 05:46:19 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-17 05:46:19 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-17 05:46:20 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-17 05:46:20 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-17 05:46:20 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-17 05:46:21 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 49 results (quota used: 600)
+2026-05-17 05:46:21 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-17 05:46:22 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-17 05:46:22 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-17 05:46:22 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-17 05:46:23 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-17 05:46:23 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-17 05:46:23 | INFO     | youtube_scraper | YouTube 'vector database AI': 33 results (quota used: 1300)
+2026-05-17 05:46:24 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-17 05:46:24 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-17 05:46:24 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-17 05:46:24 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-05-17 05:46:25 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-17 05:46:25 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-17 05:46:26 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-17 05:46:26 | INFO     | youtube_scraper | YouTube total: 883 items, quota used: 2000
+2026-05-17 05:46:26 | INFO     | main |   YouTube: 836 items
+2026-05-17 05:46:26 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-17 05:46:30 | INFO     | rss_scraper | HackerNews: 145 items
+2026-05-17 05:46:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-17 05:46:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-17 05:46:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-17 05:46:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-17 05:46:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-17 05:46:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-17 05:46:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-17 05:46:38 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-17 05:46:46 | INFO     | rss_scraper | ArXiv: 105 items
+2026-05-17 05:46:50 | INFO     | rss_scraper | Dev.to: 196 items
+2026-05-17 05:46:51 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-17 05:46:51 | INFO     | rss_scraper | Free sources total: 496 unique items
+2026-05-17 05:46:51 | INFO     | main |   RSS/API sources: 496 items
+2026-05-17 05:46:51 | INFO     | main |   Total scraped: 1332 items
+2026-05-17 05:46:51 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-17 05:46:51 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-17 05:46:52 | INFO     | db_manager | Purged 1169 old news items
+2026-05-17 05:46:52 | INFO     | db_manager | Inserted 969/1332 news items
+2026-05-17 05:46:52 | INFO     | main |   SQLite: 969 new items (total: 30499)
+2026-05-17 05:46:57 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-17 05:46:57 | INFO     | vector_store | VectorStore ready
+2026-05-17 05:47:33 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-17 05:47:33 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-17 05:47:33 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-17 05:47:33 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-17 05:47:40 | DEBUG    | llm_client | LLM response from github_models (3916 chars)
+2026-05-17 05:47:40 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-17 05:47:40 | INFO     | main |   Found 10 topics:
+2026-05-17 05:47:40 | INFO     | main |      1. [9/10] AI-Generated Deepfake Verification
+2026-05-17 05:47:40 | INFO     | main |      2. [8/10] AI-Powered Disease Detection
+2026-05-17 05:47:40 | INFO     | main |      3. [8/10] Real-Time Language Translation
+2026-05-17 05:47:40 | INFO     | main |      4. [8/10] AI-Driven Financial Tools
+2026-05-17 05:47:40 | INFO     | main |      5. [8/10] AI in Prompt Engineering
+2026-05-17 05:47:40 | INFO     | main |      6. [7/10] AI in 3D Modeling
+2026-05-17 05:47:40 | INFO     | main |      7. [7/10] AI in Space Data Centers
+2026-05-17 05:47:40 | INFO     | main |      8. [7/10] AI for Personalized Music Recommendations
+2026-05-17 05:47:40 | INFO     | main |      9. [7/10] AI in UI/UX Design Automation
+2026-05-17 05:47:40 | INFO     | main |     10. [6/10] AI for Local Government Insights
+2026-05-17 05:47:40 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-17 05:47:40 | INFO     | main |   Existing collection: 233 tools across 125 topics
+2026-05-17 05:47:40 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-17 05:47:45 | DEBUG    | llm_client | LLM response from github_models (3255 chars)
+2026-05-17 05:47:45 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Generated Deepfake Verification
+2026-05-17 05:47:50 | DEBUG    | llm_client | LLM response from github_models (2526 chars)
+2026-05-17 05:47:50 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Disease Detection
+2026-05-17 05:47:50 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-17 05:47:50 | INFO     | main |   Generated 5 tool ideas:
+2026-05-17 05:47:50 | INFO     | main |     • deepfake_audio_detector: This tool uses pre-trained speech analysis models to detect potential deepfake a
+2026-05-17 05:47:50 | INFO     | main |     • video_frame_analyzer: A lightweight CLI tool that extracts frames from videos and runs them through a 
+2026-05-17 05:47:50 | INFO     | main |     • ai_text_verifier: A library that uses natural language models and statistical analysis to determin
+2026-05-17 05:47:50 | INFO     | main |     • blood_test_preprocessor: This CLI tool preprocesses raw blood test data (e.g., CSV files) into clean, nor
+2026-05-17 05:47:50 | INFO     | main |     • ai_disease_predictor: This Python CLI tool allows developers to integrate trained AI models for diseas
+2026-05-17 05:47:50 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-17 05:47:50 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-17 05:47:59 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-17 05:47:59 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-17 05:47:59 | INFO     | tool_builder | Building tool: deepfake_audio_detector …
+2026-05-17 05:48:05 | DEBUG    | llm_client | LLM response from github_models (4377 chars)
+2026-05-17 05:48:05 | DEBUG    | test_runner | Installing: ['pydub==0.25.1', 'torch==2.0.1', 'torchaudio==2.0.2']
+2026-05-17 05:48:52 | INFO     | test_runner | Tests PASSED for deepfake_audio_detector
+2026-05-17 05:48:52 | INFO     | tool_builder | ✅ deepfake_audio_detector passed tests on loop 1
+2026-05-17 05:48:52 | INFO     | tool_builder | Building tool: video_frame_analyzer …
+2026-05-17 05:49:03 | DEBUG    | llm_client | LLM response from github_models (6405 chars)
+2026-05-17 05:49:03 | ERROR    | tool_builder | Initial generation failed for video_frame_analyzer: LLM returned non-JSON: {
+  "code": "import argparse\nimport cv2\nimport numpy as np\nimport torch\nimport matplotlib.pyplot as plt\nfrom torch import nn\nfrom torchvision import transforms\n\nclass SimpleCNN(nn.Module):\n    def __init__(self):\n        super(SimpleCNN, self).__init__()\n        self.conv1 = nn.Conv2d(3, 
+Expecting property name enclosed in double quotes: line 11 column 1 (char 6392)
+2026-05-17 05:49:03 | INFO     | tool_builder | Building tool: ai_text_verifier …
+2026-05-17 05:49:11 | DEBUG    | llm_client | LLM response from github_models (5830 chars)
+2026-05-17 05:49:11 | DEBUG    | test_runner | Installing: ['transformers==4.33.3', 'scikit-learn==1.3.0', 'numpy==1.26.0']
+2026-05-17 05:49:29 | INFO     | test_runner | Tests PASSED for ai_text_verifier
+2026-05-17 05:49:29 | INFO     | tool_builder | ✅ ai_text_verifier passed tests on loop 1
+2026-05-17 05:49:29 | INFO     | tool_builder | Building tool: blood_test_preprocessor …
+2026-05-17 05:49:37 | DEBUG    | llm_client | LLM response from github_models (5702 chars)
+2026-05-17 05:49:37 | DEBUG    | test_runner | Installing: ['pandas==1.3.5', 'numpy==1.21.4', 'scikit-learn==1.0.2']
+2026-05-17 05:49:40 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [20 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-05-17 05:49:40 | WARNING  | test_runner | Tests FAILED for blood_test_preprocessor:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_blood_test_preprocessor.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/blood_test_preprocessor/test_blood_test_preprocessor.py'.
+E   ModuleNotFoundError: No module named 'pandas'
+ERROR test_blood_test_preprocessor.py
+2026-05-17 05:49:40 | WARNING  | tool_builder | ⚠️  blood_test_preprocessor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_blood_test_preprocessor.py _______________
+ImportError while importing test modul
+2026-05-17 05:49:48 | DEBUG    | llm_client | LLM response from github_models (6467 chars)
+2026-05-17 05:49:48 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-05-17 05:49:54 | WARNING  | test_runner | Tests FAILED for blood_test_preprocessor:
+test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_normalization FAILED [ 66%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_normalization - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+2026-05-17 05:49:54 | WARNING  | tool_builder | ⚠️  blood_test_preprocessor tests failed (loop 2/5) — test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_normalization FAILED [ 66%]
+test_blood_test_preprocessor.py::t
+2026-05-17 05:50:01 | DEBUG    | llm_client | LLM response from github_models (6494 chars)
+2026-05-17 05:50:01 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-05-17 05:50:03 | WARNING  | test_runner | Tests FAILED for blood_test_preprocessor:
+test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_normalization FAILED [ 66%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+    mock_to_csv.assert_called_once()
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+    mock_to_csv.assert_called_once()
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+    mock_to_csv.assert_called_once()
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation - AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_normalization - AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal - AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+2026-05-17 05:50:03 | WARNING  | tool_builder | ⚠️  blood_test_preprocessor tests failed (loop 3/5) — test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_normalization FAILED [ 66%]
+test_blood_test_preprocessor.py::t
+2026-05-17 05:50:09 | DEBUG    | llm_client | LLM response from github_models (5715 chars)
+2026-05-17 05:50:09 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-05-17 05:50:10 | WARNING  | test_runner | Tests FAILED for blood_test_preprocessor:
+test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+    pd.testing.assert_frame_equal(result, expected_output)
+E   AssertionError: Attributes of DataFrame.iloc[:, 0] (column name="A") are different
+    pd.testing.assert_frame_equal(result.reset_index(drop=True), expected_output)
+E   AssertionError: DataFrame are different
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation - AssertionError: Attributes of DataFrame.iloc[:, 0] (column name="A") are different
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal - AssertionError: DataFrame are different
+2026-05-17 05:50:10 | WARNING  | tool_builder | ⚠️  blood_test_preprocessor tests failed (loop 4/5) — test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+    pd.testing.assert_frame_equa
+2026-05-17 05:50:16 | DEBUG    | llm_client | LLM response from github_models (5670 chars)
+2026-05-17 05:50:16 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'pytest']
+2026-05-17 05:50:18 | WARNING  | test_runner | Tests FAILED for blood_test_preprocessor:
+test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+    pd.testing.assert_frame_equal(result.reset_index(drop=True), expected_output)
+E   AssertionError: Attributes of DataFrame.iloc[:, 0] (column name="A") are different
+    pd.testing.assert_frame_equal(result.reset_index(drop=True), expected_output)
+E   AssertionError: DataFrame are different
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation - AssertionError: Attributes of DataFrame.iloc[:, 0] (column name="A") are different
+FAILED test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal - AssertionError: DataFrame are different
+2026-05-17 05:50:18 | WARNING  | tool_builder | ⚠️  blood_test_preprocessor tests failed (loop 5/5) — test_blood_test_preprocessor.py::test_preprocess_data_mean_imputation FAILED [ 33%]
+test_blood_test_preprocessor.py::test_preprocess_data_outlier_removal FAILED [100%]
+    pd.testing.assert_frame_equa
+2026-05-17 05:50:18 | ERROR    | tool_builder | ❌ blood_test_preprocessor failed after 5 loops
+2026-05-17 05:50:18 | INFO     | tool_builder | Building tool: ai_disease_predictor …
+2026-05-17 05:50:27 | DEBUG    | llm_client | LLM response from github_models (6035 chars)
+2026-05-17 05:50:27 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.24.3', 'joblib==1.2.0', 'matplotlib==3.7.2', 'onnxruntime==1.15.0', 'torch==2.0.1', 'tensorflow==2.13.0']
+2026-05-17 05:51:03 | WARNING  | test_runner | Tests FAILED for ai_disease_predictor:
+test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+test_ai_disease_predictor.py::test_make_predictions_empty_data FAILED    [100%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...032716728656'> == (2,)
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE <class 'ValueError'>
+FAILED test_ai_disease_predictor.py::test_make_predictions_onnx - AssertionError: assert <MagicMock na...032716728656'> == (2,)
+FAILED test_ai_disease_predictor.py::test_make_predictions_empty_data - Failed: DID NOT RAISE <class 'ValueError'>
+2026-05-17 05:51:03 | WARNING  | tool_builder | ⚠️  ai_disease_predictor tests failed (loop 1/5) — test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+test_ai_disease_predictor.py::test_make_predictions_empty_data FAILED    [100%]
+    assert predictions.shape == (2,)
+E  
+2026-05-17 05:51:11 | DEBUG    | llm_client | LLM response from github_models (6501 chars)
+2026-05-17 05:51:11 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'matplotlib', 'onnxruntime', 'torch', 'tensorflow', 'pytest']
+2026-05-17 05:51:17 | WARNING  | test_runner | Tests FAILED for ai_disease_predictor:
+test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...711829457616'> == (2,)
+FAILED test_ai_disease_predictor.py::test_make_predictions_onnx - AssertionError: assert <MagicMock na...711829457616'> == (2,)
+2026-05-17 05:51:17 | WARNING  | tool_builder | ⚠️  ai_disease_predictor tests failed (loop 2/5) — test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...711829457616'> == (2,)
+FAILED test_ai_di
+2026-05-17 05:51:25 | DEBUG    | llm_client | LLM response from github_models (6469 chars)
+2026-05-17 05:51:25 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'matplotlib', 'onnxruntime', 'torch', 'tensorflow']
+2026-05-17 05:51:32 | WARNING  | test_runner | Tests FAILED for ai_disease_predictor:
+test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...399903717776'> == (2,)
+FAILED test_ai_disease_predictor.py::test_make_predictions_onnx - AssertionError: assert <MagicMock na...399903717776'> == (2,)
+2026-05-17 05:51:32 | WARNING  | tool_builder | ⚠️  ai_disease_predictor tests failed (loop 3/5) — test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...399903717776'> == (2,)
+FAILED test_ai_di
+2026-05-17 05:51:38 | DEBUG    | llm_client | LLM response from github_models (6301 chars)
+2026-05-17 05:51:38 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport pandas as pd\nimport numpy as np\nimport joblib\nimport matplotlib.pyplot as plt\nimport onnxruntime as ort\nimport torch\nimport tensorflow as tf\n\ndef load_model(model_path):\n    \"\"\"Load the AI model based on its file extension.\"\"\"\n    if model_path.en
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6288)
+2026-05-17 05:51:38 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'joblib', 'matplotlib', 'onnxruntime', 'torch', 'tensorflow']
+2026-05-17 05:51:44 | WARNING  | test_runner | Tests FAILED for ai_disease_predictor:
+test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...860271584208'> == (2,)
+FAILED test_ai_disease_predictor.py::test_make_predictions_onnx - AssertionError: assert <MagicMock na...860271584208'> == (2,)
+2026-05-17 05:51:44 | WARNING  | tool_builder | ⚠️  ai_disease_predictor tests failed (loop 4/5) — test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...860271584208'> == (2,)
+FAILED test_ai_di
+2026-05-17 05:51:52 | DEBUG    | llm_client | LLM response from github_models (6529 chars)
+2026-05-17 05:51:52 | DEBUG    | test_runner | Installing: ['onnxruntime', 'torch', 'tensorflow', 'joblib', 'pandas', 'numpy', 'matplotlib', 'pytest']
+2026-05-17 05:51:58 | WARNING  | test_runner | Tests FAILED for ai_disease_predictor:
+test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...668187487056'> == (2,)
+FAILED test_ai_disease_predictor.py::test_make_predictions_onnx - AssertionError: assert <MagicMock na...668187487056'> == (2,)
+2026-05-17 05:51:58 | WARNING  | tool_builder | ⚠️  ai_disease_predictor tests failed (loop 5/5) — test_ai_disease_predictor.py::test_make_predictions_onnx FAILED          [ 66%]
+    assert predictions.shape == (2,)
+E   AssertionError: assert <MagicMock na...668187487056'> == (2,)
+FAILED test_ai_di
+2026-05-17 05:51:58 | ERROR    | tool_builder | ❌ ai_disease_predictor failed after 5 loops
+2026-05-17 05:51:58 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-05-17 05:51:58 | INFO     | main |   Built 2/5 tools successfully
+2026-05-17 05:51:58 | INFO     | main |     ✅ deepfake_audio_detector (loops: 1)
+2026-05-17 05:51:58 | INFO     | main |     ✅ ai_text_verifier (loops: 1)
+2026-05-17 05:51:58 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-17 05:51:58 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-17 05:51:58 | INFO     | github_publisher |   Created zip: deepfake_audio_detector.zip (2288 bytes)
+2026-05-17 05:51:58 | INFO     | github_publisher | Saved deepfake_audio_detector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/deepfake_audio_detector
+2026-05-17 05:51:58 | INFO     | github_publisher |   Created zip: ai_text_verifier.zip (2543 bytes)
+2026-05-17 05:51:58 | INFO     | github_publisher | Saved ai_text_verifier → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/ai_text_verifier
+2026-05-17 05:51:58 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-05-17 05:51:58 | INFO     | main |   Published 2 tools:
+2026-05-17 05:51:58 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/deepfake_audio_detector
+2026-05-17 05:51:58 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/ai_text_verifier
+2026-05-17 05:51:58 | INFO     | main |   Deduplicated 7 older tool version(s) from index
+2026-05-17 05:51:58 | INFO     | main | ✅ Generated tools_index.json with 235 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
