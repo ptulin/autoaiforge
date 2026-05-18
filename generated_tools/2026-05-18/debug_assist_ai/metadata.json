@@ -1,0 +1,13 @@
+{
+  "tool_name": "debug_assist_ai",
+  "display_name": "Debug Assist AI",
+  "description": "A Python module and CLI tool that analyzes error messages or stack traces, generating AI-powered suggestions for resolving issues. It integrates with AI models to provide explanations, potential solutions, and relevant code fixes.",
+  "topic": "AI-Powered Code Generation",
+  "date": "2026-05-18",
+  "generated": "2026-05-18T06:11:11.914466+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-18/debug_assist_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/debug_assist_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/debug_assist_ai/debug_assist_ai.zip"
+}
