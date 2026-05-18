@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_snippet_suggester",
+  "display_name": "AI Snippet Suggester",
+  "description": "A CLI tool that generates relevant code snippets for a given problem statement or function description using OpenAI or Anthropic APIs. This helps developers quickly bootstrap functionality or learn how to solve specific problems without leaving their terminal.",
+  "topic": "AI-Powered Code Generation",
+  "date": "2026-05-18",
+  "generated": "2026-05-18T06:11:11.914466+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-18/ai_snippet_suggester",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/ai_snippet_suggester/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/ai_snippet_suggester/ai_snippet_suggester.zip"
+}

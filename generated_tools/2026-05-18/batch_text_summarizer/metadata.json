@@ -1,0 +1,13 @@
+{
+  "tool_name": "batch_text_summarizer",
+  "display_name": "Batch Text Summarizer",
+  "description": "A command-line tool that takes a large set of text files, processes each one using an AI model like Claude via API, and generates concise summaries for each file. This is useful for developers working on projects that require summarizing large datasets of textual information efficiently.",
+  "topic": "AI for Large-Scale Text Processing",
+  "date": "2026-05-18",
+  "generated": "2026-05-18T06:11:11.914466+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-18/batch_text_summarizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/batch_text_summarizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-18/batch_text_summarizer/batch_text_summarizer.zip"
+}
