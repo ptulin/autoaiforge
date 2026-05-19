@@ -1,0 +1,13 @@
+{
+  "tool_name": "workflow_autogenerator",
+  "display_name": "Workflow Auto-Generator",
+  "description": "An automation tool that generates CI/CD or coding task automation workflows (e.g., GitHub Actions YAML files) based on project requirements extracted through natural language prompts. It simplifies creating complex automation workflows by leveraging AI.",
+  "topic": "Agentic Coding Trends",
+  "date": "2026-05-19",
+  "generated": "2026-05-19T06:03:50.199320+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-19/workflow_autogenerator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/workflow_autogenerator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/workflow_autogenerator/workflow_autogenerator.zip"
+}

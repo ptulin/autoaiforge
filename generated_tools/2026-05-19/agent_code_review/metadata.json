@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_code_review",
+  "display_name": "AI-Powered Code Review Agent",
+  "description": "A CLI tool that uses an AI model to review Python code files for style, bugs, and optimization opportunities. It can also generate GitHub-style inline comments for suggested improvements, making it a valuable tool for automated code review pipelines.",
+  "topic": "Agentic Coding Trends",
+  "date": "2026-05-19",
+  "generated": "2026-05-19T06:03:50.199320+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-19/agent_code_review",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/agent_code_review/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/agent_code_review/agent_code_review.zip"
+}

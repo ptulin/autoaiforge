@@ -1,0 +1,13 @@
+{
+  "tool_name": "multi_agent_orchestrator",
+  "display_name": "Multi-Agent Orchestrator",
+  "description": "A Python library that allows developers to create, configure, and manage multiple AI coding agents working on interdependent tasks. It provides tools to define agent roles, communicate between agents, and monitor their progress, making it useful for collaborative or multi-step coding workflows.",
+  "topic": "Agentic Coding Trends",
+  "date": "2026-05-19",
+  "generated": "2026-05-19T06:03:50.199320+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-19/multi_agent_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/multi_agent_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-19/multi_agent_orchestrator/multi_agent_orchestrator.zip"
+}
