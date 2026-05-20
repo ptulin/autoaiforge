@@ -1,0 +1,375 @@
+2026-05-20 06:05:50 | INFO     | main | ============================================================
+2026-05-20 06:05:50 | INFO     | main | AutoAIForge starting run: 2026-05-20T06:05:50.940914+00:00
+2026-05-20 06:05:50 | INFO     | main | ============================================================
+2026-05-20 06:05:50 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-20 06:05:51 | INFO     | youtube_scraper | YouTube client ready
+2026-05-20 06:05:51 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-20 06:05:51 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-20 06:05:52 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-20 06:05:52 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-20 06:05:53 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-20 06:05:53 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-20 06:05:53 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-20 06:05:54 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-20 06:05:54 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-20 06:05:55 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-20 06:05:55 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-20 06:05:55 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-20 06:05:56 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-05-20 06:05:56 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-20 06:05:56 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-20 06:05:57 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-20 06:05:57 | INFO     | youtube_scraper | YouTube 'Groq inference': 3 results (quota used: 1700)
+2026-05-20 06:05:57 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-20 06:05:58 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-20 06:05:58 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-20 06:05:58 | INFO     | youtube_scraper | YouTube total: 903 items, quota used: 2000
+2026-05-20 06:05:58 | INFO     | main |   YouTube: 866 items
+2026-05-20 06:05:58 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-20 06:06:03 | INFO     | rss_scraper | HackerNews: 155 items
+2026-05-20 06:06:03 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-20 06:06:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-20 06:06:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-20 06:06:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-20 06:06:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-20 06:06:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-20 06:06:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-20 06:06:11 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-20 06:06:11 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-20 06:06:12 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-20 06:06:14 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-20 06:06:30 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-20 06:06:31 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-20 06:06:35 | INFO     | rss_scraper | Dev.to: 190 items
+2026-05-20 06:06:38 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-20 06:06:38 | INFO     | rss_scraper | Free sources total: 395 unique items
+2026-05-20 06:06:38 | INFO     | main |   RSS/API sources: 395 items
+2026-05-20 06:06:38 | INFO     | main |   Total scraped: 1261 items
+2026-05-20 06:06:38 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-20 06:06:38 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-20 06:06:38 | INFO     | db_manager | Purged 1061 old news items
+2026-05-20 06:06:38 | INFO     | db_manager | Inserted 1058/1261 news items
+2026-05-20 06:06:38 | INFO     | main |   SQLite: 1058 new items (total: 30555)
+2026-05-20 06:06:43 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-20 06:06:45 | INFO     | vector_store | VectorStore ready
+2026-05-20 06:07:15 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-20 06:07:15 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-20 06:07:15 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-20 06:07:15 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-20 06:07:22 | DEBUG    | llm_client | LLM response from github_models (3810 chars)
+2026-05-20 06:07:22 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-20 06:07:22 | INFO     | main |   Found 10 topics:
+2026-05-20 06:07:22 | INFO     | main |      1. [10/10] AI-Driven Cybersecurity
+2026-05-20 06:07:22 | INFO     | main |      2. [9/10] Google Gemini 3.5 Release
+2026-05-20 06:07:22 | INFO     | main |      3. [9/10] Claude AI for Developers
+2026-05-20 06:07:22 | INFO     | main |      4. [9/10] AI Prompt Optimization
+2026-05-20 06:07:22 | INFO     | main |      5. [8/10] AI-Powered Weather Forecasting
+2026-05-20 06:07:22 | INFO     | main |      6. [8/10] AI in Financial Markets
+2026-05-20 06:07:22 | INFO     | main |      7. [8/10] AI in Education
+2026-05-20 06:07:22 | INFO     | main |      8. [8/10] Custom AI Hardware Development
+2026-05-20 06:07:22 | INFO     | main |      9. [7/10] AI Multilingual API Cost Issues
+2026-05-20 06:07:22 | INFO     | main |     10. [7/10] AI-Powered News Summarization
+2026-05-20 06:07:22 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-20 06:07:22 | INFO     | main |   Existing collection: 244 tools across 129 topics
+2026-05-20 06:07:22 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-20 06:07:29 | DEBUG    | llm_client | LLM response from github_models (3064 chars)
+2026-05-20 06:07:29 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Driven Cybersecurity
+2026-05-20 06:07:33 | DEBUG    | llm_client | LLM response from github_models (2891 chars)
+2026-05-20 06:07:33 | INFO     | idea_generator | Generated 2 ideas for topic: Google Gemini 3.5 Release
+2026-05-20 06:07:33 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-20 06:07:33 | INFO     | main |   Generated 5 tool ideas:
+2026-05-20 06:07:33 | INFO     | main |     • ai_threat_detector: This tool uses pre-trained machine learning models to scan log files for traces 
+2026-05-20 06:07:33 | INFO     | main |     • malware_simulator: This library allows developers to simulate AI-driven malware scenarios to test t
+2026-05-20 06:07:33 | INFO     | main |     • phishing_ai_detector: This CLI tool analyzes email messages or text files to detect AI-generated phish
+2026-05-20 06:07:33 | INFO     | main |     • gemini_task_benchmark: This CLI tool enables AI developers to benchmark Google Gemini 3.5's performance
+2026-05-20 06:07:33 | INFO     | main |     • gemini_action_simulator: This Python library allows developers to simulate multi-step action-based workfl
+2026-05-20 06:07:33 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-20 06:07:33 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-20 06:07:43 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-20 06:07:43 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-20 06:07:43 | INFO     | tool_builder | Building tool: ai_threat_detector …
+2026-05-20 06:07:51 | DEBUG    | llm_client | LLM response from github_models (4432 chars)
+2026-05-20 06:07:51 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.2', 'pandas==1.5.3', 'nltk==3.8.1']
+2026-05-20 06:08:06 | WARNING  | test_runner | Tests FAILED for ai_threat_detector:
+test_ai_threat_detector.py::test_detect_threats_empty_file FAILED        [ 66%]
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+    raise FileNotFoundError(f"Log file '{log_file}' not found.")
+E   FileNotFoundError: Log file 'empty_file.txt' not found.
+    raise FileNotFoundError(f"Log file '{log_file}' not found.")
+E   FileNotFoundError: Log file 'valid_file.txt' not found.
+FAILED test_ai_threat_detector.py::test_detect_threats_empty_file - FileNotFoundError: Log file 'empty_file.txt' not found.
+FAILED test_ai_threat_detector.py::test_detect_threats_valid_file - FileNotFoundError: Log file 'valid_file.txt' not found.
+2026-05-20 06:08:06 | WARNING  | tool_builder | ⚠️  ai_threat_detector tests failed (loop 1/5) — test_ai_threat_detector.py::test_detect_threats_empty_file FAILED        [ 66%]
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+    raise FileNotFoundError(f"Log file '
+2026-05-20 06:08:13 | DEBUG    | llm_client | LLM response from github_models (5547 chars)
+2026-05-20 06:08:13 | DEBUG    | test_runner | Installing: ['scikit-learn', 'nltk', 'pandas']
+2026-05-20 06:08:16 | WARNING  | test_runner | Tests FAILED for ai_threat_detector:
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_detect_threats_valid_file - TypeError: startswith first arg must be str or a tuple of str, not bytes
+2026-05-20 06:08:16 | WARNING  | tool_builder | ⚠️  ai_threat_detector tests failed (loop 2/5) — test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_det
+2026-05-20 06:08:24 | DEBUG    | llm_client | LLM response from github_models (5563 chars)
+2026-05-20 06:08:24 | DEBUG    | test_runner | Installing: ['scikit-learn', 'nltk', 'pandas']
+2026-05-20 06:08:27 | WARNING  | test_runner | Tests FAILED for ai_threat_detector:
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_detect_threats_valid_file - TypeError: startswith first arg must be str or a tuple of str, not bytes
+2026-05-20 06:08:27 | WARNING  | tool_builder | ⚠️  ai_threat_detector tests failed (loop 3/5) — test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_det
+2026-05-20 06:08:36 | DEBUG    | llm_client | LLM response from github_models (5900 chars)
+2026-05-20 06:08:36 | DEBUG    | test_runner | Installing: ['scikit-learn', 'nltk', 'pandas']
+2026-05-20 06:08:38 | WARNING  | test_runner | Tests FAILED for ai_threat_detector:
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_detect_threats_valid_file - TypeError: startswith first arg must be str or a tuple of str, not bytes
+2026-05-20 06:08:38 | WARNING  | tool_builder | ⚠️  ai_threat_detector tests failed (loop 4/5) — test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_det
+2026-05-20 06:08:47 | DEBUG    | llm_client | LLM response from github_models (6067 chars)
+2026-05-20 06:08:47 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'nltk']
+2026-05-20 06:08:49 | WARNING  | test_runner | Tests FAILED for ai_threat_detector:
+test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_detect_threats_valid_file - TypeError: startswith first arg must be str or a tuple of str, not bytes
+2026-05-20 06:08:49 | WARNING  | tool_builder | ⚠️  ai_threat_detector tests failed (loop 5/5) — test_ai_threat_detector.py::test_detect_threats_valid_file FAILED        [100%]
+E   TypeError: startswith first arg must be str or a tuple of str, not bytes
+FAILED test_ai_threat_detector.py::test_det
+2026-05-20 06:08:49 | ERROR    | tool_builder | ❌ ai_threat_detector failed after 5 loops
+2026-05-20 06:08:49 | INFO     | tool_builder | Building tool: malware_simulator …
+2026-05-20 06:08:59 | DEBUG    | llm_client | LLM response from github_models (6544 chars)
+2026-05-20 06:08:59 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'torch==2.0.1', 'faker==18.9.0']
+2026-05-20 06:09:47 | WARNING  | test_runner | Tests FAILED for malware_simulator:
+test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+test_malware_simulator.py::test_generate_adversarial_attack_invalid_input FAILED [ 75%]
+    raise TypeError("model must be a torch.nn.Module")
+E   TypeError: model must be a torch.nn.Module
+    raise TypeError("model must be a torch.nn.Module")
+E   TypeError: model must be a torch.nn.Module
+FAILED test_malware_simulator.py::test_generate_adversarial_attack - TypeError: model must be a torch.nn.Module
+FAILED test_malware_simulator.py::test_generate_adversarial_attack_invalid_input - TypeError: model must be a torch.nn.Module
+2026-05-20 06:09:47 | WARNING  | tool_builder | ⚠️  malware_simulator tests failed (loop 1/5) — test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+test_malware_simulator.py::test_generate_adversarial_attack_invalid_input FAILED [ 75%]
+    raise TypeError("model must 
+2026-05-20 06:09:54 | DEBUG    | llm_client | LLM response from github_models (6030 chars)
+2026-05-20 06:09:54 | DEBUG    | test_runner | Installing: ['numpy', 'torch', 'faker']
+2026-05-20 06:09:57 | WARNING  | test_runner | Tests FAILED for malware_simulator:
+test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+E   RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+FAILED test_malware_simulator.py::test_generate_adversarial_attack - RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+2026-05-20 06:09:57 | WARNING  | tool_builder | ⚠️  malware_simulator tests failed (loop 2/5) — test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+E   RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+FAILED test_malware_simulator.p
+2026-05-20 06:10:04 | DEBUG    | llm_client | LLM response from github_models (6345 chars)
+2026-05-20 06:10:04 | DEBUG    | test_runner | Installing: ['numpy', 'torch', 'faker']
+2026-05-20 06:10:06 | WARNING  | test_runner | Tests FAILED for malware_simulator:
+test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+E   AttributeError: 'NoneType' object has no attribute 'sign'
+FAILED test_malware_simulator.py::test_generate_adversarial_attack - AttributeError: 'NoneType' object has no attribute 'sign'
+2026-05-20 06:10:06 | WARNING  | tool_builder | ⚠️  malware_simulator tests failed (loop 3/5) — test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+E   AttributeError: 'NoneType' object has no attribute 'sign'
+FAILED test_malware_simulator.py::test_generate_adversaria
+2026-05-20 06:10:14 | DEBUG    | llm_client | LLM response from github_models (6245 chars)
+2026-05-20 06:10:14 | DEBUG    | test_runner | Installing: ['numpy', 'torch', 'faker']
+2026-05-20 06:10:16 | WARNING  | test_runner | Tests FAILED for malware_simulator:
+test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+    raise RuntimeError("Gradient computation failed. Ensure the model and input data are properly configured.")
+E   RuntimeError: Gradient computation failed. Ensure the model and input data are properly configured.
+FAILED test_malware_simulator.py::test_generate_adversarial_attack - RuntimeError: Gradient computation failed. Ensure the model and input data are properly configured.
+2026-05-20 06:10:16 | WARNING  | tool_builder | ⚠️  malware_simulator tests failed (loop 4/5) — test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+    raise RuntimeError("Gradient computation failed. Ensure the model and input data are properly configured.")
+E   Runt
+2026-05-20 06:10:24 | DEBUG    | llm_client | LLM response from github_models (6853 chars)
+2026-05-20 06:10:24 | DEBUG    | test_runner | Installing: ['numpy', 'torch', 'faker']
+2026-05-20 06:10:26 | WARNING  | test_runner | Tests FAILED for malware_simulator:
+test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+    raise RuntimeError("Gradient computation failed. Ensure the model and input data are properly configured.")
+E   RuntimeError: Gradient computation failed. Ensure the model and input data are properly configured.
+FAILED test_malware_simulator.py::test_generate_adversarial_attack - RuntimeError: Gradient computation failed. Ensure the model and input data are properly configured.
+2026-05-20 06:10:26 | WARNING  | tool_builder | ⚠️  malware_simulator tests failed (loop 5/5) — test_malware_simulator.py::test_generate_adversarial_attack FAILED       [ 25%]
+    raise RuntimeError("Gradient computation failed. Ensure the model and input data are properly configured.")
+E   Runt
+2026-05-20 06:10:26 | ERROR    | tool_builder | ❌ malware_simulator failed after 5 loops
+2026-05-20 06:10:26 | INFO     | tool_builder | Building tool: phishing_ai_detector …
+2026-05-20 06:10:37 | DEBUG    | llm_client | LLM response from github_models (6655 chars)
+2026-05-20 06:10:37 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'tqdm==4.66.1']
+2026-05-20 06:10:45 | WARNING  | test_runner | Tests FAILED for phishing_ai_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisError
+E   ModuleNotFoundError: No module named 'numpy.exceptions'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_phishing_ai_detector.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-05-20 06:10:45 | WARNING  | tool_builder | ⚠️  phishing_ai_detector tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisE
+2026-05-20 06:10:55 | DEBUG    | llm_client | LLM response from github_models (8261 chars)
+2026-05-20 06:10:55 | DEBUG    | test_runner | Installing: ['transformers', 'torch', 'tqdm']
+2026-05-20 06:10:58 | WARNING  | test_runner | Tests FAILED for phishing_ai_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisError
+E   ModuleNotFoundError: No module named 'numpy.exceptions'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_phishing_ai_detector.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-05-20 06:10:58 | WARNING  | tool_builder | ⚠️  phishing_ai_detector tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisE
+2026-05-20 06:11:05 | DEBUG    | llm_client | LLM response from github_models (7160 chars)
+2026-05-20 06:11:05 | DEBUG    | test_runner | Installing: ['transformers']
+2026-05-20 06:11:09 | WARNING  | test_runner | Tests FAILED for phishing_ai_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisError
+E   ModuleNotFoundError: No module named 'numpy.exceptions'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_phishing_ai_detector.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-05-20 06:11:09 | WARNING  | tool_builder | ⚠️  phishing_ai_detector tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisE
+2026-05-20 06:11:15 | DEBUG    | llm_client | LLM response from github_models (7127 chars)
+2026-05-20 06:11:15 | DEBUG    | test_runner | Installing: ['transformers']
+2026-05-20 06:11:19 | WARNING  | test_runner | Tests FAILED for phishing_ai_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisError
+E   ModuleNotFoundError: No module named 'numpy.exceptions'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_phishing_ai_detector.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-05-20 06:11:19 | WARNING  | tool_builder | ⚠️  phishing_ai_detector tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisE
+2026-05-20 06:11:25 | DEBUG    | llm_client | LLM response from github_models (7150 chars)
+2026-05-20 06:11:25 | DEBUG    | test_runner | Installing: ['transformers']
+2026-05-20 06:11:29 | WARNING  | test_runner | Tests FAILED for phishing_ai_detector:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisError
+E   ModuleNotFoundError: No module named 'numpy.exceptions'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_phishing_ai_detector.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-05-20 06:11:29 | WARNING  | tool_builder | ⚠️  phishing_ai_detector tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_phishing_ai_detector.py _________________
+    from numpy.exceptions import AxisE
+2026-05-20 06:11:29 | ERROR    | tool_builder | ❌ phishing_ai_detector failed after 5 loops
+2026-05-20 06:11:29 | INFO     | tool_builder | Building tool: gemini_task_benchmark …
+2026-05-20 06:11:43 | DEBUG    | llm_client | LLM response from github_models (8078 chars)
+2026-05-20 06:11:43 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pandas==1.5.3', 'matplotlib==3.7.2']
+2026-05-20 06:11:51 | WARNING  | test_runner | Tests FAILED for gemini_task_benchmark:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_task_benchmark.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:11:51 | WARNING  | tool_builder | ⚠️  gemini_task_benchmark tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-20 06:12:04 | DEBUG    | llm_client | LLM response from github_models (9070 chars)
+2026-05-20 06:12:04 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'matplotlib']
+2026-05-20 06:12:05 | WARNING  | test_runner | Tests FAILED for gemini_task_benchmark:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_task_benchmark.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:12:05 | WARNING  | tool_builder | ⚠️  gemini_task_benchmark tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-20 06:12:16 | DEBUG    | llm_client | LLM response from github_models (8785 chars)
+2026-05-20 06:12:16 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'matplotlib']
+2026-05-20 06:12:17 | WARNING  | test_runner | Tests FAILED for gemini_task_benchmark:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_task_benchmark.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:12:17 | WARNING  | tool_builder | ⚠️  gemini_task_benchmark tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-20 06:12:28 | DEBUG    | llm_client | LLM response from github_models (8469 chars)
+2026-05-20 06:12:28 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'matplotlib']
+2026-05-20 06:12:29 | WARNING  | test_runner | Tests FAILED for gemini_task_benchmark:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_task_benchmark.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:12:29 | WARNING  | tool_builder | ⚠️  gemini_task_benchmark tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-20 06:12:45 | DEBUG    | llm_client | LLM response from github_models (11057 chars)
+2026-05-20 06:12:45 | DEBUG    | test_runner | Installing: ['openai', 'pandas', 'matplotlib']
+2026-05-20 06:12:46 | WARNING  | test_runner | Tests FAILED for gemini_task_benchmark:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_task_benchmark.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:12:46 | WARNING  | tool_builder | ⚠️  gemini_task_benchmark tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_gemini_task_benchmark.py ________________
+E   ValueError: numpy.dtype size chang
+2026-05-20 06:12:46 | ERROR    | tool_builder | ❌ gemini_task_benchmark failed after 5 loops
+2026-05-20 06:12:46 | INFO     | tool_builder | Building tool: gemini_action_simulator …
+2026-05-20 06:12:56 | DEBUG    | llm_client | LLM response from github_models (7265 chars)
+2026-05-20 06:12:56 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'jsonschema==4.18.0']
+2026-05-20 06:12:58 | WARNING  | test_runner | Tests FAILED for gemini_action_simulator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy as np, assert_has_numpy
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_action_simulator.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:12:58 | WARNING  | tool_builder | ⚠️  gemini_action_simulator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy a
+2026-05-20 06:13:06 | DEBUG    | llm_client | LLM response from github_models (7881 chars)
+2026-05-20 06:13:06 | DEBUG    | test_runner | Installing: ['openai', 'jsonschema', 'pytest']
+2026-05-20 06:13:07 | WARNING  | test_runner | Tests FAILED for gemini_action_simulator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy as np, assert_has_numpy
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_action_simulator.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:13:07 | WARNING  | tool_builder | ⚠️  gemini_action_simulator tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy a
+2026-05-20 06:13:16 | DEBUG    | llm_client | LLM response from github_models (7592 chars)
+2026-05-20 06:13:16 | DEBUG    | test_runner | Installing: ['openai', 'jsonschema', 'pytest']
+2026-05-20 06:13:17 | WARNING  | test_runner | Tests FAILED for gemini_action_simulator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy as np, assert_has_numpy
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_action_simulator.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:13:17 | WARNING  | tool_builder | ⚠️  gemini_action_simulator tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy a
+2026-05-20 06:13:17 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-20 06:14:25 | DEBUG    | llm_client | LLM response from github_models (7590 chars)
+2026-05-20 06:14:25 | DEBUG    | test_runner | Installing: ['openai', 'jsonschema']
+2026-05-20 06:14:27 | WARNING  | test_runner | Tests FAILED for gemini_action_simulator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy as np, assert_has_numpy
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_action_simulator.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:14:27 | WARNING  | tool_builder | ⚠️  gemini_action_simulator tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy a
+2026-05-20 06:14:36 | DEBUG    | llm_client | LLM response from github_models (8498 chars)
+2026-05-20 06:14:36 | DEBUG    | test_runner | Installing: ['openai', 'jsonschema', 'pytest']
+2026-05-20 06:14:37 | WARNING  | test_runner | Tests FAILED for gemini_action_simulator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy as np, assert_has_numpy
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_gemini_action_simulator.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-05-20 06:14:37 | WARNING  | tool_builder | ⚠️  gemini_action_simulator tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_gemini_action_simulator.py _______________
+    from openai.datalib import numpy a
+2026-05-20 06:14:37 | ERROR    | tool_builder | ❌ gemini_action_simulator failed after 5 loops
+2026-05-20 06:14:37 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-05-20 06:14:37 | INFO     | main |   Built 0/5 tools successfully
+2026-05-20 06:14:37 | WARNING  | main | No tools built successfully
