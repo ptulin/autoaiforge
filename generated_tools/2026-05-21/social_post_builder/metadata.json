@@ -1,0 +1,13 @@
+{
+  "tool_name": "social_post_builder",
+  "display_name": "Social Media Post Builder",
+  "description": "A Python library and CLI enabling users to generate engaging social media posts for business marketing campaigns. Users can specify the platform, audience type, and key message, and the tool uses generative AI to craft tailored posts optimized for the selected platform.",
+  "topic": "Generative AI for Business",
+  "date": "2026-05-21",
+  "generated": "2026-05-21T06:08:09.987963+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/social_post_builder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-21/social_post_builder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-21/social_post_builder/social_post_builder.zip"
+}
