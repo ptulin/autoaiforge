@@ -1,0 +1,4 @@
+openai
+click
+pydantic
+pytest

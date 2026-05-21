@@ -1,0 +1,255 @@
+2026-05-21 06:08:09 | INFO     | main | ============================================================
+2026-05-21 06:08:09 | INFO     | main | AutoAIForge starting run: 2026-05-21T06:08:09.987963+00:00
+2026-05-21 06:08:09 | INFO     | main | ============================================================
+2026-05-21 06:08:09 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-21 06:08:10 | INFO     | youtube_scraper | YouTube client ready
+2026-05-21 06:08:10 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-21 06:08:10 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-21 06:08:11 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-21 06:08:11 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-21 06:08:12 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-21 06:08:12 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-21 06:08:12 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-21 06:08:13 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-21 06:08:13 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-21 06:08:13 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-21 06:08:14 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-21 06:08:14 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-21 06:08:14 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-05-21 06:08:15 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-21 06:08:15 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-21 06:08:15 | INFO     | youtube_scraper | YouTube 'AI safety news': 50 results (quota used: 1600)
+2026-05-21 06:08:16 | INFO     | youtube_scraper | YouTube 'Groq inference': 1 results (quota used: 1700)
+2026-05-21 06:08:16 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-21 06:08:16 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-21 06:08:17 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-21 06:08:17 | INFO     | youtube_scraper | YouTube total: 901 items, quota used: 2000
+2026-05-21 06:08:17 | INFO     | main |   YouTube: 834 items
+2026-05-21 06:08:17 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-21 06:08:22 | INFO     | rss_scraper | HackerNews: 161 items
+2026-05-21 06:08:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-21 06:08:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-21 06:08:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-21 06:08:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-21 06:08:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-21 06:08:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-21 06:08:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-21 06:08:29 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-21 06:08:29 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-21 06:08:31 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-21 06:09:02 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-21 06:09:18 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-21 06:09:19 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-21 06:09:23 | INFO     | rss_scraper | Dev.to: 194 items
+2026-05-21 06:09:25 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-21 06:09:25 | INFO     | rss_scraper | Free sources total: 405 unique items
+2026-05-21 06:09:25 | INFO     | main |   RSS/API sources: 405 items
+2026-05-21 06:09:25 | INFO     | main |   Total scraped: 1239 items
+2026-05-21 06:09:25 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-21 06:09:25 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-21 06:09:25 | INFO     | db_manager | Purged 1097 old news items
+2026-05-21 06:09:25 | INFO     | db_manager | Inserted 1027/1239 news items
+2026-05-21 06:09:25 | INFO     | main |   SQLite: 1027 new items (total: 30485)
+2026-05-21 06:09:30 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-21 06:09:32 | INFO     | vector_store | VectorStore ready
+2026-05-21 06:10:01 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-21 06:10:01 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-21 06:10:01 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-21 06:10:01 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-21 06:10:10 | DEBUG    | llm_client | LLM response from github_models (4301 chars)
+2026-05-21 06:10:10 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-21 06:10:10 | INFO     | main |   Found 10 topics:
+2026-05-21 06:10:10 | INFO     | main |      1. [9/10] AI-Powered Code Review Tools
+2026-05-21 06:10:10 | INFO     | main |      2. [9/10] Generative AI for Business
+2026-05-21 06:10:10 | INFO     | main |      3. [9/10] AI in Large-Scale Infrastructure
+2026-05-21 06:10:10 | INFO     | main |      4. [8/10] AI for Workflow Automation
+2026-05-21 06:10:10 | INFO     | main |      5. [8/10] AI in Healthcare Diagnostics
+2026-05-21 06:10:10 | INFO     | main |      6. [8/10] AI in Education and Cheating Prevention
+2026-05-21 06:10:10 | INFO     | main |      7. [8/10] AI for Vertical Enterprise Solutions
+2026-05-21 06:10:10 | INFO     | main |      8. [8/10] AI-Enhanced Personalization
+2026-05-21 06:10:10 | INFO     | main |      9. [7/10] AI-Driven Fraud Detection
+2026-05-21 06:10:10 | INFO     | main |     10. [7/10] AI Model Integration with Design Tools
+2026-05-21 06:10:10 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-21 06:10:10 | INFO     | main |   Existing collection: 244 tools across 129 topics
+2026-05-21 06:10:10 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Code Review Tools' (relevance 9/10, last built 2026-03-03)
+2026-05-21 06:10:10 | INFO     | main |   🔄 Upgrade candidate: 'AI in Healthcare Diagnostics' (relevance 8/10, last built 2026-05-04)
+2026-05-21 06:10:10 | INFO     | main |   Topics flagged for upgrade: AI-Powered Code Review Tools, AI in Healthcare Diagnostics
+2026-05-21 06:10:10 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI-Powered Code Review Tools'
+2026-05-21 06:10:16 | DEBUG    | llm_client | LLM response from github_models (3364 chars)
+2026-05-21 06:10:16 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Code Review Tools
+2026-05-21 06:10:22 | DEBUG    | llm_client | LLM response from github_models (2556 chars)
+2026-05-21 06:10:22 | INFO     | idea_generator | Generated 2 ideas for topic: Generative AI for Business
+2026-05-21 06:10:22 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-21 06:10:22 | INFO     | main |   Generated 5 tool ideas:
+2026-05-21 06:10:22 | INFO     | main |     • ai_code_review_assistant: A CLI tool that uses an AI model to analyze Python codebases for common issues s
+2026-05-21 06:10:22 | INFO     | main |     • multi_agent_code_refactor: A Python library that utilizes multiple AI agents to collaboratively review and 
+2026-05-21 06:10:22 | INFO     | main |     • ai_commit_quality_guard: A pre-commit hook that uses an AI model to automatically review staged Python fi
+2026-05-21 06:10:22 | INFO     | main |     • ai_email_generator: A CLI tool that allows users to generate professional-quality business emails us
+2026-05-21 06:10:22 | INFO     | main |     • social_post_builder: A Python library and CLI enabling users to generate engaging social media posts 
+2026-05-21 06:10:22 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-21 06:10:22 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-21 06:10:31 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-21 06:10:31 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-21 06:10:31 | INFO     | tool_builder | Building tool: ai_code_review_assistant …
+2026-05-21 06:10:45 | DEBUG    | llm_client | LLM response from github_models (6712 chars)
+2026-05-21 06:10:45 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'click==8.1.3', 'flake8==6.0.0', 'pytest==7.4.2']
+2026-05-21 06:10:48 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert 'E231 missing whitespace after' in issues[0]
+E   AssertionError: assert 'E231 missing whitespace after' in ''
+E   FileNotFoundError: [Errno 2] No such file or directory: 'dummy_file.py'
+Error: Invalid value for '--path': Path 'dummy_file.py' does not exist.
+FAILED test_ai_code_review_assistant.py::test_run_flake8 - AssertionError: assert 'E231 missing whitespace after' in ''
+FAILED test_ai_code_review_assistant.py::test_main - SystemExit: 2
+2026-05-21 06:10:48 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 1/5) — test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert 'E231 missing whitespace afte
+2026-05-21 06:10:55 | DEBUG    | llm_client | LLM response from github_models (6233 chars)
+2026-05-21 06:10:55 | DEBUG    | test_runner | Installing: ['openai', 'flake8']
+2026-05-21 06:10:56 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert 'E231 missing whitespace after' in issues[0]
+E   AssertionError: assert 'E231 missing whitespace after' in ''
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_assistant.py::test_run_flake8 - AssertionError: assert 'E231 missing whitespace after' in ''
+FAILED test_ai_code_review_assistant.py::test_main - NameError: name 'argparse' is not defined
+2026-05-21 06:10:56 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 2/5) — test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert 'E231 missing whitespace afte
+2026-05-21 06:11:04 | DEBUG    | llm_client | LLM response from github_models (6431 chars)
+2026-05-21 06:11:04 | DEBUG    | test_runner | Installing: ['openai', 'flake8']
+2026-05-21 06:11:05 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0 == 1
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_assistant.py::test_run_flake8 - assert 0 == 1
+FAILED test_ai_code_review_assistant.py::test_main - NameError: name 'argparse' is not defined
+2026-05-21 06:11:05 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 3/5) — test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0
+2026-05-21 06:11:12 | DEBUG    | llm_client | LLM response from github_models (6738 chars)
+2026-05-21 06:11:12 | DEBUG    | test_runner | Installing: ['openai', 'flake8']
+2026-05-21 06:11:13 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0 == 1
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_assistant.py::test_run_flake8 - assert 0 == 1
+FAILED test_ai_code_review_assistant.py::test_main - NameError: name 'argparse' is not defined
+2026-05-21 06:11:13 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 4/5) — test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0
+2026-05-21 06:11:20 | DEBUG    | llm_client | LLM response from github_models (6549 chars)
+2026-05-21 06:11:20 | DEBUG    | test_runner | Installing: ['openai', 'flake8']
+2026-05-21 06:11:21 | WARNING  | test_runner | Tests FAILED for ai_code_review_assistant:
+test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0 == 1
+E   NameError: name 'argparse' is not defined
+FAILED test_ai_code_review_assistant.py::test_run_flake8 - assert 0 == 1
+FAILED test_ai_code_review_assistant.py::test_main - NameError: name 'argparse' is not defined
+2026-05-21 06:11:21 | WARNING  | tool_builder | ⚠️  ai_code_review_assistant tests failed (loop 5/5) — test_ai_code_review_assistant.py::test_run_flake8 FAILED                 [ 66%]
+test_ai_code_review_assistant.py::test_main FAILED                       [100%]
+    assert len(issues) == 1
+E   assert 0
+2026-05-21 06:11:21 | ERROR    | tool_builder | ❌ ai_code_review_assistant failed after 5 loops
+2026-05-21 06:11:21 | INFO     | tool_builder | Building tool: multi_agent_code_refactor …
+2026-05-21 06:11:35 | DEBUG    | llm_client | LLM response from github_models (7255 chars)
+2026-05-21 06:11:35 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'langchain==0.0.208']
+2026-05-21 06:11:41 | WARNING  | test_runner | Tests FAILED for multi_agent_code_refactor:
+test_multi_agent_code_refactor.py::test_refactor_code_with_mocked_agents FAILED [ 33%]
+test_multi_agent_code_refactor.py::test_refactor_code_with_file_input FAILED [ 66%]
+test_multi_agent_code_refactor.py::test_refactor_code_with_output_file FAILED [100%]
+E   pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+E   pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+E   pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+FAILED test_multi_agent_code_refactor.py::test_refactor_code_with_mocked_agents - pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+FAILED test_multi_agent_code_refactor.py::test_refactor_code_with_file_input - pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+FAILED test_multi_agent_code_refactor.py::test_refactor_code_with_output_file - pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+2026-05-21 06:11:41 | WARNING  | tool_builder | ⚠️  multi_agent_code_refactor tests failed (loop 1/5) — test_multi_agent_code_refactor.py::test_refactor_code_with_mocked_agents FAILED [ 33%]
+test_multi_agent_code_refactor.py::test_refactor_code_with_file_input FAILED [ 66%]
+test_multi_agent_code_refacto
+2026-05-21 06:11:49 | DEBUG    | llm_client | LLM response from github_models (6241 chars)
+2026-05-21 06:11:49 | DEBUG    | test_runner | Installing: ['pytest']
+2026-05-21 06:11:50 | INFO     | test_runner | Tests PASSED for multi_agent_code_refactor
+2026-05-21 06:11:50 | INFO     | tool_builder | ✅ multi_agent_code_refactor passed tests on loop 2
+2026-05-21 06:11:50 | INFO     | tool_builder | Building tool: ai_commit_quality_guard …
+2026-05-21 06:12:00 | DEBUG    | llm_client | LLM response from github_models (6108 chars)
+2026-05-21 06:12:00 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'PyYAML==6.0', 'pre-commit==3.4.0', 'pytest==7.4.2']
+2026-05-21 06:12:02 | WARNING  | test_runner | Tests FAILED for ai_commit_quality_guard:
+test_ai_commit_quality_guard.py::test_load_config FAILED                 [100%]
+    assert config == {'rules': {'max_line_length': 80}}
+E   AssertionError: assert {} == {'rules': {'m..._length': 80}}
+FAILED test_ai_commit_quality_guard.py::test_load_config - AssertionError: assert {} == {'rules': {'m..._length': 80}}
+2026-05-21 06:12:02 | WARNING  | tool_builder | ⚠️  ai_commit_quality_guard tests failed (loop 1/5) — test_ai_commit_quality_guard.py::test_load_config FAILED                 [100%]
+    assert config == {'rules': {'max_line_length': 80}}
+E   AssertionError: assert {} == {'rules': {'m..._length': 80}}
+
+2026-05-21 06:12:11 | DEBUG    | llm_client | LLM response from github_models (6610 chars)
+2026-05-21 06:12:11 | DEBUG    | test_runner | Installing: ['openai', 'pyyaml']
+2026-05-21 06:12:12 | INFO     | test_runner | Tests PASSED for ai_commit_quality_guard
+2026-05-21 06:12:12 | INFO     | tool_builder | ✅ ai_commit_quality_guard passed tests on loop 2
+2026-05-21 06:12:12 | INFO     | tool_builder | Building tool: ai_email_generator …
+2026-05-21 06:12:19 | DEBUG    | llm_client | LLM response from github_models (5561 chars)
+2026-05-21 06:12:19 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'click==8.1.3', 'pydantic==1.10.7', 'pytest==7.4.0']
+2026-05-21 06:12:21 | WARNING  | test_runner | Tests FAILED for ai_email_generator:
+test_ai_email_generator.py::test_email_request_validation FAILED         [100%]
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_ai_email_generator.py::test_email_request_validation - NameError: name 'ValidationError' is not defined
+2026-05-21 06:12:21 | WARNING  | tool_builder | ⚠️  ai_email_generator tests failed (loop 1/5) — test_ai_email_generator.py::test_email_request_validation FAILED         [100%]
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_ai_email_gener
+2026-05-21 06:12:27 | DEBUG    | llm_client | LLM response from github_models (5201 chars)
+2026-05-21 06:12:27 | DEBUG    | test_runner | Installing: ['openai', 'click', 'pydantic', 'pytest']
+2026-05-21 06:12:28 | WARNING  | test_runner | Tests FAILED for ai_email_generator:
+test_ai_email_generator.py::test_email_request_validation FAILED         [100%]
+    with pytest.raises(ValidationError):
+E   Failed: DID NOT RAISE <class 'pydantic.error_wrappers.ValidationError'>
+FAILED test_ai_email_generator.py::test_email_request_validation - Failed: DID NOT RAISE <class 'pydantic.error_wrappers.ValidationError'>
+2026-05-21 06:12:28 | WARNING  | tool_builder | ⚠️  ai_email_generator tests failed (loop 2/5) — test_ai_email_generator.py::test_email_request_validation FAILED         [100%]
+    with pytest.raises(ValidationError):
+E   Failed: DID NOT RAISE <class 'pydantic.error_wrappers.ValidationError'>
+FAI
+2026-05-21 06:12:34 | DEBUG    | llm_client | LLM response from github_models (5665 chars)
+2026-05-21 06:12:34 | DEBUG    | test_runner | Installing: ['openai', 'click', 'pydantic', 'pytest']
+2026-05-21 06:12:35 | INFO     | test_runner | Tests PASSED for ai_email_generator
+2026-05-21 06:12:35 | INFO     | tool_builder | ✅ ai_email_generator passed tests on loop 3
+2026-05-21 06:12:35 | INFO     | tool_builder | Building tool: social_post_builder …
+2026-05-21 06:12:49 | DEBUG    | llm_client | LLM response from github_models (5092 chars)
+2026-05-21 06:12:49 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'typer==0.9.0', 'jinja2==3.1.2']
+2026-05-21 06:12:50 | INFO     | test_runner | Tests PASSED for social_post_builder
+2026-05-21 06:12:50 | INFO     | tool_builder | ✅ social_post_builder passed tests on loop 1
+2026-05-21 06:12:50 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-21 06:12:50 | INFO     | main |   Built 4/5 tools successfully
+2026-05-21 06:12:50 | INFO     | main |     ✅ multi_agent_code_refactor (loops: 2)
+2026-05-21 06:12:50 | INFO     | main |     ✅ ai_commit_quality_guard (loops: 2)
+2026-05-21 06:12:50 | INFO     | main |     ✅ ai_email_generator (loops: 3)
+2026-05-21 06:12:50 | INFO     | main |     ✅ social_post_builder (loops: 1)
+2026-05-21 06:12:50 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-21 06:12:50 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-21 06:12:50 | INFO     | github_publisher |   Created zip: multi_agent_code_refactor.zip (2633 bytes)
+2026-05-21 06:12:50 | INFO     | github_publisher | Saved multi_agent_code_refactor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/multi_agent_code_refactor
+2026-05-21 06:12:50 | INFO     | github_publisher |   Created zip: ai_commit_quality_guard.zip (2966 bytes)
+2026-05-21 06:12:50 | INFO     | github_publisher | Saved ai_commit_quality_guard → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/ai_commit_quality_guard
+2026-05-21 06:12:50 | INFO     | github_publisher |   Created zip: ai_email_generator.zip (2502 bytes)
+2026-05-21 06:12:50 | INFO     | github_publisher | Saved ai_email_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/ai_email_generator
+2026-05-21 06:12:50 | INFO     | github_publisher |   Created zip: social_post_builder.zip (2503 bytes)
+2026-05-21 06:12:50 | INFO     | github_publisher | Saved social_post_builder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/social_post_builder
+2026-05-21 06:12:50 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-21 06:12:50 | INFO     | main |   Published 4 tools:
+2026-05-21 06:12:50 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/multi_agent_code_refactor
+2026-05-21 06:12:50 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/ai_commit_quality_guard
+2026-05-21 06:12:50 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/ai_email_generator
+2026-05-21 06:12:50 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-21/social_post_builder
+2026-05-21 06:12:50 | INFO     | main |   Deduplicated 7 older tool version(s) from index
+2026-05-21 06:12:50 | INFO     | main | ✅ Generated tools_index.json with 248 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
