@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-21T06:12:50.817543+00:00",
-  "total_tools": 248,
+  "last_updated": "2026-05-22T06:12:20.187937+00:00",
+  "total_tools": 251,
   "tools": [
+    {
+      "tool_name": "ai_agent_test_harness",
+      "display_name": "AI Agent Test Harness",
+      "description": "A CLI tool that automates testing of AI agent workflows by simulating predefined input scenarios and comparing outputs against expected results. It integrates with LangSmith and Claude Code to validate agent behavior across edge cases, logging discrepancies for easier debugging.",
+      "topic": "Agent Debugging Automation",
+      "date": "2026-05-22",
+      "generated": "2026-05-22T06:04:34.956136+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/ai_agent_test_harness",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/ai_agent_test_harness/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/ai_agent_test_harness/ai_agent_test_harness.zip"
+    },
+    {
+      "tool_name": "claude_conversation_logger",
+      "display_name": "Claude Conversation Logger",
+      "description": "This tool facilitates structured logging of interactions with Claude AI, allowing developers to record and analyze conversations for business insights. It supports tagging messages by category (e.g., 'marketing', 'customer support') and exporting logs as CSV or JSON. This is particularly useful for monitoring AI-driven processes and auditing business automation reliability.",
+      "topic": "Claude AI for Business Automation",
+      "date": "2026-05-22",
+      "generated": "2026-05-22T06:04:34.956136+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_conversation_logger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_conversation_logger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_conversation_logger/claude_conversation_logger.zip"
+    },
+    {
+      "tool_name": "claude_workflow_builder",
+      "display_name": "Claude Workflow Builder",
+      "description": "This tool allows developers to define and execute complex business workflows using Claude AI. By providing a YAML or JSON workflow file with tasks, decisions, and AI prompts, the tool orchestrates calling Claude AI and automates multi-step business processes. It's useful for creating and testing workflows before deploying them in production.",
+      "topic": "Claude AI for Business Automation",
+      "date": "2026-05-22",
+      "generated": "2026-05-22T06:04:34.956136+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_workflow_builder",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_workflow_builder/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_workflow_builder/claude_workflow_builder.zip"
+    },
     {
       "tool_name": "ai_commit_quality_guard",
       "display_name": "AI Commit Quality Guard",

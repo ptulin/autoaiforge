@@ -1,0 +1,4 @@
+pyyaml
+rich
+requests
+pytest
