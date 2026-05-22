@@ -1,0 +1,319 @@
+2026-05-22 06:04:34 | INFO     | main | ============================================================
+2026-05-22 06:04:34 | INFO     | main | AutoAIForge starting run: 2026-05-22T06:04:34.956136+00:00
+2026-05-22 06:04:34 | INFO     | main | ============================================================
+2026-05-22 06:04:34 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-22 06:04:35 | INFO     | youtube_scraper | YouTube client ready
+2026-05-22 06:04:35 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-22 06:04:36 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-22 06:04:36 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-22 06:04:36 | INFO     | youtube_scraper | YouTube 'LLM advancements': 1 results (quota used: 400)
+2026-05-22 06:04:37 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-22 06:04:37 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-22 06:04:37 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-22 06:04:38 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-22 06:04:38 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-22 06:04:39 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-22 06:04:39 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-22 06:04:40 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-22 06:04:40 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-05-22 06:04:40 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-22 06:04:41 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-22 06:04:41 | INFO     | youtube_scraper | YouTube 'AI safety news': 49 results (quota used: 1600)
+2026-05-22 06:04:41 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1700)
+2026-05-22 06:04:42 | INFO     | youtube_scraper | YouTube 'local LLM': 50 results (quota used: 1800)
+2026-05-22 06:04:42 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1900)
+2026-05-22 06:04:43 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 2000)
+2026-05-22 06:04:43 | INFO     | youtube_scraper | YouTube total: 900 items, quota used: 2000
+2026-05-22 06:04:43 | INFO     | main |   YouTube: 848 items
+2026-05-22 06:04:43 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-22 06:04:48 | INFO     | rss_scraper | HackerNews: 158 items
+2026-05-22 06:04:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-22 06:04:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-22 06:04:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-22 06:04:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-22 06:04:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-22 06:04:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-22 06:04:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-22 06:04:55 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-22 06:05:26 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-22 06:05:57 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-22 06:06:28 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-22 06:06:44 | INFO     | rss_scraper | ArXiv: 30 items
+2026-05-22 06:06:50 | INFO     | rss_scraper | Dev.to: 187 items
+2026-05-22 06:06:51 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-22 06:06:51 | INFO     | rss_scraper | Free sources total: 425 unique items
+2026-05-22 06:06:51 | INFO     | main |   RSS/API sources: 425 items
+2026-05-22 06:06:51 | INFO     | main |   Total scraped: 1273 items
+2026-05-22 06:06:51 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-22 06:06:51 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-22 06:06:51 | INFO     | db_manager | Purged 1121 old news items
+2026-05-22 06:06:51 | INFO     | db_manager | Inserted 1045/1273 news items
+2026-05-22 06:06:51 | INFO     | main |   SQLite: 1045 new items (total: 30409)
+2026-05-22 06:06:56 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-22 06:06:58 | INFO     | vector_store | VectorStore ready
+2026-05-22 06:07:26 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-22 06:07:26 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-22 06:07:26 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-22 06:07:26 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-22 06:07:33 | DEBUG    | llm_client | LLM response from github_models (3897 chars)
+2026-05-22 06:07:33 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-22 06:07:33 | INFO     | main |   Found 10 topics:
+2026-05-22 06:07:33 | INFO     | main |      1. [10/10] Claude AI for Business Automation
+2026-05-22 06:07:33 | INFO     | main |      2. [9/10] Agent Debugging Automation
+2026-05-22 06:07:33 | INFO     | main |      3. [9/10] LLMs Replacing Search Engines
+2026-05-22 06:07:33 | INFO     | main |      4. [9/10] AI-Powered Marketing Tools
+2026-05-22 06:07:33 | INFO     | main |      5. [8/10] Open-Source LLM Advancements
+2026-05-22 06:07:33 | INFO     | main |      6. [8/10] AI in Protein Folding
+2026-05-22 06:07:33 | INFO     | main |      7. [8/10] Sandboxed AI Agents
+2026-05-22 06:07:33 | INFO     | main |      8. [8/10] AI Plugins for Small Businesses
+2026-05-22 06:07:33 | INFO     | main |      9. [7/10] AI Anomaly Detection
+2026-05-22 06:07:33 | INFO     | main |     10. [7/10] AI-Driven Cloud Kitchens
+2026-05-22 06:07:33 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-22 06:07:33 | INFO     | main |   Existing collection: 248 tools across 130 topics
+2026-05-22 06:07:33 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-22 06:07:40 | DEBUG    | llm_client | LLM response from github_models (3310 chars)
+2026-05-22 06:07:40 | INFO     | idea_generator | Generated 3 ideas for topic: Claude AI for Business Automation
+2026-05-22 06:07:45 | DEBUG    | llm_client | LLM response from github_models (2419 chars)
+2026-05-22 06:07:45 | INFO     | idea_generator | Generated 2 ideas for topic: Agent Debugging Automation
+2026-05-22 06:07:45 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-22 06:07:45 | INFO     | main |   Generated 5 tool ideas:
+2026-05-22 06:07:45 | INFO     | main |     • claude_workflow_builder: This tool allows developers to define and execute complex business workflows usi
+2026-05-22 06:07:45 | INFO     | main |     • claude_conversation_logger: This tool facilitates structured logging of interactions with Claude AI, allowin
+2026-05-22 06:07:45 | INFO     | main |     • claude_auto_scheduler: This tool integrates Claude AI into business scheduling processes, such as prior
+2026-05-22 06:07:45 | INFO     | main |     • agent_debug_flow_analyzer: This tool helps AI developers debug agent workflows by analyzing logs generated 
+2026-05-22 06:07:45 | INFO     | main |     • ai_agent_test_harness: A CLI tool that automates testing of AI agent workflows by simulating predefined
+2026-05-22 06:07:45 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-22 06:07:45 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-22 06:07:54 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-22 06:07:54 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-22 06:07:54 | INFO     | tool_builder | Building tool: claude_workflow_builder …
+2026-05-22 06:08:06 | DEBUG    | llm_client | LLM response from github_models (7120 chars)
+2026-05-22 06:08:06 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pyyaml==6.0', 'jsonschema==4.19.0', 'pytest==7.4.2']
+2026-05-22 06:08:10 | WARNING  | test_runner | Tests FAILED for claude_workflow_builder:
+test_claude_workflow_builder.py::test_load_workflow_valid_yaml FAILED    [ 25%]
+test_claude_workflow_builder.py::test_load_workflow_invalid_schema FAILED [ 50%]
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+E   AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_claude_workflow_builder.py::test_load_workflow_valid_yaml - AttributeError: 'PosixPath' object has no attribute 'endswith'
+FAILED test_claude_workflow_builder.py::test_load_workflow_invalid_schema - AttributeError: 'PosixPath' object has no attribute 'endswith'
+2026-05-22 06:08:10 | WARNING  | tool_builder | ⚠️  claude_workflow_builder tests failed (loop 1/5) — test_claude_workflow_builder.py::test_load_workflow_valid_yaml FAILED    [ 25%]
+test_claude_workflow_builder.py::test_load_workflow_invalid_schema FAILED [ 50%]
+E   AttributeError: 'PosixPath' object 
+2026-05-22 06:08:18 | DEBUG    | llm_client | LLM response from github_models (6644 chars)
+2026-05-22 06:08:18 | DEBUG    | test_runner | Installing: ['jsonschema', 'openai', 'pyyaml']
+2026-05-22 06:08:19 | INFO     | test_runner | Tests PASSED for claude_workflow_builder
+2026-05-22 06:08:19 | INFO     | tool_builder | ✅ claude_workflow_builder passed tests on loop 2
+2026-05-22 06:08:19 | INFO     | tool_builder | Building tool: claude_conversation_logger …
+2026-05-22 06:08:28 | DEBUG    | llm_client | LLM response from github_models (5245 chars)
+2026-05-22 06:08:28 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pandas==1.5.3']
+2026-05-22 06:08:34 | INFO     | test_runner | Tests PASSED for claude_conversation_logger
+2026-05-22 06:08:34 | INFO     | tool_builder | ✅ claude_conversation_logger passed tests on loop 1
+2026-05-22 06:08:34 | INFO     | tool_builder | Building tool: claude_auto_scheduler …
+2026-05-22 06:08:44 | DEBUG    | llm_client | LLM response from github_models (7453 chars)
+2026-05-22 06:08:44 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'matplotlib==3.7.1', 'pytest==7.4.2']
+2026-05-22 06:08:50 | WARNING  | test_runner | Tests FAILED for claude_auto_scheduler:
+test_claude_auto_scheduler.py::test_load_tasks_valid_file FAILED         [ 16%]
+test_claude_auto_scheduler.py::test_load_tasks_invalid_json FAILED       [ 50%]
+test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file tasks.json does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file tasks.json does not exist.
+E   NameError: name 'openai' is not defined
+    raise RuntimeError(f"Error while communicating with Claude AI: {e}")
+E   RuntimeError: Error while communicating with Claude AI: name 'openai' is not defined
+FAILED test_claude_auto_scheduler.py::test_load_tasks_valid_file - FileNotFoundError: The file tasks.json does not exist.
+FAILED test_claude_auto_scheduler.py::test_load_tasks_invalid_json - FileNotFoundError: The file tasks.json does not exist.
+FAILED test_claude_auto_scheduler.py::test_generate_schedule - RuntimeError: Error while communicating with Claude AI: name 'openai' is not defined
+2026-05-22 06:08:50 | WARNING  | tool_builder | ⚠️  claude_auto_scheduler tests failed (loop 1/5) — test_claude_auto_scheduler.py::test_load_tasks_valid_file FAILED         [ 16%]
+test_claude_auto_scheduler.py::test_load_tasks_invalid_json FAILED       [ 50%]
+test_claude_auto_scheduler.py::test_gene
+2026-05-22 06:08:58 | DEBUG    | llm_client | LLM response from github_models (6313 chars)
+2026-05-22 06:08:58 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-05-22 06:08:59 | WARNING  | test_runner | Tests FAILED for claude_auto_scheduler:
+test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+    mock_generate_schedule.assert_called_once_with(tasks, constraints, api_key)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+FAILED test_claude_auto_scheduler.py::test_generate_schedule - AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+2026-05-22 06:08:59 | WARNING  | tool_builder | ⚠️  claude_auto_scheduler tests failed (loop 2/5) — test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-22 06:09:07 | DEBUG    | llm_client | LLM response from github_models (6299 chars)
+2026-05-22 06:09:07 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-05-22 06:09:08 | WARNING  | test_runner | Tests FAILED for claude_auto_scheduler:
+test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+    mock_generate_schedule.assert_called_once_with(tasks, constraints, api_key)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+FAILED test_claude_auto_scheduler.py::test_generate_schedule - AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+2026-05-22 06:09:08 | WARNING  | tool_builder | ⚠️  claude_auto_scheduler tests failed (loop 3/5) — test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-22 06:09:15 | DEBUG    | llm_client | LLM response from github_models (6759 chars)
+2026-05-22 06:09:15 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-05-22 06:09:16 | WARNING  | test_runner | Tests FAILED for claude_auto_scheduler:
+test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+    mock_generate_schedule.assert_called_once_with(tasks, constraints, api_key)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+FAILED test_claude_auto_scheduler.py::test_generate_schedule - AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+2026-05-22 06:09:16 | WARNING  | tool_builder | ⚠️  claude_auto_scheduler tests failed (loop 4/5) — test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-22 06:09:26 | DEBUG    | llm_client | LLM response from github_models (6648 chars)
+2026-05-22 06:09:26 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-05-22 06:09:27 | WARNING  | test_runner | Tests FAILED for claude_auto_scheduler:
+test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+    mock_generate_schedule.assert_called_once_with(tasks, constraints, api_key)
+E   AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+FAILED test_claude_auto_scheduler.py::test_generate_schedule - AssertionError: Expected 'generate_schedule' to be called once. Called 0 times.
+2026-05-22 06:09:27 | WARNING  | tool_builder | ⚠️  claude_auto_scheduler tests failed (loop 5/5) — test_claude_auto_scheduler.py::test_generate_schedule FAILED             [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-05-22 06:09:27 | ERROR    | tool_builder | ❌ claude_auto_scheduler failed after 5 loops
+2026-05-22 06:09:27 | INFO     | tool_builder | Building tool: agent_debug_flow_analyzer …
+2026-05-22 06:09:43 | DEBUG    | llm_client | LLM response from github_models (5901 chars)
+2026-05-22 06:09:43 | DEBUG    | test_runner | Installing: ['networkx==3.1', 'matplotlib==3.8.0']
+2026-05-22 06:09:47 | WARNING  | test_runner | Tests FAILED for agent_debug_flow_analyzer:
+test_agent_debug_flow_analyzer.py::test_analyze_logs FAILED              [ 75%]
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   NameError: name 'null' is not defined
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py::test_analyze_logs - NameError: name 'null' is not defined
+FAILED test_agent_debug_flow_analyzer.py::test_generate_report - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2026-05-22 06:09:47 | WARNING  | tool_builder | ⚠️  agent_debug_flow_analyzer tests failed (loop 1/5) — test_agent_debug_flow_analyzer.py::test_analyze_logs FAILED              [ 75%]
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   NameError: name 'null' is not define
+2026-05-22 06:09:54 | DEBUG    | llm_client | LLM response from github_models (5761 chars)
+2026-05-22 06:09:54 | DEBUG    | test_runner | Installing: ['matplotlib', 'networkx']
+2026-05-22 06:09:56 | WARNING  | test_runner | Tests FAILED for agent_debug_flow_analyzer:
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py::test_generate_report - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2026-05-22 06:09:56 | WARNING  | tool_builder | ⚠️  agent_debug_flow_analyzer tests failed (loop 2/5) — test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py:
+2026-05-22 06:10:03 | DEBUG    | llm_client | LLM response from github_models (5582 chars)
+2026-05-22 06:10:03 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-05-22 06:10:04 | WARNING  | test_runner | Tests FAILED for agent_debug_flow_analyzer:
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py::test_generate_report - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2026-05-22 06:10:04 | WARNING  | tool_builder | ⚠️  agent_debug_flow_analyzer tests failed (loop 3/5) — test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py:
+2026-05-22 06:10:12 | DEBUG    | llm_client | LLM response from github_models (5560 chars)
+2026-05-22 06:10:12 | DEBUG    | test_runner | Installing: ['matplotlib', 'networkx']
+2026-05-22 06:10:13 | WARNING  | test_runner | Tests FAILED for agent_debug_flow_analyzer:
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py::test_generate_report - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2026-05-22 06:10:13 | WARNING  | tool_builder | ⚠️  agent_debug_flow_analyzer tests failed (loop 4/5) — test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py:
+2026-05-22 06:10:19 | DEBUG    | llm_client | LLM response from github_models (5706 chars)
+2026-05-22 06:10:19 | DEBUG    | test_runner | Installing: ['matplotlib', 'networkx']
+2026-05-22 06:10:20 | WARNING  | test_runner | Tests FAILED for agent_debug_flow_analyzer:
+test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py::test_generate_report - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2026-05-22 06:10:20 | WARNING  | tool_builder | ⚠️  agent_debug_flow_analyzer tests failed (loop 5/5) — test_agent_debug_flow_analyzer.py::test_generate_report FAILED           [100%]
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_agent_debug_flow_analyzer.py:
+2026-05-22 06:10:20 | ERROR    | tool_builder | ❌ agent_debug_flow_analyzer failed after 5 loops
+2026-05-22 06:10:20 | INFO     | tool_builder | Building tool: ai_agent_test_harness …
+2026-05-22 06:10:34 | DEBUG    | llm_client | LLM response from github_models (6948 chars)
+2026-05-22 06:10:34 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'requests==2.31.0', 'rich==13.5.2']
+2026-05-22 06:10:36 | WARNING  | test_runner | Tests FAILED for ai_agent_test_harness:
+test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Test Run') call not found
+    handle.write.assert_any_call("Test Run")
+E   AssertionError: write('Test Run') call not found
+E   assert ('Details: Mismatch\n\n',) == ('Test Run',)
+FAILED test_ai_agent_test_harness.py::test_generate_summary_report - AssertionError: write('Test Run') call not found
+assert ('Details: Mismatch\n\n',) == ('Test Run',)
+2026-05-22 06:10:36 | WARNING  | tool_builder | ⚠️  ai_agent_test_harness tests failed (loop 1/5) — test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-05-22 06:10:45 | DEBUG    | llm_client | LLM response from github_models (7703 chars)
+2026-05-22 06:10:45 | DEBUG    | test_runner | Installing: ['pyyaml', 'rich', 'pytest', 'requests']
+2026-05-22 06:10:46 | WARNING  | test_runner | Tests FAILED for ai_agent_test_harness:
+test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Test Run - ') call not found
+    handle.write.assert_any_call("Test Run - ")
+E   AssertionError: write('Test Run - ') call not found
+E   assert ('Details: Mismatch\n\n',) == ('Test Run - ',)
+FAILED test_ai_agent_test_harness.py::test_generate_summary_report - AssertionError: write('Test Run - ') call not found
+assert ('Details: Mismatch\n\n',) == ('Test Run - ',)
+2026-05-22 06:10:46 | WARNING  | tool_builder | ⚠️  ai_agent_test_harness tests failed (loop 2/5) — test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-05-22 06:10:57 | DEBUG    | llm_client | LLM response from github_models (7655 chars)
+2026-05-22 06:10:57 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests', 'rich']
+2026-05-22 06:10:58 | WARNING  | test_runner | Tests FAILED for ai_agent_test_harness:
+test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Test Run - ') call not found
+    handle.write.assert_any_call(f"Test Run - ")
+E   AssertionError: write('Test Run - ') call not found
+E   assert ('Details: Mismatch\n\n',) == ('Test Run - ',)
+FAILED test_ai_agent_test_harness.py::test_generate_summary_report - AssertionError: write('Test Run - ') call not found
+assert ('Details: Mismatch\n\n',) == ('Test Run - ',)
+2026-05-22 06:10:58 | WARNING  | tool_builder | ⚠️  ai_agent_test_harness tests failed (loop 3/5) — test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-05-22 06:10:58 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-22 06:12:08 | DEBUG    | llm_client | LLM response from github_models (7710 chars)
+2026-05-22 06:12:08 | DEBUG    | test_runner | Installing: ['pyyaml', 'requests', 'rich']
+2026-05-22 06:12:09 | WARNING  | test_runner | Tests FAILED for ai_agent_test_harness:
+test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: write('Test Run - 2026-05-22T06:12:09.278344\n') call not found
+    handle.write.assert_any_call(f"Test Run - {datetime.now().isoformat()}\n")
+E   AssertionError: write('Test Run - 2026-05-22T06:12:09.278344\n') call not found
+E   assert ('Details: Mismatch\n\n',) == ('Test Run - ...09.278344\n',)
+FAILED test_ai_agent_test_harness.py::test_generate_summary_report - AssertionError: write('Test Run - 2026-05-22T06:12:09.278344\n') call not found
+assert ('Details: Mismatch\n\n',) == ('Test Run - ...09.278344\n',)
+2026-05-22 06:12:09 | WARNING  | tool_builder | ⚠️  ai_agent_test_harness tests failed (loop 4/5) — test_ai_agent_test_harness.py::test_generate_summary_report FAILED       [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionErro
+2026-05-22 06:12:19 | DEBUG    | llm_client | LLM response from github_models (8653 chars)
+2026-05-22 06:12:19 | DEBUG    | test_runner | Installing: ['pyyaml', 'rich', 'requests', 'pytest']
+2026-05-22 06:12:20 | INFO     | test_runner | Tests PASSED for ai_agent_test_harness
+2026-05-22 06:12:20 | INFO     | tool_builder | ✅ ai_agent_test_harness passed tests on loop 5
+2026-05-22 06:12:20 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-22 06:12:20 | INFO     | main |   Built 3/5 tools successfully
+2026-05-22 06:12:20 | INFO     | main |     ✅ claude_workflow_builder (loops: 2)
+2026-05-22 06:12:20 | INFO     | main |     ✅ claude_conversation_logger (loops: 1)
+2026-05-22 06:12:20 | INFO     | main |     ✅ ai_agent_test_harness (loops: 5)
+2026-05-22 06:12:20 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-22 06:12:20 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-22 06:12:20 | INFO     | github_publisher |   Created zip: claude_workflow_builder.zip (2848 bytes)
+2026-05-22 06:12:20 | INFO     | github_publisher | Saved claude_workflow_builder → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_workflow_builder
+2026-05-22 06:12:20 | INFO     | github_publisher |   Created zip: claude_conversation_logger.zip (2456 bytes)
+2026-05-22 06:12:20 | INFO     | github_publisher | Saved claude_conversation_logger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_conversation_logger
+2026-05-22 06:12:20 | INFO     | github_publisher |   Created zip: ai_agent_test_harness.zip (3359 bytes)
+2026-05-22 06:12:20 | INFO     | github_publisher | Saved ai_agent_test_harness → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/ai_agent_test_harness
+2026-05-22 06:12:20 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-22 06:12:20 | INFO     | main |   Published 3 tools:
+2026-05-22 06:12:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_workflow_builder
+2026-05-22 06:12:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_conversation_logger
+2026-05-22 06:12:20 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/ai_agent_test_harness
+2026-05-22 06:12:20 | INFO     | main |   Deduplicated 7 older tool version(s) from index
+2026-05-22 06:12:20 | INFO     | main | ✅ Generated tools_index.json with 251 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

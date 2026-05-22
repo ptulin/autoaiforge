@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_agent_test_harness",
+  "display_name": "AI Agent Test Harness",
+  "description": "A CLI tool that automates testing of AI agent workflows by simulating predefined input scenarios and comparing outputs against expected results. It integrates with LangSmith and Claude Code to validate agent behavior across edge cases, logging discrepancies for easier debugging.",
+  "topic": "Agent Debugging Automation",
+  "date": "2026-05-22",
+  "generated": "2026-05-22T06:04:34.956136+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/ai_agent_test_harness",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/ai_agent_test_harness/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/ai_agent_test_harness/ai_agent_test_harness.zip"
+}

@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_workflow_builder",
+  "display_name": "Claude Workflow Builder",
+  "description": "This tool allows developers to define and execute complex business workflows using Claude AI. By providing a YAML or JSON workflow file with tasks, decisions, and AI prompts, the tool orchestrates calling Claude AI and automates multi-step business processes. It's useful for creating and testing workflows before deploying them in production.",
+  "topic": "Claude AI for Business Automation",
+  "date": "2026-05-22",
+  "generated": "2026-05-22T06:04:34.956136+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-22/claude_workflow_builder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_workflow_builder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-22/claude_workflow_builder/claude_workflow_builder.zip"
+}
