@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_news_analytics",
+  "display_name": "AI News Sentiment Analytics",
+  "description": "A Python library that analyzes the sentiment of AI news articles to identify industry trends and public perception. Developers can use this data to inform their projects and understand the emotional tone of AI-related media coverage.",
+  "topic": "AI news",
+  "date": "2026-05-23",
+  "generated": "2026-05-23T05:37:42.443696+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-23/ai_news_analytics",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/ai_news_analytics/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/ai_news_analytics/ai_news_analytics.zip"
+}
