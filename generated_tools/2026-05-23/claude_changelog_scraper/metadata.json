@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_changelog_scraper",
+  "display_name": "Claude Changelog Scraper",
+  "description": "A CLI tool that scrapes the latest updates and changelogs for Claude AI from its official sources or news articles. This tool helps developers stay informed about new features, improvements, and breaking changes without manually sifting through multiple web pages.",
+  "topic": "Claude AI updates",
+  "date": "2026-05-23",
+  "generated": "2026-05-23T05:37:42.443696+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-23/claude_changelog_scraper",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_changelog_scraper/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_changelog_scraper/claude_changelog_scraper.zip"
+}

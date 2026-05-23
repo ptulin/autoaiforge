@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-22T06:12:20.187937+00:00",
-  "total_tools": 251,
+  "last_updated": "2026-05-23T05:42:06.927239+00:00",
+  "total_tools": 254,
   "tools": [
+    {
+      "tool_name": "ai_news_analytics",
+      "display_name": "AI News Sentiment Analytics",
+      "description": "A Python library that analyzes the sentiment of AI news articles to identify industry trends and public perception. Developers can use this data to inform their projects and understand the emotional tone of AI-related media coverage.",
+      "topic": "AI news",
+      "date": "2026-05-23",
+      "generated": "2026-05-23T05:37:42.443696+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-23/ai_news_analytics",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/ai_news_analytics/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/ai_news_analytics/ai_news_analytics.zip"
+    },
+    {
+      "tool_name": "claude_api_diff_checker",
+      "display_name": "Claude API Diff Checker",
+      "description": "A Python utility that compares two versions of the Claude AI API documentation and highlights changes, such as added, removed, or modified endpoints and parameters. This is essential for developers to quickly adapt their applications to API updates.",
+      "topic": "Claude AI updates",
+      "date": "2026-05-23",
+      "generated": "2026-05-23T05:37:42.443696+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-23/claude_api_diff_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_api_diff_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_api_diff_checker/claude_api_diff_checker.zip"
+    },
+    {
+      "tool_name": "claude_changelog_scraper",
+      "display_name": "Claude Changelog Scraper",
+      "description": "A CLI tool that scrapes the latest updates and changelogs for Claude AI from its official sources or news articles. This tool helps developers stay informed about new features, improvements, and breaking changes without manually sifting through multiple web pages.",
+      "topic": "Claude AI updates",
+      "date": "2026-05-23",
+      "generated": "2026-05-23T05:37:42.443696+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-23/claude_changelog_scraper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_changelog_scraper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-23/claude_changelog_scraper/claude_changelog_scraper.zip"
+    },
     {
       "tool_name": "ai_agent_test_harness",
       "display_name": "AI Agent Test Harness",
