@@ -1,0 +1,13 @@
+{
+  "tool_name": "smart_task_bot",
+  "display_name": "Smart Task Automation Bot",
+  "description": "Smart Task Bot is a CLI tool that allows developers to define and execute reusable task sequences handled by AI agents like Claude, Gemini, or Codex. It supports customizable task pipelines and integrates with external APIs and file systems for performing tasks like data extraction, content generation, and summarization.",
+  "topic": "AI Agents and Automation",
+  "date": "2026-05-24",
+  "generated": "2026-05-24T05:59:22.054671+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-24/smart_task_bot",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-24/smart_task_bot/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-24/smart_task_bot/smart_task_bot.zip"
+}

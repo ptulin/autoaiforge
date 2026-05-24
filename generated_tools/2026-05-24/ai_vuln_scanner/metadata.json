@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_vuln_scanner",
+  "display_name": "AI-Powered Vulnerability Scanner",
+  "description": "A CLI tool that leverages AI models like Anthropic's Glasswing to scan source code files or repositories for potential vulnerabilities, providing detailed reports and remediation suggestions. This tool is ideal for developers who want to automate security checks early in their development workflows.",
+  "topic": "AI Vulnerability Detection",
+  "date": "2026-05-24",
+  "generated": "2026-05-24T05:59:22.054671+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-24/ai_vuln_scanner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-24/ai_vuln_scanner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-24/ai_vuln_scanner/ai_vuln_scanner.zip"
+}
