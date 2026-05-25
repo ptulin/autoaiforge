@@ -1,0 +1,13 @@
+{
+  "tool_name": "bug_sleuth",
+  "display_name": "Bug Sleuth",
+  "description": "A Python library that integrates with AI-powered debugging models to identify potential bugs in Python code. Developers can run their scripts through the library to get suggestions for problematic code segments and fixes, speeding up debugging workflows.",
+  "topic": "AI-Powered Coding Assistants",
+  "date": "2026-05-25",
+  "generated": "2026-05-25T06:24:02.527037+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/bug_sleuth",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/bug_sleuth/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/bug_sleuth/bug_sleuth.zip"
+}

@@ -1,0 +1,13 @@
+{
+  "tool_name": "auto_agent_deployer",
+  "display_name": "Auto Agent Deployer",
+  "description": "A CLI tool that streamlines the deployment of AI agents, like Claude or Gemini Omni, for automation tasks. It allows developers to define workflows, configure agent settings, and deploy agents to cloud or local environments with minimal effort.",
+  "topic": "AI Agents for Automation",
+  "date": "2026-05-25",
+  "generated": "2026-05-25T06:24:02.527037+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/auto_agent_deployer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/auto_agent_deployer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/auto_agent_deployer/auto_agent_deployer.zip"
+}
