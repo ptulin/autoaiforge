@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_workflow_simulator",
+  "display_name": "Agent Workflow Simulator",
+  "description": "A Python library and CLI tool that allows developers to simulate AI agent workflows before deploying them. It provides interactive feedback on agent decisions, logs, and potential bottlenecks, enabling rapid debugging and optimization of automation processes.",
+  "topic": "AI Agents for Automation",
+  "date": "2026-05-25",
+  "generated": "2026-05-25T06:24:02.527037+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/agent_workflow_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/agent_workflow_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/agent_workflow_simulator/agent_workflow_simulator.zip"
+}

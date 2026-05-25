@@ -1,0 +1,13 @@
+{
+  "tool_name": "project_scaffold_ai",
+  "display_name": "Project Scaffold AI",
+  "description": "An automation tool that uses AI to generate a starter project structure and boilerplate code for various programming languages and frameworks. Developers can specify the type of project they want, and the tool will generate a ready-to-use directory structure and codebase.",
+  "topic": "AI-Powered Coding Assistants",
+  "date": "2026-05-25",
+  "generated": "2026-05-25T06:24:02.527037+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/project_scaffold_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/project_scaffold_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-25/project_scaffold_ai/project_scaffold_ai.zip"
+}

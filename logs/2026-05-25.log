@@ -1,0 +1,232 @@
+2026-05-25 06:24:02 | INFO     | main | ============================================================
+2026-05-25 06:24:02 | INFO     | main | AutoAIForge starting run: 2026-05-25T06:24:02.527037+00:00
+2026-05-25 06:24:02 | INFO     | main | ============================================================
+2026-05-25 06:24:02 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-25 06:24:02 | INFO     | youtube_scraper | YouTube client ready
+2026-05-25 06:24:03 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-25 06:24:03 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-25 06:24:03 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-25 06:24:04 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-25 06:24:04 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-25 06:24:04 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-25 06:24:05 | INFO     | youtube_scraper | YouTube 'machine learning tools': 45 results (quota used: 700)
+2026-05-25 06:24:05 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-25 06:24:05 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-25 06:24:06 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-25 06:24:06 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-25 06:24:06 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-25 06:24:07 | INFO     | youtube_scraper | YouTube 'vector database AI': 37 results (quota used: 1300)
+2026-05-25 06:24:07 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-25 06:24:07 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-23T06%3A24%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-25 06:24:07 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-23T06%3A24%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-25 06:24:07 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-23T06%3A24%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-25 06:24:07 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-23T06%3A24%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-25 06:24:07 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-23T06%3A24%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-25 06:24:07 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 1500)
+2026-05-25 06:24:07 | INFO     | youtube_scraper | YouTube total: 682 items, quota used: 1500
+2026-05-25 06:24:07 | INFO     | main |   YouTube: 635 items
+2026-05-25 06:24:07 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-25 06:24:12 | INFO     | rss_scraper | HackerNews: 124 items
+2026-05-25 06:24:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-25 06:24:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-25 06:24:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-25 06:24:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-25 06:24:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-25 06:24:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-25 06:24:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-25 06:24:20 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-25 06:24:35 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-25 06:25:06 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-25 06:25:07 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-25 06:25:24 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-25 06:25:25 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-25 06:25:29 | INFO     | rss_scraper | Dev.to: 190 items
+2026-05-25 06:25:30 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-25 06:25:30 | INFO     | rss_scraper | Free sources total: 364 unique items
+2026-05-25 06:25:30 | INFO     | main |   RSS/API sources: 364 items
+2026-05-25 06:25:30 | INFO     | main |   Total scraped: 999 items
+2026-05-25 06:25:30 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-25 06:25:30 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-25 06:25:31 | INFO     | db_manager | Purged 954 old news items
+2026-05-25 06:25:31 | INFO     | db_manager | Inserted 814/999 news items
+2026-05-25 06:25:31 | INFO     | main |   SQLite: 814 new items (total: 29769)
+2026-05-25 06:25:35 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-25 06:25:36 | INFO     | vector_store | VectorStore ready
+2026-05-25 06:26:04 | INFO     | vector_store | Indexed 1714 items into vector store
+2026-05-25 06:26:04 | INFO     | main |   Vector store: 1714 items indexed
+2026-05-25 06:26:04 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-25 06:26:04 | INFO     | topic_analyzer | Analyzing 1714 items for top 10 topics …
+2026-05-25 06:26:11 | DEBUG    | llm_client | LLM response from github_models (4321 chars)
+2026-05-25 06:26:11 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-25 06:26:11 | INFO     | main |   Found 10 topics:
+2026-05-25 06:26:11 | INFO     | main |      1. [10/10] AI-Powered Coding Assistants
+2026-05-25 06:26:11 | INFO     | main |      2. [9/10] AI Agents for Automation
+2026-05-25 06:26:11 | INFO     | main |      3. [9/10] AI-Driven Fraud Prevention
+2026-05-25 06:26:11 | INFO     | main |      4. [8/10] AI-Powered Video Editing
+2026-05-25 06:26:11 | INFO     | main |      5. [8/10] AI Vulnerability Detection
+2026-05-25 06:26:11 | INFO     | main |      6. [8/10] AI in Green Tech Innovation
+2026-05-25 06:26:11 | INFO     | main |      7. [7/10] AI for Local SEO Automation
+2026-05-25 06:26:11 | INFO     | main |      8. [7/10] AI in File Organization
+2026-05-25 06:26:11 | INFO     | main |      9. [7/10] AI for Personalized Branding
+2026-05-25 06:26:11 | INFO     | main |     10. [6/10] AI for Discount Discovery
+2026-05-25 06:26:11 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-25 06:26:11 | INFO     | main |   Existing collection: 259 tools across 135 topics
+2026-05-25 06:26:11 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Coding Assistants' (relevance 10/10, last built 2026-05-16)
+2026-05-25 06:26:11 | INFO     | main |   Topics flagged for upgrade: AI-Powered Coding Assistants
+2026-05-25 06:26:11 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI-Powered Coding Assistants'
+2026-05-25 06:26:16 | DEBUG    | llm_client | LLM response from github_models (3277 chars)
+2026-05-25 06:26:16 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Coding Assistants
+2026-05-25 06:26:20 | DEBUG    | llm_client | LLM response from github_models (2270 chars)
+2026-05-25 06:26:20 | INFO     | idea_generator | Generated 2 ideas for topic: AI Agents for Automation
+2026-05-25 06:26:20 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-25 06:26:20 | INFO     | main |   Generated 5 tool ideas:
+2026-05-25 06:26:20 | INFO     | main |     • ai_autocomplete_cli: A command-line tool that uses an AI model to provide intelligent code autocomple
+2026-05-25 06:26:20 | INFO     | main |     • bug_sleuth: A Python library that integrates with AI-powered debugging models to identify po
+2026-05-25 06:26:20 | INFO     | main |     • project_scaffold_ai: An automation tool that uses AI to generate a starter project structure and boil
+2026-05-25 06:26:20 | INFO     | main |     • auto_agent_deployer: A CLI tool that streamlines the deployment of AI agents, like Claude or Gemini O
+2026-05-25 06:26:20 | INFO     | main |     • agent_workflow_simulator: A Python library and CLI tool that allows developers to simulate AI agent workfl
+2026-05-25 06:26:20 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-25 06:26:20 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-25 06:26:29 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-25 06:26:29 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-25 06:26:29 | INFO     | tool_builder | Building tool: ai_autocomplete_cli …
+2026-05-25 06:26:37 | DEBUG    | llm_client | LLM response from github_models (5359 chars)
+2026-05-25 06:26:37 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'click==8.1.3', 'pytest==7.4.0']
+2026-05-25 06:26:40 | INFO     | test_runner | Tests PASSED for ai_autocomplete_cli
+2026-05-25 06:26:40 | INFO     | tool_builder | ✅ ai_autocomplete_cli passed tests on loop 1
+2026-05-25 06:26:40 | INFO     | tool_builder | Building tool: bug_sleuth …
+2026-05-25 06:26:49 | DEBUG    | llm_client | LLM response from github_models (5526 chars)
+2026-05-25 06:26:49 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'loguru==0.7.0']
+2026-05-25 06:26:50 | WARNING  | test_runner | Tests FAILED for bug_sleuth:
+test_bug_sleuth.py::test_analyze_code_with_openai_error FAILED           [100%]
+    assert result["error"] == "OpenAI API error."
+E   AssertionError: assert 'Unexpected error.' == 'OpenAI API error.'
+2026-05-25 06:26:50.427 | ERROR    | bug_sleuth:analyze_code:64 - Unexpected error: API error
+FAILED test_bug_sleuth.py::test_analyze_code_with_openai_error - AssertionError: assert 'Unexpected error.' == 'OpenAI API error.'
+2026-05-25 06:26:50 | WARNING  | tool_builder | ⚠️  bug_sleuth tests failed (loop 1/5) — test_bug_sleuth.py::test_analyze_code_with_openai_error FAILED           [100%]
+    assert result["error"] == "OpenAI API error."
+E   AssertionError: assert 'Unexpected error.' == 'OpenAI API error.'
+
+2026-05-25 06:26:57 | DEBUG    | llm_client | LLM response from github_models (5413 chars)
+2026-05-25 06:26:57 | DEBUG    | test_runner | Installing: ['loguru', 'openai']
+2026-05-25 06:26:58 | WARNING  | test_runner | Tests FAILED for bug_sleuth:
+test_bug_sleuth.py::test_analyze_code_with_openai_error FAILED           [100%]
+    with patch("openai.ChatCompletion.create", side_effect=openai.error.OpenAIError("API error")) as mock_openai:
+E   NameError: name 'openai' is not defined
+FAILED test_bug_sleuth.py::test_analyze_code_with_openai_error - NameError: name 'openai' is not defined
+2026-05-25 06:26:58 | WARNING  | tool_builder | ⚠️  bug_sleuth tests failed (loop 2/5) — test_bug_sleuth.py::test_analyze_code_with_openai_error FAILED           [100%]
+    with patch("openai.ChatCompletion.create", side_effect=openai.error.OpenAIError("API error")) as mock_openai:
+E   Na
+2026-05-25 06:27:05 | DEBUG    | llm_client | LLM response from github_models (5921 chars)
+2026-05-25 06:27:05 | DEBUG    | test_runner | Installing: ['loguru', 'openai']
+2026-05-25 06:27:06 | INFO     | test_runner | Tests PASSED for bug_sleuth
+2026-05-25 06:27:06 | INFO     | tool_builder | ✅ bug_sleuth passed tests on loop 3
+2026-05-25 06:27:06 | INFO     | tool_builder | Building tool: project_scaffold_ai …
+2026-05-25 06:27:13 | DEBUG    | llm_client | LLM response from github_models (5262 chars)
+2026-05-25 06:27:13 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'openai==0.27.0', 'jinja2==3.1.2']
+2026-05-25 06:27:15 | WARNING  | test_runner | Tests FAILED for project_scaffold_ai:
+test_project_scaffold_ai.py::test_generate_project_base FAILED           [ 33%]
+test_project_scaffold_ai.py::test_generate_project_auth_feature FAILED   [ 66%]
+test_project_scaffold_ai.py::test_generate_project_invalid_language FAILED [100%]
+Error: Invalid value for '--language': 'java' is not 'python'.
+FAILED test_project_scaffold_ai.py::test_generate_project_base - SystemExit: 0
+FAILED test_project_scaffold_ai.py::test_generate_project_auth_feature - SystemExit: 0
+FAILED test_project_scaffold_ai.py::test_generate_project_invalid_language - SystemExit: 2
+2026-05-25 06:27:15 | WARNING  | tool_builder | ⚠️  project_scaffold_ai tests failed (loop 1/5) — test_project_scaffold_ai.py::test_generate_project_base FAILED           [ 33%]
+test_project_scaffold_ai.py::test_generate_project_auth_feature FAILED   [ 66%]
+test_project_scaffold_ai.py::test_genera
+2026-05-25 06:27:22 | DEBUG    | llm_client | LLM response from github_models (5852 chars)
+2026-05-25 06:27:22 | DEBUG    | test_runner | Installing: ['jinja2', 'pytest']
+2026-05-25 06:27:23 | INFO     | test_runner | Tests PASSED for project_scaffold_ai
+2026-05-25 06:27:23 | INFO     | tool_builder | ✅ project_scaffold_ai passed tests on loop 2
+2026-05-25 06:27:23 | INFO     | tool_builder | Building tool: auto_agent_deployer …
+2026-05-25 06:27:30 | DEBUG    | llm_client | LLM response from github_models (5269 chars)
+2026-05-25 06:27:30 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'boto3==1.28.12']
+2026-05-25 06:27:32 | WARNING  | test_runner | Tests FAILED for auto_agent_deployer:
+test_auto_agent_deployer.py::test_load_yaml_config FAILED                [ 33%]
+    raise FileNotFoundError(f"Configuration file '{file_path}' not found.")
+E   FileNotFoundError: Configuration file 'dummy_path.yaml' not found.
+FAILED test_auto_agent_deployer.py::test_load_yaml_config - FileNotFoundError: Configuration file 'dummy_path.yaml' not found.
+2026-05-25 06:27:32 | WARNING  | tool_builder | ⚠️  auto_agent_deployer tests failed (loop 1/5) — test_auto_agent_deployer.py::test_load_yaml_config FAILED                [ 33%]
+    raise FileNotFoundError(f"Configuration file '{file_path}' not found.")
+E   FileNotFoundError: Configuration file 'd
+2026-05-25 06:27:32 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-25 06:28:40 | DEBUG    | llm_client | LLM response from github_models (6039 chars)
+2026-05-25 06:28:40 | DEBUG    | test_runner | Installing: ['boto3', 'pyyaml']
+2026-05-25 06:28:41 | WARNING  | test_runner | Tests FAILED for auto_agent_deployer:
+test_auto_agent_deployer.py::test_load_yaml_config FAILED                [ 25%]
+    raise FileNotFoundError(f"Configuration file '{file_path}' not found.")
+E   FileNotFoundError: Configuration file 'dummy_path.yaml' not found.
+FAILED test_auto_agent_deployer.py::test_load_yaml_config - FileNotFoundError: Configuration file 'dummy_path.yaml' not found.
+2026-05-25 06:28:41 | WARNING  | tool_builder | ⚠️  auto_agent_deployer tests failed (loop 2/5) — test_auto_agent_deployer.py::test_load_yaml_config FAILED                [ 25%]
+    raise FileNotFoundError(f"Configuration file '{file_path}' not found.")
+E   FileNotFoundError: Configuration file 'd
+2026-05-25 06:28:48 | DEBUG    | llm_client | LLM response from github_models (6081 chars)
+2026-05-25 06:28:48 | DEBUG    | test_runner | Installing: ['boto3', 'pyyaml']
+2026-05-25 06:28:48 | INFO     | test_runner | Tests PASSED for auto_agent_deployer
+2026-05-25 06:28:48 | INFO     | tool_builder | ✅ auto_agent_deployer passed tests on loop 3
+2026-05-25 06:28:48 | INFO     | tool_builder | Building tool: agent_workflow_simulator …
+2026-05-25 06:28:56 | DEBUG    | llm_client | LLM response from github_models (5640 chars)
+2026-05-25 06:28:56 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'pytest==7.4.0']
+2026-05-25 06:28:57 | WARNING  | test_runner | Tests FAILED for agent_workflow_simulator:
+test_agent_workflow_simulator.py::test_simulate_workflow_empty FAILED    [ 33%]
+test_agent_workflow_simulator.py::test_simulate_workflow_error_handling FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: info('No steps found in the workflow.') call not found
+    mock_info.assert_any_call("No steps found in the workflow.")
+E   AssertionError: info('No steps found in the workflow.') call not found
+E   assert ('Starting wo...mulation...',) == ('No steps fo...e workflow.',)
+2026-05-25 06:28:56,839 - ERROR - No steps found in the workflow.
+ERROR    AgentWorkflowSimulator:agent_workflow_simulator.py:29 No steps found in the workflow.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:1010: in assert_any_call
+    raise AssertionError(
+E   AssertionError: error("Error during step 'Faulty Step': an integer is required (got type str)") call not found
+    mock_error.assert_any_call("Error during step 'Faulty Step': an integer is required (got type str)")
+E   AssertionError: error("Error during step 'Faulty Step': an integer is required (got type str)") call not found
+E   assert ('Error durin... an integer',) == ('Error durin...t type str)',)
+E     At index 0 diff: "Error during step 'Faulty Step': 'str' object cannot be interpreted as an integer" != "Error during step 'Faulty Step': an integer is required (got type str)"
+E     -  "Error during step 'Faulty Step': an integer is required (got type str)",,
+E     +  "Error during step 'Faulty Step': 'str' object cannot be interpreted as an "
+FAILED test_agent_workflow_simulator.py::test_simulate_workflow_empty - AssertionError: info('No steps found in the workflow.') call not found
+assert ('Starting wo...mulation...',) == ('No steps fo...e workflow.',)
+FAILED test_agent_workflow_simulator.py::test_simulate_workflow_error_handling - AssertionError: error("Error during step 'Faulty Step': an integer is required (got type str)") call not found
+assert ('Error durin... an integer',) == ('Error durin...t type str)',)
+  At index 0 diff: "Error during step 'Faulty Step': 'str' object cannot be interpreted as an integer" != "Error during step 'Faulty Step': an integer is required (got type str)"
+  -  "Error during step 'Faulty Step': an integer is required (got type str)",,
+  +  "Error during step 'Faulty Step': 'str' object cannot be interpreted as an "
+2026-05-25 06:28:57 | WARNING  | tool_builder | ⚠️  agent_workflow_simulator tests failed (loop 1/5) — test_agent_workflow_simulator.py::test_simulate_workflow_empty FAILED    [ 33%]
+test_agent_workflow_simulator.py::test_simulate_workflow_error_handling FAILED [100%]
+/opt/hostedtoolcache/Python/3.11.1
+2026-05-25 06:29:04 | DEBUG    | llm_client | LLM response from github_models (5991 chars)
+2026-05-25 06:29:04 | DEBUG    | test_runner | Installing: ['click']
+2026-05-25 06:29:05 | INFO     | test_runner | Tests PASSED for agent_workflow_simulator
+2026-05-25 06:29:05 | INFO     | tool_builder | ✅ agent_workflow_simulator passed tests on loop 2
+2026-05-25 06:29:05 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-05-25 06:29:05 | INFO     | main |   Built 5/5 tools successfully
+2026-05-25 06:29:05 | INFO     | main |     ✅ ai_autocomplete_cli (loops: 1)
+2026-05-25 06:29:05 | INFO     | main |     ✅ bug_sleuth (loops: 3)
+2026-05-25 06:29:05 | INFO     | main |     ✅ project_scaffold_ai (loops: 2)
+2026-05-25 06:29:05 | INFO     | main |     ✅ auto_agent_deployer (loops: 3)
+2026-05-25 06:29:05 | INFO     | main |     ✅ agent_workflow_simulator (loops: 2)
+2026-05-25 06:29:05 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-25 06:29:05 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-25 06:29:05 | INFO     | github_publisher |   Created zip: ai_autocomplete_cli.zip (2472 bytes)
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved ai_autocomplete_cli → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/ai_autocomplete_cli
+2026-05-25 06:29:05 | INFO     | github_publisher |   Created zip: bug_sleuth.zip (2682 bytes)
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved bug_sleuth → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/bug_sleuth
+2026-05-25 06:29:05 | INFO     | github_publisher |   Created zip: project_scaffold_ai.zip (2604 bytes)
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved project_scaffold_ai → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/project_scaffold_ai
+2026-05-25 06:29:05 | INFO     | github_publisher |   Created zip: auto_agent_deployer.zip (2828 bytes)
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved auto_agent_deployer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/auto_agent_deployer
+2026-05-25 06:29:05 | INFO     | github_publisher |   Created zip: agent_workflow_simulator.zip (2598 bytes)
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved agent_workflow_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/agent_workflow_simulator
+2026-05-25 06:29:05 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-05-25 06:29:05 | INFO     | main |   Published 5 tools:
+2026-05-25 06:29:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/ai_autocomplete_cli
+2026-05-25 06:29:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/bug_sleuth
+2026-05-25 06:29:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/project_scaffold_ai
+2026-05-25 06:29:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/auto_agent_deployer
+2026-05-25 06:29:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-25/agent_workflow_simulator
+2026-05-25 06:29:05 | INFO     | main |   Deduplicated 7 older tool version(s) from index
+2026-05-25 06:29:05 | INFO     | main | ✅ Generated tools_index.json with 264 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
