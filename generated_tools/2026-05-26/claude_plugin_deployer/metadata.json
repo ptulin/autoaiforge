@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_plugin_deployer",
+  "display_name": "Claude Plugin Deployer",
+  "description": "A CLI automation tool for managing and deploying plugins for Claude AI. This tool simplifies building, testing, and updating plugins by providing a unified interface for plugin configuration, testing, and seamless deployment. It helps AI developers quickly adapt Claude AI's capabilities to specific use cases without manually handling setup details.",
+  "topic": "Claude AI Code Enhancements",
+  "date": "2026-05-26",
+  "generated": "2026-05-26T06:04:00.641217+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_plugin_deployer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_plugin_deployer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_plugin_deployer/claude_plugin_deployer.zip"
+}

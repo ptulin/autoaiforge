@@ -1,0 +1,232 @@
+2026-05-26 06:04:00 | INFO     | main | ============================================================
+2026-05-26 06:04:00 | INFO     | main | AutoAIForge starting run: 2026-05-26T06:04:00.641217+00:00
+2026-05-26 06:04:00 | INFO     | main | ============================================================
+2026-05-26 06:04:00 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-26 06:04:00 | INFO     | youtube_scraper | YouTube client ready
+2026-05-26 06:04:01 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-26 06:04:01 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-26 06:04:02 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-26 06:04:02 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-26 06:04:02 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-26 06:04:03 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-26 06:04:03 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-26 06:04:03 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-26 06:04:04 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-26 06:04:04 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-26 06:04:05 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-26 06:04:05 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-26 06:04:05 | INFO     | youtube_scraper | YouTube 'vector database AI': 48 results (quota used: 1300)
+2026-05-26 06:04:05 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-26 06:04:06 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-26 06:04:06 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-24T06%3A04%3A06Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-26 06:04:06 | INFO     | youtube_scraper | YouTube 'Groq inference': 0 results (quota used: 1600)
+2026-05-26 06:04:06 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-24T06%3A04%3A06Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-26 06:04:06 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-24T06%3A04%3A06Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-26 06:04:07 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 1700)
+2026-05-26 06:04:07 | INFO     | youtube_scraper | YouTube total: 748 items, quota used: 1700
+2026-05-26 06:04:07 | INFO     | main |   YouTube: 697 items
+2026-05-26 06:04:07 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-26 06:04:12 | INFO     | rss_scraper | HackerNews: 141 items
+2026-05-26 06:04:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-26 06:04:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-26 06:04:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-26 06:04:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-26 06:04:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-26 06:04:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-26 06:04:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-26 06:04:19 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-26 06:04:34 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-26 06:05:05 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-26 06:05:36 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-26 06:06:08 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-26 06:06:09 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-26 06:06:12 | INFO     | rss_scraper | Dev.to: 195 items
+2026-05-26 06:06:14 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-26 06:06:14 | INFO     | rss_scraper | Free sources total: 386 unique items
+2026-05-26 06:06:14 | INFO     | main |   RSS/API sources: 386 items
+2026-05-26 06:06:14 | INFO     | main |   Total scraped: 1083 items
+2026-05-26 06:06:14 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-26 06:06:14 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-26 06:06:15 | INFO     | db_manager | Purged 962 old news items
+2026-05-26 06:06:15 | INFO     | db_manager | Inserted 891/1083 news items
+2026-05-26 06:06:15 | INFO     | main |   SQLite: 891 new items (total: 29698)
+2026-05-26 06:06:19 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-26 06:06:20 | INFO     | vector_store | VectorStore ready
+2026-05-26 06:06:47 | INFO     | vector_store | Indexed 1705 items into vector store
+2026-05-26 06:06:47 | INFO     | main |   Vector store: 1705 items indexed
+2026-05-26 06:06:47 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-26 06:06:47 | INFO     | topic_analyzer | Analyzing 1705 items for top 10 topics …
+2026-05-26 06:06:54 | DEBUG    | llm_client | LLM response from github_models (4081 chars)
+2026-05-26 06:06:54 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-26 06:06:54 | INFO     | main |   Found 10 topics:
+2026-05-26 06:06:54 | INFO     | main |      1. [10/10] AI Ethical Oversight
+2026-05-26 06:06:54 | INFO     | main |      2. [9/10] Claude AI Code Enhancements
+2026-05-26 06:06:54 | INFO     | main |      3. [9/10] AI Security Vulnerabilities
+2026-05-26 06:06:54 | INFO     | main |      4. [8/10] Google Gemini AI Updates
+2026-05-26 06:06:54 | INFO     | main |      5. [8/10] AI in Creative Workflows
+2026-05-26 06:06:54 | INFO     | main |      6. [8/10] AI Memory Optimization
+2026-05-26 06:06:54 | INFO     | main |      7. [7/10] AI-Powered Sales Automation
+2026-05-26 06:06:54 | INFO     | main |      8. [7/10] AI-Powered Budget Analysis
+2026-05-26 06:06:54 | INFO     | main |      9. [7/10] AI in Healthcare Research
+2026-05-26 06:06:54 | INFO     | main |     10. [6/10] AI in Traffic Enforcement
+2026-05-26 06:06:54 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-26 06:06:54 | INFO     | main |   Existing collection: 264 tools across 136 topics
+2026-05-26 06:06:54 | INFO     | main |   🔄 Upgrade candidate: 'Claude AI Code Enhancements' (relevance 9/10, last built 2026-05-15)
+2026-05-26 06:06:54 | INFO     | main |   Topics flagged for upgrade: Claude AI Code Enhancements
+2026-05-26 06:07:02 | DEBUG    | llm_client | LLM response from github_models (3502 chars)
+2026-05-26 06:07:02 | INFO     | idea_generator | Generated 3 ideas for topic: AI Ethical Oversight
+2026-05-26 06:07:02 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Claude AI Code Enhancements'
+2026-05-26 06:07:07 | DEBUG    | llm_client | LLM response from github_models (2529 chars)
+2026-05-26 06:07:07 | INFO     | idea_generator | Generated 2 ideas for topic: Claude AI Code Enhancements
+2026-05-26 06:07:07 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-26 06:07:07 | INFO     | main |   Generated 5 tool ideas:
+2026-05-26 06:07:07 | INFO     | main |     • ai_ethics_checker: This CLI tool analyzes machine learning models and datasets to ensure they align
+2026-05-26 06:07:07 | INFO     | main |     • ai_policy_mapper: This Python library allows developers to map and verify AI model features agains
+2026-05-26 06:07:07 | INFO     | main |     • audit_log_sanitizer: This CLI tool processes AI audit logs, ensuring they comply with ethical guideli
+2026-05-26 06:07:07 | INFO     | main |     • claude_memory_manager: A Python CLI and library tool to help developers manage memory usage for Anthrop
+2026-05-26 06:07:07 | INFO     | main |     • claude_plugin_deployer: A CLI automation tool for managing and deploying plugins for Claude AI. This too
+2026-05-26 06:07:07 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-26 06:07:07 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-26 06:07:16 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-26 06:07:16 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-26 06:07:16 | INFO     | tool_builder | Building tool: ai_ethics_checker …
+2026-05-26 06:07:25 | DEBUG    | llm_client | LLM response from github_models (8187 chars)
+2026-05-26 06:07:25 | DEBUG    | test_runner | Installing: ['scikit-learn==1.3.0', 'pandas==1.5.3', 'numpy==1.24.3', 'tabulate==0.9.0', 'pytest==7.4.0']
+2026-05-26 06:07:39 | INFO     | test_runner | Tests PASSED for ai_ethics_checker
+2026-05-26 06:07:39 | INFO     | tool_builder | ✅ ai_ethics_checker passed tests on loop 1
+2026-05-26 06:07:39 | INFO     | tool_builder | Building tool: ai_policy_mapper …
+2026-05-26 06:07:47 | DEBUG    | llm_client | LLM response from github_models (6711 chars)
+2026-05-26 06:07:47 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'jsonschema==4.18.0']
+2026-05-26 06:07:48 | INFO     | test_runner | Tests PASSED for ai_policy_mapper
+2026-05-26 06:07:48 | INFO     | tool_builder | ✅ ai_policy_mapper passed tests on loop 1
+2026-05-26 06:07:48 | INFO     | tool_builder | Building tool: audit_log_sanitizer …
+2026-05-26 06:07:58 | DEBUG    | llm_client | LLM response from github_models (5780 chars)
+2026-05-26 06:07:58 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'click==8.1.3']
+2026-05-26 06:07:59 | WARNING  | test_runner | Tests FAILED for audit_log_sanitizer:
+test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [100%]
+    pd.testing.assert_frame_equal(sanitized_df, expected_output)
+../_venv/lib/python3.11/site-packages/pandas/_testing/asserters.py:233: in _check_isinstance
+    raise AssertionError(
+E   AssertionError: DataFrame Expected type <class 'pandas.core.frame.DataFrame'>, found <class 'str'> instead
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_csv - AssertionError: DataFrame Expected type <class 'pandas.core.frame.DataFrame'>, found <class 'str'> instead
+2026-05-26 06:07:59 | WARNING  | tool_builder | ⚠️  audit_log_sanitizer tests failed (loop 1/5) — test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [100%]
+    pd.testing.assert_frame_equal(sanitized_df, expected_output)
+../_venv/lib/python3.11/site-packages/pandas/_testing/a
+2026-05-26 06:08:07 | DEBUG    | llm_client | LLM response from github_models (7040 chars)
+2026-05-26 06:08:07 | DEBUG    | test_runner | Installing: ['pandas', 'click']
+2026-05-26 06:08:08 | WARNING  | test_runner | Tests FAILED for audit_log_sanitizer:
+test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+    mock_to_csv.assert_called_once()
+E   AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_file().write.assert_called_once_with(expected_output)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_csv - AssertionError: Expected 'to_csv' to have been called once. Called 0 times.
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_txt - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-05-26 06:08:08 | WARNING  | tool_builder | ⚠️  audit_log_sanitizer tests failed (loop 2/5) — test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-05-26 06:08:16 | DEBUG    | llm_client | LLM response from github_models (6928 chars)
+2026-05-26 06:08:16 | DEBUG    | test_runner | Installing: ['pandas', 'click']
+2026-05-26 06:08:17 | WARNING  | test_runner | Tests FAILED for audit_log_sanitizer:
+test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+E   AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:951: in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+E   AssertionError: expected call not found.
+E   assert (['Contact me...II here!\n'],) == ('Contact me ...PII here!\n',)
+    mock_file().writelines.assert_called_once_with(expected_output)
+E   AssertionError: expected call not found.
+E   assert (['Contact me...II here!\n'],) == ('Contact me ...PII here!\n',)
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_csv - AttributeError: module 'pandas.compat' has no attribute 'StringIO'
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_txt - AssertionError: expected call not found.
+assert (['Contact me...II here!\n'],) == ('Contact me ...PII here!\n',)
+2026-05-26 06:08:17 | WARNING  | tool_builder | ⚠️  audit_log_sanitizer tests failed (loop 3/5) — test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+E   AttributeError: module 'pandas.compa
+2026-05-26 06:08:26 | DEBUG    | llm_client | LLM response from github_models (7128 chars)
+2026-05-26 06:08:26 | DEBUG    | test_runner | Installing: ['pandas', 'click']
+2026-05-26 06:08:27 | WARNING  | test_runner | Tests FAILED for audit_log_sanitizer:
+test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+    pd.testing.assert_frame_equal(kwargs['obj'], expected_output)
+E   KeyError: 'obj'
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_csv - KeyError: 'obj'
+2026-05-26 06:08:27 | WARNING  | tool_builder | ⚠️  audit_log_sanitizer tests failed (loop 4/5) — test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+    pd.testing.assert_frame_equal(kwargs['obj'], expected_output)
+E   KeyError: 'obj'
+FAILED test_audit_log_sanitizer.py
+2026-05-26 06:08:35 | DEBUG    | llm_client | LLM response from github_models (6917 chars)
+2026-05-26 06:08:35 | DEBUG    | test_runner | Installing: ['pandas', 'click']
+2026-05-26 06:08:36 | WARNING  | test_runner | Tests FAILED for audit_log_sanitizer:
+test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+    pd.testing.assert_frame_equal(args[0], expected_output)
+../_venv/lib/python3.11/site-packages/pandas/_testing/asserters.py:233: in _check_isinstance
+    raise AssertionError(
+E   AssertionError: DataFrame Expected type <class 'pandas.core.frame.DataFrame'>, found <class 'str'> instead
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+    mock_file().write.assert_called_once_with(''.join(expected_output))
+E   AssertionError: Expected 'write' to be called once. Called 0 times.
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_csv - AssertionError: DataFrame Expected type <class 'pandas.core.frame.DataFrame'>, found <class 'str'> instead
+FAILED test_audit_log_sanitizer.py::test_sanitize_log_file_txt - AssertionError: Expected 'write' to be called once. Called 0 times.
+2026-05-26 06:08:36 | WARNING  | tool_builder | ⚠️  audit_log_sanitizer tests failed (loop 5/5) — test_audit_log_sanitizer.py::test_sanitize_log_file_csv FAILED           [ 75%]
+test_audit_log_sanitizer.py::test_sanitize_log_file_txt FAILED           [100%]
+    pd.testing.assert_frame_equal(args[0
+2026-05-26 06:08:36 | ERROR    | tool_builder | ❌ audit_log_sanitizer failed after 5 loops
+2026-05-26 06:08:36 | INFO     | tool_builder | Building tool: claude_memory_manager …
+2026-05-26 06:08:44 | DEBUG    | llm_client | LLM response from github_models (6408 chars)
+2026-05-26 06:08:44 | DEBUG    | test_runner | Installing: ['anthropic==0.3.0', 'psutil==5.9.6', 'tqdm==4.66.1']
+2026-05-26 06:08:49 | WARNING  | test_runner | Tests FAILED for claude_memory_manager:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_memory_manager.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/claude_memory_manager/test_claude_memory_manager.py'.
+E   ImportError: cannot import name 'ModelField' from 'pydantic.fields' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pydantic/fields.py)
+ERROR test_claude_memory_manager.py
+2026-05-26 06:08:49 | WARNING  | tool_builder | ⚠️  claude_memory_manager tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_claude_memory_manager.py ________________
+ImportError while importing test modul
+2026-05-26 06:08:55 | DEBUG    | llm_client | LLM response from github_models (5873 chars)
+2026-05-26 06:08:55 | DEBUG    | test_runner | Installing: ['psutil', 'tqdm']
+2026-05-26 06:08:55 | INFO     | test_runner | Tests PASSED for claude_memory_manager
+2026-05-26 06:08:55 | INFO     | tool_builder | ✅ claude_memory_manager passed tests on loop 2
+2026-05-26 06:08:55 | INFO     | tool_builder | Building tool: claude_plugin_deployer …
+2026-05-26 06:09:05 | DEBUG    | llm_client | LLM response from github_models (5256 chars)
+2026-05-26 06:09:05 | DEBUG    | test_runner | Installing: ['click==8.1.3', 'toml==0.10.2']
+2026-05-26 06:09:06 | INFO     | test_runner | Tests PASSED for claude_plugin_deployer
+2026-05-26 06:09:06 | INFO     | tool_builder | ✅ claude_plugin_deployer passed tests on loop 1
+2026-05-26 06:09:06 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-05-26 06:09:06 | INFO     | main |   Built 4/5 tools successfully
+2026-05-26 06:09:06 | INFO     | main |     ✅ ai_ethics_checker (loops: 1)
+2026-05-26 06:09:06 | INFO     | main |     ✅ ai_policy_mapper (loops: 1)
+2026-05-26 06:09:06 | INFO     | main |     ✅ claude_memory_manager (loops: 2)
+2026-05-26 06:09:06 | INFO     | main |     ✅ claude_plugin_deployer (loops: 1)
+2026-05-26 06:09:06 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-26 06:09:06 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-26 06:09:06 | INFO     | github_publisher |   Created zip: ai_ethics_checker.zip (3171 bytes)
+2026-05-26 06:09:06 | INFO     | github_publisher | Saved ai_ethics_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_ethics_checker
+2026-05-26 06:09:06 | INFO     | github_publisher |   Created zip: ai_policy_mapper.zip (2585 bytes)
+2026-05-26 06:09:06 | INFO     | github_publisher | Saved ai_policy_mapper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_policy_mapper
+2026-05-26 06:09:06 | INFO     | github_publisher |   Created zip: claude_memory_manager.zip (2575 bytes)
+2026-05-26 06:09:06 | INFO     | github_publisher | Saved claude_memory_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_memory_manager
+2026-05-26 06:09:06 | INFO     | github_publisher |   Created zip: claude_plugin_deployer.zip (2310 bytes)
+2026-05-26 06:09:06 | INFO     | github_publisher | Saved claude_plugin_deployer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_plugin_deployer
+2026-05-26 06:09:06 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-05-26 06:09:06 | INFO     | main |   Published 4 tools:
+2026-05-26 06:09:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_ethics_checker
+2026-05-26 06:09:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_policy_mapper
+2026-05-26 06:09:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_memory_manager
+2026-05-26 06:09:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_plugin_deployer
+2026-05-26 06:09:06 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-05-26 06:09:06 | INFO     | main | ✅ Generated tools_index.json with 267 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

@@ -1,0 +1,13 @@
+{
+  "tool_name": "claude_memory_manager",
+  "display_name": "Claude Memory Manager",
+  "description": "A Python CLI and library tool to help developers manage memory usage for Anthropic's Claude AI. The tool enables developers to optimize memory usage by segmenting prompts and responses, tracking memory utilization, and clearing memory when limits are reached. This is especially useful for long coding sessions or iterative development workflows.",
+  "topic": "Claude AI Code Enhancements",
+  "date": "2026-05-26",
+  "generated": "2026-05-26T06:04:00.641217+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_memory_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_memory_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_memory_manager/claude_memory_manager.zip"
+}
