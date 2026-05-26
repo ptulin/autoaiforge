@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-05-25T06:29:05.379377+00:00",
-  "total_tools": 264,
+  "last_updated": "2026-05-26T06:09:06.305021+00:00",
+  "total_tools": 267,
   "tools": [
+    {
+      "tool_name": "claude_memory_manager",
+      "display_name": "Claude Memory Manager",
+      "description": "A Python CLI and library tool to help developers manage memory usage for Anthropic's Claude AI. The tool enables developers to optimize memory usage by segmenting prompts and responses, tracking memory utilization, and clearing memory when limits are reached. This is especially useful for long coding sessions or iterative development workflows.",
+      "topic": "Claude AI Code Enhancements",
+      "date": "2026-05-26",
+      "generated": "2026-05-26T06:04:00.641217+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_memory_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_memory_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_memory_manager/claude_memory_manager.zip"
+    },
+    {
+      "tool_name": "ai_ethics_checker",
+      "display_name": "AI Ethics Compliance Checker",
+      "description": "This CLI tool analyzes machine learning models and datasets to ensure they align with predefined ethical guidelines, such as fairness, privacy, and transparency standards. It is useful for developers and researchers to preemptively detect ethical issues in their AI systems before deployment.",
+      "topic": "AI Ethical Oversight",
+      "date": "2026-05-26",
+      "generated": "2026-05-26T06:04:00.641217+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_ethics_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/ai_ethics_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/ai_ethics_checker/ai_ethics_checker.zip"
+    },
+    {
+      "tool_name": "ai_policy_mapper",
+      "display_name": "AI Policy Mapper",
+      "description": "This Python library allows developers to map and verify AI model features against global ethical AI policies, such as GDPR or OECD guidelines. It provides structured functions to compare the technical aspects of an AI system with abstract policy requirements.",
+      "topic": "AI Ethical Oversight",
+      "date": "2026-05-26",
+      "generated": "2026-05-26T06:04:00.641217+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/ai_policy_mapper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/ai_policy_mapper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/ai_policy_mapper/ai_policy_mapper.zip"
+    },
+    {
+      "tool_name": "claude_plugin_deployer",
+      "display_name": "Claude Plugin Deployer",
+      "description": "A CLI automation tool for managing and deploying plugins for Claude AI. This tool simplifies building, testing, and updating plugins by providing a unified interface for plugin configuration, testing, and seamless deployment. It helps AI developers quickly adapt Claude AI's capabilities to specific use cases without manually handling setup details.",
+      "topic": "Claude AI Code Enhancements",
+      "date": "2026-05-26",
+      "generated": "2026-05-26T06:04:00.641217+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-26/claude_plugin_deployer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_plugin_deployer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-26/claude_plugin_deployer/claude_plugin_deployer.zip"
+    },
     {
       "tool_name": "agent_workflow_simulator",
       "display_name": "Agent Workflow Simulator",
@@ -521,19 +573,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_code_assistant",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_code_assistant/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_code_assistant/claude_code_assistant.zip"
-    },
-    {
-      "tool_name": "claude_memory_manager",
-      "display_name": "Claude Memory Manager",
-      "description": "This tool provides developers a way to interact with Claude AI's self-updating memory feature. It allows for querying, updating, and deleting stored memory items programmatically, enabling fine-grained memory management to optimize AI-driven workflows.",
-      "topic": "Claude AI Updates and Features",
-      "date": "2026-05-13",
-      "generated": "2026-05-13T05:46:06.253677+00:00",
-      "loops_needed": 1,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-13/claude_memory_manager",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_manager/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-13/claude_memory_manager/claude_memory_manager.zip"
     },
     {
       "tool_name": "ai_strategy_simulator",
