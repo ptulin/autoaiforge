@@ -1,0 +1,13 @@
+{
+  "tool_name": "semantic_search_explorer",
+  "display_name": "Semantic Search Explorer",
+  "description": "A Python CLI tool to interact with AI-powered search engines, allowing developers to test and explore semantic search capabilities with custom queries. The tool outputs structured results, metadata, and ranking insights.",
+  "topic": "AI-Powered Search Reinvention",
+  "date": "2026-05-27",
+  "generated": "2026-05-27T06:17:43.809363+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/semantic_search_explorer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/semantic_search_explorer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/semantic_search_explorer/semantic_search_explorer.zip"
+}

@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-26T06:09:06.305021+00:00",
-  "total_tools": 267,
+  "last_updated": "2026-05-27T06:24:49.610141+00:00",
+  "total_tools": 270,
   "tools": [
+    {
+      "tool_name": "ai_query_optimizer",
+      "display_name": "AI Query Optimizer",
+      "description": "This tool leverages AI to analyze and optimize search queries by suggesting refined keywords and query structures for better search results. Developers can integrate it into applications to enhance search accuracy and relevance.",
+      "topic": "AI-Powered Search Reinvention",
+      "date": "2026-05-27",
+      "generated": "2026-05-27T06:17:43.809363+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/ai_query_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/ai_query_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/ai_query_optimizer/ai_query_optimizer.zip"
+    },
+    {
+      "tool_name": "query_similarity_checker",
+      "display_name": "Query Similarity Checker",
+      "description": "A utility to measure semantic similarity between search queries using AI embeddings. Useful for developers building search engines or recommendation systems to detect overlapping or redundant queries.",
+      "topic": "AI-Powered Search Reinvention",
+      "date": "2026-05-27",
+      "generated": "2026-05-27T06:17:43.809363+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/query_similarity_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/query_similarity_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/query_similarity_checker/query_similarity_checker.zip"
+    },
+    {
+      "tool_name": "semantic_search_explorer",
+      "display_name": "Semantic Search Explorer",
+      "description": "A Python CLI tool to interact with AI-powered search engines, allowing developers to test and explore semantic search capabilities with custom queries. The tool outputs structured results, metadata, and ranking insights.",
+      "topic": "AI-Powered Search Reinvention",
+      "date": "2026-05-27",
+      "generated": "2026-05-27T06:17:43.809363+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/semantic_search_explorer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/semantic_search_explorer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-27/semantic_search_explorer/semantic_search_explorer.zip"
+    },
     {
       "tool_name": "claude_memory_manager",
       "display_name": "Claude Memory Manager",

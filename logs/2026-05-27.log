@@ -1,0 +1,263 @@
+2026-05-27 06:17:43 | INFO     | main | ============================================================
+2026-05-27 06:17:43 | INFO     | main | AutoAIForge starting run: 2026-05-27T06:17:43.809363+00:00
+2026-05-27 06:17:43 | INFO     | main | ============================================================
+2026-05-27 06:17:43 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-27 06:17:43 | INFO     | youtube_scraper | YouTube client ready
+2026-05-27 06:17:44 | INFO     | youtube_scraper | YouTube 'AI news': 50 results (quota used: 100)
+2026-05-27 06:17:44 | INFO     | youtube_scraper | YouTube 'Claude AI updates': 50 results (quota used: 200)
+2026-05-27 06:17:44 | INFO     | youtube_scraper | YouTube 'open source AI tools': 50 results (quota used: 300)
+2026-05-27 06:17:45 | INFO     | youtube_scraper | YouTube 'LLM advancements': 0 results (quota used: 400)
+2026-05-27 06:17:45 | INFO     | youtube_scraper | YouTube 'Claude Code': 50 results (quota used: 500)
+2026-05-27 06:17:45 | INFO     | youtube_scraper | YouTube 'artificial intelligence breakthrough': 50 results (quota used: 600)
+2026-05-27 06:17:46 | INFO     | youtube_scraper | YouTube 'machine learning tools': 50 results (quota used: 700)
+2026-05-27 06:17:46 | INFO     | youtube_scraper | YouTube 'AI automation': 50 results (quota used: 800)
+2026-05-27 06:17:47 | INFO     | youtube_scraper | YouTube 'Anthropic Claude': 50 results (quota used: 900)
+2026-05-27 06:17:47 | INFO     | youtube_scraper | YouTube 'AI coding assistant': 50 results (quota used: 1000)
+2026-05-27 06:17:47 | INFO     | youtube_scraper | YouTube 'open source LLM': 50 results (quota used: 1100)
+2026-05-27 06:17:48 | INFO     | youtube_scraper | YouTube 'AI agent framework': 50 results (quota used: 1200)
+2026-05-27 06:17:48 | INFO     | youtube_scraper | YouTube 'vector database AI': 50 results (quota used: 1300)
+2026-05-27 06:17:48 | INFO     | youtube_scraper | YouTube 'RAG retrieval augmented generation': 50 results (quota used: 1400)
+2026-05-27 06:17:49 | INFO     | youtube_scraper | YouTube 'multimodal AI': 50 results (quota used: 1500)
+2026-05-27 06:17:49 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-25T06%3A17%3A49Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-27 06:17:49 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-25T06%3A17%3A49Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-27 06:17:49 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-25T06%3A17%3A49Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.". Details: "[{'message': "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per minute' of service 'youtube.googleapis.com' for consumer 'project_number:233648659413'.", 'domain': 'global', 'reason': 'rateLimitExceeded'}]">
+2026-05-27 06:17:49 | INFO     | youtube_scraper | YouTube 'AI productivity tools': 50 results (quota used: 1600)
+2026-05-27 06:17:49 | INFO     | youtube_scraper | YouTube 'generative AI': 50 results (quota used: 1700)
+2026-05-27 06:17:49 | INFO     | youtube_scraper | YouTube total: 800 items, quota used: 1700
+2026-05-27 06:17:49 | INFO     | main |   YouTube: 743 items
+2026-05-27 06:17:49 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-27 06:17:54 | INFO     | rss_scraper | HackerNews: 157 items
+2026-05-27 06:17:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-27 06:17:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-27 06:17:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-27 06:17:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-27 06:17:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-27 06:18:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-27 06:18:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-27 06:18:02 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-27 06:18:02 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-27 06:19:02 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-27 06:19:19 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-27 06:19:20 | INFO     | rss_scraper | ArXiv: 30 items
+2026-05-27 06:19:25 | INFO     | rss_scraper | Dev.to: 191 items
+2026-05-27 06:19:26 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-27 06:19:26 | INFO     | rss_scraper | Free sources total: 428 unique items
+2026-05-27 06:19:26 | INFO     | main |   RSS/API sources: 428 items
+2026-05-27 06:19:26 | INFO     | main |   Total scraped: 1171 items
+2026-05-27 06:19:26 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-27 06:19:26 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-27 06:19:27 | INFO     | db_manager | Purged 1035 old news items
+2026-05-27 06:19:27 | INFO     | db_manager | Inserted 996/1171 news items
+2026-05-27 06:19:27 | INFO     | main |   SQLite: 996 new items (total: 29659)
+2026-05-27 06:19:31 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-27 06:19:33 | INFO     | vector_store | VectorStore ready
+2026-05-27 06:19:54 | INFO     | vector_store | Indexed 2000 items into vector store
+2026-05-27 06:19:54 | INFO     | main |   Vector store: 2000 items indexed
+2026-05-27 06:19:54 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-27 06:19:54 | INFO     | topic_analyzer | Analyzing 2000 items for top 10 topics …
+2026-05-27 06:20:01 | DEBUG    | llm_client | LLM response from github_models (3764 chars)
+2026-05-27 06:20:01 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-27 06:20:01 | INFO     | main |   Found 10 topics:
+2026-05-27 06:20:01 | INFO     | main |      1. [10/10] Zero-Day Exploit Detection
+2026-05-27 06:20:01 | INFO     | main |      2. [10/10] AI-Powered Search Reinvention
+2026-05-27 06:20:01 | INFO     | main |      3. [9/10] AI-Powered Code Review
+2026-05-27 06:20:01 | INFO     | main |      4. [9/10] AI Bug Detection
+2026-05-27 06:20:01 | INFO     | main |      5. [9/10] Managed AI Agents
+2026-05-27 06:20:01 | INFO     | main |      6. [9/10] AI-Generated Financial Insights
+2026-05-27 06:20:01 | INFO     | main |      7. [8/10] Deepfake Detection Tools
+2026-05-27 06:20:01 | INFO     | main |      8. [8/10] AI Sandbox Escapes
+2026-05-27 06:20:01 | INFO     | main |      9. [8/10] AI in Education
+2026-05-27 06:20:01 | INFO     | main |     10. [7/10] AI-Powered Pet Translators
+2026-05-27 06:20:01 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-27 06:20:01 | INFO     | main |   Existing collection: 267 tools across 137 topics
+2026-05-27 06:20:01 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-27 06:20:08 | DEBUG    | llm_client | LLM response from github_models (3599 chars)
+2026-05-27 06:20:08 | INFO     | idea_generator | Generated 3 ideas for topic: Zero-Day Exploit Detection
+2026-05-27 06:20:08 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_vuln_scanner' — name already in collection
+2026-05-27 06:20:14 | DEBUG    | llm_client | LLM response from github_models (3342 chars)
+2026-05-27 06:20:14 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Search Reinvention
+2026-05-27 06:20:14 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-27 06:20:14 | INFO     | main |   Generated 5 tool ideas:
+2026-05-27 06:20:14 | INFO     | main |     • exploit_pattern_identifier: This library helps developers identify zero-day exploit patterns in their own Py
+2026-05-27 06:20:14 | INFO     | main |     • model_based_vuln_reporter: An automation tool that integrates with CI/CD pipelines to detect zero-day vulne
+2026-05-27 06:20:14 | INFO     | main |     • ai_query_optimizer: This tool leverages AI to analyze and optimize search queries by suggesting refi
+2026-05-27 06:20:14 | INFO     | main |     • semantic_search_explorer: A Python CLI tool to interact with AI-powered search engines, allowing developer
+2026-05-27 06:20:14 | INFO     | main |     • query_similarity_checker: A utility to measure semantic similarity between search queries using AI embeddi
+2026-05-27 06:20:14 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-27 06:20:14 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-27 06:20:23 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-27 06:20:23 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-27 06:20:23 | INFO     | tool_builder | Building tool: exploit_pattern_identifier …
+2026-05-27 06:20:47 | DEBUG    | llm_client | LLM response from github_models (13878 chars)
+2026-05-27 06:20:47 | ERROR    | tool_builder | Initial generation failed for exploit_pattern_identifier: LLM returned non-JSON: {
+  "code": "import os\nimport ast\nimport joblib\nimport yaml\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.ensemble import RandomForestClassifier\n\nclass ExploitPatternIdentifier:\n    def __init__(self, model_path: str, patterns_path: str):\n        \"\"\"Initialize 
+Unterminated string starting at: line 3 column 16 (char 3023)
+2026-05-27 06:20:47 | INFO     | tool_builder | Building tool: model_based_vuln_reporter …
+2026-05-27 06:20:47 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-27 06:21:56 | DEBUG    | llm_client | LLM response from github_models (5422 chars)
+2026-05-27 06:21:56 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'pandas==1.3.3', 'pygit2==1.6.1']
+2026-05-27 06:21:57 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-05-27 06:21:57 | WARNING  | test_runner | Tests FAILED for model_based_vuln_reporter:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_model_based_vuln_reporter.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_based_vuln_reporter/test_model_based_vuln_reporter.py'.
+    from pygit2 import Repository, GitError
+E   ModuleNotFoundError: No module named 'pygit2'
+ERROR test_model_based_vuln_reporter.py
+2026-05-27 06:21:57 | WARNING  | tool_builder | ⚠️  model_based_vuln_reporter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_model_based_vuln_reporter.py ______________
+ImportError while importing test modul
+2026-05-27 06:22:05 | DEBUG    | llm_client | LLM response from github_models (5983 chars)
+2026-05-27 06:22:05 | DEBUG    | test_runner | Installing: ['tensorflow', 'pandas']
+2026-05-27 06:22:31 | WARNING  | test_runner | Tests FAILED for model_based_vuln_reporter:
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [100%]
+    assert "error" in report
+E   AssertionError: assert 'error' in {'vulnerabilities': []}
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes - AssertionError: assert 'error' in {'vulnerabilities': []}
+2026-05-27 06:22:31 | WARNING  | tool_builder | ⚠️  model_based_vuln_reporter tests failed (loop 2/5) — test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [100%]
+    assert "error" in report
+E   AssertionError: assert 'error' in {'vulnerabilities': []}
+FAILED test_model_based
+2026-05-27 06:22:39 | DEBUG    | llm_client | LLM response from github_models (6597 chars)
+2026-05-27 06:22:39 | DEBUG    | test_runner | Installing: ['tensorflow', 'pandas']
+2026-05-27 06:22:44 | WARNING  | test_runner | Tests FAILED for model_based_vuln_reporter:
+test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabilities"][0]["file"] == "file1.py"
+E   AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139836155167248'> == 'file1.py'
+    assert "error" in report
+E   AssertionError: assert 'error' in {'vulnerabilities': []}
+E0000 00:00:1779862962.709294    2761 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo - AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139836155167248'> == 'file1.py'
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes - AssertionError: assert 'error' in {'vulnerabilities': []}
+2026-05-27 06:22:44 | WARNING  | tool_builder | ⚠️  model_based_vuln_reporter tests failed (loop 3/5) — test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabi
+2026-05-27 06:22:52 | DEBUG    | llm_client | LLM response from github_models (6484 chars)
+2026-05-27 06:22:52 | DEBUG    | test_runner | Installing: ['tensorflow', 'pandas']
+2026-05-27 06:22:57 | WARNING  | test_runner | Tests FAILED for model_based_vuln_reporter:
+test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabilities"][0]["file"] == "file1.py"
+E   AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139967615653392'> == 'file1.py'
+    assert "error" in report
+E   AssertionError: assert 'error' in {'vulnerabilities': []}
+E0000 00:00:1779862975.958645    2813 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo - AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139967615653392'> == 'file1.py'
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes - AssertionError: assert 'error' in {'vulnerabilities': []}
+2026-05-27 06:22:57 | WARNING  | tool_builder | ⚠️  model_based_vuln_reporter tests failed (loop 4/5) — test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabi
+2026-05-27 06:23:05 | DEBUG    | llm_client | LLM response from github_models (6631 chars)
+2026-05-27 06:23:05 | DEBUG    | test_runner | Installing: ['tensorflow', 'pandas']
+2026-05-27 06:23:09 | WARNING  | test_runner | Tests FAILED for model_based_vuln_reporter:
+test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabilities"][0]["file"] == "file1.py"
+E   AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139722900066064'> == 'file1.py'
+    assert "error" in report
+E   AssertionError: assert 'error' in {'vulnerabilities': []}
+E0000 00:00:1779862988.047555    2864 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo - AssertionError: assert <MagicMock name='MagicMock().delta.new_file.path' id='139722900066064'> == 'file1.py'
+FAILED test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes - AssertionError: assert 'error' in {'vulnerabilities': []}
+2026-05-27 06:23:09 | WARNING  | tool_builder | ⚠️  model_based_vuln_reporter tests failed (loop 5/5) — test_model_based_vuln_reporter.py::test_analyze_code_changes_valid_repo FAILED [ 25%]
+test_model_based_vuln_reporter.py::test_analyze_code_changes_no_changes FAILED [ 75%]
+    assert report["vulnerabi
+2026-05-27 06:23:09 | ERROR    | tool_builder | ❌ model_based_vuln_reporter failed after 5 loops
+2026-05-27 06:23:09 | INFO     | tool_builder | Building tool: ai_query_optimizer …
+2026-05-27 06:23:19 | DEBUG    | llm_client | LLM response from github_models (5529 chars)
+2026-05-27 06:23:19 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'pytest==7.4.2']
+2026-05-27 06:23:22 | WARNING  | test_runner | Tests FAILED for ai_query_optimizer:
+test_ai_query_optimizer.py::test_optimize_query_api_error FAILED         [ 60%]
+test_ai_query_optimizer.py::test_save_output_json FAILED                 [ 80%]
+E   Exception: API error
+E   NameError: name 'json' is not defined
+FAILED test_ai_query_optimizer.py::test_optimize_query_api_error - Exception: API error
+FAILED test_ai_query_optimizer.py::test_save_output_json - NameError: name 'json' is not defined
+2026-05-27 06:23:22 | WARNING  | tool_builder | ⚠️  ai_query_optimizer tests failed (loop 1/5) — test_ai_query_optimizer.py::test_optimize_query_api_error FAILED         [ 60%]
+test_ai_query_optimizer.py::test_save_output_json FAILED                 [ 80%]
+E   Exception: API error
+E   NameError: 
+2026-05-27 06:23:29 | DEBUG    | llm_client | LLM response from github_models (5280 chars)
+2026-05-27 06:23:29 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-05-27 06:23:30 | WARNING  | test_runner | Tests FAILED for ai_query_optimizer:
+test_ai_query_optimizer.py::test_optimize_query_api_error FAILED         [ 60%]
+    mock_openai_error.side_effect = openai.error.OpenAIError("API error")
+E   NameError: name 'openai' is not defined
+FAILED test_ai_query_optimizer.py::test_optimize_query_api_error - NameError: name 'openai' is not defined
+2026-05-27 06:23:30 | WARNING  | tool_builder | ⚠️  ai_query_optimizer tests failed (loop 2/5) — test_ai_query_optimizer.py::test_optimize_query_api_error FAILED         [ 60%]
+    mock_openai_error.side_effect = openai.error.OpenAIError("API error")
+E   NameError: name 'openai' is not defined
+FA
+2026-05-27 06:23:37 | DEBUG    | llm_client | LLM response from github_models (5224 chars)
+2026-05-27 06:23:37 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-05-27 06:23:38 | INFO     | test_runner | Tests PASSED for ai_query_optimizer
+2026-05-27 06:23:38 | INFO     | tool_builder | ✅ ai_query_optimizer passed tests on loop 3
+2026-05-27 06:23:38 | INFO     | tool_builder | Building tool: semantic_search_explorer …
+2026-05-27 06:23:47 | DEBUG    | llm_client | LLM response from github_models (5476 chars)
+2026-05-27 06:23:47 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'rich==13.5.2', 'pytest==7.4.2']
+2026-05-27 06:23:48 | INFO     | test_runner | Tests PASSED for semantic_search_explorer
+2026-05-27 06:23:48 | INFO     | tool_builder | ✅ semantic_search_explorer passed tests on loop 1
+2026-05-27 06:23:48 | INFO     | tool_builder | Building tool: query_similarity_checker …
+2026-05-27 06:23:56 | DEBUG    | llm_client | LLM response from github_models (5050 chars)
+2026-05-27 06:23:56 | DEBUG    | test_runner | Installing: ['sentence-transformers==2.2.2', 'pandas==1.5.3']
+2026-05-27 06:24:17 | WARNING  | test_runner | pip install warning: ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+
+2026-05-27 06:24:17 | WARNING  | test_runner | Tests FAILED for query_similarity_checker:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_query_similarity_checker.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/query_similarity_checker/test_query_similarity_checker.py'.
+E   ModuleNotFoundError: No module named 'sentence_transformers'
+ERROR test_query_similarity_checker.py
+2026-05-27 06:24:17 | WARNING  | tool_builder | ⚠️  query_similarity_checker tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_query_similarity_checker.py _______________
+ImportError while importing test modul
+2026-05-27 06:24:24 | DEBUG    | llm_client | LLM response from github_models (5572 chars)
+2026-05-27 06:24:24 | DEBUG    | test_runner | Installing: ['sentence-transformers', 'pandas', 'pytest']
+2026-05-27 06:24:32 | WARNING  | test_runner | pip install warning: ERROR: Could not install packages due to an OSError: [Errno 28] No space left on device
+
+
+2026-05-27 06:24:32 | WARNING  | test_runner | Tests FAILED for query_similarity_checker:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_query_similarity_checker.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/query_similarity_checker/test_query_similarity_checker.py'.
+E   ModuleNotFoundError: No module named 'sentence_transformers'
+ERROR test_query_similarity_checker.py
+2026-05-27 06:24:32 | WARNING  | tool_builder | ⚠️  query_similarity_checker tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_query_similarity_checker.py _______________
+ImportError while importing test modul
+2026-05-27 06:24:39 | DEBUG    | llm_client | LLM response from github_models (5555 chars)
+2026-05-27 06:24:39 | DEBUG    | test_runner | Installing: ['pandas', 'pytest']
+2026-05-27 06:24:40 | WARNING  | test_runner | Tests FAILED for query_similarity_checker:
+test_query_similarity_checker.py::test_calculate_similarity FAILED       [ 33%]
+    raise AttributeError(
+E   AttributeError: <module 'query_similarity_checker' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/query_similarity_checker/query_similarity_checker.py'> does not have the attribute 'SentenceTransformer'
+FAILED test_query_similarity_checker.py::test_calculate_similarity - AttributeError: <module 'query_similarity_checker' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/query_similarity_checker/query_similarity_checker.py'> does not have the attribute 'SentenceTransformer'
+2026-05-27 06:24:40 | WARNING  | tool_builder | ⚠️  query_similarity_checker tests failed (loop 3/5) — test_query_similarity_checker.py::test_calculate_similarity FAILED       [ 33%]
+    raise AttributeError(
+E   AttributeError: <module 'query_similarity_checker' from '/home/runner/work/autoaiforge/aut
+2026-05-27 06:24:48 | DEBUG    | llm_client | LLM response from github_models (5803 chars)
+2026-05-27 06:24:48 | DEBUG    | test_runner | Installing: ['pandas', 'pytest']
+2026-05-27 06:24:48 | INFO     | test_runner | Tests PASSED for query_similarity_checker
+2026-05-27 06:24:48 | INFO     | tool_builder | ✅ query_similarity_checker passed tests on loop 4
+2026-05-27 06:24:48 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-27 06:24:48 | INFO     | main |   Built 3/5 tools successfully
+2026-05-27 06:24:48 | INFO     | main |     ✅ ai_query_optimizer (loops: 3)
+2026-05-27 06:24:48 | INFO     | main |     ✅ semantic_search_explorer (loops: 1)
+2026-05-27 06:24:48 | INFO     | main |     ✅ query_similarity_checker (loops: 4)
+2026-05-27 06:24:48 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-27 06:24:49 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-27 06:24:49 | INFO     | github_publisher |   Created zip: ai_query_optimizer.zip (2430 bytes)
+2026-05-27 06:24:49 | INFO     | github_publisher | Saved ai_query_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/ai_query_optimizer
+2026-05-27 06:24:49 | INFO     | github_publisher |   Created zip: semantic_search_explorer.zip (2560 bytes)
+2026-05-27 06:24:49 | INFO     | github_publisher | Saved semantic_search_explorer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/semantic_search_explorer
+2026-05-27 06:24:49 | INFO     | github_publisher |   Created zip: query_similarity_checker.zip (2708 bytes)
+2026-05-27 06:24:49 | INFO     | github_publisher | Saved query_similarity_checker → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/query_similarity_checker
+2026-05-27 06:24:49 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-27 06:24:49 | INFO     | main |   Published 3 tools:
+2026-05-27 06:24:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/ai_query_optimizer
+2026-05-27 06:24:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/semantic_search_explorer
+2026-05-27 06:24:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/query_similarity_checker
+2026-05-27 06:24:49 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-05-27 06:24:49 | INFO     | main | ✅ Generated tools_index.json with 270 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
