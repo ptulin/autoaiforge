@@ -261,3 +261,22 @@ E   AttributeError: <module 'query_similarity_checker' from '/home/runner/work/a
 2026-05-27 06:24:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/query_similarity_checker
 2026-05-27 06:24:49 | INFO     | main |   Deduplicated 8 older tool version(s) from index
 2026-05-27 06:24:49 | INFO     | main | ✅ Generated tools_index.json with 270 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-05-27 06:24:54 | INFO     | main | Database committed and pushed to repo
+2026-05-27 06:24:54 | INFO     | main | 
+2026-05-27 06:24:54 | INFO     | main | ============================================================
+2026-05-27 06:24:54 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-05-27 06:24:54 | INFO     | main | ============================================================
+2026-05-27 06:24:54 | INFO     | main |   Date:            2026-05-27
+2026-05-27 06:24:54 | INFO     | main |   Items scraped:   1171
+2026-05-27 06:24:54 | INFO     | main |   Items stored:    996
+2026-05-27 06:24:54 | INFO     | main |   Topics found:    10
+2026-05-27 06:24:54 | INFO     | main |   Ideas generated: 5
+2026-05-27 06:24:54 | INFO     | main |   Tools built:     3
+2026-05-27 06:24:54 | INFO     | main |   Tools published: 3
+2026-05-27 06:24:54 | INFO     | main |   Elapsed:         425.8s
+2026-05-27 06:24:54 | INFO     | main |   Published URLs:
+2026-05-27 06:24:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/ai_query_optimizer
+2026-05-27 06:24:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/semantic_search_explorer
+2026-05-27 06:24:54 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-27/query_similarity_checker
+2026-05-27 06:24:54 | INFO     | main | ============================================================
+2026-05-27 06:24:55 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
