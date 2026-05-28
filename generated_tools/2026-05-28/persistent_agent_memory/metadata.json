@@ -1,0 +1,13 @@
+{
+  "tool_name": "persistent_agent_memory",
+  "display_name": "Persistent Agent Memory",
+  "description": "This library provides a flexible and lightweight system for AI agents to store and retrieve persistent memories, allowing agents to maintain state, identity, and context across sessions. It supports multiple backends such as SQLite, JSON files, and Redis, making it easy to integrate into various AI frameworks.",
+  "topic": "AI Agent Memory Management",
+  "date": "2026-05-28",
+  "generated": "2026-05-28T06:08:35.996315+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/persistent_agent_memory",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/persistent_agent_memory/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/persistent_agent_memory/persistent_agent_memory.zip"
+}
