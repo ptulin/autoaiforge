@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-27T06:24:49.610141+00:00",
-  "total_tools": 270,
+  "last_updated": "2026-05-28T06:20:27.836725+00:00",
+  "total_tools": 273,
   "tools": [
+    {
+      "tool_name": "code_diff_exploit_simulator",
+      "display_name": "Code Diff Exploit Simulator",
+      "description": "This tool uses a single LLM to analyze differences between two versions of a codebase (e.g., pre- and post-commit) and predict whether the changes may introduce vulnerabilities. It can also attempt to simulate how an exploit would function based on the detected changes.",
+      "topic": "LLM Vulnerability Detection",
+      "date": "2026-05-28",
+      "generated": "2026-05-28T06:08:35.996315+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/code_diff_exploit_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/code_diff_exploit_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/code_diff_exploit_simulator/code_diff_exploit_simulator.zip"
+    },
+    {
+      "tool_name": "persistent_agent_memory",
+      "display_name": "Persistent Agent Memory",
+      "description": "This library provides a flexible and lightweight system for AI agents to store and retrieve persistent memories, allowing agents to maintain state, identity, and context across sessions. It supports multiple backends such as SQLite, JSON files, and Redis, making it easy to integrate into various AI frameworks.",
+      "topic": "AI Agent Memory Management",
+      "date": "2026-05-28",
+      "generated": "2026-05-28T06:08:35.996315+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/persistent_agent_memory",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/persistent_agent_memory/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/persistent_agent_memory/persistent_agent_memory.zip"
+    },
+    {
+      "tool_name": "sandboxed_vuln_playground",
+      "display_name": "Sandboxed Vulnerability Playground",
+      "description": "This tool creates a local sandboxed environment where LLMs simulate security vulnerabilities in isolated Python scripts. Developers can use it to better understand LLMs' capabilities in generating and reproducing vulnerabilities under controlled conditions, which aids in improving AI safety and robustness.",
+      "topic": "LLM Vulnerability Detection",
+      "date": "2026-05-28",
+      "generated": "2026-05-28T06:08:35.996315+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/sandboxed_vuln_playground",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/sandboxed_vuln_playground/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-28/sandboxed_vuln_playground/sandboxed_vuln_playground.zip"
+    },
     {
       "tool_name": "ai_query_optimizer",
       "display_name": "AI Query Optimizer",

@@ -1,0 +1,294 @@
+2026-05-28 06:08:35 | INFO     | main | ============================================================
+2026-05-28 06:08:35 | INFO     | main | AutoAIForge starting run: 2026-05-28T06:08:35.996315+00:00
+2026-05-28 06:08:35 | INFO     | main | ============================================================
+2026-05-28 06:08:35 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-28 06:08:36 | INFO     | youtube_scraper | YouTube client ready
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:36 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A36Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-26T06%3A08%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-28 06:08:37 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-05-28 06:08:37 | INFO     | main |   YouTube: 0 items
+2026-05-28 06:08:37 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-28 06:08:41 | INFO     | rss_scraper | HackerNews: 164 items
+2026-05-28 06:08:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-28 06:08:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-28 06:08:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-28 06:08:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-28 06:08:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-28 06:08:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-28 06:08:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-28 06:08:49 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-28 06:09:04 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-28 06:09:36 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-28 06:09:37 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-28 06:10:08 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-28 06:10:09 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-28 06:10:13 | INFO     | rss_scraper | Dev.to: 189 items
+2026-05-28 06:10:14 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-28 06:10:14 | INFO     | rss_scraper | Free sources total: 403 unique items
+2026-05-28 06:10:14 | INFO     | main |   RSS/API sources: 403 items
+2026-05-28 06:10:14 | INFO     | main |   Total scraped: 403 items
+2026-05-28 06:10:14 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-28 06:10:14 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-28 06:10:15 | INFO     | db_manager | Purged 1118 old news items
+2026-05-28 06:10:15 | INFO     | db_manager | Inserted 263/403 news items
+2026-05-28 06:10:15 | INFO     | main |   SQLite: 263 new items (total: 28804)
+2026-05-28 06:10:20 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-28 06:10:20 | INFO     | vector_store | VectorStore ready
+2026-05-28 06:10:38 | INFO     | vector_store | Indexed 1259 items into vector store
+2026-05-28 06:10:38 | INFO     | main |   Vector store: 1259 items indexed
+2026-05-28 06:10:38 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-28 06:10:38 | INFO     | topic_analyzer | Analyzing 1259 items for top 10 topics …
+2026-05-28 06:10:44 | DEBUG    | llm_client | LLM response from github_models (3728 chars)
+2026-05-28 06:10:44 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-28 06:10:44 | INFO     | main |   Found 10 topics:
+2026-05-28 06:10:44 | INFO     | main |      1. [10/10] LLM Vulnerability Detection
+2026-05-28 06:10:44 | INFO     | main |      2. [9/10] AI Agent Memory Management
+2026-05-28 06:10:44 | INFO     | main |      3. [9/10] Prompt Injection Detection
+2026-05-28 06:10:44 | INFO     | main |      4. [8/10] Local LLM Deployment
+2026-05-28 06:10:44 | INFO     | main |      5. [8/10] AI Safety Legislation
+2026-05-28 06:10:44 | INFO     | main |      6. [8/10] AI-Powered Workflow Testing
+2026-05-28 06:10:44 | INFO     | main |      7. [8/10] LLM Benchmarking for Web Tasks
+2026-05-28 06:10:44 | INFO     | main |      8. [8/10] AI Agent Accountability
+2026-05-28 06:10:44 | INFO     | main |      9. [7/10] Open-Network AI Protocols
+2026-05-28 06:10:44 | INFO     | main |     10. [7/10] Agentic Coding Applications
+2026-05-28 06:10:44 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-28 06:10:45 | INFO     | main |   Existing collection: 270 tools across 138 topics
+2026-05-28 06:10:45 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-28 06:10:51 | DEBUG    | llm_client | LLM response from github_models (3921 chars)
+2026-05-28 06:10:51 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Vulnerability Detection
+2026-05-28 06:10:56 | DEBUG    | llm_client | LLM response from github_models (2655 chars)
+2026-05-28 06:10:56 | INFO     | idea_generator | Generated 2 ideas for topic: AI Agent Memory Management
+2026-05-28 06:10:56 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-28 06:10:56 | INFO     | main |   Generated 5 tool ideas:
+2026-05-28 06:10:56 | INFO     | main |     • vuln_detect_agent_orchestrator: This tool orchestrates multiple LLMs working as agents to collaboratively analyz
+2026-05-28 06:10:56 | INFO     | main |     • code_diff_exploit_simulator: This tool uses a single LLM to analyze differences between two versions of a cod
+2026-05-28 06:10:56 | INFO     | main |     • sandboxed_vuln_playground: This tool creates a local sandboxed environment where LLMs simulate security vul
+2026-05-28 06:10:56 | INFO     | main |     • persistent_agent_memory: This library provides a flexible and lightweight system for AI agents to store a
+2026-05-28 06:10:56 | INFO     | main |     • agent_session_replayer: This CLI tool allows developers to record, replay, and analyze AI agent sessions
+2026-05-28 06:10:56 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-28 06:10:56 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-28 06:11:05 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-28 06:11:05 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-28 06:11:05 | INFO     | tool_builder | Building tool: vuln_detect_agent_orchestrator …
+2026-05-28 06:11:16 | DEBUG    | llm_client | LLM response from github_models (6935 chars)
+2026-05-28 06:11:16 | DEBUG    | test_runner | Installing: ['langchain==0.0.208', 'openai==0.27.8', 'pyyaml==6.0', 'pytest==7.4.2']
+2026-05-28 06:12:32 | ERROR    | test_runner | Tests timed out after 60s
+2026-05-28 06:12:32 | WARNING  | tool_builder | ⚠️  vuln_detect_agent_orchestrator tests failed (loop 1/5) — Tests timed out after 60s
+2026-05-28 06:12:38 | DEBUG    | llm_client | LLM response from github_models (5754 chars)
+2026-05-28 06:12:38 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-05-28 06:13:49 | ERROR    | test_runner | Tests timed out after 60s
+2026-05-28 06:13:49 | WARNING  | tool_builder | ⚠️  vuln_detect_agent_orchestrator tests failed (loop 2/5) — Tests timed out after 60s
+2026-05-28 06:13:55 | DEBUG    | llm_client | LLM response from github_models (5835 chars)
+2026-05-28 06:13:55 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-05-28 06:15:05 | ERROR    | test_runner | Tests timed out after 60s
+2026-05-28 06:15:05 | WARNING  | tool_builder | ⚠️  vuln_detect_agent_orchestrator tests failed (loop 3/5) — Tests timed out after 60s
+2026-05-28 06:15:06 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-28 06:16:11 | DEBUG    | llm_client | LLM response from github_models (5749 chars)
+2026-05-28 06:16:11 | DEBUG    | test_runner | Installing: ['pyyaml']
+2026-05-28 06:17:22 | ERROR    | test_runner | Tests timed out after 60s
+2026-05-28 06:17:22 | WARNING  | tool_builder | ⚠️  vuln_detect_agent_orchestrator tests failed (loop 4/5) — Tests timed out after 60s
+2026-05-28 06:17:28 | DEBUG    | llm_client | LLM response from github_models (6448 chars)
+2026-05-28 06:17:28 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-05-28 06:18:39 | ERROR    | test_runner | Tests timed out after 60s
+2026-05-28 06:18:39 | WARNING  | tool_builder | ⚠️  vuln_detect_agent_orchestrator tests failed (loop 5/5) — Tests timed out after 60s
+2026-05-28 06:18:39 | ERROR    | tool_builder | ❌ vuln_detect_agent_orchestrator failed after 5 loops
+2026-05-28 06:18:39 | INFO     | tool_builder | Building tool: code_diff_exploit_simulator …
+2026-05-28 06:18:47 | DEBUG    | llm_client | LLM response from github_models (6383 chars)
+2026-05-28 06:18:47 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'rich==13.5.2']
+2026-05-28 06:18:49 | WARNING  | test_runner | Tests FAILED for code_diff_exploit_simulator:
+test_code_diff_exploit_simulator.py::test_predict_vulnerability FAILED   [ 66%]
+    assert response == "Potential vulnerability detected"
+E   assert "Error during...ribute 'text'" == 'Potential vu...lity detected'
+E     + Error during vulnerability prediction: 'dict' object has no attribute 'text'
+FAILED test_code_diff_exploit_simulator.py::test_predict_vulnerability - assert "Error during...ribute 'text'" == 'Potential vu...lity detected'
+  + Error during vulnerability prediction: 'dict' object has no attribute 'text'
+2026-05-28 06:18:49 | WARNING  | tool_builder | ⚠️  code_diff_exploit_simulator tests failed (loop 1/5) — test_code_diff_exploit_simulator.py::test_predict_vulnerability FAILED   [ 66%]
+    assert response == "Potential vulnerability detected"
+E   assert "Error during...ribute 'text'" == 'Potential vu...l
+2026-05-28 06:18:57 | DEBUG    | llm_client | LLM response from github_models (7275 chars)
+2026-05-28 06:18:57 | DEBUG    | test_runner | Installing: ['openai', 'rich']
+2026-05-28 06:18:58 | INFO     | test_runner | Tests PASSED for code_diff_exploit_simulator
+2026-05-28 06:18:58 | INFO     | tool_builder | ✅ code_diff_exploit_simulator passed tests on loop 2
+2026-05-28 06:18:58 | INFO     | tool_builder | Building tool: sandboxed_vuln_playground …
+2026-05-28 06:19:08 | DEBUG    | llm_client | LLM response from github_models (6452 chars)
+2026-05-28 06:19:08 | DEBUG    | test_runner | Installing: ['sandboxed_code_execution==1.0.0', 'openai==0.27.0', 'pytest==7.4.2']
+2026-05-28 06:19:08 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement sandboxed_code_execution==1.0.0 (from versions: none)
+ERROR: No matching distribution found for sandboxed_code_execution==1.0.0
+
+2026-05-28 06:19:09 | WARNING  | test_runner | Tests FAILED for sandboxed_vuln_playground:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_sandboxed_vuln_playground.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/sandboxed_vuln_playground/test_sandboxed_vuln_playground.py'.
+E   ModuleNotFoundError: No module named 'sandboxed_code_execution'
+ERROR test_sandboxed_vuln_playground.py
+2026-05-28 06:19:09 | WARNING  | tool_builder | ⚠️  sandboxed_vuln_playground tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_sandboxed_vuln_playground.py ______________
+ImportError while importing test modul
+2026-05-28 06:19:17 | DEBUG    | llm_client | LLM response from github_models (6132 chars)
+2026-05-28 06:19:17 | DEBUG    | test_runner | Installing: ['pytest']
+2026-05-28 06:19:18 | WARNING  | test_runner | Tests FAILED for sandboxed_vuln_playground:
+test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_no_llm FAILED [ 33%]
+test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_with_llm FAILED [ 66%]
+    raise FileNotFoundError(f"Script file not found: {script_path}")
+E   FileNotFoundError: Script file not found: dummy_script.py
+    raise FileNotFoundError(f"Script file not found: {script_path}")
+E   FileNotFoundError: Script file not found: dummy_script.py
+FAILED test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_no_llm - FileNotFoundError: Script file not found: dummy_script.py
+FAILED test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_with_llm - FileNotFoundError: Script file not found: dummy_script.py
+2026-05-28 06:19:18 | WARNING  | tool_builder | ⚠️  sandboxed_vuln_playground tests failed (loop 2/5) — test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_no_llm FAILED [ 33%]
+test_sandboxed_vuln_playground.py::test_run_script_in_sandbox_with_llm FAILED [ 66%]
+    raise FileNotFoundError(f"Sc
+2026-05-28 06:19:26 | DEBUG    | llm_client | LLM response from github_models (6115 chars)
+2026-05-28 06:19:26 | INFO     | test_runner | Tests PASSED for sandboxed_vuln_playground
+2026-05-28 06:19:26 | INFO     | tool_builder | ✅ sandboxed_vuln_playground passed tests on loop 3
+2026-05-28 06:19:26 | INFO     | tool_builder | Building tool: persistent_agent_memory …
+2026-05-28 06:19:35 | DEBUG    | llm_client | LLM response from github_models (6773 chars)
+2026-05-28 06:19:35 | DEBUG    | test_runner | Installing: ['pydantic==1.10.2', 'redis==4.5.5']
+2026-05-28 06:19:36 | INFO     | test_runner | Tests PASSED for persistent_agent_memory
+2026-05-28 06:19:36 | INFO     | tool_builder | ✅ persistent_agent_memory passed tests on loop 1
+2026-05-28 06:19:36 | INFO     | tool_builder | Building tool: agent_session_replayer …
+2026-05-28 06:19:46 | DEBUG    | llm_client | LLM response from github_models (7499 chars)
+2026-05-28 06:19:46 | DEBUG    | test_runner | Installing: ['pydantic==1.10.2', 'pytest==7.4.0']
+2026-05-28 06:19:47 | WARNING  | test_runner | Tests FAILED for agent_session_replayer:
+test_agent_session_replayer.py::test_record_session FAILED               [ 33%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 66%]
+test_agent_session_replayer.py::test_analyze_session FAILED              [100%]
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_record_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_analyze_session - sqlite3.OperationalError: no such table: sessions
+2026-05-28 06:19:47 | WARNING  | tool_builder | ⚠️  agent_session_replayer tests failed (loop 1/5) — test_agent_session_replayer.py::test_record_session FAILED               [ 33%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 66%]
+test_agent_session_replayer.py::test_ana
+2026-05-28 06:19:56 | DEBUG    | llm_client | LLM response from github_models (8482 chars)
+2026-05-28 06:19:56 | DEBUG    | test_runner | Installing: ['pydantic']
+2026-05-28 06:19:57 | WARNING  | test_runner | Tests FAILED for agent_session_replayer:
+test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_analyze_session FAILED              [ 60%]
+test_agent_session_replayer.py::test_replay_session_not_found FAILED     [ 80%]
+test_agent_session_replayer.py::test_record_invalid_interactions FAILED  [100%]
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_agent_session_replayer.py::test_record_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_analyze_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session_not_found - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_record_invalid_interactions - NameError: name 'ValidationError' is not defined
+2026-05-28 06:19:57 | WARNING  | tool_builder | ⚠️  agent_session_replayer tests failed (loop 2/5) — test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_ana
+2026-05-28 06:20:07 | DEBUG    | llm_client | LLM response from github_models (8833 chars)
+2026-05-28 06:20:07 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport sqlite3\nimport json\nfrom pydantic import BaseModel, ValidationError\n\nclass SessionLog(BaseModel):\n    session_id: str\n    interactions: list\n\nclass AgentSessionReplayer:\n    def __init__(self, backend: str, db_path: str):\n        if backend != 'sqlite':
+Expecting property name enclosed in double quotes: line 6 column 1 (char 8820)
+2026-05-28 06:20:07 | DEBUG    | test_runner | Installing: ['pydantic']
+2026-05-28 06:20:07 | WARNING  | test_runner | Tests FAILED for agent_session_replayer:
+test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_analyze_session FAILED              [ 60%]
+test_agent_session_replayer.py::test_replay_session_not_found FAILED     [ 80%]
+test_agent_session_replayer.py::test_record_invalid_interactions FAILED  [100%]
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_agent_session_replayer.py::test_record_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_analyze_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session_not_found - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_record_invalid_interactions - NameError: name 'ValidationError' is not defined
+2026-05-28 06:20:07 | WARNING  | tool_builder | ⚠️  agent_session_replayer tests failed (loop 3/5) — test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_ana
+2026-05-28 06:20:16 | DEBUG    | llm_client | LLM response from github_models (8422 chars)
+2026-05-28 06:20:16 | DEBUG    | test_runner | Installing: ['pydantic']
+2026-05-28 06:20:17 | WARNING  | test_runner | Tests FAILED for agent_session_replayer:
+test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_analyze_session FAILED              [ 60%]
+test_agent_session_replayer.py::test_replay_session_not_found FAILED     [ 80%]
+test_agent_session_replayer.py::test_record_invalid_interactions FAILED  [100%]
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_agent_session_replayer.py::test_record_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_analyze_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session_not_found - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_record_invalid_interactions - NameError: name 'ValidationError' is not defined
+2026-05-28 06:20:17 | WARNING  | tool_builder | ⚠️  agent_session_replayer tests failed (loop 4/5) — test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_ana
+2026-05-28 06:20:27 | DEBUG    | llm_client | LLM response from github_models (8599 chars)
+2026-05-28 06:20:27 | DEBUG    | test_runner | Installing: ['pydantic']
+2026-05-28 06:20:27 | WARNING  | test_runner | Tests FAILED for agent_session_replayer:
+test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_analyze_session FAILED              [ 60%]
+test_agent_session_replayer.py::test_replay_session_not_found FAILED     [ 80%]
+test_agent_session_replayer.py::test_record_invalid_interactions FAILED  [100%]
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+E   sqlite3.OperationalError: no such table: sessions
+    with pytest.raises(ValidationError):
+E   NameError: name 'ValidationError' is not defined
+FAILED test_agent_session_replayer.py::test_record_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_analyze_session - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_replay_session_not_found - sqlite3.OperationalError: no such table: sessions
+FAILED test_agent_session_replayer.py::test_record_invalid_interactions - NameError: name 'ValidationError' is not defined
+2026-05-28 06:20:27 | WARNING  | tool_builder | ⚠️  agent_session_replayer tests failed (loop 5/5) — test_agent_session_replayer.py::test_record_session FAILED               [ 20%]
+test_agent_session_replayer.py::test_replay_session FAILED               [ 40%]
+test_agent_session_replayer.py::test_ana
+2026-05-28 06:20:27 | ERROR    | tool_builder | ❌ agent_session_replayer failed after 5 loops
+2026-05-28 06:20:27 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-28 06:20:27 | INFO     | main |   Built 3/5 tools successfully
+2026-05-28 06:20:27 | INFO     | main |     ✅ code_diff_exploit_simulator (loops: 2)
+2026-05-28 06:20:27 | INFO     | main |     ✅ sandboxed_vuln_playground (loops: 3)
+2026-05-28 06:20:27 | INFO     | main |     ✅ persistent_agent_memory (loops: 1)
+2026-05-28 06:20:27 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-28 06:20:27 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-28 06:20:27 | INFO     | github_publisher |   Created zip: code_diff_exploit_simulator.zip (3057 bytes)
+2026-05-28 06:20:27 | INFO     | github_publisher | Saved code_diff_exploit_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/code_diff_exploit_simulator
+2026-05-28 06:20:27 | INFO     | github_publisher |   Created zip: sandboxed_vuln_playground.zip (2586 bytes)
+2026-05-28 06:20:27 | INFO     | github_publisher | Saved sandboxed_vuln_playground → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/sandboxed_vuln_playground
+2026-05-28 06:20:27 | INFO     | github_publisher |   Created zip: persistent_agent_memory.zip (2558 bytes)
+2026-05-28 06:20:27 | INFO     | github_publisher | Saved persistent_agent_memory → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/persistent_agent_memory
+2026-05-28 06:20:27 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-28 06:20:27 | INFO     | main |   Published 3 tools:
+2026-05-28 06:20:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/code_diff_exploit_simulator
+2026-05-28 06:20:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/sandboxed_vuln_playground
+2026-05-28 06:20:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-28/persistent_agent_memory
+2026-05-28 06:20:27 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-05-28 06:20:27 | INFO     | main | ✅ Generated tools_index.json with 273 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
