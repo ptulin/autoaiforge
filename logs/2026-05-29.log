@@ -1,0 +1,337 @@
+2026-05-29 06:10:20 | INFO     | main | ============================================================
+2026-05-29 06:10:20 | INFO     | main | AutoAIForge starting run: 2026-05-29T06:10:20.317082+00:00
+2026-05-29 06:10:20 | INFO     | main | ============================================================
+2026-05-29 06:10:20 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-29 06:10:20 | INFO     | youtube_scraper | YouTube client ready
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:20 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A20Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-27T06%3A10%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-29 06:10:21 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-05-29 06:10:21 | INFO     | main |   YouTube: 0 items
+2026-05-29 06:10:21 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-29 06:10:25 | INFO     | rss_scraper | HackerNews: 171 items
+2026-05-29 06:10:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-29 06:10:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-29 06:10:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-29 06:10:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-29 06:10:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-29 06:10:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-29 06:10:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-29 06:10:33 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-29 06:10:33 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-29 06:11:04 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-29 06:11:35 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-05-29 06:11:52 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-05-29 06:11:53 | INFO     | rss_scraper | ArXiv: 0 items
+2026-05-29 06:11:57 | INFO     | rss_scraper | Dev.to: 187 items
+2026-05-29 06:11:58 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-29 06:11:58 | INFO     | rss_scraper | Free sources total: 408 unique items
+2026-05-29 06:11:58 | INFO     | main |   RSS/API sources: 408 items
+2026-05-29 06:11:58 | INFO     | main |   Total scraped: 408 items
+2026-05-29 06:11:58 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-29 06:11:58 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-29 06:11:58 | INFO     | db_manager | Purged 1118 old news items
+2026-05-29 06:11:58 | INFO     | db_manager | Inserted 303/408 news items
+2026-05-29 06:11:59 | INFO     | main |   SQLite: 303 new items (total: 27989)
+2026-05-29 06:12:04 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-29 06:12:04 | INFO     | vector_store | VectorStore ready
+2026-05-29 06:12:24 | INFO     | vector_store | Indexed 1562 items into vector store
+2026-05-29 06:12:24 | INFO     | main |   Vector store: 1562 items indexed
+2026-05-29 06:12:24 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-29 06:12:24 | INFO     | topic_analyzer | Analyzing 1562 items for top 10 topics …
+2026-05-29 06:12:31 | DEBUG    | llm_client | LLM response from github_models (3947 chars)
+2026-05-29 06:12:31 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-29 06:12:31 | INFO     | main |   Found 10 topics:
+2026-05-29 06:12:31 | INFO     | main |      1. [9/10] Token-Efficient LLM Optimization
+2026-05-29 06:12:31 | INFO     | main |      2. [9/10] AI Coding Agents for IDEs
+2026-05-29 06:12:31 | INFO     | main |      3. [8/10] Persistent AI Memory Systems
+2026-05-29 06:12:31 | INFO     | main |      4. [8/10] Real-Time LLM Inference
+2026-05-29 06:12:31 | INFO     | main |      5. [8/10] On-Device AI Models
+2026-05-29 06:12:31 | INFO     | main |      6. [7/10] AI-Powered Code Analysis
+2026-05-29 06:12:31 | INFO     | main |      7. [7/10] AI-Driven UI Testing
+2026-05-29 06:12:31 | INFO     | main |      8. [7/10] AI-Enhanced Knowledge Retrieval
+2026-05-29 06:12:31 | INFO     | main |      9. [6/10] LLM-Based Ethical Decision-Making
+2026-05-29 06:12:31 | INFO     | main |     10. [6/10] Stress-Testing AI Agent Protocols
+2026-05-29 06:12:31 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-29 06:12:31 | INFO     | main |   Existing collection: 273 tools across 140 topics
+2026-05-29 06:12:31 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-29 06:12:37 | DEBUG    | llm_client | LLM response from github_models (3169 chars)
+2026-05-29 06:12:37 | INFO     | idea_generator | Generated 3 ideas for topic: Token-Efficient LLM Optimization
+2026-05-29 06:12:41 | DEBUG    | llm_client | LLM response from github_models (2368 chars)
+2026-05-29 06:12:41 | INFO     | idea_generator | Generated 2 ideas for topic: AI Coding Agents for IDEs
+2026-05-29 06:12:41 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-29 06:12:41 | INFO     | main |   Generated 5 tool ideas:
+2026-05-29 06:12:41 | INFO     | main |     • token_usage_profiler: This tool analyzes text inputs for tokenization patterns specific to popular lan
+2026-05-29 06:12:41 | INFO     | main |     • prompt_compactor: This tool takes verbose natural language prompts as input and uses AI-powered co
+2026-05-29 06:12:41 | INFO     | main |     • token_budget_planner: This CLI tool helps developers plan and visualize token budgets for multi-step L
+2026-05-29 06:12:41 | INFO     | main |     • ai_code_refactorer: This tool integrates an AI-powered code refactoring agent into popular IDEs. It 
+2026-05-29 06:12:41 | INFO     | main |     • smart_autocomplete_agent: This tool offers an intelligent autocomplete feature for IDEs that goes beyond b
+2026-05-29 06:12:41 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-29 06:12:41 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-29 06:12:50 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-29 06:12:50 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-29 06:12:50 | INFO     | tool_builder | Building tool: token_usage_profiler …
+2026-05-29 06:12:57 | DEBUG    | llm_client | LLM response from github_models (4916 chars)
+2026-05-29 06:12:57 | DEBUG    | test_runner | Installing: ['tiktoken==0.4.0']
+2026-05-29 06:12:58 | WARNING  | test_runner | Tests FAILED for token_usage_profiler:
+test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_valid_model - AssertionError: assert 1 == 0
+2026-05-29 06:12:58 | WARNING  | tool_builder | ⚠️  token_usage_profiler tests failed (loop 1/5) — test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_
+2026-05-29 06:13:04 | DEBUG    | llm_client | LLM response from github_models (4991 chars)
+2026-05-29 06:13:04 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-05-29 06:13:05 | WARNING  | test_runner | Tests FAILED for token_usage_profiler:
+test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_valid_model - AssertionError: assert 1 == 0
+2026-05-29 06:13:05 | WARNING  | tool_builder | ⚠️  token_usage_profiler tests failed (loop 2/5) — test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_
+2026-05-29 06:13:10 | DEBUG    | llm_client | LLM response from github_models (4990 chars)
+2026-05-29 06:13:10 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-05-29 06:13:11 | WARNING  | test_runner | Tests FAILED for token_usage_profiler:
+test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_valid_model - AssertionError: assert 1 == 0
+2026-05-29 06:13:11 | WARNING  | tool_builder | ⚠️  token_usage_profiler tests failed (loop 3/5) — test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 33%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_
+2026-05-29 06:13:17 | DEBUG    | llm_client | LLM response from github_models (5463 chars)
+2026-05-29 06:13:17 | DEBUG    | test_runner | Installing: ['tiktoken', 'pytest']
+2026-05-29 06:13:17 | WARNING  | test_runner | Tests FAILED for token_usage_profiler:
+test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 25%]
+test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion FAILED [100%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+    assert "Avoid using excessive whitespace or redundant words." in result["suggestions"]
+E   AssertionError: assert 'Avoid using excessive whitespace or redundant words.' in []
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_valid_model - AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion - AssertionError: assert 'Avoid using excessive whitespace or redundant words.' in []
+2026-05-29 06:13:17 | WARNING  | tool_builder | ⚠️  token_usage_profiler tests failed (loop 4/5) — test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 25%]
+test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion FAILED [100%]
+    assert len(result["sugge
+2026-05-29 06:13:24 | DEBUG    | llm_client | LLM response from github_models (5591 chars)
+2026-05-29 06:13:24 | DEBUG    | test_runner | Installing: ['tiktoken']
+2026-05-29 06:13:25 | WARNING  | test_runner | Tests FAILED for token_usage_profiler:
+test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 25%]
+test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion FAILED [100%]
+    assert len(result["suggestions"]) == 0
+E   AssertionError: assert 1 == 0
+    assert "Avoid using excessive whitespace or redundant words." in result["suggestions"]
+E   AssertionError: assert 'Avoid using excessive whitespace or redundant words.' in []
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_valid_model - AssertionError: assert 1 == 0
+FAILED test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion - AssertionError: assert 'Avoid using excessive whitespace or redundant words.' in []
+2026-05-29 06:13:25 | WARNING  | tool_builder | ⚠️  token_usage_profiler tests failed (loop 5/5) — test_token_usage_profiler.py::test_analyze_token_usage_valid_model FAILED [ 25%]
+test_token_usage_profiler.py::test_analyze_token_usage_whitespace_suggestion FAILED [100%]
+    assert len(result["sugge
+2026-05-29 06:13:25 | ERROR    | tool_builder | ❌ token_usage_profiler failed after 5 loops
+2026-05-29 06:13:25 | INFO     | tool_builder | Building tool: prompt_compactor …
+2026-05-29 06:13:34 | DEBUG    | llm_client | LLM response from github_models (5771 chars)
+2026-05-29 06:13:34 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'nltk==3.8.1', 'pytest==7.4.2']
+2026-05-29 06:13:43 | WARNING  | test_runner | Tests FAILED for prompt_compactor:
+test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == "This is a  It has mul  Each sente"
+E   AssertionError: assert 'This is a  I...ul Each sente' == 'This is a  I...l  Each sente'
+FAILED test_prompt_compactor.py::test_compact_prompt_handles_long_text - AssertionError: assert 'This is a  I...ul Each sente' == 'This is a  I...l  Each sente'
+2026-05-29 06:13:43 | WARNING  | tool_builder | ⚠️  prompt_compactor tests failed (loop 1/5) — test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == "This is a  It has mul  Each sente"
+E   AssertionError: assert 'This is a  I...ul Each sente' == 'T
+2026-05-29 06:13:48 | DEBUG    | llm_client | LLM response from github_models (5142 chars)
+2026-05-29 06:13:48 | DEBUG    | test_runner | Installing: ['transformers', 'nltk']
+2026-05-29 06:13:50 | WARNING  | test_runner | Tests FAILED for prompt_compactor:
+test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == "This is a very long text. It has multiple sentences. Each sentence should be summarized."
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+FAILED test_prompt_compactor.py::test_compact_prompt_handles_long_text - AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+2026-05-29 06:13:50 | WARNING  | tool_builder | ⚠️  prompt_compactor tests failed (loop 2/5) — test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == "This is a very long text. It has multiple sentences. Each sentence should be summarized."
+E   Asse
+2026-05-29 06:13:55 | DEBUG    | llm_client | LLM response from github_models (5395 chars)
+2026-05-29 06:13:55 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'pytest']
+2026-05-29 06:13:57 | WARNING  | test_runner | Tests FAILED for prompt_compactor:
+test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+FAILED test_prompt_compactor.py::test_compact_prompt_handles_long_text - AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+2026-05-29 06:13:57 | WARNING  | tool_builder | ⚠️  prompt_compactor tests failed (loop 3/5) — test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summ
+2026-05-29 06:13:57 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-05-29 06:15:03 | DEBUG    | llm_client | LLM response from github_models (5448 chars)
+2026-05-29 06:15:03 | DEBUG    | test_runner | Installing: ['transformers', 'nltk']
+2026-05-29 06:15:04 | WARNING  | test_runner | Tests FAILED for prompt_compactor:
+test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...be summarized'
+FAILED test_prompt_compactor.py::test_compact_prompt_handles_long_text - AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...be summarized'
+2026-05-29 06:15:04 | WARNING  | tool_builder | ⚠️  prompt_compactor tests failed (loop 4/5) — test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...be sum
+2026-05-29 06:15:10 | DEBUG    | llm_client | LLM response from github_models (5426 chars)
+2026-05-29 06:15:10 | DEBUG    | test_runner | Installing: ['transformers', 'nltk']
+2026-05-29 06:15:11 | WARNING  | test_runner | Tests FAILED for prompt_compactor:
+test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+FAILED test_prompt_compactor.py::test_compact_prompt_handles_long_text - AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summarized.'
+2026-05-29 06:15:11 | WARNING  | tool_builder | ⚠️  prompt_compactor tests failed (loop 5/5) — test_prompt_compactor.py::test_compact_prompt_handles_long_text FAILED   [100%]
+    assert result == expected_result
+E   AssertionError: assert 'This is a ve...e should be s' == 'This is a ve...e summ
+2026-05-29 06:15:11 | ERROR    | tool_builder | ❌ prompt_compactor failed after 5 loops
+2026-05-29 06:15:11 | INFO     | tool_builder | Building tool: token_budget_planner …
+2026-05-29 06:15:22 | DEBUG    | llm_client | LLM response from github_models (6928 chars)
+2026-05-29 06:15:22 | DEBUG    | test_runner | Installing: ['matplotlib==3.7.1', 'tiktoken==0.4.0']
+2026-05-29 06:15:28 | WARNING  | test_runner | Tests FAILED for token_budget_planner:
+test_token_budget_planner.py::test_estimate_tokens FAILED                [ 75%]
+test_token_budget_planner.py::test_calculate_token_usage FAILED          [100%]
+    assert tokens == 4
+E   assert 1 == 4
+    assert results[0]['tokens_used'] == 4
+E   assert 1 == 4
+FAILED test_token_budget_planner.py::test_estimate_tokens - assert 1 == 4
+FAILED test_token_budget_planner.py::test_calculate_token_usage - assert 1 == 4
+2026-05-29 06:15:28 | WARNING  | tool_builder | ⚠️  token_budget_planner tests failed (loop 1/5) — test_token_budget_planner.py::test_estimate_tokens FAILED                [ 75%]
+test_token_budget_planner.py::test_calculate_token_usage FAILED          [100%]
+    assert tokens == 4
+E   assert 1 == 4
+2026-05-29 06:15:39 | DEBUG    | llm_client | LLM response from github_models (7514 chars)
+2026-05-29 06:15:39 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-05-29 06:15:40 | INFO     | test_runner | Tests PASSED for token_budget_planner
+2026-05-29 06:15:40 | INFO     | tool_builder | ✅ token_budget_planner passed tests on loop 2
+2026-05-29 06:15:40 | INFO     | tool_builder | Building tool: ai_code_refactorer …
+2026-05-29 06:15:46 | DEBUG    | llm_client | LLM response from github_models (5023 chars)
+2026-05-29 06:15:46 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'python-dotenv==1.0.0']
+2026-05-29 06:15:48 | WARNING  | test_runner | Tests FAILED for ai_code_refactorer:
+test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 80%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test_file.py
+    raise FileNotFoundError(f"File not found: {file_path}")
+E   FileNotFoundError: File not found: test_file.py
+FAILED test_ai_code_refactorer.py::test_refactor_code_openai_error - FileNotFoundError: File not found: test_file.py
+FAILED test_ai_code_refactorer.py::test_refactor_code_success - FileNotFoundError: File not found: test_file.py
+2026-05-29 06:15:48 | WARNING  | tool_builder | ⚠️  ai_code_refactorer tests failed (loop 1/5) — test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 80%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+    raise FileNotFoundError(f"File not f
+2026-05-29 06:15:57 | DEBUG    | llm_client | LLM response from github_models (6002 chars)
+2026-05-29 06:15:57 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-29 06:15:58 | WARNING  | test_runner | Tests FAILED for ai_code_refactorer:
+test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/.env'
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/.env'
+FAILED test_ai_code_refactorer.py::test_refactor_code_openai_error - FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/.env'
+FAILED test_ai_code_refactorer.py::test_refactor_code_success - FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/.env'
+2026-05-29 06:15:58 | WARNING  | tool_builder | ⚠️  ai_code_refactorer tests failed (loop 2/5) — test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+E   FileNotFoundError: [Errno 2] No such
+2026-05-29 06:16:06 | DEBUG    | llm_client | LLM response from github_models (6237 chars)
+2026-05-29 06:16:06 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-29 06:16:07 | WARNING  | test_runner | Tests FAILED for ai_code_refactorer:
+test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+E   Exception: API Error
+E   AttributeError: 'dict' object has no attribute 'choices'
+FAILED test_ai_code_refactorer.py::test_refactor_code_openai_error - Exception: API Error
+FAILED test_ai_code_refactorer.py::test_refactor_code_success - AttributeError: 'dict' object has no attribute 'choices'
+2026-05-29 06:16:07 | WARNING  | tool_builder | ⚠️  ai_code_refactorer tests failed (loop 3/5) — test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+test_ai_code_refactorer.py::test_refactor_code_success FAILED            [100%]
+E   Exception: API Error
+E   AttributeEr
+2026-05-29 06:16:15 | DEBUG    | llm_client | LLM response from github_models (5886 chars)
+2026-05-29 06:16:15 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv']
+2026-05-29 06:16:17 | WARNING  | test_runner | Tests FAILED for ai_code_refactorer:
+test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+    with patch("ai_code_refactorer.openai.Completion.create", side_effect=openai.error.OpenAIError("API Error")):
+E   NameError: name 'openai' is not defined
+FAILED test_ai_code_refactorer.py::test_refactor_code_openai_error - NameError: name 'openai' is not defined
+2026-05-29 06:16:17 | WARNING  | tool_builder | ⚠️  ai_code_refactorer tests failed (loop 4/5) — test_ai_code_refactorer.py::test_refactor_code_openai_error FAILED       [ 83%]
+    with patch("ai_code_refactorer.openai.Completion.create", side_effect=openai.error.OpenAIError("API Error")):
+E   Na
+2026-05-29 06:16:29 | DEBUG    | llm_client | LLM response from github_models (6278 chars)
+2026-05-29 06:16:29 | DEBUG    | test_runner | Installing: ['openai', 'python-dotenv', 'pytest']
+2026-05-29 06:16:30 | INFO     | test_runner | Tests PASSED for ai_code_refactorer
+2026-05-29 06:16:30 | INFO     | tool_builder | ✅ ai_code_refactorer passed tests on loop 5
+2026-05-29 06:16:30 | INFO     | tool_builder | Building tool: smart_autocomplete_agent …
+2026-05-29 06:16:36 | DEBUG    | llm_client | LLM response from github_models (4521 chars)
+2026-05-29 06:16:36 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'tokenizers==0.13.3']
+2026-05-29 06:16:42 | WARNING  | test_runner | Tests FAILED for smart_autocomplete_agent:
+test_smart_autocomplete_agent.py::test_generate_suggestions_valid_input FAILED [ 33%]
+test_smart_autocomplete_agent.py::test_generate_suggestions_empty_input FAILED [ 66%]
+test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling FAILED [100%]
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+    raise RuntimeError(
+E   RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_valid_input - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_empty_input - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling - RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+2026-05-29 06:16:42 | WARNING  | tool_builder | ⚠️  smart_autocomplete_agent tests failed (loop 1/5) — test_smart_autocomplete_agent.py::test_generate_suggestions_valid_input FAILED [ 33%]
+test_smart_autocomplete_agent.py::test_generate_suggestions_empty_input FAILED [ 66%]
+test_smart_autocomplete_agen
+2026-05-29 06:16:47 | DEBUG    | llm_client | LLM response from github_models (4184 chars)
+2026-05-29 06:16:47 | WARNING  | test_runner | Tests FAILED for smart_autocomplete_agent:
+test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling FAILED [100%]
+E   Exception: Mocked error
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling - Exception: Mocked error
+2026-05-29 06:16:47 | WARNING  | tool_builder | ⚠️  smart_autocomplete_agent tests failed (loop 2/5) — test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling FAILED [100%]
+E   Exception: Mocked error
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling -
+2026-05-29 06:16:52 | DEBUG    | llm_client | LLM response from github_models (3660 chars)
+2026-05-29 06:16:52 | WARNING  | test_runner | Tests FAILED for smart_autocomplete_agent:
+test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling FAILED [100%]
+E   Exception: Mocked error
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling - Exception: Mocked error
+2026-05-29 06:16:52 | WARNING  | tool_builder | ⚠️  smart_autocomplete_agent tests failed (loop 3/5) — test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling FAILED [100%]
+E   Exception: Mocked error
+FAILED test_smart_autocomplete_agent.py::test_generate_suggestions_error_handling -
+2026-05-29 06:16:57 | DEBUG    | llm_client | LLM response from github_models (4033 chars)
+2026-05-29 06:16:57 | INFO     | test_runner | Tests PASSED for smart_autocomplete_agent
+2026-05-29 06:16:57 | INFO     | tool_builder | ✅ smart_autocomplete_agent passed tests on loop 4
+2026-05-29 06:16:57 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-05-29 06:16:57 | INFO     | main |   Built 3/5 tools successfully
+2026-05-29 06:16:57 | INFO     | main |     ✅ token_budget_planner (loops: 2)
+2026-05-29 06:16:57 | INFO     | main |     ✅ ai_code_refactorer (loops: 5)
+2026-05-29 06:16:57 | INFO     | main |     ✅ smart_autocomplete_agent (loops: 4)
+2026-05-29 06:16:57 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-29 06:16:57 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-29 06:16:57 | INFO     | github_publisher |   Created zip: token_budget_planner.zip (3233 bytes)
+2026-05-29 06:16:57 | INFO     | github_publisher | Saved token_budget_planner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/token_budget_planner
+2026-05-29 06:16:57 | INFO     | github_publisher |   Created zip: ai_code_refactorer.zip (2658 bytes)
+2026-05-29 06:16:57 | INFO     | github_publisher | Saved ai_code_refactorer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/ai_code_refactorer
+2026-05-29 06:16:57 | INFO     | github_publisher |   Created zip: smart_autocomplete_agent.zip (2004 bytes)
+2026-05-29 06:16:57 | INFO     | github_publisher | Saved smart_autocomplete_agent → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/smart_autocomplete_agent
+2026-05-29 06:16:57 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-05-29 06:16:57 | INFO     | main |   Published 3 tools:
+2026-05-29 06:16:57 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/token_budget_planner
+2026-05-29 06:16:57 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/ai_code_refactorer
+2026-05-29 06:16:57 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/smart_autocomplete_agent
+2026-05-29 06:16:57 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-05-29 06:16:57 | INFO     | main | ✅ Generated tools_index.json with 276 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

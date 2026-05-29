@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_refactorer",
+  "display_name": "AI Code Refactorer",
+  "description": "This tool integrates an AI-powered code refactoring agent into popular IDEs. It scans selected files, detects areas for improvement (e.g., redundant code, poor variable naming, or suboptimal logic), and provides refactored versions. Developers can quickly review and apply suggestions, improving productivity and code quality.",
+  "topic": "AI Coding Agents for IDEs",
+  "date": "2026-05-29",
+  "generated": "2026-05-29T06:10:20.317082+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/ai_code_refactorer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/ai_code_refactorer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/ai_code_refactorer/ai_code_refactorer.zip"
+}
