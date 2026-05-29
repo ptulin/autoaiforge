@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-05-28T06:20:27.836725+00:00",
-  "total_tools": 273,
+  "last_updated": "2026-05-29T06:16:57.446281+00:00",
+  "total_tools": 276,
   "tools": [
+    {
+      "tool_name": "ai_code_refactorer",
+      "display_name": "AI Code Refactorer",
+      "description": "This tool integrates an AI-powered code refactoring agent into popular IDEs. It scans selected files, detects areas for improvement (e.g., redundant code, poor variable naming, or suboptimal logic), and provides refactored versions. Developers can quickly review and apply suggestions, improving productivity and code quality.",
+      "topic": "AI Coding Agents for IDEs",
+      "date": "2026-05-29",
+      "generated": "2026-05-29T06:10:20.317082+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/ai_code_refactorer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/ai_code_refactorer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/ai_code_refactorer/ai_code_refactorer.zip"
+    },
+    {
+      "tool_name": "smart_autocomplete_agent",
+      "display_name": "Smart Autocomplete Agent",
+      "description": "This tool offers an intelligent autocomplete feature for IDEs that goes beyond basic keyword suggestions. By analyzing the current code context, it provides AI-driven suggestions for function calls, argument structures, and even snippets based on the developer's coding history and common patterns.",
+      "topic": "AI Coding Agents for IDEs",
+      "date": "2026-05-29",
+      "generated": "2026-05-29T06:10:20.317082+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/smart_autocomplete_agent",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/smart_autocomplete_agent/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/smart_autocomplete_agent/smart_autocomplete_agent.zip"
+    },
+    {
+      "tool_name": "token_budget_planner",
+      "display_name": "Token Budget Planner",
+      "description": "This CLI tool helps developers plan and visualize token budgets for multi-step LLM workflows. It calculates token usage for each step in a sequence of LLM calls and ensures the entire pipeline stays within token limits.",
+      "topic": "Token-Efficient LLM Optimization",
+      "date": "2026-05-29",
+      "generated": "2026-05-29T06:10:20.317082+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-29/token_budget_planner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/token_budget_planner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-29/token_budget_planner/token_budget_planner.zip"
+    },
     {
       "tool_name": "code_diff_exploit_simulator",
       "display_name": "Code Diff Exploit Simulator",
