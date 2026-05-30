@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_runtime_monitor",
+  "display_name": "LLM Runtime Monitor",
+  "description": "This library provides a simple way to monitor resource utilization (CPU, GPU, memory) and performance metrics while running open-source LLMs. It helps developers optimize their runtime environment and debug issues during model execution.",
+  "topic": "Open-Source LLM Frameworks",
+  "date": "2026-05-30",
+  "generated": "2026-05-30T05:46:21.378976+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_runtime_monitor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_runtime_monitor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_runtime_monitor/llm_runtime_monitor.zip"
+}
