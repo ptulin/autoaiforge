@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_config_manager",
+  "display_name": "LLM Config Manager",
+  "description": "A CLI tool to manage and validate configuration files for open-source LLM frameworks like Llama.cpp. It helps AI developers quickly generate, update, and validate configuration files required for fine-tuning or running models, ensuring compatibility with popular frameworks.",
+  "topic": "Open-Source LLM Frameworks",
+  "date": "2026-05-30",
+  "generated": "2026-05-30T05:46:21.378976+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_config_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_config_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_config_manager/llm_config_manager.zip"
+}

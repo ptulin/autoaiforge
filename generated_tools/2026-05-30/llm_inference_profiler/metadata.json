@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_inference_profiler",
+  "display_name": "LLM Inference Profiler",
+  "description": "This tool benchmarks and profiles LLM inference to provide detailed performance statistics like latency, throughput, and GPU utilization. It helps developers identify bottlenecks in model execution and optimize for faster inference. The tool supports different batch sizes and model configurations, making it ideal for iterative performance tuning.",
+  "topic": "Efficient LLM Inference Optimization",
+  "date": "2026-05-30",
+  "generated": "2026-05-30T05:46:21.378976+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_inference_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_inference_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-30/llm_inference_profiler/llm_inference_profiler.zip"
+}

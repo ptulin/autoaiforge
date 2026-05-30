@@ -1,0 +1,172 @@
+2026-05-30 05:46:21 | INFO     | main | ============================================================
+2026-05-30 05:46:21 | INFO     | main | AutoAIForge starting run: 2026-05-30T05:46:21.378976+00:00
+2026-05-30 05:46:21 | INFO     | main | ============================================================
+2026-05-30 05:46:21 | INFO     | main | [STEP 1/6] News Scraping
+2026-05-30 05:46:21 | INFO     | youtube_scraper | YouTube client ready
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-28T05%3A46%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-05-30 05:46:22 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-05-30 05:46:22 | INFO     | main |   YouTube: 0 items
+2026-05-30 05:46:22 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-05-30 05:46:27 | INFO     | rss_scraper | HackerNews: 153 items
+2026-05-30 05:46:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-05-30 05:46:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-05-30 05:46:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-05-30 05:46:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-05-30 05:46:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-05-30 05:46:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-05-30 05:46:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-05-30 05:46:34 | INFO     | rss_scraper | Reddit: 0 items
+2026-05-30 05:46:40 | INFO     | rss_scraper | ArXiv: 104 items
+2026-05-30 05:46:44 | INFO     | rss_scraper | Dev.to: 185 items
+2026-05-30 05:46:45 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-05-30 05:46:45 | INFO     | rss_scraper | Free sources total: 492 unique items
+2026-05-30 05:46:45 | INFO     | main |   RSS/API sources: 492 items
+2026-05-30 05:46:45 | INFO     | main |   Total scraped: 492 items
+2026-05-30 05:46:45 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-05-30 05:46:45 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-05-30 05:46:45 | INFO     | db_manager | Purged 1052 old news items
+2026-05-30 05:46:45 | INFO     | db_manager | Inserted 357/492 news items
+2026-05-30 05:46:45 | INFO     | main |   SQLite: 357 new items (total: 27294)
+2026-05-30 05:46:50 | INFO     | vector_store | Loading sentence-transformer model …
+2026-05-30 05:46:52 | INFO     | vector_store | VectorStore ready
+2026-05-30 05:47:00 | INFO     | vector_store | Indexed 923 items into vector store
+2026-05-30 05:47:00 | INFO     | main |   Vector store: 923 items indexed
+2026-05-30 05:47:00 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-05-30 05:47:00 | INFO     | topic_analyzer | Analyzing 923 items for top 10 topics …
+2026-05-30 05:47:07 | DEBUG    | llm_client | LLM response from github_models (4026 chars)
+2026-05-30 05:47:07 | INFO     | topic_analyzer | Identified 10 topics
+2026-05-30 05:47:07 | INFO     | main |   Found 10 topics:
+2026-05-30 05:47:07 | INFO     | main |      1. [10/10] Open-Source LLM Frameworks
+2026-05-30 05:47:07 | INFO     | main |      2. [9/10] Efficient LLM Inference Optimization
+2026-05-30 05:47:07 | INFO     | main |      3. [8/10] AI Vulnerability Testing
+2026-05-30 05:47:07 | INFO     | main |      4. [8/10] AI Context Optimization Tools
+2026-05-30 05:47:07 | INFO     | main |      5. [8/10] AI-Driven Code Review
+2026-05-30 05:47:07 | INFO     | main |      6. [7/10] Hybrid AI Deployment Models
+2026-05-30 05:47:07 | INFO     | main |      7. [7/10] AI Benchmarking and Evaluation
+2026-05-30 05:47:07 | INFO     | main |      8. [7/10] AI-Powered Visual Explanations
+2026-05-30 05:47:07 | INFO     | main |      9. [6/10] AI in Mathematical Problem Solving
+2026-05-30 05:47:07 | INFO     | main |     10. [6/10] Deterministic Behavior in LLMs
+2026-05-30 05:47:07 | INFO     | main | [STEP 4/6] Idea Generation
+2026-05-30 05:47:07 | INFO     | main |   Existing collection: 276 tools across 142 topics
+2026-05-30 05:47:07 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-05-30 05:47:12 | DEBUG    | llm_client | LLM response from github_models (3267 chars)
+2026-05-30 05:47:12 | INFO     | idea_generator | Generated 3 ideas for topic: Open-Source LLM Frameworks
+2026-05-30 05:47:16 | DEBUG    | llm_client | LLM response from github_models (2598 chars)
+2026-05-30 05:47:16 | INFO     | idea_generator | Generated 2 ideas for topic: Efficient LLM Inference Optimization
+2026-05-30 05:47:16 | INFO     | idea_generator | Total ideas generated: 5
+2026-05-30 05:47:16 | INFO     | main |   Generated 5 tool ideas:
+2026-05-30 05:47:16 | INFO     | main |     • llm_config_manager: A CLI tool to manage and validate configuration files for open-source LLM framew
+2026-05-30 05:47:16 | INFO     | main |     • llm_runtime_monitor: This library provides a simple way to monitor resource utilization (CPU, GPU, me
+2026-05-30 05:47:16 | INFO     | main |     • llm_model_switcher: A CLI tool to easily switch between different versions of open-source LLM models
+2026-05-30 05:47:16 | INFO     | main |     • llm_inference_profiler: This tool benchmarks and profiles LLM inference to provide detailed performance 
+2026-05-30 05:47:16 | INFO     | main |     • gpu_utilization_calculator: This tool calculates real-time GPU utilization during LLM inference and provides
+2026-05-30 05:47:16 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-05-30 05:47:16 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-05-30 05:47:25 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-05-30 05:47:25 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-05-30 05:47:25 | INFO     | tool_builder | Building tool: llm_config_manager …
+2026-05-30 05:47:35 | DEBUG    | llm_client | LLM response from github_models (7105 chars)
+2026-05-30 05:47:35 | DEBUG    | test_runner | Installing: ['PyYAML==6.0', 'jsonschema==4.19.0']
+2026-05-30 05:47:36 | INFO     | test_runner | Tests PASSED for llm_config_manager
+2026-05-30 05:47:36 | INFO     | tool_builder | ✅ llm_config_manager passed tests on loop 1
+2026-05-30 05:47:36 | INFO     | tool_builder | Building tool: llm_runtime_monitor …
+2026-05-30 05:47:46 | DEBUG    | llm_client | LLM response from github_models (5172 chars)
+2026-05-30 05:47:46 | DEBUG    | test_runner | Installing: ['psutil==5.9.5', 'matplotlib==3.7.2']
+2026-05-30 05:47:54 | INFO     | test_runner | Tests PASSED for llm_runtime_monitor
+2026-05-30 05:47:54 | INFO     | tool_builder | ✅ llm_runtime_monitor passed tests on loop 1
+2026-05-30 05:47:54 | INFO     | tool_builder | Building tool: llm_model_switcher …
+2026-05-30 05:48:02 | DEBUG    | llm_client | LLM response from github_models (5192 chars)
+2026-05-30 05:48:02 | WARNING  | test_runner | Tests FAILED for llm_model_switcher:
+test_llm_model_switcher.py::test_activate_model_symlink_error FAILED     [100%]
+    with pytest.raises(Exception):
+E   Failed: DID NOT RAISE <class 'Exception'>
+FAILED test_llm_model_switcher.py::test_activate_model_symlink_error - Failed: DID NOT RAISE <class 'Exception'>
+2026-05-30 05:48:02 | WARNING  | tool_builder | ⚠️  llm_model_switcher tests failed (loop 1/5) — test_llm_model_switcher.py::test_activate_model_symlink_error FAILED     [100%]
+    with pytest.raises(Exception):
+E   Failed: DID NOT RAISE <class 'Exception'>
+FAILED test_llm_model_switcher.py::test
+2026-05-30 05:48:08 | DEBUG    | llm_client | LLM response from github_models (5250 chars)
+2026-05-30 05:48:08 | INFO     | test_runner | Tests PASSED for llm_model_switcher
+2026-05-30 05:48:08 | INFO     | tool_builder | ✅ llm_model_switcher passed tests on loop 2
+2026-05-30 05:48:08 | INFO     | tool_builder | Building tool: llm_inference_profiler …
+2026-05-30 05:48:14 | DEBUG    | llm_client | LLM response from github_models (4289 chars)
+2026-05-30 05:48:14 | DEBUG    | test_runner | Installing: ['pytest', 'transformers', 'torch', 'pytest', 'psutil']
+2026-05-30 05:49:13 | WARNING  | test_runner | Tests FAILED for llm_inference_profiler:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_inference_profiler.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:357: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_llm_inference_profiler.py
+2026-05-30 05:49:13 | WARNING  | tool_builder | ⚠️  llm_inference_profiler tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_inference_profiler.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-05-30 05:49:21 | DEBUG    | llm_client | LLM response from github_models (6790 chars)
+2026-05-30 05:49:21 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pytest']
+2026-05-30 05:49:26 | WARNING  | test_runner | Tests FAILED for llm_inference_profiler:
+test_llm_inference_profiler.py::test_profile_inference FAILED            [100%]
+    assert report is not None
+E   assert None is not None
+Error during profiling: name 'time' is not defined
+FAILED test_llm_inference_profiler.py::test_profile_inference - assert None is not None
+2026-05-30 05:49:26 | WARNING  | tool_builder | ⚠️  llm_inference_profiler tests failed (loop 2/5) — test_llm_inference_profiler.py::test_profile_inference FAILED            [100%]
+    assert report is not None
+E   assert None is not None
+Error during profiling: name 'time' is not defined
+FAILED test
+2026-05-30 05:49:33 | DEBUG    | llm_client | LLM response from github_models (6721 chars)
+2026-05-30 05:49:33 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-05-30 05:49:38 | INFO     | test_runner | Tests PASSED for llm_inference_profiler
+2026-05-30 05:49:38 | INFO     | tool_builder | ✅ llm_inference_profiler passed tests on loop 3
+2026-05-30 05:49:38 | INFO     | tool_builder | Building tool: gpu_utilization_calculator …
+2026-05-30 05:49:50 | DEBUG    | llm_client | LLM response from github_models (7311 chars)
+2026-05-30 05:49:50 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'matplotlib==3.8.0', 'GPUtil==1.4.0', 'pytest==7.4.2']
+2026-05-30 05:50:33 | INFO     | test_runner | Tests PASSED for gpu_utilization_calculator
+2026-05-30 05:50:33 | INFO     | tool_builder | ✅ gpu_utilization_calculator passed tests on loop 1
+2026-05-30 05:50:33 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-05-30 05:50:33 | INFO     | main |   Built 5/5 tools successfully
+2026-05-30 05:50:33 | INFO     | main |     ✅ llm_config_manager (loops: 1)
+2026-05-30 05:50:33 | INFO     | main |     ✅ llm_runtime_monitor (loops: 1)
+2026-05-30 05:50:33 | INFO     | main |     ✅ llm_model_switcher (loops: 2)
+2026-05-30 05:50:33 | INFO     | main |     ✅ llm_inference_profiler (loops: 3)
+2026-05-30 05:50:33 | INFO     | main |     ✅ gpu_utilization_calculator (loops: 1)
+2026-05-30 05:50:33 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-05-30 05:50:33 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-05-30 05:50:33 | INFO     | github_publisher |   Created zip: llm_config_manager.zip (2587 bytes)
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved llm_config_manager → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_config_manager
+2026-05-30 05:50:33 | INFO     | github_publisher |   Created zip: llm_runtime_monitor.zip (2413 bytes)
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved llm_runtime_monitor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_runtime_monitor
+2026-05-30 05:50:33 | INFO     | github_publisher |   Created zip: llm_model_switcher.zip (2344 bytes)
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved llm_model_switcher → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_model_switcher
+2026-05-30 05:50:33 | INFO     | github_publisher |   Created zip: llm_inference_profiler.zip (2839 bytes)
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved llm_inference_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_inference_profiler
+2026-05-30 05:50:33 | INFO     | github_publisher |   Created zip: gpu_utilization_calculator.zip (3149 bytes)
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved gpu_utilization_calculator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/gpu_utilization_calculator
+2026-05-30 05:50:33 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-05-30 05:50:33 | INFO     | main |   Published 5 tools:
+2026-05-30 05:50:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_config_manager
+2026-05-30 05:50:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_runtime_monitor
+2026-05-30 05:50:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_model_switcher
+2026-05-30 05:50:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/llm_inference_profiler
+2026-05-30 05:50:33 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-30/gpu_utilization_calculator
+2026-05-30 05:50:33 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-05-30 05:50:33 | INFO     | main | ✅ Generated tools_index.json with 281 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
