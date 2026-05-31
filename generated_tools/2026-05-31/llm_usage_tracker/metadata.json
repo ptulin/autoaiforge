@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_usage_tracker",
+  "display_name": "LLM Usage Tracker",
+  "description": "This Python library allows developers to track LLM API usage at a granular level by logging request metadata (e.g., token usage, timestamps, user IDs) to a local SQLite database or a remote PostgreSQL database. It generates detailed usage reports to help identify trends and optimize costs, making it ideal for teams working with shared LLM access.",
+  "topic": "LLM Cost Management Tools",
+  "date": "2026-05-31",
+  "generated": "2026-05-31T06:15:00.372696+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-31/llm_usage_tracker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-31/llm_usage_tracker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-31/llm_usage_tracker/llm_usage_tracker.zip"
+}
