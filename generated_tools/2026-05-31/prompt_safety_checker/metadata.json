@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_safety_checker",
+  "display_name": "Prompt Safety Checker",
+  "description": "Prompt Safety Checker is a Python CLI tool designed to analyze AI model prompts for potentially harmful or inappropriate content before the input is fed to the model. It helps developers ensure that their systems are not generating harmful content due to problematic prompts.",
+  "topic": "AI-Generated Content Moderation",
+  "date": "2026-05-31",
+  "generated": "2026-05-31T06:15:00.372696+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-31/prompt_safety_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-31/prompt_safety_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-31/prompt_safety_checker/prompt_safety_checker.zip"
+}
