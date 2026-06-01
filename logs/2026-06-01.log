@@ -288,3 +288,21 @@ test_ai_audio_authenticator.py::test_generate_spectrogram FAILED         [ 66%]
 2026-06-01 06:57:11 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-01/ai_audio_authenticator
 2026-06-01 06:57:11 | INFO     | main |   Deduplicated 8 older tool version(s) from index
 2026-06-01 06:57:11 | INFO     | main | ✅ Generated tools_index.json with 286 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-01 06:57:15 | INFO     | main | Database committed and pushed to repo
+2026-06-01 06:57:15 | INFO     | main | 
+2026-06-01 06:57:15 | INFO     | main | ============================================================
+2026-06-01 06:57:15 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-01 06:57:15 | INFO     | main | ============================================================
+2026-06-01 06:57:15 | INFO     | main |   Date:            2026-06-01
+2026-06-01 06:57:15 | INFO     | main |   Items scraped:   391
+2026-06-01 06:57:15 | INFO     | main |   Items stored:    257
+2026-06-01 06:57:15 | INFO     | main |   Topics found:    10
+2026-06-01 06:57:15 | INFO     | main |   Ideas generated: 5
+2026-06-01 06:57:15 | INFO     | main |   Tools built:     2
+2026-06-01 06:57:15 | INFO     | main |   Tools published: 2
+2026-06-01 06:57:15 | INFO     | main |   Elapsed:         341.8s
+2026-06-01 06:57:15 | INFO     | main |   Published URLs:
+2026-06-01 06:57:15 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-01/prompt_injection_scanner
+2026-06-01 06:57:15 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-01/ai_audio_authenticator
+2026-06-01 06:57:15 | INFO     | main | ============================================================
+2026-06-01 06:57:18 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
