@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_injection_scanner",
+  "display_name": "Prompt Injection Scanner",
+  "description": "A CLI tool that scans text inputs and logs for potential prompt injection patterns using heuristic and regex-based detection techniques. AI developers can use this tool to identify vulnerabilities in user-provided prompts before they are passed to an AI model.",
+  "topic": "Prompt Injection Detection",
+  "date": "2026-06-01",
+  "generated": "2026-06-01T06:51:29.849355+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-01/prompt_injection_scanner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-01/prompt_injection_scanner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-01/prompt_injection_scanner/prompt_injection_scanner.zip"
+}
