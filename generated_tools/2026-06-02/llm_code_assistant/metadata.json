@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_code_assistant",
+  "display_name": "LLM Code Assistant",
+  "description": "A CLI tool that integrates with OpenAI's API to provide inline code suggestions, refactorings, and debugging hints based on user queries. This tool helps developers streamline their coding process by leveraging LLMs to automate routine tasks and enhance productivity.",
+  "topic": "LLM-Powered Code Generation",
+  "date": "2026-06-02",
+  "generated": "2026-06-02T06:41:07.753107+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_code_assistant",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_code_assistant/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_code_assistant/llm_code_assistant.zip"
+}

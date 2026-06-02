@@ -1,0 +1,13 @@
+{
+  "tool_name": "smart_debugger",
+  "display_name": "Smart Debugger",
+  "description": "A Python library that analyzes Python traceback errors and provides suggestions to fix the issue using LLM-based reasoning. This tool is useful for developers who want smarter debugging capabilities directly in their development environment.",
+  "topic": "LLM-Powered Code Generation",
+  "date": "2026-06-02",
+  "generated": "2026-06-02T06:41:07.753107+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/smart_debugger",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/smart_debugger/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/smart_debugger/smart_debugger.zip"
+}

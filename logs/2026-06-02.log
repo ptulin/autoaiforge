@@ -1,0 +1,264 @@
+2026-06-02 06:41:07 | INFO     | main | ============================================================
+2026-06-02 06:41:07 | INFO     | main | AutoAIForge starting run: 2026-06-02T06:41:07.753107+00:00
+2026-06-02 06:41:07 | INFO     | main | ============================================================
+2026-06-02 06:41:07 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-02 06:41:07 | INFO     | youtube_scraper | YouTube client ready
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A07Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:08 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:09 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A08Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:09 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-05-31T06%3A41%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-02 06:41:09 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-02 06:41:09 | INFO     | main |   YouTube: 0 items
+2026-06-02 06:41:09 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-02 06:41:13 | INFO     | rss_scraper | HackerNews: 156 items
+2026-06-02 06:41:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-02 06:41:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-02 06:41:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-02 06:41:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-02 06:41:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-02 06:41:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-02 06:41:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-02 06:41:21 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-02 06:41:27 | INFO     | rss_scraper | ArXiv: 106 items
+2026-06-02 06:41:31 | INFO     | rss_scraper | Dev.to: 187 items
+2026-06-02 06:41:33 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-02 06:41:33 | INFO     | rss_scraper | Free sources total: 499 unique items
+2026-06-02 06:41:33 | INFO     | main |   RSS/API sources: 499 items
+2026-06-02 06:41:33 | INFO     | main |   Total scraped: 499 items
+2026-06-02 06:41:33 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-02 06:41:33 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-02 06:41:33 | INFO     | db_manager | Purged 864 old news items
+2026-06-02 06:41:33 | INFO     | db_manager | Inserted 362/499 news items
+2026-06-02 06:41:33 | INFO     | main |   SQLite: 362 new items (total: 26119)
+2026-06-02 06:41:38 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-02 06:41:40 | INFO     | vector_store | VectorStore ready
+2026-06-02 06:41:45 | INFO     | vector_store | Indexed 619 items into vector store
+2026-06-02 06:41:45 | INFO     | main |   Vector store: 619 items indexed
+2026-06-02 06:41:45 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-02 06:41:45 | INFO     | topic_analyzer | Analyzing 619 items for top 10 topics …
+2026-06-02 06:41:52 | DEBUG    | llm_client | LLM response from github_models (3987 chars)
+2026-06-02 06:41:52 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-02 06:41:52 | INFO     | main |   Found 10 topics:
+2026-06-02 06:41:52 | INFO     | main |      1. [9/10] LLM-Powered Code Generation
+2026-06-02 06:41:52 | INFO     | main |      2. [8/10] AI-Powered Test Case Generation
+2026-06-02 06:41:52 | INFO     | main |      3. [8/10] AI Agent Infrastructure Tools
+2026-06-02 06:41:52 | INFO     | main |      4. [8/10] AI-Driven Security Vulnerability Detection
+2026-06-02 06:41:52 | INFO     | main |      5. [8/10] Open-Source LLM Compression
+2026-06-02 06:41:52 | INFO     | main |      6. [7/10] AI Model Quantization Techniques
+2026-06-02 06:41:52 | INFO     | main |      7. [7/10] Semantic Routing for LLM Efficiency
+2026-06-02 06:41:52 | INFO     | main |      8. [7/10] AI Governance and Policy Tools
+2026-06-02 06:41:52 | INFO     | main |      9. [6/10] LLM Output Filtering
+2026-06-02 06:41:52 | INFO     | main |     10. [6/10] Voice-Controlled Coding Agents
+2026-06-02 06:41:52 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-02 06:41:52 | INFO     | main |   Existing collection: 286 tools across 148 topics
+2026-06-02 06:41:52 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-02 06:41:57 | DEBUG    | llm_client | LLM response from github_models (3295 chars)
+2026-06-02 06:41:57 | INFO     | idea_generator | Generated 3 ideas for topic: LLM-Powered Code Generation
+2026-06-02 06:42:01 | DEBUG    | llm_client | LLM response from github_models (2505 chars)
+2026-06-02 06:42:01 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered Test Case Generation
+2026-06-02 06:42:01 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_test_case_generator' — name already in collection
+2026-06-02 06:42:10 | DEBUG    | llm_client | LLM response from github_models (1290 chars)
+2026-06-02 06:42:10 | INFO     | idea_generator | Generated 1 ideas for topic: AI Agent Infrastructure Tools
+2026-06-02 06:42:10 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-02 06:42:10 | INFO     | main |   Generated 5 tool ideas:
+2026-06-02 06:42:10 | INFO     | main |     • llm_code_assistant: A CLI tool that integrates with OpenAI's API to provide inline code suggestions,
+2026-06-02 06:42:10 | INFO     | main |     • smart_debugger: A Python library that analyzes Python traceback errors and provides suggestions 
+2026-06-02 06:42:10 | INFO     | main |     • code_review_bot: An automation tool that scans Python code files and provides LLM-powered reviews
+2026-06-02 06:42:10 | INFO     | main |     • llm_ci_test_automation: A Python library designed to integrate with CI/CD pipelines, enabling automatic 
+2026-06-02 06:42:10 | INFO     | main |     • agent_monitor_cli: This tool provides a framework for monitoring the health and performance of AI a
+2026-06-02 06:42:10 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-02 06:42:10 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-02 06:42:18 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-02 06:42:18 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-02 06:42:18 | INFO     | tool_builder | Building tool: llm_code_assistant …
+2026-06-02 06:42:25 | DEBUG    | llm_client | LLM response from github_models (5389 chars)
+2026-06-02 06:42:25 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'click==8.1.3']
+2026-06-02 06:42:28 | WARNING  | test_runner | Tests FAILED for llm_code_assistant:
+test_llm_code_assistant.py::test_query FAILED                            [ 33%]
+test_llm_code_assistant.py::test_file FAILED                             [ 66%]
+test_llm_code_assistant.py::test_output_to_file FAILED                   [100%]
+E   AttributeError: module 'click' has no attribute 'testing'
+E   AttributeError: module 'click' has no attribute 'testing'
+E   AttributeError: module 'click' has no attribute 'testing'
+FAILED test_llm_code_assistant.py::test_query - AttributeError: module 'click' has no attribute 'testing'
+FAILED test_llm_code_assistant.py::test_file - AttributeError: module 'click' has no attribute 'testing'
+FAILED test_llm_code_assistant.py::test_output_to_file - AttributeError: module 'click' has no attribute 'testing'
+2026-06-02 06:42:28 | WARNING  | tool_builder | ⚠️  llm_code_assistant tests failed (loop 1/5) — test_llm_code_assistant.py::test_query FAILED                            [ 33%]
+test_llm_code_assistant.py::test_file FAILED                             [ 66%]
+test_llm_code_assistant.py::test_output_
+2026-06-02 06:42:35 | DEBUG    | llm_client | LLM response from github_models (5728 chars)
+2026-06-02 06:42:35 | DEBUG    | test_runner | Installing: ['openai']
+2026-06-02 06:42:36 | WARNING  | test_runner | Tests FAILED for llm_code_assistant:
+test_llm_code_assistant.py::test_query FAILED                            [ 33%]
+test_llm_code_assistant.py::test_file FAILED                             [ 66%]
+test_llm_code_assistant.py::test_output_to_file FAILED                   [100%]
+    assert result == 'def sort_array(arr):\n    return sorted(arr)'
+E   AssertionError: assert 'Error: OPENA...able not set.' == 'def sort_arr...n sorted(arr)'
+E     + Error: OPENAI_API_KEY environment variable not set.
+Error: OPENAI_API_KEY environment variable not set.
+    assert result == 'def optimized_function():\n    pass'
+E   AssertionError: assert 'Error: OPENA...able not set.' == 'def optimize...():\n    pass'
+E     + Error: OPENAI_API_KEY environment variable not set.
+Error: OPENAI_API_KEY environment variable not set.
+    assert result == 'def sort_array(arr):\n    return sorted(arr)'
+E   AssertionError: assert 'Error: OPENA...able not set.' == 'def sort_arr...n sorted(arr)'
+E     + Error: OPENAI_API_KEY environment variable not set.
+Error: OPENAI_API_KEY environment variable not set.
+FAILED test_llm_code_assistant.py::test_query - AssertionError: assert 'Error: OPENA...able not set.' == 'def sort_arr...n sorted(arr)'
+  + Error: OPENAI_API_KEY environment variable not set.
+FAILED test_llm_code_assistant.py::test_file - AssertionError: assert 'Error: OPENA...able not set.' == 'def optimize...():\n    pass'
+  + Error: OPENAI_API_KEY environment variable not set.
+FAILED test_llm_code_assistant.py::test_output_to_file - AssertionError: assert 'Error: OPENA...able not set.' == 'def sort_arr...n sorted(arr)'
+  + Error: OPENAI_API_KEY environment variable not set.
+2026-06-02 06:42:36 | WARNING  | tool_builder | ⚠️  llm_code_assistant tests failed (loop 2/5) — test_llm_code_assistant.py::test_query FAILED                            [ 33%]
+test_llm_code_assistant.py::test_file FAILED                             [ 66%]
+test_llm_code_assistant.py::test_output_
+2026-06-02 06:42:42 | DEBUG    | llm_client | LLM response from github_models (5994 chars)
+2026-06-02 06:42:42 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-06-02 06:42:43 | INFO     | test_runner | Tests PASSED for llm_code_assistant
+2026-06-02 06:42:43 | INFO     | tool_builder | ✅ llm_code_assistant passed tests on loop 3
+2026-06-02 06:42:43 | INFO     | tool_builder | Building tool: smart_debugger …
+2026-06-02 06:42:50 | DEBUG    | llm_client | LLM response from github_models (5305 chars)
+2026-06-02 06:42:50 | DEBUG    | test_runner | Installing: ['openai==0.27.8']
+2026-06-02 06:42:52 | WARNING  | test_runner | Tests FAILED for smart_debugger:
+test_smart_debugger.py::test_debug_error_valid_traceback FAILED          [ 66%]
+    assert "division by zero" in result["suggestions"]
+E   AssertionError: assert 'division by zero' in 'This error occurs because you are trying to divide by zero. To fix this, ensure the denominator is not zero.'
+FAILED test_smart_debugger.py::test_debug_error_valid_traceback - AssertionError: assert 'division by zero' in 'This error occurs because you are trying to divide by zero. To fix this, ensure the denominator is not zero.'
+2026-06-02 06:42:52 | WARNING  | tool_builder | ⚠️  smart_debugger tests failed (loop 1/5) — test_smart_debugger.py::test_debug_error_valid_traceback FAILED          [ 66%]
+    assert "division by zero" in result["suggestions"]
+E   AssertionError: assert 'division by zero' in 'This error occu
+2026-06-02 06:42:52 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-02 06:43:56 | DEBUG    | llm_client | LLM response from github_models (4484 chars)
+2026-06-02 06:43:56 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-06-02 06:43:57 | WARNING  | test_runner | Tests FAILED for smart_debugger:
+test_smart_debugger.py::test_debug_error_valid_traceback FAILED          [ 66%]
+    assert "division by zero" in result["suggestions"].lower()
+E   AssertionError: assert 'division by zero' in 'this error occurs because you are trying to divide by zero. to fix this, ensure the denominator is not zero.'
+FAILED test_smart_debugger.py::test_debug_error_valid_traceback - AssertionError: assert 'division by zero' in 'this error occurs because you are trying to divide by zero. to fix this, ensure the denominator is not zero.'
+2026-06-02 06:43:57 | WARNING  | tool_builder | ⚠️  smart_debugger tests failed (loop 2/5) — test_smart_debugger.py::test_debug_error_valid_traceback FAILED          [ 66%]
+    assert "division by zero" in result["suggestions"].lower()
+E   AssertionError: assert 'division by zero' in 'this er
+2026-06-02 06:44:02 | DEBUG    | llm_client | LLM response from github_models (4415 chars)
+2026-06-02 06:44:02 | DEBUG    | test_runner | Installing: ['openai', 'pytest']
+2026-06-02 06:44:03 | INFO     | test_runner | Tests PASSED for smart_debugger
+2026-06-02 06:44:03 | INFO     | tool_builder | ✅ smart_debugger passed tests on loop 3
+2026-06-02 06:44:03 | INFO     | tool_builder | Building tool: code_review_bot …
+2026-06-02 06:44:14 | DEBUG    | llm_client | LLM response from github_models (6586 chars)
+2026-06-02 06:44:14 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'flake8==6.1.0', 'pytest==7.4.2']
+2026-06-02 06:44:16 | WARNING  | test_runner | Tests FAILED for code_review_bot:
+test_code_review_bot.py::test_process_file_read_error FAILED             [ 50%]
+test_code_review_bot.py::test_process_file_success FAILED                [ 75%]
+    assert "Error reading file" in result
+E   assert 'Error reading file' in "Error: File 'test_file.py' does not exist."
+    assert "Flake8 Issues:" in result
+E   assert 'Flake8 Issues:' in "Error: File 'test_file.py' does not exist."
+FAILED test_code_review_bot.py::test_process_file_read_error - assert 'Error reading file' in "Error: File 'test_file.py' does not exist."
+FAILED test_code_review_bot.py::test_process_file_success - assert 'Flake8 Issues:' in "Error: File 'test_file.py' does not exist."
+2026-06-02 06:44:16 | WARNING  | tool_builder | ⚠️  code_review_bot tests failed (loop 1/5) — test_code_review_bot.py::test_process_file_read_error FAILED             [ 50%]
+test_code_review_bot.py::test_process_file_success FAILED                [ 75%]
+    assert "Error reading file" in resul
+2026-06-02 06:44:24 | DEBUG    | llm_client | LLM response from github_models (6876 chars)
+2026-06-02 06:44:24 | DEBUG    | test_runner | Installing: ['openai', 'flake8']
+2026-06-02 06:44:25 | INFO     | test_runner | Tests PASSED for code_review_bot
+2026-06-02 06:44:25 | INFO     | tool_builder | ✅ code_review_bot passed tests on loop 2
+2026-06-02 06:44:25 | INFO     | tool_builder | Building tool: llm_ci_test_automation …
+2026-06-02 06:44:40 | DEBUG    | llm_client | LLM response from github_models (8456 chars)
+2026-06-02 06:44:40 | DEBUG    | test_runner | Installing: ['openai==0.27.8', 'requests==2.31.0', 'pytest==7.4.2']
+2026-06-02 06:44:41 | INFO     | test_runner | Tests PASSED for llm_ci_test_automation
+2026-06-02 06:44:41 | INFO     | tool_builder | ✅ llm_ci_test_automation passed tests on loop 1
+2026-06-02 06:44:41 | INFO     | tool_builder | Building tool: agent_monitor_cli …
+2026-06-02 06:44:52 | DEBUG    | llm_client | LLM response from github_models (7016 chars)
+2026-06-02 06:44:52 | DEBUG    | test_runner | Installing: ['docker==6.0.1', 'kubernetes==26.1.0', 'psutil==5.9.7', 'requests==2.31.0', 'pytest==7.4.2']
+2026-06-02 06:45:56 | WARNING  | test_runner | Tests FAILED for agent_monitor_cli:
+test_agent_monitor_cli.py::test_monitor_agents FAILED                    [ 33%]
+test_agent_monitor_cli.py::test_send_alert_email FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:908: in assert_called
+    raise AssertionError(msg)
+E   AssertionError: Expected 'sendmail' to have been called.
+    mock_smtp.return_value.sendmail.assert_called()
+E   AssertionError: Expected 'sendmail' to have been called.
+FAILED test_agent_monitor_cli.py::test_monitor_agents - Failed: Timeout (>60.0s) from pytest-timeout.
+FAILED test_agent_monitor_cli.py::test_send_alert_email - AssertionError: Expected 'sendmail' to have been called.
+2026-06-02 06:45:56 | WARNING  | tool_builder | ⚠️  agent_monitor_cli tests failed (loop 1/5) — test_agent_monitor_cli.py::test_monitor_agents FAILED                    [ 33%]
+test_agent_monitor_cli.py::test_send_alert_email FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-06-02 06:46:03 | DEBUG    | llm_client | LLM response from github_models (6660 chars)
+2026-06-02 06:46:03 | DEBUG    | test_runner | Installing: ['docker', 'kubernetes', 'psutil', 'requests']
+2026-06-02 06:47:13 | ERROR    | test_runner | Tests timed out after 60s
+2026-06-02 06:47:13 | WARNING  | tool_builder | ⚠️  agent_monitor_cli tests failed (loop 2/5) — Tests timed out after 60s
+2026-06-02 06:47:20 | DEBUG    | llm_client | LLM response from github_models (6683 chars)
+2026-06-02 06:47:20 | DEBUG    | test_runner | Installing: ['psutil', 'docker', 'kubernetes', 'requests']
+2026-06-02 06:48:31 | ERROR    | test_runner | Tests timed out after 60s
+2026-06-02 06:48:31 | WARNING  | tool_builder | ⚠️  agent_monitor_cli tests failed (loop 3/5) — Tests timed out after 60s
+2026-06-02 06:48:37 | DEBUG    | llm_client | LLM response from github_models (6548 chars)
+2026-06-02 06:48:37 | DEBUG    | test_runner | Installing: ['docker', 'kubernetes', 'psutil', 'requests']
+2026-06-02 06:49:48 | ERROR    | test_runner | Tests timed out after 60s
+2026-06-02 06:49:48 | WARNING  | tool_builder | ⚠️  agent_monitor_cli tests failed (loop 4/5) — Tests timed out after 60s
+2026-06-02 06:49:55 | DEBUG    | llm_client | LLM response from github_models (6855 chars)
+2026-06-02 06:49:55 | DEBUG    | test_runner | Installing: ['docker', 'kubernetes', 'psutil', 'pytest']
+2026-06-02 06:49:56 | WARNING  | test_runner | Tests FAILED for agent_monitor_cli:
+test_agent_monitor_cli.py::test_monitor_agents FAILED                    [ 33%]
+test_agent_monitor_cli.py::test_send_alert_email FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:930: in assert_called_with
+    raise AssertionError(error_message)
+E   AssertionError: expected call not found.
+    mock_k8s_client.return_value.read_namespaced_pod.assert_called_with(name='agent1', namespace='default')
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:939: in assert_called_with
+    raise AssertionError(_error_message()) from cause
+E   AssertionError: expected call not found.
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:951: in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+E   AssertionError: expected call not found.
+E   assert ('monitor@exa...Test Message') == ('monitor@exa...Test Message')
+    mock_smtp_instance.sendmail.assert_called_once_with(
+E   AssertionError: expected call not found.
+E   assert ('monitor@exa...Test Message') == ('monitor@exa...Test Message')
+FAILED test_agent_monitor_cli.py::test_monitor_agents - AssertionError: expected call not found.
+FAILED test_agent_monitor_cli.py::test_send_alert_email - AssertionError: expected call not found.
+assert ('monitor@exa...Test Message') == ('monitor@exa...Test Message')
+2026-06-02 06:49:56 | WARNING  | tool_builder | ⚠️  agent_monitor_cli tests failed (loop 5/5) — test_agent_monitor_cli.py::test_monitor_agents FAILED                    [ 33%]
+test_agent_monitor_cli.py::test_send_alert_email FAILED                  [ 66%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-06-02 06:49:56 | ERROR    | tool_builder | ❌ agent_monitor_cli failed after 5 loops
+2026-06-02 06:49:56 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-06-02 06:49:56 | INFO     | main |   Built 4/5 tools successfully
+2026-06-02 06:49:56 | INFO     | main |     ✅ llm_code_assistant (loops: 3)
+2026-06-02 06:49:56 | INFO     | main |     ✅ smart_debugger (loops: 3)
+2026-06-02 06:49:56 | INFO     | main |     ✅ code_review_bot (loops: 2)
+2026-06-02 06:49:56 | INFO     | main |     ✅ llm_ci_test_automation (loops: 1)
+2026-06-02 06:49:56 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-02 06:49:56 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-02 06:49:56 | INFO     | github_publisher |   Created zip: llm_code_assistant.zip (2375 bytes)
+2026-06-02 06:49:56 | INFO     | github_publisher | Saved llm_code_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_code_assistant
+2026-06-02 06:49:56 | INFO     | github_publisher |   Created zip: smart_debugger.zip (2202 bytes)
+2026-06-02 06:49:56 | INFO     | github_publisher | Saved smart_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/smart_debugger
+2026-06-02 06:49:56 | INFO     | github_publisher |   Created zip: code_review_bot.zip (2905 bytes)
+2026-06-02 06:49:56 | INFO     | github_publisher | Saved code_review_bot → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/code_review_bot
+2026-06-02 06:49:56 | INFO     | github_publisher |   Created zip: llm_ci_test_automation.zip (3236 bytes)
+2026-06-02 06:49:56 | INFO     | github_publisher | Saved llm_ci_test_automation → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_ci_test_automation
+2026-06-02 06:49:56 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-06-02 06:49:56 | INFO     | main |   Published 4 tools:
+2026-06-02 06:49:56 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_code_assistant
+2026-06-02 06:49:56 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/smart_debugger
+2026-06-02 06:49:56 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/code_review_bot
+2026-06-02 06:49:56 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_ci_test_automation
+2026-06-02 06:49:56 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-06-02 06:49:56 | INFO     | main | ✅ Generated tools_index.json with 290 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

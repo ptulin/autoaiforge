@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_review_bot",
+  "display_name": "Code Review Bot",
+  "description": "An automation tool that scans Python code files and provides LLM-powered reviews, highlighting potential issues, improvements, and compliance with coding standards. This tool is ideal for developers who want AI-assisted code reviews before pushing changes.",
+  "topic": "LLM-Powered Code Generation",
+  "date": "2026-06-02",
+  "generated": "2026-06-02T06:41:07.753107+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/code_review_bot",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/code_review_bot/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/code_review_bot/code_review_bot.zip"
+}

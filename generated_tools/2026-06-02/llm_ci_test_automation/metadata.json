@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_ci_test_automation",
+  "display_name": "LLM-Integrated CI Test Automation Library",
+  "description": "A Python library designed to integrate with CI/CD pipelines, enabling automatic generation of test cases using LLMs for code changes in pull requests. The library can be configured to fetch pull request diffs, analyze the changes, and output structured test cases which can be reviewed or directly executed.",
+  "topic": "AI-Powered Test Case Generation",
+  "date": "2026-06-02",
+  "generated": "2026-06-02T06:41:07.753107+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_ci_test_automation",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_ci_test_automation/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_ci_test_automation/llm_ci_test_automation.zip"
+}
