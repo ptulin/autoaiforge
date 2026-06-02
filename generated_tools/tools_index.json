@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-01T06:57:11.688190+00:00",
-  "total_tools": 286,
+  "last_updated": "2026-06-02T06:49:56.571309+00:00",
+  "total_tools": 290,
   "tools": [
+    {
+      "tool_name": "code_review_bot",
+      "display_name": "Code Review Bot",
+      "description": "An automation tool that scans Python code files and provides LLM-powered reviews, highlighting potential issues, improvements, and compliance with coding standards. This tool is ideal for developers who want AI-assisted code reviews before pushing changes.",
+      "topic": "LLM-Powered Code Generation",
+      "date": "2026-06-02",
+      "generated": "2026-06-02T06:41:07.753107+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/code_review_bot",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/code_review_bot/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/code_review_bot/code_review_bot.zip"
+    },
+    {
+      "tool_name": "llm_ci_test_automation",
+      "display_name": "LLM-Integrated CI Test Automation Library",
+      "description": "A Python library designed to integrate with CI/CD pipelines, enabling automatic generation of test cases using LLMs for code changes in pull requests. The library can be configured to fetch pull request diffs, analyze the changes, and output structured test cases which can be reviewed or directly executed.",
+      "topic": "AI-Powered Test Case Generation",
+      "date": "2026-06-02",
+      "generated": "2026-06-02T06:41:07.753107+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_ci_test_automation",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_ci_test_automation/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_ci_test_automation/llm_ci_test_automation.zip"
+    },
+    {
+      "tool_name": "llm_code_assistant",
+      "display_name": "LLM Code Assistant",
+      "description": "A CLI tool that integrates with OpenAI's API to provide inline code suggestions, refactorings, and debugging hints based on user queries. This tool helps developers streamline their coding process by leveraging LLMs to automate routine tasks and enhance productivity.",
+      "topic": "LLM-Powered Code Generation",
+      "date": "2026-06-02",
+      "generated": "2026-06-02T06:41:07.753107+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/llm_code_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_code_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/llm_code_assistant/llm_code_assistant.zip"
+    },
+    {
+      "tool_name": "smart_debugger",
+      "display_name": "Smart Debugger",
+      "description": "A Python library that analyzes Python traceback errors and provides suggestions to fix the issue using LLM-based reasoning. This tool is useful for developers who want smarter debugging capabilities directly in their development environment.",
+      "topic": "LLM-Powered Code Generation",
+      "date": "2026-06-02",
+      "generated": "2026-06-02T06:41:07.753107+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-02/smart_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/smart_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-02/smart_debugger/smart_debugger.zip"
+    },
     {
       "tool_name": "ai_audio_authenticator",
       "display_name": "AI Audio Authenticity Checker",
