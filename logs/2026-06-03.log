@@ -1,0 +1,269 @@
+2026-06-03 06:50:20 | INFO     | main | ============================================================
+2026-06-03 06:50:20 | INFO     | main | AutoAIForge starting run: 2026-06-03T06:50:20.933290+00:00
+2026-06-03 06:50:20 | INFO     | main | ============================================================
+2026-06-03 06:50:20 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-03 06:50:21 | INFO     | youtube_scraper | YouTube client ready
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:21 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A21Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-01T06%3A50%3A22Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-03 06:50:22 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-03 06:50:22 | INFO     | main |   YouTube: 0 items
+2026-06-03 06:50:22 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-03 06:50:27 | INFO     | rss_scraper | HackerNews: 175 items
+2026-06-03 06:50:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-03 06:50:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-03 06:50:29 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-03 06:50:30 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-03 06:50:31 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-03 06:50:32 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-03 06:50:33 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-03 06:50:34 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-03 06:50:50 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-03 06:50:51 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-03 06:50:53 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-03 06:50:54 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-03 06:50:55 | INFO     | rss_scraper | ArXiv: 0 items
+2026-06-03 06:50:59 | INFO     | rss_scraper | Dev.to: 191 items
+2026-06-03 06:51:01 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-03 06:51:01 | INFO     | rss_scraper | Free sources total: 416 unique items
+2026-06-03 06:51:01 | INFO     | main |   RSS/API sources: 416 items
+2026-06-03 06:51:01 | INFO     | main |   Total scraped: 416 items
+2026-06-03 06:51:01 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-03 06:51:01 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-03 06:51:01 | INFO     | db_manager | Purged 986 old news items
+2026-06-03 06:51:01 | INFO     | db_manager | Inserted 297/416 news items
+2026-06-03 06:51:01 | INFO     | main |   SQLite: 297 new items (total: 25430)
+2026-06-03 06:51:05 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-03 06:51:07 | INFO     | vector_store | VectorStore ready
+2026-06-03 06:51:14 | INFO     | vector_store | Indexed 916 items into vector store
+2026-06-03 06:51:14 | INFO     | main |   Vector store: 916 items indexed
+2026-06-03 06:51:14 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-03 06:51:14 | INFO     | topic_analyzer | Analyzing 916 items for top 10 topics …
+2026-06-03 06:51:21 | DEBUG    | llm_client | LLM response from github_models (3813 chars)
+2026-06-03 06:51:21 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-03 06:51:21 | INFO     | main |   Found 10 topics:
+2026-06-03 06:51:21 | INFO     | main |      1. [9/10] AI Coding Agents
+2026-06-03 06:51:21 | INFO     | main |      2. [8/10] LLM Context Management
+2026-06-03 06:51:21 | INFO     | main |      3. [8/10] Adaptive AI Worms
+2026-06-03 06:51:21 | INFO     | main |      4. [8/10] AI-Driven Code Evaluation
+2026-06-03 06:51:21 | INFO     | main |      5. [8/10] AI-Enhanced Data Science Tools
+2026-06-03 06:51:21 | INFO     | main |      6. [7/10] AI Observability Frameworks
+2026-06-03 06:51:21 | INFO     | main |      7. [7/10] AI for Long-Form Output Evaluation
+2026-06-03 06:51:21 | INFO     | main |      8. [7/10] Session-Aware AI Models
+2026-06-03 06:51:21 | INFO     | main |      9. [6/10] AI-Driven PDF to Markdown Conversion
+2026-06-03 06:51:21 | INFO     | main |     10. [6/10] Cryptographically Verifiable AI Systems
+2026-06-03 06:51:21 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-03 06:51:21 | INFO     | main |   Existing collection: 290 tools across 150 topics
+2026-06-03 06:51:21 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-03 06:51:26 | DEBUG    | llm_client | LLM response from github_models (3226 chars)
+2026-06-03 06:51:26 | INFO     | idea_generator | Generated 3 ideas for topic: AI Coding Agents
+2026-06-03 06:51:32 | DEBUG    | llm_client | LLM response from github_models (2825 chars)
+2026-06-03 06:51:32 | INFO     | idea_generator | Generated 2 ideas for topic: LLM Context Management
+2026-06-03 06:51:32 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-03 06:51:32 | INFO     | main |   Generated 5 tool ideas:
+2026-06-03 06:51:32 | INFO     | main |     • agent_benchmark_suite: This tool benchmarks AI coding agents across various tasks like debugging, refac
+2026-06-03 06:51:32 | INFO     | main |     • ide_agent_integrator: A lightweight Python library that helps developers integrate AI coding agents in
+2026-06-03 06:51:32 | INFO     | main |     • task_prompt_optimizer: This tool generates optimized prompts for AI coding agents by analyzing specific
+2026-06-03 06:51:32 | INFO     | main |     • context_window_optimizer: This CLI tool preprocesses and segments input data to optimize its fit into the 
+2026-06-03 06:51:32 | INFO     | main |     • dynamic_context_packer: This Python CLI tool dynamically packages mixed data types (e.g., text, metadata
+2026-06-03 06:51:32 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-03 06:51:32 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-03 06:51:40 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-03 06:51:40 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-03 06:51:40 | INFO     | tool_builder | Building tool: agent_benchmark_suite …
+2026-06-03 06:51:51 | DEBUG    | llm_client | LLM response from github_models (7468 chars)
+2026-06-03 06:51:51 | DEBUG    | test_runner | Installing: ['requests==2.31.0', 'pytest==7.4.2']
+2026-06-03 06:51:52 | WARNING  | test_runner | Tests FAILED for agent_benchmark_suite:
+test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+E   assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+FAILED test_agent_benchmark_suite.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 28 times.
+assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+2026-06-03 06:51:52 | WARNING  | tool_builder | ⚠️  agent_benchmark_suite tests failed (loop 1/5) — test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-03 06:52:00 | DEBUG    | llm_client | LLM response from github_models (6934 chars)
+2026-06-03 06:52:00 | DEBUG    | test_runner | Installing: ['pytest', 'requests']
+2026-06-03 06:52:00 | WARNING  | test_runner | Tests FAILED for agent_benchmark_suite:
+test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+E   AttributeError: '_patch' object has no attribute 'return_value'
+FAILED test_agent_benchmark_suite.py::test_save_report - AttributeError: '_patch' object has no attribute 'return_value'
+2026-06-03 06:52:00 | WARNING  | tool_builder | ⚠️  agent_benchmark_suite tests failed (loop 2/5) — test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+E   AttributeError: '_patch' object has no attribute 'return_value'
+FAILED test_agent_benchmark_suite.py::test_save_repo
+2026-06-03 06:52:08 | DEBUG    | llm_client | LLM response from github_models (7160 chars)
+2026-06-03 06:52:08 | DEBUG    | test_runner | Installing: ['pytest', 'requests']
+2026-06-03 06:52:09 | WARNING  | test_runner | Tests FAILED for agent_benchmark_suite:
+test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+E   assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+FAILED test_agent_benchmark_suite.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 28 times.
+assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+2026-06-03 06:52:09 | WARNING  | tool_builder | ⚠️  agent_benchmark_suite tests failed (loop 3/5) — test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-03 06:52:16 | DEBUG    | llm_client | LLM response from github_models (6834 chars)
+2026-06-03 06:52:16 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-06-03 06:52:16 | WARNING  | test_runner | Tests FAILED for agent_benchmark_suite:
+test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+E   AttributeError: '_patch' object has no attribute 'return_value'
+FAILED test_agent_benchmark_suite.py::test_save_report - AttributeError: '_patch' object has no attribute 'return_value'
+2026-06-03 06:52:16 | WARNING  | tool_builder | ⚠️  agent_benchmark_suite tests failed (loop 4/5) — test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+E   AttributeError: '_patch' object has no attribute 'return_value'
+FAILED test_agent_benchmark_suite.py::test_save_repo
+2026-06-03 06:52:23 | DEBUG    | llm_client | LLM response from github_models (6670 chars)
+2026-06-03 06:52:23 | DEBUG    | test_runner | Installing: ['requests', 'pytest']
+2026-06-03 06:52:24 | WARNING  | test_runner | Tests FAILED for agent_benchmark_suite:
+test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+    mock_file().write.assert_called_once_with(json.dumps(report, indent=4))
+E   AssertionError: Expected 'write' to be called once. Called 28 times.
+E   assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+FAILED test_agent_benchmark_suite.py::test_save_report - AssertionError: Expected 'write' to be called once. Called 28 times.
+assert (']',) == ('[\n    {\n ...}\n    }\n]',)
+2026-06-03 06:52:24 | WARNING  | tool_builder | ⚠️  agent_benchmark_suite tests failed (loop 5/5) — test_agent_benchmark_suite.py::test_save_report FAILED                   [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-03 06:52:24 | ERROR    | tool_builder | ❌ agent_benchmark_suite failed after 5 loops
+2026-06-03 06:52:24 | INFO     | tool_builder | Building tool: ide_agent_integrator …
+2026-06-03 06:52:34 | DEBUG    | llm_client | LLM response from github_models (5412 chars)
+2026-06-03 06:52:34 | DEBUG    | test_runner | Installing: ['flask==2.3.2', 'requests==2.31.0', 'pyyaml==6.0']
+2026-06-03 06:52:35 | INFO     | test_runner | Tests PASSED for ide_agent_integrator
+2026-06-03 06:52:35 | INFO     | tool_builder | ✅ ide_agent_integrator passed tests on loop 1
+2026-06-03 06:52:35 | INFO     | tool_builder | Building tool: task_prompt_optimizer …
+2026-06-03 06:52:46 | DEBUG    | llm_client | LLM response from github_models (6114 chars)
+2026-06-03 06:52:46 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'pytest==7.4.2']
+2026-06-03 06:52:48 | INFO     | test_runner | Tests PASSED for task_prompt_optimizer
+2026-06-03 06:52:48 | INFO     | tool_builder | ✅ task_prompt_optimizer passed tests on loop 1
+2026-06-03 06:52:48 | INFO     | tool_builder | Building tool: context_window_optimizer …
+2026-06-03 06:52:56 | DEBUG    | llm_client | LLM response from github_models (5824 chars)
+2026-06-03 06:52:56 | DEBUG    | test_runner | Installing: ['nltk==3.8.1', 'tiktoken==0.4.0']
+2026-06-03 06:53:00 | WARNING  | test_runner | Tests FAILED for context_window_optimizer:
+test_context_window_optimizer.py::test_chunk_text FAILED                 [ 50%]
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 75%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [100%]
+    assert len(chunks) == 3
+E   AssertionError: assert 6 == 3
+    raise LookupError(resource_not_found)
+E   LookupError: 
+FAILED test_context_window_optimizer.py::test_chunk_text - AssertionError: assert 6 == 3
+FAILED test_context_window_optimizer.py::test_preprocess_text - LookupError: 
+FAILED test_context_window_optimizer.py::test_main_with_file_input - SystemExit: 2
+2026-06-03 06:53:00 | WARNING  | tool_builder | ⚠️  context_window_optimizer tests failed (loop 1/5) — test_context_window_optimizer.py::test_chunk_text FAILED                 [ 50%]
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 75%]
+test_context_window_optimizer.py::test_m
+2026-06-03 06:53:00 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-03 06:54:09 | DEBUG    | llm_client | LLM response from github_models (6731 chars)
+2026-06-03 06:54:09 | DEBUG    | test_runner | Installing: ['nltk']
+2026-06-03 06:54:10 | WARNING  | test_runner | Tests FAILED for context_window_optimizer:
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 75%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_preprocess_text - LookupError: 
+FAILED test_context_window_optimizer.py::test_main_with_file_input - NameError: name 'argparse' is not defined
+2026-06-03 06:54:10 | WARNING  | tool_builder | ⚠️  context_window_optimizer tests failed (loop 2/5) — test_context_window_optimizer.py::test_preprocess_text FAILED            [ 75%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [100%]
+    raise LookupError(resource_not_found
+2026-06-03 06:54:18 | DEBUG    | llm_client | LLM response from github_models (7167 chars)
+2026-06-03 06:54:18 | DEBUG    | test_runner | Installing: ['nltk']
+2026-06-03 06:54:19 | WARNING  | test_runner | Tests FAILED for context_window_optimizer:
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_main_with_raw_text_input FAILED   [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_preprocess_text - LookupError: 
+FAILED test_context_window_optimizer.py::test_main_with_file_input - NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_main_with_raw_text_input - NameError: name 'argparse' is not defined
+2026-06-03 06:54:19 | WARNING  | tool_builder | ⚠️  context_window_optimizer tests failed (loop 3/5) — test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_m
+2026-06-03 06:54:28 | DEBUG    | llm_client | LLM response from github_models (7196 chars)
+2026-06-03 06:54:28 | DEBUG    | test_runner | Installing: ['nltk']
+2026-06-03 06:54:29 | WARNING  | test_runner | Tests FAILED for context_window_optimizer:
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_main_with_raw_text_input FAILED   [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_preprocess_text - LookupError: 
+FAILED test_context_window_optimizer.py::test_main_with_file_input - NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_main_with_raw_text_input - NameError: name 'argparse' is not defined
+2026-06-03 06:54:29 | WARNING  | tool_builder | ⚠️  context_window_optimizer tests failed (loop 4/5) — test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_m
+2026-06-03 06:54:37 | DEBUG    | llm_client | LLM response from github_models (7079 chars)
+2026-06-03 06:54:37 | DEBUG    | test_runner | Installing: ['nltk']
+2026-06-03 06:54:38 | WARNING  | test_runner | Tests FAILED for context_window_optimizer:
+test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_main_with_raw_text_input FAILED   [100%]
+    raise LookupError(resource_not_found)
+E   LookupError: 
+E   NameError: name 'argparse' is not defined
+E   NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_preprocess_text - LookupError: 
+FAILED test_context_window_optimizer.py::test_main_with_file_input - NameError: name 'argparse' is not defined
+FAILED test_context_window_optimizer.py::test_main_with_raw_text_input - NameError: name 'argparse' is not defined
+2026-06-03 06:54:38 | WARNING  | tool_builder | ⚠️  context_window_optimizer tests failed (loop 5/5) — test_context_window_optimizer.py::test_preprocess_text FAILED            [ 60%]
+test_context_window_optimizer.py::test_main_with_file_input FAILED       [ 80%]
+test_context_window_optimizer.py::test_m
+2026-06-03 06:54:38 | ERROR    | tool_builder | ❌ context_window_optimizer failed after 5 loops
+2026-06-03 06:54:38 | INFO     | tool_builder | Building tool: dynamic_context_packer …
+2026-06-03 06:54:45 | DEBUG    | llm_client | LLM response from github_models (4926 chars)
+2026-06-03 06:54:45 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'tiktoken==0.3.0']
+2026-06-03 06:54:51 | INFO     | test_runner | Tests PASSED for dynamic_context_packer
+2026-06-03 06:54:51 | INFO     | tool_builder | ✅ dynamic_context_packer passed tests on loop 1
+2026-06-03 06:54:51 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-06-03 06:54:51 | INFO     | main |   Built 3/5 tools successfully
+2026-06-03 06:54:51 | INFO     | main |     ✅ ide_agent_integrator (loops: 1)
+2026-06-03 06:54:51 | INFO     | main |     ✅ task_prompt_optimizer (loops: 1)
+2026-06-03 06:54:51 | INFO     | main |     ✅ dynamic_context_packer (loops: 1)
+2026-06-03 06:54:51 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-03 06:54:51 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-03 06:54:51 | INFO     | github_publisher |   Created zip: ide_agent_integrator.zip (2353 bytes)
+2026-06-03 06:54:51 | INFO     | github_publisher | Saved ide_agent_integrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/ide_agent_integrator
+2026-06-03 06:54:51 | INFO     | github_publisher |   Created zip: task_prompt_optimizer.zip (2681 bytes)
+2026-06-03 06:54:51 | INFO     | github_publisher | Saved task_prompt_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/task_prompt_optimizer
+2026-06-03 06:54:51 | INFO     | github_publisher |   Created zip: dynamic_context_packer.zip (2304 bytes)
+2026-06-03 06:54:51 | INFO     | github_publisher | Saved dynamic_context_packer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/dynamic_context_packer
+2026-06-03 06:54:51 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-06-03 06:54:51 | INFO     | main |   Published 3 tools:
+2026-06-03 06:54:51 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/ide_agent_integrator
+2026-06-03 06:54:51 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/task_prompt_optimizer
+2026-06-03 06:54:51 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/dynamic_context_packer
+2026-06-03 06:54:51 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-06-03 06:54:51 | INFO     | main | ✅ Generated tools_index.json with 293 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
