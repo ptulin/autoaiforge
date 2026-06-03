@@ -1,0 +1,13 @@
+{
+  "tool_name": "ide_agent_integrator",
+  "display_name": "IDE Agent Integrator",
+  "description": "A lightweight Python library that helps developers integrate AI coding agents into popular IDEs like Visual Studio Code, PyCharm, and JetBrains IntelliJ. It facilitates interaction between the IDE and the agent via a local server, enabling features like code suggestions, automated debugging, and refactoring.",
+  "topic": "AI Coding Agents",
+  "date": "2026-06-03",
+  "generated": "2026-06-03T06:50:20.933290+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/ide_agent_integrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/ide_agent_integrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/ide_agent_integrator/ide_agent_integrator.zip"
+}

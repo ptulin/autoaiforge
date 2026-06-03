@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-02T06:49:56.571309+00:00",
-  "total_tools": 290,
+  "last_updated": "2026-06-03T06:54:51.610702+00:00",
+  "total_tools": 293,
   "tools": [
+    {
+      "tool_name": "dynamic_context_packer",
+      "display_name": "Dynamic Context Packer",
+      "description": "This Python CLI tool dynamically packages mixed data types (e.g., text, metadata, tables) into a single context window for large language models. It uses adaptive formatting based on token limits and user-defined rules to optimize how information is presented. This is particularly useful for tasks requiring complex context, like generating multi-modal reports or providing detailed answers.",
+      "topic": "LLM Context Management",
+      "date": "2026-06-03",
+      "generated": "2026-06-03T06:50:20.933290+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/dynamic_context_packer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/dynamic_context_packer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/dynamic_context_packer/dynamic_context_packer.zip"
+    },
+    {
+      "tool_name": "ide_agent_integrator",
+      "display_name": "IDE Agent Integrator",
+      "description": "A lightweight Python library that helps developers integrate AI coding agents into popular IDEs like Visual Studio Code, PyCharm, and JetBrains IntelliJ. It facilitates interaction between the IDE and the agent via a local server, enabling features like code suggestions, automated debugging, and refactoring.",
+      "topic": "AI Coding Agents",
+      "date": "2026-06-03",
+      "generated": "2026-06-03T06:50:20.933290+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/ide_agent_integrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/ide_agent_integrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/ide_agent_integrator/ide_agent_integrator.zip"
+    },
+    {
+      "tool_name": "task_prompt_optimizer",
+      "display_name": "Task Prompt Optimizer",
+      "description": "This tool generates optimized prompts for AI coding agents by analyzing specific coding tasks and iteratively refining prompts based on agent feedback. It ensures higher accuracy and efficiency in task execution, making it easier for developers to interact with coding agents effectively.",
+      "topic": "AI Coding Agents",
+      "date": "2026-06-03",
+      "generated": "2026-06-03T06:50:20.933290+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/task_prompt_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/task_prompt_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/task_prompt_optimizer/task_prompt_optimizer.zip"
+    },
     {
       "tool_name": "code_review_bot",
       "display_name": "Code Review Bot",

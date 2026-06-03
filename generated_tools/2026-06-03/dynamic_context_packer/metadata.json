@@ -1,0 +1,13 @@
+{
+  "tool_name": "dynamic_context_packer",
+  "display_name": "Dynamic Context Packer",
+  "description": "This Python CLI tool dynamically packages mixed data types (e.g., text, metadata, tables) into a single context window for large language models. It uses adaptive formatting based on token limits and user-defined rules to optimize how information is presented. This is particularly useful for tasks requiring complex context, like generating multi-modal reports or providing detailed answers.",
+  "topic": "LLM Context Management",
+  "date": "2026-06-03",
+  "generated": "2026-06-03T06:50:20.933290+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-03/dynamic_context_packer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/dynamic_context_packer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-03/dynamic_context_packer/dynamic_context_packer.zip"
+}
