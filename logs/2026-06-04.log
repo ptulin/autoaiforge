@@ -1,0 +1,283 @@
+2026-06-04 06:40:32 | INFO     | main | ============================================================
+2026-06-04 06:40:32 | INFO     | main | AutoAIForge starting run: 2026-06-04T06:40:32.309337+00:00
+2026-06-04 06:40:32 | INFO     | main | ============================================================
+2026-06-04 06:40:32 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-04 06:40:32 | INFO     | youtube_scraper | YouTube client ready
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:32 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A32Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-02T06%3A40%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-04 06:40:33 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-04 06:40:33 | INFO     | main |   YouTube: 0 items
+2026-06-04 06:40:33 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-04 06:40:38 | INFO     | rss_scraper | HackerNews: 167 items
+2026-06-04 06:40:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-04 06:40:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-04 06:40:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-04 06:40:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-04 06:40:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-04 06:40:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-04 06:40:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-04 06:40:45 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-04 06:40:45 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-04 06:40:46 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-04 06:40:48 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Acode%2Bgeneration+OR+abs%3Acode%2Bgeneration&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-04 06:40:49 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-06-04 06:40:50 | INFO     | rss_scraper | ArXiv: 0 items
+2026-06-04 06:40:54 | INFO     | rss_scraper | Dev.to: 188 items
+2026-06-04 06:40:56 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-04 06:40:56 | INFO     | rss_scraper | Free sources total: 405 unique items
+2026-06-04 06:40:56 | INFO     | main |   RSS/API sources: 405 items
+2026-06-04 06:40:56 | INFO     | main |   Total scraped: 405 items
+2026-06-04 06:40:56 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-04 06:40:56 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-04 06:40:56 | INFO     | db_manager | Purged 1035 old news items
+2026-06-04 06:40:56 | INFO     | db_manager | Inserted 268/405 news items
+2026-06-04 06:40:56 | INFO     | main |   SQLite: 268 new items (total: 24663)
+2026-06-04 06:41:01 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-04 06:41:02 | INFO     | vector_store | VectorStore ready
+2026-06-04 06:41:11 | INFO     | vector_store | Indexed 927 items into vector store
+2026-06-04 06:41:11 | INFO     | main |   Vector store: 927 items indexed
+2026-06-04 06:41:11 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-04 06:41:11 | INFO     | topic_analyzer | Analyzing 927 items for top 10 topics …
+2026-06-04 06:41:18 | DEBUG    | llm_client | LLM response from github_models (3626 chars)
+2026-06-04 06:41:18 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-04 06:41:18 | INFO     | main |   Found 10 topics:
+2026-06-04 06:41:18 | INFO     | main |      1. [9/10] Local LLM Inference Engines
+2026-06-04 06:41:18 | INFO     | main |      2. [9/10] On-Device Privacy for LLMs
+2026-06-04 06:41:18 | INFO     | main |      3. [8/10] AI Hallucination Detection
+2026-06-04 06:41:18 | INFO     | main |      4. [8/10] Multi-Agent Systems Coordination
+2026-06-04 06:41:18 | INFO     | main |      5. [8/10] AI-Powered Document Parsing
+2026-06-04 06:41:18 | INFO     | main |      6. [8/10] LLM Workflow Optimization
+2026-06-04 06:41:18 | INFO     | main |      7. [8/10] AI in Supply Chain Security
+2026-06-04 06:41:18 | INFO     | main |      8. [7/10] LLM Benchmarking and Evaluation
+2026-06-04 06:41:18 | INFO     | main |      9. [7/10] AI Model Compatibility Gateways
+2026-06-04 06:41:18 | INFO     | main |     10. [7/10] AI-Powered Code Orchestration
+2026-06-04 06:41:18 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-04 06:41:18 | INFO     | main |   Existing collection: 293 tools across 152 topics
+2026-06-04 06:41:18 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-04 06:41:24 | DEBUG    | llm_client | LLM response from github_models (3700 chars)
+2026-06-04 06:41:24 | INFO     | idea_generator | Generated 3 ideas for topic: Local LLM Inference Engines
+2026-06-04 06:41:29 | DEBUG    | llm_client | LLM response from github_models (2611 chars)
+2026-06-04 06:41:29 | INFO     | idea_generator | Generated 2 ideas for topic: On-Device Privacy for LLMs
+2026-06-04 06:41:29 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-04 06:41:29 | INFO     | main |   Generated 5 tool ideas:
+2026-06-04 06:41:29 | INFO     | main |     • llm_local_orchestrator: A CLI and library tool designed to simplify the management and inference of loca
+2026-06-04 06:41:29 | INFO     | main |     • quantized_model_runner: A Python library for running quantized versions of LLMs locally with significant
+2026-06-04 06:41:29 | INFO     | main |     • token_streamer: A CLI and module tool that streams token-by-token completions from a locally hos
+2026-06-04 06:41:29 | INFO     | main |     • sensitive_data_filter: This tool acts as a preprocessing layer to redact or tokenize sensitive data fro
+2026-06-04 06:41:29 | INFO     | main |     • local_privacy_guard: This tool monitors and intercepts communication between a user and a local LLM i
+2026-06-04 06:41:29 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-04 06:41:29 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-04 06:41:38 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-04 06:41:38 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-04 06:41:38 | INFO     | tool_builder | Building tool: llm_local_orchestrator …
+2026-06-04 06:41:45 | DEBUG    | llm_client | LLM response from github_models (5141 chars)
+2026-06-04 06:41:45 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.3', 'click==8.1.3']
+2026-06-04 06:42:32 | WARNING  | test_runner | Tests FAILED for llm_local_orchestrator:
+test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_llm_local_orchestrator.py::test_run_inference - NameError: name 'torch' is not defined
+2026-06-04 06:42:32 | WARNING  | tool_builder | ⚠️  llm_local_orchestrator tests failed (loop 1/5) — test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_llm_local_orchestrator.py::test_run_inference - NameError: name '
+2026-06-04 06:42:39 | DEBUG    | llm_client | LLM response from github_models (5667 chars)
+2026-06-04 06:42:39 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'click', 'pytest']
+2026-06-04 06:42:42 | WARNING  | test_runner | Tests FAILED for llm_local_orchestrator:
+test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_llm_local_orchestrator.py::test_run_inference - NameError: name 'torch' is not defined
+2026-06-04 06:42:42 | WARNING  | tool_builder | ⚠️  llm_local_orchestrator tests failed (loop 2/5) — test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   NameError: name 'torch' is not defined
+FAILED test_llm_local_orchestrator.py::test_run_inference - NameError: name '
+2026-06-04 06:42:48 | DEBUG    | llm_client | LLM response from github_models (5733 chars)
+2026-06-04 06:42:48 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'click', 'pytest']
+2026-06-04 06:42:51 | WARNING  | test_runner | Tests FAILED for llm_local_orchestrator:
+test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   AttributeError: 'dict' object has no attribute 'to'
+    raise RuntimeError(f"Failed during inference: {e}")
+E   RuntimeError: Failed during inference: 'dict' object has no attribute 'to'
+FAILED test_llm_local_orchestrator.py::test_run_inference - RuntimeError: Failed during inference: 'dict' object has no attribute 'to'
+2026-06-04 06:42:51 | WARNING  | tool_builder | ⚠️  llm_local_orchestrator tests failed (loop 3/5) — test_llm_local_orchestrator.py::test_run_inference FAILED                [ 66%]
+E   AttributeError: 'dict' object has no attribute 'to'
+    raise RuntimeError(f"Failed during inference: {e}")
+E   Runt
+2026-06-04 06:42:59 | DEBUG    | llm_client | LLM response from github_models (6480 chars)
+2026-06-04 06:42:59 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'click', 'pytest']
+2026-06-04 06:43:01 | INFO     | test_runner | Tests PASSED for llm_local_orchestrator
+2026-06-04 06:43:01 | INFO     | tool_builder | ✅ llm_local_orchestrator passed tests on loop 4
+2026-06-04 06:43:01 | INFO     | tool_builder | Building tool: quantized_model_runner …
+2026-06-04 06:43:09 | DEBUG    | llm_client | LLM response from github_models (5416 chars)
+2026-06-04 06:43:09 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.31.0', 'bitsandbytes==0.39.0', 'pytest==7.4.0']
+2026-06-04 06:43:16 | WARNING  | test_runner | Tests FAILED for quantized_model_runner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:169: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:351: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_quantized_model_runner.py
+2026-06-04 06:43:16 | WARNING  | tool_builder | ⚠️  quantized_model_runner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-06-04 06:43:24 | DEBUG    | llm_client | LLM response from github_models (5770 chars)
+2026-06-04 06:43:24 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'bitsandbytes', 'pytest']
+2026-06-04 06:43:26 | WARNING  | test_runner | Tests FAILED for quantized_model_runner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/quantized_model_runner/test_quantized_model_runner.py'.
+E   ModuleNotFoundError: No module named 'scipy'
+ERROR test_quantized_model_runner.py
+2026-06-04 06:43:26 | WARNING  | tool_builder | ⚠️  quantized_model_runner tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test modul
+2026-06-04 06:43:33 | DEBUG    | llm_client | LLM response from github_models (5795 chars)
+2026-06-04 06:43:33 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'bitsandbytes']
+2026-06-04 06:43:36 | WARNING  | test_runner | Tests FAILED for quantized_model_runner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/quantized_model_runner/test_quantized_model_runner.py'.
+E   ModuleNotFoundError: No module named 'scipy'
+ERROR test_quantized_model_runner.py
+2026-06-04 06:43:36 | WARNING  | tool_builder | ⚠️  quantized_model_runner tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test modul
+2026-06-04 06:43:43 | DEBUG    | llm_client | LLM response from github_models (5988 chars)
+2026-06-04 06:43:43 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'bitsandbytes']
+2026-06-04 06:43:46 | WARNING  | test_runner | Tests FAILED for quantized_model_runner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/quantized_model_runner/test_quantized_model_runner.py'.
+E   ModuleNotFoundError: No module named 'scipy'
+ERROR test_quantized_model_runner.py
+2026-06-04 06:43:46 | WARNING  | tool_builder | ⚠️  quantized_model_runner tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test modul
+2026-06-04 06:43:53 | DEBUG    | llm_client | LLM response from github_models (6113 chars)
+2026-06-04 06:43:53 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'bitsandbytes']
+2026-06-04 06:43:56 | WARNING  | test_runner | Tests FAILED for quantized_model_runner:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/quantized_model_runner/test_quantized_model_runner.py'.
+E   ModuleNotFoundError: No module named 'scipy'
+ERROR test_quantized_model_runner.py
+2026-06-04 06:43:56 | WARNING  | tool_builder | ⚠️  quantized_model_runner tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_quantized_model_runner.py ________________
+ImportError while importing test modul
+2026-06-04 06:43:56 | ERROR    | tool_builder | ❌ quantized_model_runner failed after 5 loops
+2026-06-04 06:43:56 | INFO     | tool_builder | Building tool: token_streamer …
+2026-06-04 06:44:07 | DEBUG    | llm_client | LLM response from github_models (6411 chars)
+2026-06-04 06:44:07 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.2', 'rich==13.5.2', 'pytest==7.4.2']
+2026-06-04 06:44:14 | WARNING  | test_runner | Tests FAILED for token_streamer:
+test_token_streamer.py::test_stream_tokens_basic FAILED                  [ 33%]
+test_token_streamer.py::test_stream_tokens_error_handling FAILED         [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+    mock_tokenizer.from_pretrained.assert_called_once_with("mock_model_path")
+E   AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+    with pytest.raises(Exception, match="Mock error"):
+E   Failed: DID NOT RAISE <class 'Exception'>
+Error: Mock error
+FAILED test_token_streamer.py::test_stream_tokens_basic - AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+FAILED test_token_streamer.py::test_stream_tokens_error_handling - Failed: DID NOT RAISE <class 'Exception'>
+2026-06-04 06:44:14 | WARNING  | tool_builder | ⚠️  token_streamer tests failed (loop 1/5) — test_token_streamer.py::test_stream_tokens_basic FAILED                  [ 33%]
+test_token_streamer.py::test_stream_tokens_error_handling FAILED         [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/
+2026-06-04 06:44:27 | DEBUG    | llm_client | LLM response from github_models (6637 chars)
+2026-06-04 06:44:27 | DEBUG    | test_runner | Installing: ['transformers', 'rich', 'pytest']
+2026-06-04 06:44:30 | INFO     | test_runner | Tests PASSED for token_streamer
+2026-06-04 06:44:30 | INFO     | tool_builder | ✅ token_streamer passed tests on loop 2
+2026-06-04 06:44:30 | INFO     | tool_builder | Building tool: sensitive_data_filter …
+2026-06-04 06:44:40 | DEBUG    | llm_client | LLM response from github_models (4852 chars)
+2026-06-04 06:44:40 | DEBUG    | test_runner | Installing: ['pyyaml==6.0']
+2026-06-04 06:44:41 | WARNING  | test_runner | Tests FAILED for sensitive_data_filter:
+test_sensitive_data_filter.py::test_load_redaction_rules FAILED          [ 60%]
+    assert rules[0]['replacement'] == '[REDACTED]'
+E   AssertionError: assert ['REDACTED'] == '[REDACTED]'
+FAILED test_sensitive_data_filter.py::test_load_redaction_rules - AssertionError: assert ['REDACTED'] == '[REDACTED]'
+2026-06-04 06:44:41 | WARNING  | tool_builder | ⚠️  sensitive_data_filter tests failed (loop 1/5) — test_sensitive_data_filter.py::test_load_redaction_rules FAILED          [ 60%]
+    assert rules[0]['replacement'] == '[REDACTED]'
+E   AssertionError: assert ['REDACTED'] == '[REDACTED]'
+FAILED test_s
+2026-06-04 06:44:47 | DEBUG    | llm_client | LLM response from github_models (4992 chars)
+2026-06-04 06:44:47 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-06-04 06:44:48 | WARNING  | test_runner | Tests FAILED for sensitive_data_filter:
+test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 20%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+FAILED test_sensitive_data_filter.py::test_redact_sensitive_data - AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+2026-06-04 06:44:48 | WARNING  | tool_builder | ⚠️  sensitive_data_filter tests failed (loop 2/5) — test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 20%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [RE
+2026-06-04 06:44:54 | DEBUG    | llm_client | LLM response from github_models (4865 chars)
+2026-06-04 06:44:54 | DEBUG    | test_runner | Installing: ['pyyaml']
+2026-06-04 06:44:55 | WARNING  | test_runner | Tests FAILED for sensitive_data_filter:
+test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+FAILED test_sensitive_data_filter.py::test_redact_sensitive_data - AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+2026-06-04 06:44:55 | WARNING  | tool_builder | ⚠️  sensitive_data_filter tests failed (loop 3/5) — test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [RE
+2026-06-04 06:45:00 | DEBUG    | llm_client | LLM response from github_models (5082 chars)
+2026-06-04 06:45:00 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-06-04 06:45:01 | WARNING  | test_runner | Tests FAILED for sensitive_data_filter:
+test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+FAILED test_sensitive_data_filter.py::test_redact_sensitive_data - AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+2026-06-04 06:45:01 | WARNING  | tool_builder | ⚠️  sensitive_data_filter tests failed (loop 4/5) — test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [RE
+2026-06-04 06:45:08 | DEBUG    | llm_client | LLM response from github_models (5016 chars)
+2026-06-04 06:45:08 | DEBUG    | test_runner | Installing: ['pyyaml', 'pytest']
+2026-06-04 06:45:08 | WARNING  | test_runner | Tests FAILED for sensitive_data_filter:
+test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+FAILED test_sensitive_data_filter.py::test_redact_sensitive_data - AssertionError: assert 'My credit ca...my [REDACTED]' == 'My credit ca...d: [REDACTED]'
+2026-06-04 06:45:08 | WARNING  | tool_builder | ⚠️  sensitive_data_filter tests failed (loop 5/5) — test_sensitive_data_filter.py::test_redact_sensitive_data FAILED         [ 16%]
+    assert redact_sensitive_data(input_text, rules) == expected_output
+E   AssertionError: assert 'My credit ca...my [RE
+2026-06-04 06:45:08 | ERROR    | tool_builder | ❌ sensitive_data_filter failed after 5 loops
+2026-06-04 06:45:08 | INFO     | tool_builder | Building tool: local_privacy_guard …
+2026-06-04 06:45:16 | DEBUG    | llm_client | LLM response from github_models (5016 chars)
+2026-06-04 06:45:16 | DEBUG    | test_runner | Installing: ['pytest==7.4.0']
+2026-06-04 06:45:17 | INFO     | test_runner | Tests PASSED for local_privacy_guard
+2026-06-04 06:45:17 | INFO     | tool_builder | ✅ local_privacy_guard passed tests on loop 1
+2026-06-04 06:45:17 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-06-04 06:45:17 | INFO     | main |   Built 3/5 tools successfully
+2026-06-04 06:45:17 | INFO     | main |     ✅ llm_local_orchestrator (loops: 4)
+2026-06-04 06:45:17 | INFO     | main |     ✅ token_streamer (loops: 2)
+2026-06-04 06:45:17 | INFO     | main |     ✅ local_privacy_guard (loops: 1)
+2026-06-04 06:45:17 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-04 06:45:17 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-04 06:45:17 | INFO     | github_publisher |   Created zip: llm_local_orchestrator.zip (2804 bytes)
+2026-06-04 06:45:17 | INFO     | github_publisher | Saved llm_local_orchestrator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/llm_local_orchestrator
+2026-06-04 06:45:17 | INFO     | github_publisher |   Created zip: token_streamer.zip (2612 bytes)
+2026-06-04 06:45:17 | INFO     | github_publisher | Saved token_streamer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/token_streamer
+2026-06-04 06:45:17 | INFO     | github_publisher |   Created zip: local_privacy_guard.zip (2325 bytes)
+2026-06-04 06:45:17 | INFO     | github_publisher | Saved local_privacy_guard → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/local_privacy_guard
+2026-06-04 06:45:17 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-06-04 06:45:17 | INFO     | main |   Published 3 tools:
+2026-06-04 06:45:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/llm_local_orchestrator
+2026-06-04 06:45:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/token_streamer
+2026-06-04 06:45:17 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/local_privacy_guard
+2026-06-04 06:45:17 | INFO     | main |   Deduplicated 8 older tool version(s) from index
+2026-06-04 06:45:17 | INFO     | main | ✅ Generated tools_index.json with 296 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

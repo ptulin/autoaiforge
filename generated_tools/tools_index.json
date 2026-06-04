@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-03T06:54:51.610702+00:00",
-  "total_tools": 293,
+  "last_updated": "2026-06-04T06:45:17.171261+00:00",
+  "total_tools": 296,
   "tools": [
+    {
+      "tool_name": "llm_local_orchestrator",
+      "display_name": "LLM Local Orchestrator",
+      "description": "A CLI and library tool designed to simplify the management and inference of local LLMs, providing a consistent interface for running models with TensorSharp or PyTorch backends. It abstracts common setup tasks like hardware optimization, model loading, and tokenization, making it easier for developers to deploy models locally for privacy and offline use.",
+      "topic": "Local LLM Inference Engines",
+      "date": "2026-06-04",
+      "generated": "2026-06-04T06:40:32.309337+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/llm_local_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/llm_local_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/llm_local_orchestrator/llm_local_orchestrator.zip"
+    },
+    {
+      "tool_name": "local_privacy_guard",
+      "display_name": "Local Privacy Guard for LLMs",
+      "description": "This tool monitors and intercepts communication between a user and a local LLM instance to block any outgoing sensitive data. It acts as a middleware that flags data leakage risks in real-time, providing warnings or blocking the operation entirely. Developers can use it to enforce strict privacy constraints during LLM interactions.",
+      "topic": "On-Device Privacy for LLMs",
+      "date": "2026-06-04",
+      "generated": "2026-06-04T06:40:32.309337+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/local_privacy_guard",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/local_privacy_guard/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/local_privacy_guard/local_privacy_guard.zip"
+    },
+    {
+      "tool_name": "token_streamer",
+      "display_name": "Token Streamer",
+      "description": "A CLI and module tool that streams token-by-token completions from a locally hosted LLM, providing real-time feedback for interactive applications. It allows developers to create dynamic and responsive systems while keeping all processing offline for enhanced privacy.",
+      "topic": "Local LLM Inference Engines",
+      "date": "2026-06-04",
+      "generated": "2026-06-04T06:40:32.309337+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/token_streamer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/token_streamer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/token_streamer/token_streamer.zip"
+    },
     {
       "tool_name": "dynamic_context_packer",
       "display_name": "Dynamic Context Packer",

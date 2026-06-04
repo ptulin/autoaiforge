@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_local_orchestrator",
+  "display_name": "LLM Local Orchestrator",
+  "description": "A CLI and library tool designed to simplify the management and inference of local LLMs, providing a consistent interface for running models with TensorSharp or PyTorch backends. It abstracts common setup tasks like hardware optimization, model loading, and tokenization, making it easier for developers to deploy models locally for privacy and offline use.",
+  "topic": "Local LLM Inference Engines",
+  "date": "2026-06-04",
+  "generated": "2026-06-04T06:40:32.309337+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/llm_local_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/llm_local_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/llm_local_orchestrator/llm_local_orchestrator.zip"
+}

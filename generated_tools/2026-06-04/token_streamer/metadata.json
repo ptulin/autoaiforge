@@ -1,0 +1,13 @@
+{
+  "tool_name": "token_streamer",
+  "display_name": "Token Streamer",
+  "description": "A CLI and module tool that streams token-by-token completions from a locally hosted LLM, providing real-time feedback for interactive applications. It allows developers to create dynamic and responsive systems while keeping all processing offline for enhanced privacy.",
+  "topic": "Local LLM Inference Engines",
+  "date": "2026-06-04",
+  "generated": "2026-06-04T06:40:32.309337+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/token_streamer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/token_streamer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/token_streamer/token_streamer.zip"
+}

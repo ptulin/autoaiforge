@@ -1,0 +1,13 @@
+{
+  "tool_name": "local_privacy_guard",
+  "display_name": "Local Privacy Guard for LLMs",
+  "description": "This tool monitors and intercepts communication between a user and a local LLM instance to block any outgoing sensitive data. It acts as a middleware that flags data leakage risks in real-time, providing warnings or blocking the operation entirely. Developers can use it to enforce strict privacy constraints during LLM interactions.",
+  "topic": "On-Device Privacy for LLMs",
+  "date": "2026-06-04",
+  "generated": "2026-06-04T06:40:32.309337+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-04/local_privacy_guard",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/local_privacy_guard/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-04/local_privacy_guard/local_privacy_guard.zip"
+}
