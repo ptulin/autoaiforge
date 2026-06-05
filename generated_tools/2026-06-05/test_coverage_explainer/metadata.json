@@ -1,0 +1,13 @@
+{
+  "tool_name": "test_coverage_explainer",
+  "display_name": "Test Coverage Explainer",
+  "description": "A Python CLI tool that integrates with coverage.py to analyze test coverage reports and uses AI to recommend areas in the codebase where test cases are missing or need improvement. It helps developers prioritize testing efforts based on critical code paths.",
+  "topic": "AI-Powered Code Review Tools",
+  "date": "2026-06-05",
+  "generated": "2026-06-05T06:19:09.995562+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/test_coverage_explainer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/test_coverage_explainer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/test_coverage_explainer/test_coverage_explainer.zip"
+}
