@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_optimizer",
+  "display_name": "Prompt Optimizer",
+  "description": "A CLI tool that helps AI developers systematically optimize prompts for large language models by testing variations and scoring their outputs. The tool allows users to define multiple prompt templates, supply test cases, and automatically evaluate and rank the effectiveness of each prompt using customizable scoring functions.",
+  "topic": "LLM Prompt Engineering",
+  "date": "2026-06-05",
+  "generated": "2026-06-05T06:19:09.995562+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/prompt_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/prompt_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/prompt_optimizer/prompt_optimizer.zip"
+}

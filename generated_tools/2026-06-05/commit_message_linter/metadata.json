@@ -1,0 +1,13 @@
+{
+  "tool_name": "commit_message_linter",
+  "display_name": "AI-Powered Commit Message Linter",
+  "description": "A Python script that analyzes Git commit messages using AI, ensuring that they follow best practices for clarity, conciseness, and relevance. It flags ambiguous messages and suggests improvements to make them more informative and helpful.",
+  "topic": "AI-Powered Code Review Tools",
+  "date": "2026-06-05",
+  "generated": "2026-06-05T06:19:09.995562+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/commit_message_linter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/commit_message_linter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/commit_message_linter/commit_message_linter.zip"
+}

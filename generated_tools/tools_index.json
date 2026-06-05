@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-04T06:45:17.171261+00:00",
-  "total_tools": 296,
+  "last_updated": "2026-06-05T06:24:20.365868+00:00",
+  "total_tools": 299,
   "tools": [
+    {
+      "tool_name": "ai_code_review_assistant",
+      "display_name": "AI Code Review Assistant",
+      "description": "A CLI tool that uses AI to analyze code files for common errors, antipatterns, and style violations. It provides detailed feedback with suggestions for improvements and highlights potential issues with code readability, efficiency, and maintainability.",
+      "topic": "AI-Powered Code Review Tools",
+      "date": "2026-06-05",
+      "generated": "2026-06-05T06:19:09.995562+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/ai_code_review_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/ai_code_review_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/ai_code_review_assistant/ai_code_review_assistant.zip"
+    },
+    {
+      "tool_name": "commit_message_linter",
+      "display_name": "AI-Powered Commit Message Linter",
+      "description": "A Python script that analyzes Git commit messages using AI, ensuring that they follow best practices for clarity, conciseness, and relevance. It flags ambiguous messages and suggests improvements to make them more informative and helpful.",
+      "topic": "AI-Powered Code Review Tools",
+      "date": "2026-06-05",
+      "generated": "2026-06-05T06:19:09.995562+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/commit_message_linter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/commit_message_linter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/commit_message_linter/commit_message_linter.zip"
+    },
+    {
+      "tool_name": "prompt_optimizer",
+      "display_name": "Prompt Optimizer",
+      "description": "A CLI tool that helps AI developers systematically optimize prompts for large language models by testing variations and scoring their outputs. The tool allows users to define multiple prompt templates, supply test cases, and automatically evaluate and rank the effectiveness of each prompt using customizable scoring functions.",
+      "topic": "LLM Prompt Engineering",
+      "date": "2026-06-05",
+      "generated": "2026-06-05T06:19:09.995562+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/prompt_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/prompt_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/prompt_optimizer/prompt_optimizer.zip"
+    },
+    {
+      "tool_name": "test_coverage_explainer",
+      "display_name": "Test Coverage Explainer",
+      "description": "A Python CLI tool that integrates with coverage.py to analyze test coverage reports and uses AI to recommend areas in the codebase where test cases are missing or need improvement. It helps developers prioritize testing efforts based on critical code paths.",
+      "topic": "AI-Powered Code Review Tools",
+      "date": "2026-06-05",
+      "generated": "2026-06-05T06:19:09.995562+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-05/test_coverage_explainer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/test_coverage_explainer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-05/test_coverage_explainer/test_coverage_explainer.zip"
+    },
     {
       "tool_name": "llm_local_orchestrator",
       "display_name": "LLM Local Orchestrator",
@@ -1600,19 +1652,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-26/news_sentiment_trading_bot",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/news_sentiment_trading_bot/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-26/news_sentiment_trading_bot/news_sentiment_trading_bot.zip"
-    },
-    {
-      "tool_name": "ai_code_review_assistant",
-      "display_name": "AI Code Review Assistant",
-      "description": "This Python script acts as an AI-powered code review assistant by integrating with Claude Code or similar tools. It allows developers to provide a piece of code and receive a detailed review with suggestions for optimization, error fixes, and improvements—all from the CLI.",
-      "topic": "AI-Powered Code Generation",
-      "date": "2026-04-25",
-      "generated": "2026-04-25T04:34:55.638769+00:00",
-      "loops_needed": 3,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-04-25/ai_code_review_assistant",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/ai_code_review_assistant/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-04-25/ai_code_review_assistant/ai_code_review_assistant.zip"
     },
     {
       "tool_name": "llm_eval_dashboard",
