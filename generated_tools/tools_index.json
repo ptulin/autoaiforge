@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-05T06:24:20.365868+00:00",
-  "total_tools": 299,
+  "last_updated": "2026-06-06T06:01:55.790054+00:00",
+  "total_tools": 301,
   "tools": [
+    {
+      "tool_name": "ai_code_linter",
+      "display_name": "AI Code Linter",
+      "description": "A CLI tool that uses AI to analyze your code for stylistic, syntactic, and logical issues, providing recommendations to improve code readability and maintainability. This tool integrates seamlessly with popular IDEs and supports multiple programming languages.",
+      "topic": "AI Coding Assistants",
+      "date": "2026-06-06",
+      "generated": "2026-06-06T05:54:19.382999+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_linter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_linter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_linter/ai_code_linter.zip"
+    },
+    {
+      "tool_name": "ai_code_completion_cli",
+      "display_name": "AI Code Completion CLI",
+      "description": "A lightweight CLI tool that provides AI-driven code completions for partially written scripts. Developers can pass incomplete code files or snippets, and the tool generates plausible completions based on the context, leveraging pre-trained AI models.",
+      "topic": "AI Coding Assistants",
+      "date": "2026-06-06",
+      "generated": "2026-06-06T05:54:19.382999+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_completion_cli",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_completion_cli/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_completion_cli/ai_code_completion_cli.zip"
+    },
+    {
+      "tool_name": "ai_debug_prompt_generator",
+      "display_name": "AI Debug Prompt Generator",
+      "description": "A Python tool that generates debugging prompts for AI coding assistants based on error logs and stack traces. The tool parses errors, extracts key details, and suggests concise prompts to help developers efficiently query AI models for solutions.",
+      "topic": "AI Coding Assistants",
+      "date": "2026-06-06",
+      "generated": "2026-06-06T05:54:19.382999+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_debug_prompt_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_debug_prompt_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_debug_prompt_generator/ai_debug_prompt_generator.zip"
+    },
     {
       "tool_name": "ai_code_review_assistant",
       "display_name": "AI Code Review Assistant",
@@ -885,19 +924,6 @@
       "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-17/deepfake_audio_detector",
       "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-17/deepfake_audio_detector/README.md",
       "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-17/deepfake_audio_detector/deepfake_audio_detector.zip"
-    },
-    {
-      "tool_name": "ai_code_linter",
-      "display_name": "AI-Powered Code Linter",
-      "description": "This tool integrates AI coding assistants to provide intelligent code linting suggestions. It checks style, syntax, and potential bugs, offering fixes and explanations via Codex or Claude. Ideal for developers who want real-time feedback and cleaner code.",
-      "topic": "AI-Powered Coding Assistants",
-      "date": "2026-05-16",
-      "generated": "2026-05-16T05:25:25.707821+00:00",
-      "loops_needed": 4,
-      "tests_passed": true,
-      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-05-16/ai_code_linter",
-      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/README.md",
-      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-05-16/ai_code_linter/ai_code_linter.zip"
     },
     {
       "tool_name": "claude_auto_responder",
