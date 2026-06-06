@@ -319,3 +319,22 @@ test_local_llm_launcher.py::test_generate_endpoint_error ERROR           [100%]
 2026-06-06 06:01:55 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_completion_cli
 2026-06-06 06:01:55 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-06 06:01:55 | INFO     | main | ✅ Generated tools_index.json with 301 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-06 06:01:59 | INFO     | main | Database committed and pushed to repo
+2026-06-06 06:01:59 | INFO     | main | 
+2026-06-06 06:01:59 | INFO     | main | ============================================================
+2026-06-06 06:01:59 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-06 06:01:59 | INFO     | main | ============================================================
+2026-06-06 06:01:59 | INFO     | main |   Date:            2026-06-06
+2026-06-06 06:01:59 | INFO     | main |   Items scraped:   506
+2026-06-06 06:01:59 | INFO     | main |   Items stored:    378
+2026-06-06 06:01:59 | INFO     | main |   Topics found:    10
+2026-06-06 06:01:59 | INFO     | main |   Ideas generated: 5
+2026-06-06 06:01:59 | INFO     | main |   Tools built:     3
+2026-06-06 06:01:59 | INFO     | main |   Tools published: 3
+2026-06-06 06:01:59 | INFO     | main |   Elapsed:         456.4s
+2026-06-06 06:01:59 | INFO     | main |   Published URLs:
+2026-06-06 06:01:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_linter
+2026-06-06 06:01:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_debug_prompt_generator
+2026-06-06 06:01:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_completion_cli
+2026-06-06 06:01:59 | INFO     | main | ============================================================
+2026-06-06 06:02:00 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
