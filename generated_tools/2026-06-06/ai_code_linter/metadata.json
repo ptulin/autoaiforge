@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_linter",
+  "display_name": "AI Code Linter",
+  "description": "A CLI tool that uses AI to analyze your code for stylistic, syntactic, and logical issues, providing recommendations to improve code readability and maintainability. This tool integrates seamlessly with popular IDEs and supports multiple programming languages.",
+  "topic": "AI Coding Assistants",
+  "date": "2026-06-06",
+  "generated": "2026-06-06T05:54:19.382999+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-06/ai_code_linter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_linter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-06/ai_code_linter/ai_code_linter.zip"
+}
