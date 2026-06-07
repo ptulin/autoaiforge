@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_vuln_scanner",
+  "display_name": "AI Code Vulnerability Scanner",
+  "description": "This tool scans Python codebases for common security vulnerabilities using a pre-trained AI model fine-tuned on secure coding patterns. It identifies issues like hardcoded secrets, insecure function usage, and potential injection vulnerabilities, providing specific remediation suggestions.",
+  "topic": "AI in Cybersecurity",
+  "date": "2026-06-07",
+  "generated": "2026-06-07T06:21:29.228154+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/ai_code_vuln_scanner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/ai_code_vuln_scanner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/ai_code_vuln_scanner/ai_code_vuln_scanner.zip"
+}

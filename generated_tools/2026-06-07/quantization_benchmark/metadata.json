@@ -1,0 +1,13 @@
+{
+  "tool_name": "quantization_benchmark",
+  "display_name": "Quantization Benchmark Tool",
+  "description": "A CLI tool to compare the performance impact of various quantization techniques like GGUF, GPTQ, and AWQ on any given pre-trained LLM. It runs benchmarks on memory usage, inference speed, and model accuracy to help developers choose the best quantization method for their resource-constrained environment.",
+  "topic": "LLM Quantization Techniques",
+  "date": "2026-06-07",
+  "generated": "2026-06-07T06:21:29.228154+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/quantization_benchmark",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/quantization_benchmark/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/quantization_benchmark/quantization_benchmark.zip"
+}
