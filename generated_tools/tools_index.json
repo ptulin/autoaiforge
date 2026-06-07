@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-06T06:01:55.790054+00:00",
-  "total_tools": 301,
+  "last_updated": "2026-06-07T06:27:07.386734+00:00",
+  "total_tools": 305,
   "tools": [
+    {
+      "tool_name": "ai_code_vuln_scanner",
+      "display_name": "AI Code Vulnerability Scanner",
+      "description": "This tool scans Python codebases for common security vulnerabilities using a pre-trained AI model fine-tuned on secure coding patterns. It identifies issues like hardcoded secrets, insecure function usage, and potential injection vulnerabilities, providing specific remediation suggestions.",
+      "topic": "AI in Cybersecurity",
+      "date": "2026-06-07",
+      "generated": "2026-06-07T06:21:29.228154+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/ai_code_vuln_scanner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/ai_code_vuln_scanner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/ai_code_vuln_scanner/ai_code_vuln_scanner.zip"
+    },
+    {
+      "tool_name": "dependency_risk_analyzer",
+      "display_name": "Dependency Risk Analyzer",
+      "description": "This tool analyzes the dependencies in your Python project for known vulnerabilities using an AI model to classify security risks. It cross-references dependency versions with public vulnerability databases like CVE and outputs a risk report.",
+      "topic": "AI in Cybersecurity",
+      "date": "2026-06-07",
+      "generated": "2026-06-07T06:21:29.228154+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/dependency_risk_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/dependency_risk_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/dependency_risk_analyzer/dependency_risk_analyzer.zip"
+    },
+    {
+      "tool_name": "dynamic_quantizer",
+      "display_name": "Dynamic LLM Quantizer",
+      "description": "This Python library allows AI developers to dynamically apply quantization techniques to LLMs while monitoring resource usage in real-time. It includes a simple API to toggle between quantization levels during runtime, enabling adaptive optimization for constrained environments.",
+      "topic": "LLM Quantization Techniques",
+      "date": "2026-06-07",
+      "generated": "2026-06-07T06:21:29.228154+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/dynamic_quantizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/dynamic_quantizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/dynamic_quantizer/dynamic_quantizer.zip"
+    },
+    {
+      "tool_name": "quantization_benchmark",
+      "display_name": "Quantization Benchmark Tool",
+      "description": "A CLI tool to compare the performance impact of various quantization techniques like GGUF, GPTQ, and AWQ on any given pre-trained LLM. It runs benchmarks on memory usage, inference speed, and model accuracy to help developers choose the best quantization method for their resource-constrained environment.",
+      "topic": "LLM Quantization Techniques",
+      "date": "2026-06-07",
+      "generated": "2026-06-07T06:21:29.228154+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-07/quantization_benchmark",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/quantization_benchmark/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-07/quantization_benchmark/quantization_benchmark.zip"
+    },
     {
       "tool_name": "ai_code_linter",
       "display_name": "AI Code Linter",
