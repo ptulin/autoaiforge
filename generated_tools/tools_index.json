@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-07T06:27:07.386734+00:00",
-  "total_tools": 305,
+  "last_updated": "2026-06-08T06:46:04.305475+00:00",
+  "total_tools": 308,
   "tools": [
+    {
+      "tool_name": "hallucination_corrector",
+      "display_name": "Hallucination Corrector",
+      "description": "This Python library automatically identifies potential hallucinations in LLM outputs and suggests corrections by querying external APIs (e.g., Wikipedia or other knowledge bases). Developers can use it to ensure more factually accurate AI-generated responses in applications.",
+      "topic": "LLM Hallucination Mitigation",
+      "date": "2026-06-08",
+      "generated": "2026-06-08T06:40:05.249197+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-08/hallucination_corrector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/hallucination_corrector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/hallucination_corrector/hallucination_corrector.zip"
+    },
+    {
+      "tool_name": "llm_hardware_profiler",
+      "display_name": "LLM Hardware Profiler",
+      "description": "This tool benchmarks the performance of large language models on local hardware, measuring metrics such as memory usage, CPU/GPU utilization, and inference latency. It offers developers insights into bottlenecks and helps with model selection and optimization for their specific hardware setup.",
+      "topic": "Local LLM Optimization Tools",
+      "date": "2026-06-08",
+      "generated": "2026-06-08T06:40:05.249197+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-08/llm_hardware_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/llm_hardware_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/llm_hardware_profiler/llm_hardware_profiler.zip"
+    },
+    {
+      "tool_name": "llm_resource_tuner",
+      "display_name": "LLM Resource Tuner",
+      "description": "This CLI tool helps developers fine-tune the resource usage of large language models by analyzing model configurations and hardware constraints. It provides recommendations for batch sizes, precision settings, and hardware-specific tweaks to optimize performance.",
+      "topic": "Local LLM Optimization Tools",
+      "date": "2026-06-08",
+      "generated": "2026-06-08T06:40:05.249197+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-08/llm_resource_tuner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/llm_resource_tuner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-08/llm_resource_tuner/llm_resource_tuner.zip"
+    },
     {
       "tool_name": "ai_code_vuln_scanner",
       "display_name": "AI Code Vulnerability Scanner",
