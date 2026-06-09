@@ -1,0 +1,13 @@
+{
+  "tool_name": "memory_decay_simulator",
+  "display_name": "Memory Decay Simulation Tool",
+  "description": "A CLI tool to simulate and visualize memory decay in AI systems. Developers can test different decay strategies, analyze how memory diminishes over time, and optimize configurations for their AI workflows.",
+  "topic": "Local AI memory management",
+  "date": "2026-06-09",
+  "generated": "2026-06-09T06:06:40.709093+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-09/memory_decay_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/memory_decay_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/memory_decay_simulator/memory_decay_simulator.zip"
+}
