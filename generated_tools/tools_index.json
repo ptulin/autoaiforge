@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-08T06:46:04.305475+00:00",
-  "total_tools": 308,
+  "last_updated": "2026-06-09T06:12:55.552773+00:00",
+  "total_tools": 311,
   "tools": [
+    {
+      "tool_name": "dynamic_llm_router",
+      "display_name": "Dynamic LLM Router",
+      "description": "This tool routes incoming requests to different LLMs based on resource availability and input size, enabling efficient utilization of compute resources. It helps in scenarios where multiple models or devices are available and load balancing is critical.",
+      "topic": "LLM inference optimization",
+      "date": "2026-06-09",
+      "generated": "2026-06-09T06:06:40.709093+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-09/dynamic_llm_router",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/dynamic_llm_router/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/dynamic_llm_router/dynamic_llm_router.zip"
+    },
+    {
+      "tool_name": "llm_quantization_eval",
+      "display_name": "LLM Quantization Evaluator",
+      "description": "This tool evaluates the performance of quantized versions of large language models, comparing them against full-precision models in terms of speed, memory usage, and accuracy. It helps developers determine the trade-offs of model quantization for their workloads.",
+      "topic": "LLM inference optimization",
+      "date": "2026-06-09",
+      "generated": "2026-06-09T06:06:40.709093+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-09/llm_quantization_eval",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/llm_quantization_eval/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/llm_quantization_eval/llm_quantization_eval.zip"
+    },
+    {
+      "tool_name": "memory_decay_simulator",
+      "display_name": "Memory Decay Simulation Tool",
+      "description": "A CLI tool to simulate and visualize memory decay in AI systems. Developers can test different decay strategies, analyze how memory diminishes over time, and optimize configurations for their AI workflows.",
+      "topic": "Local AI memory management",
+      "date": "2026-06-09",
+      "generated": "2026-06-09T06:06:40.709093+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-09/memory_decay_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/memory_decay_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/memory_decay_simulator/memory_decay_simulator.zip"
+    },
     {
       "tool_name": "hallucination_corrector",
       "display_name": "Hallucination Corrector",

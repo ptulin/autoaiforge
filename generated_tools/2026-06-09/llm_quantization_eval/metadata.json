@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_quantization_eval",
+  "display_name": "LLM Quantization Evaluator",
+  "description": "This tool evaluates the performance of quantized versions of large language models, comparing them against full-precision models in terms of speed, memory usage, and accuracy. It helps developers determine the trade-offs of model quantization for their workloads.",
+  "topic": "LLM inference optimization",
+  "date": "2026-06-09",
+  "generated": "2026-06-09T06:06:40.709093+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-09/llm_quantization_eval",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/llm_quantization_eval/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-09/llm_quantization_eval/llm_quantization_eval.zip"
+}
