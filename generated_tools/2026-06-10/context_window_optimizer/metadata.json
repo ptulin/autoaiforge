@@ -1,0 +1,13 @@
+{
+  "tool_name": "context_window_optimizer",
+  "display_name": "Context Window Optimizer",
+  "description": "A CLI tool to optimize the context window for AI agents by dynamically summarizing and compressing prior interactions. It ensures the agent's context fits within a limited token budget without losing essential information.",
+  "topic": "AI Agent Memory Management",
+  "date": "2026-06-10",
+  "generated": "2026-06-10T06:20:52.727018+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-10/context_window_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-10/context_window_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-10/context_window_optimizer/context_window_optimizer.zip"
+}

@@ -1,0 +1,13 @@
+{
+  "tool_name": "misidentification_analyzer",
+  "display_name": "Misidentification Analyzer",
+  "description": "This Python library helps developers analyze misidentifications by AI models through confusion matrix analysis, error clustering, and visual inspection of problematic data points. It aids in identifying patterns of errors that could lead to real-world harm.",
+  "topic": "AI Misidentification Risks",
+  "date": "2026-06-10",
+  "generated": "2026-06-10T06:20:52.727018+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-10/misidentification_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-10/misidentification_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-10/misidentification_analyzer/misidentification_analyzer.zip"
+}
