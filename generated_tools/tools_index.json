@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-10T06:29:04.503195+00:00",
-  "total_tools": 313,
+  "last_updated": "2026-06-11T06:56:08.862430+00:00",
+  "total_tools": 317,
   "tools": [
+    {
+      "tool_name": "ai_agent_task_orchestrator",
+      "display_name": "AI Agent Task Orchestrator",
+      "description": "This tool is a Python CLI framework that allows developers to create, customize, and orchestrate AI agents tailored to specific knowledge work tasks, such as summarization, code generation, or document analysis. It provides a modular architecture to define workflows where different AI models or APIs interact, enabling automation of complex tasks in an elegant and reusable manner.",
+      "topic": "AI Agents in Knowledge Work",
+      "date": "2026-06-11",
+      "generated": "2026-06-11T06:46:20.635708+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-11/ai_agent_task_orchestrator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/ai_agent_task_orchestrator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/ai_agent_task_orchestrator/ai_agent_task_orchestrator.zip"
+    },
+    {
+      "tool_name": "guardrail_reinforcer",
+      "display_name": "Guardrail Reinforcer",
+      "description": "An automation tool that iteratively enhances AI guardrails by applying reinforcement learning on feedback from detected bypass attempts. It helps developers fine-tune models and improve safety standards over time.",
+      "topic": "AI Guardrail Bypassing",
+      "date": "2026-06-11",
+      "generated": "2026-06-11T06:46:20.635708+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-11/guardrail_reinforcer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/guardrail_reinforcer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/guardrail_reinforcer/guardrail_reinforcer.zip"
+    },
+    {
+      "tool_name": "parallel_execution_recommender",
+      "display_name": "Parallel Execution Recommender",
+      "description": "Parallel Execution Recommender analyzes Python code to identify sequential operations that could be parallelized for better performance. It uses an AI model to detect opportunities for multiprocessing or threading and suggests rewrites to improve runtime efficiency, making it particularly useful for computationally intensive applications.",
+      "topic": "AI-Powered Code Optimization",
+      "date": "2026-06-11",
+      "generated": "2026-06-11T06:46:20.635708+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-11/parallel_execution_recommender",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/parallel_execution_recommender/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/parallel_execution_recommender/parallel_execution_recommender.zip"
+    },
+    {
+      "tool_name": "prompt_bypass_detector",
+      "display_name": "Prompt Bypass Detector",
+      "description": "This library helps developers detect and classify attempted bypasses of AI safety guardrails by analyzing input prompts and model responses for suspicious patterns. It aids in identifying edge cases and improving model safety.",
+      "topic": "AI Guardrail Bypassing",
+      "date": "2026-06-11",
+      "generated": "2026-06-11T06:46:20.635708+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-11/prompt_bypass_detector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/prompt_bypass_detector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/prompt_bypass_detector/prompt_bypass_detector.zip"
+    },
     {
       "tool_name": "context_window_optimizer",
       "display_name": "Context Window Optimizer",

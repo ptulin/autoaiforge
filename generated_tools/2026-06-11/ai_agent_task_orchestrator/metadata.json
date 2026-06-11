@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_agent_task_orchestrator",
+  "display_name": "AI Agent Task Orchestrator",
+  "description": "This tool is a Python CLI framework that allows developers to create, customize, and orchestrate AI agents tailored to specific knowledge work tasks, such as summarization, code generation, or document analysis. It provides a modular architecture to define workflows where different AI models or APIs interact, enabling automation of complex tasks in an elegant and reusable manner.",
+  "topic": "AI Agents in Knowledge Work",
+  "date": "2026-06-11",
+  "generated": "2026-06-11T06:46:20.635708+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-11/ai_agent_task_orchestrator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/ai_agent_task_orchestrator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-11/ai_agent_task_orchestrator/ai_agent_task_orchestrator.zip"
+}
