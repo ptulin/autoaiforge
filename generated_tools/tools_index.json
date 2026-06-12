@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-11T06:56:08.862430+00:00",
-  "total_tools": 317,
+  "last_updated": "2026-06-12T06:38:23.720613+00:00",
+  "total_tools": 320,
   "tools": [
+    {
+      "tool_name": "ai_cost_analyzer",
+      "display_name": "AI Cost Analyzer",
+      "description": "A data processing tool for retrospective analysis of AI agent token usage and API costs. It takes API logs as input, calculates usage metrics, identifies trends, and generates visual reports to help developers optimize their workflow and reduce costs.",
+      "topic": "AI Agent Cost Management",
+      "date": "2026-06-12",
+      "generated": "2026-06-12T06:32:05.533573+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/ai_cost_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/ai_cost_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/ai_cost_analyzer/ai_cost_analyzer.zip"
+    },
+    {
+      "tool_name": "llm_edge_deployer",
+      "display_name": "LLM Edge Deployer",
+      "description": "LLM Edge Deployer is a Python library and CLI tool designed to streamline the process of deploying optimized LLMs on edge hardware. It provides utilities to convert models to hardware-efficient formats like ONNX, export them, and run compatibility checks for edge accelerators such as NVIDIA TensorRT or Intel OpenVINO.",
+      "topic": "Local LLM Deployment",
+      "date": "2026-06-12",
+      "generated": "2026-06-12T06:32:05.533573+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/llm_edge_deployer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/llm_edge_deployer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/llm_edge_deployer/llm_edge_deployer.zip"
+    },
+    {
+      "tool_name": "token_budget_manager",
+      "display_name": "Token Budget Manager",
+      "description": "A Python library to enforce token limits on AI agents dynamically. Developers can wrap their API calls to ensure they stay within predefined token limits, with built-in support for cumulative tracking and graceful error handling when limits are reached.",
+      "topic": "AI Agent Cost Management",
+      "date": "2026-06-12",
+      "generated": "2026-06-12T06:32:05.533573+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/token_budget_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/token_budget_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/token_budget_manager/token_budget_manager.zip"
+    },
     {
       "tool_name": "ai_agent_task_orchestrator",
       "display_name": "AI Agent Task Orchestrator",

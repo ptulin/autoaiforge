@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_edge_deployer",
+  "display_name": "LLM Edge Deployer",
+  "description": "LLM Edge Deployer is a Python library and CLI tool designed to streamline the process of deploying optimized LLMs on edge hardware. It provides utilities to convert models to hardware-efficient formats like ONNX, export them, and run compatibility checks for edge accelerators such as NVIDIA TensorRT or Intel OpenVINO.",
+  "topic": "Local LLM Deployment",
+  "date": "2026-06-12",
+  "generated": "2026-06-12T06:32:05.533573+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/llm_edge_deployer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/llm_edge_deployer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/llm_edge_deployer/llm_edge_deployer.zip"
+}
