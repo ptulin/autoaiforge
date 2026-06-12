@@ -266,3 +266,22 @@ FAILED test_llm_edge_deployer.py::test_run_test_inference - ValueError: The trut
 2026-06-12 06:38:23 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/llm_edge_deployer
 2026-06-12 06:38:23 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-12 06:38:23 | INFO     | main | ✅ Generated tools_index.json with 320 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-12 06:38:27 | INFO     | main | Database committed and pushed to repo
+2026-06-12 06:38:27 | INFO     | main | 
+2026-06-12 06:38:27 | INFO     | main | ============================================================
+2026-06-12 06:38:27 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-12 06:38:27 | INFO     | main | ============================================================
+2026-06-12 06:38:27 | INFO     | main |   Date:            2026-06-12
+2026-06-12 06:38:27 | INFO     | main |   Items scraped:   510
+2026-06-12 06:38:27 | INFO     | main |   Items stored:    374
+2026-06-12 06:38:27 | INFO     | main |   Topics found:    10
+2026-06-12 06:38:27 | INFO     | main |   Ideas generated: 5
+2026-06-12 06:38:27 | INFO     | main |   Tools built:     3
+2026-06-12 06:38:27 | INFO     | main |   Tools published: 3
+2026-06-12 06:38:27 | INFO     | main |   Elapsed:         378.2s
+2026-06-12 06:38:27 | INFO     | main |   Published URLs:
+2026-06-12 06:38:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/token_budget_manager
+2026-06-12 06:38:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/ai_cost_analyzer
+2026-06-12 06:38:27 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/llm_edge_deployer
+2026-06-12 06:38:27 | INFO     | main | ============================================================
+2026-06-12 06:38:30 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
