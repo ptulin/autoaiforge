@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_cost_analyzer",
+  "display_name": "AI Cost Analyzer",
+  "description": "A data processing tool for retrospective analysis of AI agent token usage and API costs. It takes API logs as input, calculates usage metrics, identifies trends, and generates visual reports to help developers optimize their workflow and reduce costs.",
+  "topic": "AI Agent Cost Management",
+  "date": "2026-06-12",
+  "generated": "2026-06-12T06:32:05.533573+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-12/ai_cost_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/ai_cost_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-12/ai_cost_analyzer/ai_cost_analyzer.zip"
+}
