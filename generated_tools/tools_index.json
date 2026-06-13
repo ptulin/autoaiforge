@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-06-12T06:38:23.720613+00:00",
-  "total_tools": 320,
+  "last_updated": "2026-06-13T06:20:25.107124+00:00",
+  "total_tools": 322,
   "tools": [
+    {
+      "tool_name": "framework_feature_matrix",
+      "display_name": "AI Framework Feature Matrix Generator",
+      "description": "This library generates a comparison table of features supported by various open-source AI frameworks. It scrapes official documentation or uses pre-defined metadata to summarize capabilities like model serialization, hardware support, and built-in optimization algorithms.",
+      "topic": "Open-source AI frameworks",
+      "date": "2026-06-13",
+      "generated": "2026-06-13T06:13:58.922674+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-13/framework_feature_matrix",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-13/framework_feature_matrix/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-13/framework_feature_matrix/framework_feature_matrix.zip"
+    },
+    {
+      "tool_name": "policy_enforcer",
+      "display_name": "Policy Enforcer",
+      "description": "A lightweight Python library for defining and enforcing governance policies for AI agent actions. Developers can define rulesets (e.g., allowable actions, thresholds, or resource usage limits) and dynamically apply them to monitor and restrict agent behavior in production.",
+      "topic": "AI agent governance",
+      "date": "2026-06-13",
+      "generated": "2026-06-13T06:13:58.922674+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-13/policy_enforcer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-13/policy_enforcer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-13/policy_enforcer/policy_enforcer.zip"
+    },
     {
       "tool_name": "ai_cost_analyzer",
       "display_name": "AI Cost Analyzer",
