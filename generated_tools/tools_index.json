@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-06-13T06:20:25.107124+00:00",
-  "total_tools": 322,
+  "last_updated": "2026-06-14T06:41:19.762541+00:00",
+  "total_tools": 324,
   "tools": [
+    {
+      "tool_name": "ai_debug_assistant",
+      "display_name": "AI Debug Assistant",
+      "description": "A CLI tool that uses AI to analyze Python error messages and suggest potential fixes, including code snippets or steps to debug issues. This helps developers quickly understand and resolve issues without manually searching for solutions.",
+      "topic": "AI-Powered Code Assistants",
+      "date": "2026-06-14",
+      "generated": "2026-06-14T06:33:59.729328+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-14/ai_debug_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-14/ai_debug_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-14/ai_debug_assistant/ai_debug_assistant.zip"
+    },
+    {
+      "tool_name": "llm_lazy_loader",
+      "display_name": "LLM Lazy Loader",
+      "description": "A lightweight Python library that allows developers to load large language models in a lazy manner, enabling parts of the model to be loaded and swapped out of memory dynamically during inference. This is especially useful for running large models on devices with limited RAM.",
+      "topic": "Local LLM Inference Optimization",
+      "date": "2026-06-14",
+      "generated": "2026-06-14T06:33:59.729328+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-14/llm_lazy_loader",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-14/llm_lazy_loader/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-14/llm_lazy_loader/llm_lazy_loader.zip"
+    },
     {
       "tool_name": "framework_feature_matrix",
       "display_name": "AI Framework Feature Matrix Generator",
