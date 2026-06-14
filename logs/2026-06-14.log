@@ -357,3 +357,21 @@ FAILED test_code_refactor_bot.py::test_refactor_code_pep8 - Ty
 2026-06-14 06:41:19 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-14/ai_debug_assistant
 2026-06-14 06:41:19 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-14 06:41:19 | INFO     | main | ✅ Generated tools_index.json with 324 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-14 06:41:23 | INFO     | main | Database committed and pushed to repo
+2026-06-14 06:41:23 | INFO     | main | 
+2026-06-14 06:41:23 | INFO     | main | ============================================================
+2026-06-14 06:41:23 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-14 06:41:23 | INFO     | main | ============================================================
+2026-06-14 06:41:23 | INFO     | main |   Date:            2026-06-14
+2026-06-14 06:41:23 | INFO     | main |   Items scraped:   498
+2026-06-14 06:41:23 | INFO     | main |   Items stored:    252
+2026-06-14 06:41:23 | INFO     | main |   Topics found:    10
+2026-06-14 06:41:23 | INFO     | main |   Ideas generated: 5
+2026-06-14 06:41:23 | INFO     | main |   Tools built:     2
+2026-06-14 06:41:23 | INFO     | main |   Tools published: 2
+2026-06-14 06:41:23 | INFO     | main |   Elapsed:         440.0s
+2026-06-14 06:41:23 | INFO     | main |   Published URLs:
+2026-06-14 06:41:23 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-14/llm_lazy_loader
+2026-06-14 06:41:23 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-14/ai_debug_assistant
+2026-06-14 06:41:23 | INFO     | main | ============================================================
+2026-06-14 06:41:25 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
