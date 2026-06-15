@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_resource_profiler",
+  "display_name": "LLM Resource Profiler",
+  "description": "A Python module and CLI tool that profiles resource usage (RAM, VRAM, CPU, etc.) of locally deployed LLMs. It helps developers understand performance bottlenecks and optimize their hardware usage.",
+  "topic": "Local LLM Deployment Tools",
+  "date": "2026-06-15",
+  "generated": "2026-06-15T07:15:34.187662+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-15/llm_resource_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_resource_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_resource_profiler/llm_resource_profiler.zip"
+}

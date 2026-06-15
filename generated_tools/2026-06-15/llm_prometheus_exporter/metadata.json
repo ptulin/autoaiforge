@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_prometheus_exporter",
+  "display_name": "LLM Prometheus Exporter",
+  "description": "This CLI tool runs as a lightweight Prometheus exporter, exposing metrics about LLM inference performance and resource usage. It monitors key metrics like latency, token usage, memory consumption, and errors during LLM inference. Developers can integrate these metrics into Prometheus and visualize them in Grafana for real-time monitoring and alerting.",
+  "topic": "LLM Monitoring and Metrics",
+  "date": "2026-06-15",
+  "generated": "2026-06-15T07:15:34.187662+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-15/llm_prometheus_exporter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_prometheus_exporter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_prometheus_exporter/llm_prometheus_exporter.zip"
+}

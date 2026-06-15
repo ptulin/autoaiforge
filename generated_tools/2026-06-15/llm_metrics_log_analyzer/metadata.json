@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_metrics_log_analyzer",
+  "display_name": "LLM Metrics Log Analyzer",
+  "description": "A Python CLI tool that parses logs generated during LLM inference to analyze and aggregate metrics such as average latency, token usage distribution, and errors. It outputs the results in a format that can be directly ingested into Grafana via Loki or visualized in a CSV/JSON for offline analysis. Ideal for post-hoc performance debugging and monitoring.",
+  "topic": "LLM Monitoring and Metrics",
+  "date": "2026-06-15",
+  "generated": "2026-06-15T07:15:34.187662+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-15/llm_metrics_log_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_metrics_log_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-15/llm_metrics_log_analyzer/llm_metrics_log_analyzer.zip"
+}
