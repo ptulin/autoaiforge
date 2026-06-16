@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-15T07:20:04.302680+00:00",
-  "total_tools": 329,
+  "last_updated": "2026-06-16T07:27:37.768676+00:00",
+  "total_tools": 333,
   "tools": [
+    {
+      "tool_name": "adaptive_ai_malware_simulator",
+      "display_name": "Adaptive AI Malware Simulator",
+      "description": "This Python CLI tool simulates adaptive AI-driven malware behavior in controlled environments. It allows cybersecurity researchers to configure scenarios and study how AI malware adapts to different defenses, providing insights into evolving threats and detection strategies.",
+      "topic": "Adaptive AI Malware",
+      "date": "2026-06-16",
+      "generated": "2026-06-16T07:23:27.492442+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/adaptive_ai_malware_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/adaptive_ai_malware_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/adaptive_ai_malware_simulator/adaptive_ai_malware_simulator.zip"
+    },
+    {
+      "tool_name": "token_optimizer",
+      "display_name": "Token Optimizer",
+      "description": "This script analyzes token usage patterns in text inputs and suggests optimizations such as rephrasing or truncation to reduce token consumption while preserving intent, helping developers lower API costs.",
+      "topic": "AI Token Usage Tracking",
+      "date": "2026-06-16",
+      "generated": "2026-06-16T07:23:27.492442+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/token_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_optimizer/token_optimizer.zip"
+    },
+    {
+      "tool_name": "token_usage_tracker",
+      "display_name": "Token Usage Tracker",
+      "description": "This CLI tool monitors token usage for AI model API calls by wrapping API requests and logging token consumption to help developers identify inefficiencies and optimize costs in their workflows.",
+      "topic": "AI Token Usage Tracking",
+      "date": "2026-06-16",
+      "generated": "2026-06-16T07:23:27.492442+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/token_usage_tracker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_tracker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_tracker/token_usage_tracker.zip"
+    },
+    {
+      "tool_name": "token_usage_visualizer",
+      "display_name": "Token Usage Visualizer",
+      "description": "A library and CLI tool to visualize token usage data over time using graphs, enabling developers to identify patterns, spikes, and opportunities for optimization in AI application usage.",
+      "topic": "AI Token Usage Tracking",
+      "date": "2026-06-16",
+      "generated": "2026-06-16T07:23:27.492442+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/token_usage_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_visualizer/token_usage_visualizer.zip"
+    },
     {
       "tool_name": "llm_metrics_log_analyzer",
       "display_name": "LLM Metrics Log Analyzer",

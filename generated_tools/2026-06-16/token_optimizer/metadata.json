@@ -1,0 +1,13 @@
+{
+  "tool_name": "token_optimizer",
+  "display_name": "Token Optimizer",
+  "description": "This script analyzes token usage patterns in text inputs and suggests optimizations such as rephrasing or truncation to reduce token consumption while preserving intent, helping developers lower API costs.",
+  "topic": "AI Token Usage Tracking",
+  "date": "2026-06-16",
+  "generated": "2026-06-16T07:23:27.492442+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/token_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_optimizer/token_optimizer.zip"
+}

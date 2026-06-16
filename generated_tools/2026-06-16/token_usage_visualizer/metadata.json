@@ -1,0 +1,13 @@
+{
+  "tool_name": "token_usage_visualizer",
+  "display_name": "Token Usage Visualizer",
+  "description": "A library and CLI tool to visualize token usage data over time using graphs, enabling developers to identify patterns, spikes, and opportunities for optimization in AI application usage.",
+  "topic": "AI Token Usage Tracking",
+  "date": "2026-06-16",
+  "generated": "2026-06-16T07:23:27.492442+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-16/token_usage_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-16/token_usage_visualizer/token_usage_visualizer.zip"
+}
