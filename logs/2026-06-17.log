@@ -360,3 +360,20 @@ ________________ ERROR collecting test_dataset_preparer_llm.py _________________
 2026-06-17 07:13:37 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-17/llm_experiment_runner
 2026-06-17 07:13:37 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-17 07:13:37 | INFO     | main | ✅ Generated tools_index.json with 334 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-17 07:13:41 | INFO     | main | Database committed and pushed to repo
+2026-06-17 07:13:41 | INFO     | main | 
+2026-06-17 07:13:41 | INFO     | main | ============================================================
+2026-06-17 07:13:41 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-17 07:13:41 | INFO     | main | ============================================================
+2026-06-17 07:13:41 | INFO     | main |   Date:            2026-06-17
+2026-06-17 07:13:41 | INFO     | main |   Items scraped:   521
+2026-06-17 07:13:41 | INFO     | main |   Items stored:    383
+2026-06-17 07:13:41 | INFO     | main |   Topics found:    10
+2026-06-17 07:13:41 | INFO     | main |   Ideas generated: 5
+2026-06-17 07:13:41 | INFO     | main |   Tools built:     1
+2026-06-17 07:13:41 | INFO     | main |   Tools published: 1
+2026-06-17 07:13:41 | INFO     | main |   Elapsed:         413.3s
+2026-06-17 07:13:41 | INFO     | main |   Published URLs:
+2026-06-17 07:13:41 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-17/llm_experiment_runner
+2026-06-17 07:13:41 | INFO     | main | ============================================================
+2026-06-17 07:13:43 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
