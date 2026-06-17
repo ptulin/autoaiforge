@@ -1,7 +1,20 @@
 {
-  "last_updated": "2026-06-16T07:27:37.768676+00:00",
-  "total_tools": 333,
+  "last_updated": "2026-06-17T07:13:37.662309+00:00",
+  "total_tools": 334,
   "tools": [
+    {
+      "tool_name": "llm_experiment_runner",
+      "display_name": "LLM Experiment Runner",
+      "description": "A CLI tool for running experiments with open-weight LLMs like GLM-5.2. Developers can load pre-trained models, run inference, measure latency, and benchmark performance on custom datasets, making it easy to evaluate LLMs for specific tasks or environments.",
+      "topic": "Open-Weight LLMs",
+      "date": "2026-06-17",
+      "generated": "2026-06-17T07:06:44.392767+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-17/llm_experiment_runner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-17/llm_experiment_runner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-17/llm_experiment_runner/llm_experiment_runner.zip"
+    },
     {
       "tool_name": "adaptive_ai_malware_simulator",
       "display_name": "Adaptive AI Malware Simulator",
