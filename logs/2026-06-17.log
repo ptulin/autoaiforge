@@ -1,0 +1,362 @@
+2026-06-17 07:06:44 | INFO     | main | ============================================================
+2026-06-17 07:06:44 | INFO     | main | AutoAIForge starting run: 2026-06-17T07:06:44.392767+00:00
+2026-06-17 07:06:44 | INFO     | main | ============================================================
+2026-06-17 07:06:44 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-17 07:06:44 | INFO     | youtube_scraper | YouTube client ready
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:44 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A44Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-15T07%3A06%3A45Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-17 07:06:45 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-17 07:06:45 | INFO     | main |   YouTube: 0 items
+2026-06-17 07:06:45 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-17 07:06:50 | INFO     | rss_scraper | HackerNews: 168 items
+2026-06-17 07:06:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-17 07:06:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-17 07:06:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-17 07:06:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-17 07:06:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-17 07:06:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-17 07:06:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-17 07:06:58 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-17 07:07:03 | INFO     | rss_scraper | ArXiv: 107 items
+2026-06-17 07:07:07 | INFO     | rss_scraper | Dev.to: 196 items
+2026-06-17 07:07:09 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-17 07:07:09 | INFO     | rss_scraper | Free sources total: 521 unique items
+2026-06-17 07:07:09 | INFO     | main |   RSS/API sources: 521 items
+2026-06-17 07:07:09 | INFO     | main |   Total scraped: 521 items
+2026-06-17 07:07:09 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-17 07:07:09 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-17 07:07:10 | INFO     | db_manager | Purged 985 old news items
+2026-06-17 07:07:10 | INFO     | db_manager | Inserted 383/521 news items
+2026-06-17 07:07:10 | INFO     | main |   SQLite: 383 new items (total: 15157)
+2026-06-17 07:07:15 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-17 07:07:16 | INFO     | vector_store | VectorStore ready
+2026-06-17 07:07:27 | INFO     | vector_store | Indexed 1115 items into vector store
+2026-06-17 07:07:27 | INFO     | main |   Vector store: 1115 items indexed
+2026-06-17 07:07:27 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-17 07:07:27 | INFO     | topic_analyzer | Analyzing 1115 items for top 10 topics …
+2026-06-17 07:07:34 | DEBUG    | llm_client | LLM response from github_models (4195 chars)
+2026-06-17 07:07:34 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-17 07:07:34 | INFO     | main |   Found 10 topics:
+2026-06-17 07:07:34 | INFO     | main |      1. [10/10] Open-Weight LLMs
+2026-06-17 07:07:34 | INFO     | main |      2. [9/10] Fine-Tuning LLMs
+2026-06-17 07:07:34 | INFO     | main |      3. [9/10] AI-Assisted Code Generation
+2026-06-17 07:07:34 | INFO     | main |      4. [8/10] Token Optimization for LLMs
+2026-06-17 07:07:34 | INFO     | main |      5. [8/10] Agentic AI Systems
+2026-06-17 07:07:34 | INFO     | main |      6. [8/10] Local LLM Deployment
+2026-06-17 07:07:34 | INFO     | main |      7. [8/10] Transparent AI Cybersecurity
+2026-06-17 07:07:34 | INFO     | main |      8. [7/10] Multi-Agent Coordination
+2026-06-17 07:07:34 | INFO     | main |      9. [7/10] Vector Memory for AI
+2026-06-17 07:07:34 | INFO     | main |     10. [7/10] Scientific Figure Generation
+2026-06-17 07:07:34 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-17 07:07:34 | INFO     | main |   Existing collection: 333 tools across 175 topics
+2026-06-17 07:07:34 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-17 07:07:40 | DEBUG    | llm_client | LLM response from github_models (3675 chars)
+2026-06-17 07:07:40 | INFO     | idea_generator | Generated 3 ideas for topic: Open-Weight LLMs
+2026-06-17 07:07:45 | DEBUG    | llm_client | LLM response from github_models (2643 chars)
+2026-06-17 07:07:45 | INFO     | idea_generator | Generated 2 ideas for topic: Fine-Tuning LLMs
+2026-06-17 07:07:45 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-17 07:07:45 | INFO     | main |   Generated 5 tool ideas:
+2026-06-17 07:07:45 | INFO     | main |     • llm_experiment_runner: A CLI tool for running experiments with open-weight LLMs like GLM-5.2. Developer
+2026-06-17 07:07:45 | INFO     | main |     • llm_fine_tuner: A Python library that simplifies the fine-tuning of open-weight LLMs like GLM-5.
+2026-06-17 07:07:45 | INFO     | main |     • llm_prompt_tester: A lightweight CLI tool for testing and iterating on prompts across open-weight L
+2026-06-17 07:07:45 | INFO     | main |     • llm_fine_tune_assistant: A CLI tool designed to streamline the fine-tuning process of large language mode
+2026-06-17 07:07:45 | INFO     | main |     • dataset_preparer_llm: A Python library that simplifies the preparation of datasets for fine-tuning lar
+2026-06-17 07:07:45 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-17 07:07:45 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-17 07:07:53 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-17 07:07:53 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-17 07:07:53 | INFO     | tool_builder | Building tool: llm_experiment_runner …
+2026-06-17 07:08:02 | DEBUG    | llm_client | LLM response from github_models (6618 chars)
+2026-06-17 07:08:02 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'torch==2.0.1', 'numpy==1.26.0']
+2026-06-17 07:08:55 | WARNING  | test_runner | Tests FAILED for llm_experiment_runner:
+test_llm_experiment_runner.py::test_load_model FAILED                    [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+    mock_tokenizer.from_pretrained.assert_called_once_with("test-model")
+E   AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+FAILED test_llm_experiment_runner.py::test_load_model - AssertionError: Expected 'from_pretrained' to be called once. Called 0 times.
+2026-06-17 07:08:55 | WARNING  | tool_builder | ⚠️  llm_experiment_runner tests failed (loop 1/5) — test_llm_experiment_runner.py::test_load_model FAILED                    [ 20%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-17 07:09:03 | DEBUG    | llm_client | LLM response from github_models (6388 chars)
+2026-06-17 07:09:03 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'numpy']
+2026-06-17 07:09:05 | INFO     | test_runner | Tests PASSED for llm_experiment_runner
+2026-06-17 07:09:05 | INFO     | tool_builder | ✅ llm_experiment_runner passed tests on loop 2
+2026-06-17 07:09:05 | INFO     | tool_builder | Building tool: llm_fine_tuner …
+2026-06-17 07:09:15 | DEBUG    | llm_client | LLM response from github_models (7031 chars)
+2026-06-17 07:09:15 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'torch==2.0.1', 'datasets==2.15.1', 'wandb==0.15.8']
+2026-06-17 07:09:16 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement datasets==2.15.1 (from versions: 0.0.9, 1.0.0, 1.0.1, 1.0.2, 1.1.0, 1.1.1, 1.1.2, 1.1.3, 1.2.0, 1.2.1, 1.3.0, 1.4.0, 1.4.1, 1.5.0, 1.6.0, 1.6.1, 1.6.2, 1.7.0, 1.8.0, 1.9.0, 1.10.0, 1.10.1, 1.10.2, 1.11.0, 1.12.0, 1.12.1, 1.13.0, 1.13.1, 
+2026-06-17 07:09:18 | WARNING  | test_runner | Tests FAILED for llm_fine_tuner:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_llm_fine_tuner.py ____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_fine_tuner/test_llm_fine_tuner.py'.
+E   ModuleNotFoundError: No module named 'datasets'
+ERROR test_llm_fine_tuner.py
+2026-06-17 07:09:18 | WARNING  | tool_builder | ⚠️  llm_fine_tuner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_llm_fine_tuner.py ____________________
+ImportError while importing test modul
+2026-06-17 07:09:26 | DEBUG    | llm_client | LLM response from github_models (7024 chars)
+2026-06-17 07:09:26 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'datasets', 'wandb', 'pytest']
+2026-06-17 07:09:43 | WARNING  | test_runner | Tests FAILED for llm_fine_tuner:
+test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_success - FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging - FileNotFoundError: Training data file not found: dummy.json
+2026-06-17 07:09:43 | WARNING  | tool_builder | ⚠️  llm_fine_tuner tests failed (loop 2/5) — test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training d
+2026-06-17 07:09:51 | DEBUG    | llm_client | LLM response from github_models (6969 chars)
+2026-06-17 07:09:51 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'datasets', 'wandb', 'pytest']
+2026-06-17 07:09:56 | WARNING  | test_runner | Tests FAILED for llm_fine_tuner:
+test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_success - FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging - FileNotFoundError: Training data file not found: dummy.json
+2026-06-17 07:09:56 | WARNING  | tool_builder | ⚠️  llm_fine_tuner tests failed (loop 3/5) — test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training d
+2026-06-17 07:10:05 | DEBUG    | llm_client | LLM response from github_models (7618 chars)
+2026-06-17 07:10:05 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'datasets', 'wandb', 'pytest']
+2026-06-17 07:10:09 | WARNING  | test_runner | Tests FAILED for llm_fine_tuner:
+test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+    raise FileNotFoundError(f"Training data file not found: {train_data}")
+E   FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_success - FileNotFoundError: Training data file not found: dummy.json
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging - FileNotFoundError: Training data file not found: dummy.json
+2026-06-17 07:10:09 | WARNING  | tool_builder | ⚠️  llm_fine_tuner tests failed (loop 4/5) — test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise FileNotFoundError(f"Training d
+2026-06-17 07:10:19 | DEBUG    | llm_client | LLM response from github_models (7863 chars)
+2026-06-17 07:10:19 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'datasets', 'wandb']
+2026-06-17 07:10:23 | WARNING  | test_runner | Tests FAILED for llm_fine_tuner:
+test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise ImportError(
+E   ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+    raise ImportError(
+E   ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_success - ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+FAILED test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging - ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+2026-06-17 07:10:23 | WARNING  | tool_builder | ⚠️  llm_fine_tuner tests failed (loop 5/5) — test_llm_fine_tuner.py::test_fine_tune_model_success FAILED              [ 66%]
+test_llm_fine_tuner.py::test_fine_tune_model_wandb_logging FAILED        [100%]
+    raise ImportError(
+E   ImportError: 
+2026-06-17 07:10:23 | ERROR    | tool_builder | ❌ llm_fine_tuner failed after 5 loops
+2026-06-17 07:10:23 | INFO     | tool_builder | Building tool: llm_prompt_tester …
+2026-06-17 07:10:35 | DEBUG    | llm_client | LLM response from github_models (6915 chars)
+2026-06-17 07:10:35 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'pandas==2.1.1', 'pytest==7.4.2']
+2026-06-17 07:10:47 | WARNING  | test_runner | Tests FAILED for llm_prompt_tester:
+test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_prompts ________________________
+ERROR test_llm_prompt_tester.py::test_prompts
+2026-06-17 07:10:47 | WARNING  | tool_builder | ⚠️  llm_prompt_tester tests failed (loop 1/5) — test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup
+2026-06-17 07:10:54 | DEBUG    | llm_client | LLM response from github_models (6485 chars)
+2026-06-17 07:10:54 | DEBUG    | test_runner | Installing: ['transformers', 'pandas', 'pytest']
+2026-06-17 07:10:57 | WARNING  | test_runner | Tests FAILED for llm_prompt_tester:
+test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_prompts ________________________
+ERROR test_llm_prompt_tester.py::test_prompts
+2026-06-17 07:10:57 | WARNING  | tool_builder | ⚠️  llm_prompt_tester tests failed (loop 2/5) — test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup
+2026-06-17 07:11:05 | DEBUG    | llm_client | LLM response from github_models (6507 chars)
+2026-06-17 07:11:05 | DEBUG    | test_runner | Installing: ['transformers', 'pandas', 'pytest']
+2026-06-17 07:11:08 | WARNING  | test_runner | Tests FAILED for llm_prompt_tester:
+test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_prompts ________________________
+ERROR test_llm_prompt_tester.py::test_prompts
+2026-06-17 07:11:08 | WARNING  | tool_builder | ⚠️  llm_prompt_tester tests failed (loop 3/5) — test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup
+2026-06-17 07:11:15 | DEBUG    | llm_client | LLM response from github_models (6504 chars)
+2026-06-17 07:11:15 | DEBUG    | test_runner | Installing: ['transformers', 'pandas', 'pytest']
+2026-06-17 07:11:18 | WARNING  | test_runner | Tests FAILED for llm_prompt_tester:
+test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_prompts ________________________
+ERROR test_llm_prompt_tester.py::test_prompts
+2026-06-17 07:11:18 | WARNING  | tool_builder | ⚠️  llm_prompt_tester tests failed (loop 4/5) — test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup
+2026-06-17 07:11:25 | DEBUG    | llm_client | LLM response from github_models (6504 chars)
+2026-06-17 07:11:25 | DEBUG    | test_runner | Installing: ['transformers', 'pandas', 'pytest']
+2026-06-17 07:11:28 | WARNING  | test_runner | Tests FAILED for llm_prompt_tester:
+test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup of test_prompts ________________________
+ERROR test_llm_prompt_tester.py::test_prompts
+2026-06-17 07:11:28 | WARNING  | tool_builder | ⚠️  llm_prompt_tester tests failed (loop 5/5) — test_llm_prompt_tester.py::test_prompts ERROR                            [ 12%]
+==================================== ERRORS ====================================
+________________________ ERROR at setup
+2026-06-17 07:11:28 | ERROR    | tool_builder | ❌ llm_prompt_tester failed after 5 loops
+2026-06-17 07:11:28 | INFO     | tool_builder | Building tool: llm_fine_tune_assistant …
+2026-06-17 07:11:36 | DEBUG    | llm_client | LLM response from github_models (6293 chars)
+2026-06-17 07:11:36 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'datasets==2.14.5', 'tqdm==4.66.1', 'pytest==7.4.2']
+2026-06-17 07:11:45 | WARNING  | test_runner | Tests FAILED for llm_fine_tune_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_llm_fine_tune_assistant.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-17 07:11:45 | WARNING  | tool_builder | ⚠️  llm_fine_tune_assistant tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-17 07:11:53 | DEBUG    | llm_client | LLM response from github_models (6789 chars)
+2026-06-17 07:11:53 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'tqdm', 'pytest']
+2026-06-17 07:11:57 | WARNING  | test_runner | Tests FAILED for llm_fine_tune_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_llm_fine_tune_assistant.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-17 07:11:57 | WARNING  | tool_builder | ⚠️  llm_fine_tune_assistant tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-17 07:12:05 | DEBUG    | llm_client | LLM response from github_models (6946 chars)
+2026-06-17 07:12:05 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'tqdm', 'pytest']
+2026-06-17 07:12:08 | WARNING  | test_runner | Tests FAILED for llm_fine_tune_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_llm_fine_tune_assistant.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-17 07:12:08 | WARNING  | tool_builder | ⚠️  llm_fine_tune_assistant tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-17 07:12:16 | DEBUG    | llm_client | LLM response from github_models (7555 chars)
+2026-06-17 07:12:16 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'tqdm', 'pytest']
+2026-06-17 07:12:20 | WARNING  | test_runner | Tests FAILED for llm_fine_tune_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_llm_fine_tune_assistant.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-17 07:12:20 | WARNING  | tool_builder | ⚠️  llm_fine_tune_assistant tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-17 07:12:28 | DEBUG    | llm_client | LLM response from github_models (7178 chars)
+2026-06-17 07:12:28 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'tqdm', 'pytest']
+2026-06-17 07:12:32 | WARNING  | test_runner | Tests FAILED for llm_fine_tune_assistant:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_llm_fine_tune_assistant.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-17 07:12:32 | WARNING  | tool_builder | ⚠️  llm_fine_tune_assistant tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_fine_tune_assistant.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-17 07:12:32 | ERROR    | tool_builder | ❌ llm_fine_tune_assistant failed after 5 loops
+2026-06-17 07:12:32 | INFO     | tool_builder | Building tool: dataset_preparer_llm …
+2026-06-17 07:12:42 | DEBUG    | llm_client | LLM response from github_models (7386 chars)
+2026-06-17 07:12:42 | DEBUG    | test_runner | Installing: ['transformers==4.33.0', 'pandas==1.5.3', 'scikit-learn==1.2.2', 'pytest==7.4.2']
+2026-06-17 07:12:55 | WARNING  | test_runner | Tests FAILED for dataset_preparer_llm:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_preparer_llm.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-17 07:12:55 | WARNING  | tool_builder | ⚠️  dataset_preparer_llm tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-06-17 07:13:04 | DEBUG    | llm_client | LLM response from github_models (8612 chars)
+2026-06-17 07:13:04 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'transformers', 'pytest']
+2026-06-17 07:13:05 | WARNING  | test_runner | Tests FAILED for dataset_preparer_llm:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_preparer_llm.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-17 07:13:05 | WARNING  | tool_builder | ⚠️  dataset_preparer_llm tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-06-17 07:13:14 | DEBUG    | llm_client | LLM response from github_models (8815 chars)
+2026-06-17 07:13:14 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'transformers', 'pytest']
+2026-06-17 07:13:15 | WARNING  | test_runner | Tests FAILED for dataset_preparer_llm:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_preparer_llm.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-17 07:13:15 | WARNING  | tool_builder | ⚠️  dataset_preparer_llm tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-06-17 07:13:25 | DEBUG    | llm_client | LLM response from github_models (9464 chars)
+2026-06-17 07:13:25 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'transformers', 'pytest']
+2026-06-17 07:13:26 | WARNING  | test_runner | Tests FAILED for dataset_preparer_llm:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_preparer_llm.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-17 07:13:26 | WARNING  | tool_builder | ⚠️  dataset_preparer_llm tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-06-17 07:13:36 | DEBUG    | llm_client | LLM response from github_models (9512 chars)
+2026-06-17 07:13:36 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'transformers', 'pytest']
+2026-06-17 07:13:37 | WARNING  | test_runner | Tests FAILED for dataset_preparer_llm:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_dataset_preparer_llm.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-17 07:13:37 | WARNING  | tool_builder | ⚠️  dataset_preparer_llm tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_dataset_preparer_llm.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-06-17 07:13:37 | ERROR    | tool_builder | ❌ dataset_preparer_llm failed after 5 loops
+2026-06-17 07:13:37 | INFO     | tool_builder | Built 1/5 tools successfully
+2026-06-17 07:13:37 | INFO     | main |   Built 1/5 tools successfully
+2026-06-17 07:13:37 | INFO     | main |     ✅ llm_experiment_runner (loops: 2)
+2026-06-17 07:13:37 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-17 07:13:37 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-17 07:13:37 | INFO     | github_publisher |   Created zip: llm_experiment_runner.zip (2813 bytes)
+2026-06-17 07:13:37 | INFO     | github_publisher | Saved llm_experiment_runner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-17/llm_experiment_runner
+2026-06-17 07:13:37 | INFO     | github_publisher | Saved 1/1 tools to generated_tools/
+2026-06-17 07:13:37 | INFO     | main |   Published 1 tools:
+2026-06-17 07:13:37 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-17/llm_experiment_runner
+2026-06-17 07:13:37 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-17 07:13:37 | INFO     | main | ✅ Generated tools_index.json with 334 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
