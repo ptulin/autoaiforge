@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-17T07:13:37.662309+00:00",
-  "total_tools": 334,
+  "last_updated": "2026-06-18T06:56:58.547209+00:00",
+  "total_tools": 337,
   "tools": [
+    {
+      "tool_name": "context_window_simulator",
+      "display_name": "Context Window Simulator",
+      "description": "A testing tool that simulates a language model's context window to help developers identify when tokens are truncated. It takes an input prompt, simulates the model's token limit, and visualizes which parts of the prompt are dropped, allowing developers to prioritize critical sections.",
+      "topic": "Efficient Token Optimization",
+      "date": "2026-06-18",
+      "generated": "2026-06-18T06:50:26.316779+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-18/context_window_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/context_window_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/context_window_simulator/context_window_simulator.zip"
+    },
+    {
+      "tool_name": "prompt_compressor",
+      "display_name": "Prompt Compressor",
+      "description": "A Python library that helps developers rewrite and compact prompts while retaining their semantic meaning. It leverages NLP techniques to remove redundancy, replace verbose wording with concise alternatives, and optionally compress numerical information.",
+      "topic": "Efficient Token Optimization",
+      "date": "2026-06-18",
+      "generated": "2026-06-18T06:50:26.316779+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-18/prompt_compressor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/prompt_compressor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/prompt_compressor/prompt_compressor.zip"
+    },
+    {
+      "tool_name": "token_usage_profiler",
+      "display_name": "Token Usage Profiler",
+      "description": "A CLI tool to analyze and profile token usage in prompts sent to language models. It identifies high-frequency tokens, calculates token distribution across prompt sections, and highlights areas for optimization. This helps developers reduce model costs and improve performance by crafting more efficient prompts.",
+      "topic": "Efficient Token Optimization",
+      "date": "2026-06-18",
+      "generated": "2026-06-18T06:50:26.316779+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-18/token_usage_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/token_usage_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/token_usage_profiler/token_usage_profiler.zip"
+    },
     {
       "tool_name": "llm_experiment_runner",
       "display_name": "LLM Experiment Runner",

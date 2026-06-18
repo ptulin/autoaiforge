@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_compressor",
+  "display_name": "Prompt Compressor",
+  "description": "A Python library that helps developers rewrite and compact prompts while retaining their semantic meaning. It leverages NLP techniques to remove redundancy, replace verbose wording with concise alternatives, and optionally compress numerical information.",
+  "topic": "Efficient Token Optimization",
+  "date": "2026-06-18",
+  "generated": "2026-06-18T06:50:26.316779+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-18/prompt_compressor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/prompt_compressor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-18/prompt_compressor/prompt_compressor.zip"
+}
