@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-18T06:56:58.547209+00:00",
-  "total_tools": 337,
+  "last_updated": "2026-06-19T07:10:25.584810+00:00",
+  "total_tools": 340,
   "tools": [
+    {
+      "tool_name": "llm_coordinator",
+      "display_name": "LLM Coordinator",
+      "description": "A CLI tool that orchestrates workflows between multiple LLMs by defining roles and communication strategies for each model. This tool allows AI developers to easily set up pipelines where models collaborate, e.g., one model for summarization and another for sentiment analysis.",
+      "topic": "Multi-LLM orchestration",
+      "date": "2026-06-19",
+      "generated": "2026-06-19T07:04:33.976542+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/llm_coordinator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/llm_coordinator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/llm_coordinator/llm_coordinator.zip"
+    },
+    {
+      "tool_name": "patient_data_insight_visualizer",
+      "display_name": "Patient Data Insight Visualizer",
+      "description": "A Python library and CLI tool for visualizing healthcare data and AI-derived insights. It offers customizable charts and graphs for understanding patient trends, highlighting anomalies, and interpreting AI predictions in the context of rare disease diagnostics. This tool is designed to make complex data accessible and actionable for healthcare teams.",
+      "topic": "AI in healthcare diagnostics",
+      "date": "2026-06-19",
+      "generated": "2026-06-19T07:04:33.976542+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/patient_data_insight_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/patient_data_insight_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/patient_data_insight_visualizer/patient_data_insight_visualizer.zip"
+    },
+    {
+      "tool_name": "rare_disease_diagnostic_assistant",
+      "display_name": "Rare Disease Diagnostic Assistant",
+      "description": "A CLI tool that integrates AI diagnostic models to assist healthcare professionals in identifying rare diseases. Users can input patient medical history and lab results in a structured format, and the tool uses a pre-trained AI model to provide probabilistic diagnoses, ranked by confidence. This tool helps expedite the diagnostic process and supports decision-making in complex cases.",
+      "topic": "AI in healthcare diagnostics",
+      "date": "2026-06-19",
+      "generated": "2026-06-19T07:04:33.976542+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/rare_disease_diagnostic_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/rare_disease_diagnostic_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/rare_disease_diagnostic_assistant/rare_disease_diagnostic_assistant.zip"
+    },
     {
       "tool_name": "context_window_simulator",
       "display_name": "Context Window Simulator",

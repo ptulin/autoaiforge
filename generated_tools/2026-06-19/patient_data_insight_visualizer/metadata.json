@@ -1,0 +1,13 @@
+{
+  "tool_name": "patient_data_insight_visualizer",
+  "display_name": "Patient Data Insight Visualizer",
+  "description": "A Python library and CLI tool for visualizing healthcare data and AI-derived insights. It offers customizable charts and graphs for understanding patient trends, highlighting anomalies, and interpreting AI predictions in the context of rare disease diagnostics. This tool is designed to make complex data accessible and actionable for healthcare teams.",
+  "topic": "AI in healthcare diagnostics",
+  "date": "2026-06-19",
+  "generated": "2026-06-19T07:04:33.976542+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/patient_data_insight_visualizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/patient_data_insight_visualizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-19/patient_data_insight_visualizer/patient_data_insight_visualizer.zip"
+}

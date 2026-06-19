@@ -1,0 +1,263 @@
+2026-06-19 07:04:33 | INFO     | main | ============================================================
+2026-06-19 07:04:33 | INFO     | main | AutoAIForge starting run: 2026-06-19T07:04:33.976542+00:00
+2026-06-19 07:04:33 | INFO     | main | ============================================================
+2026-06-19 07:04:33 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-19 07:04:34 | INFO     | youtube_scraper | YouTube client ready
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:34 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-17T07%3A04%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-19 07:04:35 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-19 07:04:35 | INFO     | main |   YouTube: 0 items
+2026-06-19 07:04:35 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-19 07:04:40 | INFO     | rss_scraper | HackerNews: 168 items
+2026-06-19 07:04:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-19 07:04:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-19 07:04:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-19 07:04:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-19 07:04:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-19 07:04:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-19 07:04:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-19 07:04:47 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-19 07:04:53 | INFO     | rss_scraper | ArXiv: 101 items
+2026-06-19 07:04:57 | INFO     | rss_scraper | Dev.to: 188 items
+2026-06-19 07:04:58 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-19 07:04:58 | INFO     | rss_scraper | Free sources total: 507 unique items
+2026-06-19 07:04:58 | INFO     | main |   RSS/API sources: 507 items
+2026-06-19 07:04:58 | INFO     | main |   Total scraped: 507 items
+2026-06-19 07:04:58 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-19 07:04:58 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-19 07:04:58 | INFO     | db_manager | Purged 1058 old news items
+2026-06-19 07:04:58 | INFO     | db_manager | Inserted 364/507 news items
+2026-06-19 07:04:58 | INFO     | main |   SQLite: 364 new items (total: 13776)
+2026-06-19 07:05:03 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-19 07:05:05 | INFO     | vector_store | VectorStore ready
+2026-06-19 07:05:16 | INFO     | vector_store | Indexed 1119 items into vector store
+2026-06-19 07:05:16 | INFO     | main |   Vector store: 1119 items indexed
+2026-06-19 07:05:16 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-19 07:05:16 | INFO     | topic_analyzer | Analyzing 1119 items for top 10 topics …
+2026-06-19 07:05:23 | DEBUG    | llm_client | LLM response from github_models (4248 chars)
+2026-06-19 07:05:23 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-19 07:05:23 | INFO     | main |   Found 10 topics:
+2026-06-19 07:05:23 | INFO     | main |      1. [9/10] Multi-LLM orchestration
+2026-06-19 07:05:23 | INFO     | main |      2. [9/10] AI in healthcare diagnostics
+2026-06-19 07:05:23 | INFO     | main |      3. [8/10] LLM optimization techniques
+2026-06-19 07:05:23 | INFO     | main |      4. [8/10] AI-assisted coding tools
+2026-06-19 07:05:23 | INFO     | main |      5. [8/10] Generative AI content moderation
+2026-06-19 07:05:23 | INFO     | main |      6. [8/10] Long-term memory for LLMs
+2026-06-19 07:05:23 | INFO     | main |      7. [7/10] Local LLM deployment
+2026-06-19 07:05:23 | INFO     | main |      8. [7/10] AI-powered SEO tools
+2026-06-19 07:05:23 | INFO     | main |      9. [7/10] AI pricing strategy models
+2026-06-19 07:05:23 | INFO     | main |     10. [6/10] AI governance frameworks
+2026-06-19 07:05:23 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-19 07:05:23 | INFO     | main |   Existing collection: 337 tools across 177 topics
+2026-06-19 07:05:23 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-19 07:05:28 | DEBUG    | llm_client | LLM response from github_models (3304 chars)
+2026-06-19 07:05:28 | INFO     | idea_generator | Generated 3 ideas for topic: Multi-LLM orchestration
+2026-06-19 07:05:33 | DEBUG    | llm_client | LLM response from github_models (2890 chars)
+2026-06-19 07:05:33 | INFO     | idea_generator | Generated 2 ideas for topic: AI in healthcare diagnostics
+2026-06-19 07:05:33 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-19 07:05:33 | INFO     | main |   Generated 5 tool ideas:
+2026-06-19 07:05:33 | INFO     | main |     • llm_coordinator: A CLI tool that orchestrates workflows between multiple LLMs by defining roles a
+2026-06-19 07:05:33 | INFO     | main |     • llm_multi_chat: A Python library to enable multi-agent chat simulations between different LLMs. 
+2026-06-19 07:05:33 | INFO     | main |     • multi_llm_optimizer: An automation tool to benchmark, compare, and optimize workflows involving multi
+2026-06-19 07:05:33 | INFO     | main |     • rare_disease_diagnostic_assistant: A CLI tool that integrates AI diagnostic models to assist healthcare professiona
+2026-06-19 07:05:33 | INFO     | main |     • patient_data_insight_visualizer: A Python library and CLI tool for visualizing healthcare data and AI-derived ins
+2026-06-19 07:05:33 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-19 07:05:33 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-19 07:05:41 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-19 07:05:41 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-19 07:05:41 | INFO     | tool_builder | Building tool: llm_coordinator …
+2026-06-19 07:05:55 | DEBUG    | llm_client | LLM response from github_models (5323 chars)
+2026-06-19 07:05:55 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'langchain==0.0.208']
+2026-06-19 07:06:03 | WARNING  | test_runner | Tests FAILED for llm_coordinator:
+test_llm_coordinator.py::test_execute_workflow_missing_fields FAILED     [100%]
+    assert results == {"step1": None}
+E   AssertionError: assert {} == {'step1': None}
+ERROR    root:llm_coordinator.py:33 Step step1 is missing required fields.
+FAILED test_llm_coordinator.py::test_execute_workflow_missing_fields - AssertionError: assert {} == {'step1': None}
+2026-06-19 07:06:03 | WARNING  | tool_builder | ⚠️  llm_coordinator tests failed (loop 1/5) — test_llm_coordinator.py::test_execute_workflow_missing_fields FAILED     [100%]
+    assert results == {"step1": None}
+E   AssertionError: assert {} == {'step1': None}
+ERROR    root:llm_coordinator.py:
+2026-06-19 07:06:09 | DEBUG    | llm_client | LLM response from github_models (5076 chars)
+2026-06-19 07:06:09 | DEBUG    | test_runner | Installing: ['langchain']
+2026-06-19 07:06:11 | INFO     | test_runner | Tests PASSED for llm_coordinator
+2026-06-19 07:06:11 | INFO     | tool_builder | ✅ llm_coordinator passed tests on loop 2
+2026-06-19 07:06:11 | INFO     | tool_builder | Building tool: llm_multi_chat …
+2026-06-19 07:06:21 | DEBUG    | llm_client | LLM response from github_models (7102 chars)
+2026-06-19 07:06:21 | DEBUG    | test_runner | Installing: ['openai==0.27.4', 'langchain==0.0.208', 'pytest==7.4.2']
+2026-06-19 07:06:25 | WARNING  | test_runner | Tests FAILED for llm_multi_chat:
+test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has no field "predict"
+E   ValueError: "ChatOpenAI" object has no field "predict"
+FAILED test_llm_multi_chat.py::test_multichat_start - ValueError: "ChatOpenAI" object has no field "predict"
+FAILED test_llm_multi_chat.py::test_multichat_analysis - ValueError: "ChatOpenAI" object has no field "predict"
+2026-06-19 07:06:25 | WARNING  | tool_builder | ⚠️  llm_multi_chat tests failed (loop 1/5) — test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has 
+2026-06-19 07:06:34 | DEBUG    | llm_client | LLM response from github_models (7411 chars)
+2026-06-19 07:06:34 | DEBUG    | test_runner | Installing: ['openai', 'langchain']
+2026-06-19 07:06:37 | WARNING  | test_runner | Tests FAILED for llm_multi_chat:
+test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has no field "predict_messages"
+E   ValueError: "ChatOpenAI" object has no field "predict_messages"
+FAILED test_llm_multi_chat.py::test_multichat_start - ValueError: "ChatOpenAI" object has no field "predict_messages"
+FAILED test_llm_multi_chat.py::test_multichat_analysis - ValueError: "ChatOpenAI" object has no field "predict_messages"
+2026-06-19 07:06:37 | WARNING  | tool_builder | ⚠️  llm_multi_chat tests failed (loop 2/5) — test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has 
+2026-06-19 07:06:51 | DEBUG    | llm_client | LLM response from github_models (8507 chars)
+2026-06-19 07:06:51 | DEBUG    | test_runner | Installing: ['openai', 'langchain', 'pytest']
+2026-06-19 07:06:53 | WARNING  | test_runner | Tests FAILED for llm_multi_chat:
+test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has no field "predict"
+E   ValueError: "ChatOpenAI" object has no field "predict"
+FAILED test_llm_multi_chat.py::test_multichat_start - ValueError: "ChatOpenAI" object has no field "predict"
+FAILED test_llm_multi_chat.py::test_multichat_analysis - ValueError: "ChatOpenAI" object has no field "predict"
+2026-06-19 07:06:53 | WARNING  | tool_builder | ⚠️  llm_multi_chat tests failed (loop 3/5) — test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has 
+2026-06-19 07:06:53 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-19 07:08:04 | DEBUG    | llm_client | LLM response from github_models (7559 chars)
+2026-06-19 07:08:04 | DEBUG    | test_runner | Installing: ['openai', 'langchain', 'pytest']
+2026-06-19 07:08:06 | WARNING  | test_runner | Tests FAILED for llm_multi_chat:
+test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has no field "call"
+E   ValueError: "ChatOpenAI" object has no field "call"
+FAILED test_llm_multi_chat.py::test_multichat_start - ValueError: "ChatOpenAI" object has no field "call"
+FAILED test_llm_multi_chat.py::test_multichat_analysis - ValueError: "ChatOpenAI" object has no field "call"
+2026-06-19 07:08:06 | WARNING  | tool_builder | ⚠️  llm_multi_chat tests failed (loop 4/5) — test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has 
+2026-06-19 07:08:15 | DEBUG    | llm_client | LLM response from github_models (7356 chars)
+2026-06-19 07:08:15 | DEBUG    | test_runner | Installing: ['openai', 'langchain']
+2026-06-19 07:08:18 | WARNING  | test_runner | Tests FAILED for llm_multi_chat:
+test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has no field "generate"
+E   ValueError: "ChatOpenAI" object has no field "generate"
+FAILED test_llm_multi_chat.py::test_multichat_start - ValueError: "ChatOpenAI" object has no field "generate"
+FAILED test_llm_multi_chat.py::test_multichat_analysis - ValueError: "ChatOpenAI" object has no field "generate"
+2026-06-19 07:08:18 | WARNING  | tool_builder | ⚠️  llm_multi_chat tests failed (loop 5/5) — test_llm_multi_chat.py::test_multichat_start FAILED                      [ 66%]
+test_llm_multi_chat.py::test_multichat_analysis FAILED                   [100%]
+E   ValueError: "ChatOpenAI" object has 
+2026-06-19 07:08:18 | ERROR    | tool_builder | ❌ llm_multi_chat failed after 5 loops
+2026-06-19 07:08:18 | INFO     | tool_builder | Building tool: multi_llm_optimizer …
+2026-06-19 07:08:30 | DEBUG    | llm_client | LLM response from github_models (6630 chars)
+2026-06-19 07:08:30 | DEBUG    | test_runner | Installing: ['openai==0.27.0', 'langchain==0.0.208', 'pandas==1.5.3', 'matplotlib==3.7.1', 'pytest==7.4.0']
+2026-06-19 07:08:42 | WARNING  | test_runner | Tests FAILED for multi_llm_optimizer:
+test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi_llm_optimizer.py::test_benchmark_llms - AssertionError: assert None == 'mock output'
+2026-06-19 07:08:42 | WARNING  | tool_builder | ⚠️  multi_llm_optimizer tests failed (loop 1/5) — test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi
+2026-06-19 07:08:50 | DEBUG    | llm_client | LLM response from github_models (7720 chars)
+2026-06-19 07:08:50 | DEBUG    | test_runner | Installing: ['matplotlib', 'pandas', 'langchain']
+2026-06-19 07:08:54 | WARNING  | test_runner | Tests FAILED for multi_llm_optimizer:
+test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi_llm_optimizer.py::test_benchmark_llms - AssertionError: assert None == 'mock output'
+2026-06-19 07:08:54 | WARNING  | tool_builder | ⚠️  multi_llm_optimizer tests failed (loop 2/5) — test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi
+2026-06-19 07:09:04 | DEBUG    | llm_client | LLM response from github_models (7260 chars)
+2026-06-19 07:09:04 | DEBUG    | test_runner | Installing: ['matplotlib', 'pandas', 'langchain']
+2026-06-19 07:09:07 | WARNING  | test_runner | Tests FAILED for multi_llm_optimizer:
+test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi_llm_optimizer.py::test_benchmark_llms - AssertionError: assert None == 'mock output'
+2026-06-19 07:09:07 | WARNING  | tool_builder | ⚠️  multi_llm_optimizer tests failed (loop 3/5) — test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi
+2026-06-19 07:09:16 | DEBUG    | llm_client | LLM response from github_models (7094 chars)
+2026-06-19 07:09:16 | DEBUG    | test_runner | Installing: ['matplotlib', 'pandas', 'langchain']
+2026-06-19 07:09:19 | WARNING  | test_runner | Tests FAILED for multi_llm_optimizer:
+test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi_llm_optimizer.py::test_benchmark_llms - AssertionError: assert None == 'mock output'
+2026-06-19 07:09:19 | WARNING  | tool_builder | ⚠️  multi_llm_optimizer tests failed (loop 4/5) — test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi
+2026-06-19 07:09:29 | DEBUG    | llm_client | LLM response from github_models (7164 chars)
+2026-06-19 07:09:29 | DEBUG    | test_runner | Installing: ['matplotlib', 'pandas', 'langchain']
+2026-06-19 07:09:32 | WARNING  | test_runner | Tests FAILED for multi_llm_optimizer:
+test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi_llm_optimizer.py::test_benchmark_llms - AssertionError: assert None == 'mock output'
+2026-06-19 07:09:32 | WARNING  | tool_builder | ⚠️  multi_llm_optimizer tests failed (loop 5/5) — test_multi_llm_optimizer.py::test_benchmark_llms FAILED                  [ 66%]
+    assert results.iloc[0]['output'] == "mock output"
+E   AssertionError: assert None == 'mock output'
+FAILED test_multi
+2026-06-19 07:09:32 | ERROR    | tool_builder | ❌ multi_llm_optimizer failed after 5 loops
+2026-06-19 07:09:32 | INFO     | tool_builder | Building tool: rare_disease_diagnostic_assistant …
+2026-06-19 07:09:42 | DEBUG    | llm_client | LLM response from github_models (7515 chars)
+2026-06-19 07:09:42 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pandas==1.5.3', 'scikit-learn==1.2.2', 'matplotlib==3.7.1']
+2026-06-19 07:09:52 | WARNING  | test_runner | Tests FAILED for rare_disease_diagnostic_assistant:
+==================================== ERRORS ====================================
+__________ ERROR collecting test_rare_disease_diagnostic_assistant.py __________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/rare_disease_diagnostic_assistant/test_rare_disease_diagnostic_assistant.py'.
+E   ImportError: cannot import name 'joblib' from 'sklearn.externals' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/externals/__init__.py)
+ERROR test_rare_disease_diagnostic_assistant.py
+2026-06-19 07:09:52 | WARNING  | tool_builder | ⚠️  rare_disease_diagnostic_assistant tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________ ERROR collecting test_rare_disease_diagnostic_assistant.py __________
+ImportError while importing test modul
+2026-06-19 07:10:02 | DEBUG    | llm_client | LLM response from github_models (7954 chars)
+2026-06-19 07:10:02 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'matplotlib', 'scikit-learn', 'joblib']
+2026-06-19 07:10:04 | INFO     | test_runner | Tests PASSED for rare_disease_diagnostic_assistant
+2026-06-19 07:10:04 | INFO     | tool_builder | ✅ rare_disease_diagnostic_assistant passed tests on loop 2
+2026-06-19 07:10:04 | INFO     | tool_builder | Building tool: patient_data_insight_visualizer …
+2026-06-19 07:10:15 | DEBUG    | llm_client | LLM response from github_models (5958 chars)
+2026-06-19 07:10:15 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'matplotlib==3.7.2', 'seaborn==0.12.2', 'plotly==5.15.0']
+2026-06-19 07:10:25 | INFO     | test_runner | Tests PASSED for patient_data_insight_visualizer
+2026-06-19 07:10:25 | INFO     | tool_builder | ✅ patient_data_insight_visualizer passed tests on loop 1
+2026-06-19 07:10:25 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-06-19 07:10:25 | INFO     | main |   Built 3/5 tools successfully
+2026-06-19 07:10:25 | INFO     | main |     ✅ llm_coordinator (loops: 2)
+2026-06-19 07:10:25 | INFO     | main |     ✅ rare_disease_diagnostic_assistant (loops: 2)
+2026-06-19 07:10:25 | INFO     | main |     ✅ patient_data_insight_visualizer (loops: 1)
+2026-06-19 07:10:25 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-19 07:10:25 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-19 07:10:25 | INFO     | github_publisher |   Created zip: llm_coordinator.zip (2421 bytes)
+2026-06-19 07:10:25 | INFO     | github_publisher | Saved llm_coordinator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/llm_coordinator
+2026-06-19 07:10:25 | INFO     | github_publisher |   Created zip: rare_disease_diagnostic_assistant.zip (3159 bytes)
+2026-06-19 07:10:25 | INFO     | github_publisher | Saved rare_disease_diagnostic_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/rare_disease_diagnostic_assistant
+2026-06-19 07:10:25 | INFO     | github_publisher |   Created zip: patient_data_insight_visualizer.zip (2866 bytes)
+2026-06-19 07:10:25 | INFO     | github_publisher | Saved patient_data_insight_visualizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/patient_data_insight_visualizer
+2026-06-19 07:10:25 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-06-19 07:10:25 | INFO     | main |   Published 3 tools:
+2026-06-19 07:10:25 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/llm_coordinator
+2026-06-19 07:10:25 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/rare_disease_diagnostic_assistant
+2026-06-19 07:10:25 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-19/patient_data_insight_visualizer
+2026-06-19 07:10:25 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-19 07:10:25 | INFO     | main | ✅ Generated tools_index.json with 340 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
