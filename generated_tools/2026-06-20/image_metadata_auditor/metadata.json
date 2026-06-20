@@ -1,0 +1,13 @@
+{
+  "tool_name": "image_metadata_auditor",
+  "display_name": "Image Metadata Auditor",
+  "description": "This Python library focuses on analyzing image metadata such as EXIF data to identify inconsistencies or anomalies that might indicate an image was generated or manipulated by AI tools. It allows developers to validate metadata integrity and detect possible tampering.",
+  "topic": "AI Photo Authenticity Detection",
+  "date": "2026-06-20",
+  "generated": "2026-06-20T06:20:04.103216+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-20/image_metadata_auditor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-20/image_metadata_auditor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-20/image_metadata_auditor/image_metadata_auditor.zip"
+}

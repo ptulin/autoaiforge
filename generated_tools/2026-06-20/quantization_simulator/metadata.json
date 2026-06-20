@@ -1,0 +1,13 @@
+{
+  "tool_name": "quantization_simulator",
+  "display_name": "Quantization Simulator",
+  "description": "Quantization Simulator is a Python library designed to simulate the effects of various quantization techniques on large language models before applying them. This tool allows developers to experiment with different precision levels (e.g., 16-bit, 8-bit, 4-bit) and observe their impact on memory usage, performance, and accuracy. It's ideal for optimizing AI systems where multiple trade-offs must be balanced.",
+  "topic": "LLM Quantization Techniques",
+  "date": "2026-06-20",
+  "generated": "2026-06-20T06:20:04.103216+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-20/quantization_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-20/quantization_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-20/quantization_simulator/quantization_simulator.zip"
+}
