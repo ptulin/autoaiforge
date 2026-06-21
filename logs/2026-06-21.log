@@ -1,0 +1,265 @@
+2026-06-21 06:48:49 | INFO     | main | ============================================================
+2026-06-21 06:48:49 | INFO     | main | AutoAIForge starting run: 2026-06-21T06:48:49.919367+00:00
+2026-06-21 06:48:49 | INFO     | main | ============================================================
+2026-06-21 06:48:49 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-21 06:48:50 | INFO     | youtube_scraper | YouTube client ready
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:50 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A50Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A51Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A51Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A51Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A51Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-19T06%3A48%3A51Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-21 06:48:51 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-21 06:48:51 | INFO     | main |   YouTube: 0 items
+2026-06-21 06:48:51 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-21 06:48:56 | INFO     | rss_scraper | HackerNews: 156 items
+2026-06-21 06:48:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-21 06:48:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-21 06:48:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-21 06:48:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-21 06:49:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-21 06:49:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-21 06:49:02 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-21 06:49:03 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-21 06:49:08 | INFO     | rss_scraper | ArXiv: 101 items
+2026-06-21 06:49:12 | INFO     | rss_scraper | Dev.to: 194 items
+2026-06-21 06:49:13 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-21 06:49:13 | INFO     | rss_scraper | Free sources total: 501 unique items
+2026-06-21 06:49:13 | INFO     | main |   RSS/API sources: 501 items
+2026-06-21 06:49:13 | INFO     | main |   Total scraped: 501 items
+2026-06-21 06:49:13 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-21 06:49:13 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-21 06:49:14 | INFO     | db_manager | Purged 1045 old news items
+2026-06-21 06:49:14 | INFO     | db_manager | Inserted 248/501 news items
+2026-06-21 06:49:14 | INFO     | main |   SQLite: 248 new items (total: 12212)
+2026-06-21 06:49:18 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-21 06:49:19 | INFO     | vector_store | VectorStore ready
+2026-06-21 06:49:28 | INFO     | vector_store | Indexed 872 items into vector store
+2026-06-21 06:49:28 | INFO     | main |   Vector store: 872 items indexed
+2026-06-21 06:49:28 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-21 06:49:28 | INFO     | topic_analyzer | Analyzing 872 items for top 10 topics …
+2026-06-21 06:49:34 | DEBUG    | llm_client | LLM response from github_models (3705 chars)
+2026-06-21 06:49:34 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-21 06:49:34 | INFO     | main |   Found 10 topics:
+2026-06-21 06:49:34 | INFO     | main |      1. [10/10] Agentic AI Systems
+2026-06-21 06:49:34 | INFO     | main |      2. [9/10] Agent Memory Optimization
+2026-06-21 06:49:34 | INFO     | main |      3. [9/10] LLM Cost Optimization
+2026-06-21 06:49:34 | INFO     | main |      4. [9/10] AI-Enhanced Knowledge Retrieval
+2026-06-21 06:49:34 | INFO     | main |      5. [8/10] AI Agent Collaboration Frameworks
+2026-06-21 06:49:34 | INFO     | main |      6. [8/10] AI-Powered Code Analysis
+2026-06-21 06:49:34 | INFO     | main |      7. [8/10] Local LLM Deployment
+2026-06-21 06:49:34 | INFO     | main |      8. [8/10] AI Model Benchmarking
+2026-06-21 06:49:34 | INFO     | main |      9. [7/10] AI-Driven Security Audits
+2026-06-21 06:49:34 | INFO     | main |     10. [7/10] AI-Assisted Media Editing
+2026-06-21 06:49:34 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-21 06:49:35 | INFO     | main |   Existing collection: 342 tools across 180 topics
+2026-06-21 06:49:35 | INFO     | main |   🔄 Upgrade candidate: 'AI-Powered Code Analysis' (relevance 8/10, last built 2026-04-12)
+2026-06-21 06:49:35 | INFO     | main |   🔄 Upgrade candidate: 'Local LLM Deployment' (relevance 8/10, last built 2026-06-12)
+2026-06-21 06:49:35 | INFO     | main |   Topics flagged for upgrade: AI-Powered Code Analysis, Local LLM Deployment
+2026-06-21 06:49:40 | DEBUG    | llm_client | LLM response from github_models (3201 chars)
+2026-06-21 06:49:40 | INFO     | idea_generator | Generated 3 ideas for topic: Agentic AI Systems
+2026-06-21 06:49:45 | DEBUG    | llm_client | LLM response from github_models (2668 chars)
+2026-06-21 06:49:45 | INFO     | idea_generator | Generated 2 ideas for topic: Agent Memory Optimization
+2026-06-21 06:49:45 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-21 06:49:45 | INFO     | main |   Generated 5 tool ideas:
+2026-06-21 06:49:45 | INFO     | main |     • agentic_ai_scenario_tester: This CLI tool allows developers to simulate complex scenarios and test how agent
+2026-06-21 06:49:45 | INFO     | main |     • autonomy_failure_analyzer: A Python library that helps identify weaknesses in agentic AI systems by analyzi
+2026-06-21 06:49:45 | INFO     | main |     • goal_alignment_validator: A utility to validate the alignment between an agentic AI's goals and its action
+2026-06-21 06:49:45 | INFO     | main |     • compact_memory_store: A lightweight Python library for storing and retrieving AI agent memory snapshot
+2026-06-21 06:49:45 | INFO     | main |     • semantic_memory_indexer: A Python CLI tool for creating and querying semantic indexes of AI agent memory 
+2026-06-21 06:49:45 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-21 06:49:45 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-21 06:49:54 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-21 06:49:54 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-21 06:49:54 | INFO     | tool_builder | Building tool: agentic_ai_scenario_tester …
+2026-06-21 06:50:04 | DEBUG    | llm_client | LLM response from github_models (7527 chars)
+2026-06-21 06:50:04 | DEBUG    | test_runner | Installing: ['jsonschema==4.19.0', 'pandas==2.1.1', 'matplotlib==3.8.0', 'pytest==7.4.2']
+2026-06-21 06:50:16 | WARNING  | test_runner | Tests FAILED for agentic_ai_scenario_tester:
+test_agentic_ai_scenario_tester.py::test_load_scenario_valid FAILED      [ 33%]
+test_agentic_ai_scenario_tester.py::test_load_scenario_invalid_json FAILED [ 66%]
+    raise FileNotFoundError(f"Scenario file '{file_path}' does not exist.")
+E   FileNotFoundError: Scenario file 'dummy_path.json' does not exist.
+    raise FileNotFoundError(f"Scenario file '{file_path}' does not exist.")
+E   FileNotFoundError: Scenario file 'dummy_path.json' does not exist.
+FAILED test_agentic_ai_scenario_tester.py::test_load_scenario_valid - FileNotFoundError: Scenario file 'dummy_path.json' does not exist.
+FAILED test_agentic_ai_scenario_tester.py::test_load_scenario_invalid_json - FileNotFoundError: Scenario file 'dummy_path.json' does not exist.
+2026-06-21 06:50:16 | WARNING  | tool_builder | ⚠️  agentic_ai_scenario_tester tests failed (loop 1/5) — test_agentic_ai_scenario_tester.py::test_load_scenario_valid FAILED      [ 33%]
+test_agentic_ai_scenario_tester.py::test_load_scenario_invalid_json FAILED [ 66%]
+    raise FileNotFoundError(f"Scenario
+2026-06-21 06:50:25 | DEBUG    | llm_client | LLM response from github_models (7752 chars)
+2026-06-21 06:50:25 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'jsonschema']
+2026-06-21 06:50:26 | INFO     | test_runner | Tests PASSED for agentic_ai_scenario_tester
+2026-06-21 06:50:26 | INFO     | tool_builder | ✅ agentic_ai_scenario_tester passed tests on loop 2
+2026-06-21 06:50:26 | INFO     | tool_builder | Building tool: autonomy_failure_analyzer …
+2026-06-21 06:50:37 | DEBUG    | llm_client | LLM response from github_models (7251 chars)
+2026-06-21 06:50:37 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pandas==1.5.3', 'scipy==1.10.1', 'matplotlib==3.7.1']
+2026-06-21 06:50:49 | WARNING  | test_runner | Tests FAILED for autonomy_failure_analyzer:
+test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_plot_failure_trends FAILED       [100%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_load_logs_valid_file - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_analyze_failures - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_plot_failure_trends - FileNotFoundError: The file mock_file.csv does not exist.
+2026-06-21 06:50:49 | WARNING  | tool_builder | ⚠️  autonomy_failure_analyzer tests failed (loop 1/5) — test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_
+2026-06-21 06:50:58 | DEBUG    | llm_client | LLM response from github_models (7027 chars)
+2026-06-21 06:50:58 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'matplotlib', 'scipy']
+2026-06-21 06:50:59 | WARNING  | test_runner | Tests FAILED for autonomy_failure_analyzer:
+test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_plot_failure_trends FAILED       [100%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_load_logs_valid_file - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_analyze_failures - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_plot_failure_trends - FileNotFoundError: The file mock_file.csv does not exist.
+2026-06-21 06:50:59 | WARNING  | tool_builder | ⚠️  autonomy_failure_analyzer tests failed (loop 2/5) — test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_
+2026-06-21 06:51:07 | DEBUG    | llm_client | LLM response from github_models (6581 chars)
+2026-06-21 06:51:07 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'matplotlib', 'scipy']
+2026-06-21 06:51:09 | WARNING  | test_runner | Tests FAILED for autonomy_failure_analyzer:
+test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_plot_failure_trends FAILED       [100%]
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+    raise FileNotFoundError(f"The file {file_path} does not exist.")
+E   FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_load_logs_valid_file - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_analyze_failures - FileNotFoundError: The file mock_file.csv does not exist.
+FAILED test_autonomy_failure_analyzer.py::test_plot_failure_trends - FileNotFoundError: The file mock_file.csv does not exist.
+2026-06-21 06:51:09 | WARNING  | tool_builder | ⚠️  autonomy_failure_analyzer tests failed (loop 3/5) — test_autonomy_failure_analyzer.py::test_load_logs_valid_file FAILED      [ 25%]
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+test_autonomy_failure_analyzer.py::test_
+2026-06-21 06:51:17 | DEBUG    | llm_client | LLM response from github_models (6887 chars)
+2026-06-21 06:51:17 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'matplotlib', 'scipy']
+2026-06-21 06:51:19 | WARNING  | test_runner | Tests FAILED for autonomy_failure_analyzer:
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+    assert summary['failure_by_decision'] == {"A": 0.5, "B": 1.0}
+E   AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A': 0.5, 'B': 1.0}
+FAILED test_autonomy_failure_analyzer.py::test_analyze_failures - AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A': 0.5, 'B': 1.0}
+2026-06-21 06:51:19 | WARNING  | tool_builder | ⚠️  autonomy_failure_analyzer tests failed (loop 4/5) — test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+    assert summary['failure_by_decision'] == {"A": 0.5, "B": 1.0}
+E   AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A
+2026-06-21 06:51:27 | DEBUG    | llm_client | LLM response from github_models (7139 chars)
+2026-06-21 06:51:27 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'matplotlib', 'scipy']
+2026-06-21 06:51:28 | WARNING  | test_runner | Tests FAILED for autonomy_failure_analyzer:
+test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+    assert summary['failure_by_decision'] == {"A": 0.5, "B": 1.0}
+E   AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A': 0.5, 'B': 1.0}
+FAILED test_autonomy_failure_analyzer.py::test_analyze_failures - AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A': 0.5, 'B': 1.0}
+2026-06-21 06:51:28 | WARNING  | tool_builder | ⚠️  autonomy_failure_analyzer tests failed (loop 5/5) — test_autonomy_failure_analyzer.py::test_analyze_failures FAILED          [ 75%]
+    assert summary['failure_by_decision'] == {"A": 0.5, "B": 1.0}
+E   AssertionError: assert {'A': 1.0, 'B': 0.0} == {'A
+2026-06-21 06:51:28 | ERROR    | tool_builder | ❌ autonomy_failure_analyzer failed after 5 loops
+2026-06-21 06:51:28 | INFO     | tool_builder | Building tool: goal_alignment_validator …
+2026-06-21 06:51:40 | DEBUG    | llm_client | LLM response from github_models (8100 chars)
+2026-06-21 06:51:40 | ERROR    | tool_builder | Initial generation failed for goal_alignment_validator: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport pandas as pd\nimport yaml\nfrom typing import List, Dict\n\ndef load_rules(rules_file: str) -> Dict:\n    \"\"\"Load validation rules from a YAML file.\"\"\"\n    try:\n        with open(rules_file, 'r') as f:\n            return yaml.safe_load(f)\n 
+Expecting property name enclosed in double quotes: line 10 column 1 (char 8087)
+2026-06-21 06:51:40 | INFO     | tool_builder | Building tool: compact_memory_store …
+2026-06-21 06:51:51 | DEBUG    | llm_client | LLM response from github_models (7302 chars)
+2026-06-21 06:51:51 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'lz4==4.3.2']
+2026-06-21 06:51:52 | INFO     | test_runner | Tests PASSED for compact_memory_store
+2026-06-21 06:51:52 | INFO     | tool_builder | ✅ compact_memory_store passed tests on loop 1
+2026-06-21 06:51:52 | INFO     | tool_builder | Building tool: semantic_memory_indexer …
+2026-06-21 06:52:01 | DEBUG    | llm_client | LLM response from github_models (6639 chars)
+2026-06-21 06:52:01 | DEBUG    | test_runner | Installing: ['sentence-transformers==2.2.2', 'faiss-cpu==1.7.4']
+2026-06-21 06:53:06 | WARNING  | test_runner | Tests FAILED for semantic_memory_indexer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/semantic_memory_indexer/test_semantic_memory_indexer.py'.
+E   ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_semantic_memory_indexer.py
+2026-06-21 06:53:06 | WARNING  | tool_builder | ⚠️  semantic_memory_indexer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test modul
+2026-06-21 06:53:16 | DEBUG    | llm_client | LLM response from github_models (7082 chars)
+2026-06-21 06:53:16 | DEBUG    | test_runner | Installing: ['faiss-cpu', 'sentence-transformers', 'pytest']
+2026-06-21 06:53:21 | WARNING  | test_runner | Tests FAILED for semantic_memory_indexer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/semantic_memory_indexer/test_semantic_memory_indexer.py'.
+E   ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_semantic_memory_indexer.py
+2026-06-21 06:53:21 | WARNING  | tool_builder | ⚠️  semantic_memory_indexer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test modul
+2026-06-21 06:53:31 | DEBUG    | llm_client | LLM response from github_models (7057 chars)
+2026-06-21 06:53:31 | DEBUG    | test_runner | Installing: ['faiss-cpu', 'sentence-transformers', 'pytest']
+2026-06-21 06:53:36 | WARNING  | test_runner | Tests FAILED for semantic_memory_indexer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/semantic_memory_indexer/test_semantic_memory_indexer.py'.
+E   ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_semantic_memory_indexer.py
+2026-06-21 06:53:36 | WARNING  | tool_builder | ⚠️  semantic_memory_indexer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test modul
+2026-06-21 06:53:45 | DEBUG    | llm_client | LLM response from github_models (6776 chars)
+2026-06-21 06:53:45 | DEBUG    | test_runner | Installing: ['faiss-cpu', 'sentence-transformers', 'pytest']
+2026-06-21 06:53:49 | WARNING  | test_runner | Tests FAILED for semantic_memory_indexer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/semantic_memory_indexer/test_semantic_memory_indexer.py'.
+E   ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_semantic_memory_indexer.py
+2026-06-21 06:53:49 | WARNING  | tool_builder | ⚠️  semantic_memory_indexer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test modul
+2026-06-21 06:53:59 | DEBUG    | llm_client | LLM response from github_models (7730 chars)
+2026-06-21 06:53:59 | DEBUG    | test_runner | Installing: ['faiss-cpu', 'sentence-transformers', 'pytest']
+2026-06-21 06:54:04 | WARNING  | test_runner | Tests FAILED for semantic_memory_indexer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/semantic_memory_indexer/test_semantic_memory_indexer.py'.
+E   ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/huggingface_hub/__init__.py)
+ERROR test_semantic_memory_indexer.py
+2026-06-21 06:54:04 | WARNING  | tool_builder | ⚠️  semantic_memory_indexer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_semantic_memory_indexer.py _______________
+ImportError while importing test modul
+2026-06-21 06:54:04 | ERROR    | tool_builder | ❌ semantic_memory_indexer failed after 5 loops
+2026-06-21 06:54:04 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-06-21 06:54:04 | INFO     | main |   Built 2/5 tools successfully
+2026-06-21 06:54:04 | INFO     | main |     ✅ agentic_ai_scenario_tester (loops: 2)
+2026-06-21 06:54:04 | INFO     | main |     ✅ compact_memory_store (loops: 1)
+2026-06-21 06:54:04 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-21 06:54:04 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-21 06:54:04 | INFO     | github_publisher |   Created zip: agentic_ai_scenario_tester.zip (3252 bytes)
+2026-06-21 06:54:04 | INFO     | github_publisher | Saved agentic_ai_scenario_tester → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-21/agentic_ai_scenario_tester
+2026-06-21 06:54:04 | INFO     | github_publisher |   Created zip: compact_memory_store.zip (2666 bytes)
+2026-06-21 06:54:04 | INFO     | github_publisher | Saved compact_memory_store → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-21/compact_memory_store
+2026-06-21 06:54:04 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-06-21 06:54:04 | INFO     | main |   Published 2 tools:
+2026-06-21 06:54:04 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-21/agentic_ai_scenario_tester
+2026-06-21 06:54:04 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-21/compact_memory_store
+2026-06-21 06:54:04 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-21 06:54:04 | INFO     | main | ✅ Generated tools_index.json with 344 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

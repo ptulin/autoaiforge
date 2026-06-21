@@ -1,0 +1,13 @@
+{
+  "tool_name": "compact_memory_store",
+  "display_name": "Compact Memory Store",
+  "description": "A lightweight Python library for storing and retrieving AI agent memory snapshots in a memory-efficient, compact format using techniques like deduplication and compression. This tool is ideal for developers looking to reduce memory footprint and speed up memory access in long-running agent workflows.",
+  "topic": "Agent Memory Optimization",
+  "date": "2026-06-21",
+  "generated": "2026-06-21T06:48:49.919367+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-21/compact_memory_store",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-21/compact_memory_store/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-21/compact_memory_store/compact_memory_store.zip"
+}
