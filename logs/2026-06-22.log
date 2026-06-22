@@ -1,0 +1,415 @@
+2026-06-22 07:18:59 | INFO     | main | ============================================================
+2026-06-22 07:18:59 | INFO     | main | AutoAIForge starting run: 2026-06-22T07:18:59.898406+00:00
+2026-06-22 07:18:59 | INFO     | main | ============================================================
+2026-06-22 07:18:59 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-22 07:19:00 | INFO     | youtube_scraper | YouTube client ready
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:00 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:01 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-20T07%3A19%3A00Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-22 07:19:01 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-22 07:19:01 | INFO     | main |   YouTube: 0 items
+2026-06-22 07:19:01 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-22 07:19:05 | INFO     | rss_scraper | HackerNews: 151 items
+2026-06-22 07:19:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-22 07:19:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-22 07:19:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-22 07:19:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-22 07:19:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-22 07:19:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-22 07:19:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-22 07:19:13 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-22 07:19:18 | INFO     | rss_scraper | ArXiv: 101 items
+2026-06-22 07:19:23 | INFO     | rss_scraper | Dev.to: 183 items
+2026-06-22 07:19:24 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-22 07:19:24 | INFO     | rss_scraper | Free sources total: 485 unique items
+2026-06-22 07:19:24 | INFO     | main |   RSS/API sources: 485 items
+2026-06-22 07:19:24 | INFO     | main |   Total scraped: 485 items
+2026-06-22 07:19:24 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-22 07:19:24 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-22 07:19:24 | INFO     | db_manager | Purged 800 old news items
+2026-06-22 07:19:24 | INFO     | db_manager | Inserted 244/485 news items
+2026-06-22 07:19:24 | INFO     | main |   SQLite: 244 new items (total: 11656)
+2026-06-22 07:19:29 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-22 07:19:30 | INFO     | vector_store | VectorStore ready
+2026-06-22 07:19:38 | INFO     | vector_store | Indexed 492 items into vector store
+2026-06-22 07:19:38 | INFO     | main |   Vector store: 492 items indexed
+2026-06-22 07:19:38 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-22 07:19:38 | INFO     | topic_analyzer | Analyzing 492 items for top 10 topics …
+2026-06-22 07:19:44 | DEBUG    | llm_client | LLM response from github_models (3743 chars)
+2026-06-22 07:19:44 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-22 07:19:44 | INFO     | main |   Found 10 topics:
+2026-06-22 07:19:44 | INFO     | main |      1. [10/10] Open-Source Sovereign AI Models
+2026-06-22 07:19:44 | INFO     | main |      2. [10/10] Fine-Tuning Small LLMs
+2026-06-22 07:19:44 | INFO     | main |      3. [9/10] Securing AI Agents
+2026-06-22 07:19:44 | INFO     | main |      4. [9/10] Local Deployment of LLMs
+2026-06-22 07:19:44 | INFO     | main |      5. [9/10] LLM Hallucination Mitigation
+2026-06-22 07:19:44 | INFO     | main |      6. [8/10] Memory Management for AI Agents
+2026-06-22 07:19:44 | INFO     | main |      7. [8/10] AI Coding Agent Guardrails
+2026-06-22 07:19:44 | INFO     | main |      8. [8/10] AI-Powered Workflow Automation
+2026-06-22 07:19:44 | INFO     | main |      9. [7/10] AI Agent Observability
+2026-06-22 07:19:44 | INFO     | main |     10. [7/10] Field Mapping with AI
+2026-06-22 07:19:44 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-22 07:19:45 | INFO     | main |   Existing collection: 344 tools across 182 topics
+2026-06-22 07:19:45 | INFO     | main |   🔄 Upgrade candidate: 'LLM Hallucination Mitigation' (relevance 9/10, last built 2026-06-08)
+2026-06-22 07:19:45 | INFO     | main |   Topics flagged for upgrade: LLM Hallucination Mitigation
+2026-06-22 07:19:45 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-22 07:20:51 | DEBUG    | llm_client | LLM response from github_models (3507 chars)
+2026-06-22 07:20:51 | INFO     | idea_generator | Generated 3 ideas for topic: Open-Source Sovereign AI Models
+2026-06-22 07:20:56 | DEBUG    | llm_client | LLM response from github_models (2744 chars)
+2026-06-22 07:20:56 | INFO     | idea_generator | Generated 2 ideas for topic: Fine-Tuning Small LLMs
+2026-06-22 07:20:56 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-22 07:20:56 | INFO     | main |   Generated 5 tool ideas:
+2026-06-22 07:20:56 | INFO     | main |     • sovereign_model_trainer: This CLI tool simplifies the process of training open-source foundation models w
+2026-06-22 07:20:56 | INFO     | main |     • model_inference_server: A lightweight Python-based HTTP server for deploying open-source foundation mode
+2026-06-22 07:20:56 | INFO     | main |     • dataset_balancer: A command-line utility to balance labeled datasets for training foundation model
+2026-06-22 07:20:56 | INFO     | main |     • fine_tune_trainer: This tool simplifies fine-tuning smaller language models on custom datasets for 
+2026-06-22 07:20:56 | INFO     | main |     • dataset_task_splitter: This tool allows AI developers to preprocess and split datasets for task-specifi
+2026-06-22 07:20:56 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-22 07:20:56 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-22 07:21:06 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-22 07:21:06 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-22 07:21:06 | INFO     | tool_builder | Building tool: sovereign_model_trainer …
+2026-06-22 07:21:16 | DEBUG    | llm_client | LLM response from github_models (6830 chars)
+2026-06-22 07:21:16 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'datasets==2.14.5', 'torch==2.0.1']
+2026-06-22 07:22:14 | WARNING  | test_runner | Tests FAILED for sovereign_model_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: invalid syntax
+ERROR test_sovereign_model_trainer.py
+2026-06-22 07:22:14 | WARNING  | tool_builder | ⚠️  sovereign_model_trainer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-06-22 07:22:22 | DEBUG    | llm_client | LLM response from github_models (6931 chars)
+2026-06-22 07:22:22 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch']
+2026-06-22 07:22:26 | WARNING  | test_runner | Tests FAILED for sovereign_model_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_sovereign_model_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:22:26 | WARNING  | tool_builder | ⚠️  sovereign_model_trainer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:22:33 | DEBUG    | llm_client | LLM response from github_models (6899 chars)
+2026-06-22 07:22:33 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch']
+2026-06-22 07:22:37 | WARNING  | test_runner | Tests FAILED for sovereign_model_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_sovereign_model_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:22:37 | WARNING  | tool_builder | ⚠️  sovereign_model_trainer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:22:45 | DEBUG    | llm_client | LLM response from github_models (7429 chars)
+2026-06-22 07:22:45 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch']
+2026-06-22 07:22:49 | WARNING  | test_runner | Tests FAILED for sovereign_model_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_sovereign_model_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:22:49 | WARNING  | tool_builder | ⚠️  sovereign_model_trainer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:22:57 | DEBUG    | llm_client | LLM response from github_models (7103 chars)
+2026-06-22 07:22:57 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch']
+2026-06-22 07:23:01 | WARNING  | test_runner | Tests FAILED for sovereign_model_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_sovereign_model_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:23:01 | WARNING  | tool_builder | ⚠️  sovereign_model_trainer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_sovereign_model_trainer.py _______________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:23:01 | ERROR    | tool_builder | ❌ sovereign_model_trainer failed after 5 loops
+2026-06-22 07:23:01 | INFO     | tool_builder | Building tool: model_inference_server …
+2026-06-22 07:23:10 | DEBUG    | llm_client | LLM response from github_models (5528 chars)
+2026-06-22 07:23:10 | DEBUG    | test_runner | Installing: ['fastapi==0.95.2', 'uvicorn==0.22.0', 'transformers==4.34.0', 'pytest==7.4.2']
+2026-06-22 07:23:17 | WARNING  | test_runner | Tests FAILED for model_inference_server:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_inference_server/test_model_inference_server.py'.
+E   ModuleNotFoundError: No module named 'httpx'
+ERROR test_model_inference_server.py
+2026-06-22 07:23:17 | WARNING  | tool_builder | ⚠️  model_inference_server tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test modul
+2026-06-22 07:23:25 | DEBUG    | llm_client | LLM response from github_models (5680 chars)
+2026-06-22 07:23:25 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "import argparse\nfrom fastapi import FastAPI, HTTPException, Depends\nfrom fastapi.security import HTTPBearer, HTTPAuthorizationCredentials\nfrom transformers import pipeline, AutoModelForCausalLM, AutoTokenizer\nimport uvicorn\n\napp = FastAPI()\nsecurity = HTTPBearer()\nmodel_pipeline
+Expecting property name enclosed in double quotes: line 6 column 1 (char 5667)
+2026-06-22 07:23:25 | DEBUG    | test_runner | Installing: ['fastapi==0.95.2', 'uvicorn==0.22.0', 'transformers==4.34.0', 'pytest==7.4.2']
+2026-06-22 07:23:25 | WARNING  | test_runner | Tests FAILED for model_inference_server:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_inference_server/test_model_inference_server.py'.
+E   ModuleNotFoundError: No module named 'httpx'
+ERROR test_model_inference_server.py
+2026-06-22 07:23:25 | WARNING  | tool_builder | ⚠️  model_inference_server tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test modul
+2026-06-22 07:23:33 | DEBUG    | llm_client | LLM response from github_models (5572 chars)
+2026-06-22 07:23:33 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nfrom fastapi import FastAPI, HTTPException, Depends\nfrom fastapi.security import HTTPBearer, HTTPAuthorizationCredentials\nfrom transformers import pipeline, AutoModelForCausalLM, AutoTokenizer\nimport uvicorn\n\napp = FastAPI()\nsecurity = HTTPBearer()\nmodel_pipeline
+Expecting property name enclosed in double quotes: line 6 column 1 (char 5559)
+2026-06-22 07:23:33 | DEBUG    | test_runner | Installing: ['fastapi==0.95.2', 'uvicorn==0.22.0', 'transformers==4.34.0', 'pytest==7.4.2']
+2026-06-22 07:23:34 | WARNING  | test_runner | Tests FAILED for model_inference_server:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_inference_server/test_model_inference_server.py'.
+E   ModuleNotFoundError: No module named 'httpx'
+ERROR test_model_inference_server.py
+2026-06-22 07:23:34 | WARNING  | tool_builder | ⚠️  model_inference_server tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test modul
+2026-06-22 07:23:41 | DEBUG    | llm_client | LLM response from github_models (5746 chars)
+2026-06-22 07:23:41 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nfrom fastapi import FastAPI, HTTPException, Depends\nfrom fastapi.security import HTTPBearer, HTTPAuthorizationCredentials\nfrom transformers import pipeline, AutoModelForCausalLM, AutoTokenizer\nimport uvicorn\n\napp = FastAPI()\nsecurity = HTTPBearer()\nmodel_pipeline
+Expecting property name enclosed in double quotes: line 6 column 1 (char 5733)
+2026-06-22 07:23:41 | DEBUG    | test_runner | Installing: ['fastapi==0.95.2', 'uvicorn==0.22.0', 'transformers==4.34.0', 'pytest==7.4.2']
+2026-06-22 07:23:42 | WARNING  | test_runner | Tests FAILED for model_inference_server:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_inference_server/test_model_inference_server.py'.
+E   ModuleNotFoundError: No module named 'httpx'
+ERROR test_model_inference_server.py
+2026-06-22 07:23:42 | WARNING  | tool_builder | ⚠️  model_inference_server tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test modul
+2026-06-22 07:23:51 | DEBUG    | llm_client | LLM response from github_models (6182 chars)
+2026-06-22 07:23:51 | DEBUG    | test_runner | Installing: ['fastapi', 'uvicorn', 'transformers', 'pytest']
+2026-06-22 07:23:52 | WARNING  | test_runner | Tests FAILED for model_inference_server:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_inference_server/test_model_inference_server.py'.
+E   ModuleNotFoundError: No module named 'httpx'
+ERROR test_model_inference_server.py
+2026-06-22 07:23:52 | WARNING  | tool_builder | ⚠️  model_inference_server tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_model_inference_server.py ________________
+ImportError while importing test modul
+2026-06-22 07:23:52 | ERROR    | tool_builder | ❌ model_inference_server failed after 5 loops
+2026-06-22 07:23:52 | INFO     | tool_builder | Building tool: dataset_balancer …
+2026-06-22 07:24:03 | DEBUG    | llm_client | LLM response from github_models (7228 chars)
+2026-06-22 07:24:03 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'matplotlib==3.7.1']
+2026-06-22 07:24:13 | WARNING  | test_runner | Tests FAILED for dataset_balancer:
+test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == len(data)
+E   assert 4 == 5
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 4 == 5
+2026-06-22 07:24:13 | WARNING  | tool_builder | ⚠️  dataset_balancer tests failed (loop 1/5) — test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == len(data)
+E   assert 4 == 5
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 4
+2026-06-22 07:24:20 | DEBUG    | llm_client | LLM response from github_models (6661 chars)
+2026-06-22 07:24:20 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-06-22 07:24:21 | WARNING  | test_runner | Tests FAILED for dataset_balancer:
+test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:21 | WARNING  | tool_builder | ⚠️  dataset_balancer tests failed (loop 2/5) — test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:30 | DEBUG    | llm_client | LLM response from github_models (7628 chars)
+2026-06-22 07:24:30 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-06-22 07:24:31 | WARNING  | test_runner | Tests FAILED for dataset_balancer:
+test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:31 | WARNING  | tool_builder | ⚠️  dataset_balancer tests failed (loop 3/5) — test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:40 | DEBUG    | llm_client | LLM response from github_models (7750 chars)
+2026-06-22 07:24:40 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-06-22 07:24:41 | WARNING  | test_runner | Tests FAILED for dataset_balancer:
+test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:41 | WARNING  | tool_builder | ⚠️  dataset_balancer tests failed (loop 4/5) — test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:49 | DEBUG    | llm_client | LLM response from github_models (7685 chars)
+2026-06-22 07:24:49 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib']
+2026-06-22 07:24:51 | WARNING  | test_runner | Tests FAILED for dataset_balancer:
+test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:51 | WARNING  | tool_builder | ⚠️  dataset_balancer tests failed (loop 5/5) — test_dataset_balancer.py::test_balance_dataset FAILED                    [ 75%]
+    assert len(balanced) == 6
+E   assert 0 == 6
+FAILED test_dataset_balancer.py::test_balance_dataset - assert 0 == 6
+2026-06-22 07:24:51 | ERROR    | tool_builder | ❌ dataset_balancer failed after 5 loops
+2026-06-22 07:24:51 | INFO     | tool_builder | Building tool: fine_tune_trainer …
+2026-06-22 07:25:03 | DEBUG    | llm_client | LLM response from github_models (6403 chars)
+2026-06-22 07:25:03 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'datasets==2.14.5', 'torch==2.0.1', 'pytest==7.4.2']
+2026-06-22 07:25:11 | WARNING  | test_runner | Tests FAILED for fine_tune_trainer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_fine_tune_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:25:11 | WARNING  | tool_builder | ⚠️  fine_tune_trainer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:25:20 | DEBUG    | llm_client | LLM response from github_models (7337 chars)
+2026-06-22 07:25:20 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch', 'pytest']
+2026-06-22 07:25:24 | WARNING  | test_runner | Tests FAILED for fine_tune_trainer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_fine_tune_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:25:24 | WARNING  | tool_builder | ⚠️  fine_tune_trainer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:25:33 | DEBUG    | llm_client | LLM response from github_models (6945 chars)
+2026-06-22 07:25:33 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch', 'pytest']
+2026-06-22 07:25:36 | WARNING  | test_runner | Tests FAILED for fine_tune_trainer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_fine_tune_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:25:36 | WARNING  | tool_builder | ⚠️  fine_tune_trainer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:25:44 | DEBUG    | llm_client | LLM response from github_models (7656 chars)
+2026-06-22 07:25:44 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch', 'pytest']
+2026-06-22 07:25:48 | WARNING  | test_runner | Tests FAILED for fine_tune_trainer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_fine_tune_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:25:48 | WARNING  | tool_builder | ⚠️  fine_tune_trainer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:25:58 | DEBUG    | llm_client | LLM response from github_models (7455 chars)
+2026-06-22 07:25:58 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'datasets', 'pytest']
+2026-06-22 07:26:02 | WARNING  | test_runner | Tests FAILED for fine_tune_trainer:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:178: in exec_module
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_fine_tune_trainer.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-06-22 07:26:02 | WARNING  | tool_builder | ⚠️  fine_tune_trainer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_fine_tune_trainer.py __________________
+E   AttributeError: module 'pyarrow' h
+2026-06-22 07:26:02 | ERROR    | tool_builder | ❌ fine_tune_trainer failed after 5 loops
+2026-06-22 07:26:02 | INFO     | tool_builder | Building tool: dataset_task_splitter …
+2026-06-22 07:26:13 | DEBUG    | llm_client | LLM response from github_models (7020 chars)
+2026-06-22 07:26:13 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'numpy==1.24.2']
+2026-06-22 07:26:17 | WARNING  | test_runner | Tests FAILED for dataset_task_splitter:
+test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['label'].iloc[1] == 'O'
+E   AssertionError: assert 'ENTITY' == 'O'
+    raise FileNotFoundError(f"Input file '{input_file}' not found.")
+E   FileNotFoundError: Input file 'dummy.csv' not found.
+FAILED test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition - AssertionError: assert 'ENTITY' == 'O'
+FAILED test_dataset_task_splitter.py::test_process_dataset - FileNotFoundError: Input file 'dummy.csv' not found.
+2026-06-22 07:26:17 | WARNING  | tool_builder | ⚠️  dataset_task_splitter tests failed (loop 1/5) — test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['
+2026-06-22 07:26:26 | DEBUG    | llm_client | LLM response from github_models (8045 chars)
+2026-06-22 07:26:26 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-06-22 07:26:27 | WARNING  | test_runner | Tests FAILED for dataset_task_splitter:
+test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['label'].iloc[1] == 'O'
+E   AssertionError: assert 'ENTITY' == 'O'
+    raise FileNotFoundError(f"Input file '{input_file}' not found.")
+E   FileNotFoundError: Input file 'dummy.csv' not found.
+FAILED test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition - AssertionError: assert 'ENTITY' == 'O'
+FAILED test_dataset_task_splitter.py::test_process_dataset - FileNotFoundError: Input file 'dummy.csv' not found.
+2026-06-22 07:26:27 | WARNING  | tool_builder | ⚠️  dataset_task_splitter tests failed (loop 2/5) — test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['
+2026-06-22 07:26:35 | DEBUG    | llm_client | LLM response from github_models (7364 chars)
+2026-06-22 07:26:35 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-06-22 07:26:36 | WARNING  | test_runner | Tests FAILED for dataset_task_splitter:
+test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['label'].iloc[1] == 'O'
+E   AssertionError: assert 'ENTITY' == 'O'
+    raise FileNotFoundError(f"Input file '{input_file}' not found.")
+E   FileNotFoundError: Input file 'dummy.csv' not found.
+FAILED test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition - AssertionError: assert 'ENTITY' == 'O'
+FAILED test_dataset_task_splitter.py::test_process_dataset - FileNotFoundError: Input file 'dummy.csv' not found.
+2026-06-22 07:26:36 | WARNING  | tool_builder | ⚠️  dataset_task_splitter tests failed (loop 3/5) — test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['
+2026-06-22 07:26:44 | DEBUG    | llm_client | LLM response from github_models (7614 chars)
+2026-06-22 07:26:44 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-06-22 07:26:45 | WARNING  | test_runner | Tests FAILED for dataset_task_splitter:
+test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['label'].iloc[1] == 'O'
+E   AssertionError: assert 'ENTITY' == 'O'
+    raise FileNotFoundError(f"Input file '{input_file}' not found.")
+E   FileNotFoundError: Input file 'dummy.csv' not found.
+FAILED test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition - AssertionError: assert 'ENTITY' == 'O'
+FAILED test_dataset_task_splitter.py::test_process_dataset - FileNotFoundError: Input file 'dummy.csv' not found.
+2026-06-22 07:26:45 | WARNING  | tool_builder | ⚠️  dataset_task_splitter tests failed (loop 4/5) — test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['
+2026-06-22 07:26:45 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-22 07:27:54 | DEBUG    | llm_client | LLM response from github_models (7551 chars)
+2026-06-22 07:27:54 | DEBUG    | test_runner | Installing: ['pandas', 'numpy']
+2026-06-22 07:27:56 | WARNING  | test_runner | Tests FAILED for dataset_task_splitter:
+test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['label'].iloc[1] == 'O'
+E   AssertionError: assert 'ENTITY' == 'O'
+    raise FileNotFoundError(f"Input file '{input_file}' not found.")
+E   FileNotFoundError: Input file 'dummy.csv' not found.
+FAILED test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition - AssertionError: assert 'ENTITY' == 'O'
+FAILED test_dataset_task_splitter.py::test_process_dataset - FileNotFoundError: Input file 'dummy.csv' not found.
+2026-06-22 07:27:56 | WARNING  | tool_builder | ⚠️  dataset_task_splitter tests failed (loop 5/5) — test_dataset_task_splitter.py::test_generate_synthetic_labels_entity_recognition FAILED [ 75%]
+test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
+    assert labeled_data['
+2026-06-22 07:27:56 | ERROR    | tool_builder | ❌ dataset_task_splitter failed after 5 loops
+2026-06-22 07:27:56 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-06-22 07:27:56 | INFO     | main |   Built 0/5 tools successfully
+2026-06-22 07:27:56 | WARNING  | main | No tools built successfully
