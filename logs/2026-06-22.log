@@ -413,3 +413,5 @@ test_dataset_task_splitter.py::test_process_dataset FAILED               [100%]
 2026-06-22 07:27:56 | INFO     | tool_builder | Built 0/5 tools successfully
 2026-06-22 07:27:56 | INFO     | main |   Built 0/5 tools successfully
 2026-06-22 07:27:56 | WARNING  | main | No tools built successfully
+2026-06-22 07:27:59 | INFO     | main | Database committed and pushed to repo
+2026-06-22 07:28:00 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
