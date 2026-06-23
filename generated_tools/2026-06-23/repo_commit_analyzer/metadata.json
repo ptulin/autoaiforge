@@ -1,0 +1,13 @@
+{
+  "tool_name": "repo_commit_analyzer",
+  "display_name": "Repository Commit Analyzer",
+  "description": "This tool analyzes the commit history of a GitHub repository to generate AI-driven insights into trends, contributor activity, and code evolution. It provides visualizations such as commit frequency over time and identifies patterns in contributions, such as active periods for specific files or contributors.",
+  "topic": "AI-Powered GitHub Analysis",
+  "date": "2026-06-23",
+  "generated": "2026-06-23T06:05:38.176070+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/repo_commit_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/repo_commit_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/repo_commit_analyzer/repo_commit_analyzer.zip"
+}
