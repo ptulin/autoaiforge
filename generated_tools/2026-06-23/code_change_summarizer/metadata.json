@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_change_summarizer",
+  "display_name": "Code Change Summarizer",
+  "description": "A tool that uses AI to summarize code changes from the commit history of a GitHub repository. It extracts diff information, feeds it into a language model, and generates human-readable summaries of code modifications, helping developers quickly understand what has changed and why.",
+  "topic": "AI-Powered GitHub Analysis",
+  "date": "2026-06-23",
+  "generated": "2026-06-23T06:05:38.176070+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/code_change_summarizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/code_change_summarizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/code_change_summarizer/code_change_summarizer.zip"
+}

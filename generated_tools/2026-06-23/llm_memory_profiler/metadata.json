@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_memory_profiler",
+  "display_name": "LLM Memory Profiler",
+  "description": "This tool profiles the memory usage of locally hosted large language models during inference. It provides detailed breakdowns of memory allocation, identifies bottlenecks, and offers actionable recommendations to optimize memory usage for constrained environments.",
+  "topic": "Local LLM Optimization",
+  "date": "2026-06-23",
+  "generated": "2026-06-23T06:05:38.176070+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_memory_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/llm_memory_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-23/llm_memory_profiler/llm_memory_profiler.zip"
+}

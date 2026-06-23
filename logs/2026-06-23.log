@@ -1,0 +1,242 @@
+2026-06-23 06:05:38 | INFO     | main | ============================================================
+2026-06-23 06:05:38 | INFO     | main | AutoAIForge starting run: 2026-06-23T06:05:38.176070+00:00
+2026-06-23 06:05:38 | INFO     | main | ============================================================
+2026-06-23 06:05:38 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-23 06:05:38 | INFO     | youtube_scraper | YouTube client ready
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-21T06%3A05%3A39Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-23 06:05:39 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-23 06:05:39 | INFO     | main |   YouTube: 0 items
+2026-06-23 06:05:39 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-23 06:05:44 | INFO     | rss_scraper | HackerNews: 155 items
+2026-06-23 06:05:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-23 06:05:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-23 06:05:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-23 06:05:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-23 06:05:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-23 06:05:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-23 06:05:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-23 06:05:51 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-23 06:05:57 | INFO     | rss_scraper | ArXiv: 109 items
+2026-06-23 06:06:01 | INFO     | rss_scraper | Dev.to: 180 items
+2026-06-23 06:06:03 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-23 06:06:03 | INFO     | rss_scraper | Free sources total: 494 unique items
+2026-06-23 06:06:03 | INFO     | main |   RSS/API sources: 494 items
+2026-06-23 06:06:03 | INFO     | main |   Total scraped: 494 items
+2026-06-23 06:06:03 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-23 06:06:03 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-23 06:06:03 | INFO     | db_manager | Purged 900 old news items
+2026-06-23 06:06:03 | INFO     | db_manager | Inserted 351/494 news items
+2026-06-23 06:06:03 | INFO     | main |   SQLite: 351 new items (total: 11107)
+2026-06-23 06:06:08 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-23 06:06:10 | INFO     | vector_store | VectorStore ready
+2026-06-23 06:06:19 | INFO     | vector_store | Indexed 843 items into vector store
+2026-06-23 06:06:19 | INFO     | main |   Vector store: 843 items indexed
+2026-06-23 06:06:19 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-23 06:06:19 | INFO     | topic_analyzer | Analyzing 843 items for top 10 topics …
+2026-06-23 06:07:49 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Read timed out. (read timeout=90)
+2026-06-23 06:07:56 | DEBUG    | llm_client | LLM response from github_models (3659 chars)
+2026-06-23 06:07:56 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-23 06:07:56 | INFO     | main |   Found 10 topics:
+2026-06-23 06:07:56 | INFO     | main |      1. [9/10] Local LLM Optimization
+2026-06-23 06:07:56 | INFO     | main |      2. [8/10] AI-Powered GitHub Analysis
+2026-06-23 06:07:56 | INFO     | main |      3. [8/10] Semantic Caching for LLMs
+2026-06-23 06:07:56 | INFO     | main |      4. [8/10] Prompt Validation Tools
+2026-06-23 06:07:56 | INFO     | main |      5. [8/10] AI-Powered Reverse Engineering
+2026-06-23 06:07:56 | INFO     | main |      6. [7/10] AI Fact-Checking Agents
+2026-06-23 06:07:56 | INFO     | main |      7. [7/10] AI Dataset Exploration
+2026-06-23 06:07:56 | INFO     | main |      8. [7/10] LLM Guidance Injection
+2026-06-23 06:07:56 | INFO     | main |      9. [7/10] AI-Driven Audio Search
+2026-06-23 06:07:56 | INFO     | main |     10. [6/10] Agentic AI Avoidance
+2026-06-23 06:07:56 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-23 06:07:56 | INFO     | main |   Existing collection: 344 tools across 182 topics
+2026-06-23 06:07:56 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-23 06:08:05 | DEBUG    | llm_client | LLM response from github_models (3532 chars)
+2026-06-23 06:08:05 | INFO     | idea_generator | Generated 3 ideas for topic: Local LLM Optimization
+2026-06-23 06:08:11 | DEBUG    | llm_client | LLM response from github_models (2515 chars)
+2026-06-23 06:08:11 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Powered GitHub Analysis
+2026-06-23 06:08:11 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-23 06:08:11 | INFO     | main |   Generated 5 tool ideas:
+2026-06-23 06:08:11 | INFO     | main |     • llm_quant_optimizer: This tool applies various quantization techniques to locally hosted large langua
+2026-06-23 06:08:11 | INFO     | main |     • llm_batch_infer_tool: A CLI utility to optimize and batch process input for faster inference on large 
+2026-06-23 06:08:11 | INFO     | main |     • llm_memory_profiler: This tool profiles the memory usage of locally hosted large language models duri
+2026-06-23 06:08:11 | INFO     | main |     • repo_commit_analyzer: This tool analyzes the commit history of a GitHub repository to generate AI-driv
+2026-06-23 06:08:11 | INFO     | main |     • code_change_summarizer: A tool that uses AI to summarize code changes from the commit history of a GitHu
+2026-06-23 06:08:11 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-23 06:08:12 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-23 06:08:20 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-23 06:08:20 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-23 06:08:20 | INFO     | tool_builder | Building tool: llm_quant_optimizer …
+2026-06-23 06:08:33 | DEBUG    | llm_client | LLM response from github_models (7190 chars)
+2026-06-23 06:08:33 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.2', 'pytest==7.4.2']
+2026-06-23 06:09:22 | WARNING  | test_runner | Tests FAILED for llm_quant_optimizer:
+test_llm_quant_optimizer.py::test_quantize_model_invalid_method FAILED   [ 40%]
+test_llm_quant_optimizer.py::test_quantize_model_valid FAILED            [ 60%]
+    raise FileNotFoundError(f"Model path '{model_path}' does not exist.")
+E   FileNotFoundError: Model path 'valid/path' does not exist.
+    raise FileNotFoundError(f"Model path '{model_path}' does not exist.")
+E   FileNotFoundError: Model path 'valid/path' does not exist.
+FAILED test_llm_quant_optimizer.py::test_quantize_model_invalid_method - FileNotFoundError: Model path 'valid/path' does not exist.
+FAILED test_llm_quant_optimizer.py::test_quantize_model_valid - FileNotFoundError: Model path 'valid/path' does not exist.
+2026-06-23 06:09:22 | WARNING  | tool_builder | ⚠️  llm_quant_optimizer tests failed (loop 1/5) — test_llm_quant_optimizer.py::test_quantize_model_invalid_method FAILED   [ 40%]
+test_llm_quant_optimizer.py::test_quantize_model_valid FAILED            [ 60%]
+    raise FileNotFoundError(f"Model path
+2026-06-23 06:09:31 | DEBUG    | llm_client | LLM response from github_models (7371 chars)
+2026-06-23 06:09:31 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-06-23 06:09:33 | INFO     | test_runner | Tests PASSED for llm_quant_optimizer
+2026-06-23 06:09:33 | INFO     | tool_builder | ✅ llm_quant_optimizer passed tests on loop 2
+2026-06-23 06:09:33 | INFO     | tool_builder | Building tool: llm_batch_infer_tool …
+2026-06-23 06:09:43 | DEBUG    | llm_client | LLM response from github_models (6991 chars)
+2026-06-23 06:09:43 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'transformers==4.33.3', 'joblib==1.3.2']
+2026-06-23 06:09:50 | WARNING  | test_runner | Tests FAILED for llm_batch_infer_tool:
+test_llm_batch_infer_tool.py::test_batch_inference FAILED                [100%]
+    assert result == ["output1", "output2", "output3"]
+E   AssertionError: assert ['output1', '...1', 'output1'] == ['output1', '...2', 'output3']
+FAILED test_llm_batch_infer_tool.py::test_batch_inference - AssertionError: assert ['output1', '...1', 'output1'] == ['output1', '...2', 'output3']
+2026-06-23 06:09:50 | WARNING  | tool_builder | ⚠️  llm_batch_infer_tool tests failed (loop 1/5) — test_llm_batch_infer_tool.py::test_batch_inference FAILED                [100%]
+    assert result == ["output1", "output2", "output3"]
+E   AssertionError: assert ['output1', '...1', 'output1'] == ['ou
+2026-06-23 06:09:59 | DEBUG    | llm_client | LLM response from github_models (7093 chars)
+2026-06-23 06:09:59 | DEBUG    | test_runner | Installing: ['transformers', 'joblib', 'pytest']
+2026-06-23 06:10:02 | WARNING  | test_runner | Tests FAILED for llm_batch_infer_tool:
+test_llm_batch_infer_tool.py::test_batch_inference FAILED                [100%]
+    assert result == ["output1", "output2", "output3"]
+E   AssertionError: assert ['output1', '...2', 'output3'] == ['output1', '...2', 'output3']
+FAILED test_llm_batch_infer_tool.py::test_batch_inference - AssertionError: assert ['output1', '...2', 'output3'] == ['output1', '...2', 'output3']
+2026-06-23 06:10:02 | WARNING  | tool_builder | ⚠️  llm_batch_infer_tool tests failed (loop 2/5) — test_llm_batch_infer_tool.py::test_batch_inference FAILED                [100%]
+    assert result == ["output1", "output2", "output3"]
+E   AssertionError: assert ['output1', '...2', 'output3'] == ['ou
+2026-06-23 06:10:10 | DEBUG    | llm_client | LLM response from github_models (7117 chars)
+2026-06-23 06:10:10 | DEBUG    | test_runner | Installing: ['transformers', 'joblib', 'pytest']
+2026-06-23 06:10:13 | INFO     | test_runner | Tests PASSED for llm_batch_infer_tool
+2026-06-23 06:10:13 | INFO     | tool_builder | ✅ llm_batch_infer_tool passed tests on loop 3
+2026-06-23 06:10:13 | INFO     | tool_builder | Building tool: llm_memory_profiler …
+2026-06-23 06:10:25 | DEBUG    | llm_client | LLM response from github_models (7060 chars)
+2026-06-23 06:10:25 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'psutil==5.9.5']
+2026-06-23 06:10:28 | WARNING  | test_runner | Tests FAILED for llm_memory_profiler:
+test_llm_memory_profiler.py::test_profile_memory_basic FAILED            [ 66%]
+test_llm_memory_profiler.py::test_profile_memory_with_large_allocation FAILED [100%]
+    raise FileNotFoundError(f"The script file '{script_path}' does not exist.")
+E   FileNotFoundError: The script file 'dummy_script.py' does not exist.
+    raise FileNotFoundError(f"The script file '{script_path}' does not exist.")
+E   FileNotFoundError: The script file 'dummy_script.py' does not exist.
+FAILED test_llm_memory_profiler.py::test_profile_memory_basic - FileNotFoundError: The script file 'dummy_script.py' does not exist.
+FAILED test_llm_memory_profiler.py::test_profile_memory_with_large_allocation - FileNotFoundError: The script file 'dummy_script.py' does not exist.
+2026-06-23 06:10:28 | WARNING  | tool_builder | ⚠️  llm_memory_profiler tests failed (loop 1/5) — test_llm_memory_profiler.py::test_profile_memory_basic FAILED            [ 66%]
+test_llm_memory_profiler.py::test_profile_memory_with_large_allocation FAILED [100%]
+    raise FileNotFoundError(f"The s
+2026-06-23 06:10:38 | DEBUG    | llm_client | LLM response from github_models (7820 chars)
+2026-06-23 06:10:38 | DEBUG    | test_runner | Installing: ['psutil']
+2026-06-23 06:10:40 | WARNING  | test_runner | Tests FAILED for llm_memory_profiler:
+test_llm_memory_profiler.py::test_profile_memory_basic FAILED            [ 66%]
+test_llm_memory_profiler.py::test_profile_memory_with_large_allocation FAILED [100%]
+E   TypeError: must be str, not bytes
+E   TypeError: must be str, not bytes
+FAILED test_llm_memory_profiler.py::test_profile_memory_basic - TypeError: must be str, not bytes
+FAILED test_llm_memory_profiler.py::test_profile_memory_with_large_allocation - TypeError: must be str, not bytes
+2026-06-23 06:10:40 | WARNING  | tool_builder | ⚠️  llm_memory_profiler tests failed (loop 2/5) — test_llm_memory_profiler.py::test_profile_memory_basic FAILED            [ 66%]
+test_llm_memory_profiler.py::test_profile_memory_with_large_allocation FAILED [100%]
+E   TypeError: must be str, not byt
+2026-06-23 06:10:49 | DEBUG    | llm_client | LLM response from github_models (7179 chars)
+2026-06-23 06:10:49 | DEBUG    | test_runner | Installing: ['psutil']
+2026-06-23 06:10:50 | INFO     | test_runner | Tests PASSED for llm_memory_profiler
+2026-06-23 06:10:50 | INFO     | tool_builder | ✅ llm_memory_profiler passed tests on loop 3
+2026-06-23 06:10:50 | INFO     | tool_builder | Building tool: repo_commit_analyzer …
+2026-06-23 06:11:01 | DEBUG    | llm_client | LLM response from github_models (8043 chars)
+2026-06-23 06:11:01 | DEBUG    | test_runner | Installing: ['GitPython==3.1.32', 'matplotlib==3.8.0', 'numpy==1.26.0']
+2026-06-23 06:11:09 | WARNING  | test_runner | Tests FAILED for repo_commit_analyzer:
+test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 33%]
+test_repo_commit_analyzer.py::test_analyze_repository_invalid_path FAILED [100%]
+    raise FileNotFoundError(f"Repository path '{repo_path}' does not exist.")
+E   FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+    raise FileNotFoundError(f"Repository path '{repo_path}' does not exist.")
+E   FileNotFoundError: Repository path '/invalid/repo/path' does not exist.
+FAILED test_repo_commit_analyzer.py::test_analyze_repository - FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+FAILED test_repo_commit_analyzer.py::test_analyze_repository_invalid_path - FileNotFoundError: Repository path '/invalid/repo/path' does not exist.
+2026-06-23 06:11:09 | WARNING  | tool_builder | ⚠️  repo_commit_analyzer tests failed (loop 1/5) — test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 33%]
+test_repo_commit_analyzer.py::test_analyze_repository_invalid_path FAILED [100%]
+    raise FileNotFoundError(f"Repositor
+2026-06-23 06:11:18 | DEBUG    | llm_client | LLM response from github_models (7862 chars)
+2026-06-23 06:11:18 | DEBUG    | test_runner | Installing: ['matplotlib', 'numpy', 'gitpython']
+2026-06-23 06:11:19 | WARNING  | test_runner | Tests FAILED for repo_commit_analyzer:
+test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 33%]
+    raise ValueError("The repository is bare and has no commit history.")
+E   ValueError: The repository is bare and has no commit history.
+FAILED test_repo_commit_analyzer.py::test_analyze_repository - ValueError: The repository is bare and has no commit history.
+2026-06-23 06:11:19 | WARNING  | tool_builder | ⚠️  repo_commit_analyzer tests failed (loop 2/5) — test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 33%]
+    raise ValueError("The repository is bare and has no commit history.")
+E   ValueError: The repository is bare and has
+2026-06-23 06:11:19 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-23 06:12:31 | DEBUG    | llm_client | LLM response from github_models (9423 chars)
+2026-06-23 06:12:31 | DEBUG    | test_runner | Installing: ['matplotlib', 'numpy', 'gitpython']
+2026-06-23 06:12:33 | WARNING  | test_runner | Tests FAILED for repo_commit_analyzer:
+test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 20%]
+test_repo_commit_analyzer.py::test_analyze_repository_bare_repo FAILED   [ 80%]
+test_repo_commit_analyzer.py::test_analyze_repository_empty_repo FAILED  [100%]
+    assert analysis["commit_frequency"] == {
+E   AssertionError: assert {'counts': (1...'2023-01-02']} == {'counts': [1...'2023-01-02']}
+    raise FileNotFoundError(f"Repository path '{repo_path}' does not exist.")
+E   FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+    raise FileNotFoundError(f"Repository path '{repo_path}' does not exist.")
+E   FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+FAILED test_repo_commit_analyzer.py::test_analyze_repository - AssertionError: assert {'counts': (1...'2023-01-02']} == {'counts': [1...'2023-01-02']}
+FAILED test_repo_commit_analyzer.py::test_analyze_repository_bare_repo - FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+FAILED test_repo_commit_analyzer.py::test_analyze_repository_empty_repo - FileNotFoundError: Repository path '/fake/repo/path' does not exist.
+2026-06-23 06:12:33 | WARNING  | tool_builder | ⚠️  repo_commit_analyzer tests failed (loop 3/5) — test_repo_commit_analyzer.py::test_analyze_repository FAILED             [ 20%]
+test_repo_commit_analyzer.py::test_analyze_repository_bare_repo FAILED   [ 80%]
+test_repo_commit_analyzer.py::test_analy
+2026-06-23 06:12:44 | DEBUG    | llm_client | LLM response from github_models (9253 chars)
+2026-06-23 06:12:44 | DEBUG    | test_runner | Installing: ['matplotlib', 'numpy', 'GitPython']
+2026-06-23 06:12:45 | INFO     | test_runner | Tests PASSED for repo_commit_analyzer
+2026-06-23 06:12:45 | INFO     | tool_builder | ✅ repo_commit_analyzer passed tests on loop 4
+2026-06-23 06:12:45 | INFO     | tool_builder | Building tool: code_change_summarizer …
+2026-06-23 06:12:57 | DEBUG    | llm_client | LLM response from github_models (6824 chars)
+2026-06-23 06:12:57 | DEBUG    | test_runner | Installing: ['GitPython==3.1.32', 'openai==0.27.8', 'pytest==7.4.2']
+2026-06-23 06:12:59 | INFO     | test_runner | Tests PASSED for code_change_summarizer
+2026-06-23 06:12:59 | INFO     | tool_builder | ✅ code_change_summarizer passed tests on loop 1
+2026-06-23 06:12:59 | INFO     | tool_builder | Built 5/5 tools successfully
+2026-06-23 06:12:59 | INFO     | main |   Built 5/5 tools successfully
+2026-06-23 06:12:59 | INFO     | main |     ✅ llm_quant_optimizer (loops: 2)
+2026-06-23 06:12:59 | INFO     | main |     ✅ llm_batch_infer_tool (loops: 3)
+2026-06-23 06:12:59 | INFO     | main |     ✅ llm_memory_profiler (loops: 3)
+2026-06-23 06:12:59 | INFO     | main |     ✅ repo_commit_analyzer (loops: 4)
+2026-06-23 06:12:59 | INFO     | main |     ✅ code_change_summarizer (loops: 1)
+2026-06-23 06:12:59 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-23 06:12:59 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-23 06:12:59 | INFO     | github_publisher |   Created zip: llm_quant_optimizer.zip (3120 bytes)
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved llm_quant_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_quant_optimizer
+2026-06-23 06:12:59 | INFO     | github_publisher |   Created zip: llm_batch_infer_tool.zip (3160 bytes)
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved llm_batch_infer_tool → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_batch_infer_tool
+2026-06-23 06:12:59 | INFO     | github_publisher |   Created zip: llm_memory_profiler.zip (2998 bytes)
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved llm_memory_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_memory_profiler
+2026-06-23 06:12:59 | INFO     | github_publisher |   Created zip: repo_commit_analyzer.zip (3273 bytes)
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved repo_commit_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/repo_commit_analyzer
+2026-06-23 06:12:59 | INFO     | github_publisher |   Created zip: code_change_summarizer.zip (2908 bytes)
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved code_change_summarizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/code_change_summarizer
+2026-06-23 06:12:59 | INFO     | github_publisher | Saved 5/5 tools to generated_tools/
+2026-06-23 06:12:59 | INFO     | main |   Published 5 tools:
+2026-06-23 06:12:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_quant_optimizer
+2026-06-23 06:12:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_batch_infer_tool
+2026-06-23 06:12:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/llm_memory_profiler
+2026-06-23 06:12:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/repo_commit_analyzer
+2026-06-23 06:12:59 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-23/code_change_summarizer
+2026-06-23 06:12:59 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-23 06:12:59 | INFO     | main | ✅ Generated tools_index.json with 349 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
