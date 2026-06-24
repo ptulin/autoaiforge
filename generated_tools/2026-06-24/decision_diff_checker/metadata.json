@@ -1,0 +1,13 @@
+{
+  "tool_name": "decision_diff_checker",
+  "display_name": "Decision Diff Checker",
+  "description": "This tool allows developers to compare the decision-making paths of an AI agent across different versions or configurations. By highlighting differences in decisions, it enables developers to pinpoint where and why an agent's behavior diverges, making regression analysis and debugging more efficient.",
+  "topic": "AI Agent Debugging Tools",
+  "date": "2026-06-24",
+  "generated": "2026-06-24T06:05:01.393887+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-24/decision_diff_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/decision_diff_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/decision_diff_checker/decision_diff_checker.zip"
+}

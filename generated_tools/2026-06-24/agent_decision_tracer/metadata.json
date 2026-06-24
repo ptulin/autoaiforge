@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_decision_tracer",
+  "display_name": "Agent Decision Tracer",
+  "description": "This tool allows developers to trace the step-by-step decision-making process of AI agents, capturing intermediate states, decisions, and the associated reasoning at each step. It helps debug complex agent behaviors by visualizing their execution path in a clear and structured format.",
+  "topic": "AI Agent Debugging Tools",
+  "date": "2026-06-24",
+  "generated": "2026-06-24T06:05:01.393887+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-24/agent_decision_tracer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/agent_decision_tracer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/agent_decision_tracer/agent_decision_tracer.zip"
+}
