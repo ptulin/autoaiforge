@@ -1,0 +1,13 @@
+{
+  "tool_name": "reward_trace_explorer",
+  "display_name": "Reward Trace Explorer",
+  "description": "This tool helps developers analyze how an AI agent's reward signals influence its decisions. It maps rewards to decision-making steps, allowing users to identify patterns, inconsistencies, or unexpected correlations in the behavior of reinforcement learning (RL) agents.",
+  "topic": "AI Agent Debugging Tools",
+  "date": "2026-06-24",
+  "generated": "2026-06-24T06:05:01.393887+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-24/reward_trace_explorer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/reward_trace_explorer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-24/reward_trace_explorer/reward_trace_explorer.zip"
+}
