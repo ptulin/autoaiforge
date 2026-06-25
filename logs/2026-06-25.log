@@ -379,3 +379,21 @@ FAILED test_batch_token_optimizer.py::test_large_token_lim
 2026-06-25 06:09:45 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/github_pr_refactor_suggester
 2026-06-25 06:09:45 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-25 06:09:45 | INFO     | main | ✅ Generated tools_index.json with 354 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-25 06:09:48 | INFO     | main | Database committed and pushed to repo
+2026-06-25 06:09:48 | INFO     | main | 
+2026-06-25 06:09:48 | INFO     | main | ============================================================
+2026-06-25 06:09:48 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-25 06:09:48 | INFO     | main | ============================================================
+2026-06-25 06:09:48 | INFO     | main |   Date:            2026-06-25
+2026-06-25 06:09:48 | INFO     | main |   Items scraped:   526
+2026-06-25 06:09:48 | INFO     | main |   Items stored:    384
+2026-06-25 06:09:48 | INFO     | main |   Topics found:    10
+2026-06-25 06:09:48 | INFO     | main |   Ideas generated: 5
+2026-06-25 06:09:48 | INFO     | main |   Tools built:     2
+2026-06-25 06:09:48 | INFO     | main |   Tools published: 2
+2026-06-25 06:09:48 | INFO     | main |   Elapsed:         315.0s
+2026-06-25 06:09:48 | INFO     | main |   Published URLs:
+2026-06-25 06:09:48 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/llm_code_review_assistant
+2026-06-25 06:09:48 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/github_pr_refactor_suggester
+2026-06-25 06:09:48 | INFO     | main | ============================================================
+2026-06-25 06:09:50 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
