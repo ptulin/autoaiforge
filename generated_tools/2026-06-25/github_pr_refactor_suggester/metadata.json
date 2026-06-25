@@ -1,0 +1,13 @@
+{
+  "tool_name": "github_pr_refactor_suggester",
+  "display_name": "GitHub PR Refactor Suggester",
+  "description": "This tool connects to GitHub, retrieves the diff of a pull request, and uses an LLM to suggest refactor opportunities based on common design principles and patterns. It's ideal for teams aiming to enhance code quality and maintainability.",
+  "topic": "AI-powered code review tools",
+  "date": "2026-06-25",
+  "generated": "2026-06-25T06:04:30.340990+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/github_pr_refactor_suggester",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/github_pr_refactor_suggester/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/github_pr_refactor_suggester/github_pr_refactor_suggester.zip"
+}

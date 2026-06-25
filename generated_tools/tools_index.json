@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-06-24T06:10:54.058275+00:00",
-  "total_tools": 352,
+  "last_updated": "2026-06-25T06:09:45.382467+00:00",
+  "total_tools": 354,
   "tools": [
+    {
+      "tool_name": "github_pr_refactor_suggester",
+      "display_name": "GitHub PR Refactor Suggester",
+      "description": "This tool connects to GitHub, retrieves the diff of a pull request, and uses an LLM to suggest refactor opportunities based on common design principles and patterns. It's ideal for teams aiming to enhance code quality and maintainability.",
+      "topic": "AI-powered code review tools",
+      "date": "2026-06-25",
+      "generated": "2026-06-25T06:04:30.340990+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/github_pr_refactor_suggester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/github_pr_refactor_suggester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/github_pr_refactor_suggester/github_pr_refactor_suggester.zip"
+    },
+    {
+      "tool_name": "llm_code_review_assistant",
+      "display_name": "LLM Code Review Assistant",
+      "description": "This CLI tool analyzes pull requests on GitHub or GitLab using an LLM to offer automated code review suggestions. It provides insights on coding standards violations, potential bugs, and optimizations, making it a valuable aid for teams looking to streamline their review processes.",
+      "topic": "AI-powered code review tools",
+      "date": "2026-06-25",
+      "generated": "2026-06-25T06:04:30.340990+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-25/llm_code_review_assistant",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/llm_code_review_assistant/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-25/llm_code_review_assistant/llm_code_review_assistant.zip"
+    },
     {
       "tool_name": "agent_decision_tracer",
       "display_name": "Agent Decision Tracer",
