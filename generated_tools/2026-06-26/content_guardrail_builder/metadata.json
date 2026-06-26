@@ -1,0 +1,13 @@
+{
+  "tool_name": "content_guardrail_builder",
+  "display_name": "Content Guardrail Builder",
+  "description": "A Python library to help AI developers build customizable safety filters for their AI agents. It supports defining rules for detecting and mitigating harmful or offensive content based on keywords, regular expressions, and machine learning models. This tool ensures safer AI outputs by providing modular and reusable components.",
+  "topic": "AI Agent Guardrails",
+  "date": "2026-06-26",
+  "generated": "2026-06-26T06:09:45.923532+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/content_guardrail_builder",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/content_guardrail_builder/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/content_guardrail_builder/content_guardrail_builder.zip"
+}

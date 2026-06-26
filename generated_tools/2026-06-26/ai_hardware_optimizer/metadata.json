@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_hardware_optimizer",
+  "display_name": "AI Hardware Optimizer",
+  "description": "This tool helps AI developers optimize workloads by identifying the most efficient hardware configurations and settings for their specific models. It systematically tests combinations of hardware setups (e.g., number of CPU threads, GPU memory allocation, mixed precision) and provides recommendations for optimal configurations. This is particularly useful for developers working with resource-intensive tasks like LLM inference.",
+  "topic": "AI Workload Optimization",
+  "date": "2026-06-26",
+  "generated": "2026-06-26T06:09:45.923532+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/ai_hardware_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/ai_hardware_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/ai_hardware_optimizer/ai_hardware_optimizer.zip"
+}

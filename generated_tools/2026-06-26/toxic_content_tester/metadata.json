@@ -1,0 +1,13 @@
+{
+  "tool_name": "toxic_content_tester",
+  "display_name": "Toxic Content Tester",
+  "description": "A CLI tool for batch testing an AI agent's outputs against predefined safety filters. It helps developers assess how often their AI produces harmful or offensive content and generates a detailed report that pinpoints vulnerabilities in the system.",
+  "topic": "AI Agent Guardrails",
+  "date": "2026-06-26",
+  "generated": "2026-06-26T06:09:45.923532+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/toxic_content_tester",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/toxic_content_tester/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/toxic_content_tester/toxic_content_tester.zip"
+}
