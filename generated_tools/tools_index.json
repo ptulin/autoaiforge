@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-25T06:09:45.382467+00:00",
-  "total_tools": 354,
+  "last_updated": "2026-06-26T06:15:53.837391+00:00",
+  "total_tools": 357,
   "tools": [
+    {
+      "tool_name": "ai_hardware_optimizer",
+      "display_name": "AI Hardware Optimizer",
+      "description": "This tool helps AI developers optimize workloads by identifying the most efficient hardware configurations and settings for their specific models. It systematically tests combinations of hardware setups (e.g., number of CPU threads, GPU memory allocation, mixed precision) and provides recommendations for optimal configurations. This is particularly useful for developers working with resource-intensive tasks like LLM inference.",
+      "topic": "AI Workload Optimization",
+      "date": "2026-06-26",
+      "generated": "2026-06-26T06:09:45.923532+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/ai_hardware_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/ai_hardware_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/ai_hardware_optimizer/ai_hardware_optimizer.zip"
+    },
+    {
+      "tool_name": "content_guardrail_builder",
+      "display_name": "Content Guardrail Builder",
+      "description": "A Python library to help AI developers build customizable safety filters for their AI agents. It supports defining rules for detecting and mitigating harmful or offensive content based on keywords, regular expressions, and machine learning models. This tool ensures safer AI outputs by providing modular and reusable components.",
+      "topic": "AI Agent Guardrails",
+      "date": "2026-06-26",
+      "generated": "2026-06-26T06:09:45.923532+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/content_guardrail_builder",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/content_guardrail_builder/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/content_guardrail_builder/content_guardrail_builder.zip"
+    },
+    {
+      "tool_name": "toxic_content_tester",
+      "display_name": "Toxic Content Tester",
+      "description": "A CLI tool for batch testing an AI agent's outputs against predefined safety filters. It helps developers assess how often their AI produces harmful or offensive content and generates a detailed report that pinpoints vulnerabilities in the system.",
+      "topic": "AI Agent Guardrails",
+      "date": "2026-06-26",
+      "generated": "2026-06-26T06:09:45.923532+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-26/toxic_content_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/toxic_content_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-26/toxic_content_tester/toxic_content_tester.zip"
+    },
     {
       "tool_name": "github_pr_refactor_suggester",
       "display_name": "GitHub PR Refactor Suggester",
