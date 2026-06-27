@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-06-26T06:15:53.837391+00:00",
-  "total_tools": 357,
+  "last_updated": "2026-06-27T05:58:56.219813+00:00",
+  "total_tools": 360,
   "tools": [
+    {
+      "tool_name": "llm_optimizer_tuner",
+      "display_name": "LLM Optimizer Tuner",
+      "description": "A Python library that allows developers to benchmark and tune routing configurations for multiple LLMs. It simulates various task workloads and provides analytics to refine routing strategies.",
+      "topic": "LLM Model Routing Optimization",
+      "date": "2026-06-27",
+      "generated": "2026-06-27T05:52:12.770331+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-27/llm_optimizer_tuner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_optimizer_tuner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_optimizer_tuner/llm_optimizer_tuner.zip"
+    },
+    {
+      "tool_name": "llm_router",
+      "display_name": "LLM Router Middleware",
+      "description": "A CLI tool that dynamically routes requests to the most suitable large language model based on task type, such as summarization, translation, or text generation. It uses defined performance metrics like latency, accuracy, and cost to make optimized routing decisions.",
+      "topic": "LLM Model Routing Optimization",
+      "date": "2026-06-27",
+      "generated": "2026-06-27T05:52:12.770331+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-27/llm_router",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_router/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_router/llm_router.zip"
+    },
+    {
+      "tool_name": "matrix_solver_ai",
+      "display_name": "AI-Powered Matrix Solver",
+      "description": "This tool focuses on solving complex matrix computations such as eigenvalue decomposition, matrix inversion, and linear system solving using AI-assisted techniques. It integrates standard numerical libraries with AI models for handling ill-conditioned matrices or providing approximate solutions in cases where traditional methods fail.",
+      "topic": "AI in Mathematical Problem Solving",
+      "date": "2026-06-27",
+      "generated": "2026-06-27T05:52:12.770331+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-27/matrix_solver_ai",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/matrix_solver_ai/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/matrix_solver_ai/matrix_solver_ai.zip"
+    },
     {
       "tool_name": "ai_hardware_optimizer",
       "display_name": "AI Hardware Optimizer",

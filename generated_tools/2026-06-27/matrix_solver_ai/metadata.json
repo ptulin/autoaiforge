@@ -1,0 +1,13 @@
+{
+  "tool_name": "matrix_solver_ai",
+  "display_name": "AI-Powered Matrix Solver",
+  "description": "This tool focuses on solving complex matrix computations such as eigenvalue decomposition, matrix inversion, and linear system solving using AI-assisted techniques. It integrates standard numerical libraries with AI models for handling ill-conditioned matrices or providing approximate solutions in cases where traditional methods fail.",
+  "topic": "AI in Mathematical Problem Solving",
+  "date": "2026-06-27",
+  "generated": "2026-06-27T05:52:12.770331+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-27/matrix_solver_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/matrix_solver_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/matrix_solver_ai/matrix_solver_ai.zip"
+}
