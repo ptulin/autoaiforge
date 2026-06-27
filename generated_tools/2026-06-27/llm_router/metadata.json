@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_router",
+  "display_name": "LLM Router Middleware",
+  "description": "A CLI tool that dynamically routes requests to the most suitable large language model based on task type, such as summarization, translation, or text generation. It uses defined performance metrics like latency, accuracy, and cost to make optimized routing decisions.",
+  "topic": "LLM Model Routing Optimization",
+  "date": "2026-06-27",
+  "generated": "2026-06-27T05:52:12.770331+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-27/llm_router",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_router/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-27/llm_router/llm_router.zip"
+}
