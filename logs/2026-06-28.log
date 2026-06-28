@@ -1,0 +1,349 @@
+2026-06-28 06:14:09 | INFO     | main | ============================================================
+2026-06-28 06:14:09 | INFO     | main | AutoAIForge starting run: 2026-06-28T06:14:09.208759+00:00
+2026-06-28 06:14:09 | INFO     | main | ============================================================
+2026-06-28 06:14:09 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-28 06:14:09 | INFO     | youtube_scraper | YouTube client ready
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:09 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A09Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-26T06%3A14%3A10Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-28 06:14:10 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-28 06:14:10 | INFO     | main |   YouTube: 0 items
+2026-06-28 06:14:10 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-28 06:14:15 | INFO     | rss_scraper | HackerNews: 148 items
+2026-06-28 06:14:15 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-28 06:14:16 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-28 06:14:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-28 06:14:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-28 06:14:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-28 06:14:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-28 06:14:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-28 06:14:22 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-28 06:14:35 | INFO     | rss_scraper | ArXiv: 104 items
+2026-06-28 06:14:40 | INFO     | rss_scraper | Dev.to: 188 items
+2026-06-28 06:14:41 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-28 06:14:41 | INFO     | rss_scraper | Free sources total: 490 unique items
+2026-06-28 06:14:41 | INFO     | main |   RSS/API sources: 490 items
+2026-06-28 06:14:41 | INFO     | main |   Total scraped: 490 items
+2026-06-28 06:14:41 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-28 06:14:41 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-28 06:14:41 | INFO     | db_manager | Purged 566 old news items
+2026-06-28 06:14:41 | INFO     | db_manager | Inserted 257/490 news items
+2026-06-28 06:14:41 | INFO     | main |   SQLite: 257 new items (total: 9475)
+2026-06-28 06:14:46 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-28 06:14:47 | INFO     | vector_store | VectorStore ready
+2026-06-28 06:14:52 | INFO     | vector_store | Indexed 502 items into vector store
+2026-06-28 06:14:52 | INFO     | main |   Vector store: 502 items indexed
+2026-06-28 06:14:52 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-28 06:14:52 | INFO     | topic_analyzer | Analyzing 502 items for top 10 topics …
+2026-06-28 06:14:59 | DEBUG    | llm_client | LLM response from github_models (3607 chars)
+2026-06-28 06:14:59 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-28 06:14:59 | INFO     | main |   Found 10 topics:
+2026-06-28 06:14:59 | INFO     | main |      1. [9/10] Local LLM Optimization Techniques
+2026-06-28 06:14:59 | INFO     | main |      2. [9/10] AI in Cybersecurity
+2026-06-28 06:14:59 | INFO     | main |      3. [8/10] AI Agent Governance Frameworks
+2026-06-28 06:14:59 | INFO     | main |      4. [8/10] Distributed LLM Inference
+2026-06-28 06:14:59 | INFO     | main |      5. [8/10] Efficient LLM Context Management
+2026-06-28 06:14:59 | INFO     | main |      6. [8/10] AI-Powered Real-Time Applications
+2026-06-28 06:14:59 | INFO     | main |      7. [8/10] AI in Creative Content Generation
+2026-06-28 06:14:59 | INFO     | main |      8. [7/10] AI-Assisted Code Organization
+2026-06-28 06:14:59 | INFO     | main |      9. [7/10] Knowledge Graphs for AI Assistants
+2026-06-28 06:14:59 | INFO     | main |     10. [7/10] AI-Driven File and Workflow Management
+2026-06-28 06:14:59 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-28 06:14:59 | INFO     | main |   Existing collection: 360 tools across 190 topics
+2026-06-28 06:14:59 | INFO     | main |   🔄 Upgrade candidate: 'AI in Cybersecurity' (relevance 9/10, last built 2026-06-07)
+2026-06-28 06:14:59 | INFO     | main |   Topics flagged for upgrade: AI in Cybersecurity
+2026-06-28 06:15:04 | DEBUG    | llm_client | LLM response from github_models (3424 chars)
+2026-06-28 06:15:04 | INFO     | idea_generator | Generated 3 ideas for topic: Local LLM Optimization Techniques
+2026-06-28 06:15:04 | INFO     | idea_generator |   ⏭  Skipping idea 'llm_resource_profiler' — name already in collection
+2026-06-28 06:15:04 | INFO     | idea_generator |   ⏭  Skipping idea 'quantization_benchmark' — name already in collection
+2026-06-28 06:15:04 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI in Cybersecurity'
+2026-06-28 06:15:09 | DEBUG    | llm_client | LLM response from github_models (2983 chars)
+2026-06-28 06:15:09 | INFO     | idea_generator | Generated 3 ideas for topic: AI in Cybersecurity
+2026-06-28 06:15:12 | DEBUG    | llm_client | LLM response from github_models (1344 chars)
+2026-06-28 06:15:12 | INFO     | idea_generator | Generated 1 ideas for topic: AI Agent Governance Frameworks
+2026-06-28 06:15:12 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-28 06:15:12 | INFO     | main |   Generated 5 tool ideas:
+2026-06-28 06:15:12 | INFO     | main |     • model_pruning_analyzer: This tool helps developers experiment with pruning techniques to reduce the size
+2026-06-28 06:15:12 | INFO     | main |     • ai_vulnerability_scanner: This tool scans source code repositories to identify security vulnerabilities us
+2026-06-28 06:15:12 | INFO     | main |     • threat_pattern_analyzer: This tool analyzes server logs or network traffic to detect suspicious threat pa
+2026-06-28 06:15:12 | INFO     | main |     • ai_policy_enforcer: This tool uses natural language processing (NLP) to analyze existing security po
+2026-06-28 06:15:12 | INFO     | main |     • ai_agent_policy_guard: AI Agent Policy Guard is a Python-based governance tool that monitors and enforc
+2026-06-28 06:15:12 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-28 06:15:12 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-28 06:15:21 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-28 06:15:21 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-28 06:15:21 | INFO     | tool_builder | Building tool: model_pruning_analyzer …
+2026-06-28 06:15:31 | DEBUG    | llm_client | LLM response from github_models (7072 chars)
+2026-06-28 06:15:31 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'numpy==1.24.4']
+2026-06-28 06:16:19 | WARNING  | test_runner | Tests FAILED for model_pruning_analyzer:
+test_model_pruning_analyzer.py::test_analyze_pruning FAILED              [ 33%]
+    raise AttributeError((
+E   AttributeError: expected 'f' to be string, path, or a file-like object with a 'write' attribute
+FAILED test_model_pruning_analyzer.py::test_analyze_pruning - AttributeError: expected 'f' to be string, path, or a file-like object with a 'write' attribute
+2026-06-28 06:16:19 | WARNING  | tool_builder | ⚠️  model_pruning_analyzer tests failed (loop 1/5) — test_model_pruning_analyzer.py::test_analyze_pruning FAILED              [ 33%]
+    raise AttributeError((
+E   AttributeError: expected 'f' to be string, path, or a file-like object with a 'write' att
+2026-06-28 06:16:29 | DEBUG    | llm_client | LLM response from github_models (7207 chars)
+2026-06-28 06:16:29 | DEBUG    | test_runner | Installing: ['torch', 'pytest']
+2026-06-28 06:16:31 | WARNING  | test_runner | Tests FAILED for model_pruning_analyzer:
+test_model_pruning_analyzer.py::test_analyze_pruning FAILED              [ 33%]
+    assert metrics["speed_change_percent"] == -20.0
+E   assert -20.000000000000004 == -20.0
+FAILED test_model_pruning_analyzer.py::test_analyze_pruning - assert -20.000000000000004 == -20.0
+2026-06-28 06:16:31 | WARNING  | tool_builder | ⚠️  model_pruning_analyzer tests failed (loop 2/5) — test_model_pruning_analyzer.py::test_analyze_pruning FAILED              [ 33%]
+    assert metrics["speed_change_percent"] == -20.0
+E   assert -20.000000000000004 == -20.0
+FAILED test_model_pruning_an
+2026-06-28 06:16:39 | DEBUG    | llm_client | LLM response from github_models (7389 chars)
+2026-06-28 06:16:39 | DEBUG    | test_runner | Installing: ['torch', 'numpy']
+2026-06-28 06:16:42 | INFO     | test_runner | Tests PASSED for model_pruning_analyzer
+2026-06-28 06:16:42 | INFO     | tool_builder | ✅ model_pruning_analyzer passed tests on loop 3
+2026-06-28 06:16:42 | INFO     | tool_builder | Building tool: ai_vulnerability_scanner …
+2026-06-28 06:16:52 | DEBUG    | llm_client | LLM response from github_models (7334 chars)
+2026-06-28 06:16:52 | DEBUG    | test_runner | Installing: ['transformers==4.34.0', 'rich==13.5.2']
+2026-06-28 06:17:01 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 24 times.
+    mock_file().write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 24 times.
+E   assert ('}',) == ()
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 24 times.
+assert ('}',) == ()
+2026-06-28 06:17:01 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 1/5) — test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionEr
+2026-06-28 06:17:10 | DEBUG    | llm_client | LLM response from github_models (7056 chars)
+2026-06-28 06:17:10 | DEBUG    | test_runner | Installing: ['transformers', 'rich']
+2026-06-28 06:17:13 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+E   NameError: name 'json' is not defined
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - NameError: name 'json' is not defined
+2026-06-28 06:17:13 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 2/5) — test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+E   NameError: name 'json' is not defined
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - NameError: nam
+2026-06-28 06:17:22 | DEBUG    | llm_client | LLM response from github_models (7348 chars)
+2026-06-28 06:17:22 | DEBUG    | test_runner | Installing: ['transformers', 'rich']
+2026-06-28 06:17:25 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 24 times.
+    handle.write.assert_called_once_with(
+E   AssertionError: Expected 'write' to be called once. Called 24 times.
+E   assert ('}',) == ('{\n    "fil...}\n    ]\n}',)
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 24 times.
+assert ('}',) == ('{\n    "fil...}\n    ]\n}',)
+2026-06-28 06:17:25 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 3/5) — test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-28 06:17:34 | DEBUG    | llm_client | LLM response from github_models (7296 chars)
+2026-06-28 06:17:34 | DEBUG    | test_runner | Installing: ['transformers', 'rich']
+2026-06-28 06:17:37 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+E   NameError: name 'json' is not defined
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - NameError: name 'json' is not defined
+2026-06-28 06:17:37 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 4/5) — test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+E   NameError: name 'json' is not defined
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - NameError: nam
+2026-06-28 06:17:45 | DEBUG    | llm_client | LLM response from github_models (7608 chars)
+2026-06-28 06:17:45 | DEBUG    | test_runner | Installing: ['transformers', 'rich']
+2026-06-28 06:17:49 | WARNING  | test_runner | Tests FAILED for ai_vulnerability_scanner:
+test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to be called once. Called 24 times.
+    handle.write.assert_called_once_with(
+E   AssertionError: Expected 'write' to be called once. Called 24 times.
+E   assert ('}',) == ('{\n    "fil...}\n    ]\n}',)
+FAILED test_ai_vulnerability_scanner.py::test_generate_report - AssertionError: Expected 'write' to be called once. Called 24 times.
+assert ('}',) == ('{\n    "fil...}\n    ]\n}',)
+2026-06-28 06:17:49 | WARNING  | tool_builder | ⚠️  ai_vulnerability_scanner tests failed (loop 5/5) — test_ai_vulnerability_scanner.py::test_generate_report FAILED            [100%]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:950: in assert_called_once_with
+    raise Assert
+2026-06-28 06:17:49 | ERROR    | tool_builder | ❌ ai_vulnerability_scanner failed after 5 loops
+2026-06-28 06:17:49 | INFO     | tool_builder | Building tool: threat_pattern_analyzer …
+2026-06-28 06:17:59 | DEBUG    | llm_client | LLM response from github_models (6458 chars)
+2026-06-28 06:17:59 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'scikit-learn==1.2.2', 'matplotlib==3.7.2']
+2026-06-28 06:18:15 | WARNING  | test_runner | Tests FAILED for threat_pattern_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_threat_pattern_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:18:15 | WARNING  | tool_builder | ⚠️  threat_pattern_analyzer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:18:26 | DEBUG    | llm_client | LLM response from github_models (6495 chars)
+2026-06-28 06:18:26 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scikit-learn']
+2026-06-28 06:18:27 | WARNING  | test_runner | Tests FAILED for threat_pattern_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_threat_pattern_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:18:27 | WARNING  | tool_builder | ⚠️  threat_pattern_analyzer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:18:36 | DEBUG    | llm_client | LLM response from github_models (6437 chars)
+2026-06-28 06:18:36 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scikit-learn']
+2026-06-28 06:18:36 | WARNING  | test_runner | Tests FAILED for threat_pattern_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_threat_pattern_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:18:36 | WARNING  | tool_builder | ⚠️  threat_pattern_analyzer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:18:46 | DEBUG    | llm_client | LLM response from github_models (6685 chars)
+2026-06-28 06:18:46 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scikit-learn']
+2026-06-28 06:18:46 | WARNING  | test_runner | Tests FAILED for threat_pattern_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_threat_pattern_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:18:46 | WARNING  | tool_builder | ⚠️  threat_pattern_analyzer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:18:59 | DEBUG    | llm_client | LLM response from github_models (6479 chars)
+2026-06-28 06:18:59 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scikit-learn']
+2026-06-28 06:19:00 | WARNING  | test_runner | Tests FAILED for threat_pattern_analyzer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_threat_pattern_analyzer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:19:00 | WARNING  | tool_builder | ⚠️  threat_pattern_analyzer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_threat_pattern_analyzer.py _______________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:19:00 | ERROR    | tool_builder | ❌ threat_pattern_analyzer failed after 5 loops
+2026-06-28 06:19:00 | INFO     | tool_builder | Building tool: ai_policy_enforcer …
+2026-06-28 06:19:12 | DEBUG    | llm_client | LLM response from github_models (5404 chars)
+2026-06-28 06:19:12 | DEBUG    | test_runner | Installing: ['transformers==4.33.2', 'nltk==3.8.1', 'rich==13.5.2', 'PyPDF2==3.0.1']
+2026-06-28 06:19:21 | WARNING  | test_runner | Tests FAILED for ai_policy_enforcer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_ai_policy_enforcer.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-06-28 06:19:21 | WARNING  | tool_builder | ⚠️  ai_policy_enforcer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:19:29 | DEBUG    | llm_client | LLM response from github_models (5909 chars)
+2026-06-28 06:19:29 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'PyPDF2', 'rich']
+2026-06-28 06:19:33 | WARNING  | test_runner | Tests FAILED for ai_policy_enforcer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_ai_policy_enforcer.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-06-28 06:19:33 | WARNING  | tool_builder | ⚠️  ai_policy_enforcer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:19:42 | DEBUG    | llm_client | LLM response from github_models (7118 chars)
+2026-06-28 06:19:42 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich', 'PyPDF2']
+2026-06-28 06:19:46 | WARNING  | test_runner | Tests FAILED for ai_policy_enforcer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_ai_policy_enforcer.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-06-28 06:19:46 | WARNING  | tool_builder | ⚠️  ai_policy_enforcer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:19:54 | DEBUG    | llm_client | LLM response from github_models (6891 chars)
+2026-06-28 06:19:54 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich', 'PyPDF2']
+2026-06-28 06:19:58 | WARNING  | test_runner | Tests FAILED for ai_policy_enforcer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+ERROR test_ai_policy_enforcer.py - RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+2026-06-28 06:19:58 | WARNING  | tool_builder | ⚠️  ai_policy_enforcer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:20:06 | DEBUG    | llm_client | LLM response from github_models (6611 chars)
+2026-06-28 06:20:06 | DEBUG    | test_runner | Installing: ['transformers', 'nltk', 'rich', 'PyPDF2']
+2026-06-28 06:20:08 | WARNING  | test_runner | Tests FAILED for ai_policy_enforcer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_policy_enforcer.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-06-28 06:20:08 | WARNING  | tool_builder | ⚠️  ai_policy_enforcer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_policy_enforcer.py __________________
+E   ValueError: numpy.dtype size chang
+2026-06-28 06:20:08 | ERROR    | tool_builder | ❌ ai_policy_enforcer failed after 5 loops
+2026-06-28 06:20:08 | INFO     | tool_builder | Building tool: ai_agent_policy_guard …
+2026-06-28 06:20:08 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-28 06:21:19 | DEBUG    | llm_client | LLM response from github_models (7117 chars)
+2026-06-28 06:21:19 | DEBUG    | test_runner | Installing: ['PyYAML==6.0', 'jsonschema==4.19.0', 'colorlog==6.7.0']
+2026-06-28 06:21:20 | WARNING  | test_runner | Tests FAILED for ai_agent_policy_guard:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_policy_guard.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: unterminated triple-quoted string literal (detected at line 30)
+ERROR test_ai_agent_policy_guard.py
+2026-06-28 06:21:20 | WARNING  | tool_builder | ⚠️  ai_agent_policy_guard tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_policy_guard.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-06-28 06:21:29 | DEBUG    | llm_client | LLM response from github_models (7342 chars)
+2026-06-28 06:21:29 | DEBUG    | test_runner | Installing: ['PyYAML', 'jsonschema', 'colorlog']
+2026-06-28 06:21:30 | WARNING  | test_runner | Tests FAILED for ai_agent_policy_guard:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_policy_guard.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: unterminated triple-quoted string literal (detected at line 34)
+ERROR test_ai_agent_policy_guard.py
+2026-06-28 06:21:30 | WARNING  | tool_builder | ⚠️  ai_agent_policy_guard tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_policy_guard.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-06-28 06:21:38 | DEBUG    | llm_client | LLM response from github_models (7093 chars)
+2026-06-28 06:21:38 | DEBUG    | test_runner | Installing: ['pyyaml', 'jsonschema', 'colorlog', 'pytest']
+2026-06-28 06:21:39 | WARNING  | test_runner | Tests FAILED for ai_agent_policy_guard:
+test_ai_agent_policy_guard.py::test_monitor_logs FAILED                  [100%]
+E   AttributeError: module 'ai_agent_policy_guard' has no attribute 'logger'
+FAILED test_ai_agent_policy_guard.py::test_monitor_logs - AttributeError: module 'ai_agent_policy_guard' has no attribute 'logger'
+2026-06-28 06:21:39 | WARNING  | tool_builder | ⚠️  ai_agent_policy_guard tests failed (loop 3/5) — test_ai_agent_policy_guard.py::test_monitor_logs FAILED                  [100%]
+E   AttributeError: module 'ai_agent_policy_guard' has no attribute 'logger'
+FAILED test_ai_agent_policy_guard.py::test_
+2026-06-28 06:21:47 | DEBUG    | llm_client | LLM response from github_models (7222 chars)
+2026-06-28 06:21:47 | DEBUG    | test_runner | Installing: ['jsonschema', 'pyyaml', 'colorlog']
+2026-06-28 06:21:48 | INFO     | test_runner | Tests PASSED for ai_agent_policy_guard
+2026-06-28 06:21:48 | INFO     | tool_builder | ✅ ai_agent_policy_guard passed tests on loop 4
+2026-06-28 06:21:48 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-06-28 06:21:48 | INFO     | main |   Built 2/5 tools successfully
+2026-06-28 06:21:48 | INFO     | main |     ✅ model_pruning_analyzer (loops: 3)
+2026-06-28 06:21:48 | INFO     | main |     ✅ ai_agent_policy_guard (loops: 4)
+2026-06-28 06:21:48 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-28 06:21:48 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-28 06:21:48 | INFO     | github_publisher |   Created zip: model_pruning_analyzer.zip (2998 bytes)
+2026-06-28 06:21:48 | INFO     | github_publisher | Saved model_pruning_analyzer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/model_pruning_analyzer
+2026-06-28 06:21:48 | INFO     | github_publisher |   Created zip: ai_agent_policy_guard.zip (2910 bytes)
+2026-06-28 06:21:48 | INFO     | github_publisher | Saved ai_agent_policy_guard → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/ai_agent_policy_guard
+2026-06-28 06:21:48 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-06-28 06:21:48 | INFO     | main |   Published 2 tools:
+2026-06-28 06:21:48 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/model_pruning_analyzer
+2026-06-28 06:21:48 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/ai_agent_policy_guard
+2026-06-28 06:21:48 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-28 06:21:48 | INFO     | main | ✅ Generated tools_index.json with 362 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

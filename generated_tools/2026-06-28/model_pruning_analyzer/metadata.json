@@ -1,0 +1,13 @@
+{
+  "tool_name": "model_pruning_analyzer",
+  "display_name": "Model Pruning Analyzer",
+  "description": "This tool helps developers experiment with pruning techniques to reduce the size of local LLMs while retaining acceptable accuracy levels. It provides detailed metrics to compare pre- and post-pruning model performance.",
+  "topic": "Local LLM Optimization Techniques",
+  "date": "2026-06-28",
+  "generated": "2026-06-28T06:14:09.208759+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/model_pruning_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-28/model_pruning_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-28/model_pruning_analyzer/model_pruning_analyzer.zip"
+}
