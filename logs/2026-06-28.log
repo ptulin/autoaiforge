@@ -347,3 +347,21 @@ FAILED test_ai_agent_policy_guard.py::test_
 2026-06-28 06:21:48 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/ai_agent_policy_guard
 2026-06-28 06:21:48 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-28 06:21:48 | INFO     | main | ✅ Generated tools_index.json with 362 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-28 06:21:51 | INFO     | main | Database committed and pushed to repo
+2026-06-28 06:21:51 | INFO     | main | 
+2026-06-28 06:21:51 | INFO     | main | ============================================================
+2026-06-28 06:21:51 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-28 06:21:51 | INFO     | main | ============================================================
+2026-06-28 06:21:51 | INFO     | main |   Date:            2026-06-28
+2026-06-28 06:21:51 | INFO     | main |   Items scraped:   490
+2026-06-28 06:21:51 | INFO     | main |   Items stored:    257
+2026-06-28 06:21:51 | INFO     | main |   Topics found:    10
+2026-06-28 06:21:51 | INFO     | main |   Ideas generated: 5
+2026-06-28 06:21:51 | INFO     | main |   Tools built:     2
+2026-06-28 06:21:51 | INFO     | main |   Tools published: 2
+2026-06-28 06:21:51 | INFO     | main |   Elapsed:         459.2s
+2026-06-28 06:21:51 | INFO     | main |   Published URLs:
+2026-06-28 06:21:51 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/model_pruning_analyzer
+2026-06-28 06:21:51 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/ai_agent_policy_guard
+2026-06-28 06:21:51 | INFO     | main | ============================================================
+2026-06-28 06:21:52 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
