@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_agent_policy_guard",
+  "display_name": "AI Agent Policy Guard",
+  "description": "AI Agent Policy Guard is a Python-based governance tool that monitors and enforces behavior policies for autonomous AI agents. It allows developers to define policy rules in YAML or JSON, and the tool continuously audits agent actions, ensuring compliance. If violations are detected, it can log, alert, or halt the agent's execution. This helps prevent unintended or unsafe behaviors in AI agents.",
+  "topic": "AI Agent Governance Frameworks",
+  "date": "2026-06-28",
+  "generated": "2026-06-28T06:14:09.208759+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-28/ai_agent_policy_guard",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-28/ai_agent_policy_guard/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-28/ai_agent_policy_guard/ai_agent_policy_guard.zip"
+}
