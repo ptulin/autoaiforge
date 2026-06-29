@@ -330,3 +330,21 @@ E   NameError: name 'mock_open' is not d
 2026-06-29 06:49:37 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-29/selixes_cluster_manager
 2026-06-29 06:49:37 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-06-29 06:49:37 | INFO     | main | ✅ Generated tools_index.json with 364 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-06-29 06:49:40 | INFO     | main | Database committed and pushed to repo
+2026-06-29 06:49:40 | INFO     | main | 
+2026-06-29 06:49:40 | INFO     | main | ============================================================
+2026-06-29 06:49:40 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-06-29 06:49:40 | INFO     | main | ============================================================
+2026-06-29 06:49:40 | INFO     | main |   Date:            2026-06-29
+2026-06-29 06:49:40 | INFO     | main |   Items scraped:   486
+2026-06-29 06:49:40 | INFO     | main |   Items stored:    338
+2026-06-29 06:49:40 | INFO     | main |   Topics found:    10
+2026-06-29 06:49:40 | INFO     | main |   Ideas generated: 5
+2026-06-29 06:49:40 | INFO     | main |   Tools built:     2
+2026-06-29 06:49:40 | INFO     | main |   Tools published: 2
+2026-06-29 06:49:40 | INFO     | main |   Elapsed:         390.7s
+2026-06-29 06:49:40 | INFO     | main |   Published URLs:
+2026-06-29 06:49:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-29/llm_edge_runner
+2026-06-29 06:49:40 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-29/selixes_cluster_manager
+2026-06-29 06:49:40 | INFO     | main | ============================================================
+2026-06-29 06:49:42 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
