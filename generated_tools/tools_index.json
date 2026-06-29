@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-06-28T06:21:48.459790+00:00",
-  "total_tools": 362,
+  "last_updated": "2026-06-29T06:49:37.831289+00:00",
+  "total_tools": 364,
   "tools": [
+    {
+      "tool_name": "llm_edge_runner",
+      "display_name": "LLM Edge Runner",
+      "description": "This tool allows developers to efficiently run large language models on local devices or edge hardware by optimizing model loading, resource allocation, and execution. It includes failover mechanisms to handle resource constraints and fallback gracefully to smaller models or pre-defined responses when needed.",
+      "topic": "Local LLM Deployment",
+      "date": "2026-06-29",
+      "generated": "2026-06-29T06:43:07.078326+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-29/llm_edge_runner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-29/llm_edge_runner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-29/llm_edge_runner/llm_edge_runner.zip"
+    },
+    {
+      "tool_name": "selixes_cluster_manager",
+      "display_name": "Selixes Cluster Manager",
+      "description": "A lightweight CLI tool to orchestrate and manage clusters of local devices for distributed LLM inference. It allows developers to split and assign tasks dynamically across multiple devices, improving performance and throughput.",
+      "topic": "Local LLM Deployment",
+      "date": "2026-06-29",
+      "generated": "2026-06-29T06:43:07.078326+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-29/selixes_cluster_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-29/selixes_cluster_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-29/selixes_cluster_manager/selixes_cluster_manager.zip"
+    },
     {
       "tool_name": "ai_agent_policy_guard",
       "display_name": "AI Agent Policy Guard",
