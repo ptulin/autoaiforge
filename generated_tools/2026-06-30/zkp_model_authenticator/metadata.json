@@ -1,0 +1,13 @@
+{
+  "tool_name": "zkp_model_authenticator",
+  "display_name": "ZKP Model Authenticator",
+  "description": "A Python library for enabling zero-knowledge proof-based authentication of AI models. This ensures that model ownership or validity can be proven without exposing the model itself, which is vital for protecting sensitive intellectual property.",
+  "topic": "Zero-Knowledge Proofs in AI",
+  "date": "2026-06-30",
+  "generated": "2026-06-30T06:08:34.345119+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_model_authenticator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_model_authenticator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_model_authenticator/zkp_model_authenticator.zip"
+}

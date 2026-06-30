@@ -1,0 +1,13 @@
+{
+  "tool_name": "multi_agent_debugger",
+  "display_name": "Multi-Agent Debugger",
+  "description": "This debugging-focused CLI tool helps developers monitor, trace, and log interactions among multiple AI agents in real-time. It provides detailed insights into message passing, task execution times, and bottlenecks, enabling rapid troubleshooting of multi-agent systems.",
+  "topic": "AI Agent Collaboration",
+  "date": "2026-06-30",
+  "generated": "2026-06-30T06:08:34.345119+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/multi_agent_debugger",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/multi_agent_debugger/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/multi_agent_debugger/multi_agent_debugger.zip"
+}
