@@ -1,0 +1,265 @@
+2026-06-30 06:08:34 | INFO     | main | ============================================================
+2026-06-30 06:08:34 | INFO     | main | AutoAIForge starting run: 2026-06-30T06:08:34.345119+00:00
+2026-06-30 06:08:34 | INFO     | main | ============================================================
+2026-06-30 06:08:34 | INFO     | main | [STEP 1/6] News Scraping
+2026-06-30 06:08:34 | INFO     | youtube_scraper | YouTube client ready
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:34 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-06-28T06%3A08%3A35Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-06-30 06:08:35 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-06-30 06:08:35 | INFO     | main |   YouTube: 0 items
+2026-06-30 06:08:35 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-06-30 06:08:40 | INFO     | rss_scraper | HackerNews: 155 items
+2026-06-30 06:08:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-06-30 06:08:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-06-30 06:08:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-06-30 06:08:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-06-30 06:08:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-06-30 06:08:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-06-30 06:08:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-06-30 06:08:48 | INFO     | rss_scraper | Reddit: 0 items
+2026-06-30 06:08:54 | INFO     | rss_scraper | ArXiv: 105 items
+2026-06-30 06:08:58 | INFO     | rss_scraper | Dev.to: 186 items
+2026-06-30 06:08:59 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-06-30 06:08:59 | INFO     | rss_scraper | Free sources total: 496 unique items
+2026-06-30 06:08:59 | INFO     | main |   RSS/API sources: 496 items
+2026-06-30 06:08:59 | INFO     | main |   Total scraped: 496 items
+2026-06-30 06:08:59 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-06-30 06:08:59 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-06-30 06:09:00 | INFO     | db_manager | Purged 0 old news items
+2026-06-30 06:09:00 | INFO     | db_manager | Inserted 371/496 news items
+2026-06-30 06:09:00 | INFO     | main |   SQLite: 371 new items (total: 9827)
+2026-06-30 06:09:04 | INFO     | vector_store | Loading sentence-transformer model …
+2026-06-30 06:09:06 | INFO     | vector_store | VectorStore ready
+2026-06-30 06:09:15 | INFO     | vector_store | Indexed 966 items into vector store
+2026-06-30 06:09:15 | INFO     | main |   Vector store: 966 items indexed
+2026-06-30 06:09:15 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-06-30 06:09:15 | INFO     | topic_analyzer | Analyzing 966 items for top 10 topics …
+2026-06-30 06:09:21 | DEBUG    | llm_client | LLM response from github_models (3748 chars)
+2026-06-30 06:09:21 | INFO     | topic_analyzer | Identified 10 topics
+2026-06-30 06:09:21 | INFO     | main |   Found 10 topics:
+2026-06-30 06:09:21 | INFO     | main |      1. [9/10] AI Agent Collaboration
+2026-06-30 06:09:21 | INFO     | main |      2. [8/10] Zero-Knowledge Proofs in AI
+2026-06-30 06:09:21 | INFO     | main |      3. [8/10] Coding Agents for LLMs
+2026-06-30 06:09:21 | INFO     | main |      4. [8/10] Metasearch for AI Agents
+2026-06-30 06:09:21 | INFO     | main |      5. [7/10] Multimodal AI Inference
+2026-06-30 06:09:21 | INFO     | main |      6. [7/10] LLM Semantic Caching
+2026-06-30 06:09:21 | INFO     | main |      7. [7/10] LLM Pollution Mitigation
+2026-06-30 06:09:21 | INFO     | main |      8. [6/10] Self-Hosted AI Stacks
+2026-06-30 06:09:21 | INFO     | main |      9. [6/10] AI Firewall and Auditing
+2026-06-30 06:09:21 | INFO     | main |     10. [6/10] Transparent Semantic Caching
+2026-06-30 06:09:21 | INFO     | main | [STEP 4/6] Idea Generation
+2026-06-30 06:09:21 | INFO     | main |   Existing collection: 364 tools across 192 topics
+2026-06-30 06:09:21 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-06-30 06:09:27 | DEBUG    | llm_client | LLM response from github_models (3476 chars)
+2026-06-30 06:09:27 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agent Collaboration
+2026-06-30 06:09:27 | INFO     | idea_generator |   ⏭  Skipping idea 'agent_task_orchestrator' — name already in collection
+2026-06-30 06:09:33 | DEBUG    | llm_client | LLM response from github_models (3324 chars)
+2026-06-30 06:09:33 | INFO     | idea_generator | Generated 3 ideas for topic: Zero-Knowledge Proofs in AI
+2026-06-30 06:09:33 | INFO     | idea_generator | Total ideas generated: 5
+2026-06-30 06:09:33 | INFO     | main |   Generated 5 tool ideas:
+2026-06-30 06:09:33 | INFO     | main |     • agent_collaboration_simulator: This CLI tool simulates collaboration between multiple AI agents in a controlled
+2026-06-30 06:09:33 | INFO     | main |     • multi_agent_debugger: This debugging-focused CLI tool helps developers monitor, trace, and log interac
+2026-06-30 06:09:33 | INFO     | main |     • zkp_identity_prover: This Python CLI tool allows developers to generate and verify zero-knowledge pro
+2026-06-30 06:09:33 | INFO     | main |     • zkp_model_authenticator: A Python library for enabling zero-knowledge proof-based authentication of AI mo
+2026-06-30 06:09:33 | INFO     | main |     • zkp_privacy_tester: This CLI tool lets developers test the privacy guarantees of their zero-knowledg
+2026-06-30 06:09:33 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-06-30 06:09:33 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-06-30 06:09:42 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-06-30 06:09:42 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-06-30 06:09:42 | INFO     | tool_builder | Building tool: agent_collaboration_simulator …
+2026-06-30 06:09:54 | DEBUG    | llm_client | LLM response from github_models (6693 chars)
+2026-06-30 06:09:54 | DEBUG    | test_runner | Installing: ['networkx==3.0', 'matplotlib==3.7.2', 'pyyaml==6.0', 'pytest==7.4.2']
+2026-06-30 06:10:01 | INFO     | test_runner | Tests PASSED for agent_collaboration_simulator
+2026-06-30 06:10:01 | INFO     | tool_builder | ✅ agent_collaboration_simulator passed tests on loop 1
+2026-06-30 06:10:01 | INFO     | tool_builder | Building tool: multi_agent_debugger …
+2026-06-30 06:10:11 | DEBUG    | llm_client | LLM response from github_models (6301 chars)
+2026-06-30 06:10:11 | DEBUG    | test_runner | Installing: ['rich==13.5.2']
+2026-06-30 06:10:12 | INFO     | test_runner | Tests PASSED for multi_agent_debugger
+2026-06-30 06:10:12 | INFO     | tool_builder | ✅ multi_agent_debugger passed tests on loop 1
+2026-06-30 06:10:12 | INFO     | tool_builder | Building tool: zkp_identity_prover …
+2026-06-30 06:10:27 | DEBUG    | llm_client | LLM response from github_models (6628 chars)
+2026-06-30 06:10:27 | DEBUG    | test_runner | Installing: ['pycryptodome==3.18.0']
+2026-06-30 06:10:29 | WARNING  | test_runner | Tests FAILED for zkp_identity_prover:
+test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify_zkp_invalid FAILED              [100%]
+    raise FileNotFoundError("Private key file not found.")
+E   FileNotFoundError: Private key file not found.
+    assert verify_zkp(zkp, "public_key.pem") is True
+    raise FileNotFoundError("Public key file not found.")
+E   FileNotFoundError: Public key file not found.
+    assert verify_zkp(zkp, "public_key.pem") is False
+    raise FileNotFoundError("Public key file not found.")
+E   FileNotFoundError: Public key file not found.
+FAILED test_zkp_identity_prover.py::test_generate_zkp - FileNotFoundError: Private key file not found.
+FAILED test_zkp_identity_prover.py::test_verify_zkp_valid - FileNotFoundError: Public key file not found.
+FAILED test_zkp_identity_prover.py::test_verify_zkp_invalid - FileNotFoundError: Public key file not found.
+2026-06-30 06:10:29 | WARNING  | tool_builder | ⚠️  zkp_identity_prover tests failed (loop 1/5) — test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify
+2026-06-30 06:10:43 | DEBUG    | llm_client | LLM response from github_models (7111 chars)
+2026-06-30 06:10:43 | DEBUG    | test_runner | Installing: ['pycryptodome', 'pytest']
+2026-06-30 06:10:44 | WARNING  | test_runner | Tests FAILED for zkp_identity_prover:
+test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify_zkp_invalid FAILED              [100%]
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+    assert verify_zkp(zkp, "public_key.pem") is True
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+    assert verify_zkp(zkp, "public_key.pem") is False
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_generate_zkp - ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_verify_zkp_valid - ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_verify_zkp_invalid - ValueError: Not a valid PEM post boundary
+2026-06-30 06:10:44 | WARNING  | tool_builder | ⚠️  zkp_identity_prover tests failed (loop 2/5) — test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify
+2026-06-30 06:10:56 | DEBUG    | llm_client | LLM response from github_models (8037 chars)
+2026-06-30 06:10:56 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport os\nfrom Crypto.PublicKey import RSA\nfrom Crypto.Hash import SHA256\nfrom Crypto.Signature import pkcs1_15\n\ndef generate_zkp(user_data, private_key_path):\n    \"\"\"\n    Generate a zero-knowledge proof (ZKP) for user identity data.\n\n    Args:\
+Expecting property name enclosed in double quotes: line 6 column 1 (char 8024)
+2026-06-30 06:10:56 | DEBUG    | test_runner | Installing: ['pycryptodome', 'pytest']
+2026-06-30 06:10:57 | WARNING  | test_runner | Tests FAILED for zkp_identity_prover:
+test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify_zkp_invalid FAILED              [100%]
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+    assert verify_zkp(zkp, "public_key.pem") is True
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+    assert verify_zkp(zkp, "public_key.pem") is False
+    raise ValueError("Not a valid PEM post boundary")
+E   ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_generate_zkp - ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_verify_zkp_valid - ValueError: Not a valid PEM post boundary
+FAILED test_zkp_identity_prover.py::test_verify_zkp_invalid - ValueError: Not a valid PEM post boundary
+2026-06-30 06:10:57 | WARNING  | tool_builder | ⚠️  zkp_identity_prover tests failed (loop 3/5) — test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify
+2026-06-30 06:11:10 | DEBUG    | llm_client | LLM response from github_models (7867 chars)
+2026-06-30 06:11:10 | DEBUG    | test_runner | Installing: ['pycryptodome', 'pytest']
+2026-06-30 06:11:11 | WARNING  | test_runner | Tests FAILED for zkp_identity_prover:
+test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify_zkp_invalid FAILED              [100%]
+E   NameError: name 'RSA' is not defined
+E   NameError: name 'RSA' is not defined
+E   NameError: name 'RSA' is not defined
+FAILED test_zkp_identity_prover.py::test_generate_zkp - NameError: name 'RSA' is not defined
+FAILED test_zkp_identity_prover.py::test_verify_zkp_valid - NameError: name 'RSA' is not defined
+FAILED test_zkp_identity_prover.py::test_verify_zkp_invalid - NameError: name 'RSA' is not defined
+2026-06-30 06:11:11 | WARNING  | tool_builder | ⚠️  zkp_identity_prover tests failed (loop 4/5) — test_zkp_identity_prover.py::test_generate_zkp FAILED                    [ 33%]
+test_zkp_identity_prover.py::test_verify_zkp_valid FAILED                [ 66%]
+test_zkp_identity_prover.py::test_verify
+2026-06-30 06:11:22 | DEBUG    | llm_client | LLM response from github_models (7858 chars)
+2026-06-30 06:11:22 | DEBUG    | test_runner | Installing: ['pycryptodome', 'pytest']
+2026-06-30 06:11:23 | INFO     | test_runner | Tests PASSED for zkp_identity_prover
+2026-06-30 06:11:23 | INFO     | tool_builder | ✅ zkp_identity_prover passed tests on loop 5
+2026-06-30 06:11:23 | INFO     | tool_builder | Building tool: zkp_model_authenticator …
+2026-06-30 06:11:23 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-06-30 06:12:41 | DEBUG    | llm_client | LLM response from github_models (10710 chars)
+2026-06-30 06:12:41 | DEBUG    | test_runner | Installing: ['pycryptodome==3.18.0']
+2026-06-30 06:12:44 | WARNING  | test_runner | Tests FAILED for zkp_model_authenticator:
+test_zkp_model_authenticator.py::test_generate_proof FAILED              [ 33%]
+E   NameError: name 'hashlib' is not defined
+FAILED test_zkp_model_authenticator.py::test_generate_proof - NameError: name 'hashlib' is not defined
+2026-06-30 06:12:44 | WARNING  | tool_builder | ⚠️  zkp_model_authenticator tests failed (loop 1/5) — test_zkp_model_authenticator.py::test_generate_proof FAILED              [ 33%]
+E   NameError: name 'hashlib' is not defined
+FAILED test_zkp_model_authenticator.py::test_generate_proof - NameError: na
+2026-06-30 06:12:55 | DEBUG    | llm_client | LLM response from github_models (10592 chars)
+2026-06-30 06:12:55 | DEBUG    | test_runner | Installing: ['pycryptodome']
+2026-06-30 06:12:57 | INFO     | test_runner | Tests PASSED for zkp_model_authenticator
+2026-06-30 06:12:57 | INFO     | tool_builder | ✅ zkp_model_authenticator passed tests on loop 2
+2026-06-30 06:12:57 | INFO     | tool_builder | Building tool: zkp_privacy_tester …
+2026-06-30 06:13:11 | DEBUG    | llm_client | LLM response from github_models (6072 chars)
+2026-06-30 06:13:11 | DEBUG    | test_runner | Installing: ['matplotlib==3.7.1', 'pytest==7.4.2']
+2026-06-30 06:13:14 | WARNING  | test_runner | Tests FAILED for zkp_privacy_tester:
+test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a bytes-like object is required, not 'str'
+2026-06-30 06:13:14 | WARNING  | tool_builder | ⚠️  zkp_privacy_tester tests failed (loop 1/5) — test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a by
+2026-06-30 06:13:22 | DEBUG    | llm_client | LLM response from github_models (6056 chars)
+2026-06-30 06:13:22 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-06-30 06:13:23 | WARNING  | test_runner | Tests FAILED for zkp_privacy_tester:
+test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a bytes-like object is required, not 'str'
+2026-06-30 06:13:23 | WARNING  | tool_builder | ⚠️  zkp_privacy_tester tests failed (loop 2/5) — test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a by
+2026-06-30 06:13:30 | DEBUG    | llm_client | LLM response from github_models (6050 chars)
+2026-06-30 06:13:30 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-06-30 06:13:31 | WARNING  | test_runner | Tests FAILED for zkp_privacy_tester:
+test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a bytes-like object is required, not 'str'
+2026-06-30 06:13:31 | WARNING  | tool_builder | ⚠️  zkp_privacy_tester tests failed (loop 3/5) — test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a by
+2026-06-30 06:13:38 | DEBUG    | llm_client | LLM response from github_models (6274 chars)
+2026-06-30 06:13:38 | DEBUG    | test_runner | Installing: ['matplotlib']
+2026-06-30 06:13:39 | WARNING  | test_runner | Tests FAILED for zkp_privacy_tester:
+test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a bytes-like object is required, not 'str'
+2026-06-30 06:13:39 | WARNING  | tool_builder | ⚠️  zkp_privacy_tester tests failed (loop 4/5) — test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a by
+2026-06-30 06:13:46 | DEBUG    | llm_client | LLM response from github_models (6253 chars)
+2026-06-30 06:13:46 | DEBUG    | test_runner | Installing: ['matplotlib', 'pytest']
+2026-06-30 06:13:47 | WARNING  | test_runner | Tests FAILED for zkp_privacy_tester:
+test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a bytes-like object is required, not 'str'
+2026-06-30 06:13:47 | WARNING  | tool_builder | ⚠️  zkp_privacy_tester tests failed (loop 5/5) — test_zkp_privacy_tester.py::test_main FAILED                             [100%]
+E   TypeError: a bytes-like object is required, not 'str'
+FAILED test_zkp_privacy_tester.py::test_main - TypeError: a by
+2026-06-30 06:13:47 | ERROR    | tool_builder | ❌ zkp_privacy_tester failed after 5 loops
+2026-06-30 06:13:47 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-06-30 06:13:47 | INFO     | main |   Built 4/5 tools successfully
+2026-06-30 06:13:47 | INFO     | main |     ✅ agent_collaboration_simulator (loops: 1)
+2026-06-30 06:13:47 | INFO     | main |     ✅ multi_agent_debugger (loops: 1)
+2026-06-30 06:13:47 | INFO     | main |     ✅ zkp_identity_prover (loops: 5)
+2026-06-30 06:13:47 | INFO     | main |     ✅ zkp_model_authenticator (loops: 2)
+2026-06-30 06:13:47 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-06-30 06:13:47 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-06-30 06:13:47 | INFO     | github_publisher |   Created zip: agent_collaboration_simulator.zip (2926 bytes)
+2026-06-30 06:13:47 | INFO     | github_publisher | Saved agent_collaboration_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/agent_collaboration_simulator
+2026-06-30 06:13:47 | INFO     | github_publisher |   Created zip: multi_agent_debugger.zip (2840 bytes)
+2026-06-30 06:13:47 | INFO     | github_publisher | Saved multi_agent_debugger → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/multi_agent_debugger
+2026-06-30 06:13:47 | INFO     | github_publisher |   Created zip: zkp_identity_prover.zip (2809 bytes)
+2026-06-30 06:13:47 | INFO     | github_publisher | Saved zkp_identity_prover → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_identity_prover
+2026-06-30 06:13:47 | INFO     | github_publisher |   Created zip: zkp_model_authenticator.zip (3103 bytes)
+2026-06-30 06:13:47 | INFO     | github_publisher | Saved zkp_model_authenticator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_model_authenticator
+2026-06-30 06:13:47 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-06-30 06:13:47 | INFO     | main |   Published 4 tools:
+2026-06-30 06:13:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/agent_collaboration_simulator
+2026-06-30 06:13:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/multi_agent_debugger
+2026-06-30 06:13:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_identity_prover
+2026-06-30 06:13:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_model_authenticator
+2026-06-30 06:13:47 | INFO     | main |   Deduplicated 10 older tool version(s) from index
+2026-06-30 06:13:47 | INFO     | main | ✅ Generated tools_index.json with 368 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

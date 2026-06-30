@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_collaboration_simulator",
+  "display_name": "Agent Collaboration Simulator",
+  "description": "This CLI tool simulates collaboration between multiple AI agents in a controlled environment. It allows developers to test how agents interact, share data, and resolve conflicts when working collaboratively, making debugging and optimization easier.",
+  "topic": "AI Agent Collaboration",
+  "date": "2026-06-30",
+  "generated": "2026-06-30T06:08:34.345119+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/agent_collaboration_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/agent_collaboration_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/agent_collaboration_simulator/agent_collaboration_simulator.zip"
+}

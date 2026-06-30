@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-06-29T06:49:37.831289+00:00",
-  "total_tools": 364,
+  "last_updated": "2026-06-30T06:13:47.547432+00:00",
+  "total_tools": 368,
   "tools": [
+    {
+      "tool_name": "agent_collaboration_simulator",
+      "display_name": "Agent Collaboration Simulator",
+      "description": "This CLI tool simulates collaboration between multiple AI agents in a controlled environment. It allows developers to test how agents interact, share data, and resolve conflicts when working collaboratively, making debugging and optimization easier.",
+      "topic": "AI Agent Collaboration",
+      "date": "2026-06-30",
+      "generated": "2026-06-30T06:08:34.345119+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/agent_collaboration_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/agent_collaboration_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/agent_collaboration_simulator/agent_collaboration_simulator.zip"
+    },
+    {
+      "tool_name": "multi_agent_debugger",
+      "display_name": "Multi-Agent Debugger",
+      "description": "This debugging-focused CLI tool helps developers monitor, trace, and log interactions among multiple AI agents in real-time. It provides detailed insights into message passing, task execution times, and bottlenecks, enabling rapid troubleshooting of multi-agent systems.",
+      "topic": "AI Agent Collaboration",
+      "date": "2026-06-30",
+      "generated": "2026-06-30T06:08:34.345119+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/multi_agent_debugger",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/multi_agent_debugger/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/multi_agent_debugger/multi_agent_debugger.zip"
+    },
+    {
+      "tool_name": "zkp_identity_prover",
+      "display_name": "ZKP Identity Prover",
+      "description": "This Python CLI tool allows developers to generate and verify zero-knowledge proofs (ZKPs) for user identity verification in AI applications. It enables secure user authentication without revealing sensitive information, enhancing privacy in AI-driven systems.",
+      "topic": "Zero-Knowledge Proofs in AI",
+      "date": "2026-06-30",
+      "generated": "2026-06-30T06:08:34.345119+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_identity_prover",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_identity_prover/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_identity_prover/zkp_identity_prover.zip"
+    },
+    {
+      "tool_name": "zkp_model_authenticator",
+      "display_name": "ZKP Model Authenticator",
+      "description": "A Python library for enabling zero-knowledge proof-based authentication of AI models. This ensures that model ownership or validity can be proven without exposing the model itself, which is vital for protecting sensitive intellectual property.",
+      "topic": "Zero-Knowledge Proofs in AI",
+      "date": "2026-06-30",
+      "generated": "2026-06-30T06:08:34.345119+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-06-30/zkp_model_authenticator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_model_authenticator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-06-30/zkp_model_authenticator/zkp_model_authenticator.zip"
+    },
     {
       "tool_name": "llm_edge_runner",
       "display_name": "LLM Edge Runner",
