@@ -1,0 +1,13 @@
+{
+  "tool_name": "context_window_analyzer",
+  "display_name": "Context Window Analyzer",
+  "description": "A CLI tool that analyzes the token usage in long-context LLM inputs, visualizes token distribution, and highlights inefficiencies. It helps developers optimize prompts by identifying bottlenecks in token allocation, such as redundant or overly verbose sections.",
+  "topic": "Long-Context LLMs",
+  "date": "2026-07-01",
+  "generated": "2026-07-01T06:23:46.093379+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-01/context_window_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-01/context_window_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-01/context_window_analyzer/context_window_analyzer.zip"
+}
