@@ -1,0 +1,13 @@
+{
+  "tool_name": "kernel_fusion_profiler",
+  "display_name": "Kernel Fusion Profiler",
+  "description": "This tool profiles LLM inference workloads to identify potential kernel fusion opportunities on GPUs. It parses and visualizes kernel execution timelines, helping developers optimize memory-bound or compute-bound operations by fusing consecutive kernel launches.",
+  "topic": "Optimizing LLM Inference Efficiency",
+  "date": "2026-07-01",
+  "generated": "2026-07-01T06:23:46.093379+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-01/kernel_fusion_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-01/kernel_fusion_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-01/kernel_fusion_profiler/kernel_fusion_profiler.zip"
+}
