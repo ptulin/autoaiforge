@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-01T06:30:37.990596+00:00",
-  "total_tools": 371,
+  "last_updated": "2026-07-02T06:02:18.010770+00:00",
+  "total_tools": 374,
   "tools": [
+    {
+      "tool_name": "code_review_simulator",
+      "display_name": "Code Review Simulator",
+      "description": "This CLI tool generates synthetic pull requests based on user-defined templates and automatically evaluates AI agents on their ability to perform code reviews by providing feedback, identifying bugs, and suggesting improvements.",
+      "topic": "Open-source AI benchmarks",
+      "date": "2026-07-02",
+      "generated": "2026-07-02T05:57:10.116027+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-02/code_review_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/code_review_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/code_review_simulator/code_review_simulator.zip"
+    },
+    {
+      "tool_name": "debugging_task_generator",
+      "display_name": "Debugging Task Generator",
+      "description": "This script generates reproducible debugging scenarios by introducing controlled bugs into user-provided codebases. It enables AI developers to assess agents on their debugging capabilities in a standardized way.",
+      "topic": "Open-source AI benchmarks",
+      "date": "2026-07-02",
+      "generated": "2026-07-02T05:57:10.116027+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-02/debugging_task_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/debugging_task_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/debugging_task_generator/debugging_task_generator.zip"
+    },
+    {
+      "tool_name": "sandbox_action_visualizer",
+      "display_name": "Sandbox Action Visualizer",
+      "description": "This CLI tool takes action logs from AI sandbox environments and generates interactive visualizations of agent behaviors over time. By plotting actions on a timeline or within a spatial sandbox context, it allows developers to better understand agent decisions and anomalies for auditing and debugging purposes.",
+      "topic": "Auditable AI sandboxes",
+      "date": "2026-07-02",
+      "generated": "2026-07-02T05:57:10.116027+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-02/sandbox_action_visualizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/sandbox_action_visualizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/sandbox_action_visualizer/sandbox_action_visualizer.zip"
+    },
     {
       "tool_name": "context_window_analyzer",
       "display_name": "Context Window Analyzer",

@@ -1,0 +1,13 @@
+{
+  "tool_name": "debugging_task_generator",
+  "display_name": "Debugging Task Generator",
+  "description": "This script generates reproducible debugging scenarios by introducing controlled bugs into user-provided codebases. It enables AI developers to assess agents on their debugging capabilities in a standardized way.",
+  "topic": "Open-source AI benchmarks",
+  "date": "2026-07-02",
+  "generated": "2026-07-02T05:57:10.116027+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-02/debugging_task_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/debugging_task_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-02/debugging_task_generator/debugging_task_generator.zip"
+}
