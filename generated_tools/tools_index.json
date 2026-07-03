@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-07-02T06:02:18.010770+00:00",
-  "total_tools": 374,
+  "last_updated": "2026-07-03T05:56:03.298685+00:00",
+  "total_tools": 376,
   "tools": [
+    {
+      "tool_name": "agent_simulation_tester",
+      "display_name": "Agent Simulation Tester",
+      "description": "This library provides a simulation environment to test autonomous AI agents. Developers can simulate environments, define mock tasks or goals, and measure the performance of agents. It helps validate the robustness and effectiveness of agent workflows before deployment.",
+      "topic": "Agentic AI Development Frameworks",
+      "date": "2026-07-03",
+      "generated": "2026-07-03T05:51:10.707049+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-03/agent_simulation_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-03/agent_simulation_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-03/agent_simulation_tester/agent_simulation_tester.zip"
+    },
+    {
+      "tool_name": "agent_workflow_designer",
+      "display_name": "Agent Workflow Designer",
+      "description": "This CLI tool allows AI developers to design modular, reusable workflows for autonomous AI agents by defining tasks and their interdependencies. It generates a JSON or YAML blueprint that can be used to orchestrate agent behavior, making it easier to prototype and iterate on agentic AI systems.",
+      "topic": "Agentic AI Development Frameworks",
+      "date": "2026-07-03",
+      "generated": "2026-07-03T05:51:10.707049+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-03/agent_workflow_designer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-03/agent_workflow_designer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-03/agent_workflow_designer/agent_workflow_designer.zip"
+    },
     {
       "tool_name": "code_review_simulator",
       "display_name": "Code Review Simulator",
