@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_cost_estimator",
+  "display_name": "LLM Cost Estimator",
+  "description": "This script calculates the estimated cost of using an LLM API based on the token counts of one or more input prompts and the pricing structure of specific providers. It's useful for budgeting and cost prediction before running expensive queries on LLM APIs.",
+  "topic": "LLM Token Usage Optimization",
+  "date": "2026-07-04",
+  "generated": "2026-07-04T05:44:17.842915+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/llm_cost_estimator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/llm_cost_estimator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/llm_cost_estimator/llm_cost_estimator.zip"
+}

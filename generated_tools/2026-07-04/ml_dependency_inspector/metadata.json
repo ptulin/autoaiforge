@@ -1,0 +1,13 @@
+{
+  "tool_name": "ml_dependency_inspector",
+  "display_name": "ML Dependency Inspector",
+  "description": "ML Dependency Inspector is a Python CLI tool that scans AI/ML codebases for inefficient or insecure usages of popular libraries like TensorFlow, PyTorch, and Scikit-learn. It identifies deprecated methods, recommends modern alternatives, and detects configurations that may impact model performance or reproducibility.",
+  "topic": "AI-Powered Code Analysis",
+  "date": "2026-07-04",
+  "generated": "2026-07-04T05:44:17.842915+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/ml_dependency_inspector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/ml_dependency_inspector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/ml_dependency_inspector/ml_dependency_inspector.zip"
+}
