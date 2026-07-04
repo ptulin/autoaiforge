@@ -303,3 +303,22 @@ test_ml_dependency_inspector.py::test_analyze_directory FAILED           [100%]
 2026-07-04 05:49:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/ml_dependency_inspector
 2026-07-04 05:49:01 | INFO     | main |   Deduplicated 10 older tool version(s) from index
 2026-07-04 05:49:01 | INFO     | main | ✅ Generated tools_index.json with 379 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-07-04 05:49:04 | INFO     | main | Database committed and pushed to repo
+2026-07-04 05:49:04 | INFO     | main | 
+2026-07-04 05:49:04 | INFO     | main | ============================================================
+2026-07-04 05:49:04 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-07-04 05:49:04 | INFO     | main | ============================================================
+2026-07-04 05:49:04 | INFO     | main |   Date:            2026-07-04
+2026-07-04 05:49:04 | INFO     | main |   Items scraped:   512
+2026-07-04 05:49:04 | INFO     | main |   Items stored:    359
+2026-07-04 05:49:04 | INFO     | main |   Topics found:    10
+2026-07-04 05:49:04 | INFO     | main |   Ideas generated: 5
+2026-07-04 05:49:04 | INFO     | main |   Tools built:     3
+2026-07-04 05:49:04 | INFO     | main |   Tools published: 3
+2026-07-04 05:49:04 | INFO     | main |   Elapsed:         283.4s
+2026-07-04 05:49:04 | INFO     | main |   Published URLs:
+2026-07-04 05:49:04 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/llm_cost_estimator
+2026-07-04 05:49:04 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/ai_code_audit
+2026-07-04 05:49:04 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/ml_dependency_inspector
+2026-07-04 05:49:04 | INFO     | main | ============================================================
+2026-07-04 05:49:06 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
