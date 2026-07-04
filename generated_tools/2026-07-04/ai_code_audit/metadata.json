@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_code_audit",
+  "display_name": "AI Code Audit",
+  "description": "AI Code Audit leverages a pre-trained language model to analyze Python code for potential inefficiencies, unused imports, and common vulnerabilities such as unsafe input handling or poorly sanitized user data. This tool helps AI developers maintain cleaner, safer, and more performant codebases.",
+  "topic": "AI-Powered Code Analysis",
+  "date": "2026-07-04",
+  "generated": "2026-07-04T05:44:17.842915+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-04/ai_code_audit",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/ai_code_audit/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-04/ai_code_audit/ai_code_audit.zip"
+}
