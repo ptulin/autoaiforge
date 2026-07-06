@@ -1,0 +1,13 @@
+{
+  "tool_name": "context_graph_simulator",
+  "display_name": "Context Graph Simulator",
+  "description": "A Python library that simulates AI agent behavior by replaying decisions stored in a context graph. It tests how changes in past decisions or outcomes could influence future agent behavior, aiding in debugging and optimization.",
+  "topic": "Context Graphs for AI Agents",
+  "date": "2026-07-06",
+  "generated": "2026-07-06T06:26:31.232545+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-06/context_graph_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-06/context_graph_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-06/context_graph_simulator/context_graph_simulator.zip"
+}
