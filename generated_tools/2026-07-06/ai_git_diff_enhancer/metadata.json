@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_git_diff_enhancer",
+  "display_name": "AI Git Diff Enhancer",
+  "description": "This CLI tool enhances Git diffs by providing AI-generated explanations for code changes, making pull request reviews more insightful and faster. It leverages an AI model to analyze changes in context and suggests improvements or identifies potential issues in the diff.",
+  "topic": "AI-Powered Git Diff Tools",
+  "date": "2026-07-06",
+  "generated": "2026-07-06T06:26:31.232545+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-06/ai_git_diff_enhancer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-06/ai_git_diff_enhancer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-06/ai_git_diff_enhancer/ai_git_diff_enhancer.zip"
+}
