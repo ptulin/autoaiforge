@@ -1,0 +1,13 @@
+{
+  "tool_name": "edge_model_benchmarker",
+  "display_name": "Edge Model Benchmarker",
+  "description": "A CLI tool to benchmark the performance of small AI models on edge devices under different conditions, such as varying CPU load, memory constraints, or simulated unreliable network environments. This helps developers evaluate model performance in real-world edge scenarios.",
+  "topic": "Small AI Models for Edge",
+  "date": "2026-07-07",
+  "generated": "2026-07-07T06:04:48.927742+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-07/edge_model_benchmarker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_model_benchmarker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_model_benchmarker/edge_model_benchmarker.zip"
+}
