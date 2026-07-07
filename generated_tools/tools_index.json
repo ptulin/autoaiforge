@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-06T06:30:09.641207+00:00",
-  "total_tools": 385,
+  "last_updated": "2026-07-07T06:09:43.191447+00:00",
+  "total_tools": 388,
   "tools": [
+    {
+      "tool_name": "edge_inference_profiler",
+      "display_name": "Edge Inference Profiler",
+      "description": "A Python CLI tool to profile inference times and memory usage of small AI models on different edge devices. It helps developers identify bottlenecks in the model and adjust optimizations to enhance edge performance.",
+      "topic": "Small AI Models for Edge",
+      "date": "2026-07-07",
+      "generated": "2026-07-07T06:04:48.927742+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-07/edge_inference_profiler",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_inference_profiler/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_inference_profiler/edge_inference_profiler.zip"
+    },
+    {
+      "tool_name": "edge_model_benchmarker",
+      "display_name": "Edge Model Benchmarker",
+      "description": "A CLI tool to benchmark the performance of small AI models on edge devices under different conditions, such as varying CPU load, memory constraints, or simulated unreliable network environments. This helps developers evaluate model performance in real-world edge scenarios.",
+      "topic": "Small AI Models for Edge",
+      "date": "2026-07-07",
+      "generated": "2026-07-07T06:04:48.927742+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-07/edge_model_benchmarker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_model_benchmarker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_model_benchmarker/edge_model_benchmarker.zip"
+    },
+    {
+      "tool_name": "local_ai_workspace_validator",
+      "display_name": "Local AI Workspace Validator",
+      "description": "A Python-based validation tool designed to ensure that local AI workspaces are correctly configured for hybrid workflows. It checks for missing dependencies, hardware compatibility (e.g., GPU/CPU), and ensures proper configuration of local and remote endpoints. This assists developers in troubleshooting and optimizing their AI environments.",
+      "topic": "Hybrid and Local AI Workspaces",
+      "date": "2026-07-07",
+      "generated": "2026-07-07T06:04:48.927742+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-07/local_ai_workspace_validator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/local_ai_workspace_validator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/local_ai_workspace_validator/local_ai_workspace_validator.zip"
+    },
     {
       "tool_name": "ai_git_diff_enhancer",
       "display_name": "AI Git Diff Enhancer",

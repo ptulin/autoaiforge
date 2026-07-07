@@ -1,0 +1,13 @@
+{
+  "tool_name": "edge_inference_profiler",
+  "display_name": "Edge Inference Profiler",
+  "description": "A Python CLI tool to profile inference times and memory usage of small AI models on different edge devices. It helps developers identify bottlenecks in the model and adjust optimizations to enhance edge performance.",
+  "topic": "Small AI Models for Edge",
+  "date": "2026-07-07",
+  "generated": "2026-07-07T06:04:48.927742+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-07/edge_inference_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_inference_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-07/edge_inference_profiler/edge_inference_profiler.zip"
+}
