@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-07T06:09:43.191447+00:00",
-  "total_tools": 388,
+  "last_updated": "2026-07-08T05:24:47.380592+00:00",
+  "total_tools": 391,
   "tools": [
+    {
+      "tool_name": "ai_output_sanitizer",
+      "display_name": "AI Output Sanitizer",
+      "description": "This tool scans AI-generated text outputs for sensitive data patterns, such as API keys, secrets, or private URLs, and replaces or flags them. It helps developers ensure that AI outputs don't inadvertently expose private information.",
+      "topic": "AI Model Privacy Leaks",
+      "date": "2026-07-08",
+      "generated": "2026-07-08T05:18:43.336854+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-08/ai_output_sanitizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_output_sanitizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_output_sanitizer/ai_output_sanitizer.zip"
+    },
+    {
+      "tool_name": "ai_privacy_audit",
+      "display_name": "AI Privacy Audit",
+      "description": "A CLI library that scans AI system logs or outputs for sensitive data exposure, including private user data or confidential information. It performs advanced pattern matching and semantic checks to identify leaks that generic tools might miss.",
+      "topic": "AI Model Privacy Leaks",
+      "date": "2026-07-08",
+      "generated": "2026-07-08T05:18:43.336854+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-08/ai_privacy_audit",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_privacy_audit/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_privacy_audit/ai_privacy_audit.zip"
+    },
+    {
+      "tool_name": "energy_optimized_inference",
+      "display_name": "Energy-Optimized Inference Scheduler",
+      "description": "This tool schedules AI inference tasks to minimize energy consumption by leveraging runtime hardware monitoring and energy-efficient batch processing. It helps developers prioritize energy optimization without sacrificing performance during inference.",
+      "topic": "Energy Costs of AI Inference",
+      "date": "2026-07-08",
+      "generated": "2026-07-08T05:18:43.336854+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-08/energy_optimized_inference",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/energy_optimized_inference/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/energy_optimized_inference/energy_optimized_inference.zip"
+    },
     {
       "tool_name": "edge_inference_profiler",
       "display_name": "Edge Inference Profiler",

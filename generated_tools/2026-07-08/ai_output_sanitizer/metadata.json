@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_output_sanitizer",
+  "display_name": "AI Output Sanitizer",
+  "description": "This tool scans AI-generated text outputs for sensitive data patterns, such as API keys, secrets, or private URLs, and replaces or flags them. It helps developers ensure that AI outputs don't inadvertently expose private information.",
+  "topic": "AI Model Privacy Leaks",
+  "date": "2026-07-08",
+  "generated": "2026-07-08T05:18:43.336854+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-08/ai_output_sanitizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_output_sanitizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-08/ai_output_sanitizer/ai_output_sanitizer.zip"
+}
