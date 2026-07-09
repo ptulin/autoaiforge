@@ -1,0 +1,13 @@
+{
+  "tool_name": "session_aware_llm_limiter",
+  "display_name": "Session-Aware LLM Limiter",
+  "description": "This library provides a session-aware mechanism to limit interactions with large language models based on configurable thresholds. It monitors user behavior, including query frequency and session durations, and triggers warnings or blocks further interactions when thresholds are exceeded to prevent fatigue and ensure healthy usage patterns.",
+  "topic": "LLM Burnout Detection",
+  "date": "2026-07-09",
+  "generated": "2026-07-09T06:06:47.019832+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/session_aware_llm_limiter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/session_aware_llm_limiter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/session_aware_llm_limiter/session_aware_llm_limiter.zip"
+}
