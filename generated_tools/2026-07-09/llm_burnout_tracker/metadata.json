@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_burnout_tracker",
+  "display_name": "LLM Burnout Tracker",
+  "description": "This CLI tool analyzes user interaction logs with large language models (LLMs) to detect patterns of excessive usage, such as prolonged sessions, high-frequency queries, or repetitive interactions that may indicate burnout. It provides actionable insights and recommendations to mitigate fatigue, such as suggesting breaks or throttling interaction limits.",
+  "topic": "LLM Burnout Detection",
+  "date": "2026-07-09",
+  "generated": "2026-07-09T06:06:47.019832+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/llm_burnout_tracker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/llm_burnout_tracker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/llm_burnout_tracker/llm_burnout_tracker.zip"
+}

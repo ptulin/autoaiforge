@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-07-08T05:24:47.380592+00:00",
-  "total_tools": 391,
+  "last_updated": "2026-07-09T06:09:54.432962+00:00",
+  "total_tools": 395,
   "tools": [
+    {
+      "tool_name": "ai_cost_forecaster",
+      "display_name": "AI Cost Forecaster",
+      "description": "This tool predicts future AI usage costs based on historical API call data. It uses statistical or machine learning models to provide businesses with forecasts, helping them plan budgets and optimize costs.",
+      "topic": "AI Usage-Based Pricing",
+      "date": "2026-07-09",
+      "generated": "2026-07-09T06:06:47.019832+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/ai_cost_forecaster",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/ai_cost_forecaster/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/ai_cost_forecaster/ai_cost_forecaster.zip"
+    },
+    {
+      "tool_name": "ai_usage_cost_analyzer",
+      "display_name": "AI Usage Cost Analyzer",
+      "description": "This tool analyzes logs of API usage and calculates the associated costs based on a given pricing model. It helps businesses understand where their AI usage costs are going and identify high-cost patterns in their operations.",
+      "topic": "AI Usage-Based Pricing",
+      "date": "2026-07-09",
+      "generated": "2026-07-09T06:06:47.019832+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/ai_usage_cost_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/ai_usage_cost_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/ai_usage_cost_analyzer/ai_usage_cost_analyzer.zip"
+    },
+    {
+      "tool_name": "llm_burnout_tracker",
+      "display_name": "LLM Burnout Tracker",
+      "description": "This CLI tool analyzes user interaction logs with large language models (LLMs) to detect patterns of excessive usage, such as prolonged sessions, high-frequency queries, or repetitive interactions that may indicate burnout. It provides actionable insights and recommendations to mitigate fatigue, such as suggesting breaks or throttling interaction limits.",
+      "topic": "LLM Burnout Detection",
+      "date": "2026-07-09",
+      "generated": "2026-07-09T06:06:47.019832+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/llm_burnout_tracker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/llm_burnout_tracker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/llm_burnout_tracker/llm_burnout_tracker.zip"
+    },
+    {
+      "tool_name": "session_aware_llm_limiter",
+      "display_name": "Session-Aware LLM Limiter",
+      "description": "This library provides a session-aware mechanism to limit interactions with large language models based on configurable thresholds. It monitors user behavior, including query frequency and session durations, and triggers warnings or blocks further interactions when thresholds are exceeded to prevent fatigue and ensure healthy usage patterns.",
+      "topic": "LLM Burnout Detection",
+      "date": "2026-07-09",
+      "generated": "2026-07-09T06:06:47.019832+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-09/session_aware_llm_limiter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/session_aware_llm_limiter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-09/session_aware_llm_limiter/session_aware_llm_limiter.zip"
+    },
     {
       "tool_name": "ai_output_sanitizer",
       "display_name": "AI Output Sanitizer",
