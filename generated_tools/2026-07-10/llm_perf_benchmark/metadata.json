@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_perf_benchmark",
+  "display_name": "LLM Performance Benchmark",
+  "description": "This CLI tool benchmarks the inference performance of locally hosted large language models across different hardware setups, providing both detailed and summary metrics for latency, throughput, and resource utilization. It helps AI developers identify bottlenecks and optimize their model configurations.",
+  "topic": "Local LLM Inference Optimization",
+  "date": "2026-07-10",
+  "generated": "2026-07-10T06:00:54.910823+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-10/llm_perf_benchmark",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-10/llm_perf_benchmark/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-10/llm_perf_benchmark/llm_perf_benchmark.zip"
+}
