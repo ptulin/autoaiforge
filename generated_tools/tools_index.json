@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-11T05:10:27.076606+00:00",
-  "total_tools": 400,
+  "last_updated": "2026-07-12T05:31:07.715205+00:00",
+  "total_tools": 403,
   "tools": [
+    {
+      "tool_name": "context_window_evaluator",
+      "display_name": "Context Window Evaluator",
+      "description": "This tool analyzes prompt datasets to evaluate and optimize how effectively they utilize the context window of large language models (LLMs). It provides insights on token density, redundancy, and truncation risks, helping developers maximize information fit within the LLM's limits.",
+      "topic": "LLM Context Optimization Tools",
+      "date": "2026-07-12",
+      "generated": "2026-07-12T05:24:33.404708+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/context_window_evaluator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/context_window_evaluator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/context_window_evaluator/context_window_evaluator.zip"
+    },
+    {
+      "tool_name": "distributed_metric_collector",
+      "display_name": "Distributed Metric Collector",
+      "description": "A Python library for collecting and visualizing training metrics (e.g., loss, GPU utilization, communication overhead) across distributed nodes during large-scale AI model training. This helps developers identify bottlenecks and optimize performance.",
+      "topic": "Distributed AI Computing Frameworks",
+      "date": "2026-07-12",
+      "generated": "2026-07-12T05:24:33.404708+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/distributed_metric_collector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/distributed_metric_collector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/distributed_metric_collector/distributed_metric_collector.zip"
+    },
+    {
+      "tool_name": "mesh_orchestration_helper",
+      "display_name": "Mesh Orchestration Helper",
+      "description": "A CLI tool to simplify the orchestration of distributed AI workloads using Mesh LLM. It provides utilities for configuring nodes, generating topology YAML files, and launching distributed training jobs with minimal manual setup.",
+      "topic": "Distributed AI Computing Frameworks",
+      "date": "2026-07-12",
+      "generated": "2026-07-12T05:24:33.404708+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/mesh_orchestration_helper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/mesh_orchestration_helper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/mesh_orchestration_helper/mesh_orchestration_helper.zip"
+    },
     {
       "tool_name": "adaptive_memory_optimizer",
       "display_name": "Adaptive Memory Optimizer",
