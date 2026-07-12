@@ -1,0 +1,301 @@
+2026-07-12 05:24:33 | INFO     | main | ============================================================
+2026-07-12 05:24:33 | INFO     | main | AutoAIForge starting run: 2026-07-12T05:24:33.404708+00:00
+2026-07-12 05:24:33 | INFO     | main | ============================================================
+2026-07-12 05:24:33 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-12 05:24:33 | INFO     | youtube_scraper | YouTube client ready
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:33 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A33Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-10T05%3A24%3A34Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-12 05:24:34 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-12 05:24:34 | INFO     | main |   YouTube: 0 items
+2026-07-12 05:24:34 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-12 05:24:39 | INFO     | rss_scraper | HackerNews: 144 items
+2026-07-12 05:24:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-12 05:24:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-12 05:24:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-12 05:24:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-12 05:24:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-12 05:24:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-12 05:24:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-12 05:24:46 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-12 05:24:51 | INFO     | rss_scraper | ArXiv: 105 items
+2026-07-12 05:24:55 | INFO     | rss_scraper | Dev.to: 191 items
+2026-07-12 05:24:57 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-12 05:24:57 | INFO     | rss_scraper | Free sources total: 490 unique items
+2026-07-12 05:24:57 | INFO     | main |   RSS/API sources: 490 items
+2026-07-12 05:24:57 | INFO     | main |   Total scraped: 490 items
+2026-07-12 05:24:57 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-12 05:24:57 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-12 05:24:57 | INFO     | db_manager | Purged 288 old news items
+2026-07-12 05:24:57 | INFO     | db_manager | Inserted 241/490 news items
+2026-07-12 05:24:57 | INFO     | main |   SQLite: 241 new items (total: 9934)
+2026-07-12 05:25:02 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-12 05:25:03 | INFO     | vector_store | VectorStore ready
+2026-07-12 05:25:11 | INFO     | vector_store | Indexed 843 items into vector store
+2026-07-12 05:25:11 | INFO     | main |   Vector store: 843 items indexed
+2026-07-12 05:25:11 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-12 05:25:11 | INFO     | topic_analyzer | Analyzing 843 items for top 10 topics …
+2026-07-12 05:25:19 | DEBUG    | llm_client | LLM response from github_models (3874 chars)
+2026-07-12 05:25:19 | INFO     | topic_analyzer | Identified 10 topics
+2026-07-12 05:25:19 | INFO     | main |   Found 10 topics:
+2026-07-12 05:25:19 | INFO     | main |      1. [9/10] Distributed AI Computing Frameworks
+2026-07-12 05:25:19 | INFO     | main |      2. [8/10] LLM Context Optimization Tools
+2026-07-12 05:25:19 | INFO     | main |      3. [8/10] AI-Driven Bug Detection
+2026-07-12 05:25:19 | INFO     | main |      4. [8/10] Semantic SQL Validation
+2026-07-12 05:25:19 | INFO     | main |      5. [7/10] Uncertainty Estimation in LLMs
+2026-07-12 05:25:19 | INFO     | main |      6. [7/10] AI Agent File Transfer Protocols
+2026-07-12 05:25:19 | INFO     | main |      7. [7/10] Real-Time LLM Performance Monitoring
+2026-07-12 05:25:19 | INFO     | main |      8. [7/10] Post-Quantum Cryptography for AI
+2026-07-12 05:25:19 | INFO     | main |      9. [6/10] Self-Governing AI Systems
+2026-07-12 05:25:19 | INFO     | main |     10. [6/10] Bitemporal Data in AI Memory
+2026-07-12 05:25:19 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-12 05:25:19 | INFO     | main |   Existing collection: 400 tools across 211 topics
+2026-07-12 05:25:19 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-07-12 05:25:19 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-12 05:26:25 | DEBUG    | llm_client | LLM response from github_models (3426 chars)
+2026-07-12 05:26:25 | INFO     | idea_generator | Generated 3 ideas for topic: Distributed AI Computing Frameworks
+2026-07-12 05:26:30 | DEBUG    | llm_client | LLM response from github_models (2473 chars)
+2026-07-12 05:26:30 | INFO     | idea_generator | Generated 2 ideas for topic: LLM Context Optimization Tools
+2026-07-12 05:26:30 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-12 05:26:30 | INFO     | main |   Generated 5 tool ideas:
+2026-07-12 05:26:30 | INFO     | main |     • mesh_orchestration_helper: A CLI tool to simplify the orchestration of distributed AI workloads using Mesh 
+2026-07-12 05:26:30 | INFO     | main |     • distributed_metric_collector: A Python library for collecting and visualizing training metrics (e.g., loss, GP
+2026-07-12 05:26:30 | INFO     | main |     • dataset_sharder: A CLI and library tool for evenly partitioning large datasets across multiple no
+2026-07-12 05:26:30 | INFO     | main |     • context_window_evaluator: This tool analyzes prompt datasets to evaluate and optimize how effectively they
+2026-07-12 05:26:30 | INFO     | main |     • dynamic_context_manager: This utility dynamically manages the inclusion and exclusion of context elements
+2026-07-12 05:26:30 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-12 05:26:30 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-12 05:26:38 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-12 05:26:38 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-12 05:26:38 | INFO     | tool_builder | Building tool: mesh_orchestration_helper …
+2026-07-12 05:26:50 | DEBUG    | llm_client | LLM response from github_models (6749 chars)
+2026-07-12 05:26:50 | DEBUG    | test_runner | Installing: ['pyyaml==6.0', 'paramiko==3.3.1']
+2026-07-12 05:26:52 | WARNING  | test_runner | Tests FAILED for mesh_orchestration_helper:
+test_mesh_orchestration_helper.py::test_generate_yaml_config FAILED      [ 66%]
+    assert "- ip: 192.168.1.1\n  gpus: 4" in yaml_output
+E   AssertionError: assert '- ip: 192.168.1.1\n  gpus: 4' in 'model: gpt3\nnodes:\n- gpus: 4\n  ip: 192.168.1.1\n- gpus: 8\n  ip: 192.168.1.2\nscript: train.py\n'
+FAILED test_mesh_orchestration_helper.py::test_generate_yaml_config - AssertionError: assert '- ip: 192.168.1.1\n  gpus: 4' in 'model: gpt3\nnodes:\n- gpus: 4\n  ip: 192.168.1.1\n- gpus: 8\n  ip: 192.168.1.2\nscript: train.py\n'
+2026-07-12 05:26:52 | WARNING  | tool_builder | ⚠️  mesh_orchestration_helper tests failed (loop 1/5) — test_mesh_orchestration_helper.py::test_generate_yaml_config FAILED      [ 66%]
+    assert "- ip: 192.168.1.1\n  gpus: 4" in yaml_output
+E   AssertionError: assert '- ip: 192.168.1.1\n  gpus: 4' in 'm
+2026-07-12 05:26:59 | DEBUG    | llm_client | LLM response from github_models (6445 chars)
+2026-07-12 05:26:59 | DEBUG    | test_runner | Installing: ['pyyaml', 'paramiko', 'pytest']
+2026-07-12 05:26:59 | INFO     | test_runner | Tests PASSED for mesh_orchestration_helper
+2026-07-12 05:26:59 | INFO     | tool_builder | ✅ mesh_orchestration_helper passed tests on loop 2
+2026-07-12 05:26:59 | INFO     | tool_builder | Building tool: distributed_metric_collector …
+2026-07-12 05:27:14 | DEBUG    | llm_client | LLM response from github_models (6810 chars)
+2026-07-12 05:27:14 | DEBUG    | test_runner | Installing: ['psutil==5.9.5', 'matplotlib==3.7.2']
+2026-07-12 05:28:28 | ERROR    | test_runner | Tests timed out after 60s
+2026-07-12 05:28:28 | WARNING  | tool_builder | ⚠️  distributed_metric_collector tests failed (loop 1/5) — Tests timed out after 60s
+2026-07-12 05:28:34 | DEBUG    | llm_client | LLM response from github_models (7346 chars)
+2026-07-12 05:28:34 | DEBUG    | test_runner | Installing: ['psutil', 'matplotlib', 'pytest']
+2026-07-12 05:28:35 | WARNING  | test_runner | Tests FAILED for distributed_metric_collector:
+test_distributed_metric_collector.py::test_collector_start_stop FAILED   [ 33%]
+test_distributed_metric_collector.py::test_visualize FAILED              [ 66%]
+test_distributed_metric_collector.py::test_custom_metric_hook FAILED     [100%]
+E   NameError: name 'time' is not defined
+E   NameError: name 'time' is not defined
+E   NameError: name 'time' is not defined
+FAILED test_distributed_metric_collector.py::test_collector_start_stop - NameError: name 'time' is not defined
+FAILED test_distributed_metric_collector.py::test_visualize - NameError: name 'time' is not defined
+FAILED test_distributed_metric_collector.py::test_custom_metric_hook - NameError: name 'time' is not defined
+2026-07-12 05:28:35 | WARNING  | tool_builder | ⚠️  distributed_metric_collector tests failed (loop 2/5) — test_distributed_metric_collector.py::test_collector_start_stop FAILED   [ 33%]
+test_distributed_metric_collector.py::test_visualize FAILED              [ 66%]
+test_distributed_metric_collector.py::te
+2026-07-12 05:28:43 | DEBUG    | llm_client | LLM response from github_models (7299 chars)
+2026-07-12 05:28:43 | DEBUG    | test_runner | Installing: ['psutil', 'matplotlib']
+2026-07-12 05:28:47 | INFO     | test_runner | Tests PASSED for distributed_metric_collector
+2026-07-12 05:28:47 | INFO     | tool_builder | ✅ distributed_metric_collector passed tests on loop 3
+2026-07-12 05:28:47 | INFO     | tool_builder | Building tool: dataset_sharder …
+2026-07-12 05:28:56 | DEBUG    | llm_client | LLM response from github_models (5106 chars)
+2026-07-12 05:28:56 | DEBUG    | test_runner | Installing: ['pandas==1.5.3', 'pyarrow==12.0.1']
+2026-07-12 05:29:02 | WARNING  | test_runner | Tests FAILED for dataset_sharder:
+test_dataset_sharder.py::test_shard_dataset_csv FAILED                   [ 33%]
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    assert Path(shard_file).exists()
+E   NameError: name 'Path' is not defined
+    with pytest.raises(ValueError, match="The input dataset is empty."):
+E   AssertionError: Regex pattern did not match.
+FAILED test_dataset_sharder.py::test_shard_dataset_csv - NameError: name 'Path' is not defined
+FAILED test_dataset_sharder.py::test_shard_dataset_empty_file - AssertionError: Regex pattern did not match.
+2026-07-12 05:29:02 | WARNING  | tool_builder | ⚠️  dataset_sharder tests failed (loop 1/5) — test_dataset_sharder.py::test_shard_dataset_csv FAILED                   [ 33%]
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    assert Path(shard_file).exists()
+E  
+2026-07-12 05:29:11 | DEBUG    | llm_client | LLM response from github_models (5291 chars)
+2026-07-12 05:29:11 | DEBUG    | test_runner | Installing: ['pandas', 'pyarrow']
+2026-07-12 05:29:12 | WARNING  | test_runner | Tests FAILED for dataset_sharder:
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="The input dataset is empty"):
+E   AssertionError: Regex pattern did not match.
+FAILED test_dataset_sharder.py::test_shard_dataset_empty_file - AssertionError: Regex pattern did not match.
+2026-07-12 05:29:12 | WARNING  | tool_builder | ⚠️  dataset_sharder tests failed (loop 2/5) — test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="The input dataset is empty"):
+E   AssertionError: Regex pattern did not match.
+2026-07-12 05:29:20 | DEBUG    | llm_client | LLM response from github_models (5371 chars)
+2026-07-12 05:29:20 | DEBUG    | test_runner | Installing: ['pandas', 'pyarrow']
+2026-07-12 05:29:21 | WARNING  | test_runner | Tests FAILED for dataset_sharder:
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="The input dataset is empty."):
+E   AssertionError: Regex pattern did not match.
+FAILED test_dataset_sharder.py::test_shard_dataset_empty_file - AssertionError: Regex pattern did not match.
+2026-07-12 05:29:21 | WARNING  | tool_builder | ⚠️  dataset_sharder tests failed (loop 3/5) — test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="The input dataset is empty."):
+E   AssertionError: Regex pattern did not match
+2026-07-12 05:29:29 | DEBUG    | llm_client | LLM response from github_models (5288 chars)
+2026-07-12 05:29:29 | DEBUG    | test_runner | Installing: ['pandas', 'pyarrow']
+2026-07-12 05:29:30 | WARNING  | test_runner | Tests FAILED for dataset_sharder:
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="Input dataset is empty."):
+E   AssertionError: Regex pattern did not match.
+FAILED test_dataset_sharder.py::test_shard_dataset_empty_file - AssertionError: Regex pattern did not match.
+2026-07-12 05:29:30 | WARNING  | tool_builder | ⚠️  dataset_sharder tests failed (loop 4/5) — test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="Input dataset is empty."):
+E   AssertionError: Regex pattern did not match.
+FA
+2026-07-12 05:29:39 | DEBUG    | llm_client | LLM response from github_models (5965 chars)
+2026-07-12 05:29:39 | DEBUG    | test_runner | Installing: ['pandas', 'pyarrow']
+2026-07-12 05:29:40 | WARNING  | test_runner | Tests FAILED for dataset_sharder:
+test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="Input dataset is empty"):
+E   AssertionError: Regex pattern did not match.
+FAILED test_dataset_sharder.py::test_shard_dataset_empty_file - AssertionError: Regex pattern did not match.
+2026-07-12 05:29:40 | WARNING  | tool_builder | ⚠️  dataset_sharder tests failed (loop 5/5) — test_dataset_sharder.py::test_shard_dataset_empty_file FAILED            [ 66%]
+    with pytest.raises(ValueError, match="Input dataset is empty"):
+E   AssertionError: Regex pattern did not match.
+FAI
+2026-07-12 05:29:40 | ERROR    | tool_builder | ❌ dataset_sharder failed after 5 loops
+2026-07-12 05:29:40 | INFO     | tool_builder | Building tool: context_window_evaluator …
+2026-07-12 05:29:54 | DEBUG    | llm_client | LLM response from github_models (8616 chars)
+2026-07-12 05:29:54 | DEBUG    | test_runner | Installing: ['tiktoken==0.4.0', 'rich==13.5.2', 'nltk==3.8.1', 'pytest==7.4.2']
+2026-07-12 05:29:58 | WARNING  | test_runner | Tests FAILED for context_window_evaluator:
+test_context_window_evaluator.py::test_analyze_file FAILED               [ 66%]
+test_context_window_evaluator.py::test_generate_report FAILED            [100%]
+E   AttributeError: 'str' object has no attribute 'suffix'
+    raise ValueError(f"Error processing file {file_path}: {e}")
+E   ValueError: Error processing file test.txt: 'str' object has no attribute 'suffix'
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+    mocked_file().write.assert_called_once()
+E   AssertionError: Expected 'write' to have been called once. Called 42 times.
+E   assert (']',) == ()
+FAILED test_context_window_evaluator.py::test_analyze_file - ValueError: Error processing file test.txt: 'str' object has no attribute 'suffix'
+FAILED test_context_window_evaluator.py::test_generate_report - AssertionError: Expected 'write' to have been called once. Called 42 times.
+assert (']',) == ()
+2026-07-12 05:29:58 | WARNING  | tool_builder | ⚠️  context_window_evaluator tests failed (loop 1/5) — test_context_window_evaluator.py::test_analyze_file FAILED               [ 66%]
+test_context_window_evaluator.py::test_generate_report FAILED            [100%]
+E   AttributeError: 'str' object has no 
+2026-07-12 05:30:08 | DEBUG    | llm_client | LLM response from github_models (7689 chars)
+2026-07-12 05:30:08 | DEBUG    | test_runner | Installing: ['tiktoken', 'nltk', 'rich']
+2026-07-12 05:30:09 | INFO     | test_runner | Tests PASSED for context_window_evaluator
+2026-07-12 05:30:09 | INFO     | tool_builder | ✅ context_window_evaluator passed tests on loop 2
+2026-07-12 05:30:09 | INFO     | tool_builder | Building tool: dynamic_context_manager …
+2026-07-12 05:30:17 | DEBUG    | llm_client | LLM response from github_models (5396 chars)
+2026-07-12 05:30:17 | DEBUG    | test_runner | Installing: ['langchain==0.0.200', 'numpy==1.23.5']
+2026-07-12 05:30:26 | WARNING  | test_runner | Tests FAILED for dynamic_context_manager:
+test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 50%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 75%]
+    assert optimized == "block3\nblock1"
+E   AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+    assert optimized == "block3"
+E   AssertionError: assert 'block3\nblock1' == 'block3'
+FAILED test_dynamic_context_manager.py::test_optimize_context_within_limit - AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+FAILED test_dynamic_context_manager.py::test_optimize_context_exceeds_limit - AssertionError: assert 'block3\nblock1' == 'block3'
+2026-07-12 05:30:26 | WARNING  | tool_builder | ⚠️  dynamic_context_manager tests failed (loop 1/5) — test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 50%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 75%]
+    assert optimized == "block3\nbl
+2026-07-12 05:30:36 | DEBUG    | llm_client | LLM response from github_models (6427 chars)
+2026-07-12 05:30:36 | DEBUG    | test_runner | Installing: ['langchain']
+2026-07-12 05:30:38 | WARNING  | test_runner | Tests FAILED for dynamic_context_manager:
+test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nblock1"
+E   AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+    assert optimized == "block3"
+E   AssertionError: assert 'block3\nblock1' == 'block3'
+FAILED test_dynamic_context_manager.py::test_optimize_context_within_limit - AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+FAILED test_dynamic_context_manager.py::test_optimize_context_exceeds_limit - AssertionError: assert 'block3\nblock1' == 'block3'
+2026-07-12 05:30:38 | WARNING  | tool_builder | ⚠️  dynamic_context_manager tests failed (loop 2/5) — test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nbl
+2026-07-12 05:30:45 | DEBUG    | llm_client | LLM response from github_models (5810 chars)
+2026-07-12 05:30:45 | DEBUG    | test_runner | Installing: ['langchain']
+2026-07-12 05:30:48 | WARNING  | test_runner | Tests FAILED for dynamic_context_manager:
+test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nblock1"
+E   AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+    assert optimized == "block3"
+E   AssertionError: assert 'block3\nblock1' == 'block3'
+FAILED test_dynamic_context_manager.py::test_optimize_context_within_limit - AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+FAILED test_dynamic_context_manager.py::test_optimize_context_exceeds_limit - AssertionError: assert 'block3\nblock1' == 'block3'
+2026-07-12 05:30:48 | WARNING  | tool_builder | ⚠️  dynamic_context_manager tests failed (loop 3/5) — test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nbl
+2026-07-12 05:30:54 | DEBUG    | llm_client | LLM response from github_models (5719 chars)
+2026-07-12 05:30:54 | DEBUG    | test_runner | Installing: ['langchain']
+2026-07-12 05:30:57 | WARNING  | test_runner | Tests FAILED for dynamic_context_manager:
+test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nblock1"
+E   AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+    assert optimized == "block3"
+E   AssertionError: assert 'block3\nblock1' == 'block3'
+FAILED test_dynamic_context_manager.py::test_optimize_context_within_limit - AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+FAILED test_dynamic_context_manager.py::test_optimize_context_exceeds_limit - AssertionError: assert 'block3\nblock1' == 'block3'
+2026-07-12 05:30:57 | WARNING  | tool_builder | ⚠️  dynamic_context_manager tests failed (loop 4/5) — test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nbl
+2026-07-12 05:31:05 | DEBUG    | llm_client | LLM response from github_models (6235 chars)
+2026-07-12 05:31:05 | DEBUG    | test_runner | Installing: ['langchain']
+2026-07-12 05:31:07 | WARNING  | test_runner | Tests FAILED for dynamic_context_manager:
+test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nblock1"
+E   AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+    assert optimized == "block3"
+E   AssertionError: assert 'block3\nblock1' == 'block3'
+FAILED test_dynamic_context_manager.py::test_optimize_context_within_limit - AssertionError: assert 'block3\nblock1\nblock2' == 'block3\nblock1'
+FAILED test_dynamic_context_manager.py::test_optimize_context_exceeds_limit - AssertionError: assert 'block3\nblock1' == 'block3'
+2026-07-12 05:31:07 | WARNING  | tool_builder | ⚠️  dynamic_context_manager tests failed (loop 5/5) — test_dynamic_context_manager.py::test_optimize_context_within_limit FAILED [ 33%]
+test_dynamic_context_manager.py::test_optimize_context_exceeds_limit FAILED [ 50%]
+    assert optimized == "block3\nbl
+2026-07-12 05:31:07 | ERROR    | tool_builder | ❌ dynamic_context_manager failed after 5 loops
+2026-07-12 05:31:07 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-07-12 05:31:07 | INFO     | main |   Built 3/5 tools successfully
+2026-07-12 05:31:07 | INFO     | main |     ✅ mesh_orchestration_helper (loops: 2)
+2026-07-12 05:31:07 | INFO     | main |     ✅ distributed_metric_collector (loops: 3)
+2026-07-12 05:31:07 | INFO     | main |     ✅ context_window_evaluator (loops: 2)
+2026-07-12 05:31:07 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-07-12 05:31:07 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-07-12 05:31:07 | INFO     | github_publisher |   Created zip: mesh_orchestration_helper.zip (2800 bytes)
+2026-07-12 05:31:07 | INFO     | github_publisher | Saved mesh_orchestration_helper → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/mesh_orchestration_helper
+2026-07-12 05:31:07 | INFO     | github_publisher |   Created zip: distributed_metric_collector.zip (2836 bytes)
+2026-07-12 05:31:07 | INFO     | github_publisher | Saved distributed_metric_collector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/distributed_metric_collector
+2026-07-12 05:31:07 | INFO     | github_publisher |   Created zip: context_window_evaluator.zip (3183 bytes)
+2026-07-12 05:31:07 | INFO     | github_publisher | Saved context_window_evaluator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/context_window_evaluator
+2026-07-12 05:31:07 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-07-12 05:31:07 | INFO     | main |   Published 3 tools:
+2026-07-12 05:31:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/mesh_orchestration_helper
+2026-07-12 05:31:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/distributed_metric_collector
+2026-07-12 05:31:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/context_window_evaluator
+2026-07-12 05:31:07 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-07-12 05:31:07 | INFO     | main | ✅ Generated tools_index.json with 403 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

@@ -1,0 +1,13 @@
+{
+  "tool_name": "mesh_orchestration_helper",
+  "display_name": "Mesh Orchestration Helper",
+  "description": "A CLI tool to simplify the orchestration of distributed AI workloads using Mesh LLM. It provides utilities for configuring nodes, generating topology YAML files, and launching distributed training jobs with minimal manual setup.",
+  "topic": "Distributed AI Computing Frameworks",
+  "date": "2026-07-12",
+  "generated": "2026-07-12T05:24:33.404708+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-12/mesh_orchestration_helper",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/mesh_orchestration_helper/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-12/mesh_orchestration_helper/mesh_orchestration_helper.zip"
+}
