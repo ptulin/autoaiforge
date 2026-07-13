@@ -1,0 +1,13 @@
+{
+  "tool_name": "pr_ai_debugger",
+  "display_name": "Pull Request AI Debugger",
+  "description": "A Python library designed to integrate AI-driven debugging directly into CI/CD pipelines. It scans pull requests for potential bugs, generates detailed diagnostic explanations, and suggests patches for common coding errors.",
+  "topic": "AI-Assisted Code Review",
+  "date": "2026-07-13",
+  "generated": "2026-07-13T05:34:48.224306+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-13/pr_ai_debugger",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-13/pr_ai_debugger/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-13/pr_ai_debugger/pr_ai_debugger.zip"
+}

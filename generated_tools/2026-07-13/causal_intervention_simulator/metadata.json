@@ -1,0 +1,13 @@
+{
+  "tool_name": "causal_intervention_simulator",
+  "display_name": "Causal Intervention Simulator",
+  "description": "This tool lets developers simulate interventions on specific components (e.g., neurons, attention heads) in a large language model to observe changes in its behavior. It's useful for pinpointing the role of individual components in token predictions or model outputs.",
+  "topic": "Mechanistic Interpretability in LLMs",
+  "date": "2026-07-13",
+  "generated": "2026-07-13T05:34:48.224306+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-13/causal_intervention_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-13/causal_intervention_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-13/causal_intervention_simulator/causal_intervention_simulator.zip"
+}
