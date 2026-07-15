@@ -1,0 +1,13 @@
+{
+  "tool_name": "live_threat_monitor",
+  "display_name": "Live Threat Monitor",
+  "description": "A lightweight CLI tool that monitors live incoming network traffic or log streams and uses AI to flag suspicious activity in real-time. Ideal for developers simulating or testing network attacks in development environments.",
+  "topic": "AI-Cybersecurity Integration",
+  "date": "2026-07-15",
+  "generated": "2026-07-15T04:49:21.166276+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-15/live_threat_monitor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/live_threat_monitor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/live_threat_monitor/live_threat_monitor.zip"
+}
