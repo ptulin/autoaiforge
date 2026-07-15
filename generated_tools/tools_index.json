@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-07-13T05:41:09.298813+00:00",
-  "total_tools": 405,
+  "last_updated": "2026-07-15T04:58:05.933649+00:00",
+  "total_tools": 407,
   "tools": [
+    {
+      "tool_name": "live_threat_monitor",
+      "display_name": "Live Threat Monitor",
+      "description": "A lightweight CLI tool that monitors live incoming network traffic or log streams and uses AI to flag suspicious activity in real-time. Ideal for developers simulating or testing network attacks in development environments.",
+      "topic": "AI-Cybersecurity Integration",
+      "date": "2026-07-15",
+      "generated": "2026-07-15T04:49:21.166276+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-15/live_threat_monitor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/live_threat_monitor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/live_threat_monitor/live_threat_monitor.zip"
+    },
+    {
+      "tool_name": "token_efficiency_optimizer",
+      "display_name": "Token Efficiency Optimizer",
+      "description": "A Python library to optimize token handling in LLM workflows by dynamically adjusting token limits and recommending efficient configurations for high-token operations. It prevents out-of-memory errors and enhances throughput for applications with large inputs.",
+      "topic": "Efficient LLM Memory Optimization",
+      "date": "2026-07-15",
+      "generated": "2026-07-15T04:49:21.166276+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-15/token_efficiency_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/token_efficiency_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-15/token_efficiency_optimizer/token_efficiency_optimizer.zip"
+    },
     {
       "tool_name": "causal_intervention_simulator",
       "display_name": "Causal Intervention Simulator",
