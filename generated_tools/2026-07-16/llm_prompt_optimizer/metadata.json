@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_prompt_optimizer",
+  "display_name": "LLM Prompt Optimizer",
+  "description": "This tool helps developers optimize prompts for open-weight large language models by systematically testing variations and analyzing corresponding outputs. It scores and suggests the most effective prompts for achieving desired outcomes.",
+  "topic": "Open-Source Large Language Models",
+  "date": "2026-07-16",
+  "generated": "2026-07-16T04:58:04.591894+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-16/llm_prompt_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/llm_prompt_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/llm_prompt_optimizer/llm_prompt_optimizer.zip"
+}
