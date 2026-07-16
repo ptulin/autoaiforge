@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-07-15T04:58:05.933649+00:00",
-  "total_tools": 407,
+  "last_updated": "2026-07-16T05:04:45.217849+00:00",
+  "total_tools": 409,
   "tools": [
+    {
+      "tool_name": "llm_prompt_optimizer",
+      "display_name": "LLM Prompt Optimizer",
+      "description": "This tool helps developers optimize prompts for open-weight large language models by systematically testing variations and analyzing corresponding outputs. It scores and suggests the most effective prompts for achieving desired outcomes.",
+      "topic": "Open-Source Large Language Models",
+      "date": "2026-07-16",
+      "generated": "2026-07-16T04:58:04.591894+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-16/llm_prompt_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/llm_prompt_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/llm_prompt_optimizer/llm_prompt_optimizer.zip"
+    },
+    {
+      "tool_name": "mikrotik_llm_optimizer",
+      "display_name": "MikroTik LLM Optimizer",
+      "description": "A CLI tool to automate MikroTik router configuration for optimizing networking setups tailored to large language model (LLM) communication. This tool helps AI developers configure Quality of Service (QoS), bandwidth allocation, and port forwarding for efficient LLM data transmission, reducing latency and increasing throughput.",
+      "topic": "LLM Networking Optimization",
+      "date": "2026-07-16",
+      "generated": "2026-07-16T04:58:04.591894+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-16/mikrotik_llm_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/mikrotik_llm_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/mikrotik_llm_optimizer/mikrotik_llm_optimizer.zip"
+    },
     {
       "tool_name": "live_threat_monitor",
       "display_name": "Live Threat Monitor",

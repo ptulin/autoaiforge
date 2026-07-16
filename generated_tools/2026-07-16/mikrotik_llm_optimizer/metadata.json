@@ -1,0 +1,13 @@
+{
+  "tool_name": "mikrotik_llm_optimizer",
+  "display_name": "MikroTik LLM Optimizer",
+  "description": "A CLI tool to automate MikroTik router configuration for optimizing networking setups tailored to large language model (LLM) communication. This tool helps AI developers configure Quality of Service (QoS), bandwidth allocation, and port forwarding for efficient LLM data transmission, reducing latency and increasing throughput.",
+  "topic": "LLM Networking Optimization",
+  "date": "2026-07-16",
+  "generated": "2026-07-16T04:58:04.591894+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-16/mikrotik_llm_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/mikrotik_llm_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-16/mikrotik_llm_optimizer/mikrotik_llm_optimizer.zip"
+}
