@@ -355,3 +355,22 @@ FAILED test_agent_log_monitor.py::test_summarize_logs - AssertionError: Expected
 2026-07-17 05:10:02 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-17/agent_manager
 2026-07-17 05:10:02 | INFO     | main |   Deduplicated 11 older tool version(s) from index
 2026-07-17 05:10:02 | INFO     | main | ✅ Generated tools_index.json with 412 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-07-17 05:10:05 | INFO     | main | Database committed and pushed to repo
+2026-07-17 05:10:05 | INFO     | main | 
+2026-07-17 05:10:05 | INFO     | main | ============================================================
+2026-07-17 05:10:05 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-07-17 05:10:05 | INFO     | main | ============================================================
+2026-07-17 05:10:05 | INFO     | main |   Date:            2026-07-17
+2026-07-17 05:10:05 | INFO     | main |   Items scraped:   371
+2026-07-17 05:10:05 | INFO     | main |   Items stored:    279
+2026-07-17 05:10:05 | INFO     | main |   Topics found:    10
+2026-07-17 05:10:05 | INFO     | main |   Ideas generated: 5
+2026-07-17 05:10:05 | INFO     | main |   Tools built:     3
+2026-07-17 05:10:05 | INFO     | main |   Tools published: 3
+2026-07-17 05:10:05 | INFO     | main |   Elapsed:         498.3s
+2026-07-17 05:10:05 | INFO     | main |   Published URLs:
+2026-07-17 05:10:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-17/feature_inspector_for_llm_detection
+2026-07-17 05:10:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-17/batch_llm_text_auditor
+2026-07-17 05:10:05 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-17/agent_manager
+2026-07-17 05:10:05 | INFO     | main | ============================================================
+2026-07-17 05:10:08 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
