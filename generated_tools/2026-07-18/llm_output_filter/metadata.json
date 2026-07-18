@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_output_filter",
+  "display_name": "LLM Output Filter",
+  "description": "LLM Output Filter acts as a proxy that filters the output of large language models to detect and redact potentially harmful or sensitive content before it's displayed. This tool is essential for developers looking to prevent model misuse or unintentional leakage of sensitive information.",
+  "topic": "LLM Sandboxing and Security",
+  "date": "2026-07-18",
+  "generated": "2026-07-18T04:47:08.657592+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-18/llm_output_filter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_output_filter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_output_filter/llm_output_filter.zip"
+}
