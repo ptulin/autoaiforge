@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-17T05:10:02.679282+00:00",
-  "total_tools": 412,
+  "last_updated": "2026-07-18T04:50:24.407283+00:00",
+  "total_tools": 415,
   "tools": [
+    {
+      "tool_name": "llm_jailbreak_tester",
+      "display_name": "LLM Jailbreak Tester",
+      "description": "LLM Jailbreak Tester automates the evaluation of large language models against a suite of predefined jailbreak prompts. This helps developers identify vulnerabilities in their models and improve their defenses against adversarial prompt engineering.",
+      "topic": "LLM Sandboxing and Security",
+      "date": "2026-07-18",
+      "generated": "2026-07-18T04:47:08.657592+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-18/llm_jailbreak_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_jailbreak_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_jailbreak_tester/llm_jailbreak_tester.zip"
+    },
+    {
+      "tool_name": "llm_output_filter",
+      "display_name": "LLM Output Filter",
+      "description": "LLM Output Filter acts as a proxy that filters the output of large language models to detect and redact potentially harmful or sensitive content before it's displayed. This tool is essential for developers looking to prevent model misuse or unintentional leakage of sensitive information.",
+      "topic": "LLM Sandboxing and Security",
+      "date": "2026-07-18",
+      "generated": "2026-07-18T04:47:08.657592+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-18/llm_output_filter",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_output_filter/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/llm_output_filter/llm_output_filter.zip"
+    },
+    {
+      "tool_name": "response_similarity_checker",
+      "display_name": "Response Similarity Checker",
+      "description": "This library evaluates the similarity of LLM-generated responses to a set of reference outputs using metrics like cosine similarity, BLEU, or ROUGE. It helps developers measure how closely an LLM's behavior aligns with expected responses, making it particularly useful for fine-tuning and benchmarking.",
+      "topic": "LLM Verification Frameworks",
+      "date": "2026-07-18",
+      "generated": "2026-07-18T04:47:08.657592+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-18/response_similarity_checker",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/response_similarity_checker/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/response_similarity_checker/response_similarity_checker.zip"
+    },
     {
       "tool_name": "agent_manager",
       "display_name": "Self-Hosted AI Agent Manager",

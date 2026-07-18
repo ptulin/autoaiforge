@@ -1,0 +1,13 @@
+{
+  "tool_name": "response_similarity_checker",
+  "display_name": "Response Similarity Checker",
+  "description": "This library evaluates the similarity of LLM-generated responses to a set of reference outputs using metrics like cosine similarity, BLEU, or ROUGE. It helps developers measure how closely an LLM's behavior aligns with expected responses, making it particularly useful for fine-tuning and benchmarking.",
+  "topic": "LLM Verification Frameworks",
+  "date": "2026-07-18",
+  "generated": "2026-07-18T04:47:08.657592+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-18/response_similarity_checker",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/response_similarity_checker/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-18/response_similarity_checker/response_similarity_checker.zip"
+}
