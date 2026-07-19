@@ -1,0 +1,13 @@
+{
+  "tool_name": "prompt_injection_detector",
+  "display_name": "Prompt Injection Detector",
+  "description": "A CLI tool that analyzes LLM prompts for signs of malicious injections, such as commands to override instructions or manipulate model behavior. This tool helps AI developers identify potential vulnerabilities in their prompt formulations.",
+  "topic": "LLM Prompt Injection Attacks",
+  "date": "2026-07-19",
+  "generated": "2026-07-19T05:19:37.659949+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/prompt_injection_detector",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/prompt_injection_detector/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/prompt_injection_detector/prompt_injection_detector.zip"
+}
