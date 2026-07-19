@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_track_identifier",
+  "display_name": "AI Track Identifier",
+  "description": "This CLI tool analyzes audio tracks and attempts to detect characteristics commonly associated with AI-generated music, such as repetitive patterns, lack of human nuances, or common traits from known generative audio models. It's useful for content platforms like Spotify to flag or tag AI-generated music for moderation.",
+  "topic": "AI-Generated Content Moderation",
+  "date": "2026-07-19",
+  "generated": "2026-07-19T05:19:37.659949+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/ai_track_identifier",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/ai_track_identifier/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/ai_track_identifier/ai_track_identifier.zip"
+}

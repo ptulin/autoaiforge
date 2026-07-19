@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-18T04:50:24.407283+00:00",
-  "total_tools": 415,
+  "last_updated": "2026-07-19T05:24:52.864211+00:00",
+  "total_tools": 418,
   "tools": [
+    {
+      "tool_name": "ai_track_identifier",
+      "display_name": "AI Track Identifier",
+      "description": "This CLI tool analyzes audio tracks and attempts to detect characteristics commonly associated with AI-generated music, such as repetitive patterns, lack of human nuances, or common traits from known generative audio models. It's useful for content platforms like Spotify to flag or tag AI-generated music for moderation.",
+      "topic": "AI-Generated Content Moderation",
+      "date": "2026-07-19",
+      "generated": "2026-07-19T05:19:37.659949+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/ai_track_identifier",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/ai_track_identifier/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/ai_track_identifier/ai_track_identifier.zip"
+    },
+    {
+      "tool_name": "prompt_injection_detector",
+      "display_name": "Prompt Injection Detector",
+      "description": "A CLI tool that analyzes LLM prompts for signs of malicious injections, such as commands to override instructions or manipulate model behavior. This tool helps AI developers identify potential vulnerabilities in their prompt formulations.",
+      "topic": "LLM Prompt Injection Attacks",
+      "date": "2026-07-19",
+      "generated": "2026-07-19T05:19:37.659949+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/prompt_injection_detector",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/prompt_injection_detector/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/prompt_injection_detector/prompt_injection_detector.zip"
+    },
+    {
+      "tool_name": "secure_prompt_sanitizer",
+      "display_name": "Secure Prompt Sanitizer",
+      "description": "A Python library that applies filters to sanitize user inputs before forwarding them to an LLM. It automatically detects and removes problematic instructions, ensuring prompts are safe and well-structured.",
+      "topic": "LLM Prompt Injection Attacks",
+      "date": "2026-07-19",
+      "generated": "2026-07-19T05:19:37.659949+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/secure_prompt_sanitizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/secure_prompt_sanitizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-19/secure_prompt_sanitizer/secure_prompt_sanitizer.zip"
+    },
     {
       "tool_name": "llm_jailbreak_tester",
       "display_name": "LLM Jailbreak Tester",

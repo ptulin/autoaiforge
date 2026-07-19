@@ -1,0 +1,294 @@
+2026-07-19 05:19:37 | INFO     | main | ============================================================
+2026-07-19 05:19:37 | INFO     | main | AutoAIForge starting run: 2026-07-19T05:19:37.659949+00:00
+2026-07-19 05:19:37 | INFO     | main | ============================================================
+2026-07-19 05:19:37 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-19 05:19:37 | INFO     | youtube_scraper | YouTube client ready
+2026-07-19 05:19:37 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A37Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-17T05%3A19%3A38Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-19 05:19:38 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-19 05:19:38 | INFO     | main |   YouTube: 0 items
+2026-07-19 05:19:38 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-19 05:19:43 | INFO     | rss_scraper | HackerNews: 160 items
+2026-07-19 05:19:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-19 05:19:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-19 05:19:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-19 05:19:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-19 05:19:48 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-19 05:19:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-19 05:19:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-19 05:19:51 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-19 05:19:57 | INFO     | rss_scraper | ArXiv: 108 items
+2026-07-19 05:20:01 | INFO     | rss_scraper | Dev.to: 194 items
+2026-07-19 05:20:02 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-19 05:20:02 | INFO     | rss_scraper | Free sources total: 512 unique items
+2026-07-19 05:20:02 | INFO     | main |   RSS/API sources: 512 items
+2026-07-19 05:20:02 | INFO     | main |   Total scraped: 512 items
+2026-07-19 05:20:02 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-19 05:20:02 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-19 05:20:02 | INFO     | db_manager | Purged 372 old news items
+2026-07-19 05:20:02 | INFO     | db_manager | Inserted 232/512 news items
+2026-07-19 05:20:02 | INFO     | main |   SQLite: 232 new items (total: 9572)
+2026-07-19 05:20:08 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-19 05:20:09 | INFO     | vector_store | VectorStore ready
+2026-07-19 05:20:16 | INFO     | vector_store | Indexed 597 items into vector store
+2026-07-19 05:20:16 | INFO     | main |   Vector store: 597 items indexed
+2026-07-19 05:20:16 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-19 05:20:16 | INFO     | topic_analyzer | Analyzing 597 items for top 10 topics …
+2026-07-19 05:20:25 | DEBUG    | llm_client | LLM response from github_models (4204 chars)
+2026-07-19 05:20:25 | INFO     | topic_analyzer | Identified 10 topics
+2026-07-19 05:20:25 | INFO     | main |   Found 10 topics:
+2026-07-19 05:20:25 | INFO     | main |      1. [9/10] LLM Prompt Injection Attacks
+2026-07-19 05:20:25 | INFO     | main |      2. [9/10] AI-Generated Content Moderation
+2026-07-19 05:20:25 | INFO     | main |      3. [8/10] AI Risk Analysis Tools
+2026-07-19 05:20:25 | INFO     | main |      4. [8/10] LLM Inference Optimization
+2026-07-19 05:20:25 | INFO     | main |      5. [8/10] AI for Multivariable Calculus
+2026-07-19 05:20:25 | INFO     | main |      6. [8/10] AI-Powered Code Indexing
+2026-07-19 05:20:25 | INFO     | main |      7. [8/10] AI Companion Regulation
+2026-07-19 05:20:25 | INFO     | main |      8. [7/10] AI-Driven Bug Bounty Tools
+2026-07-19 05:20:25 | INFO     | main |      9. [7/10] LLM Reasoning Control
+2026-07-19 05:20:25 | INFO     | main |     10. [7/10] AI in Clinical Workspaces
+2026-07-19 05:20:25 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-19 05:20:25 | INFO     | main |   Existing collection: 415 tools across 223 topics
+2026-07-19 05:20:25 | INFO     | main |   🔄 Upgrade candidate: 'AI-Generated Content Moderation' (relevance 9/10, last built 2026-05-31)
+2026-07-19 05:20:25 | INFO     | main |   Topics flagged for upgrade: AI-Generated Content Moderation
+2026-07-19 05:20:29 | DEBUG    | llm_client | LLM response from github_models (3333 chars)
+2026-07-19 05:20:29 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Prompt Injection Attacks
+2026-07-19 05:20:29 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI-Generated Content Moderation'
+2026-07-19 05:20:38 | DEBUG    | llm_client | LLM response from github_models (2368 chars)
+2026-07-19 05:20:38 | INFO     | idea_generator | Generated 2 ideas for topic: AI-Generated Content Moderation
+2026-07-19 05:20:38 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-19 05:20:38 | INFO     | main |   Generated 5 tool ideas:
+2026-07-19 05:20:38 | INFO     | main |     • prompt_injection_detector: A CLI tool that analyzes LLM prompts for signs of malicious injections, such as 
+2026-07-19 05:20:38 | INFO     | main |     • secure_prompt_sanitizer: A Python library that applies filters to sanitize user inputs before forwarding 
+2026-07-19 05:20:38 | INFO     | main |     • llm_prompt_firewall: An API wrapper that sits between the user input and the LLM, acting as a 'firewa
+2026-07-19 05:20:38 | INFO     | main |     • ai_track_identifier: This CLI tool analyzes audio tracks and attempts to detect characteristics commo
+2026-07-19 05:20:38 | INFO     | main |     • text_generation_detector: This Python library and CLI tool processes text to detect whether it was likely 
+2026-07-19 05:20:38 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-19 05:20:38 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-19 05:20:48 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-19 05:20:48 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-19 05:20:48 | INFO     | tool_builder | Building tool: prompt_injection_detector …
+2026-07-19 05:20:56 | DEBUG    | llm_client | LLM response from github_models (4734 chars)
+2026-07-19 05:20:56 | DEBUG    | test_runner | Installing: ['colorama==0.4.6']
+2026-07-19 05:20:57 | INFO     | test_runner | Tests PASSED for prompt_injection_detector
+2026-07-19 05:20:57 | INFO     | tool_builder | ✅ prompt_injection_detector passed tests on loop 1
+2026-07-19 05:20:57 | INFO     | tool_builder | Building tool: secure_prompt_sanitizer …
+2026-07-19 05:21:10 | DEBUG    | llm_client | LLM response from github_models (5480 chars)
+2026-07-19 05:21:10 | DEBUG    | test_runner | Installing: ['pytest==7.4.2']
+2026-07-19 05:21:11 | INFO     | test_runner | Tests PASSED for secure_prompt_sanitizer
+2026-07-19 05:21:11 | INFO     | tool_builder | ✅ secure_prompt_sanitizer passed tests on loop 1
+2026-07-19 05:21:11 | INFO     | tool_builder | Building tool: llm_prompt_firewall …
+2026-07-19 05:21:18 | DEBUG    | llm_client | LLM response from github_models (4706 chars)
+2026-07-19 05:21:18 | DEBUG    | test_runner | Installing: ['Flask==2.3.2', 'pytest==7.4.2']
+2026-07-19 05:21:20 | WARNING  | test_runner | Tests FAILED for llm_prompt_firewall:
+test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter_prompt_invalid_input ERROR      [ 75%]
+test_llm_prompt_firewall.py::test_filter_prompt_internal_error ERROR     [100%]
+==================================== ERRORS ====================================
+__________________ ERROR at setup of test_filter_prompt_valid __________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+________________ ERROR at setup of test_filter_prompt_malicious ________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+______________ ERROR at setup of test_filter_prompt_invalid_input ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+_____________ ERROR at setup of test_filter_prompt_internal_error ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_valid - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_malicious - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_invalid_input - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_internal_error - AttributeError: module 'werkzeug' has no attribute '__version__'
+2026-07-19 05:21:20 | WARNING  | tool_builder | ⚠️  llm_prompt_firewall tests failed (loop 1/5) — test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter
+2026-07-19 05:21:27 | DEBUG    | llm_client | LLM response from github_models (5494 chars)
+2026-07-19 05:21:27 | DEBUG    | test_runner | Installing: ['flask']
+2026-07-19 05:21:28 | WARNING  | test_runner | Tests FAILED for llm_prompt_firewall:
+test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter_prompt_invalid_input ERROR      [ 75%]
+test_llm_prompt_firewall.py::test_filter_prompt_internal_error ERROR     [100%]
+==================================== ERRORS ====================================
+__________________ ERROR at setup of test_filter_prompt_valid __________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+________________ ERROR at setup of test_filter_prompt_malicious ________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+______________ ERROR at setup of test_filter_prompt_invalid_input ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+_____________ ERROR at setup of test_filter_prompt_internal_error ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_valid - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_malicious - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_invalid_input - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_internal_error - AttributeError: module 'werkzeug' has no attribute '__version__'
+2026-07-19 05:21:28 | WARNING  | tool_builder | ⚠️  llm_prompt_firewall tests failed (loop 2/5) — test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter
+2026-07-19 05:21:34 | DEBUG    | llm_client | LLM response from github_models (4453 chars)
+2026-07-19 05:21:34 | DEBUG    | test_runner | Installing: ['flask', 'pytest']
+2026-07-19 05:21:34 | WARNING  | test_runner | Tests FAILED for llm_prompt_firewall:
+test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter_prompt_invalid_input ERROR      [ 75%]
+test_llm_prompt_firewall.py::test_filter_prompt_internal_error ERROR     [100%]
+==================================== ERRORS ====================================
+__________________ ERROR at setup of test_filter_prompt_valid __________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+________________ ERROR at setup of test_filter_prompt_malicious ________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+______________ ERROR at setup of test_filter_prompt_invalid_input ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+_____________ ERROR at setup of test_filter_prompt_internal_error ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_valid - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_malicious - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_invalid_input - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_internal_error - AttributeError: module 'werkzeug' has no attribute '__version__'
+2026-07-19 05:21:34 | WARNING  | tool_builder | ⚠️  llm_prompt_firewall tests failed (loop 3/5) — test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter
+2026-07-19 05:21:41 | DEBUG    | llm_client | LLM response from github_models (4991 chars)
+2026-07-19 05:21:41 | DEBUG    | test_runner | Installing: ['flask']
+2026-07-19 05:21:41 | WARNING  | test_runner | Tests FAILED for llm_prompt_firewall:
+test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter_prompt_invalid_input ERROR      [ 75%]
+test_llm_prompt_firewall.py::test_filter_prompt_internal_error ERROR     [100%]
+==================================== ERRORS ====================================
+__________________ ERROR at setup of test_filter_prompt_valid __________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+________________ ERROR at setup of test_filter_prompt_malicious ________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+______________ ERROR at setup of test_filter_prompt_invalid_input ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+_____________ ERROR at setup of test_filter_prompt_internal_error ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_valid - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_malicious - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_invalid_input - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_internal_error - AttributeError: module 'werkzeug' has no attribute '__version__'
+2026-07-19 05:21:41 | WARNING  | tool_builder | ⚠️  llm_prompt_firewall tests failed (loop 4/5) — test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter
+2026-07-19 05:21:42 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-19 05:22:47 | DEBUG    | llm_client | LLM response from github_models (4406 chars)
+2026-07-19 05:22:47 | DEBUG    | test_runner | Installing: ['flask']
+2026-07-19 05:22:48 | WARNING  | test_runner | Tests FAILED for llm_prompt_firewall:
+test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter_prompt_invalid_input ERROR      [ 75%]
+test_llm_prompt_firewall.py::test_filter_prompt_internal_error ERROR     [100%]
+==================================== ERRORS ====================================
+__________________ ERROR at setup of test_filter_prompt_valid __________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+________________ ERROR at setup of test_filter_prompt_malicious ________________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+______________ ERROR at setup of test_filter_prompt_invalid_input ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+_____________ ERROR at setup of test_filter_prompt_internal_error ______________
+E   AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_valid - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_malicious - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_invalid_input - AttributeError: module 'werkzeug' has no attribute '__version__'
+ERROR test_llm_prompt_firewall.py::test_filter_prompt_internal_error - AttributeError: module 'werkzeug' has no attribute '__version__'
+2026-07-19 05:22:48 | WARNING  | tool_builder | ⚠️  llm_prompt_firewall tests failed (loop 5/5) — test_llm_prompt_firewall.py::test_filter_prompt_valid ERROR              [ 25%]
+test_llm_prompt_firewall.py::test_filter_prompt_malicious ERROR          [ 50%]
+test_llm_prompt_firewall.py::test_filter
+2026-07-19 05:22:48 | ERROR    | tool_builder | ❌ llm_prompt_firewall failed after 5 loops
+2026-07-19 05:22:48 | INFO     | tool_builder | Building tool: ai_track_identifier …
+2026-07-19 05:22:58 | DEBUG    | llm_client | LLM response from github_models (6052 chars)
+2026-07-19 05:22:58 | DEBUG    | test_runner | Installing: ['pydub==0.25.1', 'numpy==1.25.2', 'scipy==1.11.3']
+2026-07-19 05:23:05 | INFO     | test_runner | Tests PASSED for ai_track_identifier
+2026-07-19 05:23:05 | INFO     | tool_builder | ✅ ai_track_identifier passed tests on loop 1
+2026-07-19 05:23:05 | INFO     | tool_builder | Building tool: text_generation_detector …
+2026-07-19 05:23:16 | DEBUG    | llm_client | LLM response from github_models (5967 chars)
+2026-07-19 05:23:16 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'scikit-learn==1.3.0', 'tqdm==4.66.1', 'torch==2.0.1']
+2026-07-19 05:24:09 | WARNING  | test_runner | Tests FAILED for text_generation_detector:
+test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect_ai_generated_text - AttributeError: 'method' object has no attribute 'return_value'
+2026-07-19 05:24:09 | WARNING  | tool_builder | ⚠️  text_generation_detector tests failed (loop 1/5) — test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect
+2026-07-19 05:24:17 | DEBUG    | llm_client | LLM response from github_models (6312 chars)
+2026-07-19 05:24:17 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nfrom transformers import AutoTokenizer, AutoModelForSequenceClassification\nfrom sklearn.preprocessing import normalize\nfrom tqdm import tqdm\nimport torch\nimport os\n\ndef load_model():\n    \"\"\"Load the pre-trained model and tokenizer.\"\"\"\n    mode
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6299)
+2026-07-19 05:24:17 | DEBUG    | test_runner | Installing: ['transformers==4.31.0', 'scikit-learn==1.3.0', 'tqdm==4.66.1', 'torch==2.0.1']
+2026-07-19 05:24:21 | WARNING  | test_runner | Tests FAILED for text_generation_detector:
+test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect_ai_generated_text - AttributeError: 'method' object has no attribute 'return_value'
+2026-07-19 05:24:21 | WARNING  | tool_builder | ⚠️  text_generation_detector tests failed (loop 2/5) — test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect
+2026-07-19 05:24:28 | DEBUG    | llm_client | LLM response from github_models (6309 chars)
+2026-07-19 05:24:28 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'tqdm', 'torch']
+2026-07-19 05:24:31 | WARNING  | test_runner | Tests FAILED for text_generation_detector:
+test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect_ai_generated_text - AttributeError: 'method' object has no attribute 'return_value'
+2026-07-19 05:24:31 | WARNING  | tool_builder | ⚠️  text_generation_detector tests failed (loop 3/5) — test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect
+2026-07-19 05:24:39 | DEBUG    | llm_client | LLM response from github_models (6246 chars)
+2026-07-19 05:24:39 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nfrom transformers import AutoTokenizer, AutoModelForSequenceClassification\nfrom sklearn.preprocessing import normalize\nfrom tqdm import tqdm\nimport torch\nimport os\n\ndef load_model():\n    \"\"\"Load the pre-trained model and tokenizer.\"\"\"\n    mode
+Expecting property name enclosed in double quotes: line 6 column 1 (char 6233)
+2026-07-19 05:24:39 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'tqdm', 'torch']
+2026-07-19 05:24:42 | WARNING  | test_runner | Tests FAILED for text_generation_detector:
+test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect_ai_generated_text - AttributeError: 'method' object has no attribute 'return_value'
+2026-07-19 05:24:42 | WARNING  | tool_builder | ⚠️  text_generation_detector tests failed (loop 4/5) — test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+E   AttributeError: 'method' object has no attribute 'return_value'
+FAILED test_text_generation_detector.py::test_detect
+2026-07-19 05:24:49 | DEBUG    | llm_client | LLM response from github_models (5812 chars)
+2026-07-19 05:24:49 | DEBUG    | test_runner | Installing: ['transformers', 'scikit-learn', 'tqdm', 'torch']
+2026-07-19 05:24:52 | WARNING  | test_runner | Tests FAILED for text_generation_detector:
+test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+    assert results[0]["ai_probability"] == 0.8
+E   AssertionError: assert <MagicMock name='from_pretrained()().logits.softmax().detach().numpy().__getitem__().__getitem__()' id='140602818662416'> == 0.8
+FAILED test_text_generation_detector.py::test_detect_ai_generated_text - AssertionError: assert <MagicMock name='from_pretrained()().logits.softmax().detach().numpy().__getitem__().__getitem__()' id='140602818662416'> == 0.8
+2026-07-19 05:24:52 | WARNING  | tool_builder | ⚠️  text_generation_detector tests failed (loop 5/5) — test_text_generation_detector.py::test_detect_ai_generated_text FAILED   [ 33%]
+    assert results[0]["ai_probability"] == 0.8
+E   AssertionError: assert <MagicMock name='from_pretrained()().logits.so
+2026-07-19 05:24:52 | ERROR    | tool_builder | ❌ text_generation_detector failed after 5 loops
+2026-07-19 05:24:52 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-07-19 05:24:52 | INFO     | main |   Built 3/5 tools successfully
+2026-07-19 05:24:52 | INFO     | main |     ✅ prompt_injection_detector (loops: 1)
+2026-07-19 05:24:52 | INFO     | main |     ✅ secure_prompt_sanitizer (loops: 1)
+2026-07-19 05:24:52 | INFO     | main |     ✅ ai_track_identifier (loops: 1)
+2026-07-19 05:24:52 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-07-19 05:24:52 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-07-19 05:24:52 | INFO     | github_publisher |   Created zip: prompt_injection_detector.zip (2400 bytes)
+2026-07-19 05:24:52 | INFO     | github_publisher | Saved prompt_injection_detector → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/prompt_injection_detector
+2026-07-19 05:24:52 | INFO     | github_publisher |   Created zip: secure_prompt_sanitizer.zip (2531 bytes)
+2026-07-19 05:24:52 | INFO     | github_publisher | Saved secure_prompt_sanitizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/secure_prompt_sanitizer
+2026-07-19 05:24:52 | INFO     | github_publisher |   Created zip: ai_track_identifier.zip (2780 bytes)
+2026-07-19 05:24:52 | INFO     | github_publisher | Saved ai_track_identifier → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/ai_track_identifier
+2026-07-19 05:24:52 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-07-19 05:24:52 | INFO     | main |   Published 3 tools:
+2026-07-19 05:24:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/prompt_injection_detector
+2026-07-19 05:24:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/secure_prompt_sanitizer
+2026-07-19 05:24:52 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-19/ai_track_identifier
+2026-07-19 05:24:52 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-07-19 05:24:52 | INFO     | main | ✅ Generated tools_index.json with 418 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
