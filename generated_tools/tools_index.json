@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-19T05:24:52.864211+00:00",
-  "total_tools": 418,
+  "last_updated": "2026-07-20T05:42:35.274855+00:00",
+  "total_tools": 421,
   "tools": [
+    {
+      "tool_name": "adaptive_web_scraper",
+      "display_name": "Adaptive Web Scraper",
+      "description": "An advanced web scraper that dynamically adjusts its behavior based on real-time signals from the target website. It uses AI models to analyze network responses and adjust scrape frequency, headers, and interaction patterns, ensuring that it avoids triggering anti-bot measures. Perfect for collecting data without flagging bot detectors.",
+      "topic": "Undetectable Browser Automation",
+      "date": "2026-07-20",
+      "generated": "2026-07-20T05:37:30.420553+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-20/adaptive_web_scraper",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/adaptive_web_scraper/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/adaptive_web_scraper/adaptive_web_scraper.zip"
+    },
+    {
+      "tool_name": "llm_quickstart",
+      "display_name": "LLM Quickstart",
+      "description": "LLM Quickstart automates the setup, configuration, and deployment of large language models (LLMs) on local machines. It simplifies the process by detecting system capabilities, downloading model weights, and configuring an optimized runtime environment, making it easier for developers to experiment with private and offline LLMs.",
+      "topic": "Local LLM Deployment",
+      "date": "2026-07-20",
+      "generated": "2026-07-20T05:37:30.420553+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-20/llm_quickstart",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/llm_quickstart/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/llm_quickstart/llm_quickstart.zip"
+    },
+    {
+      "tool_name": "stealth_browser_driver",
+      "display_name": "Stealth Browser Driver",
+      "description": "This tool provides a stealthy browser automation environment designed to mimic human-like browsing patterns using real web browsers. It combines anti-detection techniques such as randomized user-agent headers, dynamic time delays, and browser fingerprint masking, making it highly effective for AI-driven tasks that require interacting with websites while avoiding detection by anti-bot systems.",
+      "topic": "Undetectable Browser Automation",
+      "date": "2026-07-20",
+      "generated": "2026-07-20T05:37:30.420553+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-20/stealth_browser_driver",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/stealth_browser_driver/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-20/stealth_browser_driver/stealth_browser_driver.zip"
+    },
     {
       "tool_name": "ai_track_identifier",
       "display_name": "AI Track Identifier",
