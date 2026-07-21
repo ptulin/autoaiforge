@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-07-20T05:42:35.274855+00:00",
-  "total_tools": 421,
+  "last_updated": "2026-07-21T05:23:45.580265+00:00",
+  "total_tools": 425,
   "tools": [
+    {
+      "tool_name": "ai_threat_simulator",
+      "display_name": "AI Threat Simulator",
+      "description": "AI Threat Simulator is a Python tool designed for developers to simulate and test common AI-driven attack vectors on their systems. It generates controlled, benign attacks such as spoofed API calls, brute force attempts, and data exfiltration simulations to help identify vulnerabilities in AI models or APIs.",
+      "topic": "AI Model Security and Hacking",
+      "date": "2026-07-21",
+      "generated": "2026-07-21T05:18:28.568418+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/ai_threat_simulator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_threat_simulator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_threat_simulator/ai_threat_simulator.zip"
+    },
+    {
+      "tool_name": "ai_traffic_analyzer",
+      "display_name": "AI Traffic Analyzer",
+      "description": "AI Traffic Analyzer is a CLI tool that monitors network traffic to detect potential anomalies caused by AI-driven cyberattacks. It uses machine learning to analyze packet data in real-time, looking for unusual patterns indicative of malicious AI behavior, such as unauthorized API calls or data exfiltration attempts.",
+      "topic": "AI Model Security and Hacking",
+      "date": "2026-07-21",
+      "generated": "2026-07-21T05:18:28.568418+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/ai_traffic_analyzer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_traffic_analyzer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_traffic_analyzer/ai_traffic_analyzer.zip"
+    },
+    {
+      "tool_name": "llm_health_router",
+      "display_name": "LLM Health-Aware Router",
+      "description": "An intelligent router that prioritizes LLMs based on their real-time health metrics, such as latency, uptime, and CPU/memory usage. AI developers can use this tool to avoid sending queries to overloaded or unhealthy instances, improving application reliability.",
+      "topic": "LLM Gateway and Routing",
+      "date": "2026-07-21",
+      "generated": "2026-07-21T05:18:28.568418+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/llm_health_router",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_health_router/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_health_router/llm_health_router.zip"
+    },
+    {
+      "tool_name": "llm_load_balancer",
+      "display_name": "LLM Load Balancer",
+      "description": "A Python-based load balancer that dynamically routes requests to multiple LLMs (local or cloud-based) based on their response time, availability, and quota limits. It ensures optimal utilization of resources by distributing requests intelligently and falling back to a cloud-based LLM when local systems are overwhelmed or unavailable.",
+      "topic": "LLM Gateway and Routing",
+      "date": "2026-07-21",
+      "generated": "2026-07-21T05:18:28.568418+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/llm_load_balancer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_load_balancer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_load_balancer/llm_load_balancer.zip"
+    },
     {
       "tool_name": "adaptive_web_scraper",
       "display_name": "Adaptive Web Scraper",

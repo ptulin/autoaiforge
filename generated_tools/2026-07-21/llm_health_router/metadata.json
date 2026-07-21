@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_health_router",
+  "display_name": "LLM Health-Aware Router",
+  "description": "An intelligent router that prioritizes LLMs based on their real-time health metrics, such as latency, uptime, and CPU/memory usage. AI developers can use this tool to avoid sending queries to overloaded or unhealthy instances, improving application reliability.",
+  "topic": "LLM Gateway and Routing",
+  "date": "2026-07-21",
+  "generated": "2026-07-21T05:18:28.568418+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/llm_health_router",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_health_router/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/llm_health_router/llm_health_router.zip"
+}

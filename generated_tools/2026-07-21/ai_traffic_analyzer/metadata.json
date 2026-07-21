@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_traffic_analyzer",
+  "display_name": "AI Traffic Analyzer",
+  "description": "AI Traffic Analyzer is a CLI tool that monitors network traffic to detect potential anomalies caused by AI-driven cyberattacks. It uses machine learning to analyze packet data in real-time, looking for unusual patterns indicative of malicious AI behavior, such as unauthorized API calls or data exfiltration attempts.",
+  "topic": "AI Model Security and Hacking",
+  "date": "2026-07-21",
+  "generated": "2026-07-21T05:18:28.568418+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/ai_traffic_analyzer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_traffic_analyzer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_traffic_analyzer/ai_traffic_analyzer.zip"
+}
