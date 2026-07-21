@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_threat_simulator",
+  "display_name": "AI Threat Simulator",
+  "description": "AI Threat Simulator is a Python tool designed for developers to simulate and test common AI-driven attack vectors on their systems. It generates controlled, benign attacks such as spoofed API calls, brute force attempts, and data exfiltration simulations to help identify vulnerabilities in AI models or APIs.",
+  "topic": "AI Model Security and Hacking",
+  "date": "2026-07-21",
+  "generated": "2026-07-21T05:18:28.568418+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-21/ai_threat_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_threat_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-21/ai_threat_simulator/ai_threat_simulator.zip"
+}
