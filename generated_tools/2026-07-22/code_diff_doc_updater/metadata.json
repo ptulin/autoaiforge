@@ -1,0 +1,13 @@
+{
+  "tool_name": "code_diff_doc_updater",
+  "display_name": "Code Diff Documentation Updater",
+  "description": "This tool automatically updates code documentation by analyzing git diffs and using AI to infer the purpose of changes. It appends or updates relevant docstrings, README sections, or wiki pages with concise explanations of new features or modifications.",
+  "topic": "AI-Enhanced Codebase Documentation",
+  "date": "2026-07-22",
+  "generated": "2026-07-22T05:17:08.038496+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-22/code_diff_doc_updater",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-22/code_diff_doc_updater/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-22/code_diff_doc_updater/code_diff_doc_updater.zip"
+}
