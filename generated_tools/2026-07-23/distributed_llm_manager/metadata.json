@@ -1,0 +1,13 @@
+{
+  "tool_name": "distributed_llm_manager",
+  "display_name": "Distributed LLM Manager",
+  "description": "This script simplifies the orchestration of distributed LLM inference across multiple devices. It sets up a collaborative network where devices can serve shards of a large language model and respond to inference requests as a collective. This is especially useful for running resource-heavy models in distributed setups.",
+  "topic": "Decentralized LLM Hosting",
+  "date": "2026-07-23",
+  "generated": "2026-07-23T05:21:58.563252+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-23/distributed_llm_manager",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-23/distributed_llm_manager/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-23/distributed_llm_manager/distributed_llm_manager.zip"
+}
