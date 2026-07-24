@@ -1,0 +1,316 @@
+2026-07-24 05:19:14 | INFO     | main | ============================================================
+2026-07-24 05:19:14 | INFO     | main | AutoAIForge starting run: 2026-07-24T05:19:14.353221+00:00
+2026-07-24 05:19:14 | INFO     | main | ============================================================
+2026-07-24 05:19:14 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-24 05:19:14 | INFO     | youtube_scraper | YouTube client ready
+2026-07-24 05:19:14 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:14 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:14 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:14 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:14 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A14Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-22T05%3A19%3A15Z&relevanceLanguage=en&key=AIzaSyBcx6eK_XksqggOBs29x3b0BM2K3uSY5n8&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-24 05:19:15 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-24 05:19:15 | INFO     | main |   YouTube: 0 items
+2026-07-24 05:19:15 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-24 05:19:20 | INFO     | rss_scraper | HackerNews: 169 items
+2026-07-24 05:19:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-24 05:19:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-24 05:19:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-24 05:19:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-24 05:19:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-24 05:19:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-24 05:19:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-24 05:19:28 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-24 05:19:33 | INFO     | rss_scraper | ArXiv: 104 items
+2026-07-24 05:19:38 | INFO     | rss_scraper | Dev.to: 190 items
+2026-07-24 05:19:39 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-24 05:19:39 | INFO     | rss_scraper | Free sources total: 513 unique items
+2026-07-24 05:19:39 | INFO     | main |   RSS/API sources: 513 items
+2026-07-24 05:19:39 | INFO     | main |   Total scraped: 513 items
+2026-07-24 05:19:39 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-24 05:19:39 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-24 05:19:39 | INFO     | db_manager | Purged 351 old news items
+2026-07-24 05:19:39 | INFO     | db_manager | Inserted 364/513 news items
+2026-07-24 05:19:39 | INFO     | main |   SQLite: 364 new items (total: 9899)
+2026-07-24 05:19:44 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-24 05:19:46 | INFO     | vector_store | VectorStore ready
+2026-07-24 05:19:54 | INFO     | vector_store | Indexed 734 items into vector store
+2026-07-24 05:19:54 | INFO     | main |   Vector store: 734 items indexed
+2026-07-24 05:19:54 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-24 05:19:54 | INFO     | topic_analyzer | Analyzing 734 items for top 10 topics …
+2026-07-24 05:19:54 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-24 05:21:03 | DEBUG    | llm_client | LLM response from github_models (3819 chars)
+2026-07-24 05:21:03 | INFO     | topic_analyzer | Identified 10 topics
+2026-07-24 05:21:03 | INFO     | main |   Found 10 topics:
+2026-07-24 05:21:03 | INFO     | main |      1. [9/10] Efficient LLM Inference on Laptops
+2026-07-24 05:21:03 | INFO     | main |      2. [9/10] Open-Source Video Editing with AI
+2026-07-24 05:21:03 | INFO     | main |      3. [8/10] Token Optimization for AI Agents
+2026-07-24 05:21:03 | INFO     | main |      4. [8/10] Self-Hosted AI Knowledge Servers
+2026-07-24 05:21:03 | INFO     | main |      5. [8/10] Localized AI Model Performance
+2026-07-24 05:21:03 | INFO     | main |      6. [7/10] Middleware for LLM Conversation Management
+2026-07-24 05:21:03 | INFO     | main |      7. [7/10] AI-Driven Document Processing
+2026-07-24 05:21:03 | INFO     | main |      8. [7/10] AI for Education Games
+2026-07-24 05:21:03 | INFO     | main |      9. [6/10] AI-Powered Formal Proof Search
+2026-07-24 05:21:03 | INFO     | main |     10. [6/10] AI Artifact Sharing and Collaboration
+2026-07-24 05:21:03 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-24 05:21:03 | INFO     | main |   Existing collection: 430 tools across 231 topics
+2026-07-24 05:21:03 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-07-24 05:21:12 | DEBUG    | llm_client | LLM response from github_models (3372 chars)
+2026-07-24 05:21:12 | INFO     | idea_generator | Generated 3 ideas for topic: Efficient LLM Inference on Laptops
+2026-07-24 05:21:16 | DEBUG    | llm_client | LLM response from github_models (2087 chars)
+2026-07-24 05:21:16 | INFO     | idea_generator | Generated 2 ideas for topic: Open-Source Video Editing with AI
+2026-07-24 05:21:16 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-24 05:21:16 | INFO     | main |   Generated 5 tool ideas:
+2026-07-24 05:21:16 | INFO     | main |     • llm_quantizer: A CLI tool that applies post-training quantization to large language models, sig
+2026-07-24 05:21:16 | INFO     | main |     • llm_batch_splitter: A Python library that splits large input batches for LLM inference into smaller,
+2026-07-24 05:21:16 | INFO     | main |     • gpu_fallback_inference: A CLI tool that automatically checks for GPU availability and falls back to CPU 
+2026-07-24 05:21:16 | INFO     | main |     • ai_scene_segmentation: This tool uses AI to automatically segment video files into distinct scenes base
+2026-07-24 05:21:16 | INFO     | main |     • ai_video_transcription_sync: This tool processes video files and automatically generates synchronized subtitl
+2026-07-24 05:21:16 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-24 05:21:16 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-24 05:21:25 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-24 05:21:25 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-24 05:21:25 | INFO     | tool_builder | Building tool: llm_quantizer …
+2026-07-24 05:21:36 | DEBUG    | llm_client | LLM response from github_models (4917 chars)
+2026-07-24 05:21:36 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'torchvision==0.15.2', 'click==8.1.3', 'pytest==7.4.2']
+2026-07-24 05:22:18 | WARNING  | test_runner | Tests FAILED for llm_quantizer:
+test_llm_quantizer.py::test_dynamic_quantization FAILED                  [ 33%]
+test_llm_quantizer.py::test_static_quantization FAILED                   [ 66%]
+test_llm_quantizer.py::test_invalid_quantization_type FAILED             [100%]
+Error: Missing option '--model_path'.
+Error: Missing option '--model_path'.
+Error: Missing option '--model_path'.
+FAILED test_llm_quantizer.py::test_dynamic_quantization - SystemExit: 2
+FAILED test_llm_quantizer.py::test_static_quantization - SystemExit: 2
+FAILED test_llm_quantizer.py::test_invalid_quantization_type - SystemExit: 2
+2026-07-24 05:22:18 | WARNING  | tool_builder | ⚠️  llm_quantizer tests failed (loop 1/5) — test_llm_quantizer.py::test_dynamic_quantization FAILED                  [ 33%]
+test_llm_quantizer.py::test_static_quantization FAILED                   [ 66%]
+test_llm_quantizer.py::test_invalid_quan
+2026-07-24 05:22:27 | DEBUG    | llm_client | LLM response from github_models (4530 chars)
+2026-07-24 05:22:27 | DEBUG    | test_runner | Installing: ['torch', 'pytest']
+2026-07-24 05:22:29 | WARNING  | test_runner | Tests FAILED for llm_quantizer:
+test_llm_quantizer.py::test_invalid_quantization_type FAILED             [100%]
+    raise ValueError("Unsupported quantization type.")
+E   ValueError: Unsupported quantization type.
+    print(f"Error during quantization: {e}", file=sys.stderr)
+E   NameError: name 'sys' is not defined
+FAILED test_llm_quantizer.py::test_invalid_quantization_type - NameError: name 'sys' is not defined
+2026-07-24 05:22:29 | WARNING  | tool_builder | ⚠️  llm_quantizer tests failed (loop 2/5) — test_llm_quantizer.py::test_invalid_quantization_type FAILED             [100%]
+    raise ValueError("Unsupported quantization type.")
+E   ValueError: Unsupported quantization type.
+    print(f"Error 
+2026-07-24 05:22:36 | DEBUG    | llm_client | LLM response from github_models (4921 chars)
+2026-07-24 05:22:36 | DEBUG    | test_runner | Installing: ['torch', 'pytest']
+2026-07-24 05:22:38 | INFO     | test_runner | Tests PASSED for llm_quantizer
+2026-07-24 05:22:38 | INFO     | tool_builder | ✅ llm_quantizer passed tests on loop 3
+2026-07-24 05:22:38 | INFO     | tool_builder | Building tool: llm_batch_splitter …
+2026-07-24 05:22:52 | DEBUG    | llm_client | LLM response from github_models (5800 chars)
+2026-07-24 05:22:52 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'transformers==4.33.2']
+2026-07-24 05:23:02 | INFO     | test_runner | Tests PASSED for llm_batch_splitter
+2026-07-24 05:23:02 | INFO     | tool_builder | ✅ llm_batch_splitter passed tests on loop 1
+2026-07-24 05:23:02 | INFO     | tool_builder | Building tool: gpu_fallback_inference …
+2026-07-24 05:23:20 | DEBUG    | llm_client | LLM response from github_models (5266 chars)
+2026-07-24 05:23:20 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'click==8.1.3', 'psutil==5.9.5']
+2026-07-24 05:23:22 | WARNING  | test_runner | Tests FAILED for gpu_fallback_inference:
+test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+test_gpu_fallback_inference.py::test_optimize_for_cpu FAILED             [100%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...050452329616'> == [1.0]
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/unittest/mock.py:918: in assert_called_once
+    raise AssertionError(msg)
+E   AssertionError: Expected 'cpu_count' to have been called once. Called 2 times.
+    mock_cpu_count.assert_called_once()
+E   AssertionError: Expected 'cpu_count' to have been called once. Called 2 times.
+E   assert {'logical': False} == {}
+FAILED test_gpu_fallback_inference.py::test_run_inference - AssertionError: assert <MagicMock na...050452329616'> == [1.0]
+FAILED test_gpu_fallback_inference.py::test_optimize_for_cpu - AssertionError: Expected 'cpu_count' to have been called once. Called 2 times.
+assert {'logical': False} == {}
+2026-07-24 05:23:22 | WARNING  | tool_builder | ⚠️  gpu_fallback_inference tests failed (loop 1/5) — test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+test_gpu_fallback_inference.py::test_optimize_for_cpu FAILED             [100%]
+    assert result == [1.0]
+E   Assertion
+2026-07-24 05:23:41 | DEBUG    | llm_client | LLM response from github_models (5374 chars)
+2026-07-24 05:23:41 | DEBUG    | test_runner | Installing: ['torch', 'click', 'psutil']
+2026-07-24 05:23:43 | WARNING  | test_runner | Tests FAILED for gpu_fallback_inference:
+test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...035345427792'> == [1.0]
+FAILED test_gpu_fallback_inference.py::test_run_inference - AssertionError: assert <MagicMock na...035345427792'> == [1.0]
+2026-07-24 05:23:43 | WARNING  | tool_builder | ⚠️  gpu_fallback_inference tests failed (loop 2/5) — test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...035345427792'> == [1.0]
+FAILED test_gpu_fallback_i
+2026-07-24 05:23:51 | DEBUG    | llm_client | LLM response from github_models (5180 chars)
+2026-07-24 05:23:51 | DEBUG    | test_runner | Installing: ['torch', 'click', 'psutil']
+2026-07-24 05:23:53 | WARNING  | test_runner | Tests FAILED for gpu_fallback_inference:
+test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...162753717136'> == [1.0]
+FAILED test_gpu_fallback_inference.py::test_run_inference - AssertionError: assert <MagicMock na...162753717136'> == [1.0]
+2026-07-24 05:23:53 | WARNING  | tool_builder | ⚠️  gpu_fallback_inference tests failed (loop 3/5) — test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...162753717136'> == [1.0]
+FAILED test_gpu_fallback_i
+2026-07-24 05:24:01 | DEBUG    | llm_client | LLM response from github_models (5443 chars)
+2026-07-24 05:24:01 | DEBUG    | test_runner | Installing: ['torch', 'click', 'psutil']
+2026-07-24 05:24:03 | WARNING  | test_runner | Tests FAILED for gpu_fallback_inference:
+test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...049614483984'> == [1.0]
+FAILED test_gpu_fallback_inference.py::test_run_inference - AssertionError: assert <MagicMock na...049614483984'> == [1.0]
+2026-07-24 05:24:03 | WARNING  | tool_builder | ⚠️  gpu_fallback_inference tests failed (loop 4/5) — test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+    assert result == [1.0]
+E   AssertionError: assert <MagicMock na...049614483984'> == [1.0]
+FAILED test_gpu_fallback_i
+2026-07-24 05:24:12 | DEBUG    | llm_client | LLM response from github_models (5405 chars)
+2026-07-24 05:24:12 | DEBUG    | test_runner | Installing: ['torch', 'click', 'psutil']
+2026-07-24 05:24:14 | WARNING  | test_runner | Tests FAILED for gpu_fallback_inference:
+test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+E   RecursionError: maximum recursion depth exceeded
+ERROR    root:gpu_fallback_inference.py:32 Error during inference: maximum recursion depth exceeded
+FAILED test_gpu_fallback_inference.py::test_run_inference - RecursionError: maximum recursion depth exceeded
+2026-07-24 05:24:14 | WARNING  | tool_builder | ⚠️  gpu_fallback_inference tests failed (loop 5/5) — test_gpu_fallback_inference.py::test_run_inference FAILED                [ 66%]
+E   RecursionError: maximum recursion depth exceeded
+ERROR    root:gpu_fallback_inference.py:32 Error during inference: 
+2026-07-24 05:24:14 | ERROR    | tool_builder | ❌ gpu_fallback_inference failed after 5 loops
+2026-07-24 05:24:14 | INFO     | tool_builder | Building tool: ai_scene_segmentation …
+2026-07-24 05:24:26 | DEBUG    | llm_client | LLM response from github_models (4850 chars)
+2026-07-24 05:24:26 | DEBUG    | test_runner | Installing: ['opencv-python==4.5.5.64', 'numpy==1.21.6', 'torch==1.12.1', 'pytube==12.1.0']
+2026-07-24 05:24:27 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following yanked versions: 2.4.0
+ERROR: Ignored the following versions that require a different python version: 1.21.2 Requires-Python >=3.7,<3.11; 1.21.3 Requires-Python >=3.7,<3.11; 1.21.4 Requires-Python >=3.7,<3.11; 1.21.5 Requires-Python >=3.7,<3.11; 1.21.6 Requires-Python >=
+2026-07-24 05:24:27 | WARNING  | test_runner | Tests FAILED for ai_scene_segmentation:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_scene_segmentation.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_scene_segmentation/test_ai_scene_segmentation.py'.
+E   ModuleNotFoundError: No module named 'cv2'
+ERROR test_ai_scene_segmentation.py
+2026-07-24 05:24:27 | WARNING  | tool_builder | ⚠️  ai_scene_segmentation tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_scene_segmentation.py ________________
+ImportError while importing test modul
+2026-07-24 05:24:35 | DEBUG    | llm_client | LLM response from github_models (4309 chars)
+2026-07-24 05:24:35 | DEBUG    | test_runner | Installing: ['opencv-python']
+2026-07-24 05:24:40 | WARNING  | test_runner | Tests FAILED for ai_scene_segmentation:
+test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+test_ai_scene_segmentation.py::test_segment_video_handles_invalid_video FAILED [100%]
+    raise FileNotFoundError(f"Input file '{input_path}' does not exist.")
+E   FileNotFoundError: Input file 'test_video.mp4' does not exist.
+    raise FileNotFoundError(f"Input file '{input_path}' does not exist.")
+E   FileNotFoundError: Input file 'invalid_video.mp4' does not exist.
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - FileNotFoundError: Input file 'test_video.mp4' does not exist.
+FAILED test_ai_scene_segmentation.py::test_segment_video_handles_invalid_video - FileNotFoundError: Input file 'invalid_video.mp4' does not exist.
+2026-07-24 05:24:40 | WARNING  | tool_builder | ⚠️  ai_scene_segmentation tests failed (loop 2/5) — test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+test_ai_scene_segmentation.py::test_segment_video_handles_invalid_video FAILED [100%]
+    raise FileNotFoundError(f"Inp
+2026-07-24 05:24:50 | DEBUG    | llm_client | LLM response from github_models (4686 chars)
+2026-07-24 05:24:50 | DEBUG    | test_runner | Installing: ['opencv-python']
+2026-07-24 05:24:50 | WARNING  | test_runner | Tests FAILED for ai_scene_segmentation:
+test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - NameError: name 'cv2' is not defined
+2026-07-24 05:24:50 | WARNING  | tool_builder | ⚠️  ai_scene_segmentation tests failed (loop 3/5) — test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - Na
+2026-07-24 05:25:00 | DEBUG    | llm_client | LLM response from github_models (4731 chars)
+2026-07-24 05:25:00 | DEBUG    | test_runner | Installing: ['opencv-python', 'pytest']
+2026-07-24 05:25:01 | WARNING  | test_runner | Tests FAILED for ai_scene_segmentation:
+test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - NameError: name 'cv2' is not defined
+2026-07-24 05:25:01 | WARNING  | tool_builder | ⚠️  ai_scene_segmentation tests failed (loop 4/5) — test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - Na
+2026-07-24 05:25:11 | DEBUG    | llm_client | LLM response from github_models (5096 chars)
+2026-07-24 05:25:11 | DEBUG    | test_runner | Installing: ['opencv-python', 'pytest']
+2026-07-24 05:25:12 | WARNING  | test_runner | Tests FAILED for ai_scene_segmentation:
+test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - NameError: name 'cv2' is not defined
+2026-07-24 05:25:12 | WARNING  | tool_builder | ⚠️  ai_scene_segmentation tests failed (loop 5/5) — test_ai_scene_segmentation.py::test_segment_video_creates_metadata FAILED [ 33%]
+E   NameError: name 'cv2' is not defined
+FAILED test_ai_scene_segmentation.py::test_segment_video_creates_metadata - Na
+2026-07-24 05:25:12 | ERROR    | tool_builder | ❌ ai_scene_segmentation failed after 5 loops
+2026-07-24 05:25:12 | INFO     | tool_builder | Building tool: ai_video_transcription_sync …
+2026-07-24 05:25:21 | DEBUG    | llm_client | LLM response from github_models (6240 chars)
+2026-07-24 05:25:21 | DEBUG    | test_runner | Installing: ['ffmpeg-python==0.2.0', 'openai-whisper==2023.3.20', 'python-decouple==3.8']
+2026-07-24 05:25:21 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement openai-whisper==2023.3.20 (from versions: 20230117, 20230124, 20230306, 20230307, 20230308, 20230314, 20230918, 20231105, 20231106, 20231117, 20240927, 20240930, 20250625)
+ERROR: No matching distribution found for openai-whisper==2023.3.
+2026-07-24 05:25:21 | WARNING  | test_runner | Tests FAILED for ai_video_transcription_sync:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_ai_video_transcription_sync.py _____________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_video_transcription_sync/test_ai_video_transcription_sync.py'.
+E   ModuleNotFoundError: No module named 'ffmpeg'
+ERROR test_ai_video_transcription_sync.py
+2026-07-24 05:25:21 | WARNING  | tool_builder | ⚠️  ai_video_transcription_sync tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_ai_video_transcription_sync.py _____________
+ImportError while importing test modul
+2026-07-24 05:25:34 | DEBUG    | llm_client | LLM response from github_models (6200 chars)
+2026-07-24 05:25:34 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai-whisper', 'python-decouple', 'pytest']
+2026-07-24 05:25:43 | WARNING  | test_runner | Tests FAILED for ai_video_transcription_sync:
+test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameError: name 'ffmpeg' is not defined
+FAILED test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error - NameError: name 'ffmpeg' is not defined
+2026-07-24 05:25:43 | WARNING  | tool_builder | ⚠️  ai_video_transcription_sync tests failed (loop 2/5) — test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameError: name 'ffmpeg' is not defi
+2026-07-24 05:25:55 | DEBUG    | llm_client | LLM response from github_models (6419 chars)
+2026-07-24 05:25:55 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai-whisper', 'python-decouple', 'pytest']
+2026-07-24 05:25:58 | WARNING  | test_runner | Tests FAILED for ai_video_transcription_sync:
+test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameError: name 'ffmpeg' is not defined
+FAILED test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error - NameError: name 'ffmpeg' is not defined
+2026-07-24 05:25:58 | WARNING  | tool_builder | ⚠️  ai_video_transcription_sync tests failed (loop 3/5) — test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameErro
+2026-07-24 05:26:09 | DEBUG    | llm_client | LLM response from github_models (6416 chars)
+2026-07-24 05:26:09 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai-whisper', 'python-decouple', 'pytest']
+2026-07-24 05:26:11 | WARNING  | test_runner | Tests FAILED for ai_video_transcription_sync:
+test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameError: name 'ffmpeg' is not defined
+FAILED test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error - NameError: name 'ffmpeg' is not defined
+2026-07-24 05:26:11 | WARNING  | tool_builder | ⚠️  ai_video_transcription_sync tests failed (loop 4/5) — test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameErro
+2026-07-24 05:26:21 | DEBUG    | llm_client | LLM response from github_models (6406 chars)
+2026-07-24 05:26:21 | DEBUG    | test_runner | Installing: ['ffmpeg-python', 'openai-whisper', 'python-decouple', 'pytest']
+2026-07-24 05:26:24 | WARNING  | test_runner | Tests FAILED for ai_video_transcription_sync:
+test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameError: name 'ffmpeg' is not defined
+FAILED test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error - NameError: name 'ffmpeg' is not defined
+2026-07-24 05:26:24 | WARNING  | tool_builder | ⚠️  ai_video_transcription_sync tests failed (loop 5/5) — test_ai_video_transcription_sync.py::test_transcribe_video_ffmpeg_error FAILED [100%]
+    with patch("ai_video_transcription_sync.ffmpeg.input", side_effect=ffmpeg.Error("ffmpeg error")):
+E   NameErro
+2026-07-24 05:26:24 | ERROR    | tool_builder | ❌ ai_video_transcription_sync failed after 5 loops
+2026-07-24 05:26:24 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-07-24 05:26:24 | INFO     | main |   Built 2/5 tools successfully
+2026-07-24 05:26:24 | INFO     | main |     ✅ llm_quantizer (loops: 3)
+2026-07-24 05:26:24 | INFO     | main |     ✅ llm_batch_splitter (loops: 1)
+2026-07-24 05:26:24 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-07-24 05:26:24 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-07-24 05:26:24 | INFO     | github_publisher |   Created zip: llm_quantizer.zip (2136 bytes)
+2026-07-24 05:26:24 | INFO     | github_publisher | Saved llm_quantizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-24/llm_quantizer
+2026-07-24 05:26:24 | INFO     | github_publisher |   Created zip: llm_batch_splitter.zip (2629 bytes)
+2026-07-24 05:26:24 | INFO     | github_publisher | Saved llm_batch_splitter → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-24/llm_batch_splitter
+2026-07-24 05:26:24 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-07-24 05:26:24 | INFO     | main |   Published 2 tools:
+2026-07-24 05:26:24 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-24/llm_quantizer
+2026-07-24 05:26:24 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-24/llm_batch_splitter
+2026-07-24 05:26:24 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-07-24 05:26:24 | INFO     | main | ✅ Generated tools_index.json with 432 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
