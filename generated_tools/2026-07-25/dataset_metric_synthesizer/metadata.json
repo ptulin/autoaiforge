@@ -1,0 +1,13 @@
+{
+  "tool_name": "dataset_metric_synthesizer",
+  "display_name": "Dataset & Metric Synthesizer",
+  "description": "This library allows AI developers to create synthetic benchmarking datasets and evaluation metrics suited to specific tasks. It supports generating text-based datasets with controlled complexity and defining custom scoring functions for evaluating LLMs.",
+  "topic": "LLM Benchmarking Tools",
+  "date": "2026-07-25",
+  "generated": "2026-07-25T05:12:07.080954+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-25/dataset_metric_synthesizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-25/dataset_metric_synthesizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-25/dataset_metric_synthesizer/dataset_metric_synthesizer.zip"
+}

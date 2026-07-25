@@ -1,0 +1,13 @@
+{
+  "tool_name": "multi_agent_git_sync",
+  "display_name": "Multi-Agent Git Sync",
+  "description": "This tool acts as a coordination layer for multiple AI coding agents working on the same Git repository. It provides functionality to lock files, manage branch assignments, and resolve merge conflicts intelligently using AI-based heuristics. This ensures a smooth collaborative coding workflow for AI agents interacting with shared codebases.",
+  "topic": "AI Agent Coordination",
+  "date": "2026-07-25",
+  "generated": "2026-07-25T05:12:07.080954+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-25/multi_agent_git_sync",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-25/multi_agent_git_sync/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-25/multi_agent_git_sync/multi_agent_git_sync.zip"
+}
