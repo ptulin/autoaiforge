@@ -1,0 +1,13 @@
+{
+  "tool_name": "micro_llm_splitter",
+  "display_name": "Micro LLM Splitter",
+  "description": "This tool splits large language models into smaller, manageable sub-models that can fit within the memory constraints of microcontrollers. It partitions weights intelligently and adds logic for distributed inference across microcontroller clusters.",
+  "topic": "Running LLMs on Microcontrollers",
+  "date": "2026-07-26",
+  "generated": "2026-07-26T05:28:38.763269+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-26/micro_llm_splitter",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-26/micro_llm_splitter/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-26/micro_llm_splitter/micro_llm_splitter.zip"
+}
