@@ -1,7 +1,20 @@
 {
-  "last_updated": "2026-07-26T05:34:02.882977+00:00",
-  "total_tools": 439,
+  "last_updated": "2026-07-27T05:55:50.103850+00:00",
+  "total_tools": 440,
   "tools": [
+    {
+      "tool_name": "distilled_model_evaluator",
+      "display_name": "Distilled Model Evaluator",
+      "description": "This CLI tool evaluates the performance of distilled AI models against their full-sized counterparts. It provides a summary of metrics such as accuracy, latency, and memory usage, helping developers assess the trade-offs made during model distillation. It's ideal for tracking model quality and computational efficiency post-distillation.",
+      "topic": "AI Model Distillation",
+      "date": "2026-07-27",
+      "generated": "2026-07-27T05:47:27.652736+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-27/distilled_model_evaluator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-27/distilled_model_evaluator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-27/distilled_model_evaluator/distilled_model_evaluator.zip"
+    },
     {
       "tool_name": "dataset_tokenizer_benchmark",
       "display_name": "Dataset Tokenizer Benchmark",

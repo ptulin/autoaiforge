@@ -1,0 +1,379 @@
+2026-07-27 05:47:27 | INFO     | main | ============================================================
+2026-07-27 05:47:27 | INFO     | main | AutoAIForge starting run: 2026-07-27T05:47:27.652736+00:00
+2026-07-27 05:47:27 | INFO     | main | ============================================================
+2026-07-27 05:47:27 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-27 05:47:27 | INFO     | youtube_scraper | YouTube client ready
+2026-07-27 05:47:27 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A27Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A27Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-25T05%3A47%3A28Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-27 05:47:28 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-27 05:47:28 | INFO     | main |   YouTube: 0 items
+2026-07-27 05:47:28 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-27 05:47:33 | INFO     | rss_scraper | HackerNews: 161 items
+2026-07-27 05:47:34 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-27 05:47:35 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-27 05:47:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-27 05:47:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-27 05:47:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-27 05:47:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-27 05:47:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-27 05:47:41 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-27 05:47:47 | INFO     | rss_scraper | ArXiv: 97 items
+2026-07-27 05:47:51 | INFO     | rss_scraper | Dev.to: 188 items
+2026-07-27 05:47:52 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-27 05:47:52 | INFO     | rss_scraper | Free sources total: 496 unique items
+2026-07-27 05:47:52 | INFO     | main |   RSS/API sources: 496 items
+2026-07-27 05:47:52 | INFO     | main |   Total scraped: 496 items
+2026-07-27 05:47:52 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-27 05:47:52 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-27 05:47:52 | INFO     | db_manager | Purged 373 old news items
+2026-07-27 05:47:52 | INFO     | db_manager | Inserted 329/496 news items
+2026-07-27 05:47:52 | INFO     | main |   SQLite: 329 new items (total: 9616)
+2026-07-27 05:47:56 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-27 05:47:58 | INFO     | vector_store | VectorStore ready
+2026-07-27 05:48:01 | INFO     | vector_store | Indexed 580 items into vector store
+2026-07-27 05:48:01 | INFO     | main |   Vector store: 580 items indexed
+2026-07-27 05:48:01 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-27 05:48:01 | INFO     | topic_analyzer | Analyzing 580 items for top 10 topics …
+2026-07-27 05:48:08 | DEBUG    | llm_client | LLM response from github_models (3524 chars)
+2026-07-27 05:48:08 | INFO     | topic_analyzer | Identified 10 topics
+2026-07-27 05:48:08 | INFO     | main |   Found 10 topics:
+2026-07-27 05:48:08 | INFO     | main |      1. [9/10] Local Model Deployment Tools
+2026-07-27 05:48:08 | INFO     | main |      2. [9/10] AI Model Distillation
+2026-07-27 05:48:08 | INFO     | main |      3. [8/10] Static AI Risk Analysis
+2026-07-27 05:48:08 | INFO     | main |      4. [8/10] Multi-domain Reasoning Challenges
+2026-07-27 05:48:08 | INFO     | main |      5. [8/10] Debugging AI Agents
+2026-07-27 05:48:08 | INFO     | main |      6. [7/10] Model Cost Profiling
+2026-07-27 05:48:08 | INFO     | main |      7. [7/10] Token Burn Rate Optimization
+2026-07-27 05:48:08 | INFO     | main |      8. [7/10] Model Gateway Routing
+2026-07-27 05:48:08 | INFO     | main |      9. [6/10] Relational Foundation Models
+2026-07-27 05:48:08 | INFO     | main |     10. [6/10] Enhanced Local Utilities with LLMs
+2026-07-27 05:48:08 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-27 05:48:09 | INFO     | main |   Existing collection: 439 tools across 236 topics
+2026-07-27 05:48:09 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-07-27 05:48:15 | DEBUG    | llm_client | LLM response from github_models (3422 chars)
+2026-07-27 05:48:15 | INFO     | idea_generator | Generated 3 ideas for topic: Local Model Deployment Tools
+2026-07-27 05:48:20 | DEBUG    | llm_client | LLM response from github_models (2620 chars)
+2026-07-27 05:48:20 | INFO     | idea_generator | Generated 2 ideas for topic: AI Model Distillation
+2026-07-27 05:48:20 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-27 05:48:20 | INFO     | main |   Generated 5 tool ideas:
+2026-07-27 05:48:20 | INFO     | main |     • local_pipeline_tracer: A CLI tool for tracing and visualizing the execution of AI pipelines on your loc
+2026-07-27 05:48:20 | INFO     | main |     • model_inference_profiler: A Python CLI tool that profiles the inference time and memory usage of AI models
+2026-07-27 05:48:20 | INFO     | main |     • local_model_logger: A utility to locally log and version control model training and inference metada
+2026-07-27 05:48:20 | INFO     | main |     • distillation_optimizer: This tool automates the hyperparameter tuning process for AI model distillation.
+2026-07-27 05:48:20 | INFO     | main |     • distilled_model_evaluator: This CLI tool evaluates the performance of distilled AI models against their ful
+2026-07-27 05:48:20 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-27 05:48:20 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-27 05:48:28 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-27 05:48:28 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-27 05:48:28 | INFO     | tool_builder | Building tool: local_pipeline_tracer …
+2026-07-27 05:48:40 | DEBUG    | llm_client | LLM response from github_models (4816 chars)
+2026-07-27 05:48:40 | DEBUG    | test_runner | Installing: ['networkx==3.1', 'matplotlib==3.7.2', 'typer==0.9.0']
+2026-07-27 05:48:46 | WARNING  | test_runner | Tests FAILED for local_pipeline_tracer:
+test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 33%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [100%]
+E   IndentationError: unexpected indent
+Error parsing script: unexpected indent (<unknown>, line 2)
+E   SyntaxError: '(' was never closed
+Error parsing script: '(' was never closed (<unknown>, line 1)
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error - click.exceptions.Exit
+2026-07-27 05:48:46 | WARNING  | tool_builder | ⚠️  local_pipeline_tracer tests failed (loop 1/5) — test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 33%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [100%]
+E   IndentationError: unexpected indent
+
+2026-07-27 05:48:55 | DEBUG    | llm_client | LLM response from github_models (5188 chars)
+2026-07-27 05:48:55 | DEBUG    | test_runner | Installing: ['typer', 'networkx', 'matplotlib']
+2026-07-27 05:48:56 | WARNING  | test_runner | Tests FAILED for local_pipeline_tracer:
+test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found FAILED [100%]
+E   IndentationError: unexpected indent
+Error parsing script: unexpected indent (<unknown>, line 2)
+E   SyntaxError: '(' was never closed
+Error parsing script: '(' was never closed (<unknown>, line 1)
+E   FileNotFoundError: [Errno 2] No such file or directory: 'non_existent_file.py'
+Error: File not found: non_existent_file.py
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found - click.exceptions.Exit
+2026-07-27 05:48:56 | WARNING  | tool_builder | ⚠️  local_pipeline_tracer tests failed (loop 2/5) — test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_pars
+2026-07-27 05:49:05 | DEBUG    | llm_client | LLM response from github_models (5268 chars)
+2026-07-27 05:49:05 | DEBUG    | test_runner | Installing: ['typer', 'networkx', 'matplotlib']
+2026-07-27 05:49:06 | WARNING  | test_runner | Tests FAILED for local_pipeline_tracer:
+test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found FAILED [100%]
+E   IndentationError: unexpected indent
+Error parsing script: unexpected indent (<unknown>, line 2)
+E   SyntaxError: '(' was never closed
+Error parsing script: '(' was never closed (<unknown>, line 1)
+E   FileNotFoundError
+Error: File not found: non_existent_file.py
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found - click.exceptions.Exit
+2026-07-27 05:49:06 | WARNING  | tool_builder | ⚠️  local_pipeline_tracer tests failed (loop 3/5) — test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_pars
+2026-07-27 05:49:13 | DEBUG    | llm_client | LLM response from github_models (5287 chars)
+2026-07-27 05:49:13 | DEBUG    | test_runner | Installing: ['typer', 'networkx', 'matplotlib']
+2026-07-27 05:49:14 | WARNING  | test_runner | Tests FAILED for local_pipeline_tracer:
+test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found FAILED [100%]
+E   IndentationError: unexpected indent
+Error parsing script: unexpected indent (<unknown>, line 2)
+E   SyntaxError: '(' was never closed
+Error parsing script: '(' was never closed (<unknown>, line 1)
+E   FileNotFoundError
+Error: File not found: non_existent_file.py
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found - click.exceptions.Exit
+2026-07-27 05:49:14 | WARNING  | tool_builder | ⚠️  local_pipeline_tracer tests failed (loop 4/5) — test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_pars
+2026-07-27 05:49:21 | DEBUG    | llm_client | LLM response from github_models (5017 chars)
+2026-07-27 05:49:21 | DEBUG    | test_runner | Installing: ['typer', 'networkx', 'matplotlib']
+2026-07-27 05:49:22 | WARNING  | test_runner | Tests FAILED for local_pipeline_tracer:
+test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found FAILED [100%]
+E   IndentationError: unexpected indent
+Error parsing script: unexpected indent (<unknown>, line 2)
+E   SyntaxError: '(' was never closed
+Error parsing script: '(' was never closed (<unknown>, line 1)
+E   FileNotFoundError
+Error: File not found: non_existent_file.py
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error - click.exceptions.Exit
+FAILED test_local_pipeline_tracer.py::test_parse_pipeline_file_not_found - click.exceptions.Exit
+2026-07-27 05:49:22 | WARNING  | tool_builder | ⚠️  local_pipeline_tracer tests failed (loop 5/5) — test_local_pipeline_tracer.py::test_parse_pipeline FAILED                [ 25%]
+test_local_pipeline_tracer.py::test_parse_pipeline_syntax_error FAILED   [ 75%]
+test_local_pipeline_tracer.py::test_pars
+2026-07-27 05:49:22 | ERROR    | tool_builder | ❌ local_pipeline_tracer failed after 5 loops
+2026-07-27 05:49:22 | INFO     | tool_builder | Building tool: model_inference_profiler …
+2026-07-27 05:49:33 | DEBUG    | llm_client | LLM response from github_models (5350 chars)
+2026-07-27 05:49:33 | DEBUG    | test_runner | Installing: ['psutil==5.9.5', 'typer==0.9.0']
+2026-07-27 05:49:34 | WARNING  | test_runner | Tests FAILED for model_inference_profiler:
+test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:49:34 | WARNING  | tool_builder | ⚠️  model_inference_profiler tests failed (loop 1/5) — test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:49:42 | DEBUG    | llm_client | LLM response from github_models (5536 chars)
+2026-07-27 05:49:42 | DEBUG    | test_runner | Installing: ['typer', 'psutil', 'pytest']
+2026-07-27 05:49:42 | WARNING  | test_runner | Tests FAILED for model_inference_profiler:
+test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:49:42 | WARNING  | tool_builder | ⚠️  model_inference_profiler tests failed (loop 2/5) — test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:49:52 | DEBUG    | llm_client | LLM response from github_models (5850 chars)
+2026-07-27 05:49:52 | DEBUG    | test_runner | Installing: ['typer', 'psutil', 'pytest']
+2026-07-27 05:49:52 | WARNING  | test_runner | Tests FAILED for model_inference_profiler:
+test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:49:52 | WARNING  | tool_builder | ⚠️  model_inference_profiler tests failed (loop 3/5) — test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:50:04 | DEBUG    | llm_client | LLM response from github_models (6304 chars)
+2026-07-27 05:50:04 | DEBUG    | test_runner | Installing: ['typer', 'psutil', 'pytest']
+2026-07-27 05:50:05 | WARNING  | test_runner | Tests FAILED for model_inference_profiler:
+test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:50:05 | WARNING  | tool_builder | ⚠️  model_inference_profiler tests failed (loop 4/5) — test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:50:14 | DEBUG    | llm_client | LLM response from github_models (6027 chars)
+2026-07-27 05:50:14 | DEBUG    | test_runner | Installing: ['typer', 'psutil']
+2026-07-27 05:50:14 | WARNING  | test_runner | Tests FAILED for model_inference_profiler:
+test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:50:14 | WARNING  | tool_builder | ⚠️  model_inference_profiler tests failed (loop 5/5) — test_model_inference_profiler.py::test_main FAILED                       [100%]
+    assert result.exit_code == 0
+E   assert 2 == 0
+FAILED test_model_inference_profiler.py::test_main - assert 2 == 0
+2026-07-27 05:50:14 | ERROR    | tool_builder | ❌ model_inference_profiler failed after 5 loops
+2026-07-27 05:50:14 | INFO     | tool_builder | Building tool: local_model_logger …
+2026-07-27 05:50:22 | DEBUG    | llm_client | LLM response from github_models (5415 chars)
+2026-07-27 05:50:22 | DEBUG    | test_runner | Installing: ['pandas==1.3.3']
+2026-07-27 05:51:40 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × installing build dependencies for pandas did not run successfully.
+  │ exit code: 1
+  ╰─> [1165 lines of output]
+      Ignoring numpy: markers 'python_version == "3.7" and (platform_machine != "arm64" or platform_system != "Darwin") and platform_machine !
+2026-07-27 05:51:40 | WARNING  | test_runner | Tests FAILED for local_model_logger:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/local_model_logger/test_local_model_logger.py'.
+E   ModuleNotFoundError: No module named 'pandas'
+ERROR test_local_model_logger.py
+2026-07-27 05:51:40 | WARNING  | tool_builder | ⚠️  local_model_logger tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+ImportError while importing test modul
+2026-07-27 05:51:47 | DEBUG    | llm_client | LLM response from github_models (5508 chars)
+2026-07-27 05:51:47 | DEBUG    | test_runner | Installing: ['pandas']
+2026-07-27 05:51:50 | WARNING  | test_runner | Tests FAILED for local_model_logger:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: '(' was never closed
+ERROR test_local_model_logger.py
+2026-07-27 05:51:50 | WARNING  | tool_builder | ⚠️  local_model_logger tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-07-27 05:51:57 | DEBUG    | llm_client | LLM response from github_models (5567 chars)
+2026-07-27 05:51:57 | DEBUG    | test_runner | Installing: ['pandas']
+2026-07-27 05:51:58 | WARNING  | test_runner | Tests FAILED for local_model_logger:
+test_local_model_logger.py::test_log_metrics FAILED                      [ 33%]
+test_local_model_logger.py::test_log_hyperparameters FAILED              [ 66%]
+test_local_model_logger.py::test_query_logs FAILED                       [100%]
+E   sqlite3.OperationalError: no such table: logs
+E   sqlite3.OperationalError: no such table: logs
+E   sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_log_metrics - sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_log_hyperparameters - sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_query_logs - sqlite3.OperationalError: no such table: logs
+2026-07-27 05:51:58 | WARNING  | tool_builder | ⚠️  local_model_logger tests failed (loop 3/5) — test_local_model_logger.py::test_log_metrics FAILED                      [ 33%]
+test_local_model_logger.py::test_log_hyperparameters FAILED              [ 66%]
+test_local_model_logger.py::test_query_l
+2026-07-27 05:52:05 | DEBUG    | llm_client | LLM response from github_models (5627 chars)
+2026-07-27 05:52:05 | DEBUG    | test_runner | Installing: ['pandas']
+2026-07-27 05:52:06 | WARNING  | test_runner | Tests FAILED for local_model_logger:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: '(' was never closed
+ERROR test_local_model_logger.py
+2026-07-27 05:52:06 | WARNING  | tool_builder | ⚠️  local_model_logger tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_local_model_logger.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-07-27 05:52:12 | DEBUG    | llm_client | LLM response from github_models (5671 chars)
+2026-07-27 05:52:12 | DEBUG    | test_runner | Installing: ['sqlite3', 'pandas']
+2026-07-27 05:52:13 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement sqlite3 (from versions: none)
+ERROR: No matching distribution found for sqlite3
+
+2026-07-27 05:52:13 | WARNING  | test_runner | Tests FAILED for local_model_logger:
+test_local_model_logger.py::test_log_metrics FAILED                      [ 33%]
+test_local_model_logger.py::test_log_hyperparameters FAILED              [ 66%]
+test_local_model_logger.py::test_query_logs FAILED                       [100%]
+E   sqlite3.OperationalError: no such table: logs
+E   sqlite3.OperationalError: no such table: logs
+E   sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_log_metrics - sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_log_hyperparameters - sqlite3.OperationalError: no such table: logs
+FAILED test_local_model_logger.py::test_query_logs - sqlite3.OperationalError: no such table: logs
+2026-07-27 05:52:13 | WARNING  | tool_builder | ⚠️  local_model_logger tests failed (loop 5/5) — test_local_model_logger.py::test_log_metrics FAILED                      [ 33%]
+test_local_model_logger.py::test_log_hyperparameters FAILED              [ 66%]
+test_local_model_logger.py::test_query_l
+2026-07-27 05:52:13 | ERROR    | tool_builder | ❌ local_model_logger failed after 5 loops
+2026-07-27 05:52:13 | INFO     | tool_builder | Building tool: distillation_optimizer …
+2026-07-27 05:52:28 | DEBUG    | llm_client | LLM response from github_models (8343 chars)
+2026-07-27 05:52:28 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'optuna==3.3.0', 'scikit-learn==1.3.0', 'pyyaml==6.0']
+2026-07-27 05:53:14 | WARNING  | test_runner | Tests FAILED for distillation_optimizer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_distillation_optimizer.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E       assert "lr": 0.01" in lines[1]
+E   SyntaxError: unterminated string literal (detected at line 81)
+ERROR test_distillation_optimizer.py
+2026-07-27 05:53:14 | WARNING  | tool_builder | ⚠️  distillation_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_distillation_optimizer.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-07-27 05:53:25 | DEBUG    | llm_client | LLM response from github_models (8424 chars)
+2026-07-27 05:53:25 | DEBUG    | test_runner | Installing: ['torch', 'optuna', 'scikit-learn', 'pyyaml']
+2026-07-27 05:53:28 | WARNING  | test_runner | Tests FAILED for distillation_optimizer:
+test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert "{\"lr\": 0.01},0.85" in lines[1].strip()
+E   assert '{"lr": 0.01},0.85' in "{'lr': 0.01},0.85"
+FAILED test_distillation_optimizer.py::test_save_results_csv - assert '{"lr": 0.01},0.85' in "{'lr': 0.01},0.85"
+2026-07-27 05:53:28 | WARNING  | tool_builder | ⚠️  distillation_optimizer tests failed (loop 2/5) — test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert "{\"lr\": 0.01},0.85" in lines[1].strip()
+E   assert '{"lr": 0.01},0.85' in "{'lr': 0.01},0.85"
+FAILED test_d
+2026-07-27 05:53:28 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-27 05:54:40 | DEBUG    | llm_client | LLM response from github_models (8223 chars)
+2026-07-27 05:54:40 | DEBUG    | test_runner | Installing: ['torch', 'optuna', 'scikit-learn', 'pyyaml']
+2026-07-27 05:54:43 | WARNING  | test_runner | Tests FAILED for distillation_optimizer:
+test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert json.dumps(results['best_params']) + "," + str(results['best_score']) in lines[1].strip()
+E   assert (('{"lr": 0.01}' + ',') + '0.85') in '"{""lr"": 0.01}",0.85'
+FAILED test_distillation_optimizer.py::test_save_results_csv - assert (('{"lr": 0.01}' + ',') + '0.85') in '"{""lr"": 0.01}",0.85'
+2026-07-27 05:54:43 | WARNING  | tool_builder | ⚠️  distillation_optimizer tests failed (loop 3/5) — test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert json.dumps(results['best_params']) + "," + str(results['best_score']) in lines[1].strip()
+E   assert (('{"lr"
+2026-07-27 05:55:15 | DEBUG    | llm_client | LLM response from github_models (8366 chars)
+2026-07-27 05:55:15 | DEBUG    | test_runner | Installing: ['torch', 'optuna', 'scikit-learn', 'pyyaml']
+2026-07-27 05:55:18 | WARNING  | test_runner | Tests FAILED for distillation_optimizer:
+test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert lines[1].strip() == f'"{json.dumps(results["best_params"])}",{results["best_score"]}'
+E   assert '"{""lr"": 0.01}",0.85' == '"{"lr": 0.01}",0.85'
+FAILED test_distillation_optimizer.py::test_save_results_csv - assert '"{""lr"": 0.01}",0.85' == '"{"lr": 0.01}",0.85'
+2026-07-27 05:55:18 | WARNING  | tool_builder | ⚠️  distillation_optimizer tests failed (loop 4/5) — test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert lines[1].strip() == f'"{json.dumps(results["best_params"])}",{results["best_score"]}'
+E   assert '"{""lr"": 0
+2026-07-27 05:55:31 | DEBUG    | llm_client | LLM response from github_models (8551 chars)
+2026-07-27 05:55:31 | DEBUG    | test_runner | Installing: ['torch', 'optuna', 'scikit-learn', 'pyyaml']
+2026-07-27 05:55:33 | WARNING  | test_runner | Tests FAILED for distillation_optimizer:
+test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert lines[1].strip() == f'"{json.dumps(results["best_params"])}",{results["best_score"]}'
+E   assert '"{""lr"": 0.01}",0.85' == '"{"lr": 0.01}",0.85'
+FAILED test_distillation_optimizer.py::test_save_results_csv - assert '"{""lr"": 0.01}",0.85' == '"{"lr": 0.01}",0.85'
+2026-07-27 05:55:33 | WARNING  | tool_builder | ⚠️  distillation_optimizer tests failed (loop 5/5) — test_distillation_optimizer.py::test_save_results_csv FAILED             [100%]
+    assert lines[1].strip() == f'"{json.dumps(results["best_params"])}",{results["best_score"]}'
+E   assert '"{""lr"": 0
+2026-07-27 05:55:33 | ERROR    | tool_builder | ❌ distillation_optimizer failed after 5 loops
+2026-07-27 05:55:33 | INFO     | tool_builder | Building tool: distilled_model_evaluator …
+2026-07-27 05:55:42 | DEBUG    | llm_client | LLM response from github_models (6069 chars)
+2026-07-27 05:55:42 | DEBUG    | test_runner | Installing: ['torch==2.0.1', 'numpy==1.23.5', 'pandas==1.5.3', 'tabulate==0.9.0']
+2026-07-27 05:55:50 | INFO     | test_runner | Tests PASSED for distilled_model_evaluator
+2026-07-27 05:55:50 | INFO     | tool_builder | ✅ distilled_model_evaluator passed tests on loop 1
+2026-07-27 05:55:50 | INFO     | tool_builder | Built 1/5 tools successfully
+2026-07-27 05:55:50 | INFO     | main |   Built 1/5 tools successfully
+2026-07-27 05:55:50 | INFO     | main |     ✅ distilled_model_evaluator (loops: 1)
+2026-07-27 05:55:50 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-07-27 05:55:50 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-07-27 05:55:50 | INFO     | github_publisher |   Created zip: distilled_model_evaluator.zip (2714 bytes)
+2026-07-27 05:55:50 | INFO     | github_publisher | Saved distilled_model_evaluator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-27/distilled_model_evaluator
+2026-07-27 05:55:50 | INFO     | github_publisher | Saved 1/1 tools to generated_tools/
+2026-07-27 05:55:50 | INFO     | main |   Published 1 tools:
+2026-07-27 05:55:50 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-27/distilled_model_evaluator
+2026-07-27 05:55:50 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-07-27 05:55:50 | INFO     | main | ✅ Generated tools_index.json with 440 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
