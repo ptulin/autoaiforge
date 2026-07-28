@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_hardware_optimizer",
+  "display_name": "LLM Hardware Optimizer",
+  "description": "A CLI tool to analyze local hardware capabilities and generate an optimized configuration file for running large language models efficiently. It considers GPU/CPU specs, available memory, and other hardware details to recommend optimal batch sizes, precision modes (FP16/FP32), and parallelism settings.",
+  "topic": "Local LLM Inference Tools",
+  "date": "2026-07-28",
+  "generated": "2026-07-28T05:02:26.522284+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-28/llm_hardware_optimizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_hardware_optimizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_hardware_optimizer/llm_hardware_optimizer.zip"
+}

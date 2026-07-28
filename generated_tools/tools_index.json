@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-07-27T05:55:50.103850+00:00",
-  "total_tools": 440,
+  "last_updated": "2026-07-28T05:09:10.051045+00:00",
+  "total_tools": 443,
   "tools": [
+    {
+      "tool_name": "llm_batch_tester",
+      "display_name": "LLM Batch Inference Tester",
+      "description": "A Python library and CLI tool for benchmarking LLM inference speeds with different batch sizes and hardware configurations. This helps AI developers evaluate the trade-offs between throughput and latency when running models locally.",
+      "topic": "Local LLM Inference Tools",
+      "date": "2026-07-28",
+      "generated": "2026-07-28T05:02:26.522284+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-28/llm_batch_tester",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_batch_tester/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_batch_tester/llm_batch_tester.zip"
+    },
+    {
+      "tool_name": "llm_hardware_optimizer",
+      "display_name": "LLM Hardware Optimizer",
+      "description": "A CLI tool to analyze local hardware capabilities and generate an optimized configuration file for running large language models efficiently. It considers GPU/CPU specs, available memory, and other hardware details to recommend optimal batch sizes, precision modes (FP16/FP32), and parallelism settings.",
+      "topic": "Local LLM Inference Tools",
+      "date": "2026-07-28",
+      "generated": "2026-07-28T05:02:26.522284+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-28/llm_hardware_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_hardware_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_hardware_optimizer/llm_hardware_optimizer.zip"
+    },
+    {
+      "tool_name": "llm_local_cache_manager",
+      "display_name": "LLM Local Cache Manager",
+      "description": "A utility for managing local caching of LLMs and their weights. It identifies redundant or unused model files, clears up disk space, and supports downloading specific versions of models. This ensures efficient local storage usage for AI developers working with multiple LLMs.",
+      "topic": "Local LLM Inference Tools",
+      "date": "2026-07-28",
+      "generated": "2026-07-28T05:02:26.522284+00:00",
+      "loops_needed": 5,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-28/llm_local_cache_manager",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_local_cache_manager/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-28/llm_local_cache_manager/llm_local_cache_manager.zip"
+    },
     {
       "tool_name": "distilled_model_evaluator",
       "display_name": "Distilled Model Evaluator",
