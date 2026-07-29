@@ -1,0 +1,326 @@
+2026-07-29 05:20:30 | INFO     | main | ============================================================
+2026-07-29 05:20:30 | INFO     | main | AutoAIForge starting run: 2026-07-29T05:20:30.661643+00:00
+2026-07-29 05:20:30 | INFO     | main | ============================================================
+2026-07-29 05:20:30 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-29 05:20:30 | INFO     | youtube_scraper | YouTube client ready
+2026-07-29 05:20:30 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A30Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:30 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A30Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:30 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A30Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A30Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-27T05%3A20%3A31Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-29 05:20:31 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-29 05:20:31 | INFO     | main |   YouTube: 0 items
+2026-07-29 05:20:31 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-29 05:20:36 | INFO     | rss_scraper | HackerNews: 161 items
+2026-07-29 05:20:36 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-29 05:20:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-29 05:20:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-29 05:20:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-29 05:20:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-29 05:20:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-29 05:20:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-29 05:20:44 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-29 05:20:49 | INFO     | rss_scraper | ArXiv: 105 items
+2026-07-29 05:20:54 | INFO     | rss_scraper | Dev.to: 190 items
+2026-07-29 05:20:55 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-29 05:20:55 | INFO     | rss_scraper | Free sources total: 506 unique items
+2026-07-29 05:20:55 | INFO     | main |   RSS/API sources: 506 items
+2026-07-29 05:20:55 | INFO     | main |   Total scraped: 506 items
+2026-07-29 05:20:55 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-29 05:20:55 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-29 05:20:55 | INFO     | db_manager | Purged 257 old news items
+2026-07-29 05:20:55 | INFO     | db_manager | Inserted 383/506 news items
+2026-07-29 05:20:55 | INFO     | main |   SQLite: 383 new items (total: 9760)
+2026-07-29 05:21:00 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-29 05:21:03 | INFO     | vector_store | VectorStore ready
+2026-07-29 05:21:12 | INFO     | vector_store | Indexed 975 items into vector store
+2026-07-29 05:21:12 | INFO     | main |   Vector store: 975 items indexed
+2026-07-29 05:21:12 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-29 05:21:12 | INFO     | topic_analyzer | Analyzing 975 items for top 10 topics …
+2026-07-29 05:21:21 | DEBUG    | llm_client | LLM response from github_models (3998 chars)
+2026-07-29 05:21:21 | INFO     | topic_analyzer | Identified 10 topics
+2026-07-29 05:21:21 | INFO     | main |   Found 10 topics:
+2026-07-29 05:21:21 | INFO     | main |      1. [9/10] Personalized LLM Fine-Tuning
+2026-07-29 05:21:21 | INFO     | main |      2. [8/10] Low-Latency AI Inference
+2026-07-29 05:21:21 | INFO     | main |      3. [8/10] AI for Code Debugging
+2026-07-29 05:21:21 | INFO     | main |      4. [8/10] Unmanaged AI Detection
+2026-07-29 05:21:21 | INFO     | main |      5. [7/10] AI-Powered Scientific Paper Reviews
+2026-07-29 05:21:21 | INFO     | main |      6. [7/10] AI-Driven Intent to Production Systems
+2026-07-29 05:21:21 | INFO     | main |      7. [7/10] AI Memory Optimization
+2026-07-29 05:21:21 | INFO     | main |      8. [7/10] Agentic AI Security Frameworks
+2026-07-29 05:21:21 | INFO     | main |      9. [6/10] AI Moderation in Multiplayer Games
+2026-07-29 05:21:21 | INFO     | main |     10. [6/10] AI-Generated Handwriting Conversion
+2026-07-29 05:21:21 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-29 05:21:21 | INFO     | main |   Existing collection: 443 tools across 238 topics
+2026-07-29 05:21:21 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-07-29 05:21:28 | DEBUG    | llm_client | LLM response from github_models (3545 chars)
+2026-07-29 05:21:28 | INFO     | idea_generator | Generated 3 ideas for topic: Personalized LLM Fine-Tuning
+2026-07-29 05:21:29 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-29 05:22:34 | DEBUG    | llm_client | LLM response from github_models (2470 chars)
+2026-07-29 05:22:34 | INFO     | idea_generator | Generated 2 ideas for topic: Low-Latency AI Inference
+2026-07-29 05:22:34 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-29 05:22:34 | INFO     | main |   Generated 5 tool ideas:
+2026-07-29 05:22:34 | INFO     | main |     • writekin_tuning: Writekin Fine-Tuner streamlines the process of fine-tuning local LLMs, such as G
+2026-07-29 05:22:34 | INFO     | main |     • personal_dataset_formatter: This tool helps users convert their personal writing datasets into standardized 
+2026-07-29 05:22:34 | INFO     | main |     • llm_eval_tuner: This tool offers an evaluation suite to measure the impact of fine-tuning on loc
+2026-07-29 05:22:34 | INFO     | main |     • latency_tuner: This tool allows AI developers to optimize and tune their inference pipelines fo
+2026-07-29 05:22:34 | INFO     | main |     • realtime_inference_profiler: This tool helps developers simulate and profile their AI models under real-time 
+2026-07-29 05:22:34 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-29 05:22:34 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-29 05:22:44 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-29 05:22:44 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-29 05:22:44 | INFO     | tool_builder | Building tool: writekin_tuning …
+2026-07-29 05:22:54 | DEBUG    | llm_client | LLM response from github_models (5891 chars)
+2026-07-29 05:22:54 | DEBUG    | test_runner | Installing: ['transformers==4.33.3', 'datasets==2.14.5', 'torch==2.0.1']
+2026-07-29 05:23:52 | WARNING  | test_runner | Tests FAILED for writekin_tuning:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_writekin_tuning.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-07-29 05:23:52 | WARNING  | tool_builder | ⚠️  writekin_tuning tests failed (loop 1/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:24:01 | DEBUG    | llm_client | LLM response from github_models (6346 chars)
+2026-07-29 05:24:01 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'torch']
+2026-07-29 05:24:05 | WARNING  | test_runner | Tests FAILED for writekin_tuning:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_writekin_tuning.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-07-29 05:24:05 | WARNING  | tool_builder | ⚠️  writekin_tuning tests failed (loop 2/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:24:15 | DEBUG    | llm_client | LLM response from github_models (6150 chars)
+2026-07-29 05:24:15 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'pytest']
+2026-07-29 05:24:19 | WARNING  | test_runner | Tests FAILED for writekin_tuning:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_writekin_tuning.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-07-29 05:24:19 | WARNING  | tool_builder | ⚠️  writekin_tuning tests failed (loop 3/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:24:27 | DEBUG    | llm_client | LLM response from github_models (6265 chars)
+2026-07-29 05:24:27 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'pytest']
+2026-07-29 05:24:31 | WARNING  | test_runner | Tests FAILED for writekin_tuning:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_writekin_tuning.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-07-29 05:24:31 | WARNING  | tool_builder | ⚠️  writekin_tuning tests failed (loop 4/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:24:41 | DEBUG    | llm_client | LLM response from github_models (6011 chars)
+2026-07-29 05:24:41 | DEBUG    | test_runner | Installing: ['transformers', 'datasets', 'pytest']
+2026-07-29 05:24:45 | WARNING  | test_runner | Tests FAILED for writekin_tuning:
+==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+    raise RuntimeError(
+E   RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+ERROR test_writekin_tuning.py - RuntimeError: Failed to import transformers.trainer because of the following error (look up to see its traceback):
+2026-07-29 05:24:45 | WARNING  | tool_builder | ⚠️  writekin_tuning tests failed (loop 5/5) — ==================================== ERRORS ====================================
+___________________ ERROR collecting test_writekin_tuning.py ___________________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:24:45 | ERROR    | tool_builder | ❌ writekin_tuning failed after 5 loops
+2026-07-29 05:24:45 | INFO     | tool_builder | Building tool: personal_dataset_formatter …
+2026-07-29 05:24:57 | DEBUG    | llm_client | LLM response from github_models (7906 chars)
+2026-07-29 05:24:57 | DEBUG    | test_runner | Installing: ['pandas==1.3.3', 'nltk==3.7', 'datasets==2.14.0']
+2026-07-29 05:26:35 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × installing build dependencies for pandas did not run successfully.
+  │ exit code: 1
+  ╰─> [1165 lines of output]
+      Ignoring numpy: markers 'python_version == "3.7" and (platform_machine != "arm64" or platform_system != "Darwin") and platform_machine !
+2026-07-29 05:26:36 | WARNING  | test_runner | Tests FAILED for personal_dataset_formatter:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/personal_dataset_formatter/test_personal_dataset_formatter.py'.
+E   ModuleNotFoundError: No module named 'nltk'
+ERROR test_personal_dataset_formatter.py
+2026-07-29 05:26:36 | WARNING  | tool_builder | ⚠️  personal_dataset_formatter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+ImportError while importing test modul
+2026-07-29 05:26:47 | DEBUG    | llm_client | LLM response from github_models (7991 chars)
+2026-07-29 05:26:47 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'datasets']
+2026-07-29 05:26:50 | WARNING  | test_runner | Tests FAILED for personal_dataset_formatter:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_personal_dataset_formatter.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-07-29 05:26:50 | WARNING  | tool_builder | ⚠️  personal_dataset_formatter tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:27:01 | DEBUG    | llm_client | LLM response from github_models (8441 chars)
+2026-07-29 05:27:01 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'datasets']
+2026-07-29 05:27:02 | WARNING  | test_runner | Tests FAILED for personal_dataset_formatter:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_personal_dataset_formatter.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-07-29 05:27:02 | WARNING  | tool_builder | ⚠️  personal_dataset_formatter tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:27:16 | DEBUG    | llm_client | LLM response from github_models (7968 chars)
+2026-07-29 05:27:16 | DEBUG    | test_runner | Installing: ['pandas', 'datasets', 'nltk']
+2026-07-29 05:27:17 | WARNING  | test_runner | Tests FAILED for personal_dataset_formatter:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_personal_dataset_formatter.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-07-29 05:27:17 | WARNING  | tool_builder | ⚠️  personal_dataset_formatter tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:27:28 | DEBUG    | llm_client | LLM response from github_models (7994 chars)
+2026-07-29 05:27:28 | DEBUG    | test_runner | Installing: ['nltk', 'pandas', 'datasets']
+2026-07-29 05:27:30 | WARNING  | test_runner | Tests FAILED for personal_dataset_formatter:
+==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+ERROR test_personal_dataset_formatter.py - AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+2026-07-29 05:27:30 | WARNING  | tool_builder | ⚠️  personal_dataset_formatter tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_____________ ERROR collecting test_personal_dataset_formatter.py ______________
+E   AttributeError: module 'pyarrow' h
+2026-07-29 05:27:30 | ERROR    | tool_builder | ❌ personal_dataset_formatter failed after 5 loops
+2026-07-29 05:27:30 | INFO     | tool_builder | Building tool: llm_eval_tuner …
+2026-07-29 05:27:44 | DEBUG    | llm_client | LLM response from github_models (6946 chars)
+2026-07-29 05:27:44 | DEBUG    | test_runner | Installing: ['transformers==4.34.0', 'sacrebleu==2.3.1', 'torch==2.0.1']
+2026-07-29 05:27:52 | WARNING  | test_runner | Tests FAILED for llm_eval_tuner:
+test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+FAILED test_llm_eval_tuner.py::test_evaluate_model - AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+2026-07-29 05:27:52 | WARNING  | tool_builder | ⚠️  llm_eval_tuner tests failed (loop 1/5) — test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does no
+2026-07-29 05:28:00 | DEBUG    | llm_client | LLM response from github_models (6612 chars)
+2026-07-29 05:28:00 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'sacrebleu']
+2026-07-29 05:28:03 | WARNING  | test_runner | Tests FAILED for llm_eval_tuner:
+test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'batch_decode'
+FAILED test_llm_eval_tuner.py::test_evaluate_model - AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'batch_decode'
+2026-07-29 05:28:03 | WARNING  | tool_builder | ⚠️  llm_eval_tuner tests failed (loop 2/5) — test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does no
+2026-07-29 05:28:11 | DEBUG    | llm_client | LLM response from github_models (6944 chars)
+2026-07-29 05:28:11 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'sacrebleu']
+2026-07-29 05:28:13 | WARNING  | test_runner | Tests FAILED for llm_eval_tuner:
+test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+FAILED test_llm_eval_tuner.py::test_evaluate_model - AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+2026-07-29 05:28:13 | WARNING  | tool_builder | ⚠️  llm_eval_tuner tests failed (loop 3/5) — test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does no
+2026-07-29 05:28:21 | DEBUG    | llm_client | LLM response from github_models (6655 chars)
+2026-07-29 05:28:21 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'sacrebleu']
+2026-07-29 05:28:24 | WARNING  | test_runner | Tests FAILED for llm_eval_tuner:
+test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'batch_decode'
+FAILED test_llm_eval_tuner.py::test_evaluate_model - AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'batch_decode'
+2026-07-29 05:28:24 | WARNING  | tool_builder | ⚠️  llm_eval_tuner tests failed (loop 4/5) — test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does no
+2026-07-29 05:28:33 | DEBUG    | llm_client | LLM response from github_models (7027 chars)
+2026-07-29 05:28:33 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'sacrebleu']
+2026-07-29 05:28:36 | WARNING  | test_runner | Tests FAILED for llm_eval_tuner:
+test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+FAILED test_llm_eval_tuner.py::test_evaluate_model - AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does not have the attribute 'decode'
+2026-07-29 05:28:36 | WARNING  | tool_builder | ⚠️  llm_eval_tuner tests failed (loop 5/5) — test_llm_eval_tuner.py::test_evaluate_model FAILED                       [100%]
+    raise AttributeError(
+E   AttributeError: <class 'transformers.models.auto.tokenization_auto.AutoTokenizer'> does no
+2026-07-29 05:28:36 | ERROR    | tool_builder | ❌ llm_eval_tuner failed after 5 loops
+2026-07-29 05:28:36 | INFO     | tool_builder | Building tool: latency_tuner …
+2026-07-29 05:28:46 | DEBUG    | llm_client | LLM response from github_models (5409 chars)
+2026-07-29 05:28:46 | DEBUG    | test_runner | Installing: ['numpy==1.25.2']
+2026-07-29 05:28:49 | WARNING  | test_runner | Tests FAILED for latency_tuner:
+test_latency_tuner.py::test_benchmark_stage FAILED                       [ 33%]
+test_latency_tuner.py::test_run_benchmark FAILED                         [ 66%]
+E   NameError: name 'time' is not defined
+E   TypeError: 'dict' object is not callable
+FAILED test_latency_tuner.py::test_benchmark_stage - NameError: name 'time' is not defined
+FAILED test_latency_tuner.py::test_run_benchmark - TypeError: 'dict' object is not callable
+2026-07-29 05:28:49 | WARNING  | tool_builder | ⚠️  latency_tuner tests failed (loop 1/5) — test_latency_tuner.py::test_benchmark_stage FAILED                       [ 33%]
+test_latency_tuner.py::test_run_benchmark FAILED                         [ 66%]
+E   NameError: name 'time' is not define
+2026-07-29 05:28:57 | DEBUG    | llm_client | LLM response from github_models (5566 chars)
+2026-07-29 05:28:57 | DEBUG    | test_runner | Installing: ['numpy']
+2026-07-29 05:28:58 | INFO     | test_runner | Tests PASSED for latency_tuner
+2026-07-29 05:28:58 | INFO     | tool_builder | ✅ latency_tuner passed tests on loop 2
+2026-07-29 05:28:58 | INFO     | tool_builder | Building tool: realtime_inference_profiler …
+2026-07-29 05:29:12 | DEBUG    | llm_client | LLM response from github_models (7789 chars)
+2026-07-29 05:29:12 | DEBUG    | test_runner | Installing: ['numpy==1.23.5', 'pandas==1.5.3', 'pytest==7.4.2']
+2026-07-29 05:29:24 | WARNING  | test_runner | Tests FAILED for realtime_inference_profiler:
+test_realtime_inference_profiler.py::test_profile_json_output FAILED     [ 80%]
+test_realtime_inference_profiler.py::test_profile_csv_output FAILED      [100%]
+    assert all('latency' in row for row in metrics)
+E   assert False
+    assert 'latency' in metrics
+E   assert 'latency' in "error\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\n"
+FAILED test_realtime_inference_profiler.py::test_profile_json_output - assert False
+FAILED test_realtime_inference_profiler.py::test_profile_csv_output - assert 'latency' in "error\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\n"
+2026-07-29 05:29:24 | WARNING  | tool_builder | ⚠️  realtime_inference_profiler tests failed (loop 1/5) — test_realtime_inference_profiler.py::test_profile_json_output FAILED     [ 80%]
+test_realtime_inference_profiler.py::test_profile_csv_output FAILED      [100%]
+    assert all('latency' in row for row 
+2026-07-29 05:29:24 | WARNING  | llm_client | github_models rate-limited — sleeping 60s
+2026-07-29 05:30:38 | DEBUG    | llm_client | LLM response from github_models (8347 chars)
+2026-07-29 05:30:38 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'pytest']
+2026-07-29 05:30:43 | WARNING  | test_runner | Tests FAILED for realtime_inference_profiler:
+test_realtime_inference_profiler.py::test_profile_json_output FAILED     [ 80%]
+test_realtime_inference_profiler.py::test_profile_csv_output FAILED      [100%]
+    assert all('latency' in row for row in metrics)
+E   assert False
+    assert 'latency' in metrics
+E   assert 'latency' in "error\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\n"
+FAILED test_realtime_inference_profiler.py::test_profile_json_output - assert False
+FAILED test_realtime_inference_profiler.py::test_profile_csv_output - assert 'latency' in "error\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\nname 'time' is not defined\n"
+2026-07-29 05:30:43 | WARNING  | tool_builder | ⚠️  realtime_inference_profiler tests failed (loop 2/5) — test_realtime_inference_profiler.py::test_profile_json_output FAILED     [ 80%]
+test_realtime_inference_profiler.py::test_profile_csv_output FAILED      [100%]
+    assert all('latency' in row for row 
+2026-07-29 05:30:59 | DEBUG    | llm_client | LLM response from github_models (8379 chars)
+2026-07-29 05:30:59 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'pytest']
+2026-07-29 05:31:01 | INFO     | test_runner | Tests PASSED for realtime_inference_profiler
+2026-07-29 05:31:01 | INFO     | tool_builder | ✅ realtime_inference_profiler passed tests on loop 3
+2026-07-29 05:31:01 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-07-29 05:31:01 | INFO     | main |   Built 2/5 tools successfully
+2026-07-29 05:31:01 | INFO     | main |     ✅ latency_tuner (loops: 2)
+2026-07-29 05:31:01 | INFO     | main |     ✅ realtime_inference_profiler (loops: 3)
+2026-07-29 05:31:01 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-07-29 05:31:01 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-07-29 05:31:01 | INFO     | github_publisher |   Created zip: latency_tuner.zip (2499 bytes)
+2026-07-29 05:31:01 | INFO     | github_publisher | Saved latency_tuner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/latency_tuner
+2026-07-29 05:31:01 | INFO     | github_publisher |   Created zip: realtime_inference_profiler.zip (3111 bytes)
+2026-07-29 05:31:01 | INFO     | github_publisher | Saved realtime_inference_profiler → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/realtime_inference_profiler
+2026-07-29 05:31:01 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-07-29 05:31:01 | INFO     | main |   Published 2 tools:
+2026-07-29 05:31:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/latency_tuner
+2026-07-29 05:31:01 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/realtime_inference_profiler
+2026-07-29 05:31:01 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-07-29 05:31:01 | INFO     | main | ✅ Generated tools_index.json with 445 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

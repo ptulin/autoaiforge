@@ -1,0 +1,13 @@
+{
+  "tool_name": "latency_tuner",
+  "display_name": "Latency Tuner for AI Inference",
+  "description": "This tool allows AI developers to optimize and tune their inference pipelines for lower latency. It benchmarks the key stages of an inference pipeline (e.g., pre-processing, model execution, post-processing) and identifies bottlenecks. It can also suggest tweaks to improve throughput and latency for real-time applications.",
+  "topic": "Low-Latency AI Inference",
+  "date": "2026-07-29",
+  "generated": "2026-07-29T05:20:30.661643+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/latency_tuner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-29/latency_tuner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-29/latency_tuner/latency_tuner.zip"
+}

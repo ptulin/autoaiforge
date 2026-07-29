@@ -1,0 +1,13 @@
+{
+  "tool_name": "realtime_inference_profiler",
+  "display_name": "Real-Time Inference Profiler",
+  "description": "This tool helps developers simulate and profile their AI models under real-time conditions by generating load scenarios (e.g., changing request rates) and measuring performance metrics such as latency, throughput, and memory usage. It provides insights into how models behave under different scalability demands.",
+  "topic": "Low-Latency AI Inference",
+  "date": "2026-07-29",
+  "generated": "2026-07-29T05:20:30.661643+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-29/realtime_inference_profiler",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-29/realtime_inference_profiler/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-29/realtime_inference_profiler/realtime_inference_profiler.zip"
+}
