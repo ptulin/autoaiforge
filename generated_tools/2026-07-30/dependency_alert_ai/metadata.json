@@ -1,0 +1,13 @@
+{
+  "tool_name": "dependency_alert_ai",
+  "display_name": "Dependency Alert AI",
+  "description": "A Python-based CLI tool that uses AI to assess and flag vulnerabilities in a project's dependencies. It cross-references dependency versions with known vulnerabilities in public databases and provides recommendations for upgrading or patching.",
+  "topic": "AI Security and Vulnerability Detection",
+  "date": "2026-07-30",
+  "generated": "2026-07-30T04:56:50.636369+00:00",
+  "loops_needed": 1,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-07-30/dependency_alert_ai",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-30/dependency_alert_ai/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-07-30/dependency_alert_ai/dependency_alert_ai.zip"
+}
