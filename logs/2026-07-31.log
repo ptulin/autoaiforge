@@ -1,0 +1,188 @@
+2026-07-31 05:41:51 | INFO     | main | ============================================================
+2026-07-31 05:41:51 | INFO     | main | AutoAIForge starting run: 2026-07-31T05:41:51.897776+00:00
+2026-07-31 05:41:51 | INFO     | main | ============================================================
+2026-07-31 05:41:51 | INFO     | main | [STEP 1/6] News Scraping
+2026-07-31 05:41:52 | INFO     | youtube_scraper | YouTube client ready
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'AI news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'Claude AI updates': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+AI+updates&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'open source AI tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+AI+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'LLM advancements': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=LLM+advancements&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'Claude Code': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Claude+Code&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'artificial intelligence breakthrough': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=artificial+intelligence+breakthrough&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'machine learning tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=machine+learning+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'AI automation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+automation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'Anthropic Claude': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Anthropic+Claude&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'AI coding assistant': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+coding+assistant&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'open source LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=open+source+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'AI agent framework': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+agent+framework&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'vector database AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=vector+database+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'RAG retrieval augmented generation': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=RAG+retrieval+augmented+generation&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'multimodal AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=multimodal+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'AI safety news': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+safety+news&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:52 | ERROR    | youtube_scraper | YouTube search failed for 'Groq inference': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=Groq+inference&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:53 | ERROR    | youtube_scraper | YouTube search failed for 'local LLM': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=local+LLM&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A52Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:53 | ERROR    | youtube_scraper | YouTube search failed for 'AI productivity tools': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=AI+productivity+tools&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A53Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:53 | ERROR    | youtube_scraper | YouTube search failed for 'generative AI': <HttpError 400 when requesting https://youtube.googleapis.com/youtube/v3/search?q=generative+AI&type=video&part=id%2Csnippet&maxResults=50&order=date&publishedAfter=2026-07-29T05%3A41%3A53Z&relevanceLanguage=en&key=[REDACTED-LEAKED-KEY]&alt=json returned "API Key not found. Please pass a valid API key.". Details: "[{'message': 'API Key not found. Please pass a valid API key.', 'domain': 'global', 'reason': 'badRequest'}]">
+2026-07-31 05:41:53 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-07-31 05:41:53 | INFO     | main |   YouTube: 0 items
+2026-07-31 05:41:53 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-07-31 05:41:58 | INFO     | rss_scraper | HackerNews: 158 items
+2026-07-31 05:41:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-07-31 05:41:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-07-31 05:42:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-07-31 05:42:01 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-07-31 05:42:02 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-07-31 05:42:04 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-07-31 05:42:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-07-31 05:42:06 | INFO     | rss_scraper | Reddit: 0 items
+2026-07-31 05:42:11 | INFO     | rss_scraper | ArXiv: 105 items
+2026-07-31 05:42:16 | INFO     | rss_scraper | Dev.to: 191 items
+2026-07-31 05:42:17 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-07-31 05:42:17 | INFO     | rss_scraper | Free sources total: 504 unique items
+2026-07-31 05:42:17 | INFO     | main |   RSS/API sources: 504 items
+2026-07-31 05:42:17 | INFO     | main |   Total scraped: 504 items
+2026-07-31 05:42:17 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-07-31 05:42:17 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-07-31 05:42:17 | INFO     | db_manager | Purged 371 old news items
+2026-07-31 05:42:17 | INFO     | db_manager | Inserted 353/504 news items
+2026-07-31 05:42:17 | INFO     | main |   SQLite: 353 new items (total: 9774)
+2026-07-31 05:42:21 | INFO     | vector_store | Loading sentence-transformer model …
+2026-07-31 05:42:23 | INFO     | vector_store | VectorStore ready
+2026-07-31 05:42:28 | INFO     | vector_store | Indexed 723 items into vector store
+2026-07-31 05:42:28 | INFO     | main |   Vector store: 723 items indexed
+2026-07-31 05:42:28 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-07-31 05:42:28 | INFO     | topic_analyzer | Analyzing 723 items for top 10 topics …
+2026-07-31 05:42:28 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:30 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:30 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:31 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:31 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:32 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:32 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-07-31 05:42:32 | INFO     | main |   Found 10 topics:
+2026-07-31 05:42:32 | INFO     | main |      1. [10/10] AI
+2026-07-31 05:42:32 | INFO     | main |      2. [10/10] ai
+2026-07-31 05:42:32 | INFO     | main |      3. [10/10] LLM
+2026-07-31 05:42:32 | INFO     | main |      4. [10/10] Claude
+2026-07-31 05:42:32 | INFO     | main |      5. [10/10] llm
+2026-07-31 05:42:32 | INFO     | main |      6. [10/10] machinelearning
+2026-07-31 05:42:32 | INFO     | main |      7. [10/10] large+language+model
+2026-07-31 05:42:32 | INFO     | main |      8. [10/10] AI+agent
+2026-07-31 05:42:32 | INFO     | main |      9. [10/10] code+generation
+2026-07-31 05:42:32 | INFO     | main |     10. [10/10] multimodal
+2026-07-31 05:42:32 | INFO     | main | [STEP 4/6] Idea Generation
+2026-07-31 05:42:32 | INFO     | main |   Existing collection: 448 tools across 241 topics
+2026-07-31 05:42:32 | INFO     | main |   🔄 Upgrade candidate: 'AI' (relevance 10/10, last built 2026-03-15)
+2026-07-31 05:42:32 | INFO     | main |   Topics flagged for upgrade: AI
+2026-07-31 05:42:32 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI'
+2026-07-31 05:42:32 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:33 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:33 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:35 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:35 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:36 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:36 | ERROR    | idea_generator | Idea generation failed for topic 'AI': All LLM providers failed. Check API keys.
+2026-07-31 05:42:36 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:37 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:37 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:38 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:38 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:39 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:39 | ERROR    | idea_generator | Idea generation failed for topic 'ai': All LLM providers failed. Check API keys.
+2026-07-31 05:42:39 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:40 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:40 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:42 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:42 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:43 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:43 | ERROR    | idea_generator | Idea generation failed for topic 'LLM': All LLM providers failed. Check API keys.
+2026-07-31 05:42:43 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:44 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:44 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:45 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:45 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:46 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:46 | ERROR    | idea_generator | Idea generation failed for topic 'Claude': All LLM providers failed. Check API keys.
+2026-07-31 05:42:46 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:47 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:47 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:48 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:42:48 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:49 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:42:49 | ERROR    | idea_generator | Idea generation failed for topic 'llm': All LLM providers failed. Check API keys.
+2026-07-31 05:42:49 | INFO     | idea_generator | Total ideas generated: 5
+2026-07-31 05:42:49 | INFO     | main |   Generated 5 tool ideas:
+2026-07-31 05:42:49 | INFO     | main |     • ai_helper: A Python utility for working with AI
+2026-07-31 05:42:49 | INFO     | main |     • ai_helper: A Python utility for working with ai
+2026-07-31 05:42:49 | INFO     | main |     • llm_helper: A Python utility for working with LLM
+2026-07-31 05:42:49 | INFO     | main |     • claude_helper: A Python utility for working with Claude
+2026-07-31 05:42:49 | INFO     | main |     • llm_helper: A Python utility for working with llm
+2026-07-31 05:42:49 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-07-31 05:42:49 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-07-31 05:42:58 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-07-31 05:42:58 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-07-31 05:42:58 | INFO     | tool_builder | Building tool: ai_helper …
+2026-07-31 05:42:58 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:59 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:42:59 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:00 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:00 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:01 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:01 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-07-31 05:43:01 | INFO     | tool_builder | Building tool: ai_helper …
+2026-07-31 05:43:01 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:02 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:03 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:04 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:04 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:05 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:05 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-07-31 05:43:05 | INFO     | tool_builder | Building tool: llm_helper …
+2026-07-31 05:43:05 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:06 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:06 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:07 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:07 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:08 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:08 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-07-31 05:43:08 | INFO     | tool_builder | Building tool: claude_helper …
+2026-07-31 05:43:08 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:09 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:09 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:10 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:10 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:11 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:11 | ERROR    | tool_builder | Initial generation failed for claude_helper: All LLM providers failed. Check API keys.
+2026-07-31 05:43:11 | INFO     | tool_builder | Building tool: llm_helper …
+2026-07-31 05:43:11 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:12 | ERROR    | llm_client | github_models HTTP error: 401 Client Error: Unauthorized for url: https://models.inference.ai.azure.com/chat/completions — {"error":{"code":"unauthorized","message":"Server Error","details":"Server Error"}}
+2026-07-31 05:43:12 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:13 | ERROR    | llm_client | groq HTTP error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2026-07-31 05:43:13 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:14 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-07-31 05:43:14 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-07-31 05:43:14 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-07-31 05:43:14 | INFO     | main |   Built 0/5 tools successfully
+2026-07-31 05:43:14 | WARNING  | main | No tools built successfully
