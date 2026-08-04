@@ -5,6 +5,7 @@ We track quota usage to stay within limits.
 """
 
 import hashlib
+import re
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 
@@ -12,6 +13,13 @@ from utils.logger import get_logger
 import config
 
 log = get_logger("youtube_scraper")
+
+_KEY_RE = re.compile(r"([?&]key=)[^&\s'\"]+")
+
+
+def _redact(text: str) -> str:
+    """Strip API key values out of error strings before they hit the logs."""
+    return _KEY_RE.sub(r"\1[REDACTED]", text)
 
 try:
     from googleapiclient.discovery import build
@@ -87,7 +95,7 @@ class YouTubeScraper:
             )
             return [self._parse_item(item, keyword) for item in items]
         except Exception as e:
-            log.error(f"YouTube search failed for '{keyword}': {e}")
+            log.error(f"YouTube search failed for '{keyword}': {_redact(str(e))}")
             return []
 
     def scrape_all_keywords(self) -> list[dict]:
