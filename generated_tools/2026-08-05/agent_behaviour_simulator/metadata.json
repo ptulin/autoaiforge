@@ -1,0 +1,13 @@
+{
+  "tool_name": "agent_behaviour_simulator",
+  "display_name": "Agent Behaviour Simulator",
+  "description": "This tool enables developers to simulate and analyze the behaviour of AI agents in various scenarios, allowing for the testing and validation of agent decision-making processes. By using this tool, developers can identify potential issues, optimize agent performance, and ensure that agents behave as expected in different situations. The simulator provides a flexible and scalable way to model complex agent behaviours and evaluate their impact on overall system performance.",
+  "topic": "AI Agents",
+  "date": "2026-08-05",
+  "generated": "2026-08-05T05:10:36.287034+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/agent_behaviour_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-05/agent_behaviour_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-05/agent_behaviour_simulator/agent_behaviour_simulator.zip"
+}

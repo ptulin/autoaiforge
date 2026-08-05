@@ -1,0 +1,13 @@
+{
+  "tool_name": "llm_attack_simulator",
+  "display_name": "LLM Attack Simulator",
+  "description": "This tool simulates various types of attacks on large language models, such as adversarial examples and data poisoning. It allows developers to test their models' robustness and identify potential weaknesses, making it an essential tool for evaluating LLM security.",
+  "topic": "LLM Security",
+  "date": "2026-08-05",
+  "generated": "2026-08-05T05:10:36.287034+00:00",
+  "loops_needed": 5,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_attack_simulator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-05/llm_attack_simulator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-05/llm_attack_simulator/llm_attack_simulator.zip"
+}

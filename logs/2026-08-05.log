@@ -1,0 +1,272 @@
+2026-08-05 05:10:36 | INFO     | main | ============================================================
+2026-08-05 05:10:36 | INFO     | main | AutoAIForge starting run: 2026-08-05T05:10:36.287034+00:00
+2026-08-05 05:10:36 | INFO     | main | ============================================================
+2026-08-05 05:10:36 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-05 05:10:36 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-05 05:10:36 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-05 05:10:36 | INFO     | main |   YouTube: 0 items
+2026-08-05 05:10:36 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-05 05:10:41 | INFO     | rss_scraper | HackerNews: 166 items
+2026-08-05 05:10:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-05 05:10:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-05 05:10:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-05 05:10:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-05 05:10:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-05 05:10:46 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-05 05:10:47 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-05 05:10:48 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-05 05:10:54 | INFO     | rss_scraper | ArXiv: 107 items
+2026-08-05 05:11:14 | WARNING  | rss_scraper | Timeout on https://dev.to/api/articles (attempt 1)
+2026-08-05 05:11:47 | WARNING  | rss_scraper | Timeout on https://dev.to/api/articles (attempt 1)
+2026-08-05 05:12:07 | WARNING  | rss_scraper | Timeout on https://dev.to/api/articles (attempt 2)
+2026-08-05 05:12:11 | INFO     | rss_scraper | Dev.to: 193 items
+2026-08-05 05:12:13 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-05 05:12:13 | INFO     | rss_scraper | Free sources total: 516 unique items
+2026-08-05 05:12:13 | INFO     | main |   RSS/API sources: 516 items
+2026-08-05 05:12:13 | INFO     | main |   Total scraped: 516 items
+2026-08-05 05:12:13 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-05 05:12:13 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-05 05:12:13 | INFO     | db_manager | Purged 225 old news items
+2026-08-05 05:12:13 | INFO     | db_manager | Inserted 379/516 news items
+2026-08-05 05:12:13 | INFO     | main |   SQLite: 379 new items (total: 9802)
+2026-08-05 05:12:18 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-05 05:12:18 | INFO     | vector_store | VectorStore ready
+2026-08-05 05:12:29 | INFO     | vector_store | Indexed 1074 items into vector store
+2026-08-05 05:12:29 | INFO     | main |   Vector store: 1074 items indexed
+2026-08-05 05:12:29 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-05 05:12:29 | INFO     | topic_analyzer | Analyzing 1074 items for top 10 topics …
+2026-08-05 05:12:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:32 | DEBUG    | llm_client | LLM response from groq (3312 chars)
+2026-08-05 05:12:32 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-05 05:12:32 | INFO     | main |   Found 10 topics:
+2026-08-05 05:12:32 | INFO     | main |      1. [9/10] LLM Security
+2026-08-05 05:12:32 | INFO     | main |      2. [8/10] AI Agents
+2026-08-05 05:12:32 | INFO     | main |      3. [8/10] AI Ethics
+2026-08-05 05:12:32 | INFO     | main |      4. [8/10] Human-AI Collaboration
+2026-08-05 05:12:32 | INFO     | main |      5. [7/10] AI-powered Coding
+2026-08-05 05:12:32 | INFO     | main |      6. [7/10] AI Model Optimization
+2026-08-05 05:12:32 | INFO     | main |      7. [6/10] Explainable AI
+2026-08-05 05:12:32 | INFO     | main |      8. [6/10] AI-powered Search
+2026-08-05 05:12:32 | INFO     | main |      9. [6/10] AI Benchmarking
+2026-08-05 05:12:32 | INFO     | main |     10. [5/10] Self-hosted LLMs
+2026-08-05 05:12:32 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-05 05:12:32 | INFO     | main |   Existing collection: 448 tools across 241 topics
+2026-08-05 05:12:32 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-05 05:12:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:35 | DEBUG    | llm_client | LLM response from groq (3083 chars)
+2026-08-05 05:12:35 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Security
+2026-08-05 05:12:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:38 | DEBUG    | llm_client | LLM response from groq (2450 chars)
+2026-08-05 05:12:38 | INFO     | idea_generator | Generated 2 ideas for topic: AI Agents
+2026-08-05 05:12:38 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-05 05:12:38 | INFO     | main |   Generated 5 tool ideas:
+2026-08-05 05:12:38 | INFO     | main |     • llm_vulnerability_scanner: This tool scans large language models for known security vulnerabilities, such a
+2026-08-05 05:12:38 | INFO     | main |     • llm_attack_simulator: This tool simulates various types of attacks on large language models, such as a
+2026-08-05 05:12:38 | INFO     | main |     • llm_security_evaluator: This tool evaluates the security of large language models based on a set of pred
+2026-08-05 05:12:38 | INFO     | main |     • ai_agent_orchestrator: This tool allows developers to define, deploy, and manage multiple AI agents for
+2026-08-05 05:12:38 | INFO     | main |     • agent_behaviour_simulator: This tool enables developers to simulate and analyze the behaviour of AI agents 
+2026-08-05 05:12:38 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-05 05:12:38 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-05 05:12:47 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-05 05:12:47 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-05 05:12:47 | INFO     | tool_builder | Building tool: llm_vulnerability_scanner …
+2026-08-05 05:12:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:12:48 | WARNING  | llm_client | groq rate-limited — sleeping 8s
+2026-08-05 05:12:58 | DEBUG    | llm_client | LLM response from groq (3305 chars)
+2026-08-05 05:12:58 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1', 'scipy==1.9.3']
+2026-08-05 05:12:59 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:13:00 | WARNING  | test_runner | Tests FAILED for llm_vulnerability_scanner:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_llm_vulnerability_scanner.py ______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: unmatched ')'
+ERROR test_llm_vulnerability_scanner.py
+2026-08-05 05:13:00 | WARNING  | tool_builder | ⚠️  llm_vulnerability_scanner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_llm_vulnerability_scanner.py ______________
+../_venv/lib/python3.11/site-packages/
+2026-08-05 05:13:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:13:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:13:01 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-05 05:13:06 | DEBUG    | llm_client | LLM response from groq (3323 chars)
+2026-08-05 05:13:06 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'scipy']
+2026-08-05 05:14:17 | INFO     | test_runner | Tests PASSED for llm_vulnerability_scanner
+2026-08-05 05:14:17 | INFO     | tool_builder | ✅ llm_vulnerability_scanner passed tests on loop 2
+2026-08-05 05:14:17 | INFO     | tool_builder | Building tool: llm_attack_simulator …
+2026-08-05 05:14:17 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:21 | DEBUG    | llm_client | LLM response from groq (4011 chars)
+2026-08-05 05:14:21 | DEBUG    | test_runner | Installing: ['torch==1.12.1', 'numpy==1.23.4', 'scipy==1.9.3']
+2026-08-05 05:14:21 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:14:24 | WARNING  | test_runner | Tests FAILED for llm_attack_simulator:
+test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulator.py::test_evaluate_model_robustness - TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+2026-08-05 05:14:24 | WARNING  | tool_builder | ⚠️  llm_attack_simulator tests failed (loop 1/5) — test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulato
+2026-08-05 05:14:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:27 | DEBUG    | llm_client | LLM response from groq (3786 chars)
+2026-08-05 05:14:27 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import numpy as np
+import torch
+from scipy import stats
+
+def simulate_adversarial_attack(model, input_data, epsilon=0.1):
+    # Simulate adversarial attack
+    perturbed_input = input_data + epsilon * np.sign(np.random.randn(*input_data.shape))
+    return perturbed_inpu
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-05 05:14:27 | DEBUG    | test_runner | Installing: ['torch==1.12.1', 'numpy==1.23.4', 'scipy==1.9.3']
+2026-08-05 05:14:27 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:14:30 | WARNING  | test_runner | Tests FAILED for llm_attack_simulator:
+test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulator.py::test_evaluate_model_robustness - TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+2026-08-05 05:14:30 | WARNING  | tool_builder | ⚠️  llm_attack_simulator tests failed (loop 2/5) — test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulato
+2026-08-05 05:14:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:33 | DEBUG    | llm_client | LLM response from groq (3613 chars)
+2026-08-05 05:14:33 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import numpy as np
+import torch
+from scipy import stats
+
+def simulate_adversarial_attack(model, input_data, epsilon=0.1):
+    # Simulate adversarial attack
+    perturbed_input = input_data + epsilon * np.sign(np.random.randn(*input_data.shape))
+    return perturbed_inpu
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-05 05:14:33 | DEBUG    | test_runner | Installing: ['torch==1.12.1', 'numpy==1.23.4', 'scipy==1.9.3']
+2026-08-05 05:14:33 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:14:36 | WARNING  | test_runner | Tests FAILED for llm_attack_simulator:
+test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulator.py::test_evaluate_model_robustness - TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+2026-08-05 05:14:36 | WARNING  | tool_builder | ⚠️  llm_attack_simulator tests failed (loop 3/5) — test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulato
+2026-08-05 05:14:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:14:38 | WARNING  | llm_client | groq rate-limited — sleeping 16s
+2026-08-05 05:14:56 | DEBUG    | llm_client | LLM response from groq (3869 chars)
+2026-08-05 05:14:56 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import numpy as np
+import torch
+from scipy import stats
+
+def simulate_adversarial_attack(model, input_data, epsilon=0.1):
+    # Simulate adversarial attack
+    perturbed_input = input_data + epsilon * np.sign(np.random.randn(*input_data.shape))
+    return perturbed_inpu
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-05 05:14:56 | DEBUG    | test_runner | Installing: ['torch==1.12.1', 'numpy==1.23.4', 'scipy==1.9.3']
+2026-08-05 05:14:56 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:14:59 | WARNING  | test_runner | Tests FAILED for llm_attack_simulator:
+test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulator.py::test_evaluate_model_robustness - TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+2026-08-05 05:14:59 | WARNING  | tool_builder | ⚠️  llm_attack_simulator tests failed (loop 4/5) — test_llm_attack_simulator.py::test_evaluate_model_robustness FAILED      [100%]
+E   TypeError: linear(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+FAILED test_llm_attack_simulato
+2026-08-05 05:14:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:00 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-05 05:15:06 | DEBUG    | llm_client | LLM response from groq (3766 chars)
+2026-08-05 05:15:06 | DEBUG    | test_runner | Installing: ['numpy', 'torch', 'scipy']
+2026-08-05 05:15:09 | INFO     | test_runner | Tests PASSED for llm_attack_simulator
+2026-08-05 05:15:09 | INFO     | tool_builder | ✅ llm_attack_simulator passed tests on loop 5
+2026-08-05 05:15:09 | INFO     | tool_builder | Building tool: llm_security_evaluator …
+2026-08-05 05:15:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:12 | DEBUG    | llm_client | LLM response from groq (3539 chars)
+2026-08-05 05:15:12 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1', 'pandas==1.4.3']
+2026-08-05 05:15:13 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-05 05:15:17 | WARNING  | test_runner | Tests FAILED for llm_security_evaluator:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_security_evaluator.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_security_evaluator/test_llm_security_evaluator.py'.
+E   ModuleNotFoundError: No module named 'pandas'
+ERROR test_llm_security_evaluator.py
+2026-08-05 05:15:17 | WARNING  | tool_builder | ⚠️  llm_security_evaluator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_security_evaluator.py ________________
+ImportError while importing test modul
+2026-08-05 05:15:17 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:18 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-05 05:15:23 | DEBUG    | llm_client | LLM response from groq (3813 chars)
+2026-08-05 05:15:23 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'pandas']
+2026-08-05 05:15:33 | INFO     | test_runner | Tests PASSED for llm_security_evaluator
+2026-08-05 05:15:33 | INFO     | tool_builder | ✅ llm_security_evaluator passed tests on loop 2
+2026-08-05 05:15:33 | INFO     | tool_builder | Building tool: ai_agent_orchestrator …
+2026-08-05 05:15:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:37 | DEBUG    | llm_client | LLM response from groq (4023 chars)
+2026-08-05 05:15:37 | ERROR    | tool_builder | Initial generation failed for ai_agent_orchestrator: LLM returned non-JSON: {
+  "code": "import argparse\nimport json\nimport ray\nimport redis\n\n# Initialize Redis client\nredis_client = redis.Redis(host='localhost', port=6379, db=0)\n\n# Initialize Ray\nray.init()\n\n# Define agent registration function\n@ray.remote\ndef register_agent(agent_name):\n    # Store agent def
+Invalid \escape: line 2 column 1410 (char 1411)
+2026-08-05 05:15:37 | INFO     | tool_builder | Building tool: agent_behaviour_simulator …
+2026-08-05 05:15:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:15:38 | WARNING  | llm_client | groq rate-limited — sleeping 28s
+2026-08-05 05:16:08 | DEBUG    | llm_client | LLM response from groq (3212 chars)
+2026-08-05 05:16:08 | DEBUG    | test_runner | Installing: ['gym==0.26.0', 'matplotlib==3.5.1']
+2026-08-05 05:17:40 | WARNING  | test_runner | Tests FAILED for agent_behaviour_simulator:
+test_agent_behaviour_simulator.py::test_simulate_scenario FAILED         [ 33%]
+test_agent_behaviour_simulator.py::test_analyze_performance FAILED       [ 66%]
+E   AttributeError: 'list' object has no attribute 'items'
+E   AttributeError: 'list' object has no attribute 'items'
+FAILED test_agent_behaviour_simulator.py::test_simulate_scenario - AttributeError: 'list' object has no attribute 'items'
+FAILED test_agent_behaviour_simulator.py::test_analyze_performance - AttributeError: 'list' object has no attribute 'items'
+2026-08-05 05:17:40 | WARNING  | tool_builder | ⚠️  agent_behaviour_simulator tests failed (loop 1/5) — test_agent_behaviour_simulator.py::test_simulate_scenario FAILED         [ 33%]
+test_agent_behaviour_simulator.py::test_analyze_performance FAILED       [ 66%]
+E   AttributeError: 'list' object has no
+2026-08-05 05:17:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:17:41 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-05 05:17:43 | DEBUG    | llm_client | LLM response from groq (3431 chars)
+2026-08-05 05:17:43 | DEBUG    | test_runner | Installing: ['gym', 'matplotlib']
+2026-08-05 05:17:44 | INFO     | test_runner | Tests PASSED for agent_behaviour_simulator
+2026-08-05 05:17:44 | INFO     | tool_builder | ✅ agent_behaviour_simulator passed tests on loop 2
+2026-08-05 05:17:44 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-08-05 05:17:44 | INFO     | main |   Built 4/5 tools successfully
+2026-08-05 05:17:44 | INFO     | main |     ✅ llm_vulnerability_scanner (loops: 2)
+2026-08-05 05:17:44 | INFO     | main |     ✅ llm_attack_simulator (loops: 5)
+2026-08-05 05:17:44 | INFO     | main |     ✅ llm_security_evaluator (loops: 2)
+2026-08-05 05:17:44 | INFO     | main |     ✅ agent_behaviour_simulator (loops: 2)
+2026-08-05 05:17:44 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-05 05:17:44 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-05 05:17:44 | INFO     | github_publisher |   Created zip: llm_vulnerability_scanner.zip (1759 bytes)
+2026-08-05 05:17:44 | INFO     | github_publisher | Saved llm_vulnerability_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_vulnerability_scanner
+2026-08-05 05:17:44 | INFO     | github_publisher |   Created zip: llm_attack_simulator.zip (1771 bytes)
+2026-08-05 05:17:44 | INFO     | github_publisher | Saved llm_attack_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_attack_simulator
+2026-08-05 05:17:44 | INFO     | github_publisher |   Created zip: llm_security_evaluator.zip (1723 bytes)
+2026-08-05 05:17:44 | INFO     | github_publisher | Saved llm_security_evaluator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_security_evaluator
+2026-08-05 05:17:44 | INFO     | github_publisher |   Created zip: agent_behaviour_simulator.zip (1801 bytes)
+2026-08-05 05:17:44 | INFO     | github_publisher | Saved agent_behaviour_simulator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/agent_behaviour_simulator
+2026-08-05 05:17:44 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-08-05 05:17:44 | INFO     | main |   Published 4 tools:
+2026-08-05 05:17:44 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_vulnerability_scanner
+2026-08-05 05:17:44 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_attack_simulator
+2026-08-05 05:17:44 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/llm_security_evaluator
+2026-08-05 05:17:44 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-05/agent_behaviour_simulator
+2026-08-05 05:17:44 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-05 05:17:44 | INFO     | main | ✅ Generated tools_index.json with 452 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
