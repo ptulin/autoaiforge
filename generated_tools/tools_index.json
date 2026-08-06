@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-08-05T05:17:44.648579+00:00",
-  "total_tools": 452,
+  "last_updated": "2026-08-06T05:18:37.737415+00:00",
+  "total_tools": 454,
   "tools": [
+    {
+      "tool_name": "llm_benchmark",
+      "display_name": "LLM Benchmark",
+      "description": "This tool provides a comprehensive benchmarking suite for Large Language Models (LLMs) to evaluate their performance and efficiency. It supports various benchmarking metrics, including inference time, memory usage, and energy consumption. This tool is useful for AI developers to compare the performance of different LLMs and optimize their models for specific use cases.",
+      "topic": "LLM Optimization",
+      "date": "2026-08-06",
+      "generated": "2026-08-06T05:12:47.991687+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_benchmark",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-06/llm_benchmark/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-06/llm_benchmark/llm_benchmark.zip"
+    },
+    {
+      "tool_name": "llm_pruner",
+      "display_name": "LLM Pruner",
+      "description": "This tool allows AI developers to prune Large Language Models (LLMs) to reduce their size while maintaining performance. It uses techniques like iterative magnitude pruning to remove unnecessary weights, resulting in faster inference times and lower memory usage. This tool is useful for deploying LLMs on devices with limited resources or for reducing the environmental impact of AI models.",
+      "topic": "LLM Optimization",
+      "date": "2026-08-06",
+      "generated": "2026-08-06T05:12:47.991687+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_pruner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-06/llm_pruner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-06/llm_pruner/llm_pruner.zip"
+    },
     {
       "tool_name": "agent_behaviour_simulator",
       "display_name": "Agent Behaviour Simulator",

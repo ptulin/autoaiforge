@@ -1,0 +1,451 @@
+2026-08-06 05:12:47 | INFO     | main | ============================================================
+2026-08-06 05:12:47 | INFO     | main | AutoAIForge starting run: 2026-08-06T05:12:47.991687+00:00
+2026-08-06 05:12:47 | INFO     | main | ============================================================
+2026-08-06 05:12:47 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-06 05:12:48 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-06 05:12:48 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-06 05:12:48 | INFO     | main |   YouTube: 0 items
+2026-08-06 05:12:48 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-06 05:12:53 | INFO     | rss_scraper | HackerNews: 169 items
+2026-08-06 05:12:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-06 05:12:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-06 05:12:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-06 05:12:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-06 05:12:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-06 05:12:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-06 05:12:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-06 05:13:00 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-06 05:13:06 | INFO     | rss_scraper | ArXiv: 106 items
+2026-08-06 05:13:10 | INFO     | rss_scraper | Dev.to: 194 items
+2026-08-06 05:13:11 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-06 05:13:11 | INFO     | rss_scraper | Free sources total: 519 unique items
+2026-08-06 05:13:11 | INFO     | main |   RSS/API sources: 519 items
+2026-08-06 05:13:11 | INFO     | main |   Total scraped: 519 items
+2026-08-06 05:13:11 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-06 05:13:11 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-06 05:13:11 | INFO     | db_manager | Purged 248 old news items
+2026-08-06 05:13:11 | INFO     | db_manager | Inserted 370/519 news items
+2026-08-06 05:13:11 | INFO     | main |   SQLite: 370 new items (total: 9924)
+2026-08-06 05:13:16 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-06 05:13:18 | INFO     | vector_store | VectorStore ready
+2026-08-06 05:13:25 | INFO     | vector_store | Indexed 749 items into vector store
+2026-08-06 05:13:25 | INFO     | main |   Vector store: 749 items indexed
+2026-08-06 05:13:25 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-06 05:13:25 | INFO     | topic_analyzer | Analyzing 749 items for top 10 topics …
+2026-08-06 05:13:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:26 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:28 | DEBUG    | llm_client | LLM response from groq (3840 chars)
+2026-08-06 05:13:28 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-06 05:13:28 | INFO     | main |   Found 10 topics:
+2026-08-06 05:13:28 | INFO     | main |      1. [9/10] LLM Optimization
+2026-08-06 05:13:28 | INFO     | main |      2. [9/10] AI Agent Self-Improvement
+2026-08-06 05:13:28 | INFO     | main |      3. [9/10] AI-Powered Automation
+2026-08-06 05:13:28 | INFO     | main |      4. [8/10] AI Agent Security
+2026-08-06 05:13:28 | INFO     | main |      5. [8/10] AI-Powered Database Querying
+2026-08-06 05:13:28 | INFO     | main |      6. [8/10] Explainable AI
+2026-08-06 05:13:28 | INFO     | main |      7. [8/10] Human-AI Collaboration
+2026-08-06 05:13:28 | INFO     | main |      8. [7/10] Private LLM Deployment
+2026-08-06 05:13:28 | INFO     | main |      9. [7/10] AI Model Compression
+2026-08-06 05:13:28 | INFO     | main |     10. [6/10] AI Model Watermarking
+2026-08-06 05:13:28 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-06 05:13:28 | INFO     | main |   Existing collection: 452 tools across 243 topics
+2026-08-06 05:13:28 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-06 05:13:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:31 | DEBUG    | llm_client | LLM response from groq (2988 chars)
+2026-08-06 05:13:31 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Optimization
+2026-08-06 05:13:31 | INFO     | idea_generator |   ⏭  Skipping idea 'llm_quantizer' — name already in collection
+2026-08-06 05:13:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:32 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:34 | DEBUG    | llm_client | LLM response from groq (3509 chars)
+2026-08-06 05:13:34 | INFO     | idea_generator | Generated 3 ideas for topic: AI Agent Self-Improvement
+2026-08-06 05:13:34 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-06 05:13:34 | INFO     | main |   Generated 5 tool ideas:
+2026-08-06 05:13:34 | INFO     | main |     • llm_pruner: This tool allows AI developers to prune Large Language Models (LLMs) to reduce t
+2026-08-06 05:13:34 | INFO     | main |     • llm_benchmark: This tool provides a comprehensive benchmarking suite for Large Language Models 
+2026-08-06 05:13:34 | INFO     | main |     • ai_agent_bootstrapper: This tool provides a framework for building self-improving AI agents using reinf
+2026-08-06 05:13:34 | INFO     | main |     • rl_policy_optimizer: This tool is designed to optimize the policy of a reinforcement learning agent u
+2026-08-06 05:13:34 | INFO     | main |     • agent_env_adapter: This tool enables the adaptation of AI agents to new environments by generating 
+2026-08-06 05:13:34 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-06 05:13:35 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-06 05:13:43 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-06 05:13:43 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-06 05:13:43 | INFO     | tool_builder | Building tool: llm_pruner …
+2026-08-06 05:13:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:13:45 | WARNING  | llm_client | groq rate-limited — sleeping 23s
+2026-08-06 05:14:09 | DEBUG    | llm_client | LLM response from groq (2803 chars)
+2026-08-06 05:14:09 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1']
+2026-08-06 05:14:10 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-06 05:14:11 | WARNING  | test_runner | Tests FAILED for llm_pruner:
+==================================== ERRORS ====================================
+_____________________ ERROR collecting test_llm_pruner.py ______________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_pruner/test_llm_pruner.py'.
+E   ModuleNotFoundError: No module named 'torch'
+ERROR test_llm_pruner.py
+2026-08-06 05:14:11 | WARNING  | tool_builder | ⚠️  llm_pruner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________________ ERROR collecting test_llm_pruner.py ______________________
+ImportError while importing test modul
+2026-08-06 05:14:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:14:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:14:13 | DEBUG    | llm_client | LLM response from groq (3234 chars)
+2026-08-06 05:14:13 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-06 05:15:21 | WARNING  | test_runner | Tests FAILED for llm_pruner:
+test_llm_pruner.py::test_prune_model FAILED                              [ 33%]
+test_llm_pruner.py::test_prune_model_zero_ratio FAILED                   [ 66%]
+test_llm_pruner.py::test_prune_model_one_ratio FAILED                    [100%]
+    assert model.named_parameters().__next__()[1].data.tolist() == [0.0, 2.0]
+E   AttributeError: 'list' object has no attribute '__next__'
+    assert model.named_parameters().__next__()[1].data.tolist() == [1.0, 2.0]
+E   AttributeError: 'list' object has no attribute '__next__'
+    assert model.named_parameters().__next__()[1].data.tolist() == [0.0, 0.0]
+E   AttributeError: 'list' object has no attribute '__next__'
+FAILED test_llm_pruner.py::test_prune_model - AttributeError: 'list' object has no attribute '__next__'
+FAILED test_llm_pruner.py::test_prune_model_zero_ratio - AttributeError: 'list' object has no attribute '__next__'
+FAILED test_llm_pruner.py::test_prune_model_one_ratio - AttributeError: 'list' object has no attribute '__next__'
+2026-08-06 05:15:21 | WARNING  | tool_builder | ⚠️  llm_pruner tests failed (loop 2/5) — test_llm_pruner.py::test_prune_model FAILED                              [ 33%]
+test_llm_pruner.py::test_prune_model_zero_ratio FAILED                   [ 66%]
+test_llm_pruner.py::test_prune_model_one
+2026-08-06 05:15:21 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:22 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:24 | DEBUG    | llm_client | LLM response from groq (3248 chars)
+2026-08-06 05:15:24 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-06 05:15:29 | INFO     | test_runner | Tests PASSED for llm_pruner
+2026-08-06 05:15:29 | INFO     | tool_builder | ✅ llm_pruner passed tests on loop 3
+2026-08-06 05:15:29 | INFO     | tool_builder | Building tool: llm_benchmark …
+2026-08-06 05:15:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:32 | DEBUG    | llm_client | LLM response from groq (3551 chars)
+2026-08-06 05:15:32 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1', 'psutil==5.9.0']
+2026-08-06 05:15:32 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-06 05:15:33 | WARNING  | test_runner | Tests FAILED for llm_benchmark:
+==================================== ERRORS ====================================
+____________________ ERROR collecting test_llm_benchmark.py ____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_benchmark/test_llm_benchmark.py'.
+E   ModuleNotFoundError: No module named 'psutil'
+ERROR test_llm_benchmark.py
+2026-08-06 05:15:33 | WARNING  | tool_builder | ⚠️  llm_benchmark tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________________ ERROR collecting test_llm_benchmark.py ____________________
+ImportError while importing test modul
+2026-08-06 05:15:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:36 | DEBUG    | llm_client | LLM response from groq (4213 chars)
+2026-08-06 05:15:36 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-06 05:15:41 | WARNING  | test_runner | Tests FAILED for llm_benchmark:
+test_llm_benchmark.py::test_benchmark_inference_time FAILED              [ 33%]
+E   RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+FAILED test_llm_benchmark.py::test_benchmark_inference_time - RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+2026-08-06 05:15:41 | WARNING  | tool_builder | ⚠️  llm_benchmark tests failed (loop 2/5) — test_llm_benchmark.py::test_benchmark_inference_time FAILED              [ 33%]
+E   RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver
+2026-08-06 05:15:41 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:44 | DEBUG    | llm_client | LLM response from groq (4207 chars)
+2026-08-06 05:15:44 | DEBUG    | test_runner | Installing: ['torch', 'transformers', 'psutil']
+2026-08-06 05:15:49 | WARNING  | test_runner | Tests FAILED for llm_benchmark:
+test_llm_benchmark.py::test_benchmark_inference_time FAILED              [ 33%]
+    assert result == 0
+E   AssertionError: assert <MagicMock name='cuda.Event().elapsed_time()' id='140468865097360'> == 0
+FAILED test_llm_benchmark.py::test_benchmark_inference_time - AssertionError: assert <MagicMock name='cuda.Event().elapsed_time()' id='140468865097360'> == 0
+2026-08-06 05:15:49 | WARNING  | tool_builder | ⚠️  llm_benchmark tests failed (loop 3/5) — test_llm_benchmark.py::test_benchmark_inference_time FAILED              [ 33%]
+    assert result == 0
+E   AssertionError: assert <MagicMock name='cuda.Event().elapsed_time()' id='140468865097360'> ==
+2026-08-06 05:15:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:52 | DEBUG    | llm_client | LLM response from groq (4704 chars)
+2026-08-06 05:15:52 | DEBUG    | test_runner | Installing: ['transformers', 'torch', 'psutil']
+2026-08-06 05:15:57 | INFO     | test_runner | Tests PASSED for llm_benchmark
+2026-08-06 05:15:57 | INFO     | tool_builder | ✅ llm_benchmark passed tests on loop 4
+2026-08-06 05:15:57 | INFO     | tool_builder | Building tool: ai_agent_bootstrapper …
+2026-08-06 05:15:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:15:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:00 | DEBUG    | llm_client | LLM response from groq (3133 chars)
+2026-08-06 05:16:00 | DEBUG    | test_runner | Installing: ['gym==0.26.0', 'tensorflow==2.10.0']
+2026-08-06 05:16:02 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-06 05:16:02 | WARNING  | test_runner | Tests FAILED for ai_agent_bootstrapper:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_bootstrapper.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_agent_bootstrapper/test_ai_agent_bootstrapper.py'.
+E   ModuleNotFoundError: No module named 'gym'
+ERROR test_ai_agent_bootstrapper.py
+2026-08-06 05:16:02 | WARNING  | tool_builder | ⚠️  ai_agent_bootstrapper tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_ai_agent_bootstrapper.py ________________
+ImportError while importing test modul
+2026-08-06 05:16:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:03 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:06 | DEBUG    | llm_client | LLM response from groq (3851 chars)
+2026-08-06 05:16:06 | DEBUG    | test_runner | Installing: ['tensorflow']
+2026-08-06 05:16:32 | WARNING  | test_runner | Tests FAILED for ai_agent_bootstrapper:
+test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E   assert False
+E0000 00:00:1785993391.461112    2794 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+E   tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+FAILED test_ai_agent_bootstrapper.py::test_initialize_agent_dqn - assert False
+FAILED test_ai_agent_bootstrapper.py::test_train_agent - tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+2026-08-06 05:16:32 | WARNING  | tool_builder | ⚠️  ai_agent_bootstrapper tests failed (loop 2/5) — test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E
+2026-08-06 05:16:32 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:35 | DEBUG    | llm_client | LLM response from groq (3788 chars)
+2026-08-06 05:16:35 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+class MockGymEnv:
+    def __init__(self):
+        self.observation_space = MockSpace((4,))
+        self.action_space = MockSpace((2,))
+
+    def reset(self):
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-06 05:16:35 | DEBUG    | test_runner | Installing: ['tensorflow']
+2026-08-06 05:16:38 | WARNING  | test_runner | Tests FAILED for ai_agent_bootstrapper:
+test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E   assert False
+E0000 00:00:1785993398.019989    2834 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+E   tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+FAILED test_ai_agent_bootstrapper.py::test_initialize_agent_dqn - assert False
+FAILED test_ai_agent_bootstrapper.py::test_train_agent - tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+2026-08-06 05:16:38 | WARNING  | tool_builder | ⚠️  ai_agent_bootstrapper tests failed (loop 3/5) — test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E
+2026-08-06 05:16:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:39 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:41 | DEBUG    | llm_client | LLM response from groq (3706 chars)
+2026-08-06 05:16:41 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+class MockGymEnv:
+    def __init__(self):
+        self.observation_space = MockSpace((4,))
+        self.action_space = MockSpace((2,))
+
+    def reset(self):
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-06 05:16:41 | DEBUG    | test_runner | Installing: ['tensorflow']
+2026-08-06 05:16:45 | WARNING  | test_runner | Tests FAILED for ai_agent_bootstrapper:
+test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E   assert False
+E0000 00:00:1785993404.477551    2871 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+E   tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+FAILED test_ai_agent_bootstrapper.py::test_initialize_agent_dqn - assert False
+FAILED test_ai_agent_bootstrapper.py::test_train_agent - tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+2026-08-06 05:16:45 | WARNING  | tool_builder | ⚠️  ai_agent_bootstrapper tests failed (loop 4/5) — test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E
+2026-08-06 05:16:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:48 | DEBUG    | llm_client | LLM response from groq (3524 chars)
+2026-08-06 05:16:48 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+class MockGymEnv:
+    def __init__(self):
+        self.observation_space = MockSpace((4,))
+        self.action_space = MockSpace((2,))
+
+    def reset(self):
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-06 05:16:48 | DEBUG    | test_runner | Installing: ['tensorflow']
+2026-08-06 05:16:51 | WARNING  | test_runner | Tests FAILED for ai_agent_bootstrapper:
+test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E   assert False
+E0000 00:00:1785993410.831522    2909 cuda_platform.cc:52] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+E   tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+FAILED test_ai_agent_bootstrapper.py::test_initialize_agent_dqn - assert False
+FAILED test_ai_agent_bootstrapper.py::test_train_agent - tensorflow.python.framework.errors_impl.InvalidArgumentError: {{function_node __wrapped__ArgMax_device_/job:localhost/replica:0/task:0/device:CPU:0}} Reduction axis 0 is empty in shape [0] [Op:ArgMax]
+2026-08-06 05:16:51 | WARNING  | tool_builder | ⚠️  ai_agent_bootstrapper tests failed (loop 5/5) — test_ai_agent_bootstrapper.py::test_initialize_agent_dqn FAILED          [ 33%]
+test_ai_agent_bootstrapper.py::test_train_agent FAILED                   [100%]
+    assert isinstance(env, MockGymEnv)
+E
+2026-08-06 05:16:51 | ERROR    | tool_builder | ❌ ai_agent_bootstrapper failed after 5 loops
+2026-08-06 05:16:51 | INFO     | tool_builder | Building tool: rl_policy_optimizer …
+2026-08-06 05:16:51 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:52 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:16:52 | WARNING  | llm_client | groq rate-limited — sleeping 15s
+2026-08-06 05:17:10 | DEBUG    | llm_client | LLM response from groq (3684 chars)
+2026-08-06 05:17:10 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'scipy==1.9.3']
+2026-08-06 05:17:10 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-06 05:17:13 | WARNING  | test_runner | Tests FAILED for rl_policy_optimizer:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_rl_policy_optimizer.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/rl_policy_optimizer/test_rl_policy_optimizer.py'.
+E   ModuleNotFoundError: No module named 'scipy'
+ERROR test_rl_policy_optimizer.py
+2026-08-06 05:17:13 | WARNING  | tool_builder | ⚠️  rl_policy_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_rl_policy_optimizer.py _________________
+ImportError while importing test modul
+2026-08-06 05:17:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:14 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-06 05:17:18 | DEBUG    | llm_client | LLM response from groq (3403 chars)
+2026-08-06 05:17:18 | DEBUG    | test_runner | Installing: ['tensorflow', 'scipy', 'numpy']
+2026-08-06 05:17:26 | WARNING  | test_runner | Tests FAILED for rl_policy_optimizer:
+test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, [0.6, 0.6])
+E   assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_policy - assert False
+2026-08-06 05:17:26 | WARNING  | tool_builder | ⚠️  rl_policy_optimizer tests failed (loop 2/5) — test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, [0.6, 0.6])
+E   assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_
+2026-08-06 05:17:26 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:27 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:27 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-06 05:17:31 | DEBUG    | llm_client | LLM response from groq (3433 chars)
+2026-08-06 05:17:31 | DEBUG    | test_runner | Installing: ['numpy', 'scipy', 'tensorflow']
+2026-08-06 05:17:35 | WARNING  | test_runner | Tests FAILED for rl_policy_optimizer:
+test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, [0.6, 0.6])
+E   assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_policy - assert False
+2026-08-06 05:17:35 | WARNING  | tool_builder | ⚠️  rl_policy_optimizer tests failed (loop 3/5) — test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, [0.6, 0.6])
+E   assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_
+2026-08-06 05:17:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:36 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-06 05:17:39 | DEBUG    | llm_client | LLM response from groq (2988 chars)
+2026-08-06 05:17:39 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-08-06 05:17:41 | WARNING  | test_runner | Tests FAILED for rl_policy_optimizer:
+test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, np.array([0.6, 0.6]))
+E   assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_policy - assert False
+2026-08-06 05:17:41 | WARNING  | tool_builder | ⚠️  rl_policy_optimizer tests failed (loop 4/5) — test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 33%]
+    assert np.allclose(optimized_policy, np.array([0.6, 0.6]))
+E   assert False
+FAILED test_rl_policy_optimizer.py::test
+2026-08-06 05:17:41 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:42 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-06 05:17:48 | DEBUG    | llm_client | LLM response from groq (3930 chars)
+2026-08-06 05:17:48 | DEBUG    | test_runner | Installing: ['numpy', 'scipy']
+2026-08-06 05:17:49 | WARNING  | test_runner | Tests FAILED for rl_policy_optimizer:
+test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 25%]
+test_rl_policy_optimizer.py::test_optimize_policy_real_minimize FAILED   [100%]
+    assert np.allclose(optimized_policy, np.array([0.6, 0.6]))
+E   assert False
+E   NameError: name 'minimize' is not defined
+FAILED test_rl_policy_optimizer.py::test_optimize_policy - assert False
+FAILED test_rl_policy_optimizer.py::test_optimize_policy_real_minimize - NameError: name 'minimize' is not defined
+2026-08-06 05:17:49 | WARNING  | tool_builder | ⚠️  rl_policy_optimizer tests failed (loop 5/5) — test_rl_policy_optimizer.py::test_optimize_policy FAILED                 [ 25%]
+test_rl_policy_optimizer.py::test_optimize_policy_real_minimize FAILED   [100%]
+    assert np.allclose(optimized_policy,
+2026-08-06 05:17:49 | ERROR    | tool_builder | ❌ rl_policy_optimizer failed after 5 loops
+2026-08-06 05:17:49 | INFO     | tool_builder | Building tool: agent_env_adapter …
+2026-08-06 05:17:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:50 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-06 05:17:55 | DEBUG    | llm_client | LLM response from groq (3476 chars)
+2026-08-06 05:17:55 | DEBUG    | test_runner | Installing: ['gym==0.26.0', 'torch==1.12.1']
+2026-08-06 05:17:57 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-06 05:17:57 | WARNING  | test_runner | Tests FAILED for agent_env_adapter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_agent_env_adapter.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/agent_env_adapter/test_agent_env_adapter.py'.
+E   ModuleNotFoundError: No module named 'gym'
+ERROR test_agent_env_adapter.py
+2026-08-06 05:17:57 | WARNING  | tool_builder | ⚠️  agent_env_adapter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_agent_env_adapter.py __________________
+ImportError while importing test modul
+2026-08-06 05:17:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:17:58 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-06 05:18:06 | DEBUG    | llm_client | LLM response from groq (3445 chars)
+2026-08-06 05:18:06 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-06 05:18:08 | WARNING  | test_runner | Tests FAILED for agent_env_adapter:
+test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_load_policy_unsupported - ValueError: Unsupported policy
+2026-08-06 05:18:08 | WARNING  | tool_builder | ⚠️  agent_env_adapter tests failed (loop 2/5) — test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_loa
+2026-08-06 05:18:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:09 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-06 05:18:12 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9933, Requested 2102. Please try again in 175ms. Need more tokens? Upgrade to Dev Tier today at https://
+2026-08-06 05:18:15 | DEBUG    | llm_client | LLM response from groq (3523 chars)
+2026-08-06 05:18:15 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-06 05:18:18 | WARNING  | test_runner | Tests FAILED for agent_env_adapter:
+test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_load_policy_unsupported - ValueError: Unsupported policy
+2026-08-06 05:18:18 | WARNING  | tool_builder | ⚠️  agent_env_adapter tests failed (loop 3/5) — test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_loa
+2026-08-06 05:18:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:19 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:19 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-06 05:18:24 | DEBUG    | llm_client | LLM response from groq (3498 chars)
+2026-08-06 05:18:24 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-06 05:18:27 | WARNING  | test_runner | Tests FAILED for agent_env_adapter:
+test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_load_policy_unsupported - ValueError: Unsupported policy
+2026-08-06 05:18:27 | WARNING  | tool_builder | ⚠️  agent_env_adapter tests failed (loop 4/5) — test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_loa
+2026-08-06 05:18:27 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-06 05:18:28 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-06 05:18:35 | DEBUG    | llm_client | LLM response from groq (3591 chars)
+2026-08-06 05:18:35 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-06 05:18:37 | WARNING  | test_runner | Tests FAILED for agent_env_adapter:
+test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_load_policy_unsupported - ValueError: Unsupported policy
+2026-08-06 05:18:37 | WARNING  | tool_builder | ⚠️  agent_env_adapter tests failed (loop 5/5) — test_agent_env_adapter.py::test_load_policy_unsupported FAILED           [100%]
+    raise ValueError('Unsupported policy')
+E   ValueError: Unsupported policy
+FAILED test_agent_env_adapter.py::test_loa
+2026-08-06 05:18:37 | ERROR    | tool_builder | ❌ agent_env_adapter failed after 5 loops
+2026-08-06 05:18:37 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-08-06 05:18:37 | INFO     | main |   Built 2/5 tools successfully
+2026-08-06 05:18:37 | INFO     | main |     ✅ llm_pruner (loops: 3)
+2026-08-06 05:18:37 | INFO     | main |     ✅ llm_benchmark (loops: 4)
+2026-08-06 05:18:37 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-06 05:18:37 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-06 05:18:37 | INFO     | github_publisher |   Created zip: llm_pruner.zip (1512 bytes)
+2026-08-06 05:18:37 | INFO     | github_publisher | Saved llm_pruner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_pruner
+2026-08-06 05:18:37 | INFO     | github_publisher |   Created zip: llm_benchmark.zip (2150 bytes)
+2026-08-06 05:18:37 | INFO     | github_publisher | Saved llm_benchmark → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_benchmark
+2026-08-06 05:18:37 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-08-06 05:18:37 | INFO     | main |   Published 2 tools:
+2026-08-06 05:18:37 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_pruner
+2026-08-06 05:18:37 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-06/llm_benchmark
+2026-08-06 05:18:37 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-06 05:18:37 | INFO     | main | ✅ Generated tools_index.json with 454 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
