@@ -1,0 +1,505 @@
+2026-08-07 04:23:33 | INFO     | main | ============================================================
+2026-08-07 04:23:33 | INFO     | main | AutoAIForge starting run: 2026-08-07T04:23:33.778236+00:00
+2026-08-07 04:23:33 | INFO     | main | ============================================================
+2026-08-07 04:23:33 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-07 04:23:34 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-07 04:23:34 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-07 04:23:34 | INFO     | main |   YouTube: 0 items
+2026-08-07 04:23:34 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-07 04:23:38 | INFO     | rss_scraper | HackerNews: 163 items
+2026-08-07 04:23:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-07 04:23:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-07 04:23:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-07 04:23:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-07 04:23:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-07 04:23:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-07 04:23:45 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-07 04:23:46 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-07 04:23:51 | INFO     | rss_scraper | ArXiv: 105 items
+2026-08-07 04:23:57 | INFO     | rss_scraper | Dev.to: 187 items
+2026-08-07 04:23:59 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-07 04:23:59 | INFO     | rss_scraper | Free sources total: 505 unique items
+2026-08-07 04:23:59 | INFO     | main |   RSS/API sources: 505 items
+2026-08-07 04:23:59 | INFO     | main |   Total scraped: 505 items
+2026-08-07 04:23:59 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-07 04:23:59 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-07 04:23:59 | INFO     | db_manager | Purged 371 old news items
+2026-08-07 04:23:59 | INFO     | db_manager | Inserted 344/505 news items
+2026-08-07 04:23:59 | INFO     | main |   SQLite: 344 new items (total: 9897)
+2026-08-07 04:24:04 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-07 04:24:06 | INFO     | vector_store | VectorStore ready
+2026-08-07 04:24:16 | INFO     | vector_store | Indexed 1093 items into vector store
+2026-08-07 04:24:16 | INFO     | main |   Vector store: 1093 items indexed
+2026-08-07 04:24:16 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-07 04:24:16 | INFO     | topic_analyzer | Analyzing 1093 items for top 10 topics …
+2026-08-07 04:24:16 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:20 | DEBUG    | llm_client | LLM response from groq (3793 chars)
+2026-08-07 04:24:20 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-07 04:24:20 | INFO     | main |   Found 10 topics:
+2026-08-07 04:24:20 | INFO     | main |      1. [9/10] Explainable AI
+2026-08-07 04:24:20 | INFO     | main |      2. [9/10] AI Safety and Security
+2026-08-07 04:24:20 | INFO     | main |      3. [9/10] Large Language Models
+2026-08-07 04:24:20 | INFO     | main |      4. [8/10] AI Model Fine-Tuning
+2026-08-07 04:24:20 | INFO     | main |      5. [8/10] Autonomous AI Agents
+2026-08-07 04:24:20 | INFO     | main |      6. [8/10] AI Hardware Acceleration
+2026-08-07 04:24:20 | INFO     | main |      7. [8/10] AI Model Evaluation and Testing
+2026-08-07 04:24:20 | INFO     | main |      8. [8/10] AI Model Compression and Pruning
+2026-08-07 04:24:20 | INFO     | main |      9. [7/10] AI and Quantum Computing
+2026-08-07 04:24:20 | INFO     | main |     10. [7/10] AI for Drug Discovery
+2026-08-07 04:24:20 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-07 04:24:20 | INFO     | main |   Existing collection: 454 tools across 244 topics
+2026-08-07 04:24:20 | INFO     | main |   🔄 Upgrade candidate: 'Autonomous AI Agents' (relevance 8/10, last built 2026-05-05)
+2026-08-07 04:24:20 | INFO     | main |   Topics flagged for upgrade: Autonomous AI Agents
+2026-08-07 04:24:20 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:21 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:23 | DEBUG    | llm_client | LLM response from groq (2814 chars)
+2026-08-07 04:24:23 | INFO     | idea_generator | Generated 3 ideas for topic: Explainable AI
+2026-08-07 04:24:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:25 | DEBUG    | llm_client | LLM response from groq (2207 chars)
+2026-08-07 04:24:25 | INFO     | idea_generator | Generated 2 ideas for topic: AI Safety and Security
+2026-08-07 04:24:25 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-07 04:24:25 | INFO     | main |   Generated 5 tool ideas:
+2026-08-07 04:24:25 | INFO     | main |     • model_interpreter: This tool provides a simple and intuitive way to interpret AI model decisions by
+2026-08-07 04:24:25 | INFO     | main |     • explainability_dashboard: This tool creates a web-based dashboard for visualizing and exploring AI model e
+2026-08-07 04:24:25 | INFO     | main |     • transparency_report_generator: This tool generates a comprehensive report detailing the transparency and explai
+2026-08-07 04:24:25 | INFO     | main |     • ai_risk_assessor: The AI Risk Assessor is a Python tool for identifying and mitigating potential A
+2026-08-07 04:24:25 | INFO     | main |     • ai_explainability_audit: The AI Explainability Audit is a Python tool for evaluating the explainability o
+2026-08-07 04:24:25 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-07 04:24:25 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-07 04:24:34 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-07 04:24:34 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-07 04:24:34 | INFO     | tool_builder | Building tool: model_interpreter …
+2026-08-07 04:24:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:24:37 | DEBUG    | llm_client | LLM response from groq (4307 chars)
+2026-08-07 04:24:37 | DEBUG    | test_runner | Installing: ['scikit-learn==1.0.2', 'matplotlib==3.5.1', 'seaborn==0.11.2', 'pandas==1.4.2']
+2026-08-07 04:25:00 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [831 lines of output]
+      Partial import of sklearn during the build process.
+      setup.py:128: DeprecationWarning:
+      
+        `numpy.distutils` is deprecated sin
+2026-08-07 04:25:00 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_interpreter/test_model_interpreter.py'.
+E   ModuleNotFoundError: No module named 'pandas'
+ERROR test_model_interpreter.py
+2026-08-07 04:25:00 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+ImportError while importing test modul
+2026-08-07 04:25:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:03 | DEBUG    | llm_client | LLM response from groq (4209 chars)
+2026-08-07 04:25:03 | DEBUG    | test_runner | Installing: ['pandas', 'matplotlib', 'scikit-learn', 'seaborn']
+2026-08-07 04:25:23 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_interpreter/test_model_interpreter.py'.
+E   ImportError: cannot import name 'joblib' from 'sklearn.externals' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/externals/__init__.py)
+ERROR test_model_interpreter.py
+2026-08-07 04:25:23 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+ImportError while importing test modul
+2026-08-07 04:25:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:26 | DEBUG    | llm_client | LLM response from groq (4157 chars)
+2026-08-07 04:25:26 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'seaborn', 'joblib']
+2026-08-07 04:25:28 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculate_feature_importance ERROR       [ 75%]
+test_model_interpreter.py::test_visualize_decision_boundary ERROR        [100%]
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_load_model _______________________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+_____________ ERROR at setup of test_calculate_feature_importance ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+______________ ERROR at setup of test_visualize_decision_boundary ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+E   ModuleNotFoundError: No module named 'pd'
+FAILED test_model_interpreter.py::test_load_data - ModuleNotFoundError: No module named 'pd'
+ERROR test_model_interpreter.py::test_load_model - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_calculate_feature_importance - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_visualize_decision_boundary - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+2026-08-07 04:25:28 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 3/5) — test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculat
+2026-08-07 04:25:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:29 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-07 04:25:34 | DEBUG    | llm_client | LLM response from groq (3826 chars)
+2026-08-07 04:25:34 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import pandas as pd
+import joblib
+import numpy as np
+
+
+def load_mode
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-07 04:25:34 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'seaborn', 'joblib']
+2026-08-07 04:25:37 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculate_feature_importance ERROR       [ 75%]
+test_model_interpreter.py::test_visualize_decision_boundary ERROR        [100%]
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_load_model _______________________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+_____________ ERROR at setup of test_calculate_feature_importance ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+______________ ERROR at setup of test_visualize_decision_boundary ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+E   ModuleNotFoundError: No module named 'pd'
+FAILED test_model_interpreter.py::test_load_data - ModuleNotFoundError: No module named 'pd'
+ERROR test_model_interpreter.py::test_load_model - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_calculate_feature_importance - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_visualize_decision_boundary - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+2026-08-07 04:25:37 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 4/5) — test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculat
+2026-08-07 04:25:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:40 | DEBUG    | llm_client | LLM response from groq (4626 chars)
+2026-08-07 04:25:40 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import pandas as pd
+import joblib
+import numpy as np
+
+
+def load_mode
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-07 04:25:40 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'seaborn', 'joblib']
+2026-08-07 04:25:43 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculate_feature_importance ERROR       [ 75%]
+test_model_interpreter.py::test_visualize_decision_boundary ERROR        [100%]
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_load_model _______________________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+_____________ ERROR at setup of test_calculate_feature_importance ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+______________ ERROR at setup of test_visualize_decision_boundary ______________
+E   AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+E   ModuleNotFoundError: No module named 'pd'
+FAILED test_model_interpreter.py::test_load_data - ModuleNotFoundError: No module named 'pd'
+ERROR test_model_interpreter.py::test_load_model - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_calculate_feature_importance - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+ERROR test_model_interpreter.py::test_visualize_decision_boundary - AttributeError: property 'feature_importances_' of 'RandomForestClassifier' object has no setter
+2026-08-07 04:25:43 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 5/5) — test_model_interpreter.py::test_load_model ERROR                         [ 25%]
+test_model_interpreter.py::test_load_data FAILED                         [ 50%]
+test_model_interpreter.py::test_calculat
+2026-08-07 04:25:43 | ERROR    | tool_builder | ❌ model_interpreter failed after 5 loops
+2026-08-07 04:25:43 | INFO     | tool_builder | Building tool: explainability_dashboard …
+2026-08-07 04:25:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:44 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:46 | DEBUG    | llm_client | LLM response from groq (3318 chars)
+2026-08-07 04:25:46 | ERROR    | tool_builder | Initial generation failed for explainability_dashboard: LLM returned non-JSON: {
+  "code": "import argparse\nimport dash\nfrom dash import dcc, html\nfrom dash.dependencies import Input, Output\nimport plotly.express as px\nimport pandas as pd\nimport numpy as np\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import train_test_split\nimport 
+Invalid \escape: line 3 column 343 (char 1875)
+2026-08-07 04:25:46 | INFO     | tool_builder | Building tool: transparency_report_generator …
+2026-08-07 04:25:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:25:50 | DEBUG    | llm_client | LLM response from groq (4650 chars)
+2026-08-07 04:25:50 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.0', 'pandas==1.5.3', 'matplotlib==3.6.2']
+2026-08-07 04:26:01 | WARNING  | test_runner | Tests FAILED for transparency_report_generator:
+test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+    assert 'Model Complexity' in report
+E   AssertionError: assert 'Model Complexity' in 'In FT2Font: Can not load face (invalid stream operation; error code 0x55)'
+    assert 'Data load failed' in report
+E   assert 'Data load failed' in "[Errno 2] No such file or directory: 'model_path'"
+  /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning: Exception ignored in: <MagicMock name='open()' id='140475719272272'>
+  TypeError: expected bytes, MagicMock found
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+FAILED test_transparency_report_generator.py::test_generate_report_success - AssertionError: assert 'Model Complexity' in 'In FT2Font: Can not load face (invalid stream operation; error code 0x55)'
+FAILED test_transparency_report_generator.py::test_generate_report_data_load_failure - assert 'Data load failed' in "[Errno 2] No such file or directory: 'model_path'"
+2026-08-07 04:26:01 | WARNING  | tool_builder | ⚠️  transparency_report_generator tests failed (loop 1/5) — test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+    assert 'Model Complexi
+2026-08-07 04:26:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:04 | DEBUG    | llm_client | LLM response from groq (5157 chars)
+2026-08-07 04:26:04 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'matplotlib']
+2026-08-07 04:26:06 | WARNING  | test_runner | Tests FAILED for transparency_report_generator:
+test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+E   _pickle.PicklingError: Can't pickle <class 'unittest.mock.MagicMock'>: it's not the same object as unittest.mock.MagicMock
+E   _pickle.PicklingError: Can't pickle <class 'unittest.mock.MagicMock'>: it's not the same object as unittest.mock.MagicMock
+FAILED test_transparency_report_generator.py::test_generate_report_success - _pickle.PicklingError: Can't pickle <class 'unittest.mock.MagicMock'>: it's not the same object as unittest.mock.MagicMock
+FAILED test_transparency_report_generator.py::test_generate_report_data_load_failure - _pickle.PicklingError: Can't pickle <class 'unittest.mock.MagicMock'>: it's not the same object as unittest.mock.MagicMock
+2026-08-07 04:26:06 | WARNING  | tool_builder | ⚠️  transparency_report_generator tests failed (loop 2/5) — test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+E   _pickle.PicklingError:
+2026-08-07 04:26:06 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:07 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:08 | WARNING  | llm_client | groq rate-limited — sleeping 17s
+2026-08-07 04:26:27 | DEBUG    | llm_client | LLM response from groq (5304 chars)
+2026-08-07 04:26:27 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'matplotlib']
+2026-08-07 04:26:29 | WARNING  | test_runner | Tests FAILED for transparency_report_generator:
+test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+E   NameError: name 'RandomForestClassifier' is not defined
+E   NameError: name 'RandomForestClassifier' is not defined
+FAILED test_transparency_report_generator.py::test_generate_report_success - NameError: name 'RandomForestClassifier' is not defined
+FAILED test_transparency_report_generator.py::test_generate_report_data_load_failure - NameError: name 'RandomForestClassifier' is not defined
+2026-08-07 04:26:29 | WARNING  | tool_builder | ⚠️  transparency_report_generator tests failed (loop 3/5) — test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+test_transparency_report_generator.py::test_generate_report_data_load_failure FAILED [100%]
+E   NameError: name 'Rando
+2026-08-07 04:26:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:30 | WARNING  | llm_client | groq rate-limited — sleeping 9s
+2026-08-07 04:26:39 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9524, Requested 2499. Please try again in 114.999999ms. Need more tokens? Upgrade to Dev Tier today at h
+2026-08-07 04:26:40 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-07 04:26:44 | DEBUG    | llm_client | LLM response from groq (5051 chars)
+2026-08-07 04:26:44 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'matplotlib']
+2026-08-07 04:26:46 | WARNING  | test_runner | Tests FAILED for transparency_report_generator:
+test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+    assert 'Model Complexity' in report
+E   AssertionError: assert 'Model Complexity' in 'No mappable was found to use for colorbar creation. First define a mappable such as an image (with imshow) or a contour set (with contourf).'
+FAILED test_transparency_report_generator.py::test_generate_report_success - AssertionError: assert 'Model Complexity' in 'No mappable was found to use for colorbar creation. First define a mappable such as an image (with imshow) or a contour set (with contourf).'
+2026-08-07 04:26:46 | WARNING  | tool_builder | ⚠️  transparency_report_generator tests failed (loop 4/5) — test_transparency_report_generator.py::test_generate_report_success FAILED [ 33%]
+    assert 'Model Complexity' in report
+E   AssertionError: assert 'Model Complexity' in 'No mappable was found to use
+2026-08-07 04:26:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:47 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-07 04:26:56 | DEBUG    | llm_client | LLM response from groq (5415 chars)
+2026-08-07 04:26:56 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'matplotlib']
+2026-08-07 04:26:58 | INFO     | test_runner | Tests PASSED for transparency_report_generator
+2026-08-07 04:26:58 | INFO     | tool_builder | ✅ transparency_report_generator passed tests on loop 5
+2026-08-07 04:26:58 | INFO     | tool_builder | Building tool: ai_risk_assessor …
+2026-08-07 04:26:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:26:59 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-07 04:27:06 | DEBUG    | llm_client | LLM response from groq (2813 chars)
+2026-08-07 04:27:06 | DEBUG    | test_runner | Installing: ['pandas==1.4.3', 'scikit-learn==1.1.2', 'argparse']
+2026-08-07 04:27:10 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [20 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-08-07 04:27:11 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_assess_risk FAILED                        [ 33%]
+test_ai_risk_assessor.py::test_main FAILED                               [100%]
+E   NameError: name 'pd' is not defined
+E   AttributeError: module 'ai_risk_assessor' has no attribute 'main'
+FAILED test_ai_risk_assessor.py::test_assess_risk - NameError: name 'pd' is not defined
+FAILED test_ai_risk_assessor.py::test_main - AttributeError: module 'ai_risk_assessor' has no attribute 'main'
+2026-08-07 04:27:11 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 1/5) — test_ai_risk_assessor.py::test_assess_risk FAILED                        [ 33%]
+test_ai_risk_assessor.py::test_main FAILED                               [100%]
+E   NameError: name 'pd' is not defined
+
+2026-08-07 04:27:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:14 | DEBUG    | llm_client | LLM response from groq (3058 chars)
+2026-08-07 04:27:14 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'json']
+2026-08-07 04:27:15 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-07 04:27:16 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_main FAILED                               [100%]
+FAILED test_ai_risk_assessor.py::test_main - SystemExit: 2
+2026-08-07 04:27:16 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 2/5) — test_ai_risk_assessor.py::test_main FAILED                               [100%]
+FAILED test_ai_risk_assessor.py::test_main - SystemExit: 2
+2026-08-07 04:27:16 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:17 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:17 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-07 04:27:23 | DEBUG    | llm_client | LLM response from groq (3347 chars)
+2026-08-07 04:27:23 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'argparse', 'json']
+2026-08-07 04:27:24 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-07 04:27:24 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unmatched ')'
+ERROR test_ai_risk_assessor.py
+2026-08-07 04:27:24 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+../_venv/lib/python3.11/site-packages/
+2026-08-07 04:27:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:26 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-07 04:27:30 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9871, Requested 2331. Please try again in 1.01s. Need more tokens? Upgrade to Dev Tier today at https://
+2026-08-07 04:27:33 | DEBUG    | llm_client | LLM response from groq (3371 chars)
+2026-08-07 04:27:33 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'argparse', 'json']
+2026-08-07 04:27:33 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-07 04:27:34 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+test_ai_risk_assessor.py::test_main FAILED                               [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+FAILED test_ai_risk_assessor.py::test_main - FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+2026-08-07 04:27:34 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 4/5) — test_ai_risk_assessor.py::test_main FAILED                               [100%]
+E   FileNotFoundError: [Errno 2] No such file or directory: 'config.json'
+FAILED test_ai_risk_assessor.py::test_main - F
+2026-08-07 04:27:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:36 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-07 04:27:42 | DEBUG    | llm_client | LLM response from groq (3640 chars)
+2026-08-07 04:27:42 | DEBUG    | test_runner | Installing: ['pandas', 'scikit-learn', 'argparse', 'json']
+2026-08-07 04:27:43 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-07 04:27:43 | WARNING  | test_runner | Tests FAILED for ai_risk_assessor:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unmatched ')'
+ERROR test_ai_risk_assessor.py
+2026-08-07 04:27:43 | WARNING  | tool_builder | ⚠️  ai_risk_assessor tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_risk_assessor.py ___________________
+../_venv/lib/python3.11/site-packages/
+2026-08-07 04:27:43 | ERROR    | tool_builder | ❌ ai_risk_assessor failed after 5 loops
+2026-08-07 04:27:43 | INFO     | tool_builder | Building tool: ai_explainability_audit …
+2026-08-07 04:27:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:44 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:27:44 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-07 04:27:51 | DEBUG    | llm_client | LLM response from groq (5166 chars)
+2026-08-07 04:27:51 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.0', 'matplotlib==3.6.2', 'seaborn==0.12.1', 'pandas==1.5.2']
+2026-08-07 04:27:59 | WARNING  | test_runner | Tests FAILED for ai_explainability_audit:
+test_ai_explainability_audit.py::test_analyze_explainability FAILED      [ 33%]
+test_ai_explainability_audit.py::test_analyze_explainability_empty_data FAILED [ 66%]
+test_ai_explainability_audit.py::test_analyze_explainability_invalid_model FAILED [100%]
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability_empty_data - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability_invalid_model - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+2026-08-07 04:27:59 | WARNING  | tool_builder | ⚠️  ai_explainability_audit tests failed (loop 1/5) — test_ai_explainability_audit.py::test_analyze_explainability FAILED      [ 33%]
+test_ai_explainability_audit.py::test_analyze_explainability_empty_data FAILED [ 66%]
+test_ai_explainability_audit.py::t
+2026-08-07 04:27:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:00 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-07 04:28:04 | DEBUG    | llm_client | LLM response from groq (5995 chars)
+2026-08-07 04:28:04 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.inspection import partial_dependence, plot_partial_depe
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-07 04:28:04 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.0', 'matplotlib==3.6.2', 'seaborn==0.12.1', 'pandas==1.5.2']
+2026-08-07 04:28:07 | WARNING  | test_runner | Tests FAILED for ai_explainability_audit:
+test_ai_explainability_audit.py::test_analyze_explainability FAILED      [ 33%]
+test_ai_explainability_audit.py::test_analyze_explainability_empty_data FAILED [ 66%]
+test_ai_explainability_audit.py::test_analyze_explainability_invalid_model FAILED [100%]
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+    raise AttributeError(
+E   AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability_empty_data - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+FAILED test_ai_explainability_audit.py::test_analyze_explainability_invalid_model - AttributeError: <module 'sklearn.inspection' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/sklearn/inspection/__init__.py'> does not have the attribute 'plot_partial_dependence'
+2026-08-07 04:28:07 | WARNING  | tool_builder | ⚠️  ai_explainability_audit tests failed (loop 2/5) — test_ai_explainability_audit.py::test_analyze_explainability FAILED      [ 33%]
+test_ai_explainability_audit.py::test_analyze_explainability_empty_data FAILED [ 66%]
+test_ai_explainability_audit.py::t
+2026-08-07 04:28:07 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:08 | WARNING  | llm_client | groq rate-limited — sleeping 10s
+2026-08-07 04:28:20 | DEBUG    | llm_client | LLM response from groq (5816 chars)
+2026-08-07 04:28:20 | DEBUG    | test_runner | Installing: ['numpy', 'scikit-learn', 'matplotlib', 'pandas']
+2026-08-07 04:28:22 | WARNING  | test_runner | Tests FAILED for ai_explainability_audit:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 22)
+ERROR test_ai_explainability_audit.py
+2026-08-07 04:28:22 | WARNING  | tool_builder | ⚠️  ai_explainability_audit tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-07 04:28:22 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:23 | WARNING  | llm_client | groq rate-limited — sleeping 9s
+2026-08-07 04:28:34 | DEBUG    | llm_client | LLM response from groq (5142 chars)
+2026-08-07 04:28:34 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.inspection import partial_dependence, plot_partial_depe
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-07 04:28:34 | DEBUG    | test_runner | Installing: ['numpy', 'scikit-learn', 'matplotlib', 'pandas']
+2026-08-07 04:28:36 | WARNING  | test_runner | Tests FAILED for ai_explainability_audit:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 22)
+ERROR test_ai_explainability_audit.py
+2026-08-07 04:28:36 | WARNING  | tool_builder | ⚠️  ai_explainability_audit tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-07 04:28:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-07 04:28:37 | WARNING  | llm_client | groq rate-limited — sleeping 8s
+2026-08-07 04:28:48 | DEBUG    | llm_client | LLM response from groq (5823 chars)
+2026-08-07 04:28:48 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.inspection import partial_dependence, plot_partial_depe
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-07 04:28:48 | DEBUG    | test_runner | Installing: ['numpy', 'scikit-learn', 'matplotlib', 'pandas']
+2026-08-07 04:28:49 | WARNING  | test_runner | Tests FAILED for ai_explainability_audit:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 22)
+ERROR test_ai_explainability_audit.py
+2026-08-07 04:28:49 | WARNING  | tool_builder | ⚠️  ai_explainability_audit tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_explainability_audit.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-07 04:28:49 | ERROR    | tool_builder | ❌ ai_explainability_audit failed after 5 loops
+2026-08-07 04:28:49 | INFO     | tool_builder | Built 1/5 tools successfully
+2026-08-07 04:28:49 | INFO     | main |   Built 1/5 tools successfully
+2026-08-07 04:28:49 | INFO     | main |     ✅ transparency_report_generator (loops: 5)
+2026-08-07 04:28:49 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-07 04:28:49 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-07 04:28:49 | INFO     | github_publisher |   Created zip: transparency_report_generator.zip (2503 bytes)
+2026-08-07 04:28:49 | INFO     | github_publisher | Saved transparency_report_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-07/transparency_report_generator
+2026-08-07 04:28:49 | INFO     | github_publisher | Saved 1/1 tools to generated_tools/
+2026-08-07 04:28:49 | INFO     | main |   Published 1 tools:
+2026-08-07 04:28:49 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-07/transparency_report_generator
+2026-08-07 04:28:49 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-07 04:28:49 | INFO     | main | ✅ Generated tools_index.json with 455 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
