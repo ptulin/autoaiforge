@@ -1,0 +1,407 @@
+2026-08-09 03:29:12 | INFO     | main | ============================================================
+2026-08-09 03:29:12 | INFO     | main | AutoAIForge starting run: 2026-08-09T03:29:12.196740+00:00
+2026-08-09 03:29:12 | INFO     | main | ============================================================
+2026-08-09 03:29:12 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-09 03:29:12 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-09 03:29:12 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-09 03:29:12 | INFO     | main |   YouTube: 0 items
+2026-08-09 03:29:12 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-09 03:29:17 | INFO     | rss_scraper | HackerNews: 151 items
+2026-08-09 03:29:17 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-09 03:29:18 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-09 03:29:19 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-09 03:29:20 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-09 03:29:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-09 03:29:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-09 03:29:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-09 03:29:24 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-09 03:29:30 | INFO     | rss_scraper | ArXiv: 105 items
+2026-08-09 03:29:34 | INFO     | rss_scraper | Dev.to: 179 items
+2026-08-09 03:29:35 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-09 03:29:35 | INFO     | rss_scraper | Free sources total: 485 unique items
+2026-08-09 03:29:35 | INFO     | main |   RSS/API sources: 485 items
+2026-08-09 03:29:35 | INFO     | main |   Total scraped: 485 items
+2026-08-09 03:29:35 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-09 03:29:35 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-09 03:29:35 | INFO     | db_manager | Purged 393 old news items
+2026-08-09 03:29:35 | INFO     | db_manager | Inserted 186/485 news items
+2026-08-09 03:29:35 | INFO     | main |   SQLite: 186 new items (total: 9508)
+2026-08-09 03:29:41 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-09 03:29:41 | INFO     | vector_store | VectorStore ready
+2026-08-09 03:29:49 | INFO     | vector_store | Indexed 732 items into vector store
+2026-08-09 03:29:49 | INFO     | main |   Vector store: 732 items indexed
+2026-08-09 03:29:50 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-09 03:29:50 | INFO     | topic_analyzer | Analyzing 732 items for top 10 topics …
+2026-08-09 03:29:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:51 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:53 | DEBUG    | llm_client | LLM response from groq (3326 chars)
+2026-08-09 03:29:53 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-09 03:29:53 | INFO     | main |   Found 10 topics:
+2026-08-09 03:29:53 | INFO     | main |      1. [9/10] AI Code Generation
+2026-08-09 03:29:53 | INFO     | main |      2. [8/10] LLM Security
+2026-08-09 03:29:53 | INFO     | main |      3. [8/10] Conversational AI
+2026-08-09 03:29:53 | INFO     | main |      4. [8/10] AI Model Explainability
+2026-08-09 03:29:53 | INFO     | main |      5. [7/10] Explainable AI
+2026-08-09 03:29:53 | INFO     | main |      6. [7/10] LLM-oriented Programming
+2026-08-09 03:29:53 | INFO     | main |      7. [6/10] Decentralized AI
+2026-08-09 03:29:53 | INFO     | main |      8. [6/10] AI Model Auditing
+2026-08-09 03:29:53 | INFO     | main |      9. [5/10] AI-powered Video Editing
+2026-08-09 03:29:53 | INFO     | main |     10. [4/10] AI-powered Music Generation
+2026-08-09 03:29:53 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-09 03:29:53 | INFO     | main |   Existing collection: 455 tools across 245 topics
+2026-08-09 03:29:53 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-09 03:29:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:56 | DEBUG    | llm_client | LLM response from groq (2769 chars)
+2026-08-09 03:29:56 | INFO     | idea_generator | Generated 3 ideas for topic: AI Code Generation
+2026-08-09 03:29:56 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_code_reviewer' — name already in collection
+2026-08-09 03:29:56 | INFO     | idea_generator |   ⏭  Skipping topic 'LLM Security' — tool already in collection
+2026-08-09 03:29:56 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:29:59 | DEBUG    | llm_client | LLM response from groq (3209 chars)
+2026-08-09 03:29:59 | INFO     | idea_generator | Generated 3 ideas for topic: Conversational AI
+2026-08-09 03:29:59 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-09 03:29:59 | INFO     | main |   Generated 5 tool ideas:
+2026-08-09 03:29:59 | INFO     | main |     • code_generator_trainer: This tool enables developers to fine-tune AI code generation models using their 
+2026-08-09 03:29:59 | INFO     | main |     • code_completion_assistant: This tool integrates AI-powered code completion into popular IDEs and text edito
+2026-08-09 03:29:59 | INFO     | main |     • conversational_ai_trainer: This tool enables developers to fine-tune pre-trained conversational AI models o
+2026-08-09 03:29:59 | INFO     | main |     • dialogue_flow_optimizer: This tool analyzes and optimizes the conversation flow of chatbots, identifying 
+2026-08-09 03:29:59 | INFO     | main |     • intent_discovery: This tool helps developers identify and extract intents from large datasets of u
+2026-08-09 03:29:59 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-09 03:29:59 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-09 03:30:08 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-09 03:30:08 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-09 03:30:08 | INFO     | tool_builder | Building tool: code_generator_trainer …
+2026-08-09 03:30:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:30:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:30:12 | DEBUG    | llm_client | LLM response from groq (4909 chars)
+2026-08-09 03:30:12 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1']
+2026-08-09 03:30:13 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-09 03:30:13 | WARNING  | test_runner | Tests FAILED for code_generator_trainer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_code_generator_trainer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/code_generator_trainer/test_code_generator_trainer.py'.
+E   ModuleNotFoundError: No module named 'transformers'
+ERROR test_code_generator_trainer.py
+2026-08-09 03:30:13 | WARNING  | tool_builder | ⚠️  code_generator_trainer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_code_generator_trainer.py ________________
+ImportError while importing test modul
+2026-08-09 03:30:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:30:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:30:14 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-09 03:30:19 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9509, Requested 7291. Please try again in 24s. Need more tokens? Upgrade to Dev Tier today at https://co
+2026-08-09 03:30:20 | WARNING  | llm_client | groq rate-limited — sleeping 23s
+2026-08-09 03:30:45 | DEBUG    | llm_client | LLM response from groq (4172 chars)
+2026-08-09 03:30:45 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-09 03:31:25 | WARNING  | test_runner | Tests FAILED for code_generator_trainer:
+test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_empty_dataset FAILED [ 66%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError(
+E   ValueError: num_samples should be a positive integer value, but got num_samples=0
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_code_generator_trainer.py::test_train_model - ValueError: optimizer got an empty parameter list
+FAILED test_code_generator_trainer.py::test_train_model_with_empty_dataset - ValueError: num_samples should be a positive integer value, but got num_samples=0
+FAILED test_code_generator_trainer.py::test_train_model_with_invalid_model - ValueError: optimizer got an empty parameter list
+2026-08-09 03:31:25 | WARNING  | tool_builder | ⚠️  code_generator_trainer tests failed (loop 2/5) — test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_empty_dataset FAILED [ 66%]
+test_code_generator_trainer.py::test_t
+2026-08-09 03:31:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:26 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:29 | DEBUG    | llm_client | LLM response from groq (4650 chars)
+2026-08-09 03:31:29 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-09 03:31:31 | WARNING  | test_runner | Tests FAILED for code_generator_trainer:
+test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+E   NameError: name 'torch' is not defined
+E   NameError: name 'torch' is not defined
+FAILED test_code_generator_trainer.py::test_train_model - NameError: name 'torch' is not defined
+FAILED test_code_generator_trainer.py::test_train_model_with_invalid_model - NameError: name 'torch' is not defined
+2026-08-09 03:31:31 | WARNING  | tool_builder | ⚠️  code_generator_trainer tests failed (loop 3/5) — test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+E   NameError: name 'torch' is not def
+2026-08-09 03:31:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:32 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:33 | WARNING  | llm_client | groq rate-limited — sleeping 7s
+2026-08-09 03:31:40 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9542, Requested 2498. Please try again in 200ms. Need more tokens? Upgrade to Dev Tier today at https://
+2026-08-09 03:31:43 | DEBUG    | llm_client | LLM response from groq (5047 chars)
+2026-08-09 03:31:43 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-09 03:31:48 | WARNING  | test_runner | Tests FAILED for code_generator_trainer:
+test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+    raise TypeError(
+E   TypeError: optimizer can only optimize Tensors, but one of the params is unittest.mock.MagicMock
+    raise TypeError(
+E   TypeError: optimizer can only optimize Tensors, but one of the params is unittest.mock.MagicMock
+FAILED test_code_generator_trainer.py::test_train_model - TypeError: optimizer can only optimize Tensors, but one of the params is unittest.mock.MagicMock
+FAILED test_code_generator_trainer.py::test_train_model_with_invalid_model - TypeError: optimizer can only optimize Tensors, but one of the params is unittest.mock.MagicMock
+2026-08-09 03:31:48 | WARNING  | tool_builder | ⚠️  code_generator_trainer tests failed (loop 4/5) — test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+    raise TypeError(
+E   TypeError: op
+2026-08-09 03:31:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:31:49 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-09 03:31:56 | DEBUG    | llm_client | LLM response from groq (4866 chars)
+2026-08-09 03:31:56 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-09 03:32:00 | WARNING  | test_runner | Tests FAILED for code_generator_trainer:
+test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+E   RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+E   RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+FAILED test_code_generator_trainer.py::test_train_model - RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+FAILED test_code_generator_trainer.py::test_train_model_with_invalid_model - RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+2026-08-09 03:32:00 | WARNING  | tool_builder | ⚠️  code_generator_trainer tests failed (loop 5/5) — test_code_generator_trainer.py::test_train_model FAILED                  [ 33%]
+test_code_generator_trainer.py::test_train_model_with_invalid_model FAILED [100%]
+E   RuntimeError: element 0 of tensors
+2026-08-09 03:32:00 | ERROR    | tool_builder | ❌ code_generator_trainer failed after 5 loops
+2026-08-09 03:32:00 | INFO     | tool_builder | Building tool: code_completion_assistant …
+2026-08-09 03:32:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:03 | DEBUG    | llm_client | LLM response from groq (2579 chars)
+2026-08-09 03:32:03 | DEBUG    | test_runner | Installing: ['language-tool==6.0.2', 'pygments==2.11.2']
+2026-08-09 03:32:03 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement language-tool==6.0.2 (from versions: 0.3, 0.4)
+ERROR: No matching distribution found for language-tool==6.0.2
+
+2026-08-09 03:32:04 | WARNING  | test_runner | Tests FAILED for code_completion_assistant:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_code_completion_assistant.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/code_completion_assistant/test_code_completion_assistant.py'.
+E   ModuleNotFoundError: No module named 'language_tool'
+ERROR test_code_completion_assistant.py
+2026-08-09 03:32:04 | WARNING  | tool_builder | ⚠️  code_completion_assistant tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_code_completion_assistant.py ______________
+ImportError while importing test modul
+2026-08-09 03:32:04 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:05 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-09 03:32:10 | DEBUG    | llm_client | LLM response from groq (2714 chars)
+2026-08-09 03:32:10 | DEBUG    | test_runner | Installing: ['argparse', 'json']
+2026-08-09 03:32:11 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-09 03:32:11 | WARNING  | test_runner | Tests FAILED for code_completion_assistant:
+test_code_completion_assistant.py::test_get_code_completions_valid_code_context FAILED [ 66%]
+E   NameError: name 'Mock' is not defined
+FAILED test_code_completion_assistant.py::test_get_code_completions_valid_code_context - NameError: name 'Mock' is not defined
+2026-08-09 03:32:11 | WARNING  | tool_builder | ⚠️  code_completion_assistant tests failed (loop 2/5) — test_code_completion_assistant.py::test_get_code_completions_valid_code_context FAILED [ 66%]
+E   NameError: name 'Mock' is not defined
+FAILED test_code_completion_assistant.py::test_get_code_completi
+2026-08-09 03:32:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:12 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-09 03:32:17 | DEBUG    | llm_client | LLM response from groq (2749 chars)
+2026-08-09 03:32:17 | DEBUG    | test_runner | Installing: ['argparse', 'json', 'unittest']
+2026-08-09 03:32:17 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-09 03:32:17 | INFO     | test_runner | Tests PASSED for code_completion_assistant
+2026-08-09 03:32:17 | INFO     | tool_builder | ✅ code_completion_assistant passed tests on loop 3
+2026-08-09 03:32:17 | INFO     | tool_builder | Building tool: conversational_ai_trainer …
+2026-08-09 03:32:17 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:19 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-09 03:32:21 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10650, Requested 1708. Please try again in 1.79s. Need more tokens? Upgrade to Dev Tier today at https:/
+2026-08-09 03:32:24 | DEBUG    | llm_client | LLM response from groq (4840 chars)
+2026-08-09 03:32:24 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1']
+2026-08-09 03:32:25 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-09 03:32:27 | WARNING  | test_runner | Tests FAILED for conversational_ai_trainer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_conversational_ai_trainer.py ______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/conversational_ai_trainer/test_conversational_ai_trainer.py'.
+E   ModuleNotFoundError: No module named 'transformers'
+ERROR test_conversational_ai_trainer.py
+2026-08-09 03:32:27 | WARNING  | tool_builder | ⚠️  conversational_ai_trainer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_conversational_ai_trainer.py ______________
+ImportError while importing test modul
+2026-08-09 03:32:27 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:28 | WARNING  | llm_client | groq rate-limited — sleeping 7s
+2026-08-09 03:32:38 | DEBUG    | llm_client | LLM response from groq (5568 chars)
+2026-08-09 03:32:38 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-09 03:32:52 | WARNING  | test_runner | Tests FAILED for conversational_ai_trainer:
+test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size FAILED [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_epochs - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size - ValueError: optimizer got an empty parameter list
+2026-08-09 03:32:52 | WARNING  | tool_builder | ⚠️  conversational_ai_trainer tests failed (loop 2/5) — test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::
+2026-08-09 03:32:52 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:32:56 | DEBUG    | llm_client | LLM response from groq (5727 chars)
+2026-08-09 03:32:56 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+def train_model(model_name, dataset_path, num_epochs, batch_size):
+    # Load pre-trained model and tokenizer
+    model = AutoModelForSequenceClassification.from_pretrained(model_na
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-09 03:32:56 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-09 03:33:02 | WARNING  | test_runner | Tests FAILED for conversational_ai_trainer:
+test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size FAILED [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_epochs - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size - ValueError: optimizer got an empty parameter list
+2026-08-09 03:33:02 | WARNING  | tool_builder | ⚠️  conversational_ai_trainer tests failed (loop 3/5) — test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::
+2026-08-09 03:33:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:03 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:03 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-09 03:33:05 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9118, Requested 2965. Please try again in 415ms. Need more tokens? Upgrade to Dev Tier today at https://
+2026-08-09 03:33:09 | DEBUG    | llm_client | LLM response from groq (6030 chars)
+2026-08-09 03:33:09 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+def train_model(model_name, dataset_path, num_epochs, batch_size):
+    # Load pre-trained model and tokenizer
+    model = AutoModelForSequenceClassification.from_pretrained(model_na
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-09 03:33:09 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-09 03:33:14 | WARNING  | test_runner | Tests FAILED for conversational_ai_trainer:
+test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size FAILED [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_epochs - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size - ValueError: optimizer got an empty parameter list
+2026-08-09 03:33:14 | WARNING  | tool_builder | ⚠️  conversational_ai_trainer tests failed (loop 4/5) — test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::
+2026-08-09 03:33:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:15 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-09 03:33:24 | DEBUG    | llm_client | LLM response from groq (6089 chars)
+2026-08-09 03:33:24 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+def train_model(model_name, dataset_path, num_epochs, batch_size):
+    # Load pre-trained model and tokenizer
+    model = AutoModelForSequenceClassification.from_pretrained(model_na
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-09 03:33:24 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-09 03:33:29 | WARNING  | test_runner | Tests FAILED for conversational_ai_trainer:
+test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size FAILED [100%]
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+    raise ValueError("optimizer got an empty parameter list")
+E   ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_epochs - ValueError: optimizer got an empty parameter list
+FAILED test_conversational_ai_trainer.py::test_train_model_with_custom_batch_size - ValueError: optimizer got an empty parameter list
+2026-08-09 03:33:29 | WARNING  | tool_builder | ⚠️  conversational_ai_trainer tests failed (loop 5/5) — test_conversational_ai_trainer.py::test_train_model FAILED               [ 33%]
+test_conversational_ai_trainer.py::test_train_model_with_custom_epochs FAILED [ 66%]
+test_conversational_ai_trainer.py::
+2026-08-09 03:33:29 | ERROR    | tool_builder | ❌ conversational_ai_trainer failed after 5 loops
+2026-08-09 03:33:29 | INFO     | tool_builder | Building tool: dialogue_flow_optimizer …
+2026-08-09 03:33:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:33 | DEBUG    | llm_client | LLM response from groq (4008 chars)
+2026-08-09 03:33:33 | DEBUG    | test_runner | Installing: ['networkx==3.0', 'matplotlib==3.6.2']
+2026-08-09 03:33:40 | WARNING  | test_runner | Tests FAILED for dialogue_flow_optimizer:
+test_dialogue_flow_optimizer.py::test_optimize_dialogue_flow FAILED      [ 75%]
+    assert len(optimized_flow['edges']) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_dialogue_flow_optimizer.py::test_optimize_dialogue_flow - AssertionError: assert 1 == 0
+2026-08-09 03:33:40 | WARNING  | tool_builder | ⚠️  dialogue_flow_optimizer tests failed (loop 1/5) — test_dialogue_flow_optimizer.py::test_optimize_dialogue_flow FAILED      [ 75%]
+    assert len(optimized_flow['edges']) == 0
+E   AssertionError: assert 1 == 0
+FAILED test_dialogue_flow_optimizer.py::t
+2026-08-09 03:33:41 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:42 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-09 03:33:45 | DEBUG    | llm_client | LLM response from groq (4123 chars)
+2026-08-09 03:33:45 | DEBUG    | test_runner | Installing: ['networkx', 'matplotlib']
+2026-08-09 03:33:46 | INFO     | test_runner | Tests PASSED for dialogue_flow_optimizer
+2026-08-09 03:33:46 | INFO     | tool_builder | ✅ dialogue_flow_optimizer passed tests on loop 2
+2026-08-09 03:33:46 | INFO     | tool_builder | Building tool: intent_discovery …
+2026-08-09 03:33:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:33:47 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-09 03:33:52 | DEBUG    | llm_client | LLM response from groq (3317 chars)
+2026-08-09 03:33:52 | DEBUG    | test_runner | Installing: ['spacy==3.4.4', 'scikit-learn==1.0.2']
+2026-08-09 03:34:19 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [831 lines of output]
+      Partial import of sklearn during the build process.
+      setup.py:128: DeprecationWarning:
+      
+        `numpy.distutils` is deprecated sin
+2026-08-09 03:34:20 | WARNING  | test_runner | Tests FAILED for intent_discovery:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_intent_discovery.py ___________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/intent_discovery/test_intent_discovery.py'.
+E   ModuleNotFoundError: No module named 'spacy'
+ERROR test_intent_discovery.py
+2026-08-09 03:34:20 | WARNING  | tool_builder | ⚠️  intent_discovery tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_intent_discovery.py ___________________
+ImportError while importing test modul
+2026-08-09 03:34:20 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:34:21 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-09 03:34:23 | DEBUG    | llm_client | LLM response from groq (4692 chars)
+2026-08-09 03:34:23 | DEBUG    | test_runner | Installing: ['spacy', 'scikit-learn']
+2026-08-09 03:34:42 | INFO     | test_runner | Tests PASSED for intent_discovery
+2026-08-09 03:34:42 | INFO     | tool_builder | ✅ intent_discovery passed tests on loop 2
+2026-08-09 03:34:42 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-08-09 03:34:42 | INFO     | main |   Built 3/5 tools successfully
+2026-08-09 03:34:42 | INFO     | main |     ✅ code_completion_assistant (loops: 3)
+2026-08-09 03:34:42 | INFO     | main |     ✅ dialogue_flow_optimizer (loops: 2)
+2026-08-09 03:34:42 | INFO     | main |     ✅ intent_discovery (loops: 2)
+2026-08-09 03:34:42 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-09 03:34:42 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-09 03:34:42 | INFO     | github_publisher |   Created zip: code_completion_assistant.zip (1588 bytes)
+2026-08-09 03:34:42 | INFO     | github_publisher | Saved code_completion_assistant → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/code_completion_assistant
+2026-08-09 03:34:42 | INFO     | github_publisher |   Created zip: dialogue_flow_optimizer.zip (1983 bytes)
+2026-08-09 03:34:42 | INFO     | github_publisher | Saved dialogue_flow_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/dialogue_flow_optimizer
+2026-08-09 03:34:42 | INFO     | github_publisher |   Created zip: intent_discovery.zip (2129 bytes)
+2026-08-09 03:34:42 | INFO     | github_publisher | Saved intent_discovery → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/intent_discovery
+2026-08-09 03:34:42 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-08-09 03:34:42 | INFO     | main |   Published 3 tools:
+2026-08-09 03:34:42 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/code_completion_assistant
+2026-08-09 03:34:42 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/dialogue_flow_optimizer
+2026-08-09 03:34:42 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/intent_discovery
+2026-08-09 03:34:42 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-09 03:34:42 | INFO     | main | ✅ Generated tools_index.json with 458 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

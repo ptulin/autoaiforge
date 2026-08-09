@@ -1,0 +1,13 @@
+{
+  "tool_name": "intent_discovery",
+  "display_name": "Intent Discovery Tool",
+  "description": "This tool helps developers identify and extract intents from large datasets of user queries, which is essential for building effective conversational AI models. It's useful for discovering hidden patterns and relationships in user input, enabling more accurate intent recognition and improved chatbot performance. The tool utilizes techniques from natural language processing and machine learning to uncover underlying intents.",
+  "topic": "Conversational AI",
+  "date": "2026-08-09",
+  "generated": "2026-08-09T03:29:12.196740+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-09/intent_discovery",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-09/intent_discovery/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-09/intent_discovery/intent_discovery.zip"
+}
