@@ -35,3 +35,6 @@ logs/*.log               # Committed via git from Actions, but not needed locall
 
 # macOS
 .DS_Store
+
+# Supabase CLI local link cache
+supabase/.temp/
