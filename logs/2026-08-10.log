@@ -1,0 +1,485 @@
+2026-08-10 03:49:02 | INFO     | main | ============================================================
+2026-08-10 03:49:02 | INFO     | main | AutoAIForge starting run: 2026-08-10T03:49:02.732620+00:00
+2026-08-10 03:49:02 | INFO     | main | ============================================================
+2026-08-10 03:49:02 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-10 03:49:02 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-10 03:49:02 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-10 03:49:02 | INFO     | main |   YouTube: 0 items
+2026-08-10 03:49:02 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-10 03:49:07 | INFO     | rss_scraper | HackerNews: 137 items
+2026-08-10 03:49:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-10 03:49:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-10 03:49:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-10 03:49:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-10 03:49:12 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-10 03:49:13 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-10 03:49:14 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-10 03:49:15 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-10 03:49:22 | INFO     | rss_scraper | ArXiv: 103 items
+2026-08-10 03:49:27 | INFO     | rss_scraper | Dev.to: 190 items
+2026-08-10 03:49:29 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-10 03:49:29 | INFO     | rss_scraper | Free sources total: 480 unique items
+2026-08-10 03:49:29 | INFO     | main |   RSS/API sources: 480 items
+2026-08-10 03:49:29 | INFO     | main |   Total scraped: 480 items
+2026-08-10 03:49:29 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-10 03:49:29 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-10 03:49:29 | INFO     | db_manager | Purged 365 old news items
+2026-08-10 03:49:29 | INFO     | db_manager | Inserted 336/480 news items
+2026-08-10 03:49:29 | INFO     | main |   SQLite: 336 new items (total: 9479)
+2026-08-10 03:49:34 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-10 03:49:36 | INFO     | vector_store | VectorStore ready
+2026-08-10 03:49:42 | INFO     | vector_store | Indexed 522 items into vector store
+2026-08-10 03:49:42 | INFO     | main |   Vector store: 522 items indexed
+2026-08-10 03:49:42 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-10 03:49:42 | INFO     | topic_analyzer | Analyzing 522 items for top 10 topics …
+2026-08-10 03:49:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:45 | DEBUG    | llm_client | LLM response from groq (3542 chars)
+2026-08-10 03:49:45 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-10 03:49:45 | INFO     | main |   Found 10 topics:
+2026-08-10 03:49:45 | INFO     | main |      1. [9/10] LLM Optimization
+2026-08-10 03:49:45 | INFO     | main |      2. [9/10] AI Safety and Security
+2026-08-10 03:49:45 | INFO     | main |      3. [9/10] AI Ethics and Governance
+2026-08-10 03:49:45 | INFO     | main |      4. [8/10] AI Code Review
+2026-08-10 03:49:45 | INFO     | main |      5. [8/10] AI-Assisted Coding
+2026-08-10 03:49:45 | INFO     | main |      6. [8/10] Explainable AI
+2026-08-10 03:49:45 | INFO     | main |      7. [8/10] AI-Powered Data Analysis
+2026-08-10 03:49:45 | INFO     | main |      8. [8/10] Autonomous AI Systems
+2026-08-10 03:49:45 | INFO     | main |      9. [7/10] Multi-Agent AI Systems
+2026-08-10 03:49:45 | INFO     | main |     10. [7/10] Conversational AI
+2026-08-10 03:49:45 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-10 03:49:45 | INFO     | main |   Existing collection: 458 tools across 247 topics
+2026-08-10 03:49:45 | INFO     | main |   🔄 Upgrade candidate: 'Autonomous AI Systems' (relevance 8/10, last built 2026-04-04)
+2026-08-10 03:49:45 | INFO     | main |   Topics flagged for upgrade: Autonomous AI Systems
+2026-08-10 03:49:45 | INFO     | idea_generator |   ⏭  Skipping topic 'LLM Optimization' — tool already in collection
+2026-08-10 03:49:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:48 | DEBUG    | llm_client | LLM response from groq (3122 chars)
+2026-08-10 03:49:48 | INFO     | idea_generator | Generated 3 ideas for topic: AI Safety and Security
+2026-08-10 03:49:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:49:50 | DEBUG    | llm_client | LLM response from groq (2443 chars)
+2026-08-10 03:49:50 | INFO     | idea_generator | Generated 2 ideas for topic: AI Ethics and Governance
+2026-08-10 03:49:50 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-10 03:49:50 | INFO     | main |   Generated 5 tool ideas:
+2026-08-10 03:49:50 | INFO     | main |     • ai_model_vulnerability_scanner: This tool scans AI models for potential security vulnerabilities, such as data p
+2026-08-10 03:49:50 | INFO     | main |     • ai_data_sanitizer: This tool sanitizes AI training data to prevent data leakage and ensure model fa
+2026-08-10 03:49:50 | INFO     | main |     • ai_explainability_tester: This tool tests the explainability of AI models, providing insights into the dec
+2026-08-10 03:49:50 | INFO     | main |     • ai_ethics_linter: The AI Ethics Linter is a Python tool designed to audit and test AI systems for 
+2026-08-10 03:49:50 | INFO     | main |     • ai_governance_benchmark: The AI Governance Benchmark is a Python tool that evaluates the governance of AI
+2026-08-10 03:49:50 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-10 03:49:50 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-10 03:50:00 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-10 03:50:00 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-10 03:50:00 | INFO     | tool_builder | Building tool: ai_model_vulnerability_scanner …
+2026-08-10 03:50:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:50:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:50:02 | WARNING  | llm_client | groq rate-limited — sleeping 22s
+2026-08-10 03:50:26 | DEBUG    | llm_client | LLM response from groq (3039 chars)
+2026-08-10 03:50:26 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'keras==2.10.0', 'scikit-learn==1.1.2']
+2026-08-10 03:50:26 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-10 03:50:27 | WARNING  | test_runner | Tests FAILED for ai_model_vulnerability_scanner:
+==================================== ERRORS ====================================
+___________ ERROR collecting test_ai_model_vulnerability_scanner.py ____________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/ai_model_vulnerability_scanner/test_ai_model_vulnerability_scanner.py'.
+E   ModuleNotFoundError: No module named 'tensorflow'
+ERROR test_ai_model_vulnerability_scanner.py
+2026-08-10 03:50:27 | WARNING  | tool_builder | ⚠️  ai_model_vulnerability_scanner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+___________ ERROR collecting test_ai_model_vulnerability_scanner.py ____________
+ImportError while importing test modul
+2026-08-10 03:50:27 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:50:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:50:28 | WARNING  | llm_client | groq rate-limited — sleeping 7s
+2026-08-10 03:50:35 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10132, Requested 6958. Please try again in 25.45s. Need more tokens? Upgrade to Dev Tier today at https:
+2026-08-10 03:50:36 | WARNING  | llm_client | groq rate-limited — sleeping 25s
+2026-08-10 03:51:03 | DEBUG    | llm_client | LLM response from groq (3639 chars)
+2026-08-10 03:51:03 | DEBUG    | test_runner | Installing: ['tensorflow', 'numpy', 'scikit-learn']
+2026-08-10 03:51:34 | WARNING  | test_runner | Tests FAILED for ai_model_vulnerability_scanner:
+test_ai_model_vulnerability_scanner.py::test_scan_model_import_error FAILED [100%]
+    assert 'ImportError' in vulnerabilities[0]
+E   AssertionError: assert 'ImportError' in 'TensorFlow not installed'
+FAILED test_ai_model_vulnerability_scanner.py::test_scan_model_import_error - AssertionError: assert 'ImportError' in 'TensorFlow not installed'
+2026-08-10 03:51:34 | WARNING  | tool_builder | ⚠️  ai_model_vulnerability_scanner tests failed (loop 2/5) — test_ai_model_vulnerability_scanner.py::test_scan_model_import_error FAILED [100%]
+    assert 'ImportError' in vulnerabilities[0]
+E   AssertionError: assert 'ImportError' in 'TensorFlow not installed'
+2026-08-10 03:51:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:51:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:51:35 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-10 03:51:41 | DEBUG    | llm_client | LLM response from groq (3519 chars)
+2026-08-10 03:51:41 | DEBUG    | test_runner | Installing: ['numpy', 'tensorflow', 'sklearn']
+2026-08-10 03:51:43 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this
+2026-08-10 03:51:47 | INFO     | test_runner | Tests PASSED for ai_model_vulnerability_scanner
+2026-08-10 03:51:47 | INFO     | tool_builder | ✅ ai_model_vulnerability_scanner passed tests on loop 3
+2026-08-10 03:51:47 | INFO     | tool_builder | Building tool: ai_data_sanitizer …
+2026-08-10 03:51:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:51:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:51:51 | DEBUG    | llm_client | LLM response from groq (3989 chars)
+2026-08-10 03:51:51 | DEBUG    | test_runner | Installing: ['pandas==1.5.2', 'numpy==1.23.4', 'scikit-learn==1.2.0']
+2026-08-10 03:52:05 | WARNING  | test_runner | Tests FAILED for ai_data_sanitizer:
+test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+test_ai_data_sanitizer.py::test_normalize_data FAILED                    [100%]
+    assert loaded_data.equals(sample_data)
+E   assert False
+    assert normalized_data['numerical'].equals(pd.Series([0.0, 1.0]))
+E   AssertionError: assert False
+FAILED test_ai_data_sanitizer.py::test_load_data - assert False
+FAILED test_ai_data_sanitizer.py::test_normalize_data - AssertionError: assert False
+2026-08-10 03:52:05 | WARNING  | tool_builder | ⚠️  ai_data_sanitizer tests failed (loop 1/5) — test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+test_ai_data_sanitizer.py::test_normalize_data FAILED                    [100%]
+    assert loaded_data.equals(sample_dat
+2026-08-10 03:52:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:06 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:07 | DEBUG    | llm_client | LLM response from groq (3601 chars)
+2026-08-10 03:52:07 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+import argparse
+
+def load_data(input_path):
+    try:
+        return pd.read_csv(input_path)
+    except Exception as e:
+        print(f\"Error loading data: {e}\")
+        return None
+
+def detect_pii
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-10 03:52:07 | DEBUG    | test_runner | Installing: ['pandas==1.5.2', 'numpy==1.23.4', 'scikit-learn==1.2.0']
+2026-08-10 03:52:09 | WARNING  | test_runner | Tests FAILED for ai_data_sanitizer:
+test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+test_ai_data_sanitizer.py::test_normalize_data FAILED                    [100%]
+    assert loaded_data.equals(sample_data)
+E   assert False
+    assert normalized_data['numerical'].equals(pd.Series([0.0, 1.0]))
+E   AssertionError: assert False
+FAILED test_ai_data_sanitizer.py::test_load_data - assert False
+FAILED test_ai_data_sanitizer.py::test_normalize_data - AssertionError: assert False
+2026-08-10 03:52:09 | WARNING  | tool_builder | ⚠️  ai_data_sanitizer tests failed (loop 2/5) — test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+test_ai_data_sanitizer.py::test_normalize_data FAILED                    [100%]
+    assert loaded_data.equals(sample_dat
+2026-08-10 03:52:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:12 | DEBUG    | llm_client | LLM response from groq (4040 chars)
+2026-08-10 03:52:12 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-08-10 03:52:14 | WARNING  | test_runner | Tests FAILED for ai_data_sanitizer:
+test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+    pd.testing.assert_frame_equal(loaded_data, sample_data)
+E   AssertionError: Attributes of DataFrame.iloc[:, 2] (column name="ssn") are different
+FAILED test_ai_data_sanitizer.py::test_load_data - AssertionError: Attributes of DataFrame.iloc[:, 2] (column name="ssn") are different
+2026-08-10 03:52:14 | WARNING  | tool_builder | ⚠️  ai_data_sanitizer tests failed (loop 3/5) — test_ai_data_sanitizer.py::test_load_data FAILED                         [ 20%]
+    pd.testing.assert_frame_equal(loaded_data, sample_data)
+E   AssertionError: Attributes of DataFrame.iloc[:, 2] (colu
+2026-08-10 03:52:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:15 | WARNING  | llm_client | groq rate-limited — sleeping 9s
+2026-08-10 03:52:26 | DEBUG    | llm_client | LLM response from groq (4026 chars)
+2026-08-10 03:52:26 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn']
+2026-08-10 03:52:28 | INFO     | test_runner | Tests PASSED for ai_data_sanitizer
+2026-08-10 03:52:28 | INFO     | tool_builder | ✅ ai_data_sanitizer passed tests on loop 4
+2026-08-10 03:52:28 | INFO     | tool_builder | Building tool: ai_explainability_tester …
+2026-08-10 03:52:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:29 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-10 03:52:34 | DEBUG    | llm_client | LLM response from groq (3762 chars)
+2026-08-10 03:52:34 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.1', 'matplotlib==3.6.2', 'shap==0.43.0']
+2026-08-10 03:52:47 | WARNING  | test_runner | Tests FAILED for ai_explainability_tester:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_explainability_tester.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:52:47 | WARNING  | tool_builder | ⚠️  ai_explainability_tester tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:52:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:52:49 | WARNING  | llm_client | groq rate-limited — sleeping 19s
+2026-08-10 03:53:09 | DEBUG    | llm_client | LLM response from groq (3693 chars)
+2026-08-10 03:53:09 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+import matplotlib.pyplot as plt
+import shap
+
+def calculate_feature_importance(model, X_train, y_train):
+    model.fit(X_train,
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-10 03:53:09 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.1', 'matplotlib==3.6.2', 'shap==0.43.0']
+2026-08-10 03:53:10 | WARNING  | test_runner | Tests FAILED for ai_explainability_tester:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_explainability_tester.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:53:10 | WARNING  | tool_builder | ⚠️  ai_explainability_tester tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:53:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:13 | DEBUG    | llm_client | LLM response from groq (3813 chars)
+2026-08-10 03:53:13 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'shap']
+2026-08-10 03:53:14 | WARNING  | test_runner | Tests FAILED for ai_explainability_tester:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_explainability_tester.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:53:14 | WARNING  | tool_builder | ⚠️  ai_explainability_tester tests failed (loop 3/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:53:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:17 | DEBUG    | llm_client | LLM response from groq (3746 chars)
+2026-08-10 03:53:17 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'shap']
+2026-08-10 03:53:18 | WARNING  | test_runner | Tests FAILED for ai_explainability_tester:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_explainability_tester.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:53:18 | WARNING  | tool_builder | ⚠️  ai_explainability_tester tests failed (loop 4/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:53:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:19 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:19 | WARNING  | llm_client | groq rate-limited — sleeping 20s
+2026-08-10 03:53:41 | DEBUG    | llm_client | LLM response from groq (3802 chars)
+2026-08-10 03:53:41 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'shap']
+2026-08-10 03:53:42 | WARNING  | test_runner | Tests FAILED for ai_explainability_tester:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_explainability_tester.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:53:42 | WARNING  | tool_builder | ⚠️  ai_explainability_tester tests failed (loop 5/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_ai_explainability_tester.py _______________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:53:42 | ERROR    | tool_builder | ❌ ai_explainability_tester failed after 5 loops
+2026-08-10 03:53:42 | INFO     | tool_builder | Building tool: ai_ethics_linter …
+2026-08-10 03:53:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:53:43 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-10 03:53:52 | DEBUG    | llm_client | LLM response from groq (4436 chars)
+2026-08-10 03:53:52 | DEBUG    | test_runner | Installing: ['numpy==1.22.3', 'pandas==1.4.2', 'scikit-learn==1.0.2']
+2026-08-10 03:53:58 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [21 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-08-10 03:53:59 | WARNING  | test_runner | Tests FAILED for ai_ethics_linter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_ethics_linter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:53:59 | WARNING  | tool_builder | ⚠️  ai_ethics_linter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:53:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:00 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-10 03:54:02 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9441, Requested 7266. Please try again in 23.535s. Need more tokens? Upgrade to Dev Tier today at https:
+2026-08-10 03:54:05 | DEBUG    | llm_client | LLM response from groq (4294 chars)
+2026-08-10 03:54:05 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import pandas as pd
+from unittest.mock import patch
+
+def load_model(model_path):
+    # Load the model from the given path
+    try:
+        with open(model_path, 'r') as f:
+            model_code = f.read()
+        return model_code
+    except FileNotFoundError:
+        
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-10 03:54:05 | DEBUG    | test_runner | Installing: ['numpy==1.22.3', 'pandas==1.4.2', 'scikit-learn==1.0.2']
+2026-08-10 03:54:11 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [21 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-08-10 03:54:11 | WARNING  | test_runner | Tests FAILED for ai_ethics_linter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_ethics_linter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:54:11 | WARNING  | tool_builder | ⚠️  ai_ethics_linter tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:54:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:15 | DEBUG    | llm_client | LLM response from groq (4479 chars)
+2026-08-10 03:54:15 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-08-10 03:54:15 | WARNING  | test_runner | Tests FAILED for ai_ethics_linter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_ethics_linter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:54:15 | WARNING  | tool_builder | ⚠️  ai_ethics_linter tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:54:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:16 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:17 | WARNING  | llm_client | groq rate-limited — sleeping 8s
+2026-08-10 03:54:25 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9492, Requested 7278. Please try again in 23.85s. Need more tokens? Upgrade to Dev Tier today at https:/
+2026-08-10 03:54:28 | DEBUG    | llm_client | LLM response from groq (4073 chars)
+2026-08-10 03:54:28 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import pandas as pd
+from unittest.mock import mock_open
+
+def load_model(model_path):
+    # Load the model from the given path
+    try:
+        with open(model_path, 'r') as f:
+            model_code = f.read()
+        return model_code
+    except FileNotFoundError:
+    
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-10 03:54:28 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-08-10 03:54:29 | WARNING  | test_runner | Tests FAILED for ai_ethics_linter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_ethics_linter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:54:29 | WARNING  | tool_builder | ⚠️  ai_ethics_linter tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:54:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:30 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-10 03:54:35 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9629, Requested 7278. Please try again in 24.535s. Need more tokens? Upgrade to Dev Tier today at https:
+2026-08-10 03:54:38 | DEBUG    | llm_client | LLM response from groq (4158 chars)
+2026-08-10 03:54:38 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+
+def load_model(model_path):
+    # Load the model from the given path
+    try:
+        with open(model_path, 'r') as f:
+            model_code = f.read()
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-10 03:54:38 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-08-10 03:54:39 | WARNING  | test_runner | Tests FAILED for ai_ethics_linter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_ai_ethics_linter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-10 03:54:39 | WARNING  | tool_builder | ⚠️  ai_ethics_linter tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_ai_ethics_linter.py ___________________
+E   ValueError: numpy.dtype size chang
+2026-08-10 03:54:39 | ERROR    | tool_builder | ❌ ai_ethics_linter failed after 5 loops
+2026-08-10 03:54:39 | INFO     | tool_builder | Building tool: ai_governance_benchmark …
+2026-08-10 03:54:39 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:54:40 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-10 03:54:42 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10431, Requested 1597. Please try again in 140ms. Need more tokens? Upgrade to Dev Tier today at https:/
+2026-08-10 03:54:44 | WARNING  | llm_client | groq rate-limited — sleeping 24s
+2026-08-10 03:55:10 | DEBUG    | llm_client | LLM response from groq (3329 chars)
+2026-08-10 03:55:10 | DEBUG    | test_runner | Installing: ['matplotlib==3.5.1', 'seaborn==0.11.2', 'scipy==1.8.0']
+2026-08-10 03:55:17 | WARNING  | test_runner | pip install warning: ERROR: Ignored the following yanked versions: 1.11.0, 1.14.0rc1
+ERROR: Ignored the following versions that require a different python version: 1.18.0 Requires-Python >=3.12; 1.18.0rc1 Requires-Python >=3.12; 1.18.0rc2 Requires-Python >=3.12; 1.6.2 Requires-Python >=3.7,<3.10; 1.6.3 Requires-Python >
+2026-08-10 03:55:18 | WARNING  | test_runner | Tests FAILED for ai_governance_benchmark:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 17)
+ERROR test_ai_governance_benchmark.py
+2026-08-10 03:55:18 | WARNING  | tool_builder | ⚠️  ai_governance_benchmark tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-10 03:55:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:55:19 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:55:19 | WARNING  | llm_client | groq rate-limited — sleeping 27s
+2026-08-10 03:55:48 | DEBUG    | llm_client | LLM response from groq (3556 chars)
+2026-08-10 03:55:48 | DEBUG    | test_runner | Installing: ['matplotlib', 'seaborn', 'scipy', 'argparse']
+2026-08-10 03:55:49 | WARNING  | test_runner | Tests FAILED for ai_governance_benchmark:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E       assert capturedOutput.getvalue() == 'Benchmark Report
+E   SyntaxError: unterminated string literal (detected at line 31)
+ERROR test_ai_governance_benchmark.py
+2026-08-10 03:55:49 | WARNING  | tool_builder | ⚠️  ai_governance_benchmark tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-10 03:55:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:55:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:55:50 | WARNING  | llm_client | groq rate-limited — sleeping 34s
+2026-08-10 03:56:27 | DEBUG    | llm_client | LLM response from groq (3820 chars)
+2026-08-10 03:56:27 | DEBUG    | test_runner | Installing: ['matplotlib', 'seaborn', 'scipy', 'argparse']
+2026-08-10 03:56:28 | WARNING  | test_runner | Tests FAILED for ai_governance_benchmark:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 19)
+ERROR test_ai_governance_benchmark.py
+2026-08-10 03:56:28 | WARNING  | tool_builder | ⚠️  ai_governance_benchmark tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-10 03:56:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:56:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:56:31 | DEBUG    | llm_client | LLM response from groq (3370 chars)
+2026-08-10 03:56:31 | DEBUG    | test_runner | Installing: ['argparse', 'matplotlib', 'seaborn', 'scipy']
+2026-08-10 03:56:31 | WARNING  | test_runner | Tests FAILED for ai_governance_benchmark:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 19)
+ERROR test_ai_governance_benchmark.py
+2026-08-10 03:56:31 | WARNING  | tool_builder | ⚠️  ai_governance_benchmark tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-10 03:56:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:56:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-10 03:56:34 | DEBUG    | llm_client | LLM response from groq (3553 chars)
+2026-08-10 03:56:34 | DEBUG    | test_runner | Installing: ['argparse', 'matplotlib', 'seaborn', 'scipy']
+2026-08-10 03:56:35 | WARNING  | test_runner | Tests FAILED for ai_governance_benchmark:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 19)
+ERROR test_ai_governance_benchmark.py
+2026-08-10 03:56:35 | WARNING  | tool_builder | ⚠️  ai_governance_benchmark tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_ai_governance_benchmark.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-10 03:56:35 | ERROR    | tool_builder | ❌ ai_governance_benchmark failed after 5 loops
+2026-08-10 03:56:35 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-08-10 03:56:35 | INFO     | main |   Built 2/5 tools successfully
+2026-08-10 03:56:35 | INFO     | main |     ✅ ai_model_vulnerability_scanner (loops: 3)
+2026-08-10 03:56:35 | INFO     | main |     ✅ ai_data_sanitizer (loops: 4)
+2026-08-10 03:56:35 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-10 03:56:35 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-10 03:56:35 | INFO     | github_publisher |   Created zip: ai_model_vulnerability_scanner.zip (1872 bytes)
+2026-08-10 03:56:35 | INFO     | github_publisher | Saved ai_model_vulnerability_scanner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-10/ai_model_vulnerability_scanner
+2026-08-10 03:56:35 | INFO     | github_publisher |   Created zip: ai_data_sanitizer.zip (2024 bytes)
+2026-08-10 03:56:35 | INFO     | github_publisher | Saved ai_data_sanitizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-10/ai_data_sanitizer
+2026-08-10 03:56:35 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-08-10 03:56:35 | INFO     | main |   Published 2 tools:
+2026-08-10 03:56:35 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-10/ai_model_vulnerability_scanner
+2026-08-10 03:56:35 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-10/ai_data_sanitizer
+2026-08-10 03:56:35 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-10 03:56:35 | INFO     | main | ✅ Generated tools_index.json with 460 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

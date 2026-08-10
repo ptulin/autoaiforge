@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_data_sanitizer",
+  "display_name": "AI Data Sanitizer",
+  "description": "This tool sanitizes AI training data to prevent data leakage and ensure model fairness. It detects and removes sensitive information, such as personally identifiable information (PII), from the training data. This tool is useful for AI developers to ensure the privacy and security of their training data.",
+  "topic": "AI Safety and Security",
+  "date": "2026-08-10",
+  "generated": "2026-08-10T03:49:02.732620+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-10/ai_data_sanitizer",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-10/ai_data_sanitizer/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-10/ai_data_sanitizer/ai_data_sanitizer.zip"
+}
