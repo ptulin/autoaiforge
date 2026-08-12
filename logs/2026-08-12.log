@@ -1,0 +1,531 @@
+2026-08-12 04:01:49 | INFO     | main | ============================================================
+2026-08-12 04:01:49 | INFO     | main | AutoAIForge starting run: 2026-08-12T04:01:48.998668+00:00
+2026-08-12 04:01:49 | INFO     | main | ============================================================
+2026-08-12 04:01:49 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-12 04:01:49 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-12 04:01:49 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-12 04:01:49 | INFO     | main |   YouTube: 0 items
+2026-08-12 04:01:49 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-12 04:01:54 | INFO     | rss_scraper | HackerNews: 174 items
+2026-08-12 04:01:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-12 04:01:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-12 04:01:56 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-12 04:01:57 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-12 04:01:58 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-12 04:01:59 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-12 04:02:00 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-12 04:02:01 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-12 04:02:31 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-12 04:02:32 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-08-12 04:03:03 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-12 04:03:34 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-12 04:03:35 | INFO     | rss_scraper | ArXiv: 0 items
+2026-08-12 04:03:40 | INFO     | rss_scraper | Dev.to: 192 items
+2026-08-12 04:03:42 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-12 04:03:42 | INFO     | rss_scraper | Free sources total: 416 unique items
+2026-08-12 04:03:42 | INFO     | main |   RSS/API sources: 416 items
+2026-08-12 04:03:42 | INFO     | main |   Total scraped: 416 items
+2026-08-12 04:03:42 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-12 04:03:42 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-12 04:03:42 | INFO     | db_manager | Purged 241 old news items
+2026-08-12 04:03:42 | INFO     | db_manager | Inserted 290/416 news items
+2026-08-12 04:03:42 | INFO     | main |   SQLite: 290 new items (total: 9651)
+2026-08-12 04:03:46 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-12 04:03:48 | INFO     | vector_store | VectorStore ready
+2026-08-12 04:03:53 | INFO     | vector_store | Indexed 650 items into vector store
+2026-08-12 04:03:53 | INFO     | main |   Vector store: 650 items indexed
+2026-08-12 04:03:53 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-12 04:03:53 | INFO     | topic_analyzer | Analyzing 650 items for top 10 topics …
+2026-08-12 04:03:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:03:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:03:57 | DEBUG    | llm_client | LLM response from groq (3319 chars)
+2026-08-12 04:03:57 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-12 04:03:57 | INFO     | main |   Found 10 topics:
+2026-08-12 04:03:57 | INFO     | main |      1. [9/10] Explainable AI
+2026-08-12 04:03:57 | INFO     | main |      2. [9/10] AI Model Serving
+2026-08-12 04:03:57 | INFO     | main |      3. [9/10] AI Ethics
+2026-08-12 04:03:57 | INFO     | main |      4. [8/10] LLM Model Optimization
+2026-08-12 04:03:57 | INFO     | main |      5. [8/10] Vector Databases
+2026-08-12 04:03:57 | INFO     | main |      6. [8/10] LLM Security
+2026-08-12 04:03:57 | INFO     | main |      7. [7/10] GPU Management
+2026-08-12 04:03:57 | INFO     | main |      8. [7/10] AI Agent Development
+2026-08-12 04:03:57 | INFO     | main |      9. [6/10] AI Watermarking
+2026-08-12 04:03:57 | INFO     | main |     10. [6/10] AI Chip Demand
+2026-08-12 04:03:57 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-12 04:03:57 | INFO     | main |   Existing collection: 461 tools across 249 topics
+2026-08-12 04:03:57 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-12 04:03:57 | INFO     | idea_generator |   ⏭  Skipping topic 'Explainable AI' — tool already in collection
+2026-08-12 04:03:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:03:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:00 | DEBUG    | llm_client | LLM response from groq (3350 chars)
+2026-08-12 04:04:00 | INFO     | idea_generator | Generated 3 ideas for topic: AI Model Serving
+2026-08-12 04:04:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:02 | DEBUG    | llm_client | LLM response from groq (2100 chars)
+2026-08-12 04:04:02 | INFO     | idea_generator | Generated 2 ideas for topic: AI Ethics
+2026-08-12 04:04:02 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-12 04:04:02 | INFO     | main |   Generated 5 tool ideas:
+2026-08-12 04:04:02 | INFO     | main |     • model_serve: This tool provides a simple and flexible way to deploy and serve AI models in pr
+2026-08-12 04:04:02 | INFO     | main |     • model_monitor: This tool allows developers to monitor the performance of their AI models in pro
+2026-08-12 04:04:02 | INFO     | main |     • model_optimizer: This tool helps developers optimize their AI models for deployment in production
+2026-08-12 04:04:02 | INFO     | main |     • ai_ethics_evaluator: This tool helps developers evaluate the ethics of their AI systems by assessing 
+2026-08-12 04:04:02 | INFO     | main |     • explainable_ai_generator: This tool generates explainable AI models by incorporating techniques such as fe
+2026-08-12 04:04:02 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-12 04:04:02 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-12 04:04:09 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-12 04:04:09 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-12 04:04:09 | INFO     | tool_builder | Building tool: model_serve …
+2026-08-12 04:04:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:10 | WARNING  | llm_client | groq rate-limited — sleeping 10s
+2026-08-12 04:04:22 | DEBUG    | llm_client | LLM response from groq (3082 chars)
+2026-08-12 04:04:22 | DEBUG    | test_runner | Installing: ['flask==2.2.2', 'tensorflow==2.11.0', 'torch==1.13.1', 'scikit-learn==1.2.0']
+2026-08-12 04:04:23 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.11.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:04:23 | WARNING  | test_runner | Tests FAILED for model_serve:
+==================================== ERRORS ====================================
+_____________________ ERROR collecting test_model_serve.py _____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_serve/test_model_serve.py'.
+E   ModuleNotFoundError: No module named 'flask'
+ERROR test_model_serve.py
+2026-08-12 04:04:23 | WARNING  | tool_builder | ⚠️  model_serve tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________________ ERROR collecting test_model_serve.py _____________________
+ImportError while importing test modul
+2026-08-12 04:04:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:04:26 | DEBUG    | llm_client | LLM response from groq (3888 chars)
+2026-08-12 04:04:26 | DEBUG    | test_runner | Installing: ['flask', 'tensorflow', 'torch', 'scikit-learn']
+2026-08-12 04:05:35 | WARNING  | test_runner | Tests FAILED for model_serve:
+test_model_serve.py::test_serve_model_pytorch FAILED                     [ 83%]
+test_model_serve.py::test_serve_model_scikit_learn FAILED                [100%]
+    raise AssertionError(
+E   AssertionError: View function mapping is overwriting an existing endpoint function: predict
+    raise AssertionError(
+E   AssertionError: View function mapping is overwriting an existing endpoint function: predict
+FAILED test_model_serve.py::test_serve_model_pytorch - AssertionError: View function mapping is overwriting an existing endpoint function: predict
+FAILED test_model_serve.py::test_serve_model_scikit_learn - AssertionError: View function mapping is overwriting an existing endpoint function: predict
+2026-08-12 04:05:35 | WARNING  | tool_builder | ⚠️  model_serve tests failed (loop 2/5) — test_model_serve.py::test_serve_model_pytorch FAILED                     [ 83%]
+test_model_serve.py::test_serve_model_scikit_learn FAILED                [100%]
+    raise AssertionError(
+E   AssertionE
+2026-08-12 04:05:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:38 | DEBUG    | llm_client | LLM response from groq (3956 chars)
+2026-08-12 04:05:38 | DEBUG    | test_runner | Installing: ['flask', 'tensorflow', 'torch', 'scikit-learn']
+2026-08-12 04:05:43 | INFO     | test_runner | Tests PASSED for model_serve
+2026-08-12 04:05:43 | INFO     | tool_builder | ✅ model_serve passed tests on loop 3
+2026-08-12 04:05:43 | INFO     | tool_builder | Building tool: model_monitor …
+2026-08-12 04:05:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:44 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:47 | DEBUG    | llm_client | LLM response from groq (4561 chars)
+2026-08-12 04:05:47 | DEBUG    | test_runner | Installing: ['prometheus-client==0.14.1', 'grafana-api==2.3.0', 'statsd==3.3.0']
+2026-08-12 04:05:48 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement grafana-api==2.3.0 (from versions: 0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.2.0, 0.2.1, 0.2.2, 0.2.3, 0.2.4, 0.2.9, 0.3.0, 0.3.1, 0.3.2, 0.3.3, 0.3.4, 0.3.5, 0.3.6, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.6.0, 0.7.0, 0.7.1, 0.7.2, 0.7.3,
+2026-08-12 04:05:48 | WARNING  | test_runner | Tests FAILED for model_monitor:
+==================================== ERRORS ====================================
+____________________ ERROR collecting test_model_monitor.py ____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/test_model_monitor.py'.
+E   ModuleNotFoundError: No module named 'prometheus_client'
+ERROR test_model_monitor.py
+2026-08-12 04:05:48 | WARNING  | tool_builder | ⚠️  model_monitor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________________ ERROR collecting test_model_monitor.py ____________________
+ImportError while importing test modul
+2026-08-12 04:05:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:05:49 | WARNING  | llm_client | groq rate-limited — sleeping 12s
+2026-08-12 04:06:04 | DEBUG    | llm_client | LLM response from groq (4871 chars)
+2026-08-12 04:06:04 | DEBUG    | test_runner | Installing: ['prometheus_client', 'grafana_api', 'statsd']
+2026-08-12 04:06:05 | WARNING  | test_runner | Tests FAILED for model_monitor:
+test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_model_error ERROR                    [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_monitor_model _____________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+________________ ERROR at setup of test_monitor_model_alerting _________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+__________________ ERROR at setup of test_monitor_model_error __________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_alerting - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_error - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+2026-08-12 04:06:05 | WARNING  | tool_builder | ⚠️  model_monitor tests failed (loop 2/5) — test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_mode
+2026-08-12 04:06:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:06 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:08 | DEBUG    | llm_client | LLM response from groq (4567 chars)
+2026-08-12 04:06:08 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import time
+from unittest.mock import patch, MagicMock
+import pytest
+
+# Define metrics
+model_requests = None
+model_latency = None
+model_throughput = None
+
+# Define alerting thresholds
+ALERT_THRESHOLD_LATENCY = 1000  # ms
+ALERT_THRESHOLD_THROUGHPUT = 10  # requests per s
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:08 | DEBUG    | test_runner | Installing: ['prometheus_client', 'grafana_api', 'statsd']
+2026-08-12 04:06:09 | WARNING  | test_runner | Tests FAILED for model_monitor:
+test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_model_error ERROR                    [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_monitor_model _____________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+________________ ERROR at setup of test_monitor_model_alerting _________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+__________________ ERROR at setup of test_monitor_model_error __________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_alerting - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_error - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+2026-08-12 04:06:09 | WARNING  | tool_builder | ⚠️  model_monitor tests failed (loop 3/5) — test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_mode
+2026-08-12 04:06:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:12 | DEBUG    | llm_client | LLM response from groq (5099 chars)
+2026-08-12 04:06:12 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import time
+from unittest.mock import patch, MagicMock
+import pytest
+
+# Define metrics
+model_requests = None
+model_latency = None
+model_throughput = None
+
+# Define alerting thresholds
+ALERT_THRESHOLD_LATENCY = 1000  # ms
+ALERT_THRESHOLD_THROUGHPUT = 10  # requests per s
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:12 | DEBUG    | test_runner | Installing: ['prometheus_client', 'grafana_api', 'statsd']
+2026-08-12 04:06:13 | WARNING  | test_runner | Tests FAILED for model_monitor:
+test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_model_error ERROR                    [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_monitor_model _____________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+________________ ERROR at setup of test_monitor_model_alerting _________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+__________________ ERROR at setup of test_monitor_model_error __________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_alerting - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_error - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+2026-08-12 04:06:13 | WARNING  | tool_builder | ⚠️  model_monitor tests failed (loop 4/5) — test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_mode
+2026-08-12 04:06:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:14 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-12 04:06:21 | DEBUG    | llm_client | LLM response from groq (4892 chars)
+2026-08-12 04:06:21 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import time
+from unittest.mock import patch, MagicMock
+import pytest
+
+# Define metrics
+model_requests = None
+model_latency = None
+model_throughput = None
+
+# Define alerting thresholds
+ALERT_THRESHOLD_LATENCY = 1000  # ms
+ALERT_THRESHOLD_THROUGHPUT = 10  # requests per s
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:21 | DEBUG    | test_runner | Installing: ['prometheus_client', 'grafana_api', 'statsd']
+2026-08-12 04:06:22 | WARNING  | test_runner | Tests FAILED for model_monitor:
+test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_model_error ERROR                    [100%]
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_monitor_model _____________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+________________ ERROR at setup of test_monitor_model_alerting _________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+__________________ ERROR at setup of test_monitor_model_error __________________
+    raise AttributeError(
+E   AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_alerting - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+ERROR test_model_monitor.py::test_monitor_model_error - AttributeError: <module 'model_monitor' from '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_monitor/model_monitor.py'> does not have the attribute 'grafana_api'
+2026-08-12 04:06:22 | WARNING  | tool_builder | ⚠️  model_monitor tests failed (loop 5/5) — test_model_monitor.py::test_monitor_model ERROR                          [ 33%]
+test_model_monitor.py::test_monitor_model_alerting ERROR                 [ 66%]
+test_model_monitor.py::test_monitor_mode
+2026-08-12 04:06:22 | ERROR    | tool_builder | ❌ model_monitor failed after 5 loops
+2026-08-12 04:06:22 | INFO     | tool_builder | Building tool: model_optimizer …
+2026-08-12 04:06:22 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:23 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-12 04:06:29 | DEBUG    | llm_client | LLM response from groq (3150 chars)
+2026-08-12 04:06:29 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'torchvision']
+2026-08-12 04:06:29 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:06:34 | WARNING  | test_runner | Tests FAILED for model_optimizer:
+test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_model_knowledge_distillation FAILED [100%]
+    assert optimize_model('model_path', 'pruning', 'mobile') == 'optimized_model.h5'
+E   AttributeError: 'str' object has no attribute 'save'
+    assert optimize_model('model_path', 'quantization', 'mobile') == 'optimized_model.pth'
+E   AttributeError: 'str' object has no attribute 'eval'
+    assert optimize_model('model_path', 'knowledge_distillation', 'mobile') is None
+E   AssertionError: assert 'optimized_model.pth' is None
+FAILED test_model_optimizer.py::test_optimize_model_pruning - AttributeError: 'str' object has no attribute 'save'
+FAILED test_model_optimizer.py::test_optimize_model_quantization - AttributeError: 'str' object has no attribute 'eval'
+FAILED test_model_optimizer.py::test_optimize_model_knowledge_distillation - AssertionError: assert 'optimized_model.pth' is None
+2026-08-12 04:06:34 | WARNING  | tool_builder | ⚠️  model_optimizer tests failed (loop 1/5) — test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_m
+2026-08-12 04:06:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:35 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-12 04:06:38 | DEBUG    | llm_client | LLM response from groq (3626 chars)
+2026-08-12 04:06:38 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+import torch
+from torch.quantization import quantize_dynamic
+
+def optimize_model(model_path, technique, platform):
+    if technique == 'pruning':
+        model = tf.keras.models.load_model(model_path)
+        model = tf.keras.models.clone_model(m
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:38 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'torchvision']
+2026-08-12 04:06:38 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:06:43 | WARNING  | test_runner | Tests FAILED for model_optimizer:
+test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_model_knowledge_distillation FAILED [100%]
+    assert optimize_model('model_path', 'pruning', 'mobile') == 'optimized_model.h5'
+E   AttributeError: 'str' object has no attribute 'save'
+    assert optimize_model('model_path', 'quantization', 'mobile') == 'optimized_model.pth'
+E   AttributeError: 'str' object has no attribute 'eval'
+    assert optimize_model('model_path', 'knowledge_distillation', 'mobile') is None
+E   AssertionError: assert 'optimized_model.pth' is None
+FAILED test_model_optimizer.py::test_optimize_model_pruning - AttributeError: 'str' object has no attribute 'save'
+FAILED test_model_optimizer.py::test_optimize_model_quantization - AttributeError: 'str' object has no attribute 'eval'
+FAILED test_model_optimizer.py::test_optimize_model_knowledge_distillation - AssertionError: assert 'optimized_model.pth' is None
+2026-08-12 04:06:43 | WARNING  | tool_builder | ⚠️  model_optimizer tests failed (loop 2/5) — test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_m
+2026-08-12 04:06:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:44 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:44 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-12 04:06:48 | DEBUG    | llm_client | LLM response from groq (3108 chars)
+2026-08-12 04:06:48 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+import torch
+from torch.quantization import quantize_dynamic
+
+def optimize_model(model_path, technique, platform):
+    if technique == 'pruning':
+        model = tf.keras.models.load_model(model_path)
+        cloned_model = tf.keras.models.clone_
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:48 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'torchvision']
+2026-08-12 04:06:48 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:06:53 | WARNING  | test_runner | Tests FAILED for model_optimizer:
+test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_model_knowledge_distillation FAILED [100%]
+    assert optimize_model('model_path', 'pruning', 'mobile') == 'optimized_model.h5'
+E   AttributeError: 'str' object has no attribute 'save'
+    assert optimize_model('model_path', 'quantization', 'mobile') == 'optimized_model.pth'
+E   AttributeError: 'str' object has no attribute 'eval'
+    assert optimize_model('model_path', 'knowledge_distillation', 'mobile') is None
+E   AssertionError: assert 'optimized_model.pth' is None
+FAILED test_model_optimizer.py::test_optimize_model_pruning - AttributeError: 'str' object has no attribute 'save'
+FAILED test_model_optimizer.py::test_optimize_model_quantization - AttributeError: 'str' object has no attribute 'eval'
+FAILED test_model_optimizer.py::test_optimize_model_knowledge_distillation - AssertionError: assert 'optimized_model.pth' is None
+2026-08-12 04:06:53 | WARNING  | tool_builder | ⚠️  model_optimizer tests failed (loop 3/5) — test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_m
+2026-08-12 04:06:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:06:54 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-12 04:06:57 | DEBUG    | llm_client | LLM response from groq (4370 chars)
+2026-08-12 04:06:57 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+import torch
+from torch.quantization import quantize_dynamic
+
+def optimize_model(model_path, technique, platform):
+    if technique == 'pruning':
+        model = tf.keras.models.load_model(model_path)
+        cloned_model = tf.keras.models.clone_
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:06:57 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'torchvision']
+2026-08-12 04:06:58 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:07:02 | WARNING  | test_runner | Tests FAILED for model_optimizer:
+test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_model_knowledge_distillation FAILED [100%]
+    assert optimize_model('model_path', 'pruning', 'mobile') == 'optimized_model.h5'
+E   AttributeError: 'str' object has no attribute 'save'
+    assert optimize_model('model_path', 'quantization', 'mobile') == 'optimized_model.pth'
+E   AttributeError: 'str' object has no attribute 'eval'
+    assert optimize_model('model_path', 'knowledge_distillation', 'mobile') is None
+E   AssertionError: assert 'optimized_model.pth' is None
+FAILED test_model_optimizer.py::test_optimize_model_pruning - AttributeError: 'str' object has no attribute 'save'
+FAILED test_model_optimizer.py::test_optimize_model_quantization - AttributeError: 'str' object has no attribute 'eval'
+FAILED test_model_optimizer.py::test_optimize_model_knowledge_distillation - AssertionError: assert 'optimized_model.pth' is None
+2026-08-12 04:07:02 | WARNING  | tool_builder | ⚠️  model_optimizer tests failed (loop 4/5) — test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_m
+2026-08-12 04:07:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:04 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:04 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-12 04:07:07 | DEBUG    | llm_client | LLM response from groq (3757 chars)
+2026-08-12 04:07:07 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import tensorflow as tf
+import torch
+from torch.quantization import quantize_dynamic
+from unittest.mock import MagicMock
+
+def optimize_model(model_path, technique, platform):
+    if technique == 'pruning':
+        model = tf.keras.models.load_model(model_path)
+        c
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-12 04:07:07 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'torchvision']
+2026-08-12 04:07:07 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-12 04:07:12 | WARNING  | test_runner | Tests FAILED for model_optimizer:
+test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_model_knowledge_distillation FAILED [100%]
+    assert optimize_model('model_path', 'pruning', 'mobile') == 'optimized_model.h5'
+E   AttributeError: 'str' object has no attribute 'save'
+    assert optimize_model('model_path', 'quantization', 'mobile') == 'optimized_model.pth'
+E   AttributeError: 'str' object has no attribute 'eval'
+    assert optimize_model('model_path', 'knowledge_distillation', 'mobile') is None
+E   AssertionError: assert 'optimized_model.pth' is None
+FAILED test_model_optimizer.py::test_optimize_model_pruning - AttributeError: 'str' object has no attribute 'save'
+FAILED test_model_optimizer.py::test_optimize_model_quantization - AttributeError: 'str' object has no attribute 'eval'
+FAILED test_model_optimizer.py::test_optimize_model_knowledge_distillation - AssertionError: assert 'optimized_model.pth' is None
+2026-08-12 04:07:12 | WARNING  | tool_builder | ⚠️  model_optimizer tests failed (loop 5/5) — test_model_optimizer.py::test_optimize_model_pruning FAILED              [ 33%]
+test_model_optimizer.py::test_optimize_model_quantization FAILED         [ 66%]
+test_model_optimizer.py::test_optimize_m
+2026-08-12 04:07:12 | ERROR    | tool_builder | ❌ model_optimizer failed after 5 loops
+2026-08-12 04:07:12 | INFO     | tool_builder | Building tool: ai_ethics_evaluator …
+2026-08-12 04:07:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:15 | DEBUG    | llm_client | LLM response from groq (2601 chars)
+2026-08-12 04:07:15 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.0', 'pandas==1.5.2', 'matplotlib==3.6.2']
+2026-08-12 04:07:24 | INFO     | test_runner | Tests PASSED for ai_ethics_evaluator
+2026-08-12 04:07:24 | INFO     | tool_builder | ✅ ai_ethics_evaluator passed tests on loop 1
+2026-08-12 04:07:24 | INFO     | tool_builder | Building tool: explainable_ai_generator …
+2026-08-12 04:07:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:27 | DEBUG    | llm_client | LLM response from groq (2998 chars)
+2026-08-12 04:07:27 | DEBUG    | test_runner | Installing: ['scikit-learn==1.2.0', 'lightgbm==3.3.2', 'shap==0.41.0']
+2026-08-12 04:07:39 | WARNING  | test_runner | Tests FAILED for explainable_ai_generator:
+test_explainable_ai_generator.py::test_train_model FAILED                [ 33%]
+test_explainable_ai_generator.py::test_explain_model FAILED              [ 66%]
+test_explainable_ai_generator.py::test_main FAILED                       [100%]
+    assert isinstance(model, mock_lgbm.return_value)
+E   TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+    assert isinstance(shap_values, mock_explainer.return_value.__call__.return_value)
+E   AttributeError: 'function' object has no attribute 'return_value'
+E   NameError: name 'explainable_ai_generator' is not defined
+FAILED test_explainable_ai_generator.py::test_train_model - TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+FAILED test_explainable_ai_generator.py::test_explain_model - AttributeError: 'function' object has no attribute 'return_value'
+FAILED test_explainable_ai_generator.py::test_main - NameError: name 'explainable_ai_generator' is not defined
+2026-08-12 04:07:39 | WARNING  | tool_builder | ⚠️  explainable_ai_generator tests failed (loop 1/5) — test_explainable_ai_generator.py::test_train_model FAILED                [ 33%]
+test_explainable_ai_generator.py::test_explain_model FAILED              [ 66%]
+test_explainable_ai_generator.py::test_m
+2026-08-12 04:07:39 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:42 | DEBUG    | llm_client | LLM response from groq (2956 chars)
+2026-08-12 04:07:42 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'lightgbm', 'shap']
+2026-08-12 04:07:46 | WARNING  | test_runner | Tests FAILED for explainable_ai_generator:
+test_explainable_ai_generator.py::test_train_model FAILED                [ 33%]
+test_explainable_ai_generator.py::test_explain_model FAILED              [ 66%]
+test_explainable_ai_generator.py::test_main FAILED                       [100%]
+    assert isinstance(model, lgb.LGBMClassifier)
+E   NameError: name 'lgb' is not defined
+E   NameError: name 'shap' is not defined
+E   NameError: name 'main' is not defined
+FAILED test_explainable_ai_generator.py::test_train_model - NameError: name 'lgb' is not defined
+FAILED test_explainable_ai_generator.py::test_explain_model - NameError: name 'shap' is not defined
+FAILED test_explainable_ai_generator.py::test_main - NameError: name 'main' is not defined
+2026-08-12 04:07:46 | WARNING  | tool_builder | ⚠️  explainable_ai_generator tests failed (loop 2/5) — test_explainable_ai_generator.py::test_train_model FAILED                [ 33%]
+test_explainable_ai_generator.py::test_explain_model FAILED              [ 66%]
+test_explainable_ai_generator.py::test_m
+2026-08-12 04:07:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:49 | DEBUG    | llm_client | LLM response from groq (3336 chars)
+2026-08-12 04:07:49 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'lightgbm', 'shap']
+2026-08-12 04:07:53 | WARNING  | test_runner | Tests FAILED for explainable_ai_generator:
+test_explainable_ai_generator.py::test_main FAILED                       [100%]
+FAILED test_explainable_ai_generator.py::test_main - SystemExit: 2
+2026-08-12 04:07:53 | WARNING  | tool_builder | ⚠️  explainable_ai_generator tests failed (loop 3/5) — test_explainable_ai_generator.py::test_main FAILED                       [100%]
+FAILED test_explainable_ai_generator.py::test_main - SystemExit: 2
+2026-08-12 04:07:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:07:56 | DEBUG    | llm_client | LLM response from groq (3172 chars)
+2026-08-12 04:07:56 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'lightgbm', 'shap']
+2026-08-12 04:08:00 | WARNING  | test_runner | Tests FAILED for explainable_ai_generator:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_explainable_ai_generator.py _______________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unmatched ')'
+ERROR test_explainable_ai_generator.py
+2026-08-12 04:08:00 | WARNING  | tool_builder | ⚠️  explainable_ai_generator tests failed (loop 4/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_explainable_ai_generator.py _______________
+../_venv/lib/python3.11/site-packages/
+2026-08-12 04:08:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:08:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-12 04:08:03 | DEBUG    | llm_client | LLM response from groq (3274 chars)
+2026-08-12 04:08:03 | DEBUG    | test_runner | Installing: ['pandas', 'numpy', 'scikit-learn', 'lightgbm', 'shap']
+2026-08-12 04:08:07 | WARNING  | test_runner | Tests FAILED for explainable_ai_generator:
+test_explainable_ai_generator.py::test_main FAILED                       [100%]
+FAILED test_explainable_ai_generator.py::test_main - SystemExit: 2
+2026-08-12 04:08:07 | WARNING  | tool_builder | ⚠️  explainable_ai_generator tests failed (loop 5/5) — test_explainable_ai_generator.py::test_main FAILED                       [100%]
+FAILED test_explainable_ai_generator.py::test_main - SystemExit: 2
+2026-08-12 04:08:07 | ERROR    | tool_builder | ❌ explainable_ai_generator failed after 5 loops
+2026-08-12 04:08:07 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-08-12 04:08:07 | INFO     | main |   Built 2/5 tools successfully
+2026-08-12 04:08:07 | INFO     | main |     ✅ model_serve (loops: 3)
+2026-08-12 04:08:07 | INFO     | main |     ✅ ai_ethics_evaluator (loops: 1)
+2026-08-12 04:08:07 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-12 04:08:07 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-12 04:08:07 | INFO     | github_publisher |   Created zip: model_serve.zip (1832 bytes)
+2026-08-12 04:08:07 | INFO     | github_publisher | Saved model_serve → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/model_serve
+2026-08-12 04:08:07 | INFO     | github_publisher |   Created zip: ai_ethics_evaluator.zip (1525 bytes)
+2026-08-12 04:08:07 | INFO     | github_publisher | Saved ai_ethics_evaluator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/ai_ethics_evaluator
+2026-08-12 04:08:07 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-08-12 04:08:07 | INFO     | main |   Published 2 tools:
+2026-08-12 04:08:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/model_serve
+2026-08-12 04:08:07 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/ai_ethics_evaluator
+2026-08-12 04:08:07 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-12 04:08:07 | INFO     | main | ✅ Generated tools_index.json with 463 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

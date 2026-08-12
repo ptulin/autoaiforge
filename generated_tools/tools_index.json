@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-08-11T03:38:09.343314+00:00",
-  "total_tools": 461,
+  "last_updated": "2026-08-12T04:08:07.142954+00:00",
+  "total_tools": 463,
   "tools": [
+    {
+      "tool_name": "ai_ethics_evaluator",
+      "display_name": "AI Ethics Evaluator",
+      "description": "This tool helps developers evaluate the ethics of their AI systems by assessing bias and fairness in datasets and model predictions. It provides a comprehensive report highlighting potential issues and suggesting improvements, enabling developers to create more responsible AI systems. The tool is useful for AI developers who want to ensure their systems are fair, transparent, and unbiased.",
+      "topic": "AI Ethics",
+      "date": "2026-08-12",
+      "generated": "2026-08-12T04:01:48.998668+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/ai_ethics_evaluator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-12/ai_ethics_evaluator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-12/ai_ethics_evaluator/ai_ethics_evaluator.zip"
+    },
+    {
+      "tool_name": "model_serve",
+      "display_name": "AI Model Serving Framework",
+      "description": "This tool provides a simple and flexible way to deploy and serve AI models in production environments. It supports various model formats and frameworks, including TensorFlow, PyTorch, and scikit-learn. The tool allows developers to easily integrate their models with web applications, APIs, or other services, making it easier to deploy and manage AI models in production.",
+      "topic": "AI Model Serving",
+      "date": "2026-08-12",
+      "generated": "2026-08-12T04:01:48.998668+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-12/model_serve",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-12/model_serve/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-12/model_serve/model_serve.zip"
+    },
     {
       "tool_name": "llm_agent_composer",
       "display_name": "LLM Agent Composer",
