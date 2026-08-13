@@ -1,0 +1,13 @@
+{
+  "tool_name": "adversarial_example_generator",
+  "display_name": "Adversarial Example Generator",
+  "description": "This tool generates adversarial examples for AI models, which can be used to test and improve the model's robustness to attacks. The tool uses various techniques such as gradient-based attacks and evolutionary algorithms to generate examples that are likely to mislead the model. The tool is useful for developers who want to test the security of their AI systems and identify potential weaknesses. By generating adversarial examples, developers can evaluate the model's performance under different a",
+  "topic": "AI Security",
+  "date": "2026-08-13",
+  "generated": "2026-08-13T04:06:31.486383+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/adversarial_example_generator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/adversarial_example_generator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/adversarial_example_generator/adversarial_example_generator.zip"
+}

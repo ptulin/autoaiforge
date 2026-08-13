@@ -1,0 +1,13 @@
+{
+  "tool_name": "auto_code_refactor",
+  "display_name": "Auto Code Refactor Tool",
+  "description": "This tool uses AI models to automatically refactor code to improve its readability, maintainability, and performance. It's useful for developers who want to modernize their legacy codebases and reduce technical debt. The tool can be integrated into existing development environments and can be customized to meet specific coding standards and best practices.",
+  "topic": "AI-Powered Coding",
+  "date": "2026-08-13",
+  "generated": "2026-08-13T04:06:31.486383+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/auto_code_refactor",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/auto_code_refactor/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/auto_code_refactor/auto_code_refactor.zip"
+}

@@ -1,0 +1,376 @@
+2026-08-13 04:06:31 | INFO     | main | ============================================================
+2026-08-13 04:06:31 | INFO     | main | AutoAIForge starting run: 2026-08-13T04:06:31.486383+00:00
+2026-08-13 04:06:31 | INFO     | main | ============================================================
+2026-08-13 04:06:31 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-13 04:06:31 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-13 04:06:31 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-13 04:06:31 | INFO     | main |   YouTube: 0 items
+2026-08-13 04:06:31 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-13 04:06:36 | INFO     | rss_scraper | HackerNews: 165 items
+2026-08-13 04:06:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-13 04:06:38 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-13 04:06:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-13 04:06:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-13 04:06:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-13 04:06:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-13 04:06:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-13 04:06:44 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-13 04:07:14 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-13 04:07:45 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-13 04:08:16 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-13 04:08:47 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-13 04:08:48 | INFO     | rss_scraper | ArXiv: 0 items
+2026-08-13 04:08:52 | INFO     | rss_scraper | Dev.to: 198 items
+2026-08-13 04:08:54 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-13 04:08:54 | INFO     | rss_scraper | Free sources total: 413 unique items
+2026-08-13 04:08:54 | INFO     | main |   RSS/API sources: 413 items
+2026-08-13 04:08:54 | INFO     | main |   Total scraped: 413 items
+2026-08-13 04:08:54 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-13 04:08:54 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-13 04:08:54 | INFO     | db_manager | Purged 330 old news items
+2026-08-13 04:08:54 | INFO     | db_manager | Inserted 267/413 news items
+2026-08-13 04:08:54 | INFO     | main |   SQLite: 267 new items (total: 9588)
+2026-08-13 04:08:58 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-13 04:09:00 | INFO     | vector_store | VectorStore ready
+2026-08-13 04:09:05 | INFO     | vector_store | Indexed 557 items into vector store
+2026-08-13 04:09:05 | INFO     | main |   Vector store: 557 items indexed
+2026-08-13 04:09:05 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-13 04:09:05 | INFO     | topic_analyzer | Analyzing 557 items for top 10 topics …
+2026-08-13 04:09:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:06 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:09 | DEBUG    | llm_client | LLM response from groq (3403 chars)
+2026-08-13 04:09:09 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-13 04:09:09 | INFO     | main |   Found 10 topics:
+2026-08-13 04:09:09 | INFO     | main |      1. [9/10] AI-Powered Coding
+2026-08-13 04:09:09 | INFO     | main |      2. [8/10] LLM Optimization
+2026-08-13 04:09:09 | INFO     | main |      3. [8/10] AI Security
+2026-08-13 04:09:09 | INFO     | main |      4. [8/10] LLM Hardware Acceleration
+2026-08-13 04:09:09 | INFO     | main |      5. [7/10] AI Governance
+2026-08-13 04:09:09 | INFO     | main |      6. [7/10] Conversational AI
+2026-08-13 04:09:09 | INFO     | main |      7. [7/10] AI Model Pruning
+2026-08-13 04:09:09 | INFO     | main |      8. [6/10] Explainable AI
+2026-08-13 04:09:09 | INFO     | main |      9. [6/10] Edge AI
+2026-08-13 04:09:09 | INFO     | main |     10. [5/10] AI Watermarking
+2026-08-13 04:09:09 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-13 04:09:09 | INFO     | main |   Existing collection: 463 tools across 251 topics
+2026-08-13 04:09:09 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-13 04:09:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:11 | DEBUG    | llm_client | LLM response from groq (2771 chars)
+2026-08-13 04:09:11 | INFO     | idea_generator | Generated 3 ideas for topic: AI-Powered Coding
+2026-08-13 04:09:11 | INFO     | idea_generator |   ⏭  Skipping topic 'LLM Optimization' — tool already in collection
+2026-08-13 04:09:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:14 | DEBUG    | llm_client | LLM response from groq (2456 chars)
+2026-08-13 04:09:14 | INFO     | idea_generator | Generated 2 ideas for topic: AI Security
+2026-08-13 04:09:14 | INFO     | idea_generator |   ⏭  Skipping idea 'ai_vulnerability_scanner' — name already in collection
+2026-08-13 04:09:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:15 | WARNING  | llm_client | groq rate-limited — sleeping 17s
+2026-08-13 04:09:33 | DEBUG    | llm_client | LLM response from groq (1421 chars)
+2026-08-13 04:09:33 | INFO     | idea_generator | Generated 1 ideas for topic: LLM Hardware Acceleration
+2026-08-13 04:09:33 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-13 04:09:33 | INFO     | main |   Generated 5 tool ideas:
+2026-08-13 04:09:33 | INFO     | main |     • ai_code_completion: This tool uses AI models to generate code completions for partially written code
+2026-08-13 04:09:33 | INFO     | main |     • code_review_analyzer: This tool uses AI models to analyze code reviews and provide suggestions for imp
+2026-08-13 04:09:33 | INFO     | main |     • auto_code_refactor: This tool uses AI models to automatically refactor code to improve its readabili
+2026-08-13 04:09:33 | INFO     | main |     • adversarial_example_generator: This tool generates adversarial examples for AI models, which can be used to tes
+2026-08-13 04:09:33 | INFO     | main |     • llm_accelerator_optimizer: This tool helps AI developers optimize the performance of large language models 
+2026-08-13 04:09:33 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-13 04:09:33 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-13 04:09:42 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-13 04:09:42 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-13 04:09:42 | INFO     | tool_builder | Building tool: ai_code_completion …
+2026-08-13 04:09:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:45 | DEBUG    | llm_client | LLM response from groq (2618 chars)
+2026-08-13 04:09:45 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1']
+2026-08-13 04:09:45 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-13 04:09:46 | WARNING  | test_runner | Tests FAILED for ai_code_completion:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_code_completion.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: unterminated string literal (detected at line 26)
+ERROR test_ai_code_completion.py
+2026-08-13 04:09:46 | WARNING  | tool_builder | ⚠️  ai_code_completion tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_ai_code_completion.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:09:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:09:47 | WARNING  | llm_client | groq rate-limited — sleeping 26s
+2026-08-13 04:10:15 | DEBUG    | llm_client | LLM response from groq (2858 chars)
+2026-08-13 04:10:15 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-13 04:11:03 | WARNING  | test_runner | Tests FAILED for ai_code_completion:
+test_ai_code_completion.py::test_complete_code FAILED                    [ 33%]
+test_ai_code_completion.py::test_complete_code_long_input FAILED         [100%]
+E   NameError: name 'torch' is not defined
+E   NameError: name 'torch' is not defined
+FAILED test_ai_code_completion.py::test_complete_code - NameError: name 'torch' is not defined
+FAILED test_ai_code_completion.py::test_complete_code_long_input - NameError: name 'torch' is not defined
+2026-08-13 04:11:03 | WARNING  | tool_builder | ⚠️  ai_code_completion tests failed (loop 2/5) — test_ai_code_completion.py::test_complete_code FAILED                    [ 33%]
+test_ai_code_completion.py::test_complete_code_long_input FAILED         [100%]
+E   NameError: name 'torch' is not defin
+2026-08-13 04:11:03 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:04 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:06 | DEBUG    | llm_client | LLM response from groq (2997 chars)
+2026-08-13 04:11:06 | DEBUG    | test_runner | Installing: ['torch', 'transformers']
+2026-08-13 04:11:10 | INFO     | test_runner | Tests PASSED for ai_code_completion
+2026-08-13 04:11:10 | INFO     | tool_builder | ✅ ai_code_completion passed tests on loop 3
+2026-08-13 04:11:10 | INFO     | tool_builder | Building tool: code_review_analyzer …
+2026-08-13 04:11:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:13 | DEBUG    | llm_client | LLM response from groq (2939 chars)
+2026-08-13 04:11:13 | DEBUG    | test_runner | Installing: ['nltk==3.7', 'scikit-learn==1.1.2']
+2026-08-13 04:11:36 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [1140 lines of output]
+      Partial import of sklearn during the build process.
+      setup.py:128: DeprecationWarning:
+      
+        `numpy.distutils` is deprecated si
+2026-08-13 04:11:36 | WARNING  | test_runner | Tests FAILED for code_review_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/code_review_analyzer/test_code_review_analyzer.py'.
+E   ModuleNotFoundError: No module named 'nltk'
+ERROR test_code_review_analyzer.py
+2026-08-13 04:11:36 | WARNING  | tool_builder | ⚠️  code_review_analyzer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+ImportError while importing test modul
+2026-08-13 04:11:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:39 | DEBUG    | llm_client | LLM response from groq (3019 chars)
+2026-08-13 04:11:39 | DEBUG    | test_runner | Installing: ['nltk', 'sklearn']
+2026-08-13 04:11:40 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this
+2026-08-13 04:11:40 | WARNING  | test_runner | Tests FAILED for code_review_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 35)
+ERROR test_code_review_analyzer.py
+2026-08-13 04:11:40 | WARNING  | tool_builder | ⚠️  code_review_analyzer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:11:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:43 | DEBUG    | llm_client | LLM response from groq (3411 chars)
+2026-08-13 04:11:43 | DEBUG    | test_runner | Installing: ['nltk', 'sklearn']
+2026-08-13 04:11:44 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this
+2026-08-13 04:11:45 | WARNING  | test_runner | Tests FAILED for code_review_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 35)
+ERROR test_code_review_analyzer.py
+2026-08-13 04:11:45 | WARNING  | tool_builder | ⚠️  code_review_analyzer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:11:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:48 | DEBUG    | llm_client | LLM response from groq (4074 chars)
+2026-08-13 04:11:48 | DEBUG    | test_runner | Installing: ['nltk', 'sklearn']
+2026-08-13 04:11:49 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this
+2026-08-13 04:11:49 | WARNING  | test_runner | Tests FAILED for code_review_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 35)
+ERROR test_code_review_analyzer.py
+2026-08-13 04:11:49 | WARNING  | tool_builder | ⚠️  code_review_analyzer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:11:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:52 | DEBUG    | llm_client | LLM response from groq (3853 chars)
+2026-08-13 04:11:52 | DEBUG    | test_runner | Installing: ['nltk', 'sklearn']
+2026-08-13 04:11:53 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [15 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+      
+      Here is how to fix this
+2026-08-13 04:11:53 | WARNING  | test_runner | Tests FAILED for code_review_analyzer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unterminated string literal (detected at line 35)
+ERROR test_code_review_analyzer.py
+2026-08-13 04:11:53 | WARNING  | tool_builder | ⚠️  code_review_analyzer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_code_review_analyzer.py _________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:11:53 | ERROR    | tool_builder | ❌ code_review_analyzer failed after 5 loops
+2026-08-13 04:11:53 | INFO     | tool_builder | Building tool: auto_code_refactor …
+2026-08-13 04:11:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:11:54 | WARNING  | llm_client | groq rate-limited — sleeping 17s
+2026-08-13 04:12:13 | DEBUG    | llm_client | LLM response from groq (3019 chars)
+2026-08-13 04:12:13 | DEBUG    | test_runner | Installing: ['ast==', 'pylint==2.14.5']
+2026-08-13 04:12:14 | WARNING  | test_runner | pip install warning: ERROR: Invalid requirement: 'ast==': Expected semicolon (after name with no version specifier) or end
+    ast==
+       ^
+
+2026-08-13 04:12:14 | WARNING  | test_runner | Tests FAILED for auto_code_refactor:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_auto_code_refactor.py __________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:179: in exec_module
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:348: in _rewrite_test
+E   SyntaxError: unterminated string literal (detected at line 7)
+ERROR test_auto_code_refactor.py
+2026-08-13 04:12:14 | WARNING  | tool_builder | ⚠️  auto_code_refactor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_auto_code_refactor.py __________________
+../_venv/lib/python3.11/site-packages/
+2026-08-13 04:12:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:15 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-13 04:12:21 | DEBUG    | llm_client | LLM response from groq (2745 chars)
+2026-08-13 04:12:21 | DEBUG    | test_runner | Installing: ['pylint', 'ast', 'argparse']
+2026-08-13 04:12:22 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [22 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-08-13 04:12:23 | WARNING  | test_runner | Tests FAILED for auto_code_refactor:
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_auto_code_refactor.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/auto_code_refactor/test_auto_code_refactor.py'.
+E   ModuleNotFoundError: No module named 'pylint'
+ERROR test_auto_code_refactor.py
+2026-08-13 04:12:23 | WARNING  | tool_builder | ⚠️  auto_code_refactor tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_________________ ERROR collecting test_auto_code_refactor.py __________________
+ImportError while importing test modul
+2026-08-13 04:12:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:25 | DEBUG    | llm_client | LLM response from groq (3194 chars)
+2026-08-13 04:12:25 | DEBUG    | test_runner | Installing: ['pylint']
+2026-08-13 04:12:28 | WARNING  | test_runner | Tests FAILED for auto_code_refactor:
+test_auto_code_refactor.py::test_main_file_not_found FAILED              [ 75%]
+test_auto_code_refactor.py::test_main_pylint_error FAILED                [100%]
+    with pytest.raises(FileNotFoundError):
+E   Failed: DID NOT RAISE FileNotFoundError
+Error: Input file 'non_existent_file.py' not found.
+E   Exception: Mocked pylint error
+FAILED test_auto_code_refactor.py::test_main_file_not_found - Failed: DID NOT RAISE FileNotFoundError
+FAILED test_auto_code_refactor.py::test_main_pylint_error - Exception: Mocked pylint error
+2026-08-13 04:12:28 | WARNING  | tool_builder | ⚠️  auto_code_refactor tests failed (loop 3/5) — test_auto_code_refactor.py::test_main_file_not_found FAILED              [ 75%]
+test_auto_code_refactor.py::test_main_pylint_error FAILED                [100%]
+    with pytest.raises(FileNotFoundError
+2026-08-13 04:12:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:31 | DEBUG    | llm_client | LLM response from groq (3297 chars)
+2026-08-13 04:12:31 | DEBUG    | test_runner | Installing: ['ast', 'argparse', 'pylint']
+2026-08-13 04:12:32 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [22 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/pip/
+2026-08-13 04:12:32 | INFO     | test_runner | Tests PASSED for auto_code_refactor
+2026-08-13 04:12:32 | INFO     | tool_builder | ✅ auto_code_refactor passed tests on loop 4
+2026-08-13 04:12:32 | INFO     | tool_builder | Building tool: adversarial_example_generator …
+2026-08-13 04:12:32 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:33 | WARNING  | llm_client | groq rate-limited — sleeping 11s
+2026-08-13 04:12:47 | DEBUG    | llm_client | LLM response from groq (3636 chars)
+2026-08-13 04:12:47 | DEBUG    | test_runner | Installing: ['torch==1.12.1', 'scikit-learn==1.1.2', 'matplotlib==3.6.0']
+2026-08-13 04:12:47 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-13 04:12:49 | WARNING  | test_runner | Tests FAILED for adversarial_example_generator:
+==================================== ERRORS ====================================
+____________ ERROR collecting test_adversarial_example_generator.py ____________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/adversarial_example_generator/test_adversarial_example_generator.py'.
+E   ModuleNotFoundError: No module named 'sklearn'
+ERROR test_adversarial_example_generator.py
+2026-08-13 04:12:49 | WARNING  | tool_builder | ⚠️  adversarial_example_generator tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________ ERROR collecting test_adversarial_example_generator.py ____________
+ImportError while importing test modul
+2026-08-13 04:12:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:50 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-13 04:12:56 | DEBUG    | llm_client | LLM response from groq (3322 chars)
+2026-08-13 04:12:56 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-13 04:12:58 | WARNING  | test_runner | Tests FAILED for adversarial_example_generator:
+test_adversarial_example_generator.py::test_main FAILED                  [ 66%]
+test_adversarial_example_generator.py::test_main_save_adversarial_example FAILED [100%]
+E   NameError: name 'main' is not defined
+E   NameError: name 'main' is not defined
+FAILED test_adversarial_example_generator.py::test_main - NameError: name 'main' is not defined
+FAILED test_adversarial_example_generator.py::test_main_save_adversarial_example - NameError: name 'main' is not defined
+2026-08-13 04:12:58 | WARNING  | tool_builder | ⚠️  adversarial_example_generator tests failed (loop 2/5) — test_adversarial_example_generator.py::test_main FAILED                  [ 66%]
+test_adversarial_example_generator.py::test_main_save_adversarial_example FAILED [100%]
+E   NameError: name 'main' is no
+2026-08-13 04:12:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:12:59 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-13 04:13:05 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10180, Requested 7115. Please try again in 26.474999999s. Need more tokens? Upgrade to Dev Tier today at
+2026-08-13 04:13:08 | DEBUG    | llm_client | LLM response from groq (3438 chars)
+2026-08-13 04:13:08 | DEBUG    | test_runner | Installing: ['torch']
+2026-08-13 04:13:10 | INFO     | test_runner | Tests PASSED for adversarial_example_generator
+2026-08-13 04:13:10 | INFO     | tool_builder | ✅ adversarial_example_generator passed tests on loop 3
+2026-08-13 04:13:10 | INFO     | tool_builder | Building tool: llm_accelerator_optimizer …
+2026-08-13 04:13:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:13:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-13 04:13:11 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-13 04:13:13 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10560, Requested 1569. Please try again in 644.999999ms. Need more tokens? Upgrade to Dev Tier today at 
+2026-08-13 04:13:14 | WARNING  | llm_client | groq rate-limited — sleeping 25s
+2026-08-13 04:13:41 | DEBUG    | llm_client | LLM response from groq (3969 chars)
+2026-08-13 04:13:41 | DEBUG    | test_runner | Installing: ['torch==2.0.0', 'numpy==1.23.4', 'scipy==1.9.3']
+2026-08-13 04:14:47 | INFO     | test_runner | Tests PASSED for llm_accelerator_optimizer
+2026-08-13 04:14:47 | INFO     | tool_builder | ✅ llm_accelerator_optimizer passed tests on loop 1
+2026-08-13 04:14:47 | INFO     | tool_builder | Built 4/5 tools successfully
+2026-08-13 04:14:47 | INFO     | main |   Built 4/5 tools successfully
+2026-08-13 04:14:47 | INFO     | main |     ✅ ai_code_completion (loops: 3)
+2026-08-13 04:14:47 | INFO     | main |     ✅ auto_code_refactor (loops: 4)
+2026-08-13 04:14:47 | INFO     | main |     ✅ adversarial_example_generator (loops: 3)
+2026-08-13 04:14:47 | INFO     | main |     ✅ llm_accelerator_optimizer (loops: 1)
+2026-08-13 04:14:47 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-13 04:14:47 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-13 04:14:47 | INFO     | github_publisher |   Created zip: ai_code_completion.zip (1550 bytes)
+2026-08-13 04:14:47 | INFO     | github_publisher | Saved ai_code_completion → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/ai_code_completion
+2026-08-13 04:14:47 | INFO     | github_publisher |   Created zip: auto_code_refactor.zip (1677 bytes)
+2026-08-13 04:14:47 | INFO     | github_publisher | Saved auto_code_refactor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/auto_code_refactor
+2026-08-13 04:14:47 | INFO     | github_publisher |   Created zip: adversarial_example_generator.zip (1824 bytes)
+2026-08-13 04:14:47 | INFO     | github_publisher | Saved adversarial_example_generator → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/adversarial_example_generator
+2026-08-13 04:14:47 | INFO     | github_publisher |   Created zip: llm_accelerator_optimizer.zip (1894 bytes)
+2026-08-13 04:14:47 | INFO     | github_publisher | Saved llm_accelerator_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/llm_accelerator_optimizer
+2026-08-13 04:14:47 | INFO     | github_publisher | Saved 4/4 tools to generated_tools/
+2026-08-13 04:14:47 | INFO     | main |   Published 4 tools:
+2026-08-13 04:14:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/ai_code_completion
+2026-08-13 04:14:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/auto_code_refactor
+2026-08-13 04:14:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/adversarial_example_generator
+2026-08-13 04:14:47 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/llm_accelerator_optimizer
+2026-08-13 04:14:47 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-13 04:14:47 | INFO     | main | ✅ Generated tools_index.json with 467 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

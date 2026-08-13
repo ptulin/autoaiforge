@@ -1,7 +1,59 @@
 {
-  "last_updated": "2026-08-12T04:08:07.142954+00:00",
-  "total_tools": 463,
+  "last_updated": "2026-08-13T04:14:47.937842+00:00",
+  "total_tools": 467,
   "tools": [
+    {
+      "tool_name": "adversarial_example_generator",
+      "display_name": "Adversarial Example Generator",
+      "description": "This tool generates adversarial examples for AI models, which can be used to test and improve the model's robustness to attacks. The tool uses various techniques such as gradient-based attacks and evolutionary algorithms to generate examples that are likely to mislead the model. The tool is useful for developers who want to test the security of their AI systems and identify potential weaknesses. By generating adversarial examples, developers can evaluate the model's performance under different a",
+      "topic": "AI Security",
+      "date": "2026-08-13",
+      "generated": "2026-08-13T04:06:31.486383+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/adversarial_example_generator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/adversarial_example_generator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/adversarial_example_generator/adversarial_example_generator.zip"
+    },
+    {
+      "tool_name": "ai_code_completion",
+      "display_name": "AI Code Completion Tool",
+      "description": "This tool uses AI models to generate code completions for partially written code. It's useful for developers who want to speed up their coding process and reduce errors. The tool can be integrated into existing development environments and can be trained on a user's own codebase to improve its accuracy.",
+      "topic": "AI-Powered Coding",
+      "date": "2026-08-13",
+      "generated": "2026-08-13T04:06:31.486383+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/ai_code_completion",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/ai_code_completion/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/ai_code_completion/ai_code_completion.zip"
+    },
+    {
+      "tool_name": "auto_code_refactor",
+      "display_name": "Auto Code Refactor Tool",
+      "description": "This tool uses AI models to automatically refactor code to improve its readability, maintainability, and performance. It's useful for developers who want to modernize their legacy codebases and reduce technical debt. The tool can be integrated into existing development environments and can be customized to meet specific coding standards and best practices.",
+      "topic": "AI-Powered Coding",
+      "date": "2026-08-13",
+      "generated": "2026-08-13T04:06:31.486383+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/auto_code_refactor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/auto_code_refactor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/auto_code_refactor/auto_code_refactor.zip"
+    },
+    {
+      "tool_name": "llm_accelerator_optimizer",
+      "display_name": "LLM Hardware Acceleration Optimizer",
+      "description": "This tool helps AI developers optimize the performance of large language models (LLMs) on specialized hardware such as graphics processing units (GPUs). It analyzes the model architecture, identifies performance bottlenecks, and provides recommendations for optimization, including kernel fusion, data parallelism, and model pruning. By leveraging this tool, developers can significantly accelerate LLM computations, reducing training times and improving overall efficiency.",
+      "topic": "LLM Hardware Acceleration",
+      "date": "2026-08-13",
+      "generated": "2026-08-13T04:06:31.486383+00:00",
+      "loops_needed": 1,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-13/llm_accelerator_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/llm_accelerator_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-13/llm_accelerator_optimizer/llm_accelerator_optimizer.zip"
+    },
     {
       "tool_name": "ai_ethics_evaluator",
       "display_name": "AI Ethics Evaluator",
