@@ -323,3 +323,21 @@ E   ValueError: numpy.dtype size chang
 2026-08-14 04:10:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_composer
 2026-08-14 04:10:03 | INFO     | main |   Deduplicated 11 older tool version(s) from index
 2026-08-14 04:10:03 | INFO     | main | ✅ Generated tools_index.json with 469 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json
+2026-08-14 04:10:06 | INFO     | main | Database committed and pushed to repo
+2026-08-14 04:10:06 | INFO     | main | 
+2026-08-14 04:10:06 | INFO     | main | ============================================================
+2026-08-14 04:10:06 | INFO     | main | AUTOAIFORGE RUN COMPLETE
+2026-08-14 04:10:06 | INFO     | main | ============================================================
+2026-08-14 04:10:06 | INFO     | main |   Date:            2026-08-14
+2026-08-14 04:10:06 | INFO     | main |   Items scraped:   412
+2026-08-14 04:10:06 | INFO     | main |   Items stored:    252
+2026-08-14 04:10:06 | INFO     | main |   Topics found:    10
+2026-08-14 04:10:06 | INFO     | main |   Ideas generated: 5
+2026-08-14 04:10:06 | INFO     | main |   Tools built:     2
+2026-08-14 04:10:06 | INFO     | main |   Tools published: 2
+2026-08-14 04:10:06 | INFO     | main |   Elapsed:         467.4s
+2026-08-14 04:10:06 | INFO     | main |   Published URLs:
+2026-08-14 04:10:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_optimizer
+2026-08-14 04:10:06 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_composer
+2026-08-14 04:10:06 | INFO     | main | ============================================================
+2026-08-14 04:10:08 | INFO     | main | 📧 Daily email sent to ptulin@gmail.com
