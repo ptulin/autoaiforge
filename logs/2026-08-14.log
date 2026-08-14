@@ -1,0 +1,325 @@
+2026-08-14 04:02:15 | INFO     | main | ============================================================
+2026-08-14 04:02:15 | INFO     | main | AutoAIForge starting run: 2026-08-14T04:02:15.973752+00:00
+2026-08-14 04:02:15 | INFO     | main | ============================================================
+2026-08-14 04:02:15 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-14 04:02:16 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-14 04:02:16 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-14 04:02:16 | INFO     | main |   YouTube: 0 items
+2026-08-14 04:02:16 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-14 04:02:21 | INFO     | rss_scraper | HackerNews: 164 items
+2026-08-14 04:02:21 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-14 04:02:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-14 04:02:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-14 04:02:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-14 04:02:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-14 04:02:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-14 04:02:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-14 04:02:28 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-14 04:02:54 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3Alarge%2Blanguage%2Bmodel+OR+abs%3Alarge%2Blanguage%2Bmodel&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-08-14 04:03:05 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=ti%3AAI%2Bagent+OR+abs%3AAI%2Bagent&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-08-14 04:03:36 | WARNING  | rss_scraper | ArXiv request failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)
+2026-08-14 04:03:53 | WARNING  | rss_scraper | ArXiv request failed: 429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=ti%3Amultimodal+OR+abs%3Amultimodal&sortBy=submittedDate&sortOrder=descending&max_results=30
+2026-08-14 04:03:54 | INFO     | rss_scraper | ArXiv: 0 items
+2026-08-14 04:03:58 | INFO     | rss_scraper | Dev.to: 198 items
+2026-08-14 04:03:59 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-14 04:03:59 | INFO     | rss_scraper | Free sources total: 412 unique items
+2026-08-14 04:03:59 | INFO     | main |   RSS/API sources: 412 items
+2026-08-14 04:03:59 | INFO     | main |   Total scraped: 412 items
+2026-08-14 04:03:59 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-14 04:03:59 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-14 04:03:59 | INFO     | db_manager | Purged 0 old news items
+2026-08-14 04:03:59 | INFO     | db_manager | Inserted 252/412 news items
+2026-08-14 04:03:59 | INFO     | main |   SQLite: 252 new items (total: 9840)
+2026-08-14 04:04:05 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-14 04:04:05 | INFO     | vector_store | VectorStore ready
+2026-08-14 04:04:11 | INFO     | vector_store | Indexed 519 items into vector store
+2026-08-14 04:04:11 | INFO     | main |   Vector store: 519 items indexed
+2026-08-14 04:04:11 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-14 04:04:11 | INFO     | topic_analyzer | Analyzing 519 items for top 10 topics …
+2026-08-14 04:04:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:14 | DEBUG    | llm_client | LLM response from groq (3572 chars)
+2026-08-14 04:04:14 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-14 04:04:14 | INFO     | main |   Found 10 topics:
+2026-08-14 04:04:14 | INFO     | main |      1. [9/10] LLM Pipelines
+2026-08-14 04:04:14 | INFO     | main |      2. [8/10] AI Watermarking
+2026-08-14 04:04:14 | INFO     | main |      3. [8/10] AI Security
+2026-08-14 04:04:14 | INFO     | main |      4. [8/10] Reinforcement Learning
+2026-08-14 04:04:14 | INFO     | main |      5. [7/10] AI Governance
+2026-08-14 04:04:14 | INFO     | main |      6. [7/10] Explainable AI
+2026-08-14 04:04:14 | INFO     | main |      7. [7/10] AI Model Optimization
+2026-08-14 04:04:14 | INFO     | main |      8. [6/10] Graph Engineering
+2026-08-14 04:04:14 | INFO     | main |      9. [6/10] AI Collaboration
+2026-08-14 04:04:14 | INFO     | main |     10. [6/10] AI Ethics
+2026-08-14 04:04:14 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-14 04:04:15 | INFO     | main |   Existing collection: 467 tools across 254 topics
+2026-08-14 04:04:15 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-14 04:04:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:16 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:18 | DEBUG    | llm_client | LLM response from groq (3041 chars)
+2026-08-14 04:04:18 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Pipelines
+2026-08-14 04:04:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:19 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:20 | DEBUG    | llm_client | LLM response from groq (2233 chars)
+2026-08-14 04:04:20 | INFO     | idea_generator | Generated 2 ideas for topic: AI Watermarking
+2026-08-14 04:04:20 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-14 04:04:20 | INFO     | main |   Generated 5 tool ideas:
+2026-08-14 04:04:20 | INFO     | main |     • llm_pipeline_optimizer: This tool helps developers optimize their LLM pipelines by analyzing the model's
+2026-08-14 04:04:20 | INFO     | main |     • llm_deployment_manager: This tool simplifies the deployment of LLM models by providing a unified interfa
+2026-08-14 04:04:20 | INFO     | main |     • llm_pipeline_composer: This tool enables developers to create and manage complex LLM pipelines by provi
+2026-08-14 04:04:20 | INFO     | main |     • ai_watermark_remover: This tool is designed to detect and remove AI-generated watermarks from text and
+2026-08-14 04:04:20 | INFO     | main |     • deepfake_detector: This tool uses deep learning models to detect AI-generated deepfakes in images a
+2026-08-14 04:04:20 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-14 04:04:20 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-14 04:04:30 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-14 04:04:30 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-14 04:04:30 | INFO     | tool_builder | Building tool: llm_pipeline_optimizer …
+2026-08-14 04:04:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:31 | WARNING  | llm_client | groq rate-limited — sleeping 22s
+2026-08-14 04:04:55 | DEBUG    | llm_client | LLM response from groq (3054 chars)
+2026-08-14 04:04:55 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1']
+2026-08-14 04:04:55 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-14 04:04:56 | WARNING  | test_runner | Tests FAILED for llm_pipeline_optimizer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_pipeline_optimizer/test_llm_pipeline_optimizer.py'.
+E   ModuleNotFoundError: No module named 'transformers'
+ERROR test_llm_pipeline_optimizer.py
+2026-08-14 04:04:56 | WARNING  | tool_builder | ⚠️  llm_pipeline_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test modul
+2026-08-14 04:04:56 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:04:59 | DEBUG    | llm_client | LLM response from groq (3705 chars)
+2026-08-14 04:04:59 | DEBUG    | test_runner | Installing: ['torch', 'argparse', 'json']
+2026-08-14 04:05:00 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-14 04:05:00 | WARNING  | test_runner | Tests FAILED for llm_pipeline_optimizer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_pipeline_optimizer/test_llm_pipeline_optimizer.py'.
+E   ModuleNotFoundError: No module named 'torch'
+ERROR test_llm_pipeline_optimizer.py
+2026-08-14 04:05:00 | WARNING  | tool_builder | ⚠️  llm_pipeline_optimizer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test modul
+2026-08-14 04:05:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:03 | DEBUG    | llm_client | LLM response from groq (3848 chars)
+2026-08-14 04:05:03 | DEBUG    | test_runner | Installing: ['torch', 'json', 'argparse']
+2026-08-14 04:05:03 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-14 04:05:04 | WARNING  | test_runner | Tests FAILED for llm_pipeline_optimizer:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_pipeline_optimizer/test_llm_pipeline_optimizer.py'.
+E   ModuleNotFoundError: No module named 'torch'
+ERROR test_llm_pipeline_optimizer.py
+2026-08-14 04:05:04 | WARNING  | tool_builder | ⚠️  llm_pipeline_optimizer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_pipeline_optimizer.py ________________
+ImportError while importing test modul
+2026-08-14 04:05:04 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:05 | WARNING  | llm_client | groq rate-limited — sleeping 15s
+2026-08-14 04:05:22 | DEBUG    | llm_client | LLM response from groq (4102 chars)
+2026-08-14 04:05:22 | DEBUG    | test_runner | Installing: ['json']
+2026-08-14 04:05:22 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement json (from versions: none)
+ERROR: No matching distribution found for json
+
+2026-08-14 04:05:23 | INFO     | test_runner | Tests PASSED for llm_pipeline_optimizer
+2026-08-14 04:05:23 | INFO     | tool_builder | ✅ llm_pipeline_optimizer passed tests on loop 4
+2026-08-14 04:05:23 | INFO     | tool_builder | Building tool: llm_deployment_manager …
+2026-08-14 04:05:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:24 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-14 04:05:32 | DEBUG    | llm_client | LLM response from groq (3523 chars)
+2026-08-14 04:05:32 | DEBUG    | test_runner | Installing: ['flask==2.2.2', 'docker==6.0.0']
+2026-08-14 04:05:34 | WARNING  | test_runner | Tests FAILED for llm_deployment_manager:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+../_venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+E   SyntaxError: unmatched ')'
+ERROR test_llm_deployment_manager.py
+2026-08-14 04:05:34 | WARNING  | tool_builder | ⚠️  llm_deployment_manager tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+../_venv/lib/python3.11/site-packages/
+2026-08-14 04:05:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:35 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:35 | WARNING  | llm_client | groq rate-limited — sleeping 4s
+2026-08-14 04:05:41 | DEBUG    | llm_client | LLM response from groq (3750 chars)
+2026-08-14 04:05:41 | DEBUG    | test_runner | Installing: ['flask', 'docker', 'pytest']
+2026-08-14 04:05:42 | WARNING  | test_runner | Tests FAILED for llm_deployment_manager:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_deployment_manager/test_llm_deployment_manager.py'.
+E   ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/werkzeug/urls.py)
+ERROR test_llm_deployment_manager.py
+2026-08-14 04:05:42 | WARNING  | tool_builder | ⚠️  llm_deployment_manager tests failed (loop 2/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test modul
+2026-08-14 04:05:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:43 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-14 04:05:51 | DEBUG    | llm_client | LLM response from groq (4335 chars)
+2026-08-14 04:05:51 | DEBUG    | test_runner | Installing: ['flask', 'docker', 'pytest']
+2026-08-14 04:05:52 | WARNING  | test_runner | Tests FAILED for llm_deployment_manager:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_deployment_manager/test_llm_deployment_manager.py'.
+E   ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/werkzeug/urls.py)
+ERROR test_llm_deployment_manager.py
+2026-08-14 04:05:52 | WARNING  | tool_builder | ⚠️  llm_deployment_manager tests failed (loop 3/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test modul
+2026-08-14 04:05:52 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:05:54 | WARNING  | llm_client | groq rate-limited — sleeping 7s
+2026-08-14 04:06:03 | DEBUG    | llm_client | LLM response from groq (4534 chars)
+2026-08-14 04:06:03 | DEBUG    | test_runner | Installing: ['flask', 'docker', 'pytest']
+2026-08-14 04:06:04 | WARNING  | test_runner | Tests FAILED for llm_deployment_manager:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_deployment_manager/test_llm_deployment_manager.py'.
+E   ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/werkzeug/urls.py)
+ERROR test_llm_deployment_manager.py
+2026-08-14 04:06:04 | WARNING  | tool_builder | ⚠️  llm_deployment_manager tests failed (loop 4/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test modul
+2026-08-14 04:06:04 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:06:05 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:06:05 | WARNING  | llm_client | groq rate-limited — sleeping 33s
+2026-08-14 04:06:41 | DEBUG    | llm_client | LLM response from groq (4989 chars)
+2026-08-14 04:06:41 | DEBUG    | test_runner | Installing: ['flask', 'docker']
+2026-08-14 04:06:42 | WARNING  | test_runner | Tests FAILED for llm_deployment_manager:
+==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_deployment_manager/test_llm_deployment_manager.py'.
+E   ImportError: cannot import name 'url_quote' from 'werkzeug.urls' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/werkzeug/urls.py)
+ERROR test_llm_deployment_manager.py
+2026-08-14 04:06:42 | WARNING  | tool_builder | ⚠️  llm_deployment_manager tests failed (loop 5/5) — ==================================== ERRORS ====================================
+_______________ ERROR collecting test_llm_deployment_manager.py ________________
+ImportError while importing test modul
+2026-08-14 04:06:42 | ERROR    | tool_builder | ❌ llm_deployment_manager failed after 5 loops
+2026-08-14 04:06:42 | INFO     | tool_builder | Building tool: llm_pipeline_composer …
+2026-08-14 04:06:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:06:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:06:45 | DEBUG    | llm_client | LLM response from groq (2903 chars)
+2026-08-14 04:06:45 | DEBUG    | test_runner | Installing: ['graphviz==0.20.1', 'streamlit==1.20.0']
+2026-08-14 04:06:57 | WARNING  | test_runner | Tests FAILED for llm_pipeline_composer:
+==================================== ERRORS ====================================
+________________ ERROR collecting test_llm_pipeline_composer.py ________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_pipeline_composer/test_llm_pipeline_composer.py'.
+E   ImportError: cannot import name 'caching' from 'streamlit' (/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/lib/python3.11/site-packages/streamlit/__init__.py)
+ERROR test_llm_pipeline_composer.py
+2026-08-14 04:06:57 | WARNING  | tool_builder | ⚠️  llm_pipeline_composer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+________________ ERROR collecting test_llm_pipeline_composer.py ________________
+ImportError while importing test modul
+2026-08-14 04:06:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:06:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:07:00 | DEBUG    | llm_client | LLM response from groq (2971 chars)
+2026-08-14 04:07:00 | DEBUG    | test_runner | Installing: ['graphviz', 'streamlit']
+2026-08-14 04:07:02 | WARNING  | test_runner | Tests FAILED for llm_pipeline_composer:
+test_llm_pipeline_composer.py::test_compose_pipeline FAILED              [ 33%]
+    assert isinstance(pipeline, graphviz.Digraph)
+E   NameError: name 'graphviz' is not defined
+FAILED test_llm_pipeline_composer.py::test_compose_pipeline - NameError: name 'graphviz' is not defined
+2026-08-14 04:07:02 | WARNING  | tool_builder | ⚠️  llm_pipeline_composer tests failed (loop 2/5) — test_llm_pipeline_composer.py::test_compose_pipeline FAILED              [ 33%]
+    assert isinstance(pipeline, graphviz.Digraph)
+E   NameError: name 'graphviz' is not defined
+FAILED test_llm_pipeline
+2026-08-14 04:07:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:07:03 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:07:05 | DEBUG    | llm_client | LLM response from groq (3069 chars)
+2026-08-14 04:07:05 | DEBUG    | test_runner | Installing: ['graphviz', 'streamlit', 'argparse']
+2026-08-14 04:07:07 | INFO     | test_runner | Tests PASSED for llm_pipeline_composer
+2026-08-14 04:07:07 | INFO     | tool_builder | ✅ llm_pipeline_composer passed tests on loop 3
+2026-08-14 04:07:07 | INFO     | tool_builder | Building tool: ai_watermark_remover …
+2026-08-14 04:07:07 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:07:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:07:10 | DEBUG    | llm_client | LLM response from groq (3508 chars)
+2026-08-14 04:07:10 | DEBUG    | test_runner | Installing: ['Pillow==9.2.0', 'numpy==1.22.3', 'transformers==4.20.1']
+2026-08-14 04:09:10 | ERROR    | tool_builder | Unexpected error building ai_watermark_remover: Command '['/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python', '-m', 'pip', 'install', '--quiet', 'Pillow==9.2.0', 'numpy==1.22.3', 'transformers==4.20.1']' timed out after 120 seconds
+2026-08-14 04:09:10 | INFO     | tool_builder | Building tool: deepfake_detector …
+2026-08-14 04:09:10 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:13 | DEBUG    | llm_client | LLM response from groq (3025 chars)
+2026-08-14 04:09:13 | DEBUG    | test_runner | Installing: ['tensorflow==2.8.0', 'opencv-python==4.5.5', 'scikit-image==0.19.3']
+2026-08-14 04:09:14 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.8.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2,
+2026-08-14 04:09:14 | WARNING  | test_runner | Tests FAILED for deepfake_detector:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/deepfake_detector/test_deepfake_detector.py'.
+E   ModuleNotFoundError: No module named 'cv2'
+ERROR test_deepfake_detector.py
+2026-08-14 04:09:14 | WARNING  | tool_builder | ⚠️  deepfake_detector tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+ImportError while importing test modul
+2026-08-14 04:09:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:15 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:17 | DEBUG    | llm_client | LLM response from groq (3202 chars)
+2026-08-14 04:09:17 | DEBUG    | test_runner | Installing: ['tensorflow', 'Pillow']
+2026-08-14 04:09:42 | WARNING  | test_runner | Tests FAILED for deepfake_detector:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_deepfake_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-14 04:09:42 | WARNING  | tool_builder | ⚠️  deepfake_detector tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-14 04:09:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:45 | DEBUG    | llm_client | LLM response from groq (3189 chars)
+2026-08-14 04:09:45 | DEBUG    | test_runner | Installing: ['numpy', 'tensorflow', 'Pillow']
+2026-08-14 04:09:49 | WARNING  | test_runner | Tests FAILED for deepfake_detector:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_deepfake_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-14 04:09:49 | WARNING  | tool_builder | ⚠️  deepfake_detector tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-14 04:09:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:50 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:52 | DEBUG    | llm_client | LLM response from groq (3455 chars)
+2026-08-14 04:09:52 | DEBUG    | test_runner | Installing: ['tensorflow', 'numpy', 'Pillow']
+2026-08-14 04:09:55 | WARNING  | test_runner | Tests FAILED for deepfake_detector:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_deepfake_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-14 04:09:55 | WARNING  | tool_builder | ⚠️  deepfake_detector tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-14 04:09:55 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-14 04:09:59 | DEBUG    | llm_client | LLM response from groq (3825 chars)
+2026-08-14 04:09:59 | DEBUG    | test_runner | Installing: ['tensorflow', 'numpy', 'Pillow']
+2026-08-14 04:10:03 | WARNING  | test_runner | Tests FAILED for deepfake_detector:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_deepfake_detector.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-14 04:10:03 | WARNING  | tool_builder | ⚠️  deepfake_detector tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_deepfake_detector.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-14 04:10:03 | ERROR    | tool_builder | ❌ deepfake_detector failed after 5 loops
+2026-08-14 04:10:03 | INFO     | tool_builder | Built 2/5 tools successfully
+2026-08-14 04:10:03 | INFO     | main |   Built 2/5 tools successfully
+2026-08-14 04:10:03 | INFO     | main |     ✅ llm_pipeline_optimizer (loops: 4)
+2026-08-14 04:10:03 | INFO     | main |     ✅ llm_pipeline_composer (loops: 3)
+2026-08-14 04:10:03 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-14 04:10:03 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-14 04:10:03 | INFO     | github_publisher |   Created zip: llm_pipeline_optimizer.zip (1910 bytes)
+2026-08-14 04:10:03 | INFO     | github_publisher | Saved llm_pipeline_optimizer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_optimizer
+2026-08-14 04:10:03 | INFO     | github_publisher |   Created zip: llm_pipeline_composer.zip (1722 bytes)
+2026-08-14 04:10:03 | INFO     | github_publisher | Saved llm_pipeline_composer → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_composer
+2026-08-14 04:10:03 | INFO     | github_publisher | Saved 2/2 tools to generated_tools/
+2026-08-14 04:10:03 | INFO     | main |   Published 2 tools:
+2026-08-14 04:10:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_optimizer
+2026-08-14 04:10:03 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_composer
+2026-08-14 04:10:03 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-14 04:10:03 | INFO     | main | ✅ Generated tools_index.json with 469 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

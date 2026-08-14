@@ -1,7 +1,33 @@
 {
-  "last_updated": "2026-08-13T04:14:47.937842+00:00",
-  "total_tools": 467,
+  "last_updated": "2026-08-14T04:10:03.402051+00:00",
+  "total_tools": 469,
   "tools": [
+    {
+      "tool_name": "llm_pipeline_composer",
+      "display_name": "LLM Pipeline Composer",
+      "description": "This tool enables developers to create and manage complex LLM pipelines by providing a visual interface for composing and configuring model workflows. It supports a wide range of LLM models and integrates with popular development tools. This tool is useful for developers who want to build and experiment with different LLM pipelines without writing extensive code.",
+      "topic": "LLM Pipelines",
+      "date": "2026-08-14",
+      "generated": "2026-08-14T04:02:15.973752+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_composer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-14/llm_pipeline_composer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-14/llm_pipeline_composer/llm_pipeline_composer.zip"
+    },
+    {
+      "tool_name": "llm_pipeline_optimizer",
+      "display_name": "LLM Pipeline Optimizer",
+      "description": "This tool helps developers optimize their LLM pipelines by analyzing the model's performance and suggesting improvements. It provides a detailed report on the model's efficiency, highlighting bottlenecks and areas for optimization. This tool is useful for developers who want to improve the performance of their LLM pipelines without sacrificing accuracy.",
+      "topic": "LLM Pipelines",
+      "date": "2026-08-14",
+      "generated": "2026-08-14T04:02:15.973752+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-14/llm_pipeline_optimizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-14/llm_pipeline_optimizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-14/llm_pipeline_optimizer/llm_pipeline_optimizer.zip"
+    },
     {
       "tool_name": "adversarial_example_generator",
       "display_name": "Adversarial Example Generator",
