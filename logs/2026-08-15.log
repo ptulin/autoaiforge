@@ -1,0 +1,558 @@
+2026-08-15 02:48:00 | INFO     | main | ============================================================
+2026-08-15 02:48:00 | INFO     | main | AutoAIForge starting run: 2026-08-15T02:48:00.012268+00:00
+2026-08-15 02:48:00 | INFO     | main | ============================================================
+2026-08-15 02:48:00 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-15 02:48:00 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-15 02:48:00 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-15 02:48:00 | INFO     | main |   YouTube: 0 items
+2026-08-15 02:48:00 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-15 02:48:05 | INFO     | rss_scraper | HackerNews: 168 items
+2026-08-15 02:48:05 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-15 02:48:06 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-15 02:48:07 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-15 02:48:08 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-15 02:48:09 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-15 02:48:10 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-15 02:48:11 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-15 02:48:12 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-15 02:48:18 | INFO     | rss_scraper | ArXiv: 99 items
+2026-08-15 02:48:22 | INFO     | rss_scraper | Dev.to: 190 items
+2026-08-15 02:48:23 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-15 02:48:23 | INFO     | rss_scraper | Free sources total: 507 unique items
+2026-08-15 02:48:23 | INFO     | main |   RSS/API sources: 507 items
+2026-08-15 02:48:23 | INFO     | main |   Total scraped: 507 items
+2026-08-15 02:48:23 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-15 02:48:23 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-15 02:48:23 | INFO     | db_manager | Purged 409 old news items
+2026-08-15 02:48:23 | INFO     | db_manager | Inserted 352/507 news items
+2026-08-15 02:48:23 | INFO     | main |   SQLite: 352 new items (total: 9783)
+2026-08-15 02:48:29 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-15 02:48:30 | INFO     | vector_store | VectorStore ready
+2026-08-15 02:48:39 | INFO     | vector_store | Indexed 871 items into vector store
+2026-08-15 02:48:39 | INFO     | main |   Vector store: 871 items indexed
+2026-08-15 02:48:39 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-15 02:48:39 | INFO     | topic_analyzer | Analyzing 871 items for top 10 topics …
+2026-08-15 02:48:39 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:42 | DEBUG    | llm_client | LLM response from groq (3800 chars)
+2026-08-15 02:48:42 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-15 02:48:42 | INFO     | main |   Found 10 topics:
+2026-08-15 02:48:42 | INFO     | main |      1. [8/10] LLM Training Optimization
+2026-08-15 02:48:42 | INFO     | main |      2. [8/10] LLM Deployment and Serving
+2026-08-15 02:48:42 | INFO     | main |      3. [8/10] LLM Security and Robustness
+2026-08-15 02:48:42 | INFO     | main |      4. [7/10] Explainable AI for LLMs
+2026-08-15 02:48:42 | INFO     | main |      5. [7/10] Bias Detection and Mitigation in AI
+2026-08-15 02:48:42 | INFO     | main |      6. [6/10] AI-Powered Code Review
+2026-08-15 02:48:42 | INFO     | main |      7. [6/10] AI-Assisted Data Workflow Management
+2026-08-15 02:48:42 | INFO     | main |      8. [6/10] AI-Powered Search and Information Retrieval
+2026-08-15 02:48:42 | INFO     | main |      9. [6/10] AI-Driven Observability and Monitoring
+2026-08-15 02:48:42 | INFO     | main |     10. [5/10] AI-Driven Testing and Validation
+2026-08-15 02:48:42 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-15 02:48:42 | INFO     | main |   Existing collection: 469 tools across 255 topics
+2026-08-15 02:48:42 | INFO     | main |   No topics flagged for upgrade (all existing tools are recent)
+2026-08-15 02:48:42 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:43 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:45 | DEBUG    | llm_client | LLM response from groq (3483 chars)
+2026-08-15 02:48:45 | INFO     | idea_generator | Generated 3 ideas for topic: LLM Training Optimization
+2026-08-15 02:48:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:48 | DEBUG    | llm_client | LLM response from groq (2410 chars)
+2026-08-15 02:48:48 | INFO     | idea_generator | Generated 2 ideas for topic: LLM Deployment and Serving
+2026-08-15 02:48:48 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-15 02:48:48 | INFO     | main |   Generated 5 tool ideas:
+2026-08-15 02:48:48 | INFO     | main |     • llm_tuner: This tool automates the process of hyperparameter tuning for large language mode
+2026-08-15 02:48:48 | INFO     | main |     • llm_selector: This tool assists AI developers in selecting the most suitable large language mo
+2026-08-15 02:48:48 | INFO     | main |     • llm_train_profiler: This tool provides in-depth profiling and analysis of large language model train
+2026-08-15 02:48:48 | INFO     | main |     • llm_serve: This tool streamlines the deployment and serving of large language models by pro
+2026-08-15 02:48:48 | INFO     | main |     • llm_batcher: This tool enables efficient batch processing of large language model requests by
+2026-08-15 02:48:48 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-15 02:48:48 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-15 02:48:57 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-15 02:48:57 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-15 02:48:57 | INFO     | tool_builder | Building tool: llm_tuner …
+2026-08-15 02:48:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:48:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:49:01 | DEBUG    | llm_client | LLM response from groq (3884 chars)
+2026-08-15 02:49:01 | DEBUG    | test_runner | Installing: ['optuna==2.10.0', 'transformers==4.21.3']
+2026-08-15 02:51:00 | WARNING  | test_runner | pip install warning:   error: subprocess-exited-with-error
+  
+  × Building wheel for tokenizers (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [1021 lines of output]
+      /tmp/pip-build-env-y1g4yusr/overlay/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License cla
+2026-08-15 02:51:00 | WARNING  | test_runner | Tests FAILED for llm_tuner:
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_llm_tuner.py ______________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_tuner/test_llm_tuner.py'.
+E   ModuleNotFoundError: No module named 'optuna'
+ERROR test_llm_tuner.py
+2026-08-15 02:51:00 | WARNING  | tool_builder | ⚠️  llm_tuner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________________ ERROR collecting test_llm_tuner.py ______________________
+ImportError while importing test modul
+2026-08-15 02:51:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:01 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:03 | DEBUG    | llm_client | LLM response from groq (4173 chars)
+2026-08-15 02:51:03 | DEBUG    | test_runner | Installing: ['transformers', 'optuna']
+2026-08-15 02:51:17 | WARNING  | test_runner | Tests FAILED for llm_tuner:
+test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_invalid_hyperparams ERROR         [100%]
+==================================== ERRORS ====================================
+_______________________ ERROR at setup of test_objective _______________________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+______________ ERROR at setup of test_objective_with_hyperparams _______________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+__________ ERROR at setup of test_objective_with_invalid_hyperparams ___________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+ERROR test_llm_tuner.py::test_objective - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_hyperparams - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_invalid_hyperparams - ImportError: 
+2026-08-15 02:51:17 | WARNING  | tool_builder | ⚠️  llm_tuner tests failed (loop 2/5) — test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_i
+2026-08-15 02:51:17 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:20 | DEBUG    | llm_client | LLM response from groq (4277 chars)
+2026-08-15 02:51:20 | DEBUG    | test_runner | Installing: ['transformers', 'optuna']
+2026-08-15 02:51:23 | WARNING  | test_runner | Tests FAILED for llm_tuner:
+test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_invalid_hyperparams ERROR         [100%]
+==================================== ERRORS ====================================
+_______________________ ERROR at setup of test_objective _______________________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+______________ ERROR at setup of test_objective_with_hyperparams _______________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+__________ ERROR at setup of test_objective_with_invalid_hyperparams ___________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+ERROR test_llm_tuner.py::test_objective - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_hyperparams - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_invalid_hyperparams - ImportError: 
+2026-08-15 02:51:23 | WARNING  | tool_builder | ⚠️  llm_tuner tests failed (loop 3/5) — test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_i
+2026-08-15 02:51:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:26 | DEBUG    | llm_client | LLM response from groq (4619 chars)
+2026-08-15 02:51:26 | DEBUG    | test_runner | Installing: ['optuna', 'transformers']
+2026-08-15 02:51:28 | WARNING  | test_runner | Tests FAILED for llm_tuner:
+test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_invalid_hyperparams ERROR         [100%]
+==================================== ERRORS ====================================
+_______________________ ERROR at setup of test_objective _______________________
+E   NameError: name 'AutoModelForSequenceClassification' is not defined
+______________ ERROR at setup of test_objective_with_hyperparams _______________
+E   NameError: name 'AutoModelForSequenceClassification' is not defined
+__________ ERROR at setup of test_objective_with_invalid_hyperparams ___________
+E   NameError: name 'AutoModelForSequenceClassification' is not defined
+ERROR test_llm_tuner.py::test_objective - NameError: name 'AutoModelForSequenceClassification' is not defined
+ERROR test_llm_tuner.py::test_objective_with_hyperparams - NameError: name 'AutoModelForSequenceClassification' is not defined
+ERROR test_llm_tuner.py::test_objective_with_invalid_hyperparams - NameError: name 'AutoModelForSequenceClassification' is not defined
+2026-08-15 02:51:28 | WARNING  | tool_builder | ⚠️  llm_tuner tests failed (loop 4/5) — test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_i
+2026-08-15 02:51:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:29 | WARNING  | llm_client | groq rate-limited — sleeping 17s
+2026-08-15 02:51:48 | DEBUG    | llm_client | LLM response from groq (4487 chars)
+2026-08-15 02:51:48 | DEBUG    | test_runner | Installing: ['transformers', 'optuna']
+2026-08-15 02:51:51 | WARNING  | test_runner | Tests FAILED for llm_tuner:
+test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_invalid_hyperparams ERROR         [100%]
+==================================== ERRORS ====================================
+_______________________ ERROR at setup of test_objective _______________________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+______________ ERROR at setup of test_objective_with_hyperparams _______________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+__________ ERROR at setup of test_objective_with_invalid_hyperparams ___________
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+ERROR test_llm_tuner.py::test_objective - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_hyperparams - ImportError: 
+ERROR test_llm_tuner.py::test_objective_with_invalid_hyperparams - ImportError: 
+2026-08-15 02:51:51 | WARNING  | tool_builder | ⚠️  llm_tuner tests failed (loop 5/5) — test_llm_tuner.py::test_objective ERROR                                  [ 33%]
+test_llm_tuner.py::test_objective_with_hyperparams ERROR                 [ 66%]
+test_llm_tuner.py::test_objective_with_i
+2026-08-15 02:51:51 | ERROR    | tool_builder | ❌ llm_tuner failed after 5 loops
+2026-08-15 02:51:51 | INFO     | tool_builder | Building tool: llm_selector …
+2026-08-15 02:51:51 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:52 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:51:52 | WARNING  | llm_client | groq rate-limited — sleeping 2s
+2026-08-15 02:51:55 | DEBUG    | llm_client | LLM response from groq (2616 chars)
+2026-08-15 02:51:55 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'numpy==1.23.4', 'pandas==1.5.1']
+2026-08-15 02:52:08 | WARNING  | test_runner | Tests FAILED for llm_selector:
+test_llm_selector.py::test_evaluate_model FAILED                         [ 33%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 66%]
+test_llm_selector.py::test_evaluate_model_with_invalid_task FAILED       [100%]
+    assert accuracy == 0.8
+E   assert 0.30554442206048804 == 0.8
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model - assert 0.30554442206048804 == 0.8
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_model - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_task - Failed: DID NOT RAISE ValueError
+2026-08-15 02:52:08 | WARNING  | tool_builder | ⚠️  llm_selector tests failed (loop 1/5) — test_llm_selector.py::test_evaluate_model FAILED                         [ 33%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 66%]
+test_llm_selector.py::test_evaluate_mode
+2026-08-15 02:52:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:10 | DEBUG    | llm_client | LLM response from groq (2867 chars)
+2026-08-15 02:52:10 | DEBUG    | test_runner | Installing: ['numpy', 'transformers']
+2026-08-15 02:52:11 | WARNING  | test_runner | Tests FAILED for llm_selector:
+test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_model_with_invalid_task FAILED       [ 75%]
+test_llm_selector.py::test_evaluate_model_without_mocking FAILED         [100%]
+    assert accuracy == 0.8
+E   assert 0.060729861799616036 == 0.8
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    assert isinstance(accuracy, np.float64)
+E   AssertionError: assert False
+FAILED test_llm_selector.py::test_evaluate_model - assert 0.060729861799616036 == 0.8
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_model - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_task - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_without_mocking - AssertionError: assert False
+2026-08-15 02:52:11 | WARNING  | tool_builder | ⚠️  llm_selector tests failed (loop 2/5) — test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_mode
+2026-08-15 02:52:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:13 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-15 02:52:17 | DEBUG    | llm_client | LLM response from groq (2878 chars)
+2026-08-15 02:52:17 | DEBUG    | test_runner | Installing: ['numpy']
+2026-08-15 02:52:18 | WARNING  | test_runner | Tests FAILED for llm_selector:
+test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_model_with_invalid_task FAILED       [ 75%]
+test_llm_selector.py::test_evaluate_model_without_mocking FAILED         [100%]
+    assert accuracy == 0.8
+E   assert 0.8411088317242994 == 0.8
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    assert isinstance(accuracy, np.float64)
+E   AssertionError: assert False
+FAILED test_llm_selector.py::test_evaluate_model - assert 0.8411088317242994 == 0.8
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_model - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_task - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_without_mocking - AssertionError: assert False
+2026-08-15 02:52:18 | WARNING  | tool_builder | ⚠️  llm_selector tests failed (loop 3/5) — test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_mode
+2026-08-15 02:52:18 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:19 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:19 | WARNING  | llm_client | groq rate-limited — sleeping 6s
+2026-08-15 02:52:27 | DEBUG    | llm_client | LLM response from groq (3171 chars)
+2026-08-15 02:52:27 | DEBUG    | test_runner | Installing: ['numpy', 'pytest']
+2026-08-15 02:52:28 | WARNING  | test_runner | Tests FAILED for llm_selector:
+test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_model_with_invalid_task FAILED       [ 75%]
+test_llm_selector.py::test_evaluate_model_without_mocking FAILED         [100%]
+    assert np.isclose(accuracy, 0.8)
+E   assert False
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    with pytest.raises(ValueError):
+E   Failed: DID NOT RAISE ValueError
+    assert isinstance(accuracy, np.float64)
+E   AssertionError: assert False
+FAILED test_llm_selector.py::test_evaluate_model - assert False
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_model - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_with_invalid_task - Failed: DID NOT RAISE ValueError
+FAILED test_llm_selector.py::test_evaluate_model_without_mocking - AssertionError: assert False
+2026-08-15 02:52:28 | WARNING  | tool_builder | ⚠️  llm_selector tests failed (loop 4/5) — test_llm_selector.py::test_evaluate_model FAILED                         [ 25%]
+test_llm_selector.py::test_evaluate_model_with_invalid_model FAILED      [ 50%]
+test_llm_selector.py::test_evaluate_mode
+2026-08-15 02:52:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:29 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-15 02:52:36 | DEBUG    | llm_client | LLM response from groq (3714 chars)
+2026-08-15 02:52:36 | DEBUG    | test_runner | Installing: ['numpy', 'argparse']
+2026-08-15 02:52:37 | WARNING  | test_runner | Tests FAILED for llm_selector:
+test_llm_selector.py::test_evaluate_model FAILED                         [ 16%]
+test_llm_selector.py::test_evaluate_model_without_mocking FAILED         [ 66%]
+    assert np.isclose(accuracy, 0.8)
+E   assert False
+    assert isinstance(accuracy, np.float64)
+E   AssertionError: assert False
+FAILED test_llm_selector.py::test_evaluate_model - assert False
+FAILED test_llm_selector.py::test_evaluate_model_without_mocking - AssertionError: assert False
+2026-08-15 02:52:37 | WARNING  | tool_builder | ⚠️  llm_selector tests failed (loop 5/5) — test_llm_selector.py::test_evaluate_model FAILED                         [ 16%]
+test_llm_selector.py::test_evaluate_model_without_mocking FAILED         [ 66%]
+    assert np.isclose(accuracy, 0.8)
+E  
+2026-08-15 02:52:37 | ERROR    | tool_builder | ❌ llm_selector failed after 5 loops
+2026-08-15 02:52:37 | INFO     | tool_builder | Building tool: llm_train_profiler …
+2026-08-15 02:52:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:52:38 | WARNING  | llm_client | groq rate-limited — sleeping 28s
+2026-08-15 02:53:08 | DEBUG    | llm_client | LLM response from groq (3547 chars)
+2026-08-15 02:53:08 | DEBUG    | test_runner | Installing: ['psutil==5.9.0', 'matplotlib==3.5.1', 'transformers==4.21.3']
+2026-08-15 02:55:08 | ERROR    | tool_builder | Unexpected error building llm_train_profiler: Command '['/home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python', '-m', 'pip', 'install', '--quiet', 'psutil==5.9.0', 'matplotlib==3.5.1', 'transformers==4.21.3']' timed out after 120 seconds
+2026-08-15 02:55:08 | INFO     | tool_builder | Building tool: llm_serve …
+2026-08-15 02:55:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:12 | DEBUG    | llm_client | LLM response from groq (3765 chars)
+2026-08-15 02:55:12 | DEBUG    | test_runner | Installing: ['transformers==4.24.0', 'torch==1.12.1', 'flask==2.2.2']
+2026-08-15 02:55:12 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement torch==1.12.1 (from versions: 1.13.0, 1.13.1, 2.0.0, 2.0.1, 2.1.0, 2.1.1, 2.1.2, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0, 2.11.0, 2.12.0, 2.12.1, 2.13.0)
+ERROR: No m
+2026-08-15 02:55:13 | WARNING  | test_runner | Tests FAILED for llm_serve:
+==================================== ERRORS ====================================
+______________________ ERROR collecting test_llm_serve.py ______________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_serve/test_llm_serve.py'.
+E   ModuleNotFoundError: No module named 'torch'
+ERROR test_llm_serve.py
+2026-08-15 02:55:13 | WARNING  | tool_builder | ⚠️  llm_serve tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________________ ERROR collecting test_llm_serve.py ______________________
+ImportError while importing test modul
+2026-08-15 02:55:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:16 | DEBUG    | llm_client | LLM response from groq (3674 chars)
+2026-08-15 02:55:16 | DEBUG    | test_runner | Installing: ['flask', 'transformers']
+2026-08-15 02:55:20 | WARNING  | test_runner | Tests FAILED for llm_serve:
+test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicMock()))
+E   AssertionError: assert False
+    raise RuntimeError(unbound_message) from None
+E   RuntimeError: Working outside of request context.
+FAILED test_llm_serve.py::test_load_model - AssertionError: assert False
+FAILED test_llm_serve.py::test_serve_model - RuntimeError: Working outside of request context.
+2026-08-15 02:55:20 | WARNING  | tool_builder | ⚠️  llm_serve tests failed (loop 2/5) — test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicM
+2026-08-15 02:55:20 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:21 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:23 | DEBUG    | llm_client | LLM response from groq (3967 chars)
+2026-08-15 02:55:23 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+from flask import Flask, request, jsonify
+from unittest.mock import MagicMock
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+
+app = Flask(__name__)
+
+class MockModel:
+    def generate(self, **kwargs):
+        return [[1]]
+
+class MockTokenizer:
+    def _
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-15 02:55:23 | DEBUG    | test_runner | Installing: ['flask', 'transformers']
+2026-08-15 02:55:24 | WARNING  | test_runner | Tests FAILED for llm_serve:
+test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicMock()))
+E   AssertionError: assert False
+    raise RuntimeError(unbound_message) from None
+E   RuntimeError: Working outside of request context.
+FAILED test_llm_serve.py::test_load_model - AssertionError: assert False
+FAILED test_llm_serve.py::test_serve_model - RuntimeError: Working outside of request context.
+2026-08-15 02:55:24 | WARNING  | tool_builder | ⚠️  llm_serve tests failed (loop 3/5) — test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicM
+2026-08-15 02:55:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:25 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:27 | DEBUG    | llm_client | LLM response from groq (3425 chars)
+2026-08-15 02:55:27 | ERROR    | tool_builder | Fix generation failed on loop 3: LLM returned non-JSON: {
+  "code": "
+import argparse
+from flask import Flask, request, jsonify
+from unittest.mock import MagicMock
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+
+app = Flask(__name__)
+
+class MockModel:
+    def generate(self, **kwargs):
+        return [[1]]
+
+class MockTokenizer:
+    def _
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-15 02:55:27 | DEBUG    | test_runner | Installing: ['flask', 'transformers']
+2026-08-15 02:55:28 | WARNING  | test_runner | Tests FAILED for llm_serve:
+test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicMock()))
+E   AssertionError: assert False
+    raise RuntimeError(unbound_message) from None
+E   RuntimeError: Working outside of request context.
+FAILED test_llm_serve.py::test_load_model - AssertionError: assert False
+FAILED test_llm_serve.py::test_serve_model - RuntimeError: Working outside of request context.
+2026-08-15 02:55:28 | WARNING  | tool_builder | ⚠️  llm_serve tests failed (loop 4/5) — test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicM
+2026-08-15 02:55:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:31 | DEBUG    | llm_client | LLM response from groq (3788 chars)
+2026-08-15 02:55:31 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+from flask import Flask, request, jsonify
+from unittest.mock import MagicMock
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+
+app = Flask(__name__)
+
+class MockModel:
+    def generate(self, **kwargs):
+        return [[1]]
+
+class MockTokenizer:
+    def _
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-15 02:55:31 | DEBUG    | test_runner | Installing: ['flask', 'transformers']
+2026-08-15 02:55:33 | WARNING  | test_runner | Tests FAILED for llm_serve:
+test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicMock()))
+E   AssertionError: assert False
+    raise RuntimeError(unbound_message) from None
+E   RuntimeError: Working outside of request context.
+FAILED test_llm_serve.py::test_load_model - AssertionError: assert False
+FAILED test_llm_serve.py::test_serve_model - RuntimeError: Working outside of request context.
+2026-08-15 02:55:33 | WARNING  | tool_builder | ⚠️  llm_serve tests failed (loop 5/5) — test_llm_serve.py::test_load_model FAILED                                [ 33%]
+test_llm_serve.py::test_serve_model FAILED                               [100%]
+    assert isinstance(model, type(MagicM
+2026-08-15 02:55:33 | ERROR    | tool_builder | ❌ llm_serve failed after 5 loops
+2026-08-15 02:55:33 | INFO     | tool_builder | Building tool: llm_batcher …
+2026-08-15 02:55:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:36 | DEBUG    | llm_client | LLM response from groq (3543 chars)
+2026-08-15 02:55:36 | DEBUG    | test_runner | Installing: ['joblib==1.2.0', 'dask==2022.12.1', 'transformers==4.24.0']
+2026-08-15 02:55:39 | WARNING  | test_runner | Tests FAILED for llm_batcher:
+==================================== ERRORS ====================================
+_____________________ ERROR collecting test_llm_batcher.py _____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/llm_batcher/test_llm_batcher.py'.
+E   ModuleNotFoundError: No module named 'distributed'
+    raise ImportError(_import_error_message) from e
+E   ImportError: dask.distributed is not installed.
+ERROR test_llm_batcher.py
+2026-08-15 02:55:39 | WARNING  | tool_builder | ⚠️  llm_batcher tests failed (loop 1/5) — ==================================== ERRORS ====================================
+_____________________ ERROR collecting test_llm_batcher.py _____________________
+ImportError while importing test modul
+2026-08-15 02:55:39 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:42 | DEBUG    | llm_client | LLM response from groq (3267 chars)
+2026-08-15 02:55:42 | DEBUG    | test_runner | Installing: ['transformers', 'joblib']
+2026-08-15 02:55:43 | WARNING  | test_runner | Tests FAILED for llm_batcher:
+test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_input FAILED                        [100%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_llm_batcher.py::test_process_batch - ImportError: 
+FAILED test_llm_batcher.py::test_main - ImportError: 
+FAILED test_llm_batcher.py::test_main_empty_input - ImportError: 
+2026-08-15 02:55:43 | WARNING  | tool_builder | ⚠️  llm_batcher tests failed (loop 2/5) — test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_inp
+2026-08-15 02:55:44 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:46 | DEBUG    | llm_client | LLM response from groq (4039 chars)
+2026-08-15 02:55:46 | DEBUG    | test_runner | Installing: ['transformers', 'joblib']
+2026-08-15 02:55:48 | WARNING  | test_runner | Tests FAILED for llm_batcher:
+test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_input FAILED                        [100%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_llm_batcher.py::test_process_batch - ImportError: 
+FAILED test_llm_batcher.py::test_main - ImportError: 
+FAILED test_llm_batcher.py::test_main_empty_input - ImportError: 
+2026-08-15 02:55:48 | WARNING  | tool_builder | ⚠️  llm_batcher tests failed (loop 3/5) — test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_inp
+2026-08-15 02:55:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:51 | DEBUG    | llm_client | LLM response from groq (4370 chars)
+2026-08-15 02:55:51 | DEBUG    | test_runner | Installing: ['transformers', 'joblib']
+2026-08-15 02:55:53 | WARNING  | test_runner | Tests FAILED for llm_batcher:
+test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_input FAILED                        [100%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_llm_batcher.py::test_process_batch - ImportError: 
+FAILED test_llm_batcher.py::test_main - ImportError: 
+FAILED test_llm_batcher.py::test_main_empty_input - ImportError: 
+2026-08-15 02:55:53 | WARNING  | tool_builder | ⚠️  llm_batcher tests failed (loop 4/5) — test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_inp
+2026-08-15 02:55:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-15 02:55:55 | DEBUG    | llm_client | LLM response from groq (4140 chars)
+2026-08-15 02:55:55 | DEBUG    | test_runner | Installing: ['transformers', 'joblib']
+2026-08-15 02:55:57 | WARNING  | test_runner | Tests FAILED for llm_batcher:
+test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_input FAILED                        [100%]
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+E   KeyError: 'from_pretrained'
+    raise ImportError("".join(failed))
+E   ImportError: 
+FAILED test_llm_batcher.py::test_process_batch - ImportError: 
+FAILED test_llm_batcher.py::test_main - ImportError: 
+FAILED test_llm_batcher.py::test_main_empty_input - ImportError: 
+2026-08-15 02:55:57 | WARNING  | tool_builder | ⚠️  llm_batcher tests failed (loop 5/5) — test_llm_batcher.py::test_process_batch FAILED                           [ 33%]
+test_llm_batcher.py::test_main FAILED                                    [ 66%]
+test_llm_batcher.py::test_main_empty_inp
+2026-08-15 02:55:57 | ERROR    | tool_builder | ❌ llm_batcher failed after 5 loops
+2026-08-15 02:55:57 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-08-15 02:55:57 | INFO     | main |   Built 0/5 tools successfully
+2026-08-15 02:55:57 | WARNING  | main | No tools built successfully
