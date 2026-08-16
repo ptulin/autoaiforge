@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-08-14T04:10:03.402051+00:00",
-  "total_tools": 469,
+  "last_updated": "2026-08-16T03:02:12.329822+00:00",
+  "total_tools": 472,
   "tools": [
+    {
+      "tool_name": "explain_ai_decisions",
+      "display_name": "AI Decision Explainer",
+      "description": "This tool generates explanations for AI decisions by analyzing the model's weights, biases, and feature importance. It's useful for AI developers to understand and interpret their model's decisions, making it easier to identify biases and improve model performance. The tool supports various machine learning models and provides a customizable explanation format.",
+      "topic": "Explainable AI",
+      "date": "2026-08-16",
+      "generated": "2026-08-16T02:56:17.156704+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/explain_ai_decisions",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/explain_ai_decisions/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/explain_ai_decisions/explain_ai_decisions.zip"
+    },
+    {
+      "tool_name": "model_compressor",
+      "display_name": "AI Model Compressor",
+      "description": "This tool reduces the size of AI models by applying techniques like quantization, knowledge distillation, and weight sharing. It's useful for deploying models on edge devices or in environments with limited storage capacity. The tool supports multiple compression algorithms and provides a simple API for integrating with popular deep learning frameworks.",
+      "topic": "AI Model Optimization",
+      "date": "2026-08-16",
+      "generated": "2026-08-16T02:56:17.156704+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_compressor",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_compressor/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_compressor/model_compressor.zip"
+    },
+    {
+      "tool_name": "model_pruner",
+      "display_name": "AI Model Pruner",
+      "description": "This tool helps optimize AI model architecture by pruning unnecessary weights and connections, resulting in a more efficient and lightweight model. It's useful for deploying models on edge devices or in resource-constrained environments. The tool uses techniques like gradient-based pruning and magnitude-based pruning to identify and remove redundant model parameters.",
+      "topic": "AI Model Optimization",
+      "date": "2026-08-16",
+      "generated": "2026-08-16T02:56:17.156704+00:00",
+      "loops_needed": 2,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_pruner",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_pruner/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_pruner/model_pruner.zip"
+    },
     {
       "tool_name": "llm_pipeline_composer",
       "display_name": "LLM Pipeline Composer",

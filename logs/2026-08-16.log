@@ -1,0 +1,368 @@
+2026-08-16 02:56:17 | INFO     | main | ============================================================
+2026-08-16 02:56:17 | INFO     | main | AutoAIForge starting run: 2026-08-16T02:56:17.156704+00:00
+2026-08-16 02:56:17 | INFO     | main | ============================================================
+2026-08-16 02:56:17 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-16 02:56:17 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-16 02:56:17 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-16 02:56:17 | INFO     | main |   YouTube: 0 items
+2026-08-16 02:56:17 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-16 02:56:22 | INFO     | rss_scraper | HackerNews: 171 items
+2026-08-16 02:56:22 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-16 02:56:23 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-16 02:56:24 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-16 02:56:25 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-16 02:56:26 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-16 02:56:27 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-16 02:56:28 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-16 02:56:29 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-16 02:56:35 | INFO     | rss_scraper | ArXiv: 99 items
+2026-08-16 02:56:39 | INFO     | rss_scraper | Dev.to: 190 items
+2026-08-16 02:56:40 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-16 02:56:40 | INFO     | rss_scraper | Free sources total: 510 unique items
+2026-08-16 02:56:40 | INFO     | main |   RSS/API sources: 510 items
+2026-08-16 02:56:40 | INFO     | main |   Total scraped: 510 items
+2026-08-16 02:56:40 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-16 02:56:40 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-16 02:56:42 | INFO     | db_manager | Purged 387 old news items
+2026-08-16 02:56:43 | INFO     | db_manager | Inserted 245/510 news items
+2026-08-16 02:56:43 | INFO     | main |   SQLite: 245 new items (total: 9641)
+2026-08-16 02:56:47 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-16 02:56:48 | INFO     | vector_store | VectorStore ready
+2026-08-16 02:56:53 | INFO     | vector_store | Indexed 849 items into vector store
+2026-08-16 02:56:53 | INFO     | main |   Vector store: 849 items indexed
+2026-08-16 02:56:53 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-16 02:56:53 | INFO     | topic_analyzer | Analyzing 849 items for top 10 topics …
+2026-08-16 02:56:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:56:54 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:56:56 | DEBUG    | llm_client | LLM response from groq (3237 chars)
+2026-08-16 02:56:56 | INFO     | topic_analyzer | Identified 10 topics
+2026-08-16 02:56:56 | INFO     | main |   Found 10 topics:
+2026-08-16 02:56:56 | INFO     | main |      1. [9/10] AI Model Optimization
+2026-08-16 02:56:56 | INFO     | main |      2. [9/10] Explainable AI
+2026-08-16 02:56:56 | INFO     | main |      3. [9/10] Natural Language Processing
+2026-08-16 02:56:56 | INFO     | main |      4. [8/10] LLM Interpretability
+2026-08-16 02:56:56 | INFO     | main |      5. [8/10] AI Ethics and Bias
+2026-08-16 02:56:56 | INFO     | main |      6. [8/10] AI Model Deployment
+2026-08-16 02:56:56 | INFO     | main |      7. [8/10] AI Security and Privacy
+2026-08-16 02:56:56 | INFO     | main |      8. [8/10] AI Model Auditing
+2026-08-16 02:56:56 | INFO     | main |      9. [7/10] Conversational AI
+2026-08-16 02:56:56 | INFO     | main |     10. [7/10] Human-AI Collaboration
+2026-08-16 02:56:56 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-16 02:56:56 | INFO     | main |   Existing collection: 469 tools across 255 topics
+2026-08-16 02:56:56 | INFO     | main |   🔄 Upgrade candidate: 'Explainable AI' (relevance 9/10, last built 2026-08-07)
+2026-08-16 02:56:56 | INFO     | main |   Topics flagged for upgrade: Explainable AI
+2026-08-16 02:56:56 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:56:57 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:56:59 | DEBUG    | llm_client | LLM response from groq (3497 chars)
+2026-08-16 02:56:59 | INFO     | idea_generator | Generated 3 ideas for topic: AI Model Optimization
+2026-08-16 02:56:59 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'Explainable AI'
+2026-08-16 02:56:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:00 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:01 | DEBUG    | llm_client | LLM response from groq (2124 chars)
+2026-08-16 02:57:01 | INFO     | idea_generator | Generated 2 ideas for topic: Explainable AI
+2026-08-16 02:57:01 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-16 02:57:01 | INFO     | main |   Generated 5 tool ideas:
+2026-08-16 02:57:01 | INFO     | main |     • model_pruner: This tool helps optimize AI model architecture by pruning unnecessary weights an
+2026-08-16 02:57:01 | INFO     | main |     • hyperparameter_optimizer: This tool uses Bayesian optimization and grid search to find the optimal hyperpa
+2026-08-16 02:57:01 | INFO     | main |     • model_compressor: This tool reduces the size of AI models by applying techniques like quantization
+2026-08-16 02:57:01 | INFO     | main |     • explain_ai_decisions: This tool generates explanations for AI decisions by analyzing the model's weigh
+2026-08-16 02:57:01 | INFO     | main |     • model_interpreter: This tool generates visualizations and summaries to help AI developers understan
+2026-08-16 02:57:01 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-16 02:57:01 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-16 02:57:08 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-16 02:57:08 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-16 02:57:08 | INFO     | tool_builder | Building tool: model_pruner …
+2026-08-16 02:57:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:10 | WARNING  | llm_client | groq rate-limited — sleeping 25s
+2026-08-16 02:57:36 | DEBUG    | llm_client | LLM response from groq (3357 chars)
+2026-08-16 02:57:36 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'pytorch==1.12.1', 'scikit-learn==1.1.2']
+2026-08-16 02:57:37 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-16 02:57:37 | WARNING  | test_runner | Tests FAILED for model_pruner:
+==================================== ERRORS ====================================
+____________________ ERROR collecting test_model_pruner.py _____________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_pruner/test_model_pruner.py'.
+E   ModuleNotFoundError: No module named 'tensorflow'
+ERROR test_model_pruner.py
+2026-08-16 02:57:37 | WARNING  | tool_builder | ⚠️  model_pruner tests failed (loop 1/5) — ==================================== ERRORS ====================================
+____________________ ERROR collecting test_model_pruner.py _____________________
+ImportError while importing test modul
+2026-08-16 02:57:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:57:40 | DEBUG    | llm_client | LLM response from groq (2929 chars)
+2026-08-16 02:57:40 | DEBUG    | test_runner | Installing: ['torch', 'scikit-learn']
+2026-08-16 02:58:27 | INFO     | test_runner | Tests PASSED for model_pruner
+2026-08-16 02:58:27 | INFO     | tool_builder | ✅ model_pruner passed tests on loop 2
+2026-08-16 02:58:27 | INFO     | tool_builder | Building tool: hyperparameter_optimizer …
+2026-08-16 02:58:27 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:31 | DEBUG    | llm_client | LLM response from groq (5685 chars)
+2026-08-16 02:58:31 | DEBUG    | test_runner | Installing: ['scikit-optimize==0.9.0', 'hyperopt==0.2.7', 'tensorflow==2.10.0']
+2026-08-16 02:58:32 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-16 02:58:32 | WARNING  | test_runner | Tests FAILED for hyperparameter_optimizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/hyperparameter_optimizer/test_hyperparameter_optimizer.py'.
+E   ModuleNotFoundError: No module named 'skopt'
+ERROR test_hyperparameter_optimizer.py
+2026-08-16 02:58:32 | WARNING  | tool_builder | ⚠️  hyperparameter_optimizer tests failed (loop 1/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test modul
+2026-08-16 02:58:32 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:36 | DEBUG    | llm_client | LLM response from groq (7212 chars)
+2026-08-16 02:58:36 | DEBUG    | test_runner | Installing: ['skopt', 'scikit-optimize', 'hyperopt', 'tensorflow', 'numpy']
+2026-08-16 02:58:37 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement skopt (from versions: none)
+ERROR: No matching distribution found for skopt
+
+2026-08-16 02:58:37 | WARNING  | test_runner | Tests FAILED for hyperparameter_optimizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/hyperparameter_optimizer/test_hyperparameter_optimizer.py'.
+E   ModuleNotFoundError: No module named 'skopt'
+ERROR test_hyperparameter_optimizer.py
+2026-08-16 02:58:37 | WARNING  | tool_builder | ⚠️  hyperparameter_optimizer tests failed (loop 2/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test modul
+2026-08-16 02:58:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:38 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:58:38 | WARNING  | llm_client | groq rate-limited — sleeping 26s
+2026-08-16 02:59:08 | DEBUG    | llm_client | LLM response from groq (7429 chars)
+2026-08-16 02:59:08 | DEBUG    | test_runner | Installing: ['numpy', 'tensorflow', 'skopt', 'hyperopt']
+2026-08-16 02:59:08 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement skopt (from versions: none)
+ERROR: No matching distribution found for skopt
+
+2026-08-16 02:59:08 | WARNING  | test_runner | Tests FAILED for hyperparameter_optimizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/hyperparameter_optimizer/test_hyperparameter_optimizer.py'.
+E   ModuleNotFoundError: No module named 'skopt'
+ERROR test_hyperparameter_optimizer.py
+2026-08-16 02:59:08 | WARNING  | tool_builder | ⚠️  hyperparameter_optimizer tests failed (loop 3/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test modul
+2026-08-16 02:59:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:59:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:59:09 | WARNING  | llm_client | groq rate-limited — sleeping 17s
+2026-08-16 02:59:29 | DEBUG    | llm_client | LLM response from groq (7041 chars)
+2026-08-16 02:59:29 | DEBUG    | test_runner | Installing: ['skopt', 'hyperopt', 'tensorflow', 'numpy']
+2026-08-16 02:59:30 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement skopt (from versions: none)
+ERROR: No matching distribution found for skopt
+
+2026-08-16 02:59:30 | WARNING  | test_runner | Tests FAILED for hyperparameter_optimizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/hyperparameter_optimizer/test_hyperparameter_optimizer.py'.
+E   ModuleNotFoundError: No module named 'skopt'
+ERROR test_hyperparameter_optimizer.py
+2026-08-16 02:59:30 | WARNING  | tool_builder | ⚠️  hyperparameter_optimizer tests failed (loop 4/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test modul
+2026-08-16 02:59:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:59:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 02:59:31 | WARNING  | llm_client | groq rate-limited — sleeping 33s
+2026-08-16 03:00:07 | DEBUG    | llm_client | LLM response from groq (7208 chars)
+2026-08-16 03:00:07 | DEBUG    | test_runner | Installing: ['skopt', 'hyperopt', 'tensorflow', 'numpy']
+2026-08-16 03:00:08 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement skopt (from versions: none)
+ERROR: No matching distribution found for skopt
+
+2026-08-16 03:00:08 | WARNING  | test_runner | Tests FAILED for hyperparameter_optimizer:
+==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/hyperparameter_optimizer/test_hyperparameter_optimizer.py'.
+E   ModuleNotFoundError: No module named 'skopt'
+ERROR test_hyperparameter_optimizer.py
+2026-08-16 03:00:08 | WARNING  | tool_builder | ⚠️  hyperparameter_optimizer tests failed (loop 5/5) — ==================================== ERRORS ====================================
+______________ ERROR collecting test_hyperparameter_optimizer.py _______________
+ImportError while importing test modul
+2026-08-16 03:00:08 | ERROR    | tool_builder | ❌ hyperparameter_optimizer failed after 5 loops
+2026-08-16 03:00:08 | INFO     | tool_builder | Building tool: model_compressor …
+2026-08-16 03:00:08 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:09 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:11 | DEBUG    | llm_client | LLM response from groq (3825 chars)
+2026-08-16 03:00:11 | DEBUG    | test_runner | Installing: ['tensorflow==2.10.0', 'torch==1.12.1', 'openvino==2022.3.0']
+2026-08-16 03:00:11 | WARNING  | test_runner | pip install warning: ERROR: Could not find a version that satisfies the requirement tensorflow==2.10.0 (from versions: 2.12.0rc0, 2.12.0rc1, 2.12.0, 2.12.1, 2.13.0rc0, 2.13.0rc1, 2.13.0rc2, 2.13.0, 2.13.1, 2.14.0rc0, 2.14.0rc1, 2.14.0, 2.14.1, 2.15.0rc0, 2.15.0rc1, 2.15.0, 2.15.0.post1, 2.15.1, 2.16.0rc0, 2.16.1, 2.16.2
+2026-08-16 03:00:13 | WARNING  | test_runner | Tests FAILED for model_compressor:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_compressor.py ___________________
+ImportError while importing test module '/home/runner/work/autoaiforge/autoaiforge/data/sandbox/model_compressor/test_model_compressor.py'.
+E   ModuleNotFoundError: No module named 'tensorflow'
+ERROR test_model_compressor.py
+2026-08-16 03:00:13 | WARNING  | tool_builder | ⚠️  model_compressor tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_compressor.py ___________________
+ImportError while importing test modul
+2026-08-16 03:00:13 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:14 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:16 | DEBUG    | llm_client | LLM response from groq (4240 chars)
+2026-08-16 03:00:16 | DEBUG    | test_runner | Installing: ['tensorflow', 'torch']
+2026-08-16 03:00:40 | WARNING  | test_runner | Tests FAILED for model_compressor:
+test_model_compressor.py::test_compress_model_unsupported_format FAILED  [ 80%]
+    raise ValueError('Unsupported model format')
+E   ValueError: Unsupported model format
+FAILED test_model_compressor.py::test_compress_model_unsupported_format - ValueError: Unsupported model format
+2026-08-16 03:00:40 | WARNING  | tool_builder | ⚠️  model_compressor tests failed (loop 2/5) — test_model_compressor.py::test_compress_model_unsupported_format FAILED  [ 80%]
+    raise ValueError('Unsupported model format')
+E   ValueError: Unsupported model format
+FAILED test_model_compressor.p
+2026-08-16 03:00:40 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:41 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:42 | DEBUG    | llm_client | LLM response from groq (4478 chars)
+2026-08-16 03:00:42 | DEBUG    | test_runner | Installing: ['tensorflow', 'torch']
+2026-08-16 03:00:47 | INFO     | test_runner | Tests PASSED for model_compressor
+2026-08-16 03:00:47 | INFO     | tool_builder | ✅ model_compressor passed tests on loop 3
+2026-08-16 03:00:47 | INFO     | tool_builder | Building tool: explain_ai_decisions …
+2026-08-16 03:00:47 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:00:48 | WARNING  | llm_client | groq rate-limited — sleeping 5s
+2026-08-16 03:00:55 | DEBUG    | llm_client | LLM response from groq (3887 chars)
+2026-08-16 03:00:55 | DEBUG    | test_runner | Installing: ['numpy==1.23.4', 'pandas==1.5.2', 'scikit-learn==1.2.0']
+2026-08-16 03:01:06 | WARNING  | test_runner | Tests FAILED for explain_ai_decisions:
+test_explain_ai_decisions.py::test_analyze_model_weights FAILED          [ 33%]
+test_explain_ai_decisions.py::test_generate_explanation_report FAILED    [100%]
+E   AttributeError: 'RandomForestClassifier' object has no attribute 'coef_'
+E   AttributeError: 'RandomForestClassifier' object has no attribute 'coef_'
+FAILED test_explain_ai_decisions.py::test_analyze_model_weights - AttributeError: 'RandomForestClassifier' object has no attribute 'coef_'
+FAILED test_explain_ai_decisions.py::test_generate_explanation_report - AttributeError: 'RandomForestClassifier' object has no attribute 'coef_'
+2026-08-16 03:01:06 | WARNING  | tool_builder | ⚠️  explain_ai_decisions tests failed (loop 1/5) — test_explain_ai_decisions.py::test_analyze_model_weights FAILED          [ 33%]
+test_explain_ai_decisions.py::test_generate_explanation_report FAILED    [100%]
+E   AttributeError: 'RandomForestClassif
+2026-08-16 03:01:06 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:07 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:09 | DEBUG    | llm_client | LLM response from groq (4138 chars)
+2026-08-16 03:01:09 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn']
+2026-08-16 03:01:10 | INFO     | test_runner | Tests PASSED for explain_ai_decisions
+2026-08-16 03:01:10 | INFO     | tool_builder | ✅ explain_ai_decisions passed tests on loop 2
+2026-08-16 03:01:10 | INFO     | tool_builder | Building tool: model_interpreter …
+2026-08-16 03:01:11 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:12 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:15 | DEBUG    | llm_client | LLM response from groq (5889 chars)
+2026-08-16 03:01:15 | DEBUG    | test_runner | Installing: ['matplotlib==3.6.2', 'seaborn==0.12.1', 'scikit-learn==1.2.0', 'shap==0.41.0', 'pandas==1.5.2']
+2026-08-16 03:01:23 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_model_interpreter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-16 03:01:23 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 1/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-16 03:01:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:24 | WARNING  | llm_client | groq rate-limited — sleeping 1s
+2026-08-16 03:01:27 | DEBUG    | llm_client | LLM response from groq (5047 chars)
+2026-08-16 03:01:27 | ERROR    | tool_builder | Fix generation failed on loop 1: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+import shap
+import seaborn as sns
+import numpy as np
+
+
+def load_model(model_path):
+    # Load the trained model f
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-16 03:01:27 | DEBUG    | test_runner | Installing: ['matplotlib==3.6.2', 'seaborn==0.12.1', 'scikit-learn==1.2.0', 'shap==0.41.0', 'pandas==1.5.2']
+2026-08-16 03:01:28 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_model_interpreter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-16 03:01:28 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 2/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-16 03:01:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:29 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:29 | WARNING  | llm_client | groq rate-limited — sleeping 8s
+2026-08-16 03:01:37 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9223, Requested 2808. Please try again in 155ms. Need more tokens? Upgrade to Dev Tier today at https://
+2026-08-16 03:01:38 | WARNING  | llm_client | groq rate-limited — sleeping 3s
+2026-08-16 03:01:44 | DEBUG    | llm_client | LLM response from groq (5593 chars)
+2026-08-16 03:01:44 | ERROR    | tool_builder | Fix generation failed on loop 2: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+import shap
+import seaborn as sns
+import numpy as np
+
+
+def load_model(model_path):
+    # Load the trained model f
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-16 03:01:44 | DEBUG    | test_runner | Installing: ['matplotlib==3.6.2', 'seaborn==0.12.1', 'scikit-learn==1.2.0', 'shap==0.41.0', 'pandas==1.5.2']
+2026-08-16 03:01:45 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_model_interpreter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-16 03:01:45 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 3/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-16 03:01:45 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:46 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:46 | WARNING  | llm_client | groq rate-limited — sleeping 9s
+2026-08-16 03:01:57 | DEBUG    | llm_client | LLM response from groq (5618 chars)
+2026-08-16 03:01:57 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'seaborn', 'shap']
+2026-08-16 03:01:58 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_model_interpreter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-16 03:01:58 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 4/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-16 03:01:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-16 03:01:59 | WARNING  | llm_client | groq rate-limited — sleeping 8s
+2026-08-16 03:02:07 | ERROR    | llm_client | groq HTTP error: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01hstx1d25fvj94d2hvf46p706` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9239, Requested 3356. Please try again in 2.975s. Need more tokens? Upgrade to Dev Tier today at https:/
+2026-08-16 03:02:11 | DEBUG    | llm_client | LLM response from groq (6498 chars)
+2026-08-16 03:02:11 | ERROR    | tool_builder | Fix generation failed on loop 4: LLM returned non-JSON: {
+  "code": "
+import argparse
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+import shap
+import seaborn as sns
+import numpy as np
+
+
+def load_model(model_path):
+    # Load the trained model f
+Invalid control character at: line 2 column 12 (char 13)
+2026-08-16 03:02:11 | DEBUG    | test_runner | Installing: ['numpy', 'pandas', 'scikit-learn', 'matplotlib', 'seaborn', 'shap']
+2026-08-16 03:02:12 | WARNING  | test_runner | Tests FAILED for model_interpreter:
+==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+ERROR test_model_interpreter.py - ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+2026-08-16 03:02:12 | WARNING  | tool_builder | ⚠️  model_interpreter tests failed (loop 5/5) — ==================================== ERRORS ====================================
+__________________ ERROR collecting test_model_interpreter.py __________________
+E   ValueError: numpy.dtype size chang
+2026-08-16 03:02:12 | ERROR    | tool_builder | ❌ model_interpreter failed after 5 loops
+2026-08-16 03:02:12 | INFO     | tool_builder | Built 3/5 tools successfully
+2026-08-16 03:02:12 | INFO     | main |   Built 3/5 tools successfully
+2026-08-16 03:02:12 | INFO     | main |     ✅ model_pruner (loops: 2)
+2026-08-16 03:02:12 | INFO     | main |     ✅ model_compressor (loops: 3)
+2026-08-16 03:02:12 | INFO     | main |     ✅ explain_ai_decisions (loops: 2)
+2026-08-16 03:02:12 | INFO     | main | [STEP 6/6] Publishing to GitHub
+2026-08-16 03:02:12 | INFO     | github_publisher | Publisher ready — will commit tools to repo as: ptulin
+2026-08-16 03:02:12 | INFO     | github_publisher |   Created zip: model_pruner.zip (1573 bytes)
+2026-08-16 03:02:12 | INFO     | github_publisher | Saved model_pruner → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_pruner
+2026-08-16 03:02:12 | INFO     | github_publisher |   Created zip: model_compressor.zip (1786 bytes)
+2026-08-16 03:02:12 | INFO     | github_publisher | Saved model_compressor → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_compressor
+2026-08-16 03:02:12 | INFO     | github_publisher |   Created zip: explain_ai_decisions.zip (1888 bytes)
+2026-08-16 03:02:12 | INFO     | github_publisher | Saved explain_ai_decisions → https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/explain_ai_decisions
+2026-08-16 03:02:12 | INFO     | github_publisher | Saved 3/3 tools to generated_tools/
+2026-08-16 03:02:12 | INFO     | main |   Published 3 tools:
+2026-08-16 03:02:12 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_pruner
+2026-08-16 03:02:12 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_compressor
+2026-08-16 03:02:12 | INFO     | main |     🔗 https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/explain_ai_decisions
+2026-08-16 03:02:12 | INFO     | main |   Deduplicated 11 older tool version(s) from index
+2026-08-16 03:02:12 | INFO     | main | ✅ Generated tools_index.json with 472 unique tools → /home/runner/work/autoaiforge/autoaiforge/generated_tools/tools_index.json

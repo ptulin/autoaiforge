@@ -1,0 +1,13 @@
+{
+  "tool_name": "model_pruner",
+  "display_name": "AI Model Pruner",
+  "description": "This tool helps optimize AI model architecture by pruning unnecessary weights and connections, resulting in a more efficient and lightweight model. It's useful for deploying models on edge devices or in resource-constrained environments. The tool uses techniques like gradient-based pruning and magnitude-based pruning to identify and remove redundant model parameters.",
+  "topic": "AI Model Optimization",
+  "date": "2026-08-16",
+  "generated": "2026-08-16T02:56:17.156704+00:00",
+  "loops_needed": 2,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-16/model_pruner",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_pruner/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-16/model_pruner/model_pruner.zip"
+}
