@@ -1,0 +1,13 @@
+{
+  "tool_name": "ai_collab_evaluator",
+  "display_name": "Human-AI Collaboration Evaluator",
+  "description": "This tool evaluates the effectiveness of human-AI collaboration systems by analyzing metrics such as user engagement, AI accuracy, and task completion rates. It provides insights into the strengths and weaknesses of the collaborative system, allowing developers to identify areas for improvement. By using this tool, developers can refine their human-AI collaboration systems to better meet the needs of users and improve overall performance.",
+  "topic": "Human-AI Collaboration",
+  "date": "2026-08-17",
+  "generated": "2026-08-17T02:55:47.245061+00:00",
+  "loops_needed": 3,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-17/ai_collab_evaluator",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_collab_evaluator/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_collab_evaluator/ai_collab_evaluator.zip"
+}

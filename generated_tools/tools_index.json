@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-08-16T03:02:12.329822+00:00",
-  "total_tools": 472,
+  "last_updated": "2026-08-17T03:00:33.926904+00:00",
+  "total_tools": 475,
   "tools": [
+    {
+      "tool_name": "ai_code_summarizer",
+      "display_name": "AI Code Summarizer",
+      "description": "This tool uses AI-powered coding assistants like ChatGPT and Claude to summarize complex codebases into concise, high-level descriptions. It's useful for developers who want to quickly understand the functionality and architecture of large codebases. The tool can be run as a CLI tool or integrated into IDEs like PyCharm and Eclipse.",
+      "topic": "AI-powered Coding Assistants",
+      "date": "2026-08-17",
+      "generated": "2026-08-17T02:55:47.245061+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-17/ai_code_summarizer",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_code_summarizer/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_code_summarizer/ai_code_summarizer.zip"
+    },
+    {
+      "tool_name": "ai_collab_evaluator",
+      "display_name": "Human-AI Collaboration Evaluator",
+      "description": "This tool evaluates the effectiveness of human-AI collaboration systems by analyzing metrics such as user engagement, AI accuracy, and task completion rates. It provides insights into the strengths and weaknesses of the collaborative system, allowing developers to identify areas for improvement. By using this tool, developers can refine their human-AI collaboration systems to better meet the needs of users and improve overall performance.",
+      "topic": "Human-AI Collaboration",
+      "date": "2026-08-17",
+      "generated": "2026-08-17T02:55:47.245061+00:00",
+      "loops_needed": 3,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-17/ai_collab_evaluator",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_collab_evaluator/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/ai_collab_evaluator/ai_collab_evaluator.zip"
+    },
+    {
+      "tool_name": "explainability_dashboard",
+      "display_name": "Explainability Dashboard for Human-AI Collaboration",
+      "description": "This tool provides a web-based dashboard for visualizing and explaining the decisions made by AI models in human-AI collaborative systems. It offers features such as model interpretability, feature importance, and decision boundary visualization, allowing developers to understand and trust the AI models' outputs. By using this tool, developers can increase transparency and accountability in human-AI collaboration systems, improving user trust and system reliability.",
+      "topic": "Human-AI Collaboration",
+      "date": "2026-08-17",
+      "generated": "2026-08-17T02:55:47.245061+00:00",
+      "loops_needed": 4,
+      "tests_passed": true,
+      "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-17/explainability_dashboard",
+      "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/explainability_dashboard/README.md",
+      "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/explainability_dashboard/explainability_dashboard.zip"
+    },
     {
       "tool_name": "explain_ai_decisions",
       "display_name": "AI Decision Explainer",

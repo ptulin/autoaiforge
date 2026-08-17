@@ -1,0 +1,13 @@
+{
+  "tool_name": "explainability_dashboard",
+  "display_name": "Explainability Dashboard for Human-AI Collaboration",
+  "description": "This tool provides a web-based dashboard for visualizing and explaining the decisions made by AI models in human-AI collaborative systems. It offers features such as model interpretability, feature importance, and decision boundary visualization, allowing developers to understand and trust the AI models' outputs. By using this tool, developers can increase transparency and accountability in human-AI collaboration systems, improving user trust and system reliability.",
+  "topic": "Human-AI Collaboration",
+  "date": "2026-08-17",
+  "generated": "2026-08-17T02:55:47.245061+00:00",
+  "loops_needed": 4,
+  "tests_passed": true,
+  "github_url": "https://github.com/ptulin/autoaiforge/tree/main/generated_tools/2026-08-17/explainability_dashboard",
+  "readme_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/explainability_dashboard/README.md",
+  "zip_url": "https://raw.githubusercontent.com/ptulin/autoaiforge/main/generated_tools/2026-08-17/explainability_dashboard/explainability_dashboard.zip"
+}
