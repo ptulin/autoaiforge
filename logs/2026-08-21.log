@@ -1,0 +1,168 @@
+2026-08-21 02:57:44 | INFO     | main | ============================================================
+2026-08-21 02:57:44 | INFO     | main | AutoAIForge starting run: 2026-08-21T02:57:44.448895+00:00
+2026-08-21 02:57:44 | INFO     | main | ============================================================
+2026-08-21 02:57:44 | INFO     | main | [STEP 1/6] News Scraping
+2026-08-21 02:57:44 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-08-21 02:57:44 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-08-21 02:57:44 | INFO     | main |   YouTube: 0 items
+2026-08-21 02:57:44 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-08-21 02:57:49 | INFO     | rss_scraper | HackerNews: 171 items
+2026-08-21 02:57:49 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-08-21 02:57:50 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-08-21 02:57:51 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-08-21 02:57:52 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-08-21 02:57:53 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-08-21 02:57:54 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-08-21 02:57:55 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-08-21 02:57:56 | INFO     | rss_scraper | Reddit: 0 items
+2026-08-21 02:58:02 | INFO     | rss_scraper | ArXiv: 109 items
+2026-08-21 02:58:06 | INFO     | rss_scraper | Dev.to: 193 items
+2026-08-21 02:58:07 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-08-21 02:58:07 | INFO     | rss_scraper | Free sources total: 523 unique items
+2026-08-21 02:58:07 | INFO     | main |   RSS/API sources: 523 items
+2026-08-21 02:58:07 | INFO     | main |   Total scraped: 523 items
+2026-08-21 02:58:07 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-08-21 02:58:07 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-08-21 02:58:07 | INFO     | db_manager | Purged 363 old news items
+2026-08-21 02:58:07 | INFO     | db_manager | Inserted 356/523 news items
+2026-08-21 02:58:07 | INFO     | main |   SQLite: 356 new items (total: 9847)
+2026-08-21 02:58:13 | INFO     | vector_store | Loading sentence-transformer model …
+2026-08-21 02:58:13 | INFO     | vector_store | VectorStore ready
+2026-08-21 02:58:20 | INFO     | vector_store | Indexed 727 items into vector store
+2026-08-21 02:58:20 | INFO     | main |   Vector store: 727 items indexed
+2026-08-21 02:58:20 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-08-21 02:58:20 | INFO     | topic_analyzer | Analyzing 727 items for top 10 topics …
+2026-08-21 02:58:20 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:21 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:21 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:22 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:22 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:23 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:23 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-08-21 02:58:23 | INFO     | main |   Found 10 topics:
+2026-08-21 02:58:23 | INFO     | main |      1. [10/10] AI
+2026-08-21 02:58:23 | INFO     | main |      2. [10/10] ai
+2026-08-21 02:58:23 | INFO     | main |      3. [10/10] LLM
+2026-08-21 02:58:23 | INFO     | main |      4. [10/10] machinelearning
+2026-08-21 02:58:23 | INFO     | main |      5. [10/10] llm
+2026-08-21 02:58:23 | INFO     | main |      6. [10/10] Claude
+2026-08-21 02:58:23 | INFO     | main |      7. [10/10] large+language+model
+2026-08-21 02:58:23 | INFO     | main |      8. [10/10] multimodal
+2026-08-21 02:58:23 | INFO     | main |      9. [10/10] code+generation
+2026-08-21 02:58:23 | INFO     | main |     10. [10/10] AI+agent
+2026-08-21 02:58:23 | INFO     | main | [STEP 4/6] Idea Generation
+2026-08-21 02:58:23 | INFO     | main |   Existing collection: 475 tools across 258 topics
+2026-08-21 02:58:23 | INFO     | main |   🔄 Upgrade candidate: 'AI' (relevance 10/10, last built 2026-03-15)
+2026-08-21 02:58:23 | INFO     | main |   Topics flagged for upgrade: AI
+2026-08-21 02:58:23 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI'
+2026-08-21 02:58:23 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:24 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:24 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:25 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:25 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:26 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:26 | ERROR    | idea_generator | Idea generation failed for topic 'AI': All LLM providers failed. Check API keys.
+2026-08-21 02:58:26 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:28 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:28 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:29 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:29 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:30 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:30 | ERROR    | idea_generator | Idea generation failed for topic 'ai': All LLM providers failed. Check API keys.
+2026-08-21 02:58:30 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:31 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:31 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:32 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:32 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:33 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:33 | ERROR    | idea_generator | Idea generation failed for topic 'LLM': All LLM providers failed. Check API keys.
+2026-08-21 02:58:33 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:34 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:34 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:35 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:35 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:36 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:36 | ERROR    | idea_generator | Idea generation failed for topic 'machinelearning': All LLM providers failed. Check API keys.
+2026-08-21 02:58:36 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:37 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:38 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:39 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:39 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:40 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:40 | ERROR    | idea_generator | Idea generation failed for topic 'llm': All LLM providers failed. Check API keys.
+2026-08-21 02:58:40 | INFO     | idea_generator | Total ideas generated: 5
+2026-08-21 02:58:40 | INFO     | main |   Generated 5 tool ideas:
+2026-08-21 02:58:40 | INFO     | main |     • ai_helper: A Python utility for working with AI
+2026-08-21 02:58:40 | INFO     | main |     • ai_helper: A Python utility for working with ai
+2026-08-21 02:58:40 | INFO     | main |     • llm_helper: A Python utility for working with LLM
+2026-08-21 02:58:40 | INFO     | main |     • machinelearning_helper: A Python utility for working with machinelearning
+2026-08-21 02:58:40 | INFO     | main |     • llm_helper: A Python utility for working with llm
+2026-08-21 02:58:40 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-08-21 02:58:40 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-08-21 02:58:48 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-08-21 02:58:48 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-08-21 02:58:48 | INFO     | tool_builder | Building tool: ai_helper …
+2026-08-21 02:58:48 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:49 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:50 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:51 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:51 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:52 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:52 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-08-21 02:58:52 | INFO     | tool_builder | Building tool: ai_helper …
+2026-08-21 02:58:52 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:53 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:53 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:54 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:54 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:55 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:55 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-08-21 02:58:55 | INFO     | tool_builder | Building tool: llm_helper …
+2026-08-21 02:58:55 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:56 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:56 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:57 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:58:57 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:58 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:58:58 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-08-21 02:58:58 | INFO     | tool_builder | Building tool: machinelearning_helper …
+2026-08-21 02:58:58 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:58:59 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:59:00 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:59:01 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:59:01 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:59:02 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:59:02 | ERROR    | tool_builder | Initial generation failed for machinelearning_helper: All LLM providers failed. Check API keys.
+2026-08-21 02:59:02 | INFO     | tool_builder | Building tool: llm_helper …
+2026-08-21 02:59:02 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:59:03 | ERROR    | llm_client | github_models HTTP error: 404 Client Error: Not Found for url: https://models.inference.ai.azure.com/chat/completions — 
+2026-08-21 02:59:03 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:59:04 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-08-21 02:59:04 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:59:05 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-08-21 02:59:05 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-08-21 02:59:05 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-08-21 02:59:05 | INFO     | main |   Built 0/5 tools successfully
+2026-08-21 02:59:05 | WARNING  | main | No tools built successfully
