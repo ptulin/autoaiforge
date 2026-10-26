@@ -1,0 +1,168 @@
+2026-10-26 07:19:32 | INFO     | main | ============================================================
+2026-10-26 07:19:32 | INFO     | main | AutoAIForge starting run: 2026-10-26T07:19:32.614846+00:00
+2026-10-26 07:19:32 | INFO     | main | ============================================================
+2026-10-26 07:19:32 | INFO     | main | [STEP 1/6] News Scraping
+2026-10-26 07:19:32 | WARNING  | youtube_scraper | YOUTUBE_API_KEY not set — YouTube scraping disabled
+2026-10-26 07:19:32 | INFO     | youtube_scraper | YouTube total: 0 items, quota used: 0
+2026-10-26 07:19:32 | INFO     | main |   YouTube: 0 items
+2026-10-26 07:19:32 | INFO     | rss_scraper | Starting free-source RSS/API scraping …
+2026-10-26 07:19:37 | INFO     | rss_scraper | HackerNews: 135 items
+2026-10-26 07:19:37 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/MachineLearning/new.json
+2026-10-26 07:19:39 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/artificial/new.json
+2026-10-26 07:19:40 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/LocalLLaMA/new.json
+2026-10-26 07:19:41 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/ClaudeAI/new.json
+2026-10-26 07:19:42 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/singularity/new.json
+2026-10-26 07:19:43 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/AItools/new.json
+2026-10-26 07:19:44 | WARNING  | rss_scraper | HTTP 403 for https://www.reddit.com/r/learnmachinelearning/new.json
+2026-10-26 07:19:45 | INFO     | rss_scraper | Reddit: 0 items
+2026-10-26 07:19:50 | INFO     | rss_scraper | ArXiv: 109 items
+2026-10-26 07:19:54 | INFO     | rss_scraper | Dev.to: 195 items
+2026-10-26 07:19:55 | INFO     | rss_scraper | GitHub Trending: 50 items
+2026-10-26 07:19:55 | INFO     | rss_scraper | Free sources total: 489 unique items
+2026-10-26 07:19:55 | INFO     | main |   RSS/API sources: 489 items
+2026-10-26 07:19:55 | INFO     | main |   Total scraped: 489 items
+2026-10-26 07:19:55 | INFO     | main | [STEP 2/6] Storing & Indexing
+2026-10-26 07:19:55 | INFO     | db_manager | SQLite ready at /home/runner/work/autoaiforge/autoaiforge/data/news.db
+2026-10-26 07:19:55 | INFO     | db_manager | Purged 243 old news items
+2026-10-26 07:19:55 | INFO     | db_manager | Inserted 330/489 news items
+2026-10-26 07:19:55 | INFO     | main |   SQLite: 330 new items (total: 9806)
+2026-10-26 07:20:01 | INFO     | vector_store | Loading sentence-transformer model …
+2026-10-26 07:20:01 | INFO     | vector_store | VectorStore ready
+2026-10-26 07:20:08 | INFO     | vector_store | Indexed 566 items into vector store
+2026-10-26 07:20:08 | INFO     | main |   Vector store: 566 items indexed
+2026-10-26 07:20:08 | INFO     | main | [STEP 3/6] Topic Analysis
+2026-10-26 07:20:08 | INFO     | topic_analyzer | Analyzing 566 items for top 10 topics …
+2026-10-26 07:20:08 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:09 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:09 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:10 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:10 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:11 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:11 | ERROR    | topic_analyzer | LLM topic analysis failed: All LLM providers failed. Check API keys. — using keyword fallback
+2026-10-26 07:20:11 | INFO     | main |   Found 10 topics:
+2026-10-26 07:20:11 | INFO     | main |      1. [10/10] AI
+2026-10-26 07:20:11 | INFO     | main |      2. [10/10] machinelearning
+2026-10-26 07:20:11 | INFO     | main |      3. [10/10] ai
+2026-10-26 07:20:11 | INFO     | main |      4. [10/10] llm
+2026-10-26 07:20:11 | INFO     | main |      5. [10/10] LLM
+2026-10-26 07:20:11 | INFO     | main |      6. [10/10] Claude
+2026-10-26 07:20:11 | INFO     | main |      7. [10/10] large+language+model
+2026-10-26 07:20:11 | INFO     | main |      8. [10/10] code+generation
+2026-10-26 07:20:11 | INFO     | main |      9. [10/10] AI+agent
+2026-10-26 07:20:11 | INFO     | main |     10. [10/10] multimodal
+2026-10-26 07:20:11 | INFO     | main | [STEP 4/6] Idea Generation
+2026-10-26 07:20:11 | INFO     | main |   Existing collection: 475 tools across 258 topics
+2026-10-26 07:20:11 | INFO     | main |   🔄 Upgrade candidate: 'AI' (relevance 10/10, last built 2026-03-15)
+2026-10-26 07:20:11 | INFO     | main |   Topics flagged for upgrade: AI
+2026-10-26 07:20:11 | INFO     | idea_generator |   🔄 Upgrading tools for topic: 'AI'
+2026-10-26 07:20:11 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:12 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:12 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:13 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:13 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:14 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:14 | ERROR    | idea_generator | Idea generation failed for topic 'AI': All LLM providers failed. Check API keys.
+2026-10-26 07:20:14 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:15 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:15 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:16 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:16 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:17 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:17 | ERROR    | idea_generator | Idea generation failed for topic 'machinelearning': All LLM providers failed. Check API keys.
+2026-10-26 07:20:17 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:18 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:19 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:20 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:20 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:21 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:21 | ERROR    | idea_generator | Idea generation failed for topic 'ai': All LLM providers failed. Check API keys.
+2026-10-26 07:20:21 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:22 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:22 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:23 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:23 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:24 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:24 | ERROR    | idea_generator | Idea generation failed for topic 'llm': All LLM providers failed. Check API keys.
+2026-10-26 07:20:24 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:25 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:25 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:26 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:26 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:27 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:27 | ERROR    | idea_generator | Idea generation failed for topic 'LLM': All LLM providers failed. Check API keys.
+2026-10-26 07:20:27 | INFO     | idea_generator | Total ideas generated: 5
+2026-10-26 07:20:27 | INFO     | main |   Generated 5 tool ideas:
+2026-10-26 07:20:27 | INFO     | main |     • ai_helper: A Python utility for working with AI
+2026-10-26 07:20:27 | INFO     | main |     • machinelearning_helper: A Python utility for working with machinelearning
+2026-10-26 07:20:27 | INFO     | main |     • ai_helper: A Python utility for working with ai
+2026-10-26 07:20:27 | INFO     | main |     • llm_helper: A Python utility for working with llm
+2026-10-26 07:20:27 | INFO     | main |     • llm_helper: A Python utility for working with LLM
+2026-10-26 07:20:27 | INFO     | main | [STEP 5/6] Tool Development & Testing
+2026-10-26 07:20:27 | INFO     | test_runner | Creating shared test venv at /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv …
+2026-10-26 07:20:36 | INFO     | test_runner | Shared venv ready with pinned numpy<2.0
+2026-10-26 07:20:36 | DEBUG    | test_runner | Test venv python: /home/runner/work/autoaiforge/autoaiforge/data/sandbox/_venv/bin/python
+2026-10-26 07:20:36 | INFO     | tool_builder | Building tool: ai_helper …
+2026-10-26 07:20:36 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:37 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:38 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:39 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:39 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:40 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:40 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-10-26 07:20:40 | INFO     | tool_builder | Building tool: machinelearning_helper …
+2026-10-26 07:20:40 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:41 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:41 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:42 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:42 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:43 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:43 | ERROR    | tool_builder | Initial generation failed for machinelearning_helper: All LLM providers failed. Check API keys.
+2026-10-26 07:20:43 | INFO     | tool_builder | Building tool: ai_helper …
+2026-10-26 07:20:43 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:44 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:44 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:45 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:45 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:46 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:46 | ERROR    | tool_builder | Initial generation failed for ai_helper: All LLM providers failed. Check API keys.
+2026-10-26 07:20:46 | INFO     | tool_builder | Building tool: llm_helper …
+2026-10-26 07:20:46 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:47 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:47 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:48 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:48 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:49 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:49 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-10-26 07:20:49 | INFO     | tool_builder | Building tool: llm_helper …
+2026-10-26 07:20:49 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:50 | ERROR    | llm_client | github_models error: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError("HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)"))
+2026-10-26 07:20:50 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:51 | ERROR    | llm_client | groq HTTP error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions — {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+2026-10-26 07:20:51 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:52 | DEBUG    | llm_client | Provider together has no API key — skipping
+2026-10-26 07:20:52 | ERROR    | tool_builder | Initial generation failed for llm_helper: All LLM providers failed. Check API keys.
+2026-10-26 07:20:52 | INFO     | tool_builder | Built 0/5 tools successfully
+2026-10-26 07:20:52 | INFO     | main |   Built 0/5 tools successfully
+2026-10-26 07:20:52 | WARNING  | main | No tools built successfully
